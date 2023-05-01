@@ -1,2 +1,3 @@
-# vpn_ip
-ip addresses of VPNs
+# IP addresses of VPNs
+
+Currently has Windscribe and ProtonVPN
