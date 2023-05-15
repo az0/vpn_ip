@@ -32,6 +32,8 @@
 23.105.149.130 # us-east-050.whiskergalaxy.com,us-east-050.windscribe.com
 23.105.171.93 # us-east-stc-003.windscribe.com
 23.154.160.3 # mx05.windscribe.com
+23.154.160.26 # dummy.windscribe.com
+23.154.160.27 # dummy.windscribe.com
 23.161.192.160 # wf-us-003.windscribe.com
 23.161.192.176 # wf-us-002.windscribe.com
 23.161.192.192 # wf-us-001.windscribe.com
@@ -88,6 +90,7 @@
 37.120.142.226 # es-004.whiskergalaxy.com
 37.120.142.227 # es.windscribe.com
 37.120.147.162 # us-west-030.whiskergalaxy.com,us-west-030.windscribe.com
+37.120.147.163 # us-west.windscribe.com
 37.120.149.50 # no-008.whiskergalaxy.com
 37.120.149.51 # no.windscribe.com
 37.120.158.194 # fr-stc-001.windscribe.com
@@ -148,7 +151,6 @@
 45.128.133.226 # node-be-02.protonvpn.net
 45.128.134.194 # node-fr-07.protonvpn.net
 45.133.194.210 # kr-009.whiskergalaxy.com
-45.133.194.211 # kr.windscribe.com
 45.134.140.33 # node-us-121.protonvpn.net
 45.138.86.226 # ke-001.whiskergalaxy.com
 45.152.182.130 # node-us-48.protonvpn.net
@@ -479,7 +481,6 @@
 108.62.104.31 # us-east-083.whiskergalaxy.com
 108.62.202.217 # us-east-047.whiskergalaxy.com
 109.201.130.1 # nl-015.whiskergalaxy.com
-109.201.130.2 # nl.windscribe.com
 109.236.81.103 # free.protonvpn.com,webrtc-test.protonvpn.com
 109.236.81.160 # node-nl-91.protonvpn.net
 109.236.81.166 # node-nl-97.protonvpn.net
@@ -548,8 +549,6 @@
 141.98.215.226 # ph-004.whiskergalaxy.com
 141.98.215.227 # ph.windscribe.com
 141.255.162.18 # ch-009.whiskergalaxy.com
-142.44.232.196 # dummy.windscribe.com
-142.44.232.198 # dummy.windscribe.com
 142.234.200.140 # us-east-068.whiskergalaxy.com
 142.234.200.176 # us-east.windscribe.com
 143.244.40.225 # jp-007.whiskergalaxy.com
@@ -570,7 +569,6 @@
 146.70.29.178 # sg-009.whiskergalaxy.com
 146.70.29.179 # sg.windscribe.com
 146.70.31.114 # jp-008.whiskergalaxy.com
-146.70.31.115 # jp.windscribe.com
 146.70.45.82 # node-us-184.protonvpn.net
 146.70.45.114 # node-us-185.protonvpn.net
 146.70.45.210 # node-us-186.protonvpn.net
@@ -664,11 +662,8 @@
 149.36.48.129 # node-us-200.protonvpn.net
 149.36.48.141 # node-us-199.protonvpn.net
 149.36.50.184 # de.windscribe.com
-149.56.10.82 # calendar.windscribe.com,gitlab.int.windscribe.com,gw.windscribe.com,mail.windscribe.com,registry.gitlab.int.windscribe.com
 149.56.10.83 # mx01.windscribe.com
 149.56.10.84 # mx03.windscribe.com
-149.56.10.85 # mm.int.windscribe.com,mqtt.int.windscribe.com
-149.56.10.86 # www-staging.windscribe.com
 149.56.17.12 # ca-003.windscribe.com
 149.56.178.49 # mx02.windscribe.com
 149.56.178.51 # mx04.windscribe.com
@@ -683,7 +678,6 @@
 149.57.28.10 # wf-ca-003.whiskergalaxy.com,wf-ca-003.windscribe.com
 149.57.28.49 # wf-ca.windscribe.com
 149.57.28.97 # ca.windscribe.com
-149.57.28.129 # ca.windscribe.com
 149.57.28.161 # ca.windscribe.com
 149.57.28.225 # aq.windscribe.com
 149.57.28.241 # aq.windscribe.com
@@ -852,6 +846,7 @@
 169.150.218.218 # nl-biz001-25.protonvpn.net
 169.150.218.219 # nl-biz001-26.protonvpn.net
 169.255.56.202 # gh-001.whiskergalaxy.com
+169.255.58.177 # za.windscribe.com
 169.255.58.184 # za-007.whiskergalaxy.com
 172.83.40.66 # node-ca-02.protonvpn.net
 172.98.68.147 # ca.windscribe.com
@@ -950,7 +945,6 @@
 185.107.80.114 # node-nl-198.protonvpn.net
 185.107.80.190 # node-nl-32.protonvpn.net
 185.107.80.216 # node-nl-36.protonvpn.net
-185.107.81.130 # nl.windscribe.com
 185.107.95.209 # node-nl-20.protonvpn.net
 185.112.82.8 # fi-003.whiskergalaxy.com
 185.112.82.227 # fi.windscribe.com
@@ -1311,9 +1305,7 @@
 185.189.163.162 # tw.windscribe.com
 185.189.163.214 # tw.windscribe.com
 185.191.205.138 # il-002.whiskergalaxy.com,il-002.windscribe.com
-185.191.205.139 # il.windscribe.com
 185.191.205.146 # il-003.whiskergalaxy.com
-185.191.205.147 # il.windscribe.com
 185.200.117.162 # sg-003.whiskergalaxy.com,sg-003.windscribe.com
 185.200.117.163 # sg.windscribe.com
 185.206.224.34 # dk-003.whiskergalaxy.com
@@ -1461,10 +1453,10 @@
 196.196.216.194 # ee-003.whiskergalaxy.com
 196.196.216.195 # ee.windscribe.com
 196.196.216.226 # ee-004.whiskergalaxy.com
+196.196.216.227 # ee.windscribe.com
 196.240.54.114 # node-lv-01.protonvpn.net
 196.240.128.66 # node-za-01.protonvpn.net
 196.244.192.50 # fi-005.whiskergalaxy.com
-196.244.192.51 # fi.windscribe.com
 196.245.151.210 # node-sk-01.protonvpn.net
 197.242.155.133 # za-001.whiskergalaxy.com,za-001.windscribe.com
 197.242.155.197 # za-003.windscribe.com
@@ -1480,7 +1472,6 @@
 198.7.56.247 # us-east-089.whiskergalaxy.com
 198.7.56.248 # us-east-090.whiskergalaxy.com
 198.8.85.194 # ca-033.whiskergalaxy.com
-198.8.85.195 # ca.windscribe.com
 198.8.85.209 # ca-034.whiskergalaxy.com
 198.8.85.210 # ca.windscribe.com
 198.8.92.98 # ca-west-020.whiskergalaxy.com
@@ -1519,13 +1510,11 @@
 202.43.6.1 # uk.windscribe.com
 202.43.6.34 # uk.windscribe.com
 202.74.239.10 # id-007.whiskergalaxy.com
-202.74.239.11 # id.windscribe.com
 202.74.239.90 # id-008.whiskergalaxy.com
 202.74.239.91 # id.windscribe.com
 202.129.16.136 # th-005.whiskergalaxy.com
 202.129.16.147 # th.windscribe.com
 202.129.16.154 # th-006.whiskergalaxy.com
-202.129.16.155 # th.windscribe.com
 202.176.4.164 # my-008.whiskergalaxy.com
 202.176.4.165 # my.windscribe.com
 202.176.4.172 # my-009.whiskergalaxy.com
@@ -1563,6 +1552,9 @@
 209.58.129.88 # us-west-054.whiskergalaxy.com
 209.58.129.121 # us-west.windscribe.com
 209.95.56.120 # node-us-110.protonvpn.net
+209.127.204.78 # www-staging.windscribe.com
+209.127.204.248 # calendar.windscribe.com,gitlab.int.windscribe.com,gw.windscribe.com,mail.windscribe.com,registry.gitlab.int.windscribe.com
+209.127.204.250 # mm.int.windscribe.com,mqtt.int.windscribe.com
 212.8.243.7 # node-nl-138.protonvpn.net
 212.8.243.129 # node-nl-137.protonvpn.net
 212.8.250.216 # node-nl-134.protonvpn.net
@@ -1584,7 +1576,6 @@
 212.102.63.92 # uk-028.whiskergalaxy.com
 212.102.63.93 # uk.windscribe.com
 212.103.48.66 # us-east-103.whiskergalaxy.com
-212.103.48.67 # us-east.windscribe.com
 212.103.49.66 # us-west-027.whiskergalaxy.com,us-west-027.windscribe.com
 212.103.49.67 # us-west.windscribe.com
 213.193.98.43 # ch-301.protonvpn.net
