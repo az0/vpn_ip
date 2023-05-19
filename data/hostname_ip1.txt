@@ -38,6 +38,7 @@
 23.161.192.176 # wf-us-002.windscribe.com
 23.161.192.192 # wf-us-001.windscribe.com
 23.172.112.226 # us-east-061.whiskergalaxy.com,us-east-061.windscribe.com
+23.172.112.227 # us-east.windscribe.com
 23.191.80.2 # ca-021.whiskergalaxy.com
 23.191.80.3 # ca.windscribe.com
 23.226.133.66 # socks-us.windscribe.com
@@ -154,6 +155,7 @@
 45.138.86.226 # ke-001.whiskergalaxy.com
 45.152.182.130 # node-us-48.protonvpn.net
 45.152.182.146 # node-us-49.protonvpn.net
+46.166.179.210 # nl.windscribe.com
 46.166.182.31 # node-nl-35.protonvpn.net
 46.166.182.100 # node-nl-43.protonvpn.net
 46.199.75.100 # cy-003.whiskergalaxy.com
@@ -315,7 +317,6 @@
 89.238.150.228 # uk-013.whiskergalaxy.com,uk-013.windscribe.com
 89.238.150.229 # uk.windscribe.com
 89.238.178.42 # es-002.whiskergalaxy.com,es-002.windscribe.com
-89.238.178.43 # es.windscribe.com
 89.252.132.18 # tr-016.whiskergalaxy.com
 89.252.132.19 # tr.windscribe.com
 89.252.132.34 # tr-018.whiskergalaxy.com
@@ -478,6 +479,7 @@
 108.62.104.31 # us-east-083.whiskergalaxy.com
 108.62.202.217 # us-east-047.whiskergalaxy.com
 109.201.130.1 # nl-015.whiskergalaxy.com
+109.201.130.2 # nl.windscribe.com
 109.236.81.103 # free.protonvpn.com,webrtc-test.protonvpn.com
 109.236.81.160 # node-nl-91.protonvpn.net
 109.236.81.166 # node-nl-97.protonvpn.net
@@ -676,11 +678,13 @@
 149.57.28.49 # wf-ca.windscribe.com
 149.57.28.97 # ca.windscribe.com
 149.57.28.129 # ca.windscribe.com
+149.57.28.161 # ca.windscribe.com
 149.57.28.225 # aq.windscribe.com
 149.57.28.241 # aq.windscribe.com
 149.102.224.161 # node-ar-04.protonvpn.net
 149.102.226.193 # node-us-201.protonvpn.net
 149.102.226.225 # node-us-202.protonvpn.net
+149.102.229.194 # tr.windscribe.com
 149.102.235.33 # node-cz-04.protonvpn.net
 149.102.244.17 # node-pl-05.protonvpn.net
 149.102.251.97 # node-br-04.protonvpn.net
@@ -712,7 +716,6 @@
 156.146.54.120 # us-ca-142.protonvpn.net
 156.146.55.225 # node-bg-02.protonvpn.net
 156.146.56.97 # sg-006.whiskergalaxy.com,sg-006.windscribe.com
-156.146.56.98 # sg.windscribe.com
 156.146.56.110 # sg-007.whiskergalaxy.com
 156.146.56.111 # sg.windscribe.com
 159.89.126.186 # tor1.ctrl.zt.int.windscribe.com
@@ -864,7 +867,6 @@
 173.205.85.163 # us-east.windscribe.com
 173.208.45.33 # us-east.windscribe.com
 173.254.250.66 # us-central-073.whiskergalaxy.com
-173.254.250.67 # us-central.windscribe.com
 174.127.84.34 # node-us-111.protonvpn.net
 174.127.84.35 # node-us-112.protonvpn.net
 174.128.251.146 # us-central-062.whiskergalaxy.com
@@ -873,7 +875,6 @@
 176.125.231.82 # node-ae-03.protonvpn.net
 176.222.34.139 # hr.windscribe.com
 177.54.148.7 # br-006.whiskergalaxy.com
-177.54.148.247 # br.windscribe.com
 177.54.157.27 # br-005.whiskergalaxy.com
 177.54.157.179 # br.windscribe.com
 177.67.80.58 # br-004.whiskergalaxy.com,br-004.windscribe.com
@@ -1378,7 +1379,6 @@
 190.103.176.146 # ar-008.whiskergalaxy.com
 190.103.176.147 # ar.windscribe.com
 190.103.179.210 # mx-009.whiskergalaxy.com
-190.103.179.211 # mx.windscribe.com
 190.103.179.216 # mx-010.whiskergalaxy.com
 190.103.179.217 # mx.windscribe.com
 190.120.229.138 # pe-002.whiskergalaxy.com
@@ -1446,12 +1446,14 @@
 195.181.175.123 # de.windscribe.com
 196.196.203.202 # node-fi-02.protonvpn.net
 196.196.216.130 # ee-002.windscribe.com
-196.196.216.131 # ee.windscribe.com
 196.196.216.194 # ee-003.whiskergalaxy.com
+196.196.216.195 # ee.windscribe.com
 196.196.216.226 # ee-004.whiskergalaxy.com
+196.196.216.227 # ee.windscribe.com
 196.240.54.114 # node-lv-01.protonvpn.net
 196.240.128.66 # node-za-01.protonvpn.net
 196.244.192.50 # fi-005.whiskergalaxy.com
+196.244.192.51 # fi.windscribe.com
 196.245.151.210 # node-sk-01.protonvpn.net
 197.242.155.133 # za-001.whiskergalaxy.com,za-001.windscribe.com
 197.242.155.197 # za-003.windscribe.com
@@ -1529,6 +1531,7 @@
 206.217.139.18 # us-central-055.whiskergalaxy.com
 206.217.139.19 # us-central.windscribe.com
 206.217.143.130 # us-central-056.whiskergalaxy.com
+206.217.143.131 # us-central.windscribe.com
 206.223.161.47 # wf-ca-001.windscribe.com
 206.223.183.13 # wf-ca-002.windscribe.com
 206.223.183.16 # ca-stc-005.windscribe.com
