@@ -43,6 +43,7 @@
 23.191.80.3 # ca.windscribe.com
 23.226.133.66 # socks-us.windscribe.com
 23.226.141.194 # us-east-019.whiskergalaxy.com,us-east-019.windscribe.com
+23.226.141.195 # us-east.windscribe.com
 23.236.161.50 # ca-028.whiskergalaxy.com,ca-028.windscribe.com
 23.236.161.210 # ca-032.whiskergalaxy.com,ca-032.windscribe.com
 27.122.12.2 # hk.windscribe.com
@@ -395,7 +396,6 @@
 103.108.92.83 # au.windscribe.com
 103.108.94.162 # nz-003.whiskergalaxy.com
 103.108.94.163 # nz.windscribe.com
-103.108.95.146 # node-au-10.protonvpn.net
 103.108.95.226 # au-018.whiskergalaxy.com
 103.108.95.227 # au.windscribe.com
 103.108.229.18 # node-au-16.protonvpn.net
@@ -473,9 +473,7 @@
 107.181.177.11 # node-ca-22.protonvpn.net
 107.181.245.74 # node-us-158.protonvpn.net
 107.187.124.18 # tr-013.whiskergalaxy.com
-107.187.124.19 # tr.windscribe.com
 107.187.124.50 # tr-014.whiskergalaxy.com
-107.187.124.51 # tr.windscribe.com
 108.62.104.31 # us-east-083.whiskergalaxy.com
 108.62.202.217 # us-east-047.whiskergalaxy.com
 109.201.130.1 # nl-015.whiskergalaxy.com
@@ -490,7 +488,6 @@
 116.206.228.179 # au.windscribe.com
 116.206.229.130 # au-010.whiskergalaxy.com
 116.206.229.131 # au.windscribe.com
-116.206.231.186 # node-au-09.protonvpn.net
 121.88.85.130 # kr-010.whiskergalaxy.com
 121.88.85.131 # kr.windscribe.com
 138.68.14.4 # acctmgr-us-1.windscribe.com
@@ -993,8 +990,6 @@
 185.159.156.75 # se-nl-01d.protonvpn.net
 185.159.156.76 # se-nl-01e.protonvpn.net
 185.159.156.78 # se-us-01m.protonvpn.net
-185.159.156.79 # se-au-01b.protonvpn.net
-185.159.156.80 # se-au-01c.protonvpn.net
 185.159.156.81 # se-ro-01a.protonvpn.net
 185.159.156.82 # se-tw-01a.protonvpn.net
 185.159.156.83 # se-kh-01a.protonvpn.net
@@ -1658,7 +1653,6 @@
 2401:3bc0:8:5::10 # node-sg-12.protonvpn.net
 2401:3bc0:8:6::10 # node-sg-13.protonvpn.net
 2401:3bc0:700:231::10 # node-nz-03.protonvpn.net
-2407:a080:2000:8::10 # node-au-10.protonvpn.net
 2407:a080:5000:7::10 # node-au-09.protonvpn.net
 2604:a880:400:d0::f0d:a001 # checkip-02.windscribe.com
 2604:a880:cad:d0::67:d001 # checkip-01.windscribe.com
