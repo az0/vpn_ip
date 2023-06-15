@@ -1,3 +1,3 @@
 # IP addresses of VPNs
 
-Currently has Windscribe and ProtonVPN
+Currently has Windscribe, ProtonVPN, 1clickvpn.net
