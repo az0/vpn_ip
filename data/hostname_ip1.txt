@@ -3,9 +3,15 @@
 5.8.16.162 # node-ru-02.protonvpn.net
 5.8.16.234 # node-ru-01.protonvpn.net
 5.133.11.116 # pl.windscribe.com
+5.149.250.222 # gb.1clickvpn.net
+5.149.253.57 # ca.1clickvpn.net
+5.149.255.178 # nl.1clickvpn.net
 5.157.13.2 # node-ie-01.protonvpn.net
 5.157.13.146 # ie-004.whiskergalaxy.com
 5.157.13.147 # ie.windscribe.com
+5.172.194.122 # zagent1724.hola.org
+5.172.194.182 # zagent1729.hola.org
+5.172.194.251 # zagent1734.hola.org
 5.181.235.66 # wf-jp-002.whiskergalaxy.com,wf-jp-002.windscribe.com
 5.181.235.67 # wf-jp.windscribe.com
 5.187.49.182 # pl-005.whiskergalaxy.com
@@ -289,10 +295,10 @@
 45.9.248.2 # wf-uk-001.whiskergalaxy.com,wf-uk-001.windscribe.com
 45.9.248.3 # wf-uk.windscribe.com
 45.9.249.42 # ae-001.whiskergalaxy.com,ae-001.windscribe.com
-45.9.249.43 # ae.windscribe.com
 45.14.71.5 # node-jp-13.protonvpn.net
 45.14.71.6 # node-jp-14.protonvpn.net
 45.14.71.7 # node-jp-15.protonvpn.net
+45.77.186.73 # zagent2582.hola.org
 45.87.212.50 # de-012.whiskergalaxy.com
 45.87.212.51 # de.windscribe.com
 45.87.212.82 # de-017.whiskergalaxy.com
@@ -406,6 +412,7 @@
 45.138.86.226 # ke-001.whiskergalaxy.com
 45.152.182.130 # node-us-48.protonvpn.net
 45.152.182.146 # node-us-49.protonvpn.net
+46.165.251.80 # de.1clickvpn.net
 46.166.179.210 # nl.windscribe.com
 46.166.182.31 # node-nl-35.protonvpn.net
 46.166.182.100 # node-nl-43.protonvpn.net
@@ -551,6 +558,7 @@
 77.81.136.98 # wf-us-014.whiskergalaxy.com
 77.81.136.99 # wf-us.windscribe.com
 77.81.142.130 # blade1.mexicocity-rack406.nodes.gen4.ninja
+77.81.142.131 # blade2.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.132 # blade3.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.133 # blade4.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.134 # blade5.mexicocity-rack406.nodes.gen4.ninja
@@ -577,10 +585,12 @@
 77.81.142.157 # blade12.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.158 # blade13.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.159 # blade14.mexicocity-rack405.nodes.gen4.ninja
+77.83.198.123 # ee.1clickvpn.net
 77.247.178.54 # node-nl-204.protonvpn.net
 77.247.178.106 # node-nl-194.protonvpn.net
 77.247.178.180 # node-nl-08.protonvpn.net
 79.110.55.2 # node-kr-03.protonvpn.net
+79.141.162.81 # us.1clickvpn.net
 79.142.76.197 # se-002.whiskergalaxy.com,se-002.windscribe.com
 79.142.76.198 # se.windscribe.com
 81.17.29.2 # ch.windscribe.com
@@ -606,6 +616,7 @@
 83.97.23.185 # blade7.berlin-rack405.nodes.gen4.ninja
 83.97.23.186 # blade8.berlin-rack405.nodes.gen4.ninja
 83.97.23.188 # blade10.berlin-rack405.nodes.gen4.ninja
+83.143.87.194 # no.1clickvpn.net
 84.17.39.163 # blade2.singapore-rack405.nodes.gen4.ninja
 84.17.39.164 # blade3.singapore-rack405.nodes.gen4.ninja
 84.17.39.165 # blade4.singapore-rack405.nodes.gen4.ninja
@@ -1466,6 +1477,7 @@
 91.233.117.203 # fi-002.whiskergalaxy.com,fi-002.windscribe.com
 92.223.89.133 # node-lu-03.protonvpn.net
 92.223.89.141 # node-lu-02.protonvpn.net
+93.115.28.181 # lt.1clickvpn.net
 93.190.138.166 # node-nl-98.protonvpn.net
 93.190.140.80 # node-nl-127.protonvpn.net
 93.190.141.58 # node-nl-92.protonvpn.net
@@ -1481,6 +1493,7 @@
 94.242.50.203 # ru-017.whiskergalaxy.com
 94.242.50.204 # ru.windscribe.com
 94.242.50.214 # ru.windscribe.com
+95.141.32.101 # it.1clickvpn.net
 95.143.177.66 # ru.windscribe.com
 95.143.177.101 # ru.windscribe.com
 95.181.232.131 # blade1.rabat-rack402.nodes.gen4.ninja
@@ -3193,15 +3206,6 @@
 184.170.240.247 # blade26.phoenix-rack456.nodes.gen4.ninja
 185.15.21.65 # pt-003.whiskergalaxy.com
 185.15.21.66 # pt.windscribe.com
-185.51.134.83 # blade1.athens-rack406.nodes.gen4.ninja
-185.51.134.84 # blade2.athens-rack406.nodes.gen4.ninja
-185.51.134.85 # blade3.athens-rack406.nodes.gen4.ninja
-185.51.134.86 # blade4.athens-rack406.nodes.gen4.ninja
-185.51.134.88 # blade6.athens-rack406.nodes.gen4.ninja
-185.51.134.89 # blade7.athens-rack406.nodes.gen4.ninja
-185.51.134.90 # blade8.athens-rack406.nodes.gen4.ninja
-185.51.134.91 # blade9.athens-rack406.nodes.gen4.ninja
-185.51.134.92 # blade10.athens-rack406.nodes.gen4.ninja
 185.51.134.163 # blade1.athens-rack404.nodes.gen4.ninja
 185.51.134.165 # blade3.athens-rack404.nodes.gen4.ninja
 185.51.134.166 # blade4.athens-rack404.nodes.gen4.ninja
@@ -3292,6 +3296,7 @@
 185.107.95.209 # node-nl-20.protonvpn.net
 185.112.82.8 # fi-003.whiskergalaxy.com
 185.112.82.227 # fi.windscribe.com
+185.136.159.181 # fr.1clickvpn.net
 185.145.245.88 # lv-011.whiskergalaxy.com
 185.145.245.89 # lv-012.whiskergalaxy.com
 185.145.245.96 # lv.windscribe.com
@@ -4008,6 +4013,7 @@
 188.214.125.59 # blade25.manila-rack402.nodes.gen4.ninja
 188.214.125.60 # blade26.manila-rack402.nodes.gen4.ninja
 188.214.125.61 # blade27.manila-rack402.nodes.gen4.ninja
+188.214.125.62 # blade28.manila-rack402.nodes.gen4.ninja
 188.214.125.67 # blade1.manila-rack451.nodes.gen4.ninja
 188.214.125.68 # blade2.manila-rack451.nodes.gen4.ninja
 188.214.125.69 # blade3.manila-rack451.nodes.gen4.ninja
@@ -4496,6 +4502,7 @@
 192.161.188.195 # us-central.windscribe.com
 192.161.189.130 # us-central-079.whiskergalaxy.com
 192.161.189.131 # us-central.windscribe.com
+192.241.192.224 # zagent2468.hola.org
 193.27.12.250 # node-us-103.protonvpn.net
 193.29.107.98 # node-dk-06.protonvpn.net
 193.29.107.162 # node-dk-05.protonvpn.net
@@ -4859,6 +4866,7 @@
 204.44.112.67 # us-central.windscribe.com
 204.44.112.130 # us-central-037.whiskergalaxy.com,us-central-037.windscribe.com
 204.44.112.131 # us-central.windscribe.com
+206.189.224.26 # zagent2399.hola.org
 206.217.128.2 # us-east-064.whiskergalaxy.com
 206.217.128.3 # us-east.windscribe.com
 206.217.129.226 # us-east-046.whiskergalaxy.com,us-east-046.windscribe.com
