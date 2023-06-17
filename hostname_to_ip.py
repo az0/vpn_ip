@@ -2,12 +2,12 @@
 
 # thanks some to ChatGPT
 
-import socket
 import collections
 import ipaddress
+import os
+import socket
 
-
-in_fn = 'data/hostname.txt' # one host name per line
+hostname_dir = 'data/hostname'
 int_fn ='data/hostname_ip0.txt' # intermediate, contains duplicate IPs
 final_fn = 'data/hostname_ip1.txt' # final, one line per IP, no duplicate IPs
 
@@ -36,24 +36,34 @@ def check_ip_in_ranges(ip):
     return False
 
 
-# Open the input file for reading
-with open(in_fn, "r") as input_file:
-    # Open the output file for writing
+
+def read_hosts(directory):
+    """Read domains, one line per file"""
+    hosts = []
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            print(f'reading hosts from {filename}')
+            filepath = os.path.join(directory, filename)
+            with open(filepath, "r") as file:
+                for line in file:
+                    line = line.strip()
+                    if line.startswith("#"):
+                        continue
+                    hostname = line.split('#')[0] # remove comment at end
+                    hostname = line.split(',')[0]
+                    if not len(hostname) > 5:
+                        continue
+                    if '-tor.' in hostname: #example: hostname=us-co-21-tor.protonvpn.net
+                        print(f'WARNING: skipping tor: {hostname}')
+                        continue
+                    hosts.append(hostname)
+    return set(hosts)
+
+hosts = read_hosts(hostname_dir)
+
+def resolve_hosts(hosts):
     with open(int_fn, "w") as output_file:
-        # Loop over each line in the input file
-        for line in input_file:
-            # Strip off any leading or trailing whitespace
-            line = line.strip()
-            # Skip any lines that start with a hash symbol (comment)
-            if line.startswith("#"):
-                continue
-            hostname = line.split('#')[0] # remove comment at end
-            hostname = line.split(',')[0]
-            if not len(hostname) > 5:
-                continue
-            if '-tor.' in hostname: #example: hostname=us-co-21-tor.protonvpn.net
-                print(f'WARNING: skipping tor: {hostname}')
-                continue
+        for hostname in hosts:
             # Attempt to resolve the hostname to an IP address
             print (f'INFO: hostname={hostname}')
             try:
@@ -69,8 +79,7 @@ with open(in_fn, "r") as input_file:
                     continue
                 output_file.write(f'{ip_addr} # {hostname}\n')
 
-
-
+resolve_hosts(hosts)
 
 # Open the input file for reading
 with open(int_fn, "r") as input_file:
