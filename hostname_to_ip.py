@@ -12,8 +12,16 @@ int_fn ='data/hostname_ip0.txt' # intermediate, contains duplicate IPs
 final_fn = 'data/hostname_ip1.txt' # final, one line per IP, no duplicate IPs
 
 # https://www.cloudflare.com/en-gb/ips/
+# https://en.wikipedia.org/wiki/1.1.1.1
+# https://bgp.he.net/AS13335#_prefixes
+# https://en.wikipedia.org/wiki/Google_Public_DNS
+# https://bgp.he.net/AS15169#_prefixes
 def check_ip_in_ranges(ip):
     ranges = (
+        "1.0.0.0/24",
+        "1.1.1.0/24",
+        "8.8.4.0/24",
+        "8.8.8.0/24",
         "173.245.48.0/20",
         "103.21.244.0/22",
         "103.22.200.0/22",
