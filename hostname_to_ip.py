@@ -71,7 +71,7 @@ hosts = read_hosts(hostname_dir)
 
 def resolve_hosts(hosts):
     with open(int_fn, "w") as output_file:
-        for hostname in hosts:
+        for hostname in sorted(hosts):
             # Attempt to resolve the hostname to an IP address
             print (f'INFO: hostname={hostname}')
             try:
@@ -80,7 +80,7 @@ def resolve_hosts(hosts):
                 print(f"ERROR: Error resolving {hostname}: {e}")
                 continue
             # Loop over each IP address and write it to the output file
-            for ip_address in ip_addresses:
+            for ip_address in sorted(ip_addresses):
                 ip_addr = ip_address[4][0]
                 if check_ip_in_ranges(ip_addr):
                     print(f'WARNING: in whitelist {ip_addr} = {hostname}')
