@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run Python script
-        run: python hostname_to_ip.py
+      - name: Run code
+        run: update.sh
       - name: Commit changes
         uses: EndBug/add-and-commit@v7.0.0
         with:
