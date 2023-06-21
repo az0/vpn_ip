@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
 import requests
 import json
 
 url ="https://api.protonmail.ch/vpn/logicals"
-output_file = 'data/hostname/protonvpn_api.txt'
+output_file = 'data/input/hostname_ip/protonvpn_api.txt'
 
 response = requests.get(url)
 data = json.loads(response.text)

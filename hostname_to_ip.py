@@ -7,9 +7,9 @@ import ipaddress
 import os
 import socket
 
-hostname_dir = 'data/hostname'
-int_fn ='data/hostname_ip0.txt' # intermediate, contains duplicate IPs
-final_fn = 'data/hostname_ip1.txt' # final, one line per IP, no duplicate IPs
+hostname_dir = 'data/input/hostname_ip'
+int_fn ='data/hostname_ip.tmp' # intermediate, contains duplicate IPs
+final_fn = 'data/output/ip.txt' # final, one line per IP, no duplicate IPs
 
 # https://www.cloudflare.com/en-gb/ips/
 # https://en.wikipedia.org/wiki/1.1.1.1
