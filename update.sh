@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Execute all the steps in the scheduled GitHub action to
 # update this repository
 

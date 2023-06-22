@@ -1,7 +1,7 @@
 name: Update data daily
 on:
   schedule:
-    - cron: '0 1 * * *' # Runs every day at midnight UTC
+    - cron: '0 1,13 * * *' # Runs twice each day
 jobs:
   update:
     name: Update data
@@ -10,7 +10,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run code
-        run: update.sh
+        run: |
+            chmod +x update.sh
+            ./update.sh
+        shell: bash
       - name: Commit changes
         uses: EndBug/add-and-commit@v7.0.0
         with:
