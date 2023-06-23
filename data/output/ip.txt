@@ -112,7 +112,7 @@
 31.171.155.12 # blade10.tirana-rack404.nodes.gen4.ninja
 31.171.155.13 # blade11.tirana-rack404.nodes.gen4.ninja
 31.171.155.14 # blade12.tirana-rack404.nodes.gen4.ninja
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.19.197.32 # blade1.newyork-rack478.nodes.gen4.ninja
 37.19.197.33 # blade2.newyork-rack478.nodes.gen4.ninja
 37.19.197.34 # blade3.newyork-rack478.nodes.gen4.ninja
@@ -1851,8 +1851,8 @@
 103.55.39.187 # cgk-253.whiskergalaxy.com,cgk-253.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
 103.62.48.130 # sg-005.whiskergalaxy.com,sg-005.windscribe.com,sin-241-ike.whiskergalaxy.com,sin-241-ike.windscribe.com
 103.62.48.224 # sg.whiskergalaxy.com,sg.windscribe.com,sin-241.whiskergalaxy.com,sin-241.windscribe.com
-103.62.49.112 # nz-002.whiskergalaxy.com,nz-002.windscribe.com
-103.62.49.113 # nz.whiskergalaxy.com,nz.windscribe.com
+103.62.49.112 # akl-251-ike.whiskergalaxy.com,akl-251-ike.windscribe.com,nz-002.whiskergalaxy.com,nz-002.windscribe.com
+103.62.49.113 # akl-251.whiskergalaxy.com,akl-251.windscribe.com,nz.whiskergalaxy.com,nz.windscribe.com
 103.62.50.130 # au-007.whiskergalaxy.com,au-007.windscribe.com,bne-225-ike.whiskergalaxy.com,bne-225-ike.windscribe.com
 103.62.50.131 # au.whiskergalaxy.com,au.windscribe.com,bne-225.whiskergalaxy.com,bne-225.windscribe.com
 103.75.11.18 # node-nz-04.protonvpn.net
@@ -2065,7 +2065,8 @@
 116.206.228.179 # au.whiskergalaxy.com,au.windscribe.com,mel-356.whiskergalaxy.com,mel-356.windscribe.com
 116.206.229.130 # au-010.whiskergalaxy.com,au-010.windscribe.com,cbr-353-ike.whiskergalaxy.com,cbr-353-ike.windscribe.com
 116.206.229.131 # au.whiskergalaxy.com,au.windscribe.com,cbr-353.whiskergalaxy.com,cbr-353.windscribe.com
-121.88.85.130 # kr-010.whiskergalaxy.com,kr-010.windscribe.com
+121.88.85.130 # icn-399-ike.whiskergalaxy.com,icn-399-ike.windscribe.com,kr-010.whiskergalaxy.com,kr-010.windscribe.com
+121.88.85.131 # icn-399.whiskergalaxy.com,icn-399.windscribe.com,kr.whiskergalaxy.com,kr.windscribe.com
 138.68.14.4 # acctmgr-us-1.windscribe.com
 138.186.141.154 # bog-360-ike.whiskergalaxy.com,bog-360-ike.windscribe.com,co-002.whiskergalaxy.com,co-002.windscribe.com
 138.186.141.155 # bog-360.whiskergalaxy.com,bog-360.windscribe.com,co.whiskergalaxy.com,co.windscribe.com
@@ -5314,9 +5315,11 @@
 2a02:6ea0:ce10::10 # node-pl-05.protonvpn.net
 2a02:6ea0:d203::10 # node-us-57.protonvpn.net
 2a02:6ea0:d204::10 # node-us-75.protonvpn.net
+2a02:6ea0:d33b:2105::10 # node-jp-18.protonvpn.net
 2a02:6ea0:d702::10 # node-us-58.protonvpn.net
 2a02:6ea0:d703::10 # node-us-74.protonvpn.net
 2a02:6ea0:d802:2752::10 # node-us-223.protonvpn.net
+2a02:6ea0:e00a:2530::10 # node-us-biz001.protonvpn.net
 2a02:6ea0:e211:2::10 # node-us-219.protonvpn.net
 2a02:6ea0:f103::10 # node-co-03.protonvpn.net
 2a03:90c0:83:2953::10 # node-lu-03.protonvpn.net
