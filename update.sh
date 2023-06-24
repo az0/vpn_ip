@@ -4,5 +4,6 @@
 # update this repository
 
 ./get_protonvpn_hostname.py
+./get_windscribe.py
 ./hostname_to_ip.py
 ./collate_hostnames.sh
