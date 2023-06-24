@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 
-# thanks some to ChatGPT
-
 import collections
 import ipaddress
 import os
 import socket
 
 hostname_dir = 'data/input/hostname_ip'
+ip_dir = 'data/input/ip'
 final_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
 
 # https://www.cloudflare.com/en-gb/ips/
@@ -46,7 +45,7 @@ def check_ip_in_ranges(ip):
 
 
 def read_hosts(directory):
-    """Read domains, one line per file"""
+    """Read domains, one host per line"""
     hosts = []
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
@@ -67,15 +66,28 @@ def read_hosts(directory):
                     hosts.append(hostname)
     return set(hosts)
 
-
-hosts = read_hosts(hostname_dir)
-
+def read_ips(directory):
+    """Read IPs, one IP per line"""
+    ips =  []
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            print(f'reading IPs from {filename}')
+            filepath = os.path.join(directory, filename)
+            with open(filepath, "r") as file:
+                for line in file:
+                    line = line.strip()
+                    if line.startswith("#"):
+                        continue
+                    ip = line.split('#')[0]  # remove comment at end
+                    if not len(ip) >= 7:
+                        continue
+                    ips.append(ip)
+    return set(ips)
 
 def resolve_hosts(hosts):
     ip_to_hostnames = collections.defaultdict(set)
 
     for hostname in sorted(hosts):
-        # Attempt to resolve the hostname to an IP address
         print(f'INFO: hostname={hostname}')
         try:
             ip_addresses = socket.getaddrinfo(hostname, None)
@@ -90,17 +102,31 @@ def resolve_hosts(hosts):
                 continue
             ip_to_hostnames[ip_addr].add(hostname)
 
-    # Sort the IP addresses
+    return ip_to_hostnames
+
+def write_ips(ip_to_hostnames, ip_only):
+
+    ip_only_filtered = [ip for ip in ip_only if ip not in ip_to_hostnames]
+
+    ip_to_hostnames.update({ip: None for ip in ip_only_filtered})
+
     sorted_ips = sorted(ip_to_hostnames.keys(),
                         key=lambda ip: int(ipaddress.ip_address(ip)))
 
     print(f'INFO: count of IPs: {len(sorted_ips)}')
 
     with open(final_fn, "w") as output_file:
-        # Loop over the sorted IP addresses and write each one to the output file
         for ip in sorted_ips:
-            hostnames = ",".join(sorted(ip_to_hostnames[ip]))
-            output_file.write(f"{ip} # {hostnames}\n")
+            if ip_to_hostnames[ip]:
+                hostnames = ",".join(sorted(ip_to_hostnames[ip]))
+                output_file.write(f"{ip} # {hostnames}\n")
+            else:
+                output_file.write(f'{ip}\n')
 
+def go():
+    hosts = read_hosts(hostname_dir)
+    ips_only = read_ips(ip_dir)
+    ip_to_hostnames = resolve_hosts(hosts)
+    write_ips(ip_to_hostnames, ips_only)
 
-resolve_hosts(hosts)
+go()
