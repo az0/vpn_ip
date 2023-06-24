@@ -66,9 +66,10 @@ def read_hosts(directory):
                     hosts.append(hostname)
     return set(hosts)
 
+
 def read_ips(directory):
     """Read IPs, one IP per line"""
-    ips =  []
+    ips = []
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             print(f'reading IPs from {filename}')
@@ -83,6 +84,7 @@ def read_ips(directory):
                         continue
                     ips.append(ip)
     return set(ips)
+
 
 def resolve_hosts(hosts):
     ip_to_hostnames = collections.defaultdict(set)
@@ -104,6 +106,7 @@ def resolve_hosts(hosts):
 
     return ip_to_hostnames
 
+
 def write_ips(ip_to_hostnames, ip_only):
 
     ip_only_filtered = [ip for ip in ip_only if ip not in ip_to_hostnames]
@@ -123,10 +126,12 @@ def write_ips(ip_to_hostnames, ip_only):
             else:
                 output_file.write(f'{ip}\n')
 
+
 def go():
     hosts = read_hosts(hostname_dir)
     ips_only = read_ips(ip_dir)
     ip_to_hostnames = resolve_hosts(hosts)
     write_ips(ip_to_hostnames, ips_only)
+
 
 go()
