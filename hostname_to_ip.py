@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 
 import collections
+import concurrent.futures
 import ipaddress
 import os
 import socket
 
+
 hostname_dir = 'data/input/hostname_ip'
 ip_dir = 'data/input/ip'
 final_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
+max_workers = 8
 
 # https://www.cloudflare.com/en-gb/ips/
 # https://en.wikipedia.org/wiki/1.1.1.1
@@ -89,20 +92,22 @@ def read_ips(directory):
 def resolve_hosts(hosts):
     ip_to_hostnames = collections.defaultdict(set)
 
-    for hostname in sorted(hosts):
+    def resolve_hostname(hostname):
         print(f'INFO: hostname={hostname}')
         try:
             ip_addresses = socket.getaddrinfo(hostname, None)
         except socket.gaierror as e:
             print(f"ERROR: Error resolving {hostname}: {e}")
-            continue
-        # Loop over each IP address and add it to the ip_to_hostnames dictionary
+            return
         for ip_address in sorted(ip_addresses):
             ip_addr = ip_address[4][0]
             if check_ip_in_ranges(ip_addr):
                 print(f'WARNING: in whitelist {ip_addr} = {hostname}')
                 continue
             ip_to_hostnames[ip_addr].add(hostname)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        executor.map(resolve_hostname, sorted(hosts))
 
     return ip_to_hostnames
 
