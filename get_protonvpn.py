@@ -23,6 +23,15 @@ for l_server in data['LogicalServers']:
 
 print(f'extracted {len(domains0)} domains and {len(ips0)} IPs from {url}')
 
+with open(output_file_hostname, 'r') as file:
+    old_domains = file.read().splitlines()
+
+old_domains = [domain for domain in old_domains if domain not in domains0]
+
+print(f'remembered {len(old_domains)} domains from {output_file_hostname}')
+
+domains0.extend(old_domains)
+
 with open(output_file_hostname, "w") as file:
     domains1 = set(domains0)
     for domain in sorted(domains1):
