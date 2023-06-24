@@ -55,6 +55,14 @@ def go():
         all_hostnames.update(new_hostnames)
         all_ips.update(new_ips)
 
+    with open(hostname_fn, 'r') as file:
+        old_hostnames = file.read().splitlines()
+
+    old_hostnames = [
+        hostname for hostname in old_hostnames if hostname not in all_hostnames]
+    print(f'remembered {len(old_hostnames)} hostnames from {hostname_fn}')
+    all_hostnames.update(old_hostnames)
+
     write_to_file(hostname_fn, sorted(all_hostnames))
     write_to_file(ip_fn, sorted(all_ips))
 
