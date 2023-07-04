@@ -68,10 +68,6 @@
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
 13.127.14.8 # 13-127-14-8.server.telleport.me
-13.226.228.62 # ca941.l304.r603.fastcloudcdn.net
-13.226.228.68 # ca941.l304.r603.fastcloudcdn.net
-13.226.228.86 # ca941.l304.r603.fastcloudcdn.net
-13.226.228.92 # ca941.l304.r603.fastcloudcdn.net
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
 16.163.31.20 # 16-163-31-20.server.telleport.me
@@ -1444,78 +1440,24 @@
 84.17.57.113 # hk-006.totallyacdn.com,hk-006.whiskergalaxy.com,hk-006.windscribe.com,hkg-189-ike.whiskergalaxy.com,hkg-189-ike.windscribe.com
 84.17.57.114 # hk.whiskergalaxy.com,hk.windscribe.com,hkg-189.whiskergalaxy.com,hkg-189.windscribe.com
 84.17.57.115
-84.17.58.3 # blade2.milano-rack403.nodes.gen4.ninja
 84.17.58.4 # blade3.milano-rack403.nodes.gen4.ninja
 84.17.58.5 # blade4.milano-rack403.nodes.gen4.ninja
 84.17.58.6 # blade5.milano-rack403.nodes.gen4.ninja
-84.17.58.7 # blade6.milano-rack403.nodes.gen4.ninja
-84.17.58.8 # blade7.milano-rack403.nodes.gen4.ninja
-84.17.58.10 # blade9.milano-rack403.nodes.gen4.ninja
-84.17.58.11 # blade10.milano-rack403.nodes.gen4.ninja
-84.17.58.12 # blade11.milano-rack403.nodes.gen4.ninja
-84.17.58.14 # blade13.milano-rack403.nodes.gen4.ninja
-84.17.58.16 # blade15.milano-rack403.nodes.gen4.ninja
-84.17.58.17 # blade16.milano-rack403.nodes.gen4.ninja
-84.17.58.19 # blade18.milano-rack403.nodes.gen4.ninja
-84.17.58.20 # blade19.milano-rack403.nodes.gen4.ninja
-84.17.58.21 # blade20.milano-rack403.nodes.gen4.ninja
-84.17.58.22 # blade21.milano-rack403.nodes.gen4.ninja
-84.17.58.23 # blade22.milano-rack403.nodes.gen4.ninja
-84.17.58.24 # blade23.milano-rack403.nodes.gen4.ninja
-84.17.58.25 # blade24.milano-rack403.nodes.gen4.ninja
-84.17.58.32 # blade1.milano-rack402.nodes.gen4.ninja
-84.17.58.33 # blade2.milano-rack402.nodes.gen4.ninja
 84.17.58.34 # blade3.milano-rack402.nodes.gen4.ninja
 84.17.58.35 # blade4.milano-rack402.nodes.gen4.ninja
 84.17.58.36 # blade5.milano-rack402.nodes.gen4.ninja
-84.17.58.37 # blade6.milano-rack402.nodes.gen4.ninja
-84.17.58.38 # blade7.milano-rack402.nodes.gen4.ninja
-84.17.58.41 # blade10.milano-rack402.nodes.gen4.ninja
-84.17.58.42 # blade11.milano-rack402.nodes.gen4.ninja
-84.17.58.43 # blade12.milano-rack402.nodes.gen4.ninja
-84.17.58.44 # blade13.milano-rack402.nodes.gen4.ninja
-84.17.58.45 # blade14.milano-rack402.nodes.gen4.ninja
-84.17.58.46 # blade15.milano-rack402.nodes.gen4.ninja
-84.17.58.47 # blade16.milano-rack402.nodes.gen4.ninja
-84.17.58.48 # blade17.milano-rack402.nodes.gen4.ninja
-84.17.58.49 # blade18.milano-rack402.nodes.gen4.ninja
-84.17.58.50 # blade19.milano-rack402.nodes.gen4.ninja
-84.17.58.51 # blade20.milano-rack402.nodes.gen4.ninja
-84.17.58.52 # blade21.milano-rack402.nodes.gen4.ninja
-84.17.58.53 # blade22.milano-rack402.nodes.gen4.ninja
-84.17.58.54 # blade23.milano-rack402.nodes.gen4.ninja
-84.17.58.55 # blade24.milano-rack402.nodes.gen4.ninja
-84.17.58.56 # blade25.milano-rack402.nodes.gen4.ninja
-84.17.58.57 # blade26.milano-rack402.nodes.gen4.ninja
-84.17.58.58 # blade27.milano-rack402.nodes.gen4.ninja
 84.17.58.59 # blade28.milano-rack402.nodes.gen4.ninja
 84.17.58.60 # blade29.milano-rack402.nodes.gen4.ninja
-84.17.58.93 # blade2.milano-rack404.nodes.gen4.ninja
 84.17.58.94 # blade3.milano-rack404.nodes.gen4.ninja
 84.17.58.95 # blade4.milano-rack404.nodes.gen4.ninja
 84.17.58.96 # blade5.milano-rack404.nodes.gen4.ninja
-84.17.58.97 # blade6.milano-rack404.nodes.gen4.ninja
-84.17.58.99 # blade8.milano-rack404.nodes.gen4.ninja
-84.17.58.101 # blade10.milano-rack404.nodes.gen4.ninja
-84.17.58.102 # blade11.milano-rack404.nodes.gen4.ninja
-84.17.58.103 # blade12.milano-rack404.nodes.gen4.ninja
-84.17.58.104 # blade13.milano-rack404.nodes.gen4.ninja
-84.17.58.105 # blade14.milano-rack404.nodes.gen4.ninja
-84.17.58.108 # blade17.milano-rack404.nodes.gen4.ninja
-84.17.58.109 # blade18.milano-rack404.nodes.gen4.ninja
-84.17.58.110 # blade19.milano-rack404.nodes.gen4.ninja
-84.17.58.111 # blade20.milano-rack404.nodes.gen4.ninja
-84.17.58.114 # blade23.milano-rack404.nodes.gen4.ninja
-84.17.58.115 # blade24.milano-rack404.nodes.gen4.ninja
-84.17.58.116 # blade25.milano-rack404.nodes.gen4.ninja
-84.17.58.118 # blade27.milano-rack404.nodes.gen4.ninja
 84.17.58.119 # blade28.milano-rack404.nodes.gen4.ninja
 84.17.58.120 # blade29.milano-rack404.nodes.gen4.ninja
 84.17.58.121 # blade30.milano-rack404.nodes.gen4.ninja
 84.17.58.122 # blade31.milano-rack404.nodes.gen4.ninja
 84.17.58.123 # blade32.milano-rack404.nodes.gen4.ninja
-84.17.59.65 # it-004.totallyacdn.com,it-004.whiskergalaxy.com,it-004.windscribe.com,mxp-318-ike.whiskergalaxy.com,mxp-318-ike.windscribe.com
-84.17.59.66 # it.whiskergalaxy.com,it.windscribe.com,mxp-318.whiskergalaxy.com,mxp-318.windscribe.com
+84.17.59.65 # it-004.totallyacdn.com,it-004.whiskergalaxy.com,it-004.windscribe.com
+84.17.59.66
 84.17.59.67
 84.17.60.4 # blade1.paris-rack403.nodes.gen4.ninja
 84.17.60.5 # blade2.paris-rack403.nodes.gen4.ninja
@@ -3268,6 +3210,10 @@
 108.61.246.230 # jp-69.jumpvpnproxy.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
+108.156.211.6 # ca941.l304.r603.fastcloudcdn.net
+108.156.211.52 # ca941.l304.r603.fastcloudcdn.net
+108.156.211.85 # ca941.l304.r603.fastcloudcdn.net
+108.156.211.121 # ca941.l304.r603.fastcloudcdn.net
 109.201.130.1 # ams-229-ike.whiskergalaxy.com,ams-229-ike.windscribe.com,nl-015.totallyacdn.com,nl-015.whiskergalaxy.com,nl-015.windscribe.com
 109.201.130.2 # ams-229.whiskergalaxy.com,ams-229.windscribe.com,nl.whiskergalaxy.com,nl.windscribe.com
 109.201.130.3
@@ -3294,7 +3240,9 @@
 116.206.229.130 # au-010.totallyacdn.com,au-010.whiskergalaxy.com,au-010.windscribe.com,cbr-353-ike.whiskergalaxy.com,cbr-353-ike.windscribe.com
 116.206.229.131 # au.whiskergalaxy.com,au.windscribe.com,cbr-353.whiskergalaxy.com,cbr-353.windscribe.com
 116.206.229.132
-121.88.85.130 # kr-010.totallyacdn.com,kr-010.whiskergalaxy.com,kr-010.windscribe.com
+121.88.85.130 # icn-399-ike.whiskergalaxy.com,icn-399-ike.windscribe.com,kr-010.totallyacdn.com,kr-010.whiskergalaxy.com,kr-010.windscribe.com
+121.88.85.131 # icn-399.whiskergalaxy.com,icn-399.windscribe.com,kr.whiskergalaxy.com,kr.windscribe.com
+121.88.85.132
 129.151.168.120 # 129-151-168-120.server.telleport.me
 129.153.53.229 # 129-153-53-229.server.telleport.me
 129.232.133.48 # za7.prmsrvs.com
@@ -3458,26 +3406,7 @@
 138.199.53.234
 138.199.53.235
 138.199.53.236 # node-ge-03.protonvpn.net
-138.199.54.2 # blade1.milano-rack405.nodes.gen4.ninja
-138.199.54.3 # blade2.milano-rack405.nodes.gen4.ninja
-138.199.54.4 # blade3.milano-rack405.nodes.gen4.ninja
-138.199.54.5 # blade4.milano-rack405.nodes.gen4.ninja
-138.199.54.6 # blade5.milano-rack405.nodes.gen4.ninja
-138.199.54.7 # blade6.milano-rack405.nodes.gen4.ninja
-138.199.54.8 # blade7.milano-rack405.nodes.gen4.ninja
-138.199.54.9 # blade8.milano-rack405.nodes.gen4.ninja
-138.199.54.10 # blade9.milano-rack405.nodes.gen4.ninja
-138.199.54.11 # blade10.milano-rack405.nodes.gen4.ninja
-138.199.54.12 # blade11.milano-rack405.nodes.gen4.ninja
-138.199.54.15 # blade2.milano-rack406.nodes.gen4.ninja
-138.199.54.17 # blade4.milano-rack406.nodes.gen4.ninja
 138.199.54.18 # blade5.milano-rack406.nodes.gen4.ninja
-138.199.54.19 # blade6.milano-rack406.nodes.gen4.ninja
-138.199.54.20 # blade7.milano-rack406.nodes.gen4.ninja
-138.199.54.21 # blade8.milano-rack406.nodes.gen4.ninja
-138.199.54.22 # blade9.milano-rack406.nodes.gen4.ninja
-138.199.54.23 # blade10.milano-rack406.nodes.gen4.ninja
-138.199.54.24 # blade11.milano-rack406.nodes.gen4.ninja
 138.199.55.33 # node-se-05.protonvpn.net
 138.199.55.34
 138.199.55.35
@@ -5463,7 +5392,6 @@
 159.65.52.141 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 159.65.54.135 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 159.65.56.187 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
-159.65.60.176 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 159.65.146.0 # in-18.sunnetdevelop.pw
 159.65.225.43 # us-free-21.sunnetdevelop.pw
 159.89.126.186 # tor1.ctrl.zt.int.windscribe.com
@@ -6704,9 +6632,19 @@
 185.159.157.113 # ch-pt-01d.protonvpn.net
 185.159.157.116 # ch-us-01p.protonvpn.net
 185.159.157.117 # ch-uk-01c.protonvpn.net
+185.159.157.120
+185.159.157.121
+185.159.157.122
+185.159.157.123
+185.159.157.124
 185.159.157.125 # ch-ca-01g.protonvpn.net
+185.159.157.126
+185.159.157.127
 185.159.157.128 # node-ch-05.protonvpn.net
 185.159.157.129 # node-ch-06.protonvpn.net
+185.159.157.130
+185.159.157.131
+185.159.157.132
 185.159.157.133
 185.159.157.138 # ch-sg-01b.protonvpn.net
 185.159.157.139 # ch-sg-01c.protonvpn.net
@@ -6717,6 +6655,8 @@
 185.159.157.144 # ch-us-01x.protonvpn.net
 185.159.157.145 # ch-us-01y.protonvpn.net
 185.159.157.146 # ch-us-01z.protonvpn.net
+185.159.157.147
+185.159.157.148
 185.159.157.149
 185.159.157.150
 185.159.157.153
@@ -6806,6 +6746,7 @@
 185.159.157.251
 185.159.157.252
 185.159.157.253
+185.159.157.254
 185.159.158.1 # node-is-01.protonvpn.net
 185.159.158.2 # node-is-02.protonvpn.net
 185.159.158.50
