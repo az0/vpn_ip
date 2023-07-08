@@ -6,8 +6,11 @@ IP addresses include those for:
 
 * 1clickvpn.net
 * Cyber Ghost VPN
+* NordVPN
 * ProtonVPN
 * Windscribe
+
+The hostnames include many other VPNs and proxies.
 
 The output is two lists
 

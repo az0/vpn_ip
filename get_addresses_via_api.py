@@ -88,7 +88,13 @@ def go():
     protonvpn['hostname_key'] = ['Domain', ]
     protonvpn['ip_key'] = ['EntryIP', 'ExitIP']
 
-    services = {'windscribe': windscribe, 'protonvpn': protonvpn}
+    nordvpn = {}
+    nordvpn['urls'] = ["https://nordvpn.com/api/server", ]
+    nordvpn['hostname_key'] = ['domain', ]
+    nordvpn['ip_key'] = ['ip_address', ]
+
+    services = {'nordvpn': nordvpn,
+                'protonvpn': protonvpn, 'windscribe': windscribe}
 
     for key in services.keys():
         process_service(key, services[key])
