@@ -58,13 +58,14 @@ def process_service(service_code, service):
     print(f'read {len(all_hostnames)} hostnames and {len(all_ips)} IPs from API')
 
     print(f'hostname_fn={hostname_fn}')
-    with open(hostname_fn, 'r') as file:
-        old_hostnames = file.read().splitlines()
+    if os.path.exists(hostname_fn):
+        with open(hostname_fn, 'r') as file:
+            old_hostnames = file.read().splitlines()
 
-    old_hostnames = [
-        hostname for hostname in old_hostnames if hostname not in all_hostnames]
-    print(f'remembered {len(old_hostnames)} hostnames from {hostname_fn}')
-    all_hostnames.update(old_hostnames)
+        old_hostnames = [
+            hostname for hostname in old_hostnames if hostname not in all_hostnames]
+        print(f'remembered {len(old_hostnames)} hostnames from {hostname_fn}')
+        all_hostnames.update(old_hostnames)
 
     write_to_file(hostname_fn, sorted(all_hostnames))
     write_to_file(ip_fn, sorted(all_ips))
