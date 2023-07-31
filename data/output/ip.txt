@@ -1367,6 +1367,7 @@
 45.83.91.235 # se498.nordvpn.com
 45.83.91.243 # se499.nordvpn.com
 45.83.91.251 # se500.nordvpn.com
+45.83.149.28 # prox-us.pointtoserver.com
 45.84.39.100 # no214.nordvpn.com
 45.84.39.102 # no215.nordvpn.com
 45.84.39.104 # no216.nordvpn.com
@@ -3621,6 +3622,25 @@
 89.187.162.211 # blade17.singapore-rack456.nodes.gen4.ninja
 89.187.162.212 # blade18.singapore-rack456.nodes.gen4.ninja
 89.187.162.213 # blade19.singapore-rack456.nodes.gen4.ninja
+89.187.163.153 # blade1.singapore-rack455.nodes.gen4.ninja
+89.187.163.154 # blade2.singapore-rack455.nodes.gen4.ninja
+89.187.163.161 # blade4.singapore-rack455.nodes.gen4.ninja
+89.187.163.163 # blade6.singapore-rack455.nodes.gen4.ninja
+89.187.163.164 # blade7.singapore-rack455.nodes.gen4.ninja
+89.187.163.165 # blade8.singapore-rack455.nodes.gen4.ninja
+89.187.163.166 # blade9.singapore-rack455.nodes.gen4.ninja
+89.187.163.168 # blade11.singapore-rack455.nodes.gen4.ninja
+89.187.163.169 # blade12.singapore-rack455.nodes.gen4.ninja
+89.187.163.170 # blade13.singapore-rack455.nodes.gen4.ninja
+89.187.163.171 # blade14.singapore-rack455.nodes.gen4.ninja
+89.187.163.172 # blade15.singapore-rack455.nodes.gen4.ninja
+89.187.163.173 # blade16.singapore-rack455.nodes.gen4.ninja
+89.187.163.174 # blade17.singapore-rack455.nodes.gen4.ninja
+89.187.163.176 # blade19.singapore-rack455.nodes.gen4.ninja
+89.187.163.177 # blade20.singapore-rack455.nodes.gen4.ninja
+89.187.163.178 # blade21.singapore-rack455.nodes.gen4.ninja
+89.187.163.179 # blade22.singapore-rack455.nodes.gen4.ninja
+89.187.163.180 # blade23.singapore-rack455.nodes.gen4.ninja
 89.187.164.241 # node-us-108.protonvpn.net
 89.187.164.242
 89.187.164.243
@@ -5697,6 +5717,7 @@
 138.199.34.26 # sk57.nordvpn.com
 138.199.34.38 # sk58.nordvpn.com
 138.199.34.50 # sk59.nordvpn.com
+138.199.35.73 # prox-us.pointtoserver.com
 138.199.35.97 # node-us-122.protonvpn.net
 138.199.35.98
 138.199.35.99
@@ -6142,6 +6163,7 @@
 143.244.41.103 # nl983.nordvpn.com
 143.244.41.110 # nl984.nordvpn.com
 143.244.41.117 # nl985.nordvpn.com
+143.244.44.138 # prox-us.pointtoserver.com
 143.244.44.161 # node-us-148.protonvpn.net
 143.244.44.166 # node-us-145.protonvpn.net
 143.244.44.171 # node-us-146.protonvpn.net
@@ -8936,9 +8958,9 @@
 169.255.56.202 # acc-394-ike.whiskergalaxy.com,acc-394-ike.windscribe.com,gh-001.totallyacdn.com,gh-001.whiskergalaxy.com,gh-001.windscribe.com
 169.255.56.203 # acc-394.whiskergalaxy.com,acc-394.windscribe.com,gh.whiskergalaxy.com,gh.windscribe.com
 169.255.56.204 # acc-394-wg.whiskergalaxy.com
-169.255.58.177 # jnb-395.whiskergalaxy.com,jnb-395.windscribe.com,za.whiskergalaxy.com,za.windscribe.com
-169.255.58.178 # jnb-395-wg.whiskergalaxy.com
-169.255.58.184 # jnb-395-ike.whiskergalaxy.com,jnb-395-ike.windscribe.com,za-007.totallyacdn.com,za-007.whiskergalaxy.com,za-007.windscribe.com
+169.255.58.177
+169.255.58.178
+169.255.58.184 # za-007.totallyacdn.com,za-007.whiskergalaxy.com,za-007.windscribe.com
 172.83.40.66 # node-ca-02.protonvpn.net
 172.83.40.67
 172.83.40.68
@@ -14307,6 +14329,7 @@
 212.102.45.37 # us5073.nordvpn.com
 212.102.45.42 # us5074.nordvpn.com
 212.102.45.47 # us5075.nordvpn.com
+212.102.45.52 # us5076.nordvpn.com
 212.102.45.57 # us5077.nordvpn.com
 212.102.45.62 # us5078.nordvpn.com
 212.102.45.67 # us5079.nordvpn.com
@@ -14577,9 +14600,9 @@
 213.232.87.229 # socks-nl6.nordvpn.com
 213.232.87.231 # socks-nl7.nordvpn.com
 213.232.87.233 # socks-nl8.nordvpn.com
-216.45.53.130 # lax-180-ike.whiskergalaxy.com,lax-180-ike.windscribe.com,us-west-015.totallyacdn.com,us-west-015.whiskergalaxy.com,us-west-015.windscribe.com
-216.45.53.131 # lax-180.whiskergalaxy.com,lax-180.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
-216.45.53.132 # lax-180-wg.whiskergalaxy.com
+216.45.53.130 # us-west-015.totallyacdn.com,us-west-015.whiskergalaxy.com,us-west-015.windscribe.com
+216.45.53.131
+216.45.53.132
 216.238.80.84 # mx1.prmsrvs.com
 216.238.106.4 # br3.prmsrvs.com
 216.238.109.16 # br2.prmsrvs.com
@@ -14911,6 +14934,7 @@
 2a02:540:3:2009::10 # node-cy-01.protonvpn.net
 2a02:6ea0:c035::13 # pvpndeb.protonvpn.com
 2a02:6ea0:c035:3b:: # node-nl-188.protonvpn.net
+2a02:6ea0:c041:2150::10 # node-nl-54.protonvpn.net
 2a02:6ea0:c041:2502::10 # node-nl-biz001.protonvpn.net
 2a02:6ea0:c10d:1305::10 # node-us-70.protonvpn.net
 2a02:6ea0:c10d:2754::10 # node-us-225.protonvpn.net
