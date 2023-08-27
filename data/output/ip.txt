@@ -265,6 +265,10 @@
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
 16.163.31.20 # 16-163-31-20.server.telleport.me
+18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.74.164 # blade1.losangeles-rack408.nodes.gen4.ninja
 23.19.74.165 # blade2.losangeles-rack408.nodes.gen4.ninja
@@ -769,15 +773,6 @@
 37.19.223.108 # blade11.vienna-rack403.nodes.gen4.ninja
 37.19.223.109 # blade12.vienna-rack403.nodes.gen4.ninja
 37.19.223.110 # blade13.vienna-rack403.nodes.gen4.ninja
-37.19.223.112 # blade1.vienna-rack404.nodes.gen4.ninja
-37.19.223.113 # blade2.vienna-rack404.nodes.gen4.ninja
-37.19.223.114 # blade3.vienna-rack404.nodes.gen4.ninja
-37.19.223.115 # blade4.vienna-rack404.nodes.gen4.ninja
-37.19.223.116 # blade5.vienna-rack404.nodes.gen4.ninja
-37.19.223.117 # blade6.vienna-rack404.nodes.gen4.ninja
-37.19.223.118 # blade7.vienna-rack404.nodes.gen4.ninja
-37.19.223.119 # blade8.vienna-rack404.nodes.gen4.ninja
-37.19.223.122 # blade11.vienna-rack404.nodes.gen4.ninja
 37.19.223.200 # blade1.vienna-rack410.nodes.gen4.ninja
 37.19.223.201 # blade2.vienna-rack410.nodes.gen4.ninja
 37.19.223.203 # blade4.vienna-rack410.nodes.gen4.ninja
@@ -1839,10 +1834,6 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
-52.84.162.8 # ca941.l304.r603.fastcloudcdn.net
-52.84.162.52 # ca941.l304.r603.fastcloudcdn.net
-52.84.162.53 # ca941.l304.r603.fastcloudcdn.net
-52.84.162.63 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -8538,7 +8529,6 @@
 161.35.139.87 # us14.prmsrvs.com
 161.35.139.97 # us1.prmsrvs.com
 161.35.141.121 # us10.prmsrvs.com
-161.35.169.161 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
 161.35.169.202 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
 161.35.172.251 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
 161.35.173.8 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
@@ -8613,7 +8603,6 @@
 165.231.253.243 # bom-372.whiskergalaxy.com,bom-372.windscribe.com,in.whiskergalaxy.com,in.windscribe.com
 165.231.253.244 # bom-372-wg.whiskergalaxy.com
 165.232.98.207 # uk12.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
-165.232.101.76 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
 165.232.106.232 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
 166.0.218.32 # blade2.mumbai-rack403.nodes.gen4.ninja
 166.0.218.35 # blade5.mumbai-rack403.nodes.gen4.ninja
@@ -13969,6 +13958,8 @@
 196.240.128.77
 196.240.128.78
 196.244.192.50 # fi-005.totallyacdn.com,fi-005.whiskergalaxy.com,fi-005.windscribe.com
+196.244.192.51
+196.244.192.52
 196.244.192.202 # fi-006.totallyacdn.com,fi-006.whiskergalaxy.com,hel-98-ike.whiskergalaxy.com,hel-98-ike.windscribe.com
 196.244.192.203 # fi.whiskergalaxy.com,fi.windscribe.com,hel-98.whiskergalaxy.com,hel-98.windscribe.com
 196.244.192.204 # hel-98-wg.whiskergalaxy.com
