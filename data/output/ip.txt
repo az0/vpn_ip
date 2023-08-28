@@ -265,10 +265,6 @@
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
 16.163.31.20 # 16-163-31-20.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.74.164 # blade1.losangeles-rack408.nodes.gen4.ninja
 23.19.74.165 # blade2.losangeles-rack408.nodes.gen4.ninja
@@ -1834,6 +1830,10 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
+52.84.45.2 # ca941.l304.r603.fastcloudcdn.net
+52.84.45.24 # ca941.l304.r603.fastcloudcdn.net
+52.84.45.37 # ca941.l304.r603.fastcloudcdn.net
+52.84.45.52 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -15052,7 +15052,9 @@
 2a0d:5600:8:4b::10 # node-us-48.protonvpn.net
 2a0d:5600:8:4c::10 # node-us-49.protonvpn.net
 2a0d:5600:8:78::10 # node-us-208.protonvpn.net
+2a0d:5600:8:81::10 # node-us-211.protonvpn.net
 2a0d:5600:8:82::10 # node-us-210.protonvpn.net
+2a0d:5600:8:83::10 # node-us-209.protonvpn.net
 2a0d:5600:8:98::10 # node-us-99.protonvpn.net
 2a0d:5600:8:99::10 # node-us-98.protonvpn.net
 2a0d:5600:8:9a::10 # node-us-97.protonvpn.net
