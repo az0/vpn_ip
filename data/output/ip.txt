@@ -1318,7 +1318,6 @@
 45.32.144.10 # fr2.prmsrvs.com
 45.32.189.12 # au8.prmsrvs.com
 45.32.244.221 # au1.prmsrvs.com
-45.32.247.50 # au-94.sunnetdevelop.pw
 45.32.248.18 # jp34.prmsrvs.com
 45.32.255.165 # jp12.prmsrvs.com
 45.38.189.1
@@ -5540,7 +5539,6 @@
 136.244.117.116 # fr3.prmsrvs.com
 137.184.75.206 # zagent2639.hola.org,zagent2639.holavpn.net,zagent2639.holax.io
 138.68.14.4 # acctmgr-us-1.windscribe.com
-138.68.148.191 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
 138.68.157.78 # uk12.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
 138.186.141.154 # bog-360-ike.whiskergalaxy.com,bog-360-ike.windscribe.com,co-002.totallyacdn.com,co-002.whiskergalaxy.com,co-002.windscribe.com
 138.186.141.155 # bog-360.whiskergalaxy.com,bog-360.windscribe.com,co.whiskergalaxy.com,co.windscribe.com
@@ -9755,6 +9753,16 @@
 185.51.134.90 # blade8.athens-rack406.nodes.gen4.ninja
 185.51.134.91 # blade9.athens-rack406.nodes.gen4.ninja
 185.51.134.92 # blade10.athens-rack406.nodes.gen4.ninja
+185.51.134.163 # blade1.athens-rack404.nodes.gen4.ninja
+185.51.134.165 # blade3.athens-rack404.nodes.gen4.ninja
+185.51.134.166 # blade4.athens-rack404.nodes.gen4.ninja
+185.51.134.167 # blade5.athens-rack404.nodes.gen4.ninja
+185.51.134.168 # blade6.athens-rack404.nodes.gen4.ninja
+185.51.134.169 # blade7.athens-rack404.nodes.gen4.ninja
+185.51.134.170 # blade8.athens-rack404.nodes.gen4.ninja
+185.51.134.172 # blade10.athens-rack404.nodes.gen4.ninja
+185.51.134.173 # blade11.athens-rack404.nodes.gen4.ninja
+185.51.134.174 # blade12.athens-rack404.nodes.gen4.ninja
 185.51.134.194 # node-gr-01.protonvpn.net
 185.51.134.195
 185.51.134.196
@@ -9832,8 +9840,8 @@
 185.94.192.34 # bg-001.totallyacdn.com,bg-001.whiskergalaxy.com,bg-001.windscribe.com,sof-100-ike.whiskergalaxy.com,sof-100-ike.windscribe.com
 185.94.192.35 # bg.whiskergalaxy.com,bg.windscribe.com,sof-100.whiskergalaxy.com,sof-100.windscribe.com
 185.94.192.36 # sof-100-wg.whiskergalaxy.com
-185.99.3.24 # ba.windscribe.com,sjj-286.windscribe.com
-185.99.3.25 # sjj-286-wg.whiskergalaxy.com
+185.99.3.24
+185.99.3.25
 185.99.3.58 # blade2.travnik-rack401.nodes.gen4.ninja
 185.99.3.72 # blade3.travnik-rack401.nodes.gen4.ninja
 185.99.3.73 # blade4.travnik-rack401.nodes.gen4.ninja
@@ -10604,7 +10612,7 @@
 185.164.34.246 # blade13.travnik-rack451.nodes.gen4.ninja
 185.164.34.247 # blade14.travnik-rack451.nodes.gen4.ninja
 185.164.34.248 # blade15.travnik-rack451.nodes.gen4.ninja
-185.164.35.16 # ba-001.totallyacdn.com,ba-001.whiskergalaxy.com,ba-001.windscribe.com,sjj-286-ike.windscribe.com
+185.164.35.16 # ba-001.totallyacdn.com,ba-001.whiskergalaxy.com,ba-001.windscribe.com
 185.165.170.1 # is-002.totallyacdn.com,is-002.whiskergalaxy.com,is-002.windscribe.com,kef-344-ike.whiskergalaxy.com,kef-344-ike.windscribe.com
 185.165.170.2 # is.whiskergalaxy.com,is.windscribe.com,kef-344.whiskergalaxy.com,kef-344.windscribe.com
 185.165.170.3 # kef-344-wg.whiskergalaxy.com
@@ -14927,7 +14935,6 @@
 2a02:6ea0:c413::10 # node-us-71.protonvpn.net
 2a02:6ea0:c603:2119::10 # node-us-129.protonvpn.net
 2a02:6ea0:c603:2121::10 # node-us-130.protonvpn.net
-2a02:6ea0:c603:2127::10 # node-us-128.protonvpn.net
 2a02:6ea0:c634::10 # node-us-220.protonvpn.net
 2a02:6ea0:c803:1315::10 # node-us-72.protonvpn.net
 2a02:6ea0:c820::10 # node-us-61.protonvpn.net
