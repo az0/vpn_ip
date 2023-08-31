@@ -1793,8 +1793,6 @@
 46.166.179.209 # ams-229-ike.whiskergalaxy.com,ams-229-ike.windscribe.com,nl-039.totallyacdn.com,nl-039.whiskergalaxy.com,nl-039.windscribe.com
 46.166.179.210 # ams-229.whiskergalaxy.com,ams-229.windscribe.com,nl.whiskergalaxy.com,nl.windscribe.com
 46.166.179.211 # ams-229-wg.whiskergalaxy.com
-46.166.182.31 # node-nl-35.protonvpn.net
-46.166.182.100 # node-nl-43.protonvpn.net
 46.183.186.28 # hu3.prmsrvs.com
 46.183.187.13 # be56.prmsrvs.com
 46.183.187.19 # be64.prmsrvs.com
@@ -2099,15 +2097,6 @@
 66.115.182.130 # mco-336-ike.whiskergalaxy.com,mco-336-ike.windscribe.com,us-east-082.totallyacdn.com,us-east-082.whiskergalaxy.com,us-east-082.windscribe.com
 66.115.182.131 # mco-336.whiskergalaxy.com,mco-336.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 66.115.182.132 # mco-336-wg.whiskergalaxy.com
-66.151.209.67 # socks-us24.nordvpn.com
-66.151.209.195 # socks-us23.nordvpn.com
-66.151.209.203 # socks-us21.nordvpn.com
-66.151.209.211 # socks-us18.nordvpn.com
-66.151.209.219 # socks-us19.nordvpn.com
-66.151.209.227 # socks-us16.nordvpn.com
-66.151.209.235 # socks-us22.nordvpn.com
-66.151.209.243 # socks-us25.nordvpn.com
-66.151.209.251 # socks-us17.nordvpn.com
 66.203.113.18 # cl-002.totallyacdn.com,cl-002.whiskergalaxy.com,cl-002.windscribe.com,scl-373-ike.whiskergalaxy.com,scl-373-ike.windscribe.com
 66.203.113.19 # cl-001.totallyacdn.com,cl-001.whiskergalaxy.com,cl-001.windscribe.com,scl-373-ike.whiskergalaxy.com,scl-373-ike.windscribe.com
 66.203.113.131 # cl.whiskergalaxy.com,cl.windscribe.com,scl-373.whiskergalaxy.com,scl-373.windscribe.com
@@ -2242,7 +2231,6 @@
 77.247.178.58
 77.247.178.94
 77.247.178.97
-77.247.178.106 # node-nl-194.protonvpn.net
 77.247.178.107
 77.247.178.109
 77.247.178.110
@@ -2251,7 +2239,6 @@
 77.247.178.147
 77.247.178.154
 77.247.178.163
-77.247.178.180 # node-nl-08.protonvpn.net
 77.247.178.199
 78.31.67.136 # de186.freeconnect.link
 78.110.161.147 # uk2513.nordvpn.com
@@ -5381,10 +5368,10 @@
 108.61.209.135 # fr1.prmsrvs.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
-108.156.211.6 # ca941.l304.r603.fastcloudcdn.net
-108.156.211.52 # ca941.l304.r603.fastcloudcdn.net
-108.156.211.85 # ca941.l304.r603.fastcloudcdn.net
-108.156.211.121 # ca941.l304.r603.fastcloudcdn.net
+108.139.1.34 # ca941.l304.r603.fastcloudcdn.net
+108.139.1.37 # ca941.l304.r603.fastcloudcdn.net
+108.139.1.112 # ca941.l304.r603.fastcloudcdn.net
+108.139.1.115 # ca941.l304.r603.fastcloudcdn.net
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
 108.181.51.211 # kr77.nordvpn.com
@@ -6005,104 +5992,9 @@
 140.82.50.40 # zagent2611.hola.org,zagent2611.holavpn.net,zagent2611.holax.io
 140.82.54.236 # fr10.prmsrvs.com
 140.82.62.186 # zagent2531.hola.org,zagent2531.holavpn.net,zagent2531.holax.io
-140.99.188.3 # us10226.nordvpn.com
-140.99.188.11 # us10221.nordvpn.com
-140.99.188.19 # us10220.nordvpn.com
-140.99.188.27 # us10219.nordvpn.com
-140.99.188.35 # us10249.nordvpn.com
-140.99.188.43 # us10222.nordvpn.com
-140.99.188.51 # us10209.nordvpn.com
-140.99.188.59 # us10250.nordvpn.com
-140.99.188.67 # us10203.nordvpn.com
-140.99.188.83 # us10204.nordvpn.com
-140.99.188.91 # us10205.nordvpn.com
-140.99.188.99 # us10206.nordvpn.com
-140.99.188.107 # us10214.nordvpn.com
-140.99.188.115 # us10215.nordvpn.com
-140.99.188.123 # us10216.nordvpn.com
-140.99.188.131 # us10207.nordvpn.com
-140.99.188.139 # us10208.nordvpn.com
-140.99.188.147 # us10213.nordvpn.com
-140.99.188.155 # us10210.nordvpn.com
-140.99.188.163 # us10211.nordvpn.com
-140.99.188.171 # us10212.nordvpn.com
-140.99.188.179 # socks-us26.nordvpn.com
-140.99.188.187 # us10218.nordvpn.com
-140.99.188.195 # us10224.nordvpn.com
-140.99.188.203 # us10230.nordvpn.com
-140.99.188.211 # us10231.nordvpn.com
-140.99.188.219 # us10223.nordvpn.com
-140.99.188.227 # us10217.nordvpn.com
-140.99.188.235 # us10225.nordvpn.com
-140.99.188.243 # us10248.nordvpn.com
-140.99.188.251 # us10229.nordvpn.com
-140.99.189.3 # us10062.nordvpn.com
-140.99.189.11 # us10063.nordvpn.com
-140.99.189.19 # us10064.nordvpn.com
-140.99.189.27 # us10069.nordvpn.com
-140.99.189.35 # us10071.nordvpn.com
-140.99.189.43 # us10200.nordvpn.com
-140.99.189.51 # us10072.nordvpn.com
-140.99.189.59 # us10073.nordvpn.com
-140.99.189.67 # us10074.nordvpn.com
-140.99.189.75 # us10075.nordvpn.com
 140.99.189.83 # us10076.nordvpn.com
-140.99.189.91 # us10077.nordvpn.com
-140.99.189.99 # us10078.nordvpn.com
-140.99.189.107 # us10079.nordvpn.com
-140.99.189.115 # us10080.nordvpn.com
-140.99.189.123 # us10081.nordvpn.com
-140.99.189.131 # us10082.nordvpn.com
-140.99.189.163 # us10251.nordvpn.com
-140.99.201.3 # us10055.nordvpn.com
-140.99.201.11 # us10056.nordvpn.com
-140.99.201.19 # us10057.nordvpn.com
-140.99.201.27 # us10202.nordvpn.com
-140.99.201.35 # us10058.nordvpn.com
-140.99.201.43 # us10091.nordvpn.com
-140.99.201.51 # us10089.nordvpn.com
 140.99.201.59 # us10092.nordvpn.com
-140.99.201.67 # us10090.nordvpn.com
-140.99.201.75 # us10093.nordvpn.com
-140.99.201.83 # us10054.nordvpn.com
 140.99.201.91 # us10094.nordvpn.com
-140.99.201.99 # us10065.nordvpn.com
-140.99.201.107 # us10095.nordvpn.com
-140.99.201.115 # us10066.nordvpn.com
-140.99.201.123 # us10096.nordvpn.com
-140.99.201.131 # us10067.nordvpn.com
-140.99.201.139 # us10097.nordvpn.com
-140.99.201.147 # us10068.nordvpn.com
-140.99.201.155 # us10201.nordvpn.com
-140.99.201.163 # us10070.nordvpn.com
-140.99.201.171 # us10059.nordvpn.com
-140.99.201.179 # us10060.nordvpn.com
-140.99.201.187 # us10061.nordvpn.com
-140.99.201.195 # us10087.nordvpn.com
-140.99.201.203 # us10083.nordvpn.com
-140.99.201.211 # us10098.nordvpn.com
-140.99.201.227 # us10099.nordvpn.com
-140.99.201.235 # us10085.nordvpn.com
-140.99.201.243 # us10088.nordvpn.com
-140.99.201.251 # us10086.nordvpn.com
-140.99.215.3 # us10232.nordvpn.com
-140.99.215.11 # us10233.nordvpn.com
-140.99.215.19 # us10234.nordvpn.com
-140.99.215.27 # us10235.nordvpn.com
-140.99.215.35 # us10236.nordvpn.com
-140.99.215.43 # us10237.nordvpn.com
-140.99.215.51 # us10238.nordvpn.com
-140.99.215.59 # us10239.nordvpn.com
-140.99.215.67 # us10240.nordvpn.com
-140.99.215.75 # us10241.nordvpn.com
-140.99.215.83 # us10242.nordvpn.com
-140.99.215.91 # us10243.nordvpn.com
-140.99.215.99 # us10244.nordvpn.com
-140.99.215.107 # us10245.nordvpn.com
-140.99.215.115 # us10246.nordvpn.com
-140.99.215.123 # us10247.nordvpn.com
-140.99.215.131 # us10228.nordvpn.com
-140.99.215.139 # us10227.nordvpn.com
 140.238.98.142 # 140-238-98-142.server.telleport.me
 141.98.100.123 # uk1944.nordvpn.com
 141.98.100.171 # uk1945.nordvpn.com
@@ -10041,16 +9933,12 @@
 185.107.56.238
 185.107.56.239
 185.107.56.251
-185.107.57.1 # node-nl-46.protonvpn.net
 185.107.57.6 # nl-free-161.protonvpn.net,node-nl-200.protonvpn.net
 185.107.57.7
 185.107.57.8
 185.107.57.9
 185.107.57.10
-185.107.57.49 # node-nl-48.protonvpn.net
-185.107.57.50 # node-nl-49.protonvpn.net
 185.107.80.36 # node-nl-203.protonvpn.net
-185.107.80.49 # node-nl-202.protonvpn.net
 185.107.80.68
 185.107.80.83
 185.107.80.87
@@ -10078,7 +9966,6 @@
 185.107.80.193
 185.107.80.195
 185.107.80.215
-185.107.80.216 # node-nl-36.protonvpn.net
 185.107.81.129 # ams-229-ike.whiskergalaxy.com,ams-229-ike.windscribe.com,nl-037.totallyacdn.com,nl-037.whiskergalaxy.com,nl-037.windscribe.com
 185.107.81.130 # ams-229.whiskergalaxy.com,ams-229.windscribe.com,nl.whiskergalaxy.com,nl.windscribe.com
 185.107.81.131 # ams-229-wg.whiskergalaxy.com
@@ -10090,7 +9977,6 @@
 185.107.83.10
 185.107.83.17
 185.107.83.20
-185.107.95.209 # node-nl-20.protonvpn.net
 185.108.129.51 # ie10.prmsrvs.com
 185.108.129.52 # ie9.prmsrvs.com
 185.108.129.53 # ie8.prmsrvs.com
@@ -10332,7 +10218,6 @@
 185.159.157.25
 185.159.157.26
 185.159.157.27 # ch-rs-01a.protonvpn.net
-185.159.157.28 # ch-nl-01a.protonvpn.net
 185.159.157.29 # ch-us-01g.protonvpn.net
 185.159.157.30 # ch-us-01h.protonvpn.net
 185.159.157.31 # ch-ca-01e.protonvpn.net
@@ -10372,7 +10257,6 @@
 185.159.157.80 # ch-jp-01a.protonvpn.net
 185.159.157.81 # ch-lv-01b.protonvpn.net
 185.159.157.82 # ch-in-01b.protonvpn.net
-185.159.157.83 # ch-nl-01b.protonvpn.net
 185.159.157.84 # ch-id-01a.protonvpn.net
 185.159.157.85 # ch-sk-01b.protonvpn.net
 185.159.157.86 # ch-us-01b.protonvpn.net
@@ -10445,8 +10329,6 @@
 185.159.157.175 # ch-us-01a.protonvpn.net
 185.159.157.176
 185.159.157.177 # ch-ca-01j.protonvpn.net
-185.159.157.178 # ch-nl-01c.protonvpn.net
-185.159.157.179 # ch-nl-01d.protonvpn.net
 185.159.157.183 # ch-de-01b.protonvpn.net
 185.159.157.184 # ch-de-01d.protonvpn.net
 185.159.157.186 # ch-ar-01a.protonvpn.net
@@ -10523,7 +10405,6 @@
 185.159.158.59 # is-ru-01c.protonvpn.net
 185.159.158.100
 185.159.158.101
-185.159.158.105 # is-nl-01a.protonvpn.net
 185.159.158.107
 185.159.158.108
 185.159.158.117 # is-ca-01e.protonvpn.net
@@ -10546,8 +10427,6 @@
 185.159.158.161 # is-us-01j.protonvpn.net
 185.159.158.162 # is-us-01k.protonvpn.net
 185.159.158.163 # is-us-01l.protonvpn.net
-185.159.158.173 # is-nl-01f.protonvpn.net
-185.159.158.176 # is-nl-01i.protonvpn.net
 185.159.158.177 # is-br-01b.protonvpn.net
 185.159.158.178 # is-de-01b.protonvpn.net
 185.159.158.179 # is-de-01g.protonvpn.net
@@ -15027,6 +14906,7 @@
 2a02:6ea0:c803:1315::10 # node-us-72.protonvpn.net
 2a02:6ea0:c820::10 # node-us-61.protonvpn.net
 2a02:6ea0:cb02:2304::10 # node-at-05.protonvpn.net
+2a02:6ea0:cb02:2305::10 # node-at-06.protonvpn.net
 2a02:6ea0:cc02:1320::10 # node-us-73.protonvpn.net
 2a02:6ea0:cc09::10 # node-us-60.protonvpn.net
 2a02:6ea0:ce10::10 # node-pl-05.protonvpn.net
