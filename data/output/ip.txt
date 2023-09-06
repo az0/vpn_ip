@@ -265,10 +265,6 @@
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
 16.163.31.20 # 16-163-31-20.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.74.164 # blade1.losangeles-rack408.nodes.gen4.ninja
 23.19.74.165 # blade2.losangeles-rack408.nodes.gen4.ninja
@@ -467,7 +463,7 @@
 31.187.69.78 # fr893.nordvpn.com
 31.187.69.89 # fr894.nordvpn.com
 31.187.69.100 # fr895.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -2120,7 +2116,6 @@
 67.21.32.145 # clt-303.whiskergalaxy.com,clt-303.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 67.21.32.146 # clt-303-wg.whiskergalaxy.com
 67.213.219.209 # prox-us.pointtoserver.com
-68.183.202.33 # ca-35.sunnetdevelop.pw
 68.235.35.11 # ord-63-ike.whiskergalaxy.com,ord-63-ike.windscribe.com,us-east-071.totallyacdn.com,us-east-071.whiskergalaxy.com,us-east-071.windscribe.com
 68.235.35.12 # ord-63.whiskergalaxy.com,ord-63.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 68.235.35.13 # ord-63-wg.whiskergalaxy.com
@@ -5390,6 +5385,10 @@
 108.61.209.135 # fr1.prmsrvs.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
+108.139.1.34 # ca941.l304.r603.fastcloudcdn.net
+108.139.1.37 # ca941.l304.r603.fastcloudcdn.net
+108.139.1.112 # ca941.l304.r603.fastcloudcdn.net
+108.139.1.115 # ca941.l304.r603.fastcloudcdn.net
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
 108.181.51.211 # kr77.nordvpn.com
@@ -8371,6 +8370,7 @@
 156.146.59.25 # blade24.newyork-rack452.nodes.gen4.ninja
 156.146.59.27 # blade1.newyork-rack451.nodes.gen4.ninja
 156.146.59.28 # blade2.newyork-rack451.nodes.gen4.ninja
+156.146.59.29 # blade3.newyork-rack451.nodes.gen4.ninja
 156.146.59.30 # blade4.newyork-rack451.nodes.gen4.ninja
 156.146.59.32 # blade6.newyork-rack451.nodes.gen4.ninja
 156.146.59.35 # blade9.newyork-rack451.nodes.gen4.ninja
@@ -9684,16 +9684,6 @@
 185.51.134.90 # blade8.athens-rack406.nodes.gen4.ninja
 185.51.134.91 # blade9.athens-rack406.nodes.gen4.ninja
 185.51.134.92 # blade10.athens-rack406.nodes.gen4.ninja
-185.51.134.163 # blade1.athens-rack404.nodes.gen4.ninja
-185.51.134.165 # blade3.athens-rack404.nodes.gen4.ninja
-185.51.134.166 # blade4.athens-rack404.nodes.gen4.ninja
-185.51.134.167 # blade5.athens-rack404.nodes.gen4.ninja
-185.51.134.168 # blade6.athens-rack404.nodes.gen4.ninja
-185.51.134.169 # blade7.athens-rack404.nodes.gen4.ninja
-185.51.134.170 # blade8.athens-rack404.nodes.gen4.ninja
-185.51.134.172 # blade10.athens-rack404.nodes.gen4.ninja
-185.51.134.173 # blade11.athens-rack404.nodes.gen4.ninja
-185.51.134.174 # blade12.athens-rack404.nodes.gen4.ninja
 185.51.134.194 # node-gr-01.protonvpn.net
 185.51.134.195
 185.51.134.196
@@ -12231,6 +12221,50 @@
 191.96.150.207 # blade48.newyork-rack415.nodes.gen4.ninja
 191.96.150.208 # blade49.newyork-rack415.nodes.gen4.ninja
 191.96.150.209 # blade50.newyork-rack415.nodes.gen4.ninja
+191.96.168.7 # blade1.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.10 # blade4.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.11 # blade5.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.12 # blade6.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.13 # blade7.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.14 # blade8.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.15 # blade9.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.16 # blade10.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.17 # blade11.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.18 # blade12.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.19 # blade13.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.20 # blade14.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.21 # blade15.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.22 # blade16.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.23 # blade17.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.24 # blade18.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.25 # blade19.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.26 # blade20.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.27 # blade21.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.29 # blade23.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.30 # blade24.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.31 # blade25.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.32 # blade26.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.34 # blade28.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.36 # blade30.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.37 # blade31.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.38 # blade32.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.39 # blade33.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.40 # blade34.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.41 # blade35.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.42 # blade36.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.43 # blade37.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.44 # blade38.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.45 # blade39.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.46 # blade40.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.47 # blade41.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.49 # blade43.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.50 # blade44.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.51 # blade45.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.52 # blade46.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.53 # blade47.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.54 # blade48.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.56 # blade50.amsterdam-rack405.nodes.gen4.ninja
+191.96.168.57 # blade51.amsterdam-rack405.nodes.gen4.ninja
 191.96.168.110 # blade2.amsterdam-rack408.nodes.gen4.ninja
 191.96.168.111 # blade3.amsterdam-rack408.nodes.gen4.ninja
 191.96.168.112 # blade4.amsterdam-rack408.nodes.gen4.ninja
@@ -12821,8 +12855,6 @@
 193.31.40.14 # sc-de-004.whiskergalaxy.com,sc-de-004.windscribe.com
 193.31.40.34 # sc-de-003.whiskergalaxy.com,sc-de-003.windscribe.com
 193.36.118.226 # uk-030.totallyacdn.com,uk-030.whiskergalaxy.com,uk-030.windscribe.com
-193.36.118.227
-193.36.118.228
 193.36.118.242 # edi-369-ike.whiskergalaxy.com,edi-369-ike.windscribe.com,uk-026.totallyacdn.com,uk-026.whiskergalaxy.com,uk-026.windscribe.com
 193.36.118.243 # edi-369.whiskergalaxy.com,edi-369.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
 193.36.118.244 # edi-369-wg.whiskergalaxy.com
@@ -14002,9 +14034,7 @@
 202.74.239.10 # cgk-391-ike.whiskergalaxy.com,cgk-391-ike.windscribe.com,id-007.totallyacdn.com,id-007.whiskergalaxy.com,id-007.windscribe.com
 202.74.239.11 # cgk-391.whiskergalaxy.com,cgk-391.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
 202.74.239.12 # cgk-391-wg.whiskergalaxy.com
-202.74.239.90 # cgk-391-ike.whiskergalaxy.com,cgk-391-ike.windscribe.com,id-008.totallyacdn.com,id-008.whiskergalaxy.com,id-008.windscribe.com
-202.74.239.91 # cgk-391.whiskergalaxy.com,cgk-391.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
-202.74.239.92 # cgk-391-wg.whiskergalaxy.com
+202.74.239.90 # id-008.totallyacdn.com,id-008.whiskergalaxy.com,id-008.windscribe.com
 202.87.221.137 # my39.nordvpn.com
 202.87.221.198 # my37.nordvpn.com
 202.87.221.252 # my38.nordvpn.com
