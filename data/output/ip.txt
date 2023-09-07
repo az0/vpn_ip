@@ -61,6 +61,10 @@
 2.58.241.72
 2.58.241.73
 2.58.241.74
+3.162.174.12 # ca941.l304.r603.fastcloudcdn.net
+3.162.174.19 # ca941.l304.r603.fastcloudcdn.net
+3.162.174.107 # ca941.l304.r603.fastcloudcdn.net
+3.162.174.113 # ca941.l304.r603.fastcloudcdn.net
 5.8.16.146 # node-ru-03.protonvpn.net
 5.8.16.147
 5.8.16.148
@@ -265,10 +269,6 @@
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
 16.163.31.20 # 16-163-31-20.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.74.164 # blade1.losangeles-rack408.nodes.gen4.ninja
 23.19.74.165 # blade2.losangeles-rack408.nodes.gen4.ninja
@@ -467,7 +467,7 @@
 31.187.69.78 # fr893.nordvpn.com
 31.187.69.89 # fr894.nordvpn.com
 31.187.69.100 # fr895.nordvpn.com
-34.102.239.211 # email.mg.windscribe.com
+34.110.180.34 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -7856,6 +7856,31 @@
 154.6.147.37 # blade28.melbourne-rack403.nodes.gen4.ninja
 154.6.147.38 # blade29.melbourne-rack403.nodes.gen4.ninja
 154.6.147.39 # blade30.melbourne-rack403.nodes.gen4.ninja
+154.6.147.40 # blade1.melbourne-rack404.nodes.gen4.ninja
+154.6.147.41 # blade2.melbourne-rack404.nodes.gen4.ninja
+154.6.147.42 # blade3.melbourne-rack404.nodes.gen4.ninja
+154.6.147.43 # blade4.melbourne-rack404.nodes.gen4.ninja
+154.6.147.44 # blade5.melbourne-rack404.nodes.gen4.ninja
+154.6.147.45 # blade6.melbourne-rack404.nodes.gen4.ninja
+154.6.147.46 # blade7.melbourne-rack404.nodes.gen4.ninja
+154.6.147.47 # blade8.melbourne-rack404.nodes.gen4.ninja
+154.6.147.48 # blade9.melbourne-rack404.nodes.gen4.ninja
+154.6.147.50 # blade11.melbourne-rack404.nodes.gen4.ninja
+154.6.147.51 # blade12.melbourne-rack404.nodes.gen4.ninja
+154.6.147.52 # blade13.melbourne-rack404.nodes.gen4.ninja
+154.6.147.53 # blade14.melbourne-rack404.nodes.gen4.ninja
+154.6.147.54 # blade15.melbourne-rack404.nodes.gen4.ninja
+154.6.147.55 # blade16.melbourne-rack404.nodes.gen4.ninja
+154.6.147.56 # blade17.melbourne-rack404.nodes.gen4.ninja
+154.6.147.57 # blade18.melbourne-rack404.nodes.gen4.ninja
+154.6.147.58 # blade19.melbourne-rack404.nodes.gen4.ninja
+154.6.147.59 # blade20.melbourne-rack404.nodes.gen4.ninja
+154.6.147.61 # blade22.melbourne-rack404.nodes.gen4.ninja
+154.6.147.64 # blade25.melbourne-rack404.nodes.gen4.ninja
+154.6.147.65 # blade26.melbourne-rack404.nodes.gen4.ninja
+154.6.147.66 # blade27.melbourne-rack404.nodes.gen4.ninja
+154.6.147.67 # blade28.melbourne-rack404.nodes.gen4.ninja
+154.6.147.68 # blade29.melbourne-rack404.nodes.gen4.ninja
 154.16.49.72 # blade1.washington-rack406.nodes.gen4.ninja
 154.16.49.73 # blade2.washington-rack406.nodes.gen4.ninja
 154.16.49.74 # blade3.washington-rack406.nodes.gen4.ninja
@@ -9248,9 +9273,9 @@
 179.48.249.219 # cr39.nordvpn.com
 179.48.249.227 # cr40.nordvpn.com
 179.48.249.235 # cr41.nordvpn.com
-179.49.5.122 # ec-002.totallyacdn.com,ec-002.whiskergalaxy.com,ec-002.windscribe.com,uio-385-ike.whiskergalaxy.com,uio-385-ike.windscribe.com
-179.49.5.123 # ec.whiskergalaxy.com,ec.windscribe.com,uio-385.whiskergalaxy.com,uio-385.windscribe.com
-179.49.5.124 # uio-385-wg.whiskergalaxy.com
+179.49.5.122 # ec-002.totallyacdn.com,ec-002.whiskergalaxy.com,ec-002.windscribe.com
+179.49.5.123
+179.49.5.124
 179.61.197.126 # blade1.toronto-rack401.nodes.gen4.ninja
 179.61.197.127 # blade2.toronto-rack401.nodes.gen4.ninja
 179.61.197.128 # blade3.toronto-rack401.nodes.gen4.ninja
