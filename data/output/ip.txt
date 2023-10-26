@@ -266,6 +266,10 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
+18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -324,14 +328,13 @@
 23.108.51.15 # mia-326-wg.whiskergalaxy.com
 23.108.96.79 # sg5.trafcfy.com
 23.154.160.3 # mx05.windscribe.com
-23.154.160.7 # admin-staging.int.windscribe.com,admin.int.windscribe.com,alertmanager-ca1.int.windscribe.com,alertmanager-ca3.int.windscribe.com,alertmanager-hq.int.windscribe.com,alertmanager.ca1.int.windscribe.com,alertmanager.hq.int.windscribe.com,alt1.pms1.mgmt.ca1.int.windscribe.com,alt2.pms1.mgmt.ca1.int.windscribe.com,am01-ca1.int.windscribe.com,am01-ca3.int.windscribe.com,am01-hq.int.windscribe.com,am01.mgmt.ca1.int.windscribe.com,am01.mgmt.hq.int.windscribe.com,am02-ca1.int.windscribe.com,am02-ca3.int.windscribe.com,am02-hq.int.windscribe.com,am02.mgmt.ca1.int.windscribe.com,am02.mgmt.hq.int.windscribe.com,am03-ca1.int.windscribe.com,am03-ca3.int.windscribe.com,am03-hq.int.windscribe.com,am03.mgmt.ca1.int.windscribe.com,am03.mgmt.hq.int.windscribe.com,assetmgmt.int.windscribe.com,auth.jitsi-test.int.windscribe.com,bbb.int.windscribe.com,bw.int.windscribe.com,bwweb.int.windscribe.com,ca3.int.windscribe.com,console.int.windscribe.com,controld-dev-admin.int.windscribe.com,cu-dev.int.windscribe.com,directus.prd.ca1.int.windscribe.com,du-dev.int.windscribe.com,du.int.windscribe.com,elearning.int.windscribe.com,gitlab-test.int.windscribe.com,gitlab.prd.ca1.int.windscribe.com,go.int.windscribe.com,graf.int.windscribe.com,grafana-ca1.int.windscribe.com,grafana-ca3.int.windscribe.com,grafana-hq.int.windscribe.com,grafana.int.windscribe.com,handbook.dev2.ca1.int.windscribe.com,handbook.int.windscribe.com,hub.int.windscribe.com,hub2.int.windscribe.com,internal.auth.jitsi-test.int.windscribe.com,jitsi-test.int.windscribe.com,lbs3a.prd.ca1.int.windscribe.com,lbs3a.prd.ca3.int.windscribe.com,lbs3b.prd.ca1.int.windscribe.com,lbs3b.prd.ca3.int.windscribe.com,leetest0001.dev2.ca1.int.windscribe.com,maven.int.windscribe.com,meet02.int.windscribe.com,minio01.prd.ca3.int.windscribe.com,minio01.stor.ca1.int.windscribe.com,minio02.prd.ca3.int.windscribe.com,minio02.stor.ca1.int.windscribe.com,minio03.prd.ca3.int.windscribe.com,minio03.stor.ca1.int.windscribe.com,minio04.prd.ca3.int.windscribe.com,minio04.stor.ca1.int.windscribe.com,minio05.prd.ca3.int.windscribe.com,minio05.stor.ca1.int.windscribe.com,minio06.prd.ca3.int.windscribe.com,minio06.stor.ca1.int.windscribe.com,mm.int.windscribe.com,monitor.int.windscribe.com,mqtt.int.windscribe.com,nautobot.dev2.ca1.int.windscribe.com,netbox.int.windscribe.com,nextcloud.int.windscribe.com,nexus.int.windscribe.com,npm.int.windscribe.com,nrm.int.windscribe.com,office.nextcloud.int.windscribe.com,onboarding-test-vm-0001.dev2.ca1.int.windscribe.com,pki-do.ca1.int.windscribe.com,pki-do.int.windscribe.com,pma.int.windscribe.com,pms1.mgmt.ca1.int.windscribe.com,pypi.int.windscribe.com,qm-staging.int.windscribe.com,qm.int.windscribe.com,qm.prd.ca1.int.windscribe.com,qm.prd.ca3.int.windscribe.com,qm.stg.ca1.int.windscribe.com,qm.stg.ca3.int.windscribe.com,rc.int.windscribe.com,recorder.jitsi-test.int.windscribe.com,s3.int.windscribe.com,s3.prd.ca3.int.windscribe.com,share.int.windscribe.com,splunk-hq.int.windscribe.com,splunk.ca3.int.windscribe.com,splunk.int.windscribe.com,start.int.windscribe.com,stun.int.windscribe.com,support-staging.int.windscribe.com,support.int.windscribe.com,test-chain-001.int.windscribe.com,test-chain-002.int.windscribe.com,test-chain-003.int.windscribe.com,test-chain-004.int.windscribe.com,test-chain-005.int.windscribe.com,test-chain-006.int.windscribe.com,test-chain-007.int.windscribe.com,test-chain-008.int.windscribe.com,test-chain-009.int.windscribe.com,test-chain-010.int.windscribe.com,test.int.windscribe.com,test00001.stg.ca3.int.windscribe.com,test2.int.windscribe.com,test3.int.windscribe.com,testing.int.windscribe.com,tor1.ctrl.zt.int.windscribe.com,turn.int.windscribe.com,vault.int.windscribe.com,vcm01.mgmt.ca.int.windscribe.com,vcm01.mgmt.ca1.int.windscribe.com,vcm01.mgmt.hq.int.windscribe.com,vcm01.supr.ca3.int.windscribe.com,vcm02.mgmt.ca.int.windscribe.com,vcm02.mgmt.ca1.int.windscribe.com,vcm02.mgmt.hq.int.windscribe.com,vcm02.supr.ca3.int.windscribe.com,vmc02.supr.ca3.int.windscribe.com,wifi.int.windscribe.com,wiki.int.windscribe.com
 23.154.160.17 # mx-out-23.windscribe.com
 23.154.160.18 # mx-out-24.windscribe.com
 23.154.160.19 # mx-out-25.windscribe.com
 23.154.160.20 # mx-out-26.windscribe.com
 23.154.160.26 # dummy.windscribe.com,files-test.windscribe.com
 23.154.160.27 # dummy.windscribe.com,files-test.windscribe.com
-23.154.160.36 # gitlab.int.windscribe.com,registry.gitlab.int.windscribe.com
+23.154.160.36 # admin-staging.int.windscribe.com,admin.int.windscribe.com,alertmanager-ca1.int.windscribe.com,alertmanager-ca3.int.windscribe.com,alertmanager-hq.int.windscribe.com,alertmanager.ca1.int.windscribe.com,alertmanager.hq.int.windscribe.com,alt1.pms1.mgmt.ca1.int.windscribe.com,alt2.pms1.mgmt.ca1.int.windscribe.com,am01-ca1.int.windscribe.com,am01-ca3.int.windscribe.com,am01-hq.int.windscribe.com,am01.mgmt.ca1.int.windscribe.com,am01.mgmt.hq.int.windscribe.com,am02-ca1.int.windscribe.com,am02-ca3.int.windscribe.com,am02-hq.int.windscribe.com,am02.mgmt.ca1.int.windscribe.com,am02.mgmt.hq.int.windscribe.com,am03-ca1.int.windscribe.com,am03-ca3.int.windscribe.com,am03-hq.int.windscribe.com,am03.mgmt.ca1.int.windscribe.com,am03.mgmt.hq.int.windscribe.com,assetmgmt.int.windscribe.com,auth.jitsi-test.int.windscribe.com,bbb.int.windscribe.com,bw.int.windscribe.com,bwweb.int.windscribe.com,ca3.int.windscribe.com,console.int.windscribe.com,controld-dev-admin.int.windscribe.com,cu-dev.int.windscribe.com,directus.prd.ca1.int.windscribe.com,du-dev.int.windscribe.com,du.int.windscribe.com,elearning.int.windscribe.com,gitlab-test.int.windscribe.com,gitlab.int.windscribe.com,gitlab.prd.ca1.int.windscribe.com,go.int.windscribe.com,graf.int.windscribe.com,grafana-ca1.int.windscribe.com,grafana-ca3.int.windscribe.com,grafana-hq.int.windscribe.com,grafana.int.windscribe.com,handbook.dev2.ca1.int.windscribe.com,handbook.int.windscribe.com,hub.int.windscribe.com,hub2.int.windscribe.com,internal.auth.jitsi-test.int.windscribe.com,jitsi-test.int.windscribe.com,lbs3a.prd.ca1.int.windscribe.com,lbs3a.prd.ca3.int.windscribe.com,lbs3b.prd.ca1.int.windscribe.com,lbs3b.prd.ca3.int.windscribe.com,leetest0001.dev2.ca1.int.windscribe.com,maven.int.windscribe.com,meet02.int.windscribe.com,minio01.prd.ca3.int.windscribe.com,minio01.stor.ca1.int.windscribe.com,minio02.prd.ca3.int.windscribe.com,minio02.stor.ca1.int.windscribe.com,minio03.prd.ca3.int.windscribe.com,minio03.stor.ca1.int.windscribe.com,minio04.prd.ca3.int.windscribe.com,minio04.stor.ca1.int.windscribe.com,minio05.prd.ca3.int.windscribe.com,minio05.stor.ca1.int.windscribe.com,minio06.prd.ca3.int.windscribe.com,minio06.stor.ca1.int.windscribe.com,mm.int.windscribe.com,monitor.int.windscribe.com,mqtt.int.windscribe.com,nautobot.dev2.ca1.int.windscribe.com,netbox.int.windscribe.com,nextcloud.int.windscribe.com,nexus.int.windscribe.com,npm.int.windscribe.com,nrm.int.windscribe.com,office.nextcloud.int.windscribe.com,onboarding-test-vm-0001.dev2.ca1.int.windscribe.com,pki-do.ca1.int.windscribe.com,pki-do.int.windscribe.com,pma.int.windscribe.com,pms1.mgmt.ca1.int.windscribe.com,pypi.int.windscribe.com,qm-staging.int.windscribe.com,qm.int.windscribe.com,qm.prd.ca1.int.windscribe.com,qm.prd.ca3.int.windscribe.com,qm.stg.ca1.int.windscribe.com,qm.stg.ca3.int.windscribe.com,rc.int.windscribe.com,recorder.jitsi-test.int.windscribe.com,registry.gitlab.int.windscribe.com,s3.int.windscribe.com,s3.prd.ca3.int.windscribe.com,share.int.windscribe.com,splunk-hq.int.windscribe.com,splunk.ca3.int.windscribe.com,splunk.int.windscribe.com,start.int.windscribe.com,stun.int.windscribe.com,support-staging.int.windscribe.com,support.int.windscribe.com,test-chain-001.int.windscribe.com,test-chain-002.int.windscribe.com,test-chain-003.int.windscribe.com,test-chain-004.int.windscribe.com,test-chain-005.int.windscribe.com,test-chain-006.int.windscribe.com,test-chain-007.int.windscribe.com,test-chain-008.int.windscribe.com,test-chain-009.int.windscribe.com,test-chain-010.int.windscribe.com,test.int.windscribe.com,test00001.stg.ca3.int.windscribe.com,test2.int.windscribe.com,test3.int.windscribe.com,testing.int.windscribe.com,tor1.ctrl.zt.int.windscribe.com,turn.int.windscribe.com,vault.int.windscribe.com,vcm01.mgmt.ca.int.windscribe.com,vcm01.mgmt.ca1.int.windscribe.com,vcm01.mgmt.hq.int.windscribe.com,vcm01.supr.ca3.int.windscribe.com,vcm02.mgmt.ca.int.windscribe.com,vcm02.mgmt.ca1.int.windscribe.com,vcm02.mgmt.hq.int.windscribe.com,vcm02.supr.ca3.int.windscribe.com,vmc02.supr.ca3.int.windscribe.com,wifi.int.windscribe.com,wiki.int.windscribe.com
 23.161.192.144 # wf-us-004.whiskergalaxy.com,wf-us-004.windscribe.com
 23.161.192.160 # wf-us-003.whiskergalaxy.com,wf-us-003.windscribe.com
 23.161.192.176 # wf-us-002.whiskergalaxy.com,wf-us-002.windscribe.com
@@ -458,7 +461,7 @@
 31.187.69.78 # fr893.nordvpn.com
 31.187.69.89 # fr894.nordvpn.com
 31.187.69.100 # fr895.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -3265,9 +3268,7 @@
 84.252.115.6
 84.252.115.7
 84.252.115.8
-85.10.56.128 # hr-002.totallyacdn.com,hr-002.whiskergalaxy.com,hr-002.windscribe.com,zag-252-ike.whiskergalaxy.com,zag-252-ike.windscribe.com
-85.10.56.129 # hr.whiskergalaxy.com,hr.windscribe.com,zag-252.whiskergalaxy.com,zag-252.windscribe.com
-85.10.56.130 # zag-252-wg.whiskergalaxy.com
+85.10.56.128 # hr-002.totallyacdn.com,hr-002.whiskergalaxy.com,hr-002.windscribe.com
 85.132.252.34 # node-cy-01.protonvpn.net
 85.132.252.35
 85.132.252.36
@@ -3545,10 +3546,6 @@
 89.37.173.246 # ch385.nordvpn.com
 89.38.97.138 # node-nl-103.protonvpn.net
 89.38.97.196 # node-nl-123.protonvpn.net
-89.38.97.198
-89.38.97.199
-89.38.97.206
-89.38.97.215
 89.38.99.72 # nl-free-129.protonvpn.net,node-nl-169.protonvpn.net
 89.38.99.79
 89.38.99.82
@@ -3572,10 +3569,6 @@
 89.39.107.191
 89.39.107.192
 89.39.107.193
-89.39.107.194
-89.39.107.195
-89.39.107.196
-89.39.107.197
 89.39.107.198
 89.39.107.199
 89.39.107.200
@@ -4431,9 +4424,7 @@
 95.143.177.66 # ru.whiskergalaxy.com,ru.windscribe.com,svo-346.whiskergalaxy.com,svo-346.windscribe.com
 95.143.177.67 # svo-346-wg.whiskergalaxy.com
 95.143.177.69 # ru-022.totallyacdn.com,ru-022.whiskergalaxy.com,ru-022.windscribe.com,svo-346-ike.whiskergalaxy.com,svo-346-ike.windscribe.com
-95.143.177.98 # ru-021.totallyacdn.com,ru-021.whiskergalaxy.com,ru-021.windscribe.com,svo-346-ike.whiskergalaxy.com,svo-346-ike.windscribe.com
-95.143.177.99 # svo-346-wg.whiskergalaxy.com
-95.143.177.101 # ru.whiskergalaxy.com,ru.windscribe.com,svo-346.whiskergalaxy.com,svo-346.windscribe.com
+95.143.177.98 # ru-021.totallyacdn.com,ru-021.whiskergalaxy.com,ru-021.windscribe.com
 95.174.64.35 # it221.nordvpn.com
 95.174.65.163 # dk240.nordvpn.com
 95.174.65.171 # dk241.nordvpn.com
@@ -5424,10 +5415,6 @@
 108.61.209.135 # fr1.prmsrvs.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
-108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
 108.181.51.211 # kr77.nordvpn.com
@@ -5584,10 +5571,14 @@
 136.244.117.116 # fr3.prmsrvs.com
 138.68.14.4 # acctmgr-us-1.windscribe.com
 138.68.146.209 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
+138.68.150.226 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 138.68.154.172 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 138.68.158.5 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
+138.68.159.23 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
+138.68.159.212 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 138.68.164.164 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 138.68.164.253 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
+138.68.168.122 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 138.186.141.154 # bog-360-ike.whiskergalaxy.com,bog-360-ike.windscribe.com,co-002.totallyacdn.com,co-002.whiskergalaxy.com,co-002.windscribe.com
 138.186.141.155 # bog-360.whiskergalaxy.com,bog-360.windscribe.com,co.whiskergalaxy.com,co.windscribe.com
 138.186.141.156 # bog-360-wg.whiskergalaxy.com
@@ -5633,10 +5624,6 @@
 138.199.7.162
 138.199.7.163
 138.199.7.181 # nl-free-111.protonvpn.net,node-nl-147.protonvpn.net
-138.199.7.182
-138.199.7.183
-138.199.7.184
-138.199.7.185
 138.199.7.225 # nl-free-95.protonvpn.net,node-nl-131.protonvpn.net
 138.199.7.234 # node-nl-81.protonvpn.net
 138.199.7.235 # nl-free-96.protonvpn.net,node-nl-132.protonvpn.net
@@ -8622,7 +8609,6 @@
 158.255.208.57 # hk5.prmsrvs.com
 158.255.208.116 # hk4.prmsrvs.com
 159.65.52.125 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
-159.65.57.188 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 159.65.90.191 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 159.65.95.108 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 159.89.127.162 # test-proxy01.windscribe.com
@@ -8641,7 +8627,6 @@
 161.35.44.93 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 161.35.128.14 # us2.prmsrvs.com
 161.35.130.245 # us7.prmsrvs.com
-161.35.136.153 # us-free-21.sunnetdevelop.pw
 161.35.139.58 # us11.prmsrvs.com
 161.35.139.69 # us12.prmsrvs.com
 161.35.139.79 # us13.prmsrvs.com
@@ -8760,7 +8745,6 @@
 167.88.60.243 # sjc-333.whiskergalaxy.com,sjc-333.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 167.88.60.244 # sjc-333-wg.whiskergalaxy.com
 167.99.196.54 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-167.99.197.245 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 167.160.167.194 # ewr-181-ike.whiskergalaxy.com,ewr-181-ike.windscribe.com,us-east-054.totallyacdn.com,us-east-054.whiskergalaxy.com,us-east-054.windscribe.com
 167.160.167.195 # ewr-181.whiskergalaxy.com,ewr-181.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 167.160.167.196 # ewr-181-wg.whiskergalaxy.com
@@ -8770,10 +8754,6 @@
 167.172.49.44 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
 167.172.96.203 # de11.prmsrvs.com
 169.150.196.65 # nl-free-42.protonvpn.net,node-nl-69.protonvpn.net
-169.150.196.66
-169.150.196.67
-169.150.196.68
-169.150.196.69
 169.150.196.71 # nl-free-43.protonvpn.net,node-nl-70.protonvpn.net
 169.150.196.72
 169.150.196.73
@@ -8798,12 +8778,8 @@
 169.150.196.104
 169.150.196.105
 169.150.196.106
-169.150.196.107
-169.150.196.108
-169.150.196.109
 169.150.196.119
 169.150.196.120
-169.150.196.121
 169.150.196.133
 169.150.196.134
 169.150.196.135
@@ -8949,10 +8925,6 @@
 169.150.218.4
 169.150.218.5
 169.150.218.6 # node-nl-180.protonvpn.net
-169.150.218.7
-169.150.218.8
-169.150.218.9
-169.150.218.10
 169.150.218.16 # node-nl-183.protonvpn.net
 169.150.218.17
 169.150.218.18
@@ -9028,10 +9000,6 @@
 169.150.218.130
 169.150.218.131
 169.150.218.132
-169.150.218.133
-169.150.218.134
-169.150.218.135
-169.150.218.136
 169.150.218.137 # nl-free-149.protonvpn.net,node-nl-189.protonvpn.net
 169.150.218.138
 169.150.218.139
@@ -10789,25 +10757,13 @@
 185.176.222.156 # lv59.nordvpn.com
 185.176.222.163 # lv58.nordvpn.com
 185.177.124.84 # node-nl-108.protonvpn.net
-185.177.124.88
-185.177.124.97
-185.177.124.100
-185.177.124.101
 185.177.124.190 # node-nl-109.protonvpn.net
-185.177.124.191
-185.177.124.194
-185.177.124.199
-185.177.124.201
 185.177.124.206 # nl-free-33.protonvpn.net,node-nl-113.protonvpn.net
 185.177.124.208
 185.177.124.212
 185.177.124.213
 185.177.124.214
 185.177.124.219 # node-nl-111.protonvpn.net
-185.177.124.220
-185.177.124.221
-185.177.124.224
-185.177.124.225
 185.177.125.4 # nl-free-30.protonvpn.net,node-nl-110.protonvpn.net
 185.177.125.58
 185.177.125.65
@@ -14333,10 +14289,6 @@
 212.8.243.136
 212.8.250.216 # nl-free-98.protonvpn.net,node-nl-134.protonvpn.net
 212.8.250.234 # node-nl-133.protonvpn.net
-212.8.250.236
-212.8.250.238
-212.8.250.239
-212.8.250.240
 212.8.252.66 # nl-free-77.protonvpn.net,node-nl-106.protonvpn.net
 212.8.252.70
 212.8.252.162
@@ -14913,7 +14865,7 @@
 218.232.76.138 # icn-267-wg.whiskergalaxy.com
 218.232.76.173 # icn-267-ike.whiskergalaxy.com,icn-267-ike.windscribe.com,kr-011.totallyacdn.com,kr-011.whiskergalaxy.com,kr-011.windscribe.com
 218.232.76.179 # icn-267.whiskergalaxy.com,icn-267.windscribe.com,kr.whiskergalaxy.com,kr.windscribe.com
-218.232.76.180 # icn-267-wg.whiskergalaxy.com
+218.232.76.190 # icn-267-wg.whiskergalaxy.com
 2001:ac8:2:1::10 # node-in-05.protonvpn.net
 2001:ac8:4:3::10 # node-kh-01.protonvpn.net
 2001:ac8:a:2::10 # node-hk-06.protonvpn.net
