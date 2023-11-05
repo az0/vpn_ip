@@ -256,7 +256,6 @@
 5.253.207.203 # at80.nordvpn.com
 5.253.207.211 # at109.nordvpn.com
 5.253.207.219 # at110.nordvpn.com
-5.254.48.180 # prox-nl.pointtoserver.com
 5.254.76.150 # prox-us.pointtoserver.com
 5.254.112.83 # prox-uk.pointtoserver.com
 8.9.31.36 # zagent2544.hola.org,zagent2544.holavpn.net,zagent2544.holax.io
@@ -267,10 +266,6 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -462,7 +457,7 @@
 31.187.69.78 # fr893.nordvpn.com
 31.187.69.89 # fr894.nordvpn.com
 31.187.69.100 # fr895.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -4530,6 +4525,10 @@
 96.9.251.10 # us10164.nordvpn.com
 96.45.193.151 # arch.mirror.windscribe.com,mirror.windscribe.com,ubuntu.mirror.windscribe.com
 96.47.239.194 # us-east-072.whiskergalaxy.com,us-east-072.windscribe.com
+99.86.91.6 # ca941.l304.r603.fastcloudcdn.net
+99.86.91.25 # ca941.l304.r603.fastcloudcdn.net
+99.86.91.94 # ca941.l304.r603.fastcloudcdn.net
+99.86.91.128 # ca941.l304.r603.fastcloudcdn.net
 102.38.199.1
 102.38.199.2
 102.38.199.3
@@ -7448,7 +7447,6 @@
 149.34.244.216 # nl1021.nordvpn.com
 149.34.244.218 # nl1022.nordvpn.com
 149.34.244.219 # nl1023.nordvpn.com
-149.34.244.245 # prox-nl.pointtoserver.com
 149.34.247.34 # us10114.nordvpn.com
 149.34.247.36 # us10115.nordvpn.com
 149.34.247.39 # us10153.nordvpn.com
@@ -9676,6 +9674,7 @@
 184.170.240.243 # blade22.phoenix-rack456.nodes.gen4.ninja
 184.170.240.246 # blade25.phoenix-rack456.nodes.gen4.ninja
 184.170.240.247 # blade26.phoenix-rack456.nodes.gen4.ninja
+185.2.30.246 # prox-nl.pointtoserver.com
 185.7.34.96 # ch417.nordvpn.com
 185.7.34.112 # ch418.nordvpn.com
 185.7.34.128 # ch419.nordvpn.com
@@ -14777,7 +14776,6 @@
 2a02:6ea0:e20d:2101::10 # node-us-119.protonvpn.net
 2a02:6ea0:e20d:2719::10 # node-us-219.protonvpn.net
 2a02:6ea0:e20d:2753::10 # node-us-224.protonvpn.net
-2a02:6ea0:e606:2640::10 # node-us-200.protonvpn.net
 2a03:90c0:83:2953::10 # node-lu-03.protonvpn.net
 2a04:2180:dc03:101::ff02:2 # node-lt-01b.protonvpn.net
 2a04:9dc0:20:4::10 # node-kr-03.protonvpn.net
