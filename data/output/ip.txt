@@ -4794,7 +4794,9 @@
 103.55.39.186 # cgk-253-ike.whiskergalaxy.com,cgk-253-ike.windscribe.com,id-002.totallyacdn.com,id-002.whiskergalaxy.com,id-002.windscribe.com
 103.55.39.187 # cgk-253.whiskergalaxy.com,cgk-253.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
 103.55.39.188 # cgk-253-wg.whiskergalaxy.com
-103.62.48.130 # sg-005.totallyacdn.com,sg-005.whiskergalaxy.com,sg-005.windscribe.com
+103.62.48.130 # sg-005.totallyacdn.com,sg-005.whiskergalaxy.com,sg-005.windscribe.com,sin-241-ike.whiskergalaxy.com,sin-241-ike.windscribe.com
+103.62.48.224 # sg.whiskergalaxy.com,sg.windscribe.com,sin-241.whiskergalaxy.com,sin-241.windscribe.com
+103.62.48.225 # sin-241-wg.whiskergalaxy.com
 103.62.49.112 # akl-251-ike.whiskergalaxy.com,akl-251-ike.windscribe.com,nz-002.totallyacdn.com,nz-002.whiskergalaxy.com,nz-002.windscribe.com
 103.62.49.113 # akl-251.whiskergalaxy.com,akl-251.windscribe.com,nz.whiskergalaxy.com,nz.windscribe.com
 103.62.49.114 # akl-251-wg.whiskergalaxy.com
@@ -14759,6 +14761,7 @@
 2404:f780:4:3137::10 # node-au-19.protonvpn.net
 2404:f780:4:3137::30 # node-au-18.protonvpn.net
 2404:f780:5:3136::10 # node-nz-04.protonvpn.net
+2404:f780:8:3136::10 # node-au-13.protonvpn.net
 2406:d501:f:3136::10 # node-au-16.protonvpn.net
 2604:a00:50:7f::10 # node-us-31.protonvpn.net
 2604:a880:400:d0::f0d:a001 # checkip-02.windscribe.com
