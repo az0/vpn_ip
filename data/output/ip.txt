@@ -262,11 +262,11 @@
 12.202.180.10 # us-central-stc-004.whiskergalaxy.com,us-central-stc-004.windscribe.com
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
+13.32.151.25 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.30 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.95 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.126 # ca941.l304.r603.fastcloudcdn.net
 13.127.14.8 # 13-127-14-8.server.telleport.me
-13.225.142.3 # ca941.l304.r603.fastcloudcdn.net
-13.225.142.65 # ca941.l304.r603.fastcloudcdn.net
-13.225.142.76 # ca941.l304.r603.fastcloudcdn.net
-13.225.142.98 # ca941.l304.r603.fastcloudcdn.net
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
@@ -1330,19 +1330,18 @@
 45.14.195.158 # us9041.nordvpn.com
 45.14.195.160 # us9042.nordvpn.com
 45.14.195.162 # us9043.nordvpn.com
-45.32.18.40 # jp22.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.24.223 # jp10.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.33.197 # jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com,jp4.prmsrvs.com
-45.32.38.1 # jp24.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.49.25 # jp25.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.53.59 # jp21.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.53.150 # jp2.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.60.187 # jp18.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.63.119 # jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp3.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.32.144.10 # fr2.prmsrvs.com
-45.32.189.12 # au8.prmsrvs.com
-45.32.244.221 # au1.prmsrvs.com
-45.32.255.165 # jp12.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
+45.32.14.121 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.32.22.164 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp35.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.32.25.6 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp34.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.32.27.112 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.32.147.30 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+45.32.147.140 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+45.32.150.2 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+45.32.151.145 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+45.32.242.36 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
+45.32.244.207 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
+45.32.248.114 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.32.254.62 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp30.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 45.38.189.1
 45.38.189.2
 45.38.189.3
@@ -1352,19 +1351,17 @@
 45.38.189.7
 45.38.189.8
 45.63.1.182 # zagent1641.hola.org,zagent1641.holavpn.net,zagent1641.holax.io
-45.63.26.80 # au3.prmsrvs.com
-45.63.30.21 # au2.prmsrvs.com
-45.76.51.229 # jp19.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.76.53.63 # jp20.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.76.97.219 # jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com,jp7.prmsrvs.com
-45.76.106.25 # jp23.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.76.115.100 # au4.prmsrvs.com
-45.76.210.232 # jp11.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.76.212.27 # jp14.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-45.76.218.47 # jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com,jp6.prmsrvs.com
+45.76.46.5 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+45.76.51.122 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.76.101.200 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp31.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.76.110.174 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.76.113.36 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
 45.77.0.33 # zagent2612.hola.org,zagent2612.holavpn.net,zagent2612.holax.io
-45.77.21.152 # jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com,jp8.prmsrvs.com
+45.77.15.122 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.77.27.103 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp32.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+45.77.130.175 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp26.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 45.77.186.73 # zagent2582.hola.org
+45.77.237.44 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
 45.82.33.4 # lt13.nordvpn.com
 45.82.33.6 # lt14.nordvpn.com
 45.82.33.8 # lt15.nordvpn.com
@@ -2062,6 +2059,16 @@
 64.120.2.161 # sea-182-ike.whiskergalaxy.com,sea-182-ike.windscribe.com,us-west-045.totallyacdn.com,us-west-045.whiskergalaxy.com,us-west-045.windscribe.com
 64.120.2.174 # sea-182.whiskergalaxy.com,sea-182.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 64.120.2.175 # sea-182-wg.whiskergalaxy.com
+64.176.35.199 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.36.84 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.38.236 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.45.102 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.46.30 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.48.109 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.54.250 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.55.14 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.58.120 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+64.176.58.238 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 64.188.16.130 # us-west-stc-003.whiskergalaxy.com,us-west-stc-003.windscribe.com
 66.90.67.42
 66.90.67.43
@@ -4444,6 +4451,7 @@
 95.174.66.227 # no173.nordvpn.com
 95.174.66.235 # no174.nordvpn.com
 95.174.66.251 # no187.nordvpn.com
+95.179.208.249 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
 95.181.232.131 # blade1.rabat-rack402.nodes.gen4.ninja
 95.181.232.132 # blade2.rabat-rack402.nodes.gen4.ninja
 95.181.232.133 # blade3.rabat-rack402.nodes.gen4.ninja
@@ -5129,6 +5137,7 @@
 104.152.222.33 # pdx-302.whiskergalaxy.com,pdx-302.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 104.152.222.34 # pdx-302-wg.whiskergalaxy.com
 104.156.225.118 # zagent2550.hola.org,zagent2550.holavpn.net,zagent2550.holax.io
+104.156.232.115 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
 104.160.25.67 # socks-us11.nordvpn.com
 104.160.25.75 # socks-us12.nordvpn.com
 104.168.34.146 # buf-281-ike.whiskergalaxy.com,buf-281-ike.windscribe.com,us-east-045.totallyacdn.com,us-east-045.whiskergalaxy.com,us-east-045.windscribe.com
@@ -5392,18 +5401,14 @@
 107.186.85.6
 107.186.85.7
 107.186.85.8
-107.191.62.125 # fr5.prmsrvs.com
 108.59.6.98 # us-east-109.whiskergalaxy.com,us-east-109.windscribe.com
 108.59.6.119 # us-east-108.whiskergalaxy.com,us-east-108.windscribe.com
-108.61.163.224 # jp1.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-108.61.176.148 # fr7.prmsrvs.com
-108.61.177.38 # fr8.prmsrvs.com
-108.61.183.244 # jp15.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-108.61.186.60 # jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com,jp5.prmsrvs.com
+108.61.168.97 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
+108.61.185.244 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
 108.61.191.96 # zagent2543.hola.org,zagent2543.holavpn.net,zagent2543.holax.io
-108.61.209.135 # fr1.prmsrvs.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
+108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
 108.181.51.211 # kr77.nordvpn.com
@@ -5550,13 +5555,11 @@
 130.162.57.220 # 130-162-57-220.server.telleport.me
 132.145.210.97 # 132-145-210-97.server.telleport.me
 134.122.80.234 # de5.prmsrvs.com
-136.244.114.46 # fr9.prmsrvs.com
-136.244.114.144 # fr4.prmsrvs.com
-136.244.117.116 # fr3.prmsrvs.com
 138.68.14.4 # acctmgr-us-1.windscribe.com
-138.68.144.199 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-138.68.146.209 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-138.68.146.247 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+138.68.144.199 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+138.68.146.209 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+138.68.146.247 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+138.68.162.201 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
 138.186.141.154 # bog-360-ike.whiskergalaxy.com,bog-360-ike.windscribe.com,co-002.totallyacdn.com,co-002.whiskergalaxy.com,co-002.windscribe.com
 138.186.141.155 # bog-360.whiskergalaxy.com,bog-360.windscribe.com,co.whiskergalaxy.com,co.windscribe.com
 138.186.141.156 # bog-360-wg.whiskergalaxy.com
@@ -6010,10 +6013,11 @@
 139.28.219.227 # fr640.nordvpn.com
 139.28.219.235 # fr641.nordvpn.com
 139.28.219.243 # fr642.nordvpn.com
-139.180.164.105 # au7.prmsrvs.com
 140.82.4.96 # zagent2540.hola.org,zagent2540.holavpn.net,zagent2540.holax.io
 140.82.50.40 # zagent2611.hola.org,zagent2611.holavpn.net,zagent2611.holax.io
-140.82.54.236 # fr10.prmsrvs.com
+140.82.52.33 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+140.82.52.103 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+140.82.55.100 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
 140.82.62.186 # zagent2531.hola.org,zagent2531.holavpn.net,zagent2531.holax.io
 140.99.189.83 # us10076.nordvpn.com
 140.99.201.59 # us10092.nordvpn.com
@@ -6045,18 +6049,7 @@
 141.98.215.227 # mnl-365.whiskergalaxy.com,mnl-365.windscribe.com,ph.whiskergalaxy.com,ph.windscribe.com
 141.98.215.228 # mnl-365-wg.whiskergalaxy.com
 141.145.202.150 # 141-145-202-150.server.telleport.me
-141.164.34.217 # kr9.prmsrvs.com
-141.164.36.160 # kr8.prmsrvs.com
-141.164.39.81 # kr11.prmsrvs.com
-141.164.39.203 # kr6.prmsrvs.com
-141.164.42.150 # kr4.prmsrvs.com
-141.164.50.126 # kr10.prmsrvs.com
-141.164.52.55 # kr3.prmsrvs.com
-141.164.52.216 # kr5.prmsrvs.com
-141.164.53.207 # kr2.prmsrvs.com
-141.164.60.42 # kr1.prmsrvs.com
-141.164.62.77 # kr12.prmsrvs.com
-141.164.62.237 # kr7.prmsrvs.com
+141.164.49.150 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
 141.255.162.18 # ch-009.totallyacdn.com,ch-009.whiskergalaxy.com,ch-009.windscribe.com,zrh-264-ike.whiskergalaxy.com,zrh-264-ike.windscribe.com
 142.93.96.125 # de8.prmsrvs.com
 142.93.111.67 # de9.prmsrvs.com
@@ -7459,8 +7452,8 @@
 149.28.48.230 # zagent2537.hola.org,zagent2537.holavpn.net,zagent2537.holax.io
 149.28.49.208 # zagent2532.hola.org,zagent2532.holavpn.net,zagent2532.holax.io
 149.28.57.27 # zagent2533.hola.org,zagent2533.holavpn.net,zagent2533.holax.io
-149.28.165.153 # au6.prmsrvs.com
-149.28.186.159 # au5.prmsrvs.com
+149.28.166.195 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
+149.28.187.234 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
 149.28.219.194 # zagent2596.hola.org,zagent2596.holavpn.net,zagent2596.holax.io
 149.34.240.231 # us10377.nordvpn.com
 149.34.240.233 # us10378.nordvpn.com
@@ -8680,17 +8673,26 @@
 157.245.192.116 # sg10.prmsrvs.com
 157.245.200.9 # sg11.prmsrvs.com
 158.101.213.180 # 158-101-213-180.server.telleport.me
+158.247.197.120 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.198.133 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.205.28 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.218.30 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.218.173 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.220.143 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.222.253 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.234.235 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
+158.247.237.222 # kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
 158.255.208.42 # hk10.prmsrvs.com
 158.255.208.46 # hk1.prmsrvs.com
 158.255.208.57 # hk5.prmsrvs.com
 158.255.208.116 # hk4.prmsrvs.com
-159.65.50.142 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-159.65.52.243 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-159.65.53.181 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-159.65.53.194 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-159.65.88.207 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-159.65.89.121 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-159.65.92.26 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+159.65.50.142 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+159.65.52.237 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+159.65.52.243 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+159.65.53.181 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+159.65.53.194 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+159.65.88.207 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+159.65.92.26 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
 159.89.127.162 # test-proxy01.windscribe.com
 159.203.44.199 # acctmgr-ca-2.windscribe.com
 159.203.59.35 # assets2.windscribe.com
@@ -8704,7 +8706,7 @@
 160.238.37.112 # kr72.nordvpn.com
 160.238.37.128 # kr73.nordvpn.com
 160.238.37.144 # kr74.nordvpn.com
-161.35.34.86 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+161.35.42.74 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
 161.35.128.14 # us2.prmsrvs.com
 161.35.130.245 # us7.prmsrvs.com
 161.35.139.58 # us11.prmsrvs.com
@@ -8783,8 +8785,9 @@
 165.231.253.242 # bom-372-ike.whiskergalaxy.com,bom-372-ike.windscribe.com,in-010.totallyacdn.com,in-010.whiskergalaxy.com,in-010.windscribe.com
 165.231.253.243 # bom-372.whiskergalaxy.com,bom-372.windscribe.com,in.whiskergalaxy.com,in.windscribe.com
 165.231.253.244 # bom-372-wg.whiskergalaxy.com
-165.232.104.148 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-165.232.106.202 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+165.232.100.118 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+165.232.104.148 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+165.232.106.202 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
 166.0.218.32 # blade2.mumbai-rack403.nodes.gen4.ninja
 166.0.218.35 # blade5.mumbai-rack403.nodes.gen4.ninja
 166.0.218.36 # blade6.mumbai-rack403.nodes.gen4.ninja
@@ -8821,16 +8824,23 @@
 167.88.60.242 # sjc-333-ike.whiskergalaxy.com,sjc-333-ike.windscribe.com,us-west-051.totallyacdn.com,us-west-051.whiskergalaxy.com,us-west-051.windscribe.com
 167.88.60.243 # sjc-333.whiskergalaxy.com,sjc-333.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 167.88.60.244 # sjc-333-wg.whiskergalaxy.com
-167.99.192.225 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-167.99.198.118 # uk12.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
-167.99.204.177 # uk12.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+167.99.192.225 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+167.99.198.118 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+167.99.201.88 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
+167.99.204.177 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
 167.160.167.194 # ewr-181-ike.whiskergalaxy.com,ewr-181-ike.windscribe.com,us-east-054.totallyacdn.com,us-east-054.whiskergalaxy.com,us-east-054.windscribe.com
 167.160.167.195 # ewr-181.whiskergalaxy.com,ewr-181.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 167.160.167.196 # ewr-181-wg.whiskergalaxy.com
 167.160.172.2 # ord-130-ike.whiskergalaxy.com,ord-130-ike.windscribe.com,us-east-022.totallyacdn.com,us-east-022.whiskergalaxy.com,us-east-022.windscribe.com
 167.160.172.3 # ord-130.whiskergalaxy.com,ord-130.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 167.160.172.4 # ord-130-wg.whiskergalaxy.com
+167.172.52.101 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com,uk9.prmsrvs.com
 167.172.96.203 # de11.prmsrvs.com
+167.179.67.27 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp27.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+167.179.75.229 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+167.179.77.241 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp28.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+167.179.87.236 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+167.179.112.130 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 169.150.196.65 # nl-free-42.protonvpn.net,node-nl-69.protonvpn.net
 169.150.196.71 # nl-free-43.protonvpn.net,node-nl-70.protonvpn.net
 169.150.196.77 # nl-free-44.protonvpn.net,node-nl-71.protonvpn.net
@@ -11984,6 +11994,13 @@
 188.214.125.42 # blade8.manila-rack402.nodes.gen4.ninja
 188.214.125.44 # blade10.manila-rack402.nodes.gen4.ninja
 188.214.125.45 # blade11.manila-rack402.nodes.gen4.ninja
+188.214.125.46 # blade12.manila-rack402.nodes.gen4.ninja
+188.214.125.47 # blade13.manila-rack402.nodes.gen4.ninja
+188.214.125.48 # blade14.manila-rack402.nodes.gen4.ninja
+188.214.125.49 # blade15.manila-rack402.nodes.gen4.ninja
+188.214.125.50 # blade16.manila-rack402.nodes.gen4.ninja
+188.214.125.52 # blade18.manila-rack402.nodes.gen4.ninja
+188.214.125.53 # blade19.manila-rack402.nodes.gen4.ninja
 188.214.125.54 # blade20.manila-rack402.nodes.gen4.ninja
 188.214.125.55 # blade21.manila-rack402.nodes.gen4.ninja
 188.214.125.56 # blade22.manila-rack402.nodes.gen4.ninja
@@ -12004,6 +12021,7 @@
 188.214.125.75 # blade9.manila-rack451.nodes.gen4.ninja
 188.214.125.76 # blade10.manila-rack451.nodes.gen4.ninja
 188.214.125.77 # blade11.manila-rack451.nodes.gen4.ninja
+188.214.125.78 # blade12.manila-rack451.nodes.gen4.ninja
 188.214.125.162 # node-ph-01.protonvpn.net
 188.214.125.163
 188.214.125.164
@@ -12040,6 +12058,7 @@
 188.215.235.55 # blade9.phnompenh-rack401.nodes.gen4.ninja
 188.215.235.56 # blade10.phnompenh-rack401.nodes.gen4.ninja
 188.215.235.57 # blade11.phnompenh-rack401.nodes.gen4.ninja
+188.215.235.58 # blade12.phnompenh-rack401.nodes.gen4.ninja
 188.215.235.82 # node-kh-01.protonvpn.net
 188.215.235.83
 188.215.235.84
@@ -13949,6 +13968,7 @@
 198.12.116.194 # sea-221-ike.whiskergalaxy.com,sea-221-ike.windscribe.com,us-west-062.totallyacdn.com,us-west-062.whiskergalaxy.com,us-west-062.windscribe.com
 198.12.116.195 # sea-221.whiskergalaxy.com,sea-221.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 198.12.116.196 # sea-221-wg.whiskergalaxy.com
+198.13.49.73 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp29.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 198.16.66.99 # nl66.trafcfy.com,nl75.trafcfy.com,nl76.trafcfy.com,nl77.trafcfy.com
 198.16.66.100 # nl67.trafcfy.com,nl75.trafcfy.com,nl76.trafcfy.com,nl77.trafcfy.com
 198.16.66.101 # nl68.trafcfy.com,nl75.trafcfy.com,nl76.trafcfy.com,nl77.trafcfy.com
@@ -14012,6 +14032,7 @@
 199.217.105.226 # bos-298-ike.whiskergalaxy.com,bos-298-ike.windscribe.com,us-east-051.totallyacdn.com,us-east-051.whiskergalaxy.com,us-east-051.windscribe.com
 199.217.105.227 # bos-298.whiskergalaxy.com,bos-298.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 199.217.105.228 # bos-298-wg.whiskergalaxy.com
+199.247.14.28 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
 199.254.199.163 # prox-jp.pointtoserver.com
 201.168.77.124 # gdl-401-wg.whiskergalaxy.com
 201.168.77.125 # gdl-401.whiskergalaxy.com,gdl-401.windscribe.com,mx.whiskergalaxy.com,mx.windscribe.com
@@ -14061,8 +14082,6 @@
 202.176.4.180 # kul-270-ike.whiskergalaxy.com,kul-270-ike.windscribe.com,my-007.totallyacdn.com,my-007.whiskergalaxy.com,my-007.windscribe.com
 202.176.4.181 # kul-270.whiskergalaxy.com,kul-270.windscribe.com,my.whiskergalaxy.com,my.windscribe.com
 202.176.4.182 # kul-270-wg.whiskergalaxy.com
-202.182.121.6 # jp17.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-202.182.126.2 # jp16.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
 203.10.99.11 # jp610.nordvpn.com
 203.10.99.27 # jp602.nordvpn.com
 203.10.99.35 # jp603.nordvpn.com
@@ -14113,8 +14132,8 @@
 206.223.183.13 # wf-ca-002.whiskergalaxy.com,wf-ca-002.windscribe.com
 206.223.183.16 # ca-stc-005.whiskergalaxy.com,ca-stc-005.windscribe.com
 206.223.183.21 # ca-stc-006.whiskergalaxy.com,ca-stc-006.windscribe.com
-207.148.94.123 # jp13.prmsrvs.com,jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com
-207.148.98.6 # jp26.prmsrvs.com,jp27.prmsrvs.com,jp28.prmsrvs.com,jp29.prmsrvs.com,jp30.prmsrvs.com,jp31.prmsrvs.com,jp32.prmsrvs.com,jp33.prmsrvs.com,jp34.prmsrvs.com,jp35.prmsrvs.com,jp9.prmsrvs.com
+207.148.83.60 # au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com
+207.148.111.252 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp33.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 207.211.214.22 # be228.nordvpn.com
 207.211.214.24 # be229.nordvpn.com
 207.211.214.26 # be231.nordvpn.com
@@ -14513,16 +14532,21 @@
 216.45.53.130 # lax-180-ike.whiskergalaxy.com,lax-180-ike.windscribe.com,us-west-015.totallyacdn.com,us-west-015.whiskergalaxy.com,us-west-015.windscribe.com
 216.45.53.131 # lax-180.whiskergalaxy.com,lax-180.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 216.45.53.132 # lax-180-wg.whiskergalaxy.com
-216.238.80.84 # mx1.prmsrvs.com
-216.238.106.4 # br3.prmsrvs.com
-216.238.109.16 # br2.prmsrvs.com
+216.238.67.146 # mx1.prmsrvs.com
+216.238.84.17 # mx1.prmsrvs.com
+216.238.102.123 # br2.prmsrvs.com,br3.prmsrvs.com
+216.238.117.88 # br2.prmsrvs.com,br3.prmsrvs.com
 217.12.199.168 # ua2.prmsrvs.com
 217.23.3.76 # nl-free-01.protonvpn.net,node-nl-02.protonvpn.net
 217.64.127.10 # at-001.totallyacdn.com,at-001.whiskergalaxy.com,at-001.windscribe.com,vie-87-ike.whiskergalaxy.com,vie-87-ike.windscribe.com
 217.64.127.11 # at.whiskergalaxy.com,at.windscribe.com,vie-87.whiskergalaxy.com,vie-87.windscribe.com
 217.64.127.12 # vie-87-wg.whiskergalaxy.com
 217.64.127.219 # at88.nordvpn.com
-217.69.7.2 # fr6.prmsrvs.com
+217.69.3.51 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+217.69.10.25 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+217.69.12.176 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+217.69.14.135 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
+217.69.15.127 # fr1.prmsrvs.com,fr10.prmsrvs.com,fr2.prmsrvs.com,fr3.prmsrvs.com,fr4.prmsrvs.com,fr5.prmsrvs.com,fr6.prmsrvs.com,fr7.prmsrvs.com,fr8.prmsrvs.com,fr9.prmsrvs.com
 217.114.38.2 # us9509.nordvpn.com
 217.114.38.10 # us9510.nordvpn.com
 217.114.38.18 # us9511.nordvpn.com
@@ -14821,6 +14845,8 @@
 2a02:6ea0:c041:2150::10 # node-nl-54.protonvpn.net
 2a02:6ea0:c041:2193::10 # node-nl-57.protonvpn.net
 2a02:6ea0:c041:2229::10 # node-nl-70.protonvpn.net
+2a02:6ea0:c041:2230::10 # node-nl-71.protonvpn.net
+2a02:6ea0:c041:2231::10 # node-nl-72.protonvpn.net
 2a02:6ea0:c041:2232::10 # node-nl-73.protonvpn.net
 2a02:6ea0:c041:2243::10 # node-nl-74.protonvpn.net
 2a02:6ea0:c041:2244::10 # node-nl-75.protonvpn.net
@@ -14835,6 +14861,7 @@
 2a02:6ea0:c041:2318::10 # node-nl-130.protonvpn.net
 2a02:6ea0:c041:2319::10 # node-nl-132.protonvpn.net
 2a02:6ea0:c041:2338::10 # node-nl-147.protonvpn.net
+2a02:6ea0:c041:2339::10 # node-nl-148.protonvpn.net
 2a02:6ea0:c041:2343::10 # node-nl-152.protonvpn.net
 2a02:6ea0:c041:2344::10 # node-nl-153.protonvpn.net
 2a02:6ea0:c041:2348::10 # node-nl-157.protonvpn.net
@@ -14871,6 +14898,7 @@
 2a02:6ea0:c412:2353::10 # node-us-160.protonvpn.net
 2a02:6ea0:c412:2354::10 # node-us-159.protonvpn.net
 2a02:6ea0:c412:2408::10 # node-us-162.protonvpn.net
+2a02:6ea0:c412:2409::10 # node-us-163.protonvpn.net
 2a02:6ea0:c412:2659::10 # node-us-201.protonvpn.net
 2a02:6ea0:c412:2674::10 # node-us-202.protonvpn.net
 2a02:6ea0:c413::10 # node-us-71.protonvpn.net
@@ -14936,6 +14964,7 @@
 2a02:6ea0:d802:2111::10 # node-us-124.protonvpn.net
 2a02:6ea0:d802:2129::10 # node-us-132.protonvpn.net
 2a02:6ea0:d802:2752::10 # node-us-223.protonvpn.net
+2a02:6ea0:da08:2070::10 # node-ro-02.protonvpn.net
 2a02:6ea0:db0a:2333::10 # node-au-11.protonvpn.net
 2a02:6ea0:db0a:2334::10 # node-au-12.protonvpn.net
 2a02:6ea0:dc0e:2405::10 # node-mt-01.protonvpn.net
