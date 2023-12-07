@@ -263,12 +263,12 @@
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
 13.127.14.8 # 13-127-14-8.server.telleport.me
+13.225.142.3 # ca941.l304.r603.fastcloudcdn.net
+13.225.142.65 # ca941.l304.r603.fastcloudcdn.net
+13.225.142.76 # ca941.l304.r603.fastcloudcdn.net
+13.225.142.98 # ca941.l304.r603.fastcloudcdn.net
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.160.213.42 # ca941.l304.r603.fastcloudcdn.net
-18.160.213.61 # ca941.l304.r603.fastcloudcdn.net
-18.160.213.82 # ca941.l304.r603.fastcloudcdn.net
-18.160.213.103 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -493,7 +493,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -5473,6 +5473,7 @@
 138.68.162.149 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 138.68.162.201 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 138.68.170.2 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+138.68.173.49 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 138.186.141.154 # bog-360-ike.whiskergalaxy.com,bog-360-ike.windscribe.com,co-002.totallyacdn.com,co-002.whiskergalaxy.com,co-002.windscribe.com
 138.186.141.155 # bog-360.whiskergalaxy.com,bog-360.windscribe.com,co.whiskergalaxy.com,co.windscribe.com
 138.186.141.156 # bog-360-wg.whiskergalaxy.com
@@ -5672,16 +5673,13 @@
 138.199.35.108
 138.199.35.109
 138.199.35.110
-138.199.36.159 # blade1.frankfurt-rack444.nodes.gen4.ninja
-138.199.36.160 # blade2.frankfurt-rack444.nodes.gen4.ninja
-138.199.36.161 # blade3.frankfurt-rack444.nodes.gen4.ninja
-138.199.36.163 # blade5.frankfurt-rack444.nodes.gen4.ninja
 138.199.42.226 # us8792.nordvpn.com
 138.199.42.231 # us8793.nordvpn.com
 138.199.42.236 # us8794.nordvpn.com
 138.199.42.241 # us8795.nordvpn.com
 138.199.42.246 # us8796.nordvpn.com
 138.199.42.251 # us8797.nordvpn.com
+138.199.43.21 # prox-us.pointtoserver.com
 138.199.47.130 # fr765.nordvpn.com
 138.199.47.133 # fr766.nordvpn.com
 138.199.47.136 # fr767.nordvpn.com
@@ -7465,6 +7463,8 @@
 149.36.51.131 # ams-193-wg.whiskergalaxy.com
 149.40.49.163 # prox-us.pointtoserver.com
 149.40.50.66 # us-east-118.totallyacdn.com,us-east-118.whiskergalaxy.com
+149.40.50.67 # bos-408.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
+149.40.50.68 # bos-408-wg.whiskergalaxy.com
 149.40.50.81 # us-east-117.totallyacdn.com,us-east-117.whiskergalaxy.com
 149.40.50.82 # bos-408.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 149.40.50.83 # bos-408-wg.whiskergalaxy.com
@@ -8600,8 +8600,11 @@
 159.65.50.182 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 159.65.52.237 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 159.65.52.243 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+159.65.53.57 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 159.65.53.194 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+159.65.63.183 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 159.65.92.26 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+159.65.94.240 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 159.89.127.162 # test-proxy01.windscribe.com
 159.203.44.199 # acctmgr-ca-2.windscribe.com
 159.203.59.35 # assets2.windscribe.com
@@ -10912,7 +10915,7 @@
 185.202.221.156 # us9430.nordvpn.com
 185.202.221.158 # us9431.nordvpn.com
 185.202.221.160 # us9432.nordvpn.com
-185.202.221.162 # us9433.nordvpn.com
+185.202.221.162
 185.203.122.1 # za128.nordvpn.com
 185.203.122.14 # za129.nordvpn.com
 185.203.122.27 # za130.nordvpn.com
@@ -14697,8 +14700,8 @@
 2001:ac8:31:22e::10 # node-uk-17.protonvpn.net
 2001:ac8:31:22f::10 # node-uk-16.protonvpn.net
 2001:ac8:31:233::10 # node-uk-15.protonvpn.net
-2001:ac8:31:332::10 # node-uk-09.protonvpn.net
-2001:ac8:31:333::10 # node-uk-10.protonvpn.net
+2001:ac8:31:365::10 # node-uk-10.protonvpn.net
+2001:ac8:31:366::10 # node-uk-09.protonvpn.net
 2001:ac8:31:50c::10 # node-uk-12.protonvpn.net
 2001:ac8:31:f002::10 # node-uk-13.protonvpn.net
 2001:ac8:33:75::10 # node-cz-05.protonvpn.net
@@ -14816,6 +14819,8 @@
 2a02:6ea0:c412:2209::10 # node-us-141.protonvpn.net
 2a02:6ea0:c412:2210::10 # node-us-142.protonvpn.net
 2a02:6ea0:c412:2214::10 # node-us-145.protonvpn.net
+2a02:6ea0:c412:2215::10 # node-us-146.protonvpn.net
+2a02:6ea0:c412:2216::10 # node-us-147.protonvpn.net
 2a02:6ea0:c412:2217::10 # node-us-148.protonvpn.net
 2a02:6ea0:c412:2353::10 # node-us-160.protonvpn.net
 2a02:6ea0:c412:2354::10 # node-us-159.protonvpn.net
@@ -14949,13 +14954,12 @@
 2a0d:5600:6:1d::10 # node-us-101.protonvpn.net
 2a0d:5600:6:1e::10 # node-us-100.protonvpn.net
 2a0d:5600:6:28::10 # node-us-90.protonvpn.net
-2a0d:5600:6:30::10 # node-us-91.protonvpn.net
 2a0d:5600:6:96::10 # node-us-50.protonvpn.net
 2a0d:5600:6:97::10 # node-us-51.protonvpn.net
 2a0d:5600:6:111::10 # node-us-178.protonvpn.net
+2a0d:5600:6:111::100 # node-us-176.protonvpn.net
 2a0d:5600:6:112::10 # node-us-179.protonvpn.net
 2a0d:5600:6:113::10 # node-us-177.protonvpn.net
-2a0d:5600:6:114::10 # node-us-176.protonvpn.net
 2a0d:5600:6:201::10 # node-us-215.protonvpn.net
 2a0d:5600:6:202::10 # node-us-213.protonvpn.net
 2a0d:5600:6:203::10 # node-us-214.protonvpn.net
@@ -14996,6 +15000,7 @@
 2a0d:5600:8:310::10 # node-us-81.protonvpn.net
 2a0d:5600:8:311::10 # node-us-82.protonvpn.net
 2a0d:5600:8:326::10 # node-us-212.protonvpn.net
+2a0d:5600:8:329::10 # node-us-91.protonvpn.net
 2a0d:5600:9:a21::10 # node-ca-19.protonvpn.net
 2a0d:5600:9:a22::10 # node-ca-18.protonvpn.net
 2a0d:5600:9:a23::10 # node-ca-17.protonvpn.net
