@@ -244,6 +244,10 @@
 12.202.180.10 # us-central-stc-004.whiskergalaxy.com,us-central-stc-004.windscribe.com
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
+13.32.151.25 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.30 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.95 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.126 # ca941.l304.r603.fastcloudcdn.net
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
@@ -1834,10 +1838,6 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
-52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -3564,11 +3564,23 @@
 89.37.173.237 # ch384.nordvpn.com
 89.37.173.246 # ch385.nordvpn.com
 89.38.97.138 # node-nl-103.protonvpn.net
+89.38.97.139
+89.38.97.151
+89.38.97.174
+89.38.97.178
 89.38.97.196 # node-nl-123.protonvpn.net
 89.38.99.72 # nl-free-129.protonvpn.net,node-nl-169.protonvpn.net
 89.39.104.165 # nl-free-88.protonvpn.net,node-nl-124.protonvpn.net
+89.39.104.173
+89.39.104.193
+89.39.104.194
+89.39.104.204
 89.39.105.213 # nl9.freeconnect.link
 89.39.106.82 # nl-free-89.protonvpn.net,node-nl-125.protonvpn.net
+89.39.106.102
+89.39.106.191
+89.39.106.222
+89.39.106.228
 89.39.107.109 # nl-free-01.protonvpn.net,node-nl-04.protonvpn.net
 89.39.107.113 # nl-free-01.protonvpn.net,node-nl-05.protonvpn.net
 89.39.107.156 # nl-free-90.protonvpn.net,node-nl-126.protonvpn.net
@@ -9747,6 +9759,29 @@
 181.214.173.90 # blade25.berlin-rack459.nodes.gen4.ninja
 181.214.173.92 # blade27.berlin-rack459.nodes.gen4.ninja
 181.214.173.93 # blade28.berlin-rack459.nodes.gen4.ninja
+181.214.173.216 # blade1.berlin-rack457.nodes.gen4.ninja
+181.214.173.217 # blade2.berlin-rack457.nodes.gen4.ninja
+181.214.173.220 # blade5.berlin-rack457.nodes.gen4.ninja
+181.214.173.222 # blade7.berlin-rack457.nodes.gen4.ninja
+181.214.173.223 # blade8.berlin-rack457.nodes.gen4.ninja
+181.214.173.224 # blade9.berlin-rack457.nodes.gen4.ninja
+181.214.173.225 # blade10.berlin-rack457.nodes.gen4.ninja
+181.214.173.226 # blade11.berlin-rack457.nodes.gen4.ninja
+181.214.173.227 # blade12.berlin-rack457.nodes.gen4.ninja
+181.214.173.228 # blade13.berlin-rack457.nodes.gen4.ninja
+181.214.173.229 # blade14.berlin-rack457.nodes.gen4.ninja
+181.214.173.230 # blade15.berlin-rack457.nodes.gen4.ninja
+181.214.173.231 # blade16.berlin-rack457.nodes.gen4.ninja
+181.214.173.232 # blade17.berlin-rack457.nodes.gen4.ninja
+181.214.173.233 # blade18.berlin-rack457.nodes.gen4.ninja
+181.214.173.236 # blade21.berlin-rack457.nodes.gen4.ninja
+181.214.173.237 # blade22.berlin-rack457.nodes.gen4.ninja
+181.214.173.238 # blade23.berlin-rack457.nodes.gen4.ninja
+181.214.173.239 # blade24.berlin-rack457.nodes.gen4.ninja
+181.214.173.240 # blade25.berlin-rack457.nodes.gen4.ninja
+181.214.173.241 # blade26.berlin-rack457.nodes.gen4.ninja
+181.214.173.242 # blade27.berlin-rack457.nodes.gen4.ninja
+181.214.173.243 # blade28.berlin-rack457.nodes.gen4.ninja
 181.214.196.4 # us9698.nordvpn.com
 181.214.196.20 # us9699.nordvpn.com
 181.214.196.36 # us9700.nordvpn.com
@@ -10439,11 +10474,9 @@
 185.159.156.118 # se-us-02f.protonvpn.net
 185.159.156.119 # se-ae-01a.protonvpn.net
 185.159.156.120 # se-us-01h.protonvpn.net
-185.159.156.121
 185.159.156.122 # se-uk-01b.protonvpn.net
 185.159.156.123 # se-uk-01c.protonvpn.net
 185.159.156.124
-185.159.156.125
 185.159.156.126
 185.159.156.127
 185.159.157.6 # node-ch-02.protonvpn.net
@@ -10781,9 +10814,25 @@
 185.177.124.219 # node-nl-111.protonvpn.net
 185.177.125.4 # nl-free-30.protonvpn.net,node-nl-110.protonvpn.net
 185.177.125.172 # nl-free-35.protonvpn.net,node-nl-115.protonvpn.net
+185.177.125.173
+185.177.125.174
+185.177.125.178
+185.177.125.181
 185.177.125.196 # nl-free-34.protonvpn.net,node-nl-114.protonvpn.net
+185.177.125.201
+185.177.125.211
+185.177.125.212
+185.177.125.213
 185.177.126.14 # nl-free-82.protonvpn.net,node-nl-118.protonvpn.net
+185.177.126.71
+185.177.126.102
+185.177.126.127
+185.177.126.128
 185.177.126.132 # nl-free-81.protonvpn.net,node-nl-117.protonvpn.net
+185.177.126.133
+185.177.126.134
+185.177.126.135
+185.177.126.136
 185.177.126.140 # nl-free-92.protonvpn.net,node-nl-128.protonvpn.net
 185.180.12.242 # at117.nordvpn.com
 185.180.12.245 # at118.nordvpn.com
@@ -10794,6 +10843,10 @@
 185.182.193.107 # nl-free-106.protonvpn.net,node-nl-142.protonvpn.net
 185.183.33.11 # nl-free-76.protonvpn.net,node-nl-105.protonvpn.net
 185.183.33.217 # nl-free-75.protonvpn.net,node-nl-104.protonvpn.net
+185.183.33.218
+185.183.33.219
+185.183.33.220
+185.183.33.221
 185.183.34.27 # nl-free-67.protonvpn.net,node-nl-93.protonvpn.net
 185.183.34.149 # nl-free-68.protonvpn.net,node-nl-94.protonvpn.net
 185.183.34.165 # nl-free-69.protonvpn.net,node-nl-95.protonvpn.net
