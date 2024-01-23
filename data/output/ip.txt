@@ -4395,8 +4395,12 @@
 95.111.215.209 # usw1.prmsrvs.com,usw10.prmsrvs.com,usw2.prmsrvs.com,usw3.prmsrvs.com,usw4.prmsrvs.com,usw5.prmsrvs.com,usw6.prmsrvs.com,usw7.prmsrvs.com,usw8.prmsrvs.com,usw9.prmsrvs.com
 95.111.215.253 # usw1.prmsrvs.com,usw10.prmsrvs.com,usw2.prmsrvs.com,usw3.prmsrvs.com,usw4.prmsrvs.com,usw5.prmsrvs.com,usw6.prmsrvs.com,usw7.prmsrvs.com,usw8.prmsrvs.com,usw9.prmsrvs.com
 95.141.32.101 # it.1clickvpn.net
-95.143.177.69 # ru-022.totallyacdn.com,ru-022.whiskergalaxy.com,ru-022.windscribe.com
-95.143.177.98 # ru-021.totallyacdn.com,ru-021.whiskergalaxy.com,ru-021.windscribe.com
+95.143.177.66 # ru.whiskergalaxy.com,ru.windscribe.com,svo-346.whiskergalaxy.com,svo-346.windscribe.com
+95.143.177.67 # svo-346-wg.whiskergalaxy.com
+95.143.177.69 # ru-022.totallyacdn.com,ru-022.whiskergalaxy.com,ru-022.windscribe.com,svo-346-ike.whiskergalaxy.com,svo-346-ike.windscribe.com
+95.143.177.98 # ru-021.totallyacdn.com,ru-021.whiskergalaxy.com,ru-021.windscribe.com,svo-346-ike.whiskergalaxy.com,svo-346-ike.windscribe.com
+95.143.177.99 # svo-346-wg.whiskergalaxy.com
+95.143.177.101 # ru.whiskergalaxy.com,ru.windscribe.com,svo-346.whiskergalaxy.com,svo-346.windscribe.com
 95.153.31.114 # node-ee-02.protonvpn.net
 95.153.31.115
 95.153.31.116
@@ -7717,6 +7721,8 @@
 149.88.27.68 # ch423.nordvpn.com
 149.88.27.98 # ch424.nordvpn.com
 149.88.27.100 # ch425.nordvpn.com
+149.88.27.103 # ch426.nordvpn.com
+149.88.27.105 # ch427.nordvpn.com
 149.88.27.193 # node-ch-16.protonvpn.net
 149.88.27.194
 149.88.27.195
@@ -10541,8 +10547,6 @@
 185.159.157.66 # ch-lu-01d.protonvpn.net
 185.159.157.67 # ch-biz002-07.protonvpn.net
 185.159.157.68 # ch-biz002-08.protonvpn.net
-185.159.157.70
-185.159.157.71
 185.159.157.80 # ch-jp-01a.protonvpn.net
 185.159.157.81 # ch-lv-01b.protonvpn.net
 185.159.157.82 # ch-in-01b.protonvpn.net
@@ -11882,8 +11886,12 @@
 188.95.55.88 # be201.nordvpn.com
 188.95.55.93 # be202.nordvpn.com
 188.95.55.98 # be203.nordvpn.com
-188.124.42.98 # ru-013.totallyacdn.com,ru-013.whiskergalaxy.com,ru-013.windscribe.com
-188.124.42.114 # ru-012.totallyacdn.com,ru-012.whiskergalaxy.com,ru-012.windscribe.com
+188.124.42.98 # led-265-ike.whiskergalaxy.com,led-265-ike.windscribe.com,ru-013.totallyacdn.com,ru-013.whiskergalaxy.com,ru-013.windscribe.com
+188.124.42.99 # led-265.whiskergalaxy.com,led-265.windscribe.com,ru.whiskergalaxy.com,ru.windscribe.com
+188.124.42.100 # led-265-wg.whiskergalaxy.com
+188.124.42.114 # led-265-ike.whiskergalaxy.com,led-265-ike.windscribe.com,ru-012.totallyacdn.com,ru-012.whiskergalaxy.com,ru-012.windscribe.com
+188.124.42.115 # led-265.whiskergalaxy.com,led-265.windscribe.com,ru.whiskergalaxy.com,ru.windscribe.com
+188.124.42.116 # led-265-wg.whiskergalaxy.com
 188.126.79.5 # blade1.stockholm-rack403.nodes.gen4.ninja
 188.126.79.6 # blade2.stockholm-rack403.nodes.gen4.ninja
 188.126.79.7 # blade3.stockholm-rack403.nodes.gen4.ninja
@@ -12678,6 +12686,7 @@
 192.145.116.110 # us8397.nordvpn.com
 192.145.116.112 # us8398.nordvpn.com
 192.145.116.114 # us8399.nordvpn.com
+192.145.116.116 # us8400.nordvpn.com
 192.145.116.118 # us8401.nordvpn.com
 192.145.116.120 # us8402.nordvpn.com
 192.145.116.122 # us8403.nordvpn.com
@@ -14895,8 +14904,8 @@
 2401:3bc0:8:6::10 # node-sg-13.protonvpn.net
 2401:3bc0:700:231::10 # node-nz-03.protonvpn.net
 2404:f780:1:3137::10 # node-au-17.protonvpn.net
-2404:f780:4:3137::10 # node-au-19.protonvpn.net
 2404:f780:8:3136::10 # node-au-13.protonvpn.net
+2604:a00:50:7f::10 # node-us-31.protonvpn.net
 2604:a880:400:d0::f0d:a001 # checkip-02.windscribe.com
 2604:a880:cad:d0::67:d001 # checkip-01.windscribe.com
 2606:4700:20::681a:423 # repo.protonvpn.com
@@ -14978,6 +14987,8 @@
 2a02:6ea0:c118::20 # node-us-70.protonvpn.net
 2a02:6ea0:c308::10 # node-es-03.protonvpn.net
 2a02:6ea0:c31f:1783::10 # node-es-04.protonvpn.net
+2a02:6ea0:c31f:1788::10 # node-es-05.protonvpn.net
+2a02:6ea0:c31f:2064::10 # node-es-06.protonvpn.net
 2a02:6ea0:c31f:2069::10 # node-es-07.protonvpn.net
 2a02:6ea0:c411::10 # node-us-62.protonvpn.net
 2a02:6ea0:c412:2206::10 # node-us-138.protonvpn.net
