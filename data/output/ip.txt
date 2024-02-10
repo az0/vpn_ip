@@ -250,10 +250,6 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -303,33 +299,24 @@
 23.95.42.211 # dfw-192.whiskergalaxy.com,dfw-192.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
 23.95.42.212 # dfw-192-wg.whiskergalaxy.com
 23.105.171.93 # us-east-stc-003.whiskergalaxy.com,us-east-stc-003.windscribe.com
-23.106.56.11 # uk26.trafcfy.com
-23.106.56.12 # uk34.trafcfy.com
-23.106.56.13 # uk35.trafcfy.com
-23.106.56.14 # uk36.trafcfy.com
-23.106.56.19 # uk22.trafcfy.com
-23.106.56.21 # uk23.trafcfy.com
-23.106.56.22 # uk24.trafcfy.com
-23.106.56.35 # uk25.trafcfy.com
-23.106.56.36 # uk27.trafcfy.com
-23.106.56.37 # uk28.trafcfy.com
-23.106.56.38 # uk29.trafcfy.com
-23.106.56.43 # uk30.trafcfy.com
-23.106.56.51 # uk37.trafcfy.com
-23.106.56.52 # uk31.trafcfy.com
-23.106.56.53 # uk32.trafcfy.com
-23.106.56.54 # uk33.trafcfy.com
-23.106.248.251 # sg1.trafcfy.com
-23.106.249.34 # sg2.trafcfy.com
-23.106.249.35 # sg3.trafcfy.com
-23.106.249.36 # sg4.trafcfy.com
-23.106.249.37 # sg6.trafcfy.com
-23.106.249.39 # sg7.trafcfy.com
-23.106.249.52 # sg8.trafcfy.com
-23.106.249.53 # sg9.trafcfy.com
-23.106.249.54 # sg10.trafcfy.com
+23.106.56.11 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk26.trafcfy.com
+23.106.56.12 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk34.trafcfy.com
+23.106.56.13 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk35.trafcfy.com
+23.106.56.14 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk36.trafcfy.com
+23.106.56.36 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk27.trafcfy.com
+23.106.56.37 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk28.trafcfy.com
+23.106.56.38 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk29.trafcfy.com
+23.106.56.43 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk30.trafcfy.com
+23.106.56.51 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk37.trafcfy.com
+23.106.56.52 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk31.trafcfy.com
+23.106.56.53 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk32.trafcfy.com
+23.106.56.54 # uk22.trafcfy.com,uk23.trafcfy.com,uk24.trafcfy.com,uk25.trafcfy.com,uk33.trafcfy.com
+23.106.249.37 # sg1.trafcfy.com,sg2.trafcfy.com,sg3.trafcfy.com,sg4.trafcfy.com,sg5.trafcfy.com,sg6.trafcfy.com
+23.106.249.39 # sg1.trafcfy.com,sg2.trafcfy.com,sg3.trafcfy.com,sg4.trafcfy.com,sg5.trafcfy.com,sg7.trafcfy.com
+23.106.249.52 # sg1.trafcfy.com,sg2.trafcfy.com,sg3.trafcfy.com,sg4.trafcfy.com,sg5.trafcfy.com,sg8.trafcfy.com
+23.106.249.53 # sg1.trafcfy.com,sg2.trafcfy.com,sg3.trafcfy.com,sg4.trafcfy.com,sg5.trafcfy.com,sg9.trafcfy.com
+23.106.249.54 # sg1.trafcfy.com,sg10.trafcfy.com,sg2.trafcfy.com,sg3.trafcfy.com,sg4.trafcfy.com,sg5.trafcfy.com
 23.108.51.15 # mia-326-wg.whiskergalaxy.com
-23.108.96.79 # sg5.trafcfy.com
 23.146.243.194 # phl-413.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.146.243.195 # phl-413-wg.whiskergalaxy.com
 23.146.243.210 # phl-413.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
@@ -1149,9 +1136,9 @@
 37.120.237.131 # ca1680.nordvpn.com
 37.120.237.139 # ca1678.nordvpn.com
 37.120.237.147 # ca1679.nordvpn.com
-37.156.216.130 # lt-005.totallyacdn.com,lt-005.whiskergalaxy.com,lt-005.windscribe.com,vno-378-ike.whiskergalaxy.com,vno-378-ike.windscribe.com
-37.156.216.131 # lt.whiskergalaxy.com,lt.windscribe.com,vno-378.whiskergalaxy.com,vno-378.windscribe.com
-37.156.216.132 # vno-378-wg.whiskergalaxy.com
+37.156.216.130 # lt-005.totallyacdn.com,lt-005.whiskergalaxy.com,lt-005.windscribe.com
+37.156.216.131
+37.156.216.132
 37.156.216.146 # lt-004.totallyacdn.com,lt-004.whiskergalaxy.com,lt-004.windscribe.com,vno-378-ike.whiskergalaxy.com,vno-378-ike.windscribe.com
 37.156.216.147 # lt.whiskergalaxy.com,lt.windscribe.com,vno-378.whiskergalaxy.com,vno-378.windscribe.com
 37.156.216.148 # vno-378-wg.whiskergalaxy.com
@@ -2332,6 +2319,7 @@
 79.135.104.39
 79.135.104.40
 79.135.104.41 # ch-sg-01b.protonvpn.net
+79.135.104.42
 79.141.162.81 # us.1clickvpn.net
 79.142.76.197 # arn-234-ike.whiskergalaxy.com,arn-234-ike.windscribe.com,se-002.totallyacdn.com,se-002.whiskergalaxy.com,se-002.windscribe.com
 79.142.76.198 # arn-234.whiskergalaxy.com,arn-234.windscribe.com,se.whiskergalaxy.com,se.windscribe.com
@@ -5398,6 +5386,10 @@
 108.61.191.96 # zagent2543.hola.org,zagent2543.holavpn.net,zagent2543.holax.io
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
+108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
@@ -7642,6 +7634,19 @@
 149.50.216.235
 149.50.216.236
 149.50.216.237
+149.50.216.238 # node-se-07.protonvpn.net
+149.50.216.239
+149.50.216.240
+149.50.216.241
+149.50.216.242
+149.50.216.243
+149.50.216.244
+149.50.216.245
+149.50.216.246
+149.50.216.247
+149.50.216.248
+149.50.216.249
+149.50.216.250
 149.50.217.114 # dk278.nordvpn.com
 149.50.217.246 # dk276.nordvpn.com
 149.50.217.248 # dk277.nordvpn.com
@@ -8944,9 +8949,6 @@
 161.129.70.194 # atl-109-ike.whiskergalaxy.com,atl-109-ike.windscribe.com,us-central-034.totallyacdn.com,us-central-034.whiskergalaxy.com,us-central-034.windscribe.com
 161.129.70.195 # atl-109.whiskergalaxy.com,atl-109.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
 161.129.70.196 # atl-109-wg.whiskergalaxy.com
-162.210.194.10 # us21.trafcfy.com,us23.trafcfy.com
-162.210.194.37 # us23.trafcfy.com,us24.trafcfy.com
-162.210.194.38 # us23.trafcfy.com,us25.trafcfy.com
 162.218.120.66 # dfw-86-ike.whiskergalaxy.com,dfw-86-ike.windscribe.com,us-central-072.totallyacdn.com,us-central-072.whiskergalaxy.com,us-central-072.windscribe.com
 162.218.120.67 # dfw-86.whiskergalaxy.com,dfw-86.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
 162.218.120.68 # dfw-86-wg.whiskergalaxy.com
@@ -9481,6 +9483,19 @@
 176.113.72.220 # us-ca85.nordvpn.com
 176.113.72.235 # us6045.nordvpn.com
 176.113.74.35 # ca1682.nordvpn.com
+176.113.74.82 # node-ca-24.protonvpn.net
+176.113.74.83
+176.113.74.84
+176.113.74.85
+176.113.74.86
+176.113.74.87
+176.113.74.88
+176.113.74.89
+176.113.74.90
+176.113.74.91
+176.113.74.92
+176.113.74.93
+176.113.74.94
 176.125.228.133 # blade3.algiers-rack402.nodes.gen4.ninja
 176.125.228.134 # blade4.algiers-rack402.nodes.gen4.ninja
 176.125.228.135 # blade5.algiers-rack402.nodes.gen4.ninja
@@ -14285,14 +14300,14 @@
 207.211.214.22 # be228.nordvpn.com
 207.211.214.24 # be229.nordvpn.com
 207.211.214.26 # be231.nordvpn.com
-207.244.71.79 # us23.trafcfy.com,us31.trafcfy.com
-207.244.71.80 # us23.trafcfy.com,us32.trafcfy.com
-207.244.71.81 # us23.trafcfy.com,us34.trafcfy.com
-207.244.71.82 # us23.trafcfy.com,us35.trafcfy.com
-207.244.71.84 # us23.trafcfy.com,us26.trafcfy.com
-207.244.89.161 # us23.trafcfy.com,us28.trafcfy.com
-207.244.89.162 # us23.trafcfy.com,us29.trafcfy.com
-207.244.89.166 # us23.trafcfy.com,us30.trafcfy.com
+207.244.71.79 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us31.trafcfy.com
+207.244.71.80 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us32.trafcfy.com
+207.244.71.81 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us34.trafcfy.com
+207.244.71.82 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us35.trafcfy.com
+207.244.71.84 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us26.trafcfy.com
+207.244.89.161 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us28.trafcfy.com
+207.244.89.162 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us29.trafcfy.com
+207.244.89.166 # us21.trafcfy.com,us23.trafcfy.com,us24.trafcfy.com,us25.trafcfy.com,us30.trafcfy.com
 207.244.91.131 # was-324-wg.whiskergalaxy.com
 207.244.91.143 # us-east.whiskergalaxy.com,us-east.windscribe.com,was-324.whiskergalaxy.com,was-324.windscribe.com
 207.244.91.144 # was-324-wg.whiskergalaxy.com
@@ -15081,6 +15096,7 @@
 2a02:6ea0:c413:1::10 # node-us-134.protonvpn.net
 2a02:6ea0:c501:2091::10 # node-se-05.protonvpn.net
 2a02:6ea0:c501:3090::10 # node-se-06.protonvpn.net
+2a02:6ea0:c501:3108::10 # node-se-07.protonvpn.net
 2a02:6ea0:c603:2119::10 # node-us-129.protonvpn.net
 2a02:6ea0:c603:2121::10 # node-us-130.protonvpn.net
 2a02:6ea0:c603:2127::10 # node-us-128.protonvpn.net
@@ -15110,7 +15126,6 @@
 2a02:6ea0:cc02:2565::10 # node-pe-04.protonvpn.net
 2a02:6ea0:cc02:2618::10 # node-mx-03.protonvpn.net
 2a02:6ea0:cc02:2680::10 # node-ar-04.protonvpn.net
-2a02:6ea0:cc09::10 # node-us-60.protonvpn.net
 2a02:6ea0:cc0b::10 # node-us-73.protonvpn.net
 2a02:6ea0:ce14:2577::10 # node-pl-05.protonvpn.net
 2a02:6ea0:d012:2078::10 # node-br-04.protonvpn.net
@@ -15241,6 +15256,7 @@
 2a0d:5600:9:a24::10 # node-ca-16.protonvpn.net
 2a0d:5600:13:b::10 # node-pl-07.protonvpn.net
 2a0d:5600:13:28::10 # node-pl-06.protonvpn.net
+2a0d:5600:19:1::10 # node-ca-24.protonvpn.net
 2a0d:5600:24:6::10 # node-us-198.protonvpn.net
 2a0d:5600:24:a::10 # node-us-144.protonvpn.net
 2a0d:5600:24:b::10 # node-us-118.protonvpn.net
