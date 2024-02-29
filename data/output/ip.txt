@@ -488,7 +488,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.102.239.211 # email.mg.windscribe.com
+34.110.180.34 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -1797,9 +1797,9 @@
 46.199.75.100 # cy-003.totallyacdn.com,cy-003.whiskergalaxy.com,cy-003.windscribe.com,lca-320-ike.whiskergalaxy.com,lca-320-ike.windscribe.com
 46.199.75.101 # cy.whiskergalaxy.com,cy.windscribe.com,lca-320.whiskergalaxy.com,lca-320.windscribe.com
 46.199.75.102 # lca-320-wg.whiskergalaxy.com
-46.199.75.105 # cy-002.totallyacdn.com,cy-002.whiskergalaxy.com,cy-002.windscribe.com
-46.199.75.106
-46.199.75.107
+46.199.75.105 # cy-002.totallyacdn.com,cy-002.whiskergalaxy.com,cy-002.windscribe.com,lca-320-ike.whiskergalaxy.com,lca-320-ike.windscribe.com
+46.199.75.106 # cy.whiskergalaxy.com,cy.windscribe.com,lca-320.whiskergalaxy.com,lca-320.windscribe.com
+46.199.75.107 # lca-320-wg.whiskergalaxy.com
 46.246.8.146 # blade1.stockholm-rack415.nodes.gen4.ninja
 46.246.8.147 # blade2.stockholm-rack415.nodes.gen4.ninja
 46.246.8.149 # blade4.stockholm-rack415.nodes.gen4.ninja
@@ -14450,9 +14450,9 @@
 198.16.78.44 # nl91.trafcfy.com
 198.16.78.45 # nl92.trafcfy.com
 198.23.148.202 # atl-331-ike.whiskergalaxy.com,atl-331-ike.windscribe.com,us-central-105.totallyacdn.com,us-central-105.whiskergalaxy.com
-198.23.242.146 # lax-321-ike.whiskergalaxy.com,lax-321-ike.windscribe.com,us-west-063.totallyacdn.com,us-west-063.whiskergalaxy.com,us-west-063.windscribe.com
-198.23.242.147 # lax-321.whiskergalaxy.com,lax-321.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
-198.23.242.148 # lax-321-wg.whiskergalaxy.com
+198.23.242.146 # us-west-063.totallyacdn.com,us-west-063.whiskergalaxy.com,us-west-063.windscribe.com
+198.23.242.147
+198.23.242.148
 198.54.128.115 # den-145-ike.whiskergalaxy.com,den-145-ike.windscribe.com,us-central-058.totallyacdn.com,us-central-058.whiskergalaxy.com,us-central-058.windscribe.com
 198.54.128.116 # den-145.whiskergalaxy.com,den-145.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
 198.54.128.117 # den-145-wg.whiskergalaxy.com
@@ -15386,11 +15386,13 @@
 2a02:6ea0:c041:2317::10 # node-nl-131.protonvpn.net
 2a02:6ea0:c041:2318::10 # node-nl-130.protonvpn.net
 2a02:6ea0:c041:2319::10 # node-nl-132.protonvpn.net
+2a02:6ea0:c041:2338::10 # node-nl-147.protonvpn.net
 2a02:6ea0:c041:2339::10 # node-nl-148.protonvpn.net
 2a02:6ea0:c041:2340::10 # node-nl-149.protonvpn.net
 2a02:6ea0:c041:2341::10 # node-nl-150.protonvpn.net
 2a02:6ea0:c041:2343::10 # node-nl-152.protonvpn.net
 2a02:6ea0:c041:2344::10 # node-nl-153.protonvpn.net
+2a02:6ea0:c041:2345::10 # node-nl-154.protonvpn.net
 2a02:6ea0:c041:2346::10 # node-nl-155.protonvpn.net
 2a02:6ea0:c041:2347::10 # node-nl-156.protonvpn.net
 2a02:6ea0:c041:2348::10 # node-nl-157.protonvpn.net
