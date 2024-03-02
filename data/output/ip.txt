@@ -1172,9 +1172,7 @@
 37.235.52.76 # cl1.prmsrvs.com
 37.235.53.247 # es6.prmsrvs.com
 38.91.100.144 # stg-us-420.whiskergalaxy.com
-38.95.13.130 # tpa-349-ike.whiskergalaxy.com,tpa-349-ike.windscribe.com,us-east-110.totallyacdn.com,us-east-110.whiskergalaxy.com,us-east-110.windscribe.com
-38.95.13.131 # tpa-349.whiskergalaxy.com,tpa-349.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
-38.95.13.132 # tpa-349-wg.whiskergalaxy.com
+38.95.13.130 # us-east-110.totallyacdn.com,us-east-110.whiskergalaxy.com,us-east-110.windscribe.com
 38.132.101.210 # wf-us-015.totallyacdn.com,wf-us-015.whiskergalaxy.com,wf-us-015.windscribe.com,wfus-178-ike.whiskergalaxy.com,wfus-178-ike.windscribe.com
 38.132.101.211 # wf-us.whiskergalaxy.com,wf-us.windscribe.com,wfus-178.whiskergalaxy.com,wfus-178.windscribe.com
 38.132.101.212 # wfus-178-wg.whiskergalaxy.com
@@ -5728,10 +5726,10 @@
 116.206.228.178 # au-017.totallyacdn.com,au-017.whiskergalaxy.com,au-017.windscribe.com,mel-356-ike.whiskergalaxy.com,mel-356-ike.windscribe.com
 116.206.228.179 # au.whiskergalaxy.com,au.windscribe.com,mel-356.whiskergalaxy.com,mel-356.windscribe.com
 116.206.228.180 # mel-356-wg.whiskergalaxy.com
-118.107.220.29 # kul-270-ike.whiskergalaxy.com,kul-270-ike.windscribe.com,my-010.whiskergalaxy.com
+118.107.220.29 # kul-270-ike.whiskergalaxy.com,kul-270-ike.windscribe.com,my-010.totallyacdn.com,my-010.whiskergalaxy.com
 118.107.220.30 # kul-270.whiskergalaxy.com,kul-270.windscribe.com,my.whiskergalaxy.com,my.windscribe.com
 118.107.220.31 # kul-270-wg.whiskergalaxy.com
-118.107.220.37 # kul-270-ike.whiskergalaxy.com,kul-270-ike.windscribe.com,my-011.whiskergalaxy.com
+118.107.220.37 # kul-270-ike.whiskergalaxy.com,kul-270-ike.windscribe.com,my-011.totallyacdn.com,my-011.whiskergalaxy.com
 118.107.220.38 # kul-270.whiskergalaxy.com,kul-270.windscribe.com,my.whiskergalaxy.com,my.windscribe.com
 118.107.220.39 # kul-270-wg.whiskergalaxy.com
 121.127.47.81 # au822.nordvpn.com
@@ -10906,8 +10904,6 @@
 185.159.157.66 # ch-lu-01d.protonvpn.net
 185.159.157.67 # ch-biz002-07.protonvpn.net
 185.159.157.68 # ch-biz002-08.protonvpn.net
-185.159.157.70
-185.159.157.71
 185.159.157.80 # ch-jp-01a.protonvpn.net
 185.159.157.81 # ch-lv-01b.protonvpn.net
 185.159.157.82 # ch-in-01b.protonvpn.net
@@ -15539,10 +15535,6 @@
 2a02:6ea0:d213:2675::10 # node-us-203.protonvpn.net
 2a02:6ea0:d213:2718::10 # node-us-222.protonvpn.net
 2a02:6ea0:d33b:2066::10 # node-jp-16.protonvpn.net
-2a02:6ea0:d33b:2067::10 # node-jp-17.protonvpn.net
-2a02:6ea0:d33b:2105::10 # node-jp-18.protonvpn.net
-2a02:6ea0:d33b:2194::10 # node-jp-19.protonvpn.net
-2a02:6ea0:d33b:2195::10 # node-jp-20.protonvpn.net
 2a02:6ea0:d33b:2222::10 # node-jp-21.protonvpn.net
 2a02:6ea0:d33b:2320::10 # node-jp-22.protonvpn.net
 2a02:6ea0:d33b:2331::10 # node-jp-23.protonvpn.net
