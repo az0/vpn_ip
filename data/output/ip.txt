@@ -247,10 +247,6 @@
 12.202.180.10 # us-central-stc-004.whiskergalaxy.com,us-central-stc-004.windscribe.com
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
-13.32.151.25 # ca941.l304.r603.fastcloudcdn.net
-13.32.151.30 # ca941.l304.r603.fastcloudcdn.net
-13.32.151.95 # ca941.l304.r603.fastcloudcdn.net
-13.32.151.126 # ca941.l304.r603.fastcloudcdn.net
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
@@ -498,7 +494,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.102.239.211 # email.mg.windscribe.com
+34.110.180.34 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -1843,6 +1839,10 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
+52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -15444,9 +15444,6 @@
 2a00:7c80:0:3b6::10 # node-nl-126.protonvpn.net
 2a00:7c80:0:3b7::10 # node-nl-125.protonvpn.net
 2a00:7c80:0:3b8::10 # node-nl-124.protonvpn.net
-2a00:7c80:0:3b9::10 # node-nl-110.protonvpn.net
-2a00:7c80:0:3ba::10 # node-nl-111.protonvpn.net
-2a00:7c80:0:3bb::10 # node-nl-113.protonvpn.net
 2a00:7c80:0:3bc::10 # node-nl-114.protonvpn.net
 2a00:7c80:0:3bd::10 # node-nl-115.protonvpn.net
 2a00:7c80:0:3be::10 # node-nl-128.protonvpn.net
@@ -15454,6 +15451,7 @@
 2a00:7c80:0:3c0::10 # node-nl-117.protonvpn.net
 2a00:7c80:0:3c1::10 # node-nl-118.protonvpn.net
 2a00:7c80:0:3c2::10 # node-nl-133.protonvpn.net
+2a00:7c80:0:3c3::10 # node-nl-134.protonvpn.net
 2a00:7c80:0:3c4::10 # node-nl-137.protonvpn.net
 2a00:7c80:0:3c5::10 # node-nl-138.protonvpn.net
 2a00:7c80:0:3c6::10 # node-nl-139.protonvpn.net
@@ -15481,6 +15479,7 @@
 2a02:6ea0:c041:2253::10 # node-nl-82.protonvpn.net
 2a02:6ea0:c041:2254::10 # node-nl-83.protonvpn.net
 2a02:6ea0:c041:2316::10 # node-nl-129.protonvpn.net
+2a02:6ea0:c041:2317::10 # node-nl-131.protonvpn.net
 2a02:6ea0:c041:2318::10 # node-nl-130.protonvpn.net
 2a02:6ea0:c041:2319::10 # node-nl-132.protonvpn.net
 2a02:6ea0:c041:2338::10 # node-nl-147.protonvpn.net
