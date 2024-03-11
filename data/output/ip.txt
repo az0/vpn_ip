@@ -247,6 +247,10 @@
 12.202.180.10 # us-central-stc-004.whiskergalaxy.com,us-central-stc-004.windscribe.com
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
+13.32.151.25 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.30 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.95 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.126 # ca941.l304.r603.fastcloudcdn.net
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
@@ -1839,10 +1843,6 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
-52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -2122,9 +2122,9 @@
 66.115.182.131 # mco-336.whiskergalaxy.com,mco-336.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 66.115.182.132 # mco-336-wg.whiskergalaxy.com
 66.203.113.18 # cl-002.totallyacdn.com,cl-002.whiskergalaxy.com,cl-002.windscribe.com
-66.203.113.19 # cl-001.totallyacdn.com,cl-001.whiskergalaxy.com,cl-001.windscribe.com,scl-373-ike.whiskergalaxy.com,scl-373-ike.windscribe.com
-66.203.113.131 # cl.whiskergalaxy.com,cl.windscribe.com,scl-373.whiskergalaxy.com,scl-373.windscribe.com
-66.203.113.132 # scl-373-wg.whiskergalaxy.com
+66.203.113.19 # cl-001.totallyacdn.com,cl-001.whiskergalaxy.com,cl-001.windscribe.com
+66.203.113.131
+66.203.113.132
 66.203.113.136
 66.203.113.137
 66.251.128.1
@@ -11346,9 +11346,9 @@
 185.189.163.211 # tpe-314-ike.whiskergalaxy.com,tpe-314-ike.windscribe.com,tw-013.totallyacdn.com,tw-013.whiskergalaxy.com,tw-013.windscribe.com
 185.189.163.214 # tpe-314.whiskergalaxy.com,tpe-314.windscribe.com,tw.whiskergalaxy.com,tw.windscribe.com
 185.189.163.219 # tpe-314-wg.whiskergalaxy.com
-185.191.204.98 # il-006.totallyacdn.com,il-006.whiskergalaxy.com,tlv-218-ike.whiskergalaxy.com,tlv-218-ike.windscribe.com
-185.191.204.99 # il.whiskergalaxy.com,il.windscribe.com,tlv-218.whiskergalaxy.com,tlv-218.windscribe.com
-185.191.204.100 # tlv-218-wg.whiskergalaxy.com
+185.191.204.98 # il-006.totallyacdn.com,il-006.whiskergalaxy.com
+185.191.204.99
+185.191.204.100
 185.191.205.2 # il-005.totallyacdn.com,il-005.whiskergalaxy.com,il-005.windscribe.com,tlv-218-ike.whiskergalaxy.com,tlv-218-ike.windscribe.com
 185.191.205.3 # il.whiskergalaxy.com,il.windscribe.com,tlv-218.whiskergalaxy.com,tlv-218.windscribe.com
 185.191.205.4 # tlv-218-wg.whiskergalaxy.com
@@ -15436,7 +15436,6 @@
 2a00:7c80:0:3ad::10 # node-nl-05.protonvpn.net
 2a00:7c80:0:3ae::10 # node-nl-06.protonvpn.net
 2a00:7c80:0:3af::10 # node-nl-03.protonvpn.net
-2a00:7c80:0:3b0::10 # node-nl-169.protonvpn.net
 2a00:7c80:0:3b2::10 # node-nl-13.protonvpn.net
 2a00:7c80:0:3b3::10 # node-nl-109.protonvpn.net
 2a00:7c80:0:3b4::10 # node-nl-123.protonvpn.net
@@ -15444,6 +15443,9 @@
 2a00:7c80:0:3b6::10 # node-nl-126.protonvpn.net
 2a00:7c80:0:3b7::10 # node-nl-125.protonvpn.net
 2a00:7c80:0:3b8::10 # node-nl-124.protonvpn.net
+2a00:7c80:0:3b9::10 # node-nl-110.protonvpn.net
+2a00:7c80:0:3ba::10 # node-nl-111.protonvpn.net
+2a00:7c80:0:3bb::10 # node-nl-113.protonvpn.net
 2a00:7c80:0:3bc::10 # node-nl-114.protonvpn.net
 2a00:7c80:0:3bd::10 # node-nl-115.protonvpn.net
 2a00:7c80:0:3be::10 # node-nl-128.protonvpn.net
