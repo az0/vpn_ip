@@ -253,10 +253,6 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -503,7 +499,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.102.239.211 # email.mg.windscribe.com
+34.110.180.34 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -4116,7 +4112,6 @@
 91.90.120.8 # blade6.nuuk-rack402.nodes.gen4.ninja
 91.90.120.9 # blade7.nuuk-rack402.nodes.gen4.ninja
 91.90.120.10 # blade8.nuuk-rack402.nodes.gen4.ninja
-91.90.120.11 # blade9.nuuk-rack402.nodes.gen4.ninja
 91.90.120.12 # blade10.nuuk-rack402.nodes.gen4.ninja
 91.90.120.13 # blade11.nuuk-rack402.nodes.gen4.ninja
 91.90.120.15 # blade13.nuuk-rack402.nodes.gen4.ninja
@@ -5697,6 +5692,10 @@
 108.62.49.221 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
+108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
@@ -11206,9 +11205,9 @@
 185.159.159.144 # get.protonvpn.com
 185.163.44.137 # node-md-02.protonvpn.net
 185.164.35.16 # ba-001.totallyacdn.com,ba-001.whiskergalaxy.com,ba-001.windscribe.com,sjj-286-ike.windscribe.com
-185.165.170.1 # is-002.totallyacdn.com,is-002.whiskergalaxy.com,is-002.windscribe.com
-185.165.170.2
-185.165.170.3
+185.165.170.1 # is-002.totallyacdn.com,is-002.whiskergalaxy.com,is-002.windscribe.com,kef-344-ike.whiskergalaxy.com,kef-344-ike.windscribe.com
+185.165.170.2 # is.whiskergalaxy.com,is.windscribe.com,kef-344.whiskergalaxy.com,kef-344.windscribe.com
+185.165.170.3 # kef-344-wg.whiskergalaxy.com
 185.169.235.7 # uk2541.nordvpn.com
 185.169.235.20 # uk2542.nordvpn.com
 185.169.235.33 # uk2543.nordvpn.com
@@ -15415,6 +15414,7 @@
 218.232.76.179
 218.232.76.190
 2001:ac8:2:1::10 # node-in-05.protonvpn.net
+2001:ac8:4:3::10 # node-kh-01.protonvpn.net
 2001:ac8:a:2::10 # node-hk-06.protonvpn.net
 2001:ac8:a:5::10 # node-hk-05.protonvpn.net
 2001:ac8:22:4e::10 # node-nl-53.protonvpn.net
@@ -15452,6 +15452,7 @@
 2001:ac8:38:58::10 # node-no-03.protonvpn.net
 2001:ac8:40:25::10 # node-jp-30.protonvpn.net
 2001:ac8:40:26::10 # node-jp-31.protonvpn.net
+2001:ac8:40:27::10 # node-jp-32.protonvpn.net
 2001:ac8:81:14::10 # node-ae-02.protonvpn.net
 2001:ac8:88:91::10 # node-ie-03.protonvpn.net
 2001:ac8:8b:2f::10 # node-uk-14.protonvpn.net
@@ -15546,7 +15547,6 @@
 2a02:6ea0:c041:2229::10 # node-nl-70.protonvpn.net
 2a02:6ea0:c041:2231::10 # node-nl-72.protonvpn.net
 2a02:6ea0:c041:2243::10 # node-nl-74.protonvpn.net
-2a02:6ea0:c041:2244::10 # node-nl-75.protonvpn.net
 2a02:6ea0:c041:2245::10 # node-nl-76.protonvpn.net
 2a02:6ea0:c041:2248::10 # node-nl-79.protonvpn.net
 2a02:6ea0:c041:2252::10 # node-nl-81.protonvpn.net
@@ -15673,6 +15673,7 @@
 2a02:6ea0:d33b:2361::10 # node-jp-25.protonvpn.net
 2a02:6ea0:d33b:2406::10 # node-jp-26.protonvpn.net
 2a02:6ea0:d33b:2407::10 # node-jp-27.protonvpn.net
+2a02:6ea0:d33b:2422::10 # node-jp-29.protonvpn.net
 2a02:6ea0:d33b:2567::10 # node-jp-28.protonvpn.net
 2a02:6ea0:d411:2414::10 # node-ch-09.protonvpn.net
 2a02:6ea0:d411:2415::10 # node-ch-10.protonvpn.net
