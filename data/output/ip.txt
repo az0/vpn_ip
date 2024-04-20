@@ -250,6 +250,10 @@
 12.202.180.10 # us-central-stc-004.whiskergalaxy.com,us-central-stc-004.windscribe.com
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
+13.33.165.23 # ca941.l304.r603.fastcloudcdn.net
+13.33.165.85 # ca941.l304.r603.fastcloudcdn.net
+13.33.165.95 # ca941.l304.r603.fastcloudcdn.net
+13.33.165.114 # ca941.l304.r603.fastcloudcdn.net
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
@@ -499,7 +503,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.102.239.211 # email.mg.windscribe.com
+34.110.180.34 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -1756,8 +1760,8 @@
 45.152.183.195 # es182.nordvpn.com
 45.152.183.203 # es183.nordvpn.com
 45.156.248.50 # ba-002.totallyacdn.com,ba-002.whiskergalaxy.com
-45.156.248.51
-45.156.248.52
+45.156.248.51 # ba.windscribe.com,sjj-410.windscribe.com
+45.156.248.52 # sjj-410-wg.whiskergalaxy.com
 45.248.77.107 # au745.nordvpn.com
 45.248.77.115 # au734.nordvpn.com
 45.248.77.123 # au735.nordvpn.com
@@ -2118,12 +2122,12 @@
 66.115.182.130 # mco-336-ike.whiskergalaxy.com,mco-336-ike.windscribe.com,us-east-082.totallyacdn.com,us-east-082.whiskergalaxy.com,us-east-082.windscribe.com
 66.115.182.131 # mco-336.whiskergalaxy.com,mco-336.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 66.115.182.132 # mco-336-wg.whiskergalaxy.com
-66.203.113.18 # cl-002.totallyacdn.com,cl-002.whiskergalaxy.com,cl-002.windscribe.com
-66.203.113.19 # cl-001.totallyacdn.com,cl-001.whiskergalaxy.com,cl-001.windscribe.com
-66.203.113.131
-66.203.113.132
-66.203.113.136
-66.203.113.137
+66.203.113.18 # cl-002.totallyacdn.com,cl-002.whiskergalaxy.com,cl-002.windscribe.com,scl-373-ike.whiskergalaxy.com,scl-373-ike.windscribe.com
+66.203.113.19 # cl-001.totallyacdn.com,cl-001.whiskergalaxy.com,cl-001.windscribe.com,scl-373-ike.whiskergalaxy.com,scl-373-ike.windscribe.com
+66.203.113.131 # cl.whiskergalaxy.com,cl.windscribe.com,scl-373.whiskergalaxy.com,scl-373.windscribe.com
+66.203.113.132 # scl-373-wg.whiskergalaxy.com
+66.203.113.136 # cl.whiskergalaxy.com,cl.windscribe.com,scl-373.whiskergalaxy.com,scl-373.windscribe.com
+66.203.113.137 # scl-373-wg.whiskergalaxy.com
 66.251.128.1
 66.251.128.2
 66.251.128.3
@@ -5700,10 +5704,6 @@
 108.62.49.221 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
-108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
@@ -10498,6 +10498,7 @@
 184.170.240.199 # blade5.phoenix-rack455.nodes.gen4.ninja
 184.170.240.200 # blade6.phoenix-rack455.nodes.gen4.ninja
 184.170.240.202 # blade8.phoenix-rack455.nodes.gen4.ninja
+184.170.240.203 # blade9.phoenix-rack455.nodes.gen4.ninja
 184.170.240.204 # blade10.phoenix-rack455.nodes.gen4.ninja
 184.170.240.205 # blade11.phoenix-rack455.nodes.gen4.ninja
 184.170.240.206 # blade12.phoenix-rack455.nodes.gen4.ninja
