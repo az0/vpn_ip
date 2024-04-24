@@ -253,10 +253,10 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.238.25.16 # ca941.l304.r603.fastcloudcdn.net
-18.238.25.25 # ca941.l304.r603.fastcloudcdn.net
-18.238.25.58 # ca941.l304.r603.fastcloudcdn.net
-18.238.25.81 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -9279,10 +9279,9 @@
 162.222.198.132 # atl-109-wg.whiskergalaxy.com
 162.243.168.160 # ext-start.whiskergalaxy.com
 162.243.175.68 # checkip-02.windscribe.com
-165.22.210.179 # in3.prmsrvs.com
-165.22.217.61 # in4.prmsrvs.com
-165.22.217.66 # in5.prmsrvs.com
-165.22.217.97 # in6.prmsrvs.com
+165.22.217.61 # in3.prmsrvs.com,in4.prmsrvs.com
+165.22.217.66 # in3.prmsrvs.com,in5.prmsrvs.com
+165.22.217.97 # in3.prmsrvs.com,in6.prmsrvs.com
 165.73.248.90 # jnb-232-ike.whiskergalaxy.com,jnb-232-ike.windscribe.com,za-004.totallyacdn.com,za-004.whiskergalaxy.com,za-004.windscribe.com
 165.73.248.91 # jnb-232.whiskergalaxy.com,jnb-232.windscribe.com,za.whiskergalaxy.com,za.windscribe.com
 165.73.248.92 # jnb-232-wg.whiskergalaxy.com
@@ -15624,7 +15623,6 @@
 2a02:6ea0:c412:2209::10 # node-us-141.protonvpn.net
 2a02:6ea0:c412:2210::10 # node-us-142.protonvpn.net
 2a02:6ea0:c412:2214::10 # node-us-145.protonvpn.net
-2a02:6ea0:c412:2215::10 # node-us-146.protonvpn.net
 2a02:6ea0:c412:2216::10 # node-us-147.protonvpn.net
 2a02:6ea0:c412:2217::10 # node-us-148.protonvpn.net
 2a02:6ea0:c412:2353::10 # node-us-160.protonvpn.net
