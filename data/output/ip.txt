@@ -13577,15 +13577,15 @@
 193.29.107.250
 193.31.40.14 # sc-de-004.whiskergalaxy.com,sc-de-004.windscribe.com
 193.31.40.34 # sc-de-003.whiskergalaxy.com,sc-de-003.windscribe.com
-193.36.118.210 # uk-043.totallyacdn.com,uk-043.whiskergalaxy.com
-193.36.118.211
-193.36.118.212
-193.36.118.226 # uk-030.totallyacdn.com,uk-030.whiskergalaxy.com,uk-030.windscribe.com
-193.36.118.227
-193.36.118.228
-193.36.118.242 # uk-026.totallyacdn.com,uk-026.whiskergalaxy.com,uk-026.windscribe.com
-193.36.118.243
-193.36.118.244
+193.36.118.210 # edi-369-ike.whiskergalaxy.com,edi-369-ike.windscribe.com,uk-043.totallyacdn.com,uk-043.whiskergalaxy.com
+193.36.118.211 # edi-369.whiskergalaxy.com,edi-369.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
+193.36.118.212 # edi-369-wg.whiskergalaxy.com
+193.36.118.226 # edi-369-ike.whiskergalaxy.com,edi-369-ike.windscribe.com,uk-030.totallyacdn.com,uk-030.whiskergalaxy.com,uk-030.windscribe.com
+193.36.118.227 # edi-369.whiskergalaxy.com,edi-369.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
+193.36.118.228 # edi-369-wg.whiskergalaxy.com
+193.36.118.242 # edi-369-ike.whiskergalaxy.com,edi-369-ike.windscribe.com,uk-026.totallyacdn.com,uk-026.whiskergalaxy.com,uk-026.windscribe.com
+193.36.118.243 # edi-369.whiskergalaxy.com,edi-369.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
+193.36.118.244 # edi-369-wg.whiskergalaxy.com
 193.36.237.100 # my49.nordvpn.com
 193.36.237.102 # my50.nordvpn.com
 193.36.237.104 # my51.nordvpn.com
@@ -15679,7 +15679,6 @@
 2a02:6ea0:cc02:2680::10 # node-ar-04.protonvpn.net
 2a02:6ea0:cc09::10 # node-us-60.protonvpn.net
 2a02:6ea0:cc0b::10 # node-us-73.protonvpn.net
-2a02:6ea0:ce14:2577::10 # node-pl-05.protonvpn.net
 2a02:6ea0:d012:2078::10 # node-br-04.protonvpn.net
 2a02:6ea0:d101:2118::10 # node-th-01.protonvpn.net
 2a02:6ea0:d101:2282::10 # node-sg-14.protonvpn.net
@@ -15808,7 +15807,6 @@
 2a0d:5600:9:a22::10 # node-ca-18.protonvpn.net
 2a0d:5600:9:a23::10 # node-ca-17.protonvpn.net
 2a0d:5600:9:a24::10 # node-ca-16.protonvpn.net
-2a0d:5600:13:b::10 # node-pl-07.protonvpn.net
 2a0d:5600:13:28::10 # node-pl-06.protonvpn.net
 2a0d:5600:19:1::10 # node-ca-24.protonvpn.net
 2a0d:5600:24:6::10 # node-us-198.protonvpn.net
