@@ -499,7 +499,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -5033,8 +5033,10 @@
 103.77.234.211 # au.whiskergalaxy.com,au.windscribe.com,per-355.whiskergalaxy.com,per-355.windscribe.com
 103.77.234.212 # per-355-wg.whiskergalaxy.com
 103.87.68.50 # id-009.totallyacdn.com,id-009.whiskergalaxy.com,id-009.windscribe.com
-103.87.68.51
-103.87.68.52
+103.87.68.51 # cgk-416.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
+103.87.68.52 # cgk-416-wg.whiskergalaxy.com
+103.87.68.147 # cgk-416.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
+103.87.68.148 # cgk-416-wg.whiskergalaxy.com
 103.107.196.131 # au599.nordvpn.com
 103.107.196.139 # au600.nordvpn.com
 103.107.196.147 # au601.nordvpn.com
@@ -15807,7 +15809,7 @@
 2a0d:5600:9:a22::10 # node-ca-18.protonvpn.net
 2a0d:5600:9:a23::10 # node-ca-17.protonvpn.net
 2a0d:5600:9:a24::10 # node-ca-16.protonvpn.net
-2a0d:5600:13:28::10 # node-pl-06.protonvpn.net
+2a0d:5600:13:b::10 # node-pl-07.protonvpn.net
 2a0d:5600:19:1::10 # node-ca-24.protonvpn.net
 2a0d:5600:24:6::10 # node-us-198.protonvpn.net
 2a0d:5600:24:a::10 # node-us-144.protonvpn.net
