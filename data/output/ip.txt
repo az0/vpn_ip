@@ -61,10 +61,6 @@
 2.58.241.72
 2.58.241.73
 2.58.241.74
-3.162.174.12 # ca941.l304.r603.fastcloudcdn.net
-3.162.174.19 # ca941.l304.r603.fastcloudcdn.net
-3.162.174.107 # ca941.l304.r603.fastcloudcdn.net
-3.162.174.113 # ca941.l304.r603.fastcloudcdn.net
 5.22.209.219 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
 5.22.210.7 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
 5.22.211.32 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
@@ -503,7 +499,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -5704,6 +5700,10 @@
 108.62.49.221 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
+108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243 # kr75.nordvpn.com
 108.181.50.251 # kr79.nordvpn.com
@@ -6306,28 +6306,6 @@
 138.199.59.151 # blade22.warsaw-rack402.nodes.gen4.ninja
 138.199.59.152 # blade23.warsaw-rack402.nodes.gen4.ninja
 138.199.59.153 # blade24.warsaw-rack402.nodes.gen4.ninja
-138.199.59.155 # blade1.warsaw-rack401.nodes.gen4.ninja
-138.199.59.157 # blade3.warsaw-rack401.nodes.gen4.ninja
-138.199.59.158 # blade4.warsaw-rack401.nodes.gen4.ninja
-138.199.59.159 # blade5.warsaw-rack401.nodes.gen4.ninja
-138.199.59.160 # blade6.warsaw-rack401.nodes.gen4.ninja
-138.199.59.161 # blade7.warsaw-rack401.nodes.gen4.ninja
-138.199.59.162 # blade8.warsaw-rack401.nodes.gen4.ninja
-138.199.59.163 # blade9.warsaw-rack401.nodes.gen4.ninja
-138.199.59.164 # blade10.warsaw-rack401.nodes.gen4.ninja
-138.199.59.165 # blade11.warsaw-rack401.nodes.gen4.ninja
-138.199.59.166 # blade12.warsaw-rack401.nodes.gen4.ninja
-138.199.59.167 # blade13.warsaw-rack401.nodes.gen4.ninja
-138.199.59.168 # blade14.warsaw-rack401.nodes.gen4.ninja
-138.199.59.169 # blade15.warsaw-rack401.nodes.gen4.ninja
-138.199.59.170 # blade16.warsaw-rack401.nodes.gen4.ninja
-138.199.59.172 # blade18.warsaw-rack401.nodes.gen4.ninja
-138.199.59.173 # blade19.warsaw-rack401.nodes.gen4.ninja
-138.199.59.174 # blade20.warsaw-rack401.nodes.gen4.ninja
-138.199.59.175 # blade21.warsaw-rack401.nodes.gen4.ninja
-138.199.59.176 # blade22.warsaw-rack401.nodes.gen4.ninja
-138.199.59.177 # blade23.warsaw-rack401.nodes.gen4.ninja
-138.199.59.178 # blade24.warsaw-rack401.nodes.gen4.ninja
 138.199.60.85 # node-sg-15.protonvpn.net
 138.199.60.86 # node-id-01.protonvpn.net
 138.199.60.87 # node-mm-01.protonvpn.net
@@ -8505,7 +8483,6 @@
 150.107.76.118
 151.80.113.194 # api-backup-2.windscribe.com
 151.106.8.34 # ns.strasbourg-rack401.nodes.gen4.ninja
-151.236.13.106 # at11.prmsrvs.com
 151.236.20.55 # hk9.prmsrvs.com
 151.236.20.61 # hk8.prmsrvs.com
 151.236.20.65 # hk2.prmsrvs.com
@@ -13897,7 +13874,6 @@
 194.71.227.137 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 194.71.227.173 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 194.71.227.180 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
-194.71.227.224 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 194.71.227.246 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 194.99.105.99 # pl128.nordvpn.com
 194.99.105.227 # pl153.nordvpn.com
@@ -15462,6 +15438,7 @@
 2001:ac8:38:58::10 # node-no-03.protonvpn.net
 2001:ac8:40:25::10 # node-jp-30.protonvpn.net
 2001:ac8:40:26::10 # node-jp-31.protonvpn.net
+2001:ac8:40:27::10 # node-jp-32.protonvpn.net
 2001:ac8:81:14::10 # node-ae-02.protonvpn.net
 2001:ac8:88:91::10 # node-ie-03.protonvpn.net
 2001:ac8:8b:2f::10 # node-uk-14.protonvpn.net
@@ -15733,7 +15710,9 @@
 2a02:6ea0:e806:2146::10 # node-tr-03.protonvpn.net
 2a02:6ea0:f105:2721::10 # node-co-03.protonvpn.net
 2a03:90c0:83:2953::10 # node-lu-03.protonvpn.net
+2a03:90c0:83:2953::30 # node-lu-02.protonvpn.net
 2a04:2180:dc03:101::ff02:2 # node-lt-01b.protonvpn.net
+2a04:9dc0:20:4::10 # node-kr-03.protonvpn.net
 2a06:3040::907e:7954 # node-pt-02b.protonvpn.net
 2a07:b941:e10::d # node-ch-15.protonvpn.net
 2a07:b941:e10::37 # ch-biz002-03.protonvpn.net
