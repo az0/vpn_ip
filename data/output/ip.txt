@@ -812,6 +812,15 @@
 37.19.223.108 # blade11.vienna-rack403.nodes.gen4.ninja
 37.19.223.109 # blade12.vienna-rack403.nodes.gen4.ninja
 37.19.223.110 # blade13.vienna-rack403.nodes.gen4.ninja
+37.19.223.112 # blade1.vienna-rack404.nodes.gen4.ninja
+37.19.223.113 # blade2.vienna-rack404.nodes.gen4.ninja
+37.19.223.114 # blade3.vienna-rack404.nodes.gen4.ninja
+37.19.223.115 # blade4.vienna-rack404.nodes.gen4.ninja
+37.19.223.116 # blade5.vienna-rack404.nodes.gen4.ninja
+37.19.223.117 # blade6.vienna-rack404.nodes.gen4.ninja
+37.19.223.118 # blade7.vienna-rack404.nodes.gen4.ninja
+37.19.223.119 # blade8.vienna-rack404.nodes.gen4.ninja
+37.19.223.122 # blade11.vienna-rack404.nodes.gen4.ninja
 37.19.223.200 # blade1.vienna-rack410.nodes.gen4.ninja
 37.19.223.201 # blade2.vienna-rack410.nodes.gen4.ninja
 37.19.223.203 # blade4.vienna-rack410.nodes.gen4.ninja
@@ -1790,6 +1799,7 @@
 46.166.179.210 # ams-229.whiskergalaxy.com,ams-229.windscribe.com,nl.whiskergalaxy.com,nl.windscribe.com
 46.166.179.211 # ams-229-wg.whiskergalaxy.com
 46.183.186.28 # hu3.prmsrvs.com
+46.183.187.109 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 46.183.187.173 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 46.199.75.100 # cy-003.totallyacdn.com,cy-003.whiskergalaxy.com,cy-003.windscribe.com,lca-320-ike.whiskergalaxy.com,lca-320-ike.windscribe.com
 46.199.75.101 # cy.whiskergalaxy.com,cy.windscribe.com,lca-320.whiskergalaxy.com,lca-320.windscribe.com
@@ -2198,9 +2208,9 @@
 74.80.181.131 # mci-371-ike.whiskergalaxy.com,mci-371-ike.windscribe.com,us-central-097.totallyacdn.com,us-central-097.whiskergalaxy.com,us-central-097.windscribe.com
 74.80.181.132 # mci-371.whiskergalaxy.com,mci-371.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
 74.80.181.133 # mci-371-wg.whiskergalaxy.com
-74.80.181.146 # us-central-098.totallyacdn.com,us-central-098.whiskergalaxy.com,us-central-098.windscribe.com
-74.80.181.147
-74.80.181.148
+74.80.181.146 # mci-371-ike.whiskergalaxy.com,mci-371-ike.windscribe.com,us-central-098.totallyacdn.com,us-central-098.whiskergalaxy.com,us-central-098.windscribe.com
+74.80.181.147 # mci-371.whiskergalaxy.com,mci-371.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
+74.80.181.148 # mci-371-wg.whiskergalaxy.com
 77.73.69.120 # saintpeterburg-free.my-safe-net.com
 77.74.192.227 # uk2551.nordvpn.com
 77.74.197.195 # uk1921.nordvpn.com
@@ -3570,6 +3580,7 @@
 86.106.103.235 # se522.nordvpn.com
 86.106.103.243 # se523.nordvpn.com
 86.106.103.251 # se524.nordvpn.com
+86.106.119.143 # at11.prmsrvs.com
 86.106.137.11 # ro77.nordvpn.com
 86.106.137.187 # ro59.nordvpn.com
 86.107.55.227 # us5099.nordvpn.com
@@ -6557,9 +6568,9 @@
 146.70.26.75 # ch360.nordvpn.com
 146.70.26.83 # ch361.nordvpn.com
 146.70.26.91 # ch362.nordvpn.com
-146.70.29.178 # sg-009.totallyacdn.com,sg-009.whiskergalaxy.com,sg-009.windscribe.com,sin-170-ike.whiskergalaxy.com,sin-170-ike.windscribe.com
-146.70.29.179 # sg.whiskergalaxy.com,sg.windscribe.com,sin-170.whiskergalaxy.com,sin-170.windscribe.com
-146.70.29.180 # sin-170-wg.whiskergalaxy.com
+146.70.29.178 # sg-009.totallyacdn.com,sg-009.whiskergalaxy.com,sg-009.windscribe.com
+146.70.29.179
+146.70.29.180
 146.70.29.194 # node-sg-16.protonvpn.net
 146.70.29.195
 146.70.29.196
@@ -8495,6 +8506,7 @@
 149.102.254.74
 149.102.254.75
 149.102.254.76
+149.154.153.193 # at11.prmsrvs.com
 149.154.157.175 # milan.protect-my-ip.com
 149.248.222.213 # fly-checkip.windscribe.com
 150.107.76.118
@@ -11268,7 +11280,7 @@
 185.159.159.144 # get.protonvpn.com
 185.163.44.137 # node-md-02.protonvpn.net
 185.164.35.16 # ba-001.totallyacdn.com,ba-001.whiskergalaxy.com,ba-001.windscribe.com,sjj-286-ike.windscribe.com
-185.165.170.1 # is-002.totallyacdn.com,is-002.whiskergalaxy.com,is-002.windscribe.com,kef-344-ike.whiskergalaxy.com
+185.165.170.1 # is-002.totallyacdn.com,is-002.whiskergalaxy.com,is-002.windscribe.com,kef-344-ike.whiskergalaxy.com,kef-344-ike.windscribe.com
 185.165.170.2 # is.whiskergalaxy.com,is.windscribe.com,kef-344.whiskergalaxy.com,kef-344.windscribe.com
 185.165.170.3 # kef-344-wg.whiskergalaxy.com
 185.169.235.7 # uk2541.nordvpn.com
@@ -13172,6 +13184,7 @@
 192.71.213.84 # es7.prmsrvs.com
 192.71.244.62 # si2.prmsrvs.com
 192.71.244.96 # si1.prmsrvs.com
+192.71.249.68 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 192.142.226.2 # blade1.bangkok-rack401.nodes.gen4.ninja
 192.142.226.3 # blade2.bangkok-rack401.nodes.gen4.ninja
 192.142.226.5 # blade4.bangkok-rack401.nodes.gen4.ninja
@@ -13563,15 +13576,15 @@
 193.29.107.250
 193.31.40.14 # sc-de-004.whiskergalaxy.com,sc-de-004.windscribe.com
 193.31.40.34 # sc-de-003.whiskergalaxy.com,sc-de-003.windscribe.com
-193.36.118.210 # uk-043.totallyacdn.com,uk-043.whiskergalaxy.com
-193.36.118.211
-193.36.118.212
-193.36.118.226 # uk-030.totallyacdn.com,uk-030.whiskergalaxy.com,uk-030.windscribe.com
-193.36.118.227
-193.36.118.228
-193.36.118.242 # uk-026.totallyacdn.com,uk-026.whiskergalaxy.com,uk-026.windscribe.com
-193.36.118.243
-193.36.118.244
+193.36.118.210 # edi-369-ike.whiskergalaxy.com,edi-369-ike.windscribe.com,uk-043.totallyacdn.com,uk-043.whiskergalaxy.com
+193.36.118.211 # edi-369.whiskergalaxy.com,edi-369.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
+193.36.118.212 # edi-369-wg.whiskergalaxy.com
+193.36.118.226 # edi-369-ike.whiskergalaxy.com,edi-369-ike.windscribe.com,uk-030.totallyacdn.com,uk-030.whiskergalaxy.com,uk-030.windscribe.com
+193.36.118.227 # edi-369.whiskergalaxy.com,edi-369.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
+193.36.118.228 # edi-369-wg.whiskergalaxy.com
+193.36.118.242 # edi-369-ike.whiskergalaxy.com,edi-369-ike.windscribe.com,uk-026.totallyacdn.com,uk-026.whiskergalaxy.com,uk-026.windscribe.com
+193.36.118.243 # edi-369.whiskergalaxy.com,edi-369.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
+193.36.118.244 # edi-369-wg.whiskergalaxy.com
 193.36.237.100 # my49.nordvpn.com
 193.36.237.102 # my50.nordvpn.com
 193.36.237.104 # my51.nordvpn.com
@@ -13900,9 +13913,7 @@
 194.71.130.151 # hu5.prmsrvs.com
 194.71.130.225 # hu2.prmsrvs.com
 194.71.227.81 # meerbeke.my-safe-net.com
-194.71.227.137 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
-194.71.227.180 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
-194.71.227.246 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
+194.71.227.227 # be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 194.99.105.99 # pl128.nordvpn.com
 194.99.105.227 # pl153.nordvpn.com
 194.99.105.232 # pl154.nordvpn.com
@@ -15551,6 +15562,10 @@
 2a02:6ea0:1201:2616::10 # node-cz-04.protonvpn.net
 2a02:6ea0:1701:3038::10 # node-de-18.protonvpn.net
 2a02:6ea0:1701:3039::10 # node-de-19.protonvpn.net
+2a02:6ea0:1703:3086::10 # node-de-20.protonvpn.net
+2a02:6ea0:1703:3087::10 # node-de-21.protonvpn.net
+2a02:6ea0:1703:3100::10 # node-de-23.protonvpn.net
+2a02:6ea0:1703:3101::10 # node-de-22.protonvpn.net
 2a02:6ea0:1a01:2649::10 # node-uk-19.protonvpn.net
 2a02:6ea0:1a01:3448::10 # node-uk-21.protonvpn.net
 2a02:6ea0:1a01:3449::10 # node-uk-22.protonvpn.net
@@ -15682,7 +15697,6 @@
 2a02:6ea0:d33b:2194::10 # node-jp-19.protonvpn.net
 2a02:6ea0:d33b:2195::10 # node-jp-20.protonvpn.net
 2a02:6ea0:d33b:2222::10 # node-jp-21.protonvpn.net
-2a02:6ea0:d33b:2320::10 # node-jp-22.protonvpn.net
 2a02:6ea0:d33b:2331::10 # node-jp-23.protonvpn.net
 2a02:6ea0:d33b:2355::10 # node-jp-24.protonvpn.net
 2a02:6ea0:d33b:2361::10 # node-jp-25.protonvpn.net
