@@ -1680,9 +1680,9 @@
 45.136.155.225 # ist-405-ike.whiskergalaxy.com,ist-405-ike.windscribe.com,tr-020.totallyacdn.com,tr-020.whiskergalaxy.com,tr-020.windscribe.com
 45.136.155.226 # ist-405.windscribe.com,tr.whiskergalaxy.com,tr.windscribe.com
 45.136.155.227 # ist-405-wg.whiskergalaxy.com
-45.138.86.226 # ke-001.totallyacdn.com,ke-001.whiskergalaxy.com,ke-001.windscribe.com,nbo-389-ike.whiskergalaxy.com,nbo-389-ike.windscribe.com
-45.138.86.227 # ke.whiskergalaxy.com,ke.windscribe.com,nbo-389.whiskergalaxy.com,nbo-389.windscribe.com
-45.138.86.228 # nbo-389-wg.whiskergalaxy.com
+45.138.86.226 # ke-001.totallyacdn.com,ke-001.whiskergalaxy.com,ke-001.windscribe.com
+45.138.86.227
+45.138.86.228
 45.139.48.242 # node-hr-02.protonvpn.net
 45.139.48.243
 45.139.48.244
@@ -14632,9 +14632,9 @@
 202.43.6.2 # lhr-335-wg.whiskergalaxy.com
 202.43.6.34 # lhr-335.whiskergalaxy.com,lhr-335.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
 202.43.6.35 # lhr-335-wg.whiskergalaxy.com
-202.74.239.10 # id-007.totallyacdn.com,id-007.whiskergalaxy.com,id-007.windscribe.com
-202.74.239.11
-202.74.239.12
+202.74.239.10 # cgk-391-ike.whiskergalaxy.com,cgk-391-ike.windscribe.com,id-007.totallyacdn.com,id-007.whiskergalaxy.com,id-007.windscribe.com
+202.74.239.11 # cgk-391.whiskergalaxy.com,cgk-391.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
+202.74.239.12 # cgk-391-wg.whiskergalaxy.com
 202.74.239.90 # id-008.totallyacdn.com,id-008.whiskergalaxy.com,id-008.windscribe.com
 202.74.239.91
 202.74.239.92
@@ -15768,10 +15768,9 @@
 2a0d:5600:6:201::10 # node-us-215.protonvpn.net
 2a0d:5600:6:202::10 # node-us-213.protonvpn.net
 2a0d:5600:6:203::10 # node-us-214.protonvpn.net
+2a0d:5600:6:ad1b::10 # node-us-185.protonvpn.net
 2a0d:5600:6:ad1c::10 # node-us-184.protonvpn.net
-2a0d:5600:6:ad1d::10 # node-us-183.protonvpn.net
 2a0d:5600:6:ad1e::10 # node-us-182.protonvpn.net
-2a0d:5600:6:ad1f::10 # node-us-181.protonvpn.net
 2a0d:5600:6:ad20::10 # node-us-180.protonvpn.net
 2a0d:5600:8:78::10 # node-us-208.protonvpn.net
 2a0d:5600:8:82::10 # node-us-210.protonvpn.net
