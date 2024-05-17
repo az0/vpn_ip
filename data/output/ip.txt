@@ -253,10 +253,10 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
+18.65.3.33 # ca941.l304.r603.fastcloudcdn.net
+18.65.3.70 # ca941.l304.r603.fastcloudcdn.net
+18.65.3.79 # ca941.l304.r603.fastcloudcdn.net
+18.65.3.110 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -503,7 +503,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -947,9 +947,9 @@
 37.120.133.140 # blade10.london-rack453.nodes.gen4.ninja
 37.120.133.141 # blade11.london-rack453.nodes.gen4.ninja
 37.120.133.142 # blade12.london-rack453.nodes.gen4.ninja
-37.120.135.82 # it-001.totallyacdn.com,it-001.whiskergalaxy.com,it-001.windscribe.com,mxp-110-ike.whiskergalaxy.com,mxp-110-ike.windscribe.com
-37.120.135.83 # it.whiskergalaxy.com,it.windscribe.com,mxp-110.whiskergalaxy.com,mxp-110.windscribe.com
-37.120.135.84 # mxp-110-wg.whiskergalaxy.com
+37.120.135.82 # it-001.totallyacdn.com,it-001.whiskergalaxy.com,it-001.windscribe.com
+37.120.135.83
+37.120.135.84
 37.120.137.66 # ch-007.whiskergalaxy.com,ch-007.windscribe.com
 37.120.137.172 # ch-onion2.nordvpn.com
 37.120.137.194 # ch-stc-001.whiskergalaxy.com,ch-stc-001.windscribe.com
@@ -1080,9 +1080,9 @@
 37.120.204.235 # fr678.nordvpn.com
 37.120.204.243 # fr679.nordvpn.com
 37.120.204.251 # fr680.nordvpn.com
-37.120.207.18 # fco-238-ike.whiskergalaxy.com,fco-238-ike.windscribe.com,it-006.totallyacdn.com,it-006.whiskergalaxy.com,it-006.windscribe.com
-37.120.207.19 # fco-238.whiskergalaxy.com,fco-238.windscribe.com,it.whiskergalaxy.com,it.windscribe.com
-37.120.207.20 # fco-238-wg.whiskergalaxy.com
+37.120.207.18 # it-006.totallyacdn.com,it-006.whiskergalaxy.com,it-006.windscribe.com
+37.120.207.19
+37.120.207.20
 37.120.209.163 # se393.nordvpn.com
 37.120.209.171 # se394.nordvpn.com
 37.120.209.179 # se395.nordvpn.com
@@ -1239,9 +1239,9 @@
 45.9.249.99 # ae53.nordvpn.com
 45.9.251.27 # it215.nordvpn.com
 45.9.251.35 # it216.nordvpn.com
-45.9.251.98 # it-007.totallyacdn.com,it-007.whiskergalaxy.com,mxp-110-ike.whiskergalaxy.com,mxp-110-ike.windscribe.com
-45.9.251.99 # it.whiskergalaxy.com,it.windscribe.com,mxp-110.whiskergalaxy.com,mxp-110.windscribe.com
-45.9.251.100 # mxp-110-wg.whiskergalaxy.com
+45.9.251.98 # it-007.totallyacdn.com,it-007.whiskergalaxy.com
+45.9.251.99
+45.9.251.100
 45.12.220.43 # se427.nordvpn.com
 45.12.220.51 # se435.nordvpn.com
 45.12.220.59 # se436.nordvpn.com
@@ -2536,6 +2536,12 @@
 82.102.25.210 # sin-170-ike.whiskergalaxy.com,sin-170-ike.windscribe.com
 82.102.25.211 # sg.whiskergalaxy.com,sg.windscribe.com,sin-170.whiskergalaxy.com,sin-170.windscribe.com
 82.102.25.212 # sin-170-wg.whiskergalaxy.com
+82.102.26.18 # fco-238-ike.whiskergalaxy.com,fco-238-ike.windscribe.com
+82.102.26.19 # fco-238.whiskergalaxy.com,fco-238.windscribe.com,it.whiskergalaxy.com,it.windscribe.com
+82.102.26.20 # fco-238-wg.whiskergalaxy.com
+82.102.26.50 # fco-238-ike.whiskergalaxy.com,fco-238-ike.windscribe.com
+82.102.26.51 # fco-238.whiskergalaxy.com,fco-238.windscribe.com,it.whiskergalaxy.com,it.windscribe.com
+82.102.26.52 # fco-238-wg.whiskergalaxy.com
 82.102.27.92 # blade2.oslo-rack408.nodes.gen4.ninja
 82.102.27.147 # no170.nordvpn.com
 82.102.27.203 # no171.nordvpn.com
@@ -3387,7 +3393,7 @@
 84.252.92.141 # blade11.macau-rack402.nodes.gen4.ninja
 84.252.92.142 # blade12.macau-rack402.nodes.gen4.ninja
 84.252.92.143 # blade13.macau-rack402.nodes.gen4.ninja
-84.252.95.130 # uk-027.totallyacdn.com,uk-027.whiskergalaxy.com,uk-027.windscribe.com
+84.252.95.130
 84.252.95.131
 84.252.95.132
 84.252.112.1
@@ -3621,9 +3627,9 @@
 86.107.55.251 # us5107.nordvpn.com
 86.107.55.253 # us5108.nordvpn.com
 87.98.166.160 # api-backup.windscribe.com
-87.101.94.194 # fco-238-ike.whiskergalaxy.com,fco-238-ike.windscribe.com,it-003.totallyacdn.com,it-003.whiskergalaxy.com,it-003.windscribe.com
-87.101.94.195 # fco-238.whiskergalaxy.com,fco-238.windscribe.com,it.whiskergalaxy.com,it.windscribe.com
-87.101.94.196 # fco-238-wg.whiskergalaxy.com
+87.101.94.194 # it-003.totallyacdn.com,it-003.whiskergalaxy.com,it-003.windscribe.com
+87.101.94.195
+87.101.94.196
 87.101.95.251 # us9472.nordvpn.com
 87.120.102.3 # al36.nordvpn.com
 87.120.102.19 # al37.nordvpn.com
@@ -3793,7 +3799,7 @@
 89.40.183.29 # fr554.nordvpn.com
 89.40.183.227 # fr826.nordvpn.com
 89.41.26.50 # us-west-064.whiskergalaxy.com,us-west-064.windscribe.com
-89.44.201.98 # uk-025.totallyacdn.com,uk-025.whiskergalaxy.com,uk-025.windscribe.com
+89.44.201.98
 89.44.201.99
 89.44.201.100
 89.45.4.2 # node-us-164.protonvpn.net
@@ -4107,7 +4113,7 @@
 89.187.187.97 # lax-310-ike.whiskergalaxy.com,lax-310-ike.windscribe.com,us-west-066.totallyacdn.com,us-west-066.whiskergalaxy.com,us-west-066.windscribe.com
 89.187.187.98 # lax-310.whiskergalaxy.com,lax-310.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 89.187.187.99 # lax-310-wg.whiskergalaxy.com
-89.238.135.132 # uk-010.totallyacdn.com,uk-010.whiskergalaxy.com,uk-010.windscribe.com
+89.238.135.132
 89.238.135.133
 89.238.135.134
 89.238.150.149 # uk2186.nordvpn.com
@@ -5613,16 +5619,16 @@
 104.248.138.192 # de1.prmsrvs.com
 104.248.243.233 # de2.prmsrvs.com
 104.254.59.13 # seattle.protect-my-ip.com
-104.254.92.10 # ca-002.totallyacdn.com,ca-002.whiskergalaxy.com,ca-002.windscribe.com
-104.254.92.11
-104.254.92.12
+104.254.92.10 # ca-002.totallyacdn.com,ca-002.whiskergalaxy.com,ca-002.windscribe.com,yyz-72-ike.whiskergalaxy.com,yyz-72-ike.windscribe.com
+104.254.92.11 # ca.whiskergalaxy.com,ca.windscribe.com,yyz-72.whiskergalaxy.com,yyz-72.windscribe.com
+104.254.92.12 # yyz-72-wg.whiskergalaxy.com
 104.254.92.74 # ca-037.whiskergalaxy.com,ca-037.windscribe.com
-104.254.92.90 # ca-009.totallyacdn.com,ca-009.whiskergalaxy.com,ca-009.windscribe.com
-104.254.92.91
-104.254.92.92
-104.254.92.98 # wf-ca-004.totallyacdn.com,wf-ca-004.whiskergalaxy.com,wf-ca-004.windscribe.com
-104.254.92.99
-104.254.92.100
+104.254.92.90 # ca-009.totallyacdn.com,ca-009.whiskergalaxy.com,ca-009.windscribe.com,yyz-72-ike.whiskergalaxy.com,yyz-72-ike.windscribe.com
+104.254.92.91 # ca.whiskergalaxy.com,ca.windscribe.com,yyz-72.whiskergalaxy.com,yyz-72.windscribe.com
+104.254.92.92 # yyz-72-wg.whiskergalaxy.com
+104.254.92.98 # wf-ca-004.totallyacdn.com,wf-ca-004.whiskergalaxy.com,wf-ca-004.windscribe.com,yyz-292-ike.whiskergalaxy.com,yyz-292-ike.windscribe.com
+104.254.92.99 # wf-ca.whiskergalaxy.com,wf-ca.windscribe.com,yyz-292.whiskergalaxy.com,yyz-292.windscribe.com
+104.254.92.100 # yyz-292-wg.whiskergalaxy.com
 104.255.169.109 # pdx-302-ike.whiskergalaxy.com,pdx-302-ike.windscribe.com,us-west-072.totallyacdn.com,us-west-072.whiskergalaxy.com,us-west-072.windscribe.com
 104.255.169.110 # pdx-302.whiskergalaxy.com,pdx-302.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 104.255.169.111 # pdx-302-wg.whiskergalaxy.com
@@ -7043,6 +7049,9 @@
 146.70.121.204 # blade10.manchester-rack409.nodes.gen4.ninja
 146.70.121.205 # blade11.manchester-rack409.nodes.gen4.ninja
 146.70.121.206 # blade12.manchester-rack409.nodes.gen4.ninja
+146.70.123.98 # bru-99-ike.whiskergalaxy.com,bru-99-ike.windscribe.com
+146.70.123.99 # be.whiskergalaxy.com,be.windscribe.com,bru-99.whiskergalaxy.com,bru-99.windscribe.com
+146.70.123.100 # bru-99-wg.whiskergalaxy.com
 146.70.127.242 # node-us-211.protonvpn.net
 146.70.127.243
 146.70.127.244
@@ -7289,6 +7298,9 @@
 146.70.174.252
 146.70.174.253
 146.70.174.254
+146.70.176.242 # bru-99-ike.whiskergalaxy.com,bru-99-ike.windscribe.com
+146.70.176.243 # be.whiskergalaxy.com,be.windscribe.com,bru-99.whiskergalaxy.com,bru-99.windscribe.com
+146.70.176.244 # bru-99-wg.whiskergalaxy.com
 146.70.179.18 # node-uk-17.protonvpn.net
 146.70.179.19
 146.70.179.20
@@ -7445,12 +7457,12 @@
 146.70.183.172
 146.70.183.173
 146.70.183.174
-146.70.190.130 # be-005.totallyacdn.com,be-005.whiskergalaxy.com,bru-99-ike.whiskergalaxy.com,bru-99-ike.windscribe.com
-146.70.190.131 # be.whiskergalaxy.com,be.windscribe.com,bru-99.whiskergalaxy.com,bru-99.windscribe.com
-146.70.190.132 # bru-99-wg.whiskergalaxy.com
-146.70.190.210 # be-006.totallyacdn.com,be-006.whiskergalaxy.com,bru-99-ike.whiskergalaxy.com,bru-99-ike.windscribe.com
-146.70.190.211 # be.whiskergalaxy.com,be.windscribe.com,bru-99.whiskergalaxy.com,bru-99.windscribe.com
-146.70.190.212 # bru-99-wg.whiskergalaxy.com
+146.70.190.130 # be-005.totallyacdn.com,be-005.whiskergalaxy.com
+146.70.190.131
+146.70.190.132
+146.70.190.210 # be-006.totallyacdn.com,be-006.whiskergalaxy.com
+146.70.190.211
+146.70.190.212
 146.70.191.98 # ae-002.totallyacdn.com,ae-002.whiskergalaxy.com,dxb-304-ike.whiskergalaxy.com,dxb-304-ike.windscribe.com
 146.70.191.99 # ae.whiskergalaxy.com,ae.windscribe.com,dxb-304.whiskergalaxy.com,dxb-304.windscribe.com
 146.70.191.100 # dxb-304-wg.whiskergalaxy.com
@@ -10548,9 +10560,9 @@
 181.215.195.210 # us9842.nordvpn.com
 181.215.195.225 # us9843.nordvpn.com
 181.215.195.240 # us9844.nordvpn.com
-184.75.212.90 # ca-017.totallyacdn.com,ca-017.whiskergalaxy.com,ca-017.windscribe.com
-184.75.212.91
-184.75.212.92
+184.75.212.90 # ca-017.totallyacdn.com,ca-017.whiskergalaxy.com,ca-017.windscribe.com,yyz-72-ike.whiskergalaxy.com,yyz-72-ike.windscribe.com
+184.75.212.91 # ca.whiskergalaxy.com,ca.windscribe.com,yyz-72.whiskergalaxy.com,yyz-72.windscribe.com
+184.75.212.92 # yyz-72-wg.whiskergalaxy.com
 184.170.240.222 # blade1.phoenix-rack456.nodes.gen4.ninja
 184.170.240.223 # blade2.phoenix-rack456.nodes.gen4.ninja
 184.170.240.224 # blade3.phoenix-rack456.nodes.gen4.ninja
@@ -11429,6 +11441,9 @@
 185.183.105.130 # mxp-110-ike.whiskergalaxy.com,mxp-110-ike.windscribe.com
 185.183.105.131 # it.whiskergalaxy.com,it.windscribe.com,mxp-110.whiskergalaxy.com,mxp-110.windscribe.com
 185.183.105.132 # mxp-110-wg.whiskergalaxy.com
+185.183.105.146 # mxp-110-ike.whiskergalaxy.com,mxp-110-ike.windscribe.com
+185.183.105.147 # it.whiskergalaxy.com,it.windscribe.com,mxp-110.whiskergalaxy.com,mxp-110.windscribe.com
+185.183.105.148 # mxp-110-wg.whiskergalaxy.com
 185.183.106.19 # es150.nordvpn.com
 185.183.106.27 # es151.nordvpn.com
 185.183.106.227 # es149.nordvpn.com
@@ -12329,9 +12344,9 @@
 185.247.71.51 # se535.nordvpn.com
 185.247.71.59 # se536.nordvpn.com
 185.247.71.67 # se537.nordvpn.com
-185.252.223.226 # hu-002.totallyacdn.com,hu-002.whiskergalaxy.com,hu-002.windscribe.com
-185.252.223.227
-185.252.223.228
+185.252.223.226 # bud-90-ike.whiskergalaxy.com,bud-90-ike.windscribe.com,hu-002.totallyacdn.com,hu-002.whiskergalaxy.com,hu-002.windscribe.com
+185.252.223.227 # bud-90.whiskergalaxy.com,bud-90.windscribe.com,hu.whiskergalaxy.com,hu.windscribe.com
+185.252.223.228 # bud-90-wg.whiskergalaxy.com
 185.253.96.2 # ams-120-ike.whiskergalaxy.com,ams-120-ike.windscribe.com,nl-008.totallyacdn.com,nl-008.whiskergalaxy.com,nl-008.windscribe.com
 185.253.96.3 # ams-120.whiskergalaxy.com,ams-120.windscribe.com,nl.whiskergalaxy.com,nl.windscribe.com
 185.253.96.4 # ams-120-wg.whiskergalaxy.com
@@ -14003,9 +14018,9 @@
 194.110.112.179 # us8133.nordvpn.com
 194.110.112.187 # us8134.nordvpn.com
 194.110.114.251
-194.110.115.66 # be-003.totallyacdn.com,be-003.whiskergalaxy.com,be-003.windscribe.com,bru-99-ike.whiskergalaxy.com,bru-99-ike.windscribe.com
-194.110.115.67 # be.whiskergalaxy.com,be.windscribe.com,bru-99.whiskergalaxy.com,bru-99.windscribe.com
-194.110.115.68 # bru-99-wg.whiskergalaxy.com
+194.110.115.66 # be-003.totallyacdn.com,be-003.whiskergalaxy.com,be-003.windscribe.com
+194.110.115.67
+194.110.115.68
 194.116.208.16 # gr57.nordvpn.com
 194.116.208.18 # gr58.nordvpn.com
 194.116.208.20 # gr59.nordvpn.com
