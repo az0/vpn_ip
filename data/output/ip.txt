@@ -2252,7 +2252,6 @@
 77.81.139.179 # ie120.nordvpn.com
 77.81.139.187 # ie121.nordvpn.com
 77.81.142.130 # blade1.mexicocity-rack406.nodes.gen4.ninja
-77.81.142.131 # blade2.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.132 # blade3.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.133 # blade4.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.134 # blade5.mexicocity-rack406.nodes.gen4.ninja
@@ -2267,7 +2266,6 @@
 77.81.142.143 # blade14.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.144 # blade15.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.146 # blade1.mexicocity-rack405.nodes.gen4.ninja
-77.81.142.147 # blade2.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.148 # blade3.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.149 # blade4.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.150 # blade5.mexicocity-rack405.nodes.gen4.ninja
@@ -5039,9 +5037,9 @@
 103.9.79.219 # han-122.whiskergalaxy.com,han-122.windscribe.com,vn.whiskergalaxy.com,vn.windscribe.com
 103.9.79.220 # han-122-wg.whiskergalaxy.com
 103.10.197.2 # hk-001.whiskergalaxy.com,hk-001.windscribe.com
-103.10.197.98 # hk-005.totallyacdn.com,hk-005.whiskergalaxy.com,hk-005.windscribe.com,hkg-26-ike.whiskergalaxy.com,hkg-26-ike.windscribe.com
-103.10.197.99 # hk.whiskergalaxy.com,hk.windscribe.com,hkg-26.whiskergalaxy.com,hkg-26.windscribe.com
-103.10.197.100 # hkg-26-wg.whiskergalaxy.com
+103.10.197.98 # hk-005.totallyacdn.com,hk-005.whiskergalaxy.com,hk-005.windscribe.com
+103.10.197.99
+103.10.197.100
 103.15.105.132 # uk-004.whiskergalaxy.com
 103.26.207.109 # in.whiskergalaxy.com,in.windscribe.com
 103.26.207.213 # in.whiskergalaxy.com,in.windscribe.com
@@ -6782,6 +6780,7 @@
 146.70.59.141 # blade12.lisbon-rack405.nodes.gen4.ninja
 146.70.59.142 # blade13.lisbon-rack405.nodes.gen4.ninja
 146.70.59.143 # blade14.lisbon-rack405.nodes.gen4.ninja
+146.70.59.146 # blade17.lisbon-rack405.nodes.gen4.ninja
 146.70.59.147 # blade18.lisbon-rack405.nodes.gen4.ninja
 146.70.59.150 # blade21.lisbon-rack405.nodes.gen4.ninja
 146.70.59.151 # blade22.lisbon-rack405.nodes.gen4.ninja
@@ -6802,6 +6801,7 @@
 146.70.59.166 # blade12.lisbon-rack406.nodes.gen4.ninja
 146.70.59.169 # blade15.lisbon-rack406.nodes.gen4.ninja
 146.70.59.170 # blade16.lisbon-rack406.nodes.gen4.ninja
+146.70.59.171 # blade17.lisbon-rack406.nodes.gen4.ninja
 146.70.59.172 # blade18.lisbon-rack406.nodes.gen4.ninja
 146.70.59.173 # blade19.lisbon-rack406.nodes.gen4.ninja
 146.70.59.174 # blade20.lisbon-rack406.nodes.gen4.ninja
@@ -13760,13 +13760,6 @@
 194.5.215.196 # mia-140-wg.whiskergalaxy.com
 194.31.54.3 # de654.nordvpn.com
 194.31.54.4 # de655.nordvpn.com
-194.32.122.9 # blade5.vilnius-rack401.nodes.gen4.ninja
-194.32.122.10 # blade6.vilnius-rack401.nodes.gen4.ninja
-194.32.122.11 # blade7.vilnius-rack401.nodes.gen4.ninja
-194.32.122.12 # blade8.vilnius-rack401.nodes.gen4.ninja
-194.32.122.13 # blade9.vilnius-rack401.nodes.gen4.ninja
-194.32.122.14 # blade10.vilnius-rack401.nodes.gen4.ninja
-194.32.122.15 # blade11.vilnius-rack401.nodes.gen4.ninja
 194.32.122.17 # blade1.vilnius-rack402.nodes.gen4.ninja
 194.32.122.18 # blade2.vilnius-rack402.nodes.gen4.ninja
 194.32.122.19 # blade3.vilnius-rack402.nodes.gen4.ninja
@@ -14593,8 +14586,8 @@
 198.12.64.34 # buf-281-ike.whiskergalaxy.com,buf-281-ike.windscribe.com,us-east-065.totallyacdn.com,us-east-065.whiskergalaxy.com,us-east-065.windscribe.com
 198.12.64.35 # buf-281.whiskergalaxy.com,buf-281.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 198.12.64.36 # buf-281-wg.whiskergalaxy.com
-198.12.76.64 # atl-331.whiskergalaxy.com,atl-331.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
-198.12.76.65 # atl-331-wg.whiskergalaxy.com
+198.12.76.64
+198.12.76.65
 198.12.116.194 # sea-221-ike.whiskergalaxy.com,sea-221-ike.windscribe.com,us-west-062.totallyacdn.com,us-west-062.whiskergalaxy.com,us-west-062.windscribe.com
 198.12.116.195 # sea-221.whiskergalaxy.com,sea-221.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 198.12.116.196 # sea-221-wg.whiskergalaxy.com
@@ -14629,7 +14622,7 @@
 198.16.78.43 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl90.trafcfy.com
 198.16.78.44 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl91.trafcfy.com
 198.16.78.45 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl92.trafcfy.com
-198.23.148.202 # atl-331-ike.whiskergalaxy.com,atl-331-ike.windscribe.com,us-central-105.totallyacdn.com,us-central-105.whiskergalaxy.com
+198.23.148.202 # us-central-105.totallyacdn.com,us-central-105.whiskergalaxy.com
 198.23.242.146 # lax-321-ike.whiskergalaxy.com,lax-321-ike.windscribe.com,us-west-063.totallyacdn.com,us-west-063.whiskergalaxy.com,us-west-063.windscribe.com
 198.23.242.147 # lax-321.whiskergalaxy.com,lax-321.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 198.23.242.148 # lax-321-wg.whiskergalaxy.com
