@@ -253,10 +253,10 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
+18.160.213.42 # ca941.l304.r603.fastcloudcdn.net
+18.160.213.61 # ca941.l304.r603.fastcloudcdn.net
+18.160.213.82 # ca941.l304.r603.fastcloudcdn.net
+18.160.213.103 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -284,9 +284,9 @@
 23.81.64.210 # jfk-330-wg.whiskergalaxy.com
 23.82.136.93 # mia-326.whiskergalaxy.com,mia-326.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.82.136.94 # mia-326-ike.whiskergalaxy.com,mia-326-ike.windscribe.com,us-east-049.totallyacdn.com,us-east-049.whiskergalaxy.com,us-east-049.windscribe.com
-23.82.137.72 # mia-326.whiskergalaxy.com,mia-326.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
-23.82.137.73 # mia-326-wg.whiskergalaxy.com
-23.82.137.83 # mia-326-ike.whiskergalaxy.com,mia-326-ike.windscribe.com,us-east-084.totallyacdn.com,us-east-084.whiskergalaxy.com,us-east-084.windscribe.com
+23.82.137.72
+23.82.137.73
+23.82.137.83 # us-east-084.totallyacdn.com,us-east-084.whiskergalaxy.com,us-east-084.windscribe.com
 23.83.86.66 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com
 23.83.91.170 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.83.91.171 # ord-323-wg.whiskergalaxy.com
@@ -9434,9 +9434,9 @@
 167.160.167.194 # ewr-181-ike.whiskergalaxy.com,ewr-181-ike.windscribe.com,us-east-054.totallyacdn.com,us-east-054.whiskergalaxy.com,us-east-054.windscribe.com
 167.160.167.195 # ewr-181.whiskergalaxy.com,ewr-181.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 167.160.167.196 # ewr-181-wg.whiskergalaxy.com
-167.160.172.2 # ord-130-ike.whiskergalaxy.com,ord-130-ike.windscribe.com,us-east-022.totallyacdn.com,us-east-022.whiskergalaxy.com,us-east-022.windscribe.com
-167.160.172.3 # ord-130.whiskergalaxy.com,ord-130.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
-167.160.172.4 # ord-130-wg.whiskergalaxy.com
+167.160.172.2 # us-east-022.totallyacdn.com,us-east-022.whiskergalaxy.com,us-east-022.windscribe.com
+167.160.172.3
+167.160.172.4
 167.172.96.203 # de11.prmsrvs.com
 167.179.67.27 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp27.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 167.179.75.229 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
@@ -9874,6 +9874,31 @@
 173.205.85.164 # ewr-181-wg.whiskergalaxy.com
 173.234.33.65 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 173.234.33.66 # ord-323-wg.whiskergalaxy.com
+173.239.194.40 # blade1.melbourne-rack404.nodes.gen4.ninja
+173.239.194.41 # blade2.melbourne-rack404.nodes.gen4.ninja
+173.239.194.42 # blade3.melbourne-rack404.nodes.gen4.ninja
+173.239.194.43 # blade4.melbourne-rack404.nodes.gen4.ninja
+173.239.194.44 # blade5.melbourne-rack404.nodes.gen4.ninja
+173.239.194.45 # blade6.melbourne-rack404.nodes.gen4.ninja
+173.239.194.46 # blade7.melbourne-rack404.nodes.gen4.ninja
+173.239.194.47 # blade8.melbourne-rack404.nodes.gen4.ninja
+173.239.194.48 # blade9.melbourne-rack404.nodes.gen4.ninja
+173.239.194.50 # blade11.melbourne-rack404.nodes.gen4.ninja
+173.239.194.51 # blade12.melbourne-rack404.nodes.gen4.ninja
+173.239.194.52 # blade13.melbourne-rack404.nodes.gen4.ninja
+173.239.194.53 # blade14.melbourne-rack404.nodes.gen4.ninja
+173.239.194.54 # blade15.melbourne-rack404.nodes.gen4.ninja
+173.239.194.55 # blade16.melbourne-rack404.nodes.gen4.ninja
+173.239.194.56 # blade17.melbourne-rack404.nodes.gen4.ninja
+173.239.194.57 # blade18.melbourne-rack404.nodes.gen4.ninja
+173.239.194.58 # blade19.melbourne-rack404.nodes.gen4.ninja
+173.239.194.59 # blade20.melbourne-rack404.nodes.gen4.ninja
+173.239.194.61 # blade22.melbourne-rack404.nodes.gen4.ninja
+173.239.194.64 # blade25.melbourne-rack404.nodes.gen4.ninja
+173.239.194.65 # blade26.melbourne-rack404.nodes.gen4.ninja
+173.239.194.66 # blade27.melbourne-rack404.nodes.gen4.ninja
+173.239.194.67 # blade28.melbourne-rack404.nodes.gen4.ninja
+173.239.194.68 # blade29.melbourne-rack404.nodes.gen4.ninja
 175.110.108.1
 175.110.108.2
 175.110.108.3
@@ -15720,7 +15745,6 @@
 2a02:6ea0:cc02:2501::10 # node-cr-02.protonvpn.net
 2a02:6ea0:cc02:2564::10 # node-cl-04.protonvpn.net
 2a02:6ea0:cc02:2565::10 # node-pe-04.protonvpn.net
-2a02:6ea0:cc02:2618::10 # node-mx-03.protonvpn.net
 2a02:6ea0:cc02:2680::10 # node-ar-04.protonvpn.net
 2a02:6ea0:cc02:3073::10 # node-us-229.protonvpn.net
 2a02:6ea0:cc02:3074::10 # node-us-228.protonvpn.net
@@ -15731,7 +15755,6 @@
 2a02:6ea0:d012:2078::10 # node-br-04.protonvpn.net
 2a02:6ea0:d101:2118::10 # node-th-01.protonvpn.net
 2a02:6ea0:d101:2282::10 # node-sg-14.protonvpn.net
-2a02:6ea0:d101:2529::10 # node-mm-01.protonvpn.net
 2a02:6ea0:d101:3026::10 # node-id-01.protonvpn.net
 2a02:6ea0:d203::10 # node-us-57.protonvpn.net
 2a02:6ea0:d204::10 # node-us-75.protonvpn.net
