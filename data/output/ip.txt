@@ -338,8 +338,8 @@
 23.108.51.15 # mia-326-wg.whiskergalaxy.com
 23.146.243.194 # phl-413.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.146.243.195 # phl-413-wg.whiskergalaxy.com
-23.146.243.210
-23.146.243.211
+23.146.243.210 # phl-413.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
+23.146.243.211 # phl-413-wg.whiskergalaxy.com
 23.148.146.178 # us-east-121.totallyacdn.com,us-east-121.whiskergalaxy.com
 23.148.146.179 # us-east-122.totallyacdn.com,us-east-122.whiskergalaxy.com
 23.154.160.3 # mx05.windscribe.com
@@ -502,7 +502,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -14742,12 +14742,12 @@
 202.43.6.2 # lhr-335-wg.whiskergalaxy.com
 202.43.6.34 # lhr-335.whiskergalaxy.com,lhr-335.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
 202.43.6.35 # lhr-335-wg.whiskergalaxy.com
-202.74.239.10 # id-007.totallyacdn.com,id-007.whiskergalaxy.com,id-007.windscribe.com
-202.74.239.11
-202.74.239.12
-202.74.239.90 # id-008.totallyacdn.com,id-008.whiskergalaxy.com,id-008.windscribe.com
-202.74.239.91
-202.74.239.92
+202.74.239.10 # cgk-391-ike.whiskergalaxy.com,cgk-391-ike.windscribe.com,id-007.totallyacdn.com,id-007.whiskergalaxy.com,id-007.windscribe.com
+202.74.239.11 # cgk-391.whiskergalaxy.com,cgk-391.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
+202.74.239.12 # cgk-391-wg.whiskergalaxy.com
+202.74.239.90 # cgk-391-ike.whiskergalaxy.com,cgk-391-ike.windscribe.com,id-008.totallyacdn.com,id-008.whiskergalaxy.com,id-008.windscribe.com
+202.74.239.91 # cgk-391.whiskergalaxy.com,cgk-391.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
+202.74.239.92 # cgk-391-wg.whiskergalaxy.com
 202.129.16.136 # th-005.totallyacdn.com,th-005.whiskergalaxy.com,th-005.windscribe.com
 202.129.16.147
 202.129.16.149
@@ -15673,6 +15673,7 @@
 2a02:6ea0:1a01:3448::10 # node-uk-21.protonvpn.net
 2a02:6ea0:1a01:3449::10 # node-uk-22.protonvpn.net
 2a02:6ea0:c035::13 # pvpndeb.protonvpn.com
+2a02:6ea0:c041:2065::10 # node-nl-47.protonvpn.net
 2a02:6ea0:c041:2150::10 # node-nl-54.protonvpn.net
 2a02:6ea0:c041:2193::10 # node-nl-57.protonvpn.net
 2a02:6ea0:c041:2229::10 # node-nl-70.protonvpn.net
@@ -15698,7 +15699,6 @@
 2a02:6ea0:c041:2346::10 # node-nl-155.protonvpn.net
 2a02:6ea0:c041:2347::10 # node-nl-156.protonvpn.net
 2a02:6ea0:c041:2348::10 # node-nl-157.protonvpn.net
-2a02:6ea0:c041:2349::10 # node-nl-158.protonvpn.net
 2a02:6ea0:c041:2373::10 # node-nl-173.protonvpn.net
 2a02:6ea0:c041:2375::10 # node-nl-175.protonvpn.net
 2a02:6ea0:c041:2376::10 # node-nl-176.protonvpn.net
