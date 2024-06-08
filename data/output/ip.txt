@@ -502,7 +502,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -2262,9 +2262,6 @@
 77.81.142.138 # blade9.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.139 # blade10.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.140 # blade11.mexicocity-rack406.nodes.gen4.ninja
-77.81.142.141 # blade12.mexicocity-rack406.nodes.gen4.ninja
-77.81.142.142 # blade13.mexicocity-rack406.nodes.gen4.ninja
-77.81.142.143 # blade14.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.144 # blade15.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.146 # blade1.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.147 # blade2.mexicocity-rack405.nodes.gen4.ninja
@@ -2276,9 +2273,6 @@
 77.81.142.153 # blade8.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.155 # blade10.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.156 # blade11.mexicocity-rack405.nodes.gen4.ninja
-77.81.142.157 # blade12.mexicocity-rack405.nodes.gen4.ninja
-77.81.142.158 # blade13.mexicocity-rack405.nodes.gen4.ninja
-77.81.142.159 # blade14.mexicocity-rack405.nodes.gen4.ninja
 77.81.191.3 # uk812.nordvpn.com
 77.81.191.4 # uk870.nordvpn.com
 77.83.198.123 # ee.1clickvpn.net
@@ -14667,8 +14661,8 @@
 198.12.64.34 # buf-281-ike.whiskergalaxy.com,buf-281-ike.windscribe.com,us-east-065.totallyacdn.com,us-east-065.whiskergalaxy.com,us-east-065.windscribe.com
 198.12.64.35 # buf-281.whiskergalaxy.com,buf-281.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 198.12.64.36 # buf-281-wg.whiskergalaxy.com
-198.12.76.64
-198.12.76.65
+198.12.76.64 # atl-331.whiskergalaxy.com,atl-331.windscribe.com,us-central.whiskergalaxy.com,us-central.windscribe.com
+198.12.76.65 # atl-331-wg.whiskergalaxy.com
 198.12.116.194 # sea-221-ike.whiskergalaxy.com,sea-221-ike.windscribe.com,us-west-062.totallyacdn.com,us-west-062.whiskergalaxy.com,us-west-062.windscribe.com
 198.12.116.195 # sea-221.whiskergalaxy.com,sea-221.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 198.12.116.196 # sea-221-wg.whiskergalaxy.com
@@ -14703,7 +14697,7 @@
 198.16.78.43 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl90.trafcfy.com
 198.16.78.44 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl91.trafcfy.com
 198.16.78.45 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl92.trafcfy.com
-198.23.148.202 # us-central-105.totallyacdn.com,us-central-105.whiskergalaxy.com
+198.23.148.202 # atl-331-ike.whiskergalaxy.com,atl-331-ike.windscribe.com,us-central-105.totallyacdn.com,us-central-105.whiskergalaxy.com
 198.23.242.146 # lax-321-ike.whiskergalaxy.com,lax-321-ike.windscribe.com,us-west-063.totallyacdn.com,us-west-063.whiskergalaxy.com,us-west-063.windscribe.com
 198.23.242.147 # lax-321.whiskergalaxy.com,lax-321.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 198.23.242.148 # lax-321-wg.whiskergalaxy.com
@@ -15549,7 +15543,6 @@
 218.232.76.179
 218.232.76.190
 2001:ac8:2:1::10 # node-in-05.protonvpn.net
-2001:ac8:4:3::10 # node-kh-01.protonvpn.net
 2001:ac8:a:2::10 # node-hk-06.protonvpn.net
 2001:ac8:a:5::10 # node-hk-05.protonvpn.net
 2001:ac8:22:4e::10 # node-nl-53.protonvpn.net
@@ -15585,8 +15578,6 @@
 2001:ac8:38:2::10 # node-no-05.protonvpn.net
 2001:ac8:38:2a::10 # node-no-06.protonvpn.net
 2001:ac8:38:58::10 # node-no-03.protonvpn.net
-2001:ac8:40:25::10 # node-jp-30.protonvpn.net
-2001:ac8:40:26::10 # node-jp-31.protonvpn.net
 2001:ac8:40:27::10 # node-jp-32.protonvpn.net
 2001:ac8:81:14::10 # node-ae-02.protonvpn.net
 2001:ac8:88:91::10 # node-ie-03.protonvpn.net
@@ -15817,7 +15808,6 @@
 2a02:6ea0:d33b:2406::10 # node-jp-26.protonvpn.net
 2a02:6ea0:d33b:2407::10 # node-jp-27.protonvpn.net
 2a02:6ea0:d33b:2422::10 # node-jp-29.protonvpn.net
-2a02:6ea0:d33b:2567::10 # node-jp-28.protonvpn.net
 2a02:6ea0:d411:2414::10 # node-ch-09.protonvpn.net
 2a02:6ea0:d411:2415::10 # node-ch-10.protonvpn.net
 2a02:6ea0:d411:2416::10 # node-ch-11.protonvpn.net
