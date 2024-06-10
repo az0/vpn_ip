@@ -502,7 +502,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -5082,8 +5082,10 @@
 103.77.234.211 # au.whiskergalaxy.com,au.windscribe.com,per-355.whiskergalaxy.com,per-355.windscribe.com
 103.77.234.212 # per-355-wg.whiskergalaxy.com
 103.87.68.50 # id-009.totallyacdn.com,id-009.whiskergalaxy.com,id-009.windscribe.com
-103.87.68.51
-103.87.68.52
+103.87.68.51 # cgk-416.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
+103.87.68.52 # cgk-416-wg.whiskergalaxy.com
+103.87.68.147 # cgk-416.windscribe.com,id.whiskergalaxy.com,id.windscribe.com
+103.87.68.148 # cgk-416-wg.whiskergalaxy.com
 103.107.196.131 # au599.nordvpn.com
 103.107.196.139 # au600.nordvpn.com
 103.107.196.147 # au601.nordvpn.com
@@ -7797,9 +7799,6 @@
 146.70.202.188
 146.70.202.189
 146.70.202.190
-146.70.203.18 # bud-90-ike.whiskergalaxy.com,bud-90-ike.windscribe.com
-146.70.203.19 # bud-90.whiskergalaxy.com,bud-90.windscribe.com,hu.whiskergalaxy.com,hu.windscribe.com
-146.70.203.20 # bud-90-wg.whiskergalaxy.com
 146.70.204.162 # node-uk-09.protonvpn.net
 146.70.204.163
 146.70.204.164
@@ -12552,31 +12551,6 @@
 188.126.79.28 # blade24.stockholm-rack403.nodes.gen4.ninja
 188.126.79.29 # blade25.stockholm-rack403.nodes.gen4.ninja
 188.126.79.30 # blade26.stockholm-rack403.nodes.gen4.ninja
-188.126.89.99 # blade1.helsinki-rack405.nodes.gen4.ninja
-188.126.89.100 # blade2.helsinki-rack405.nodes.gen4.ninja
-188.126.89.101 # blade3.helsinki-rack405.nodes.gen4.ninja
-188.126.89.102 # blade4.helsinki-rack405.nodes.gen4.ninja
-188.126.89.103 # blade5.helsinki-rack405.nodes.gen4.ninja
-188.126.89.104 # blade6.helsinki-rack405.nodes.gen4.ninja
-188.126.89.105 # blade7.helsinki-rack405.nodes.gen4.ninja
-188.126.89.106 # blade8.helsinki-rack405.nodes.gen4.ninja
-188.126.89.107 # blade9.helsinki-rack405.nodes.gen4.ninja
-188.126.89.108 # blade10.helsinki-rack405.nodes.gen4.ninja
-188.126.89.110 # blade12.helsinki-rack405.nodes.gen4.ninja
-188.126.89.111 # blade13.helsinki-rack405.nodes.gen4.ninja
-188.126.89.112 # blade14.helsinki-rack405.nodes.gen4.ninja
-188.126.89.113 # blade15.helsinki-rack405.nodes.gen4.ninja
-188.126.89.114 # blade16.helsinki-rack405.nodes.gen4.ninja
-188.126.89.115 # blade17.helsinki-rack405.nodes.gen4.ninja
-188.126.89.116 # blade18.helsinki-rack405.nodes.gen4.ninja
-188.126.89.117 # blade19.helsinki-rack405.nodes.gen4.ninja
-188.126.89.118 # blade20.helsinki-rack405.nodes.gen4.ninja
-188.126.89.119 # blade21.helsinki-rack405.nodes.gen4.ninja
-188.126.89.120 # blade22.helsinki-rack405.nodes.gen4.ninja
-188.126.89.122 # blade24.helsinki-rack405.nodes.gen4.ninja
-188.126.89.123 # blade25.helsinki-rack405.nodes.gen4.ninja
-188.126.89.124 # blade26.helsinki-rack405.nodes.gen4.ninja
-188.126.89.125 # blade27.helsinki-rack405.nodes.gen4.ninja
 188.126.94.195 # blade1.copenhagen-rack407.nodes.gen4.ninja
 188.126.94.196 # blade2.copenhagen-rack407.nodes.gen4.ninja
 188.126.94.197 # blade3.copenhagen-rack407.nodes.gen4.ninja
@@ -12693,7 +12667,6 @@
 188.214.122.73 # blade7.cairo-rack451.nodes.gen4.ninja
 188.214.122.75 # blade9.cairo-rack451.nodes.gen4.ninja
 188.214.122.76 # blade10.cairo-rack451.nodes.gen4.ninja
-188.214.122.77 # blade11.cairo-rack451.nodes.gen4.ninja
 188.214.122.78 # blade12.cairo-rack451.nodes.gen4.ninja
 188.214.122.82 # node-eg-01.protonvpn.net
 188.214.122.83
@@ -15878,6 +15851,7 @@
 2a0d:5600:6:203::10 # node-us-214.protonvpn.net
 2a0d:5600:6:ad1b::10 # node-us-185.protonvpn.net
 2a0d:5600:6:ad1c::10 # node-us-184.protonvpn.net
+2a0d:5600:6:ad1d::10 # node-us-183.protonvpn.net
 2a0d:5600:6:ad1e::10 # node-us-182.protonvpn.net
 2a0d:5600:6:ad1f::10 # node-us-181.protonvpn.net
 2a0d:5600:6:ad20::10 # node-us-180.protonvpn.net
@@ -15911,6 +15885,7 @@
 2a0d:5600:24:6::10 # node-us-198.protonvpn.net
 2a0d:5600:24:a::10 # node-us-144.protonvpn.net
 2a0d:5600:24:b::10 # node-us-118.protonvpn.net
+2a0d:5600:24:32::10 # node-us-187.protonvpn.net
 2a0d:5600:24:33::10 # node-us-221.protonvpn.net
 2a0d:5600:24:3d::10 # node-us-197.protonvpn.net
 2a0d:5600:24:3e::10 # node-us-196.protonvpn.net
@@ -15920,6 +15895,8 @@
 2a0d:5600:24:4a::10 # node-us-192.protonvpn.net
 2a0d:5600:24:4c::10 # node-us-191.protonvpn.net
 2a0d:5600:24:4d::10 # node-us-190.protonvpn.net
+2a0d:5600:24:62::10 # node-us-189.protonvpn.net
+2a0d:5600:24:64::10 # node-us-188.protonvpn.net
 2a0d:5600:24:83::10 # node-us-216.protonvpn.net
 2a0d:5600:24:84::10 # node-us-217.protonvpn.net
 2a0d:5600:24:85::10 # node-us-218.protonvpn.net
