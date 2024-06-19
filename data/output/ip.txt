@@ -8066,7 +8066,9 @@
 149.40.61.227 # prg-338-wg.whiskergalaxy.com
 149.40.63.129 # node-uk-22.protonvpn.net
 149.40.63.130
-149.50.208.97 # tr-024.whiskergalaxy.com,tr-024.windscribe.com
+149.50.208.97 # ist-405-ike.whiskergalaxy.com,ist-405-ike.windscribe.com,tr-024.whiskergalaxy.com,tr-024.windscribe.com
+149.50.208.98 # ist-405.windscribe.com,tr.whiskergalaxy.com,tr.windscribe.com
+149.50.208.99 # ist-405-wg.whiskergalaxy.com
 149.50.210.155 # prox-jp.pointtoserver.com
 149.50.213.36 # sg558.nordvpn.com
 149.50.213.38 # sg559.nordvpn.com
@@ -8444,7 +8446,9 @@
 149.102.229.193 # ist-405-ike.whiskergalaxy.com,ist-405-ike.windscribe.com,tr-021.totallyacdn.com,tr-021.whiskergalaxy.com,tr-021.windscribe.com
 149.102.229.194 # ist-405.windscribe.com,tr.whiskergalaxy.com,tr.windscribe.com
 149.102.229.195 # ist-405-wg.whiskergalaxy.com
-149.102.229.225 # tr-023.whiskergalaxy.com,tr-023.windscribe.com
+149.102.229.225 # ist-405-ike.whiskergalaxy.com,ist-405-ike.windscribe.com,tr-023.whiskergalaxy.com,tr-023.windscribe.com
+149.102.229.226 # ist-405.windscribe.com,tr.whiskergalaxy.com,tr.windscribe.com
+149.102.229.227 # ist-405-wg.whiskergalaxy.com
 149.102.230.193 # de689.nordvpn.com
 149.102.230.195 # de690.nordvpn.com
 149.102.230.197 # de691.nordvpn.com
@@ -15592,7 +15596,6 @@
 2001:ac8:8b:55::10 # node-uk-20.protonvpn.net
 2001:ac8:8f:8::10 # node-eg-01.protonvpn.net
 2001:ac8:90:5::10 # node-us-127.protonvpn.net
-2001:ac8:93:3::10 # node-vn-01.protonvpn.net
 2001:ac8:94:3::10 # node-ph-01.protonvpn.net
 2001:ac8:97:3::10 # node-tw-04.protonvpn.net
 2001:ac8:9a:1f::10 # node-us-125.protonvpn.net
