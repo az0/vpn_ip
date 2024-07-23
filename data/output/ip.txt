@@ -4592,7 +4592,6 @@
 94.237.48.208 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 94.237.49.111 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 94.237.49.242 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk42.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.49.255 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 94.237.50.130 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 94.237.50.134 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 94.237.50.251 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
@@ -6689,25 +6688,15 @@
 146.70.51.221
 146.70.51.222
 146.70.52.195 # blade1.moscow-rack408.nodes.gen4.ninja
-146.70.52.196 # blade2.moscow-rack408.nodes.gen4.ninja
-146.70.52.197 # blade3.moscow-rack408.nodes.gen4.ninja
-146.70.52.198 # blade4.moscow-rack408.nodes.gen4.ninja
-146.70.52.199 # blade5.moscow-rack408.nodes.gen4.ninja
 146.70.52.200 # blade6.moscow-rack408.nodes.gen4.ninja
 146.70.52.201 # blade7.moscow-rack408.nodes.gen4.ninja
 146.70.52.202 # blade8.moscow-rack408.nodes.gen4.ninja
 146.70.52.203 # blade9.moscow-rack408.nodes.gen4.ninja
 146.70.52.211 # blade1.moscow-rack407.nodes.gen4.ninja
-146.70.52.212 # blade2.moscow-rack407.nodes.gen4.ninja
-146.70.52.213 # blade3.moscow-rack407.nodes.gen4.ninja
-146.70.52.214 # blade4.moscow-rack407.nodes.gen4.ninja
 146.70.52.216 # blade6.moscow-rack407.nodes.gen4.ninja
 146.70.52.217 # blade7.moscow-rack407.nodes.gen4.ninja
 146.70.52.218 # blade8.moscow-rack407.nodes.gen4.ninja
 146.70.52.220 # blade10.moscow-rack407.nodes.gen4.ninja
-146.70.52.228 # blade2.moscow-rack406.nodes.gen4.ninja
-146.70.52.230 # blade4.moscow-rack406.nodes.gen4.ninja
-146.70.52.231 # blade5.moscow-rack406.nodes.gen4.ninja
 146.70.52.232 # blade6.moscow-rack406.nodes.gen4.ninja
 146.70.52.233 # blade7.moscow-rack406.nodes.gen4.ninja
 146.70.52.234 # blade8.moscow-rack406.nodes.gen4.ninja
@@ -10858,12 +10847,10 @@
 185.107.95.49 # ams-229-ike.whiskergalaxy.com,ams-229-ike.windscribe.com,nl-041.totallyacdn.com,nl-041.whiskergalaxy.com
 185.107.95.50 # ams-229.whiskergalaxy.com,ams-229.windscribe.com,nl.whiskergalaxy.com,nl.windscribe.com
 185.107.95.51 # ams-229-wg.whiskergalaxy.com
-185.108.129.51 # ie10.prmsrvs.com,ie2.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com
-185.108.129.52 # ie2.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie9.prmsrvs.com
-185.108.129.53 # ie2.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie8.prmsrvs.com
-185.108.129.54 # ie2.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com
-185.108.129.89 # ie1.prmsrvs.com,ie2.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com
-185.108.129.111 # ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com
+185.108.129.51 # ie1.prmsrvs.com,ie10.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com
+185.108.129.52 # ie1.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie9.prmsrvs.com
+185.108.129.53 # ie1.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie8.prmsrvs.com
+185.108.129.54 # ie1.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com
 185.109.168.131 # uk1901.nordvpn.com
 185.109.170.243 # uk1902.nordvpn.com
 185.120.147.2 # ro-011.whiskergalaxy.com,ro-011.windscribe.com
@@ -13841,11 +13828,11 @@
 194.32.235.88
 194.32.235.100
 194.32.235.112
-194.32.235.129 # ie163.nordvpn.com
-194.32.235.142 # ie164.nordvpn.com
-194.32.235.155 # ie165.nordvpn.com
-194.32.235.168 # ie166.nordvpn.com
-194.32.235.180 # ie167.nordvpn.com
+194.32.235.129
+194.32.235.142
+194.32.235.155
+194.32.235.168
+194.32.235.180
 194.32.235.192
 194.32.235.204
 194.32.235.216
