@@ -1862,10 +1862,6 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
-52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -2214,8 +2210,6 @@
 77.81.142.134 # blade5.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.135 # blade6.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.136 # blade7.mexicocity-rack406.nodes.gen4.ninja
-77.81.142.137 # blade8.mexicocity-rack406.nodes.gen4.ninja
-77.81.142.138 # blade9.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.139 # blade10.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.140 # blade11.mexicocity-rack406.nodes.gen4.ninja
 77.81.142.141 # blade12.mexicocity-rack406.nodes.gen4.ninja
@@ -2229,7 +2223,6 @@
 77.81.142.150 # blade5.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.151 # blade6.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.152 # blade7.mexicocity-rack405.nodes.gen4.ninja
-77.81.142.153 # blade8.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.155 # blade10.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.156 # blade11.mexicocity-rack405.nodes.gen4.ninja
 77.81.142.157 # blade12.mexicocity-rack405.nodes.gen4.ninja
@@ -4775,14 +4768,6 @@
 95.181.238.141 # blade12.nassau-rack402.nodes.gen4.ninja
 95.181.238.142 # blade13.nassau-rack402.nodes.gen4.ninja
 95.181.238.155 # blade1.nassau-rack402.nodes.gen4.ninja
-95.181.238.157 # blade1.nassau-rack401.nodes.gen4.ninja
-95.181.238.158 # blade2.nassau-rack401.nodes.gen4.ninja
-95.181.238.159 # blade3.nassau-rack401.nodes.gen4.ninja
-95.181.238.160 # blade4.nassau-rack401.nodes.gen4.ninja
-95.181.238.161 # blade5.nassau-rack401.nodes.gen4.ninja
-95.181.238.163 # blade7.nassau-rack401.nodes.gen4.ninja
-95.181.238.165 # blade9.nassau-rack401.nodes.gen4.ninja
-95.181.238.167 # blade11.nassau-rack401.nodes.gen4.ninja
 95.181.239.131 # blade1.colombo-rack402.nodes.gen4.ninja
 95.181.239.132 # blade2.colombo-rack402.nodes.gen4.ninja
 95.181.239.133 # blade3.colombo-rack402.nodes.gen4.ninja
@@ -5682,6 +5667,10 @@
 108.62.49.221 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com
 108.62.104.31 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-083.totallyacdn.com,us-east-083.whiskergalaxy.com,us-east-083.windscribe.com
 108.62.202.217 # ord-323-ike.whiskergalaxy.com,ord-323-ike.windscribe.com,us-east-047.totallyacdn.com,us-east-047.whiskergalaxy.com,us-east-047.windscribe.com
+108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243
 108.181.50.251
@@ -12086,11 +12075,11 @@
 185.230.139.119
 185.230.139.140
 185.230.139.156
-185.230.139.172 # fr936.nordvpn.com
-185.230.139.188 # fr937.nordvpn.com
-185.230.139.204 # fr938.nordvpn.com
-185.230.139.220 # fr939.nordvpn.com
-185.230.139.236 # fr940.nordvpn.com
+185.230.139.172
+185.230.139.188
+185.230.139.204
+185.230.139.220
+185.230.139.236
 185.232.21.99 # be156.nordvpn.com
 185.232.22.75 # us-ca86.nordvpn.com
 185.232.22.76 # us-ca87.nordvpn.com
@@ -15824,6 +15813,7 @@
 2a02:6ea0:da08:2070::10 # node-ro-02.protonvpn.net
 2a02:6ea0:da08:2404::10 # node-ge-03.protonvpn.net
 2a02:6ea0:db0a:2333::10 # node-au-11.protonvpn.net
+2a02:6ea0:db0a:2334::10 # node-au-12.protonvpn.net
 2a02:6ea0:dc0e:2405::10 # node-mt-01.protonvpn.net
 2a02:6ea0:dc0e:2704::10 # node-ae-04.protonvpn.net
 2a02:6ea0:de10:2126::10 # node-ca-09.protonvpn.net
@@ -15910,6 +15900,7 @@
 2a0d:5600:19:1::10 # node-ca-24.protonvpn.net
 2a0d:5600:24:6::10 # node-us-198.protonvpn.net
 2a0d:5600:24:a::10 # node-us-144.protonvpn.net
+2a0d:5600:24:b::10 # node-us-118.protonvpn.net
 2a0d:5600:24:32::10 # node-us-187.protonvpn.net
 2a0d:5600:24:33::10 # node-us-221.protonvpn.net
 2a0d:5600:24:3d::10 # node-us-197.protonvpn.net
