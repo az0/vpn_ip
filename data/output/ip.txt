@@ -259,10 +259,6 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -1197,6 +1193,7 @@
 37.235.49.82 # is1.prmsrvs.com
 37.235.52.33 # cl1.prmsrvs.com
 37.235.53.247 # es6.prmsrvs.com
+37.235.56.70 # at11.prmsrvs.com
 38.91.100.144 # stg-us-420.whiskergalaxy.com
 38.95.13.130 # tpa-349-ike.whiskergalaxy.com,tpa-349-ike.windscribe.com,us-east-110.totallyacdn.com,us-east-110.whiskergalaxy.com,us-east-110.windscribe.com
 38.95.13.131 # tpa-349.whiskergalaxy.com,tpa-349.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
@@ -1866,6 +1863,10 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
+52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -8554,7 +8555,6 @@
 150.107.76.118
 151.80.113.194 # api-backup-2.windscribe.com
 151.106.8.34 # ns.strasbourg-rack401.nodes.gen4.ninja
-151.236.13.106 # at11.prmsrvs.com
 151.236.18.110 # it1.prmsrvs.com,it2.prmsrvs.com,it3.prmsrvs.com
 151.236.20.55 # hk9.prmsrvs.com
 151.236.20.61 # hk8.prmsrvs.com
@@ -9284,8 +9284,9 @@
 158.255.208.46 # hk1.prmsrvs.com
 158.255.208.57 # hk5.prmsrvs.com
 158.255.208.116 # hk4.prmsrvs.com
+158.255.209.34 # at11.prmsrvs.com
 158.255.211.46 # vienna2.my-safe-net.com
-158.255.211.75 # at11.prmsrvs.com
+158.255.211.223 # at11.prmsrvs.com
 159.69.113.9 # berlin.my-safe-net.com
 159.203.44.199 # acctmgr-ca-2.windscribe.com
 159.203.59.35 # assets2.windscribe.com
@@ -15571,7 +15572,6 @@
 2001:ac8:36:5e::10 # node-de-15.protonvpn.net
 2001:ac8:37:65::10 # node-dk-05.protonvpn.net
 2001:ac8:37:66::10 # node-dk-06.protonvpn.net
-2001:ac8:38:2::10 # node-no-05.protonvpn.net
 2001:ac8:38:2a::10 # node-no-06.protonvpn.net
 2001:ac8:38:58::10 # node-no-03.protonvpn.net
 2001:ac8:40:25::10 # node-jp-30.protonvpn.net
@@ -15929,4 +15929,6 @@
 2a0d:5600:24:ff06::10 # node-us-67.protonvpn.net
 2a0d:5600:35:3::10 # node-br-03.protonvpn.net
 2a0d:5600:35:6::10 # node-us-126.protonvpn.net
+2a10:484:3:1::10 # node-jp-13.protonvpn.net
+2a10:484:3:1::20 # node-jp-14.protonvpn.net
 2a10:484:3:1::30 # node-jp-15.protonvpn.net
