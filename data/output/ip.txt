@@ -259,10 +259,6 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
-18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
-18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138 # lax-327-ike.whiskergalaxy.com,lax-327-ike.windscribe.com,us-west-047.totallyacdn.com,us-west-047.whiskergalaxy.com,us-west-047.windscribe.com
 23.19.122.225 # ord-323.whiskergalaxy.com,ord-323.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 23.19.122.226 # ord-323-wg.whiskergalaxy.com
@@ -506,7 +502,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -1867,6 +1863,10 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
+52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
+52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -15312,9 +15312,9 @@
 217.138.193.187 # blade9.dubai-rack401.nodes.gen4.ninja
 217.138.193.188 # blade10.dubai-rack401.nodes.gen4.ninja
 217.138.193.190 # blade12.dubai-rack401.nodes.gen4.ninja
-217.138.194.114 # de-011.totallyacdn.com,de-011.whiskergalaxy.com,de-011.windscribe.com,fra-113-ike.whiskergalaxy.com,fra-113-ike.windscribe.com
-217.138.194.115 # de.whiskergalaxy.com,de.windscribe.com,fra-113.whiskergalaxy.com,fra-113.windscribe.com
-217.138.194.116 # fra-113-wg.whiskergalaxy.com
+217.138.194.114 # de-011.totallyacdn.com,de-011.whiskergalaxy.com,de-011.windscribe.com
+217.138.194.115
+217.138.194.116
 217.138.197.43 # it196.nordvpn.com
 217.138.197.51 # it197.nordvpn.com
 217.138.197.59 # it198.nordvpn.com
@@ -15844,7 +15844,6 @@
 2a02:6ea0:e806:2146::10 # node-tr-03.protonvpn.net
 2a02:6ea0:f105:2721::10 # node-co-03.protonvpn.net
 2a03:90c0:83:2953::10 # node-lu-03.protonvpn.net
-2a03:90c0:83:2953::30 # node-lu-02.protonvpn.net
 2a04:2180:dc03:101::ff02:2 # node-lt-01b.protonvpn.net
 2a04:9dc0:20:4::10 # node-kr-03.protonvpn.net
 2a06:3040::907e:7954 # node-pt-02b.protonvpn.net
