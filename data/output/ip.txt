@@ -501,7 +501,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.102.239.211 # email.mg.windscribe.com
+34.110.180.34 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -1877,10 +1877,6 @@
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
-52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
 54.178.102.107 # 54-178-102-107.server.telleport.me
 57.129.1.188 # de258.freeconnect.link
 57.129.1.204 # de262.freeconnect.link
@@ -4040,7 +4036,6 @@
 89.187.180.52
 89.187.180.54 # node-us-157.protonvpn.net
 89.187.180.55 # node-us-156.protonvpn.net
-89.187.182.3 # blade2.chicago-rack409.nodes.gen4.ninja
 89.187.182.5 # blade4.chicago-rack409.nodes.gen4.ninja
 89.187.182.6 # blade5.chicago-rack409.nodes.gen4.ninja
 89.187.182.7 # blade6.chicago-rack409.nodes.gen4.ninja
@@ -5224,9 +5219,9 @@
 103.137.12.235 # au643.nordvpn.com
 103.137.12.243 # au662.nordvpn.com
 103.137.12.251 # au663.nordvpn.com
-103.137.14.34 # au-005.totallyacdn.com,au-005.whiskergalaxy.com,au-005.windscribe.com,mel-224-ike.whiskergalaxy.com,mel-224-ike.windscribe.com
-103.137.14.35 # au.whiskergalaxy.com,au.windscribe.com,mel-224.whiskergalaxy.com,mel-224.windscribe.com
-103.137.14.36 # mel-224-wg.whiskergalaxy.com
+103.137.14.34 # au-005.totallyacdn.com,au-005.whiskergalaxy.com,au-005.windscribe.com
+103.137.14.35
+103.137.14.36
 103.137.14.131 # au595.nordvpn.com
 103.137.14.139 # au596.nordvpn.com
 103.137.14.147 # au569.nordvpn.com
@@ -5703,6 +5698,10 @@
 108.62.49.221 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com
 108.62.104.31
 108.62.202.217
+108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
+108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243
 108.181.50.251
@@ -15806,8 +15805,6 @@
 2a02:6ea0:c822::10 # node-us-72.protonvpn.net
 2a02:6ea0:c926::10 # node-fr-13.protonvpn.net
 2a02:6ea0:c926:1::10 # node-fr-14.protonvpn.net
-2a02:6ea0:cb02:2304::10 # node-at-05.protonvpn.net
-2a02:6ea0:cb02:2305::10 # node-at-06.protonvpn.net
 2a02:6ea0:cc02:2087::10 # node-pr-01.protonvpn.net
 2a02:6ea0:cc02:2207::10 # node-us-139.protonvpn.net
 2a02:6ea0:cc02:2394::10 # node-ec-01.protonvpn.net
@@ -15815,7 +15812,6 @@
 2a02:6ea0:cc02:2564::10 # node-cl-04.protonvpn.net
 2a02:6ea0:cc02:2565::10 # node-pe-04.protonvpn.net
 2a02:6ea0:cc02:2618::10 # node-mx-03.protonvpn.net
-2a02:6ea0:cc02:2680::10 # node-ar-04.protonvpn.net
 2a02:6ea0:cc02:3073::10 # node-us-229.protonvpn.net
 2a02:6ea0:cc02:3074::10 # node-us-228.protonvpn.net
 2a02:6ea0:cc02:3075::10 # node-us-227.protonvpn.net
@@ -15829,8 +15825,6 @@
 2a02:6ea0:d101:3026::10 # node-id-01.protonvpn.net
 2a02:6ea0:d203::10 # node-us-57.protonvpn.net
 2a02:6ea0:d204::10 # node-us-75.protonvpn.net
-2a02:6ea0:d213:1793::10 # node-us-108.protonvpn.net
-2a02:6ea0:d213:1798::10 # node-us-109.protonvpn.net
 2a02:6ea0:d213:2130::10 # node-us-133.protonvpn.net
 2a02:6ea0:d213:2204::10 # node-us-136.protonvpn.net
 2a02:6ea0:d213:2205::10 # node-us-137.protonvpn.net
