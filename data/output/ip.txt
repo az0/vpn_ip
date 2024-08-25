@@ -264,6 +264,10 @@
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
+18.165.98.59 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.76 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.81 # ca941.l304.r603.fastcloudcdn.net
+18.165.98.127 # ca941.l304.r603.fastcloudcdn.net
 23.19.68.138
 23.19.122.225
 23.19.122.226
@@ -504,7 +508,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 37.9.56.115 # uk2532.nordvpn.com
 37.9.56.131 # uk2533.nordvpn.com
 37.9.58.51 # uk2363.nordvpn.com
@@ -1636,9 +1640,9 @@
 45.133.192.194 # kef-121-ike.whiskergalaxy.com,kef-121-ike.windscribe.com
 45.133.192.195 # is.whiskergalaxy.com,is.windscribe.com,kef-121.whiskergalaxy.com,kef-121.windscribe.com
 45.133.192.196 # kef-121-wg.whiskergalaxy.com
-45.133.194.210 # icn-362-ike.whiskergalaxy.com,icn-362-ike.windscribe.com,kr-009.totallyacdn.com,kr-009.whiskergalaxy.com,kr-009.windscribe.com
-45.133.194.211 # icn-362.whiskergalaxy.com,icn-362.windscribe.com,kr.whiskergalaxy.com,kr.windscribe.com
-45.133.194.212 # icn-362-wg.whiskergalaxy.com
+45.133.194.210 # kr-009.totallyacdn.com,kr-009.whiskergalaxy.com,kr-009.windscribe.com
+45.133.194.211
+45.133.194.212
 45.134.140.33 # node-us-121.protonvpn.net
 45.134.140.34
 45.134.140.35
@@ -1861,29 +1865,26 @@
 46.246.93.207 # se10.prmsrvs.com,se11.prmsrvs.com,se12.prmsrvs.com
 46.246.126.104 # se10.prmsrvs.com,se11.prmsrvs.com,se12.prmsrvs.com
 46.246.126.183 # se10.prmsrvs.com,se11.prmsrvs.com,se12.prmsrvs.com
-50.7.93.27 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.93.28 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.93.29 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.93.83 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.93.84 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl85.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.93.85 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.142.179 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.142.180 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl55.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.142.181 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl56.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-50.7.142.182 # nl50.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+50.7.93.27 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+50.7.93.28 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+50.7.93.29 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+50.7.142.179 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+50.7.142.180 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl55.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+50.7.142.181 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl56.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+50.7.142.182 # nl50.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
 51.79.73.44 # ca2.prmsrvs.com
 51.158.201.135 # nl97.freeconnect.link
 51.158.202.105 # nl82.freeconnect.link
-51.158.253.45 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.113 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.114 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.115 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.120 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.128 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.130 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.152 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.153 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-51.158.253.154 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.45 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.113 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.114 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.115 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.120 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.128 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.130 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.152 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.153 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+51.158.253.154 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
 51.159.223.46 # fr398.freeconnect.link
 51.159.223.143 # fr499.freeconnect.link
 51.222.31.148 # ca1.prmsrvs.com
@@ -2022,11 +2023,11 @@
 62.182.99.250 # us8665.nordvpn.com
 62.182.99.252 # us8666.nordvpn.com
 62.182.99.254 # us8667.nordvpn.com
-62.212.64.16 # nl41.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-62.212.64.17 # nl42.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-62.212.64.18 # nl43.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-62.212.64.19 # nl44.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-62.212.64.20 # nl45.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+62.212.64.16 # nl41.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+62.212.64.17 # nl42.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+62.212.64.18 # nl43.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+62.212.64.19 # nl44.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+62.212.64.20 # nl45.trafcfy.com,nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
 62.233.57.136 # cz6.prmsrvs.com
 62.233.57.206 # cz6.prmsrvs.com
 64.31.3.117 # prox-us.pointtoserver.com
@@ -2150,13 +2151,13 @@
 67.21.32.144 # clt-303-ike.whiskergalaxy.com,clt-303-ike.windscribe.com,us-east-040.totallyacdn.com,us-east-040.whiskergalaxy.com,us-east-040.windscribe.com
 67.21.32.145 # clt-303.whiskergalaxy.com,clt-303.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 67.21.32.146 # clt-303-wg.whiskergalaxy.com
-67.159.8.139 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl75.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-67.159.8.140 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl76.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-67.159.8.141 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl77.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-67.159.8.147 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-67.159.8.148 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-67.159.8.149 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-67.159.8.150 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+67.159.8.139 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl75.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+67.159.8.140 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl76.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+67.159.8.141 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl77.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+67.159.8.147 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+67.159.8.148 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+67.159.8.149 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+67.159.8.150 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
 68.235.35.11 # ord-63-ike.whiskergalaxy.com,ord-63-ike.windscribe.com,us-east-071.totallyacdn.com,us-east-071.whiskergalaxy.com,us-east-071.windscribe.com
 68.235.35.12 # ord-63.whiskergalaxy.com,ord-63.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 68.235.35.13 # ord-63-wg.whiskergalaxy.com
@@ -2625,14 +2626,17 @@
 83.136.182.154 # us9210.nordvpn.com
 83.136.182.156 # us9211.nordvpn.com
 83.136.182.158 # us9212.nordvpn.com
-83.136.248.126 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-83.136.248.185 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-83.136.248.246 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
-83.136.249.83 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-83.136.249.164 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-83.136.249.187 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-83.136.250.167 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-83.136.251.163 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.248.126 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.248.185 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.248.246 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk9.prmsrvs.com
+83.136.249.83 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.249.164 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.249.187 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.250.167 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.250.168 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.251.20 # uk2.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.251.60 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+83.136.251.163 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 83.143.87.194 # no.1clickvpn.net
 83.143.245.179 # de1003.nordvpn.com
 83.143.245.187 # de848.nordvpn.com
@@ -4612,37 +4616,34 @@
 94.237.44.43 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
 94.237.46.149 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
 94.237.46.165 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
-94.237.48.23 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.48.178 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.48.199 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.48.253 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.49.242 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.50.27 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.50.134 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.50.251 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.51.54 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.52.28 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.52.44 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.52.79 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.52.85 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.53.232 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.54.57 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.54.118 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.55.37 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.55.38 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.55.83 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.55.114 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
-94.237.55.125 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.55.175 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.55.176 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.55.178 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.56.113 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk2.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.58.118 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.59.102 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.60.25 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.61.8 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.61.33 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
-94.237.62.119 # uk12.prmsrvs.com,uk16.prmsrvs.com,uk22.prmsrvs.com,uk23.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.48.23 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.48.143 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.48.199 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.48.253 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.49.33 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.49.124 # uk16.prmsrvs.com,uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.49.242 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk42.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.49.249 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.50.134 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.50.138 # uk12.prmsrvs.com,uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.50.251 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.51.54 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.51.96 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.51.111 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.52.28 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.52.79 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk60.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.52.85 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk39.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.52.163 # uk2.prmsrvs.com,uk22.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.53.232 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.54.57 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.55.37 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.55.38 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.55.83 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.55.114 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com,uk7.prmsrvs.com
+94.237.55.125 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.55.175 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.55.176 # uk2.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
+94.237.55.178 # uk2.prmsrvs.com,uk24.prmsrvs.com,uk27.prmsrvs.com,uk51.prmsrvs.com,uk64.prmsrvs.com,uk65.prmsrvs.com
 94.237.108.53 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
 94.237.108.54 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
 94.237.108.131 # nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
@@ -5074,12 +5075,12 @@
 103.4.29.78 # tpe-314-wg.whiskergalaxy.com
 103.4.30.197 # tpe-314-ike.whiskergalaxy.com,tpe-314-ike.windscribe.com,tw-010.totallyacdn.com,tw-010.whiskergalaxy.com,tw-010.windscribe.com
 103.4.30.203 # tpe-314-ike.whiskergalaxy.com,tpe-314-ike.windscribe.com,tw-011.totallyacdn.com,tw-011.whiskergalaxy.com,tw-011.windscribe.com
-103.9.79.185 # han-122-ike.whiskergalaxy.com,han-122-ike.windscribe.com,vn-002.totallyacdn.com,vn-002.whiskergalaxy.com,vn-002.windscribe.com
-103.9.79.186 # han-122.whiskergalaxy.com,han-122.windscribe.com,vn.whiskergalaxy.com,vn.windscribe.com
-103.9.79.187 # han-122-wg.whiskergalaxy.com
-103.9.79.218 # han-122-ike.whiskergalaxy.com,han-122-ike.windscribe.com,vn-004.totallyacdn.com,vn-004.whiskergalaxy.com,vn-004.windscribe.com
-103.9.79.219 # han-122.whiskergalaxy.com,han-122.windscribe.com,vn.whiskergalaxy.com,vn.windscribe.com
-103.9.79.220 # han-122-wg.whiskergalaxy.com
+103.9.79.185 # vn-002.totallyacdn.com,vn-002.whiskergalaxy.com,vn-002.windscribe.com
+103.9.79.186
+103.9.79.187
+103.9.79.218 # vn-004.totallyacdn.com,vn-004.whiskergalaxy.com,vn-004.windscribe.com
+103.9.79.219
+103.9.79.220
 103.10.197.2
 103.10.197.98
 103.10.197.99
@@ -5382,7 +5383,7 @@
 103.219.20.222 # uk2429.nordvpn.com
 103.219.20.233 # uk2430.nordvpn.com
 103.219.20.244 # uk2431.nordvpn.com
-103.230.122.176 # bkk-361.whiskergalaxy.com,bkk-361.windscribe.com,th.whiskergalaxy.com,th.windscribe.com
+103.230.122.176 # bkk-361.whiskergalaxy.com,bkk-361.windscribe.com
 103.230.122.177 # bkk-361-wg.whiskergalaxy.com
 103.230.142.226 # node-my-01.protonvpn.net
 103.230.142.227
@@ -5730,10 +5731,6 @@
 108.62.49.221 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com
 108.62.104.31
 108.62.202.217
-108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243
 108.181.50.251
@@ -10925,6 +10922,7 @@
 185.107.95.50 # ams-229.whiskergalaxy.com,ams-229.windscribe.com,nl.whiskergalaxy.com,nl.windscribe.com
 185.107.95.51 # ams-229-wg.whiskergalaxy.com
 185.108.129.3 # ie1.prmsrvs.com,ie10.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com,ie8.prmsrvs.com,ie9.prmsrvs.com
+185.108.129.23 # ie1.prmsrvs.com,ie10.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com,ie8.prmsrvs.com,ie9.prmsrvs.com
 185.108.129.34 # ie1.prmsrvs.com,ie10.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com,ie8.prmsrvs.com,ie9.prmsrvs.com
 185.108.129.63 # ie1.prmsrvs.com,ie10.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com,ie8.prmsrvs.com,ie9.prmsrvs.com
 185.108.129.76 # ie1.prmsrvs.com,ie10.prmsrvs.com,ie2.prmsrvs.com,ie3.prmsrvs.com,ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com,ie8.prmsrvs.com,ie9.prmsrvs.com
@@ -10937,14 +10935,12 @@
 185.109.170.243 # uk1902.nordvpn.com
 185.120.147.2 # ro-011.whiskergalaxy.com,ro-011.windscribe.com
 185.121.139.100 # uk814.nordvpn.com
-185.123.100.125 # tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com
-185.123.100.188 # tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com
-185.123.100.234 # tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com
-185.123.101.6 # tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr7.prmsrvs.com
-185.123.101.37 # tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr8.prmsrvs.com
-185.123.101.60 # tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com
-185.123.101.65 # tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr9.prmsrvs.com
-185.123.101.67 # tr10.prmsrvs.com,tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com
+185.123.100.125 # tr10.prmsrvs.com,tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr9.prmsrvs.com
+185.123.100.188 # tr10.prmsrvs.com,tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr9.prmsrvs.com
+185.123.100.234 # tr10.prmsrvs.com,tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr9.prmsrvs.com
+185.123.101.6 # tr10.prmsrvs.com,tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr7.prmsrvs.com,tr9.prmsrvs.com
+185.123.101.37 # tr10.prmsrvs.com,tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr8.prmsrvs.com,tr9.prmsrvs.com
+185.123.101.60 # tr10.prmsrvs.com,tr2.prmsrvs.com,tr3.prmsrvs.com,tr4.prmsrvs.com,tr5.prmsrvs.com,tr6.prmsrvs.com,tr9.prmsrvs.com
 185.128.25.66 # fr-013.whiskergalaxy.com,fr-013.windscribe.com
 185.128.25.99 # fr726.nordvpn.com
 185.128.26.51 # hu53.nordvpn.com
@@ -13314,8 +13310,7 @@
 192.71.213.12 # es10.prmsrvs.com,es9.prmsrvs.com
 192.71.213.24 # es10.prmsrvs.com,es8.prmsrvs.com
 192.71.213.84 # es10.prmsrvs.com,es7.prmsrvs.com
-192.71.244.62 # si2.prmsrvs.com
-192.71.244.96 # si1.prmsrvs.com
+192.71.244.62 # si1.prmsrvs.com,si2.prmsrvs.com
 192.71.249.15 # be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 192.71.249.133 # be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
 192.71.249.156 # be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com
@@ -14734,33 +14729,33 @@
 198.12.116.195 # sea-221.whiskergalaxy.com,sea-221.windscribe.com,us-west.whiskergalaxy.com,us-west.windscribe.com
 198.12.116.196 # sea-221-wg.whiskergalaxy.com
 198.13.49.73 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp29.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
-198.16.66.99 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl66.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.100 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl67.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.101 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl68.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.123 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl60.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.124 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl61.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.125 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl62.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.139 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl78.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.140 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl79.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.141 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl80.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.155 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl57.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.156 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl58.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.66.157 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl59.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.70.27 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl69.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.70.28 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl70.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.70.29 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl71.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.70.51 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl72.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.70.52 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl73.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.70.53 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl74.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.76.27 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl93.trafcfy.com
-198.16.76.28 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl94.trafcfy.com
-198.16.76.29 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl95.trafcfy.com
-198.16.76.67 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl81.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.76.68 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl82.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.76.69 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl83.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
-198.16.78.43 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl90.trafcfy.com
-198.16.78.44 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl91.trafcfy.com
-198.16.78.45 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl92.trafcfy.com
+198.16.66.99 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl66.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.100 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl67.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.101 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl68.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.123 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl60.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.124 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl61.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.125 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl62.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.139 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl78.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.140 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl79.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.141 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl80.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.155 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl57.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.156 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl58.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.66.157 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl59.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.70.27 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl69.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.70.28 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl70.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.70.29 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl71.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.70.51 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl72.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.70.52 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl73.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.70.53 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl74.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.76.27 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl93.trafcfy.com
+198.16.76.28 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl94.trafcfy.com
+198.16.76.29 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl95.trafcfy.com
+198.16.76.67 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl81.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.76.68 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl82.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.76.69 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl83.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com
+198.16.78.43 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl90.trafcfy.com
+198.16.78.44 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl91.trafcfy.com
+198.16.78.45 # nl51.trafcfy.com,nl52.trafcfy.com,nl53.trafcfy.com,nl84.trafcfy.com,nl85.trafcfy.com,nl86.trafcfy.com,nl87.trafcfy.com,nl88.trafcfy.com,nl89.trafcfy.com,nl92.trafcfy.com
 198.23.148.202
 198.23.242.146 # us-west-063.totallyacdn.com,us-west-063.whiskergalaxy.com,us-west-063.windscribe.com
 198.23.242.147
@@ -14979,8 +14974,8 @@
 212.30.60.7
 212.30.60.8
 212.80.214.2 # th-007.totallyacdn.com,th-007.whiskergalaxy.com
-212.80.214.3 # bkk-415.windscribe.com,th.whiskergalaxy.com,th.windscribe.com
-212.80.214.4 # bkk-415-wg.whiskergalaxy.com
+212.80.214.3
+212.80.214.4
 212.92.104.193 # node-nl-165.protonvpn.net
 212.92.104.209 # node-nl-166.protonvpn.net
 212.92.104.225 # node-nl-168.protonvpn.net
@@ -15812,8 +15807,6 @@
 2a02:6ea0:c412:2216::10 # node-us-147.protonvpn.net
 2a02:6ea0:c412:2217::10 # node-us-148.protonvpn.net
 2a02:6ea0:c412:2353::10 # node-us-160.protonvpn.net
-2a02:6ea0:c412:2354::10 # node-us-159.protonvpn.net
-2a02:6ea0:c412:2408::10 # node-us-162.protonvpn.net
 2a02:6ea0:c412:2409::10 # node-us-163.protonvpn.net
 2a02:6ea0:c412:2659::10 # node-us-201.protonvpn.net
 2a02:6ea0:c412:2674::10 # node-us-202.protonvpn.net
@@ -15821,6 +15814,7 @@
 2a02:6ea0:c413:1::10 # node-us-134.protonvpn.net
 2a02:6ea0:c501:2091::10 # node-se-05.protonvpn.net
 2a02:6ea0:c501:3090::10 # node-se-06.protonvpn.net
+2a02:6ea0:c501:3108::10 # node-se-07.protonvpn.net
 2a02:6ea0:c603:2119::10 # node-us-129.protonvpn.net
 2a02:6ea0:c603:2121::10 # node-us-130.protonvpn.net
 2a02:6ea0:c603:2127::10 # node-us-128.protonvpn.net
