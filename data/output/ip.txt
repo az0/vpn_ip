@@ -1198,7 +1198,6 @@
 37.235.52.33 # cl1.prmsrvs.com
 37.235.53.247 # es6.prmsrvs.com
 37.235.56.45 # at11.prmsrvs.com
-37.235.56.70 # at11.prmsrvs.com
 37.235.56.191 # at11.prmsrvs.com
 37.235.56.201 # at11.prmsrvs.com
 37.235.56.207 # at11.prmsrvs.com
@@ -7990,9 +7989,6 @@
 149.34.247.46 # us10170.nordvpn.com
 149.34.247.49 # us10171.nordvpn.com
 149.34.247.51 # us10172.nordvpn.com
-149.34.248.65 # mia-326-ike.whiskergalaxy.com,mia-326-ike.windscribe.com
-149.34.248.66 # mia-326.whiskergalaxy.com,mia-326.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
-149.34.248.67 # mia-326-wg.whiskergalaxy.com
 149.34.249.51 # ca1690.nordvpn.com
 149.34.249.53 # ca1691.nordvpn.com
 149.34.249.55 # ca1694.nordvpn.com
@@ -9382,7 +9378,6 @@
 158.255.208.121 # hk1.prmsrvs.com,hk10.prmsrvs.com,hk2.prmsrvs.com,hk3.prmsrvs.com,hk4.prmsrvs.com,hk5.prmsrvs.com,hk6.prmsrvs.com,hk7.prmsrvs.com,hk8.prmsrvs.com,hk9.prmsrvs.com
 158.255.211.46 # vienna2.my-safe-net.com
 158.255.211.106 # at11.prmsrvs.com
-158.255.211.223 # at11.prmsrvs.com
 158.255.212.246 # at11.prmsrvs.com
 159.69.113.9 # berlin.my-safe-net.com
 159.203.44.199 # acctmgr-ca-2.windscribe.com
@@ -10810,8 +10805,8 @@
 185.94.192.210 # sof-100-ike.whiskergalaxy.com,sof-100-ike.windscribe.com
 185.94.192.211 # bg.whiskergalaxy.com,bg.windscribe.com,sof-100.whiskergalaxy.com,sof-100.windscribe.com
 185.94.192.212 # sof-100-wg.whiskergalaxy.com
-185.99.3.24 # ba.windscribe.com,sjj-286.windscribe.com
-185.99.3.25 # sjj-286-wg.whiskergalaxy.com
+185.99.3.24
+185.99.3.25
 185.99.3.195
 185.99.132.13 # auckland.protect-my-ip.com
 185.99.252.35 # uk1917.nordvpn.com
@@ -11407,7 +11402,7 @@
 185.159.159.143 # account.protonvpn.com
 185.159.159.144 # get.protonvpn.com
 185.163.44.137 # node-md-02.protonvpn.net
-185.164.35.16 # ba-001.totallyacdn.com,ba-001.whiskergalaxy.com,ba-001.windscribe.com,sjj-286-ike.windscribe.com
+185.164.35.16 # ba-001.totallyacdn.com,ba-001.whiskergalaxy.com,ba-001.windscribe.com
 185.165.170.1 # is-002.totallyacdn.com,is-002.whiskergalaxy.com,is-002.windscribe.com,kef-344-ike.whiskergalaxy.com,kef-344-ike.windscribe.com
 185.165.170.2 # is.whiskergalaxy.com,is.windscribe.com,kef-344.whiskergalaxy.com,kef-344.windscribe.com
 185.165.170.3 # kef-344-wg.whiskergalaxy.com
@@ -15851,7 +15846,6 @@
 2a02:6ea0:c803:3091::10 # node-us-231.protonvpn.net
 2a02:6ea0:c803:3092::10 # node-us-232.protonvpn.net
 2a02:6ea0:c820::10 # node-us-61.protonvpn.net
-2a02:6ea0:c822::10 # node-us-72.protonvpn.net
 2a02:6ea0:c926::10 # node-fr-13.protonvpn.net
 2a02:6ea0:c926:1::10 # node-fr-14.protonvpn.net
 2a02:6ea0:cb02:2304::10 # node-at-05.protonvpn.net
@@ -15876,7 +15870,6 @@
 2a02:6ea0:d101:2529::10 # node-mm-01.protonvpn.net
 2a02:6ea0:d101:3026::10 # node-id-01.protonvpn.net
 2a02:6ea0:d203::10 # node-us-57.protonvpn.net
-2a02:6ea0:d204::10 # node-us-75.protonvpn.net
 2a02:6ea0:d213:1793::10 # node-us-108.protonvpn.net
 2a02:6ea0:d213:1798::10 # node-us-109.protonvpn.net
 2a02:6ea0:d213:2130::10 # node-us-133.protonvpn.net
