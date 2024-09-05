@@ -261,6 +261,10 @@
 12.202.180.10 # us-central-stc-004.whiskergalaxy.com,us-central-stc-004.windscribe.com
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
+13.32.151.25 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.30 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.95 # ca941.l304.r603.fastcloudcdn.net
+13.32.151.126 # ca941.l304.r603.fastcloudcdn.net
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
@@ -5743,10 +5747,6 @@
 108.62.49.221 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com
 108.62.104.31
 108.62.202.217
-108.139.10.3 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.47 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.52 # ca941.l304.r603.fastcloudcdn.net
-108.139.10.119 # ca941.l304.r603.fastcloudcdn.net
 108.160.132.21 # jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp6.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 108.181.50.243
 108.181.50.251
@@ -10082,7 +10082,6 @@
 176.125.230.144 # blade14.valletta-rack402.nodes.gen4.ninja
 176.125.230.145 # blade15.valletta-rack402.nodes.gen4.ninja
 176.126.99.140 # pl1.prmsrvs.com,pl2.prmsrvs.com,pl3.prmsrvs.com
-176.126.99.243 # pl1.prmsrvs.com,pl2.prmsrvs.com,pl3.prmsrvs.com
 176.126.99.246 # pl1.prmsrvs.com,pl2.prmsrvs.com,pl3.prmsrvs.com
 176.222.34.138
 176.222.34.139
@@ -10932,7 +10931,6 @@
 185.108.129.133 # ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com
 185.108.129.137 # ie3.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com
 185.108.129.173 # ie4.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com
-185.108.129.208 # ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com
 185.108.129.218 # ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com,ie8.prmsrvs.com
 185.108.129.233 # ie10.prmsrvs.com,ie5.prmsrvs.com,ie6.prmsrvs.com,ie7.prmsrvs.com
 185.109.168.131 # uk1901.nordvpn.com
@@ -13314,7 +13312,6 @@
 192.34.83.228 # bos-298-wg.whiskergalaxy.com
 192.36.27.86 # dk1.prmsrvs.com,dk14.prmsrvs.com,dk15.prmsrvs.com,dk16.prmsrvs.com,dk2.prmsrvs.com,dk3.prmsrvs.com,dk4.prmsrvs.com,dk5.prmsrvs.com,dk6.prmsrvs.com,dk7.prmsrvs.com
 192.36.27.105 # dk1.prmsrvs.com,dk14.prmsrvs.com,dk15.prmsrvs.com,dk16.prmsrvs.com,dk2.prmsrvs.com,dk3.prmsrvs.com,dk4.prmsrvs.com,dk5.prmsrvs.com,dk6.prmsrvs.com,dk7.prmsrvs.com
-192.36.27.175 # dk1.prmsrvs.com,dk14.prmsrvs.com,dk15.prmsrvs.com,dk16.prmsrvs.com,dk2.prmsrvs.com,dk3.prmsrvs.com,dk4.prmsrvs.com,dk5.prmsrvs.com,dk6.prmsrvs.com,dk7.prmsrvs.com
 192.36.27.205 # dk1.prmsrvs.com,dk14.prmsrvs.com,dk15.prmsrvs.com,dk16.prmsrvs.com,dk2.prmsrvs.com,dk3.prmsrvs.com,dk4.prmsrvs.com,dk5.prmsrvs.com,dk6.prmsrvs.com,dk7.prmsrvs.com
 192.36.61.26 # lt1.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com
 192.36.61.67 # lt1.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com
@@ -13895,6 +13892,22 @@
 194.5.215.196 # mia-140-wg.whiskergalaxy.com
 194.31.54.3
 194.31.54.4 # de655.nordvpn.com
+194.32.122.9 # blade5.vilnius-rack401.nodes.gen4.ninja
+194.32.122.10 # blade6.vilnius-rack401.nodes.gen4.ninja
+194.32.122.11 # blade7.vilnius-rack401.nodes.gen4.ninja
+194.32.122.12 # blade8.vilnius-rack401.nodes.gen4.ninja
+194.32.122.13 # blade9.vilnius-rack401.nodes.gen4.ninja
+194.32.122.14 # blade10.vilnius-rack401.nodes.gen4.ninja
+194.32.122.15 # blade11.vilnius-rack401.nodes.gen4.ninja
+194.32.122.17 # blade1.vilnius-rack402.nodes.gen4.ninja
+194.32.122.18 # blade2.vilnius-rack402.nodes.gen4.ninja
+194.32.122.19 # blade3.vilnius-rack402.nodes.gen4.ninja
+194.32.122.20 # blade4.vilnius-rack402.nodes.gen4.ninja
+194.32.122.22 # blade6.vilnius-rack402.nodes.gen4.ninja
+194.32.122.25 # blade9.vilnius-rack402.nodes.gen4.ninja
+194.32.122.27 # blade11.vilnius-rack402.nodes.gen4.ninja
+194.32.122.28 # blade12.vilnius-rack402.nodes.gen4.ninja
+194.32.122.29 # blade13.vilnius-rack402.nodes.gen4.ninja
 194.32.235.1
 194.32.235.14
 194.32.235.27
@@ -15771,6 +15784,7 @@
 2a02:6ea0:c041:2376::10 # node-nl-176.protonvpn.net
 2a02:6ea0:c041:2377::10 # node-nl-177.protonvpn.net
 2a02:6ea0:c041:2378::10 # node-nl-178.protonvpn.net
+2a02:6ea0:c041:2379::10 # node-nl-179.protonvpn.net
 2a02:6ea0:c041:2380::10 # node-nl-180.protonvpn.net
 2a02:6ea0:c041:2381::10 # node-nl-181.protonvpn.net
 2a02:6ea0:c041:2382::10 # node-nl-182.protonvpn.net
