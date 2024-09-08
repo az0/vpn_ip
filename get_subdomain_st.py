@@ -56,6 +56,7 @@ def main():
                ('windscribe.com', 'windscribe.txt'),
                ('whispergalaxy.com', 'windscribe.txt'),
                ('telleport.me', 'telleport.txt'),
+               ('northghost.com', 'touchvpn.net'),
                )
 
     for domain, dst_fn in domains:
