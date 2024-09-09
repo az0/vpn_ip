@@ -1,5 +1,7 @@
 #!/bin/sh
 
+python3 -V
+
 # Execute all the steps in the scheduled GitHub action to
 # update this repository
 
