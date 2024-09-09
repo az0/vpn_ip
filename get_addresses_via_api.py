@@ -12,8 +12,7 @@ ip_root = 'data/input/ip/'
 def collect_hostnames_and_ips(url, hostname_key, ip_key):
     """Collect hostnames and IP addresses from an API URL"""
     assert isinstance(url, str)
-    assert isinstance(hostname_key, (list, tuple)), f"hostname_key is type {
-        type(hostname_key)}"
+    assert isinstance(hostname_key, (list, tuple))
     assert isinstance(ip_key, (list, tuple))
     print(f'reading {url}')
     response = requests.get(url)
@@ -24,8 +23,7 @@ def collect_hostnames_and_ips(url, hostname_key, ip_key):
         process_json(data, hostnames, ips, hostname_key, ip_key)
         return hostnames, ips
     else:
-        print(f"Failed to retrieve data from {
-              url} with status code {response.status_code}")
+        print(f"Failed to retrieve data from {url} with status code {response.status_code}")
         print(f"Response text: {response.text}")
         return (None, None)
 
