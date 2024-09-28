@@ -65,11 +65,23 @@
 2.58.241.72
 2.58.241.73
 2.58.241.74
-3.15.150.46 # mjgu.approval.fun,user1.setupvpn.com
+3.15.150.46 # mjgu.approval.fun
 3.85.72.7 # trigger-ns-a.hola.org,vpn-ns-a.hola.org
 3.89.0.0 # zs-conf-hola.hola.org,zs-conf-hola.vpn.hola.org,zs-conf.hola.org
 3.91.199.77 # uabh.approval.fun,uabh.throat.team
 3.128.205.94 # user2.setupvpn.com
+3.166.200.96 # d3i5gqankjg0sg.cloudfront.net
+3.166.200.178 # d3i5gqankjg0sg.cloudfront.net
+3.166.200.184 # d3i5gqankjg0sg.cloudfront.net
+3.166.200.187 # d3i5gqankjg0sg.cloudfront.net
+3.167.37.7 # status.proton.me
+3.167.37.11 # status.proton.me
+3.167.37.100 # status.proton.me
+3.167.37.109 # status.proton.me
+3.167.112.19 # ca941.l304.r603.fastcloudcdn.net
+3.167.112.65 # ca941.l304.r603.fastcloudcdn.net
+3.167.112.100 # ca941.l304.r603.fastcloudcdn.net
+3.167.112.103 # ca941.l304.r603.fastcloudcdn.net
 3.210.106.128 # proxyjs.hola.org,proxyjs.holavpn.net,proxyjs.holax.io
 3.211.186.177 # proxyjs.hola.org,proxyjs.holavpn.net,proxyjs.holax.io
 3.211.192.152 # zs-graphite-hola.hola.org,zs-graphite-hola.vpn.hola.org,zs-graphite.hola.org
@@ -88,6 +100,7 @@
 3.227.77.159 # web.hola.org,zs-wbm-hola.hola.org,zs-wbm-hola.vpn.hola.org,zs-wbm.hola.org
 3.228.37.246 # wall-ec2-hola.hola.org,wall-ec2-hola.vpn.hola.org,wall-ec2.hola.org
 3.228.167.39 # zs-graphite.vpn.hola.org
+3.232.219.142 # partners.proton.me
 5.8.16.163 # ru-05.protonvpn.net
 5.22.209.219 # nl.prmsrvs.com,nl4.prmsrvs.com,nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
 5.22.209.234 # nl.prmsrvs.com,nl23.prmsrvs.com,nl41.prmsrvs.com,nl42.prmsrvs.com,nl43.prmsrvs.com,nl44.prmsrvs.com,nl45.prmsrvs.com,nl46.prmsrvs.com,nl47.prmsrvs.com,nl48.prmsrvs.com
@@ -128,13 +141,13 @@
 5.172.194.182 # zagent1729.hola.org,zagent1729.holavpn.net,zagent1729.holax.io,zagent1729.vpn.hola.org
 5.172.194.230 # zagent1730.hola.org,zagent1730.holavpn.net,zagent1730.holax.io,zagent1730.vpn.hola.org
 5.172.194.251 # zagent1734.hola.org,zagent1734.holavpn.net,zagent1734.holax.io,zagent1734.vpn.hola.org
-5.172.196.36 # zagent1736.hola.org,zagent1736.holavpn.net,zagent1736.holax.io,zagent1736.vpn.hola.org
+5.172.196.36 # gr.vpn.hola.org,zagent1736.hola.org,zagent1736.holavpn.net,zagent1736.holax.io,zagent1736.vpn.hola.org
 5.172.196.41 # gr.vpn.hola.org,zagent1737.hola.org,zagent1737.holavpn.net,zagent1737.vpn.hola.org
-5.172.196.63 # gr.vpn.hola.org,zagent1913.hola.org,zagent1913.holavpn.net,zagent1913.holax.io,zagent1913.vpn.hola.org
+5.172.196.63 # zagent1913.hola.org,zagent1913.holavpn.net,zagent1913.holax.io,zagent1913.vpn.hola.org
 5.172.196.231 # zagent1921.hola.org,zagent1921.holavpn.net,zagent1921.holax.io,zagent1921.vpn.hola.org,zagent940.hola.org,zagent940.holavpn.net,zagent940.holax.io,zagent940.vpn.hola.org
 5.172.196.232 # gr.vpn.hola.org,zagent941.hola.org,zagent941.holax.io,zagent941.vpn.hola.org
-5.172.196.233 # zagent942.hola.org,zagent942.holavpn.net,zagent942.holax.io,zagent942.vpn.hola.org
-5.172.196.234 # gr.vpn.hola.org,zagent943.hola.org,zagent943.holax.io,zagent943.vpn.hola.org
+5.172.196.233 # gr.vpn.hola.org,zagent942.hola.org,zagent942.holavpn.net,zagent942.holax.io,zagent942.vpn.hola.org
+5.172.196.234 # zagent943.hola.org,zagent943.holax.io,zagent943.vpn.hola.org
 5.180.25.13 # miami-free.my-safe-net.com
 5.180.25.193 # miami1.protect-my-ip.com
 5.180.25.194 # miami2.protect-my-ip.com
@@ -324,22 +337,32 @@
 12.202.180.10 # us-central-stc-004.whiskergalaxy.com,us-central-stc-004.windscribe.com
 12.202.180.118 # us-central-stc-005.whiskergalaxy.com,us-central-stc-005.windscribe.com
 12.221.146.147 # us-central-stc-003.whiskergalaxy.com,us-central-stc-003.windscribe.com
+13.32.207.52 # d2tzgbknhyxmdm.cloudfront.net
+13.32.207.81 # d2tzgbknhyxmdm.cloudfront.net
+13.32.207.114 # d2tzgbknhyxmdm.cloudfront.net
+13.32.207.175 # d2tzgbknhyxmdm.cloudfront.net
 13.127.14.8 # 13-127-14-8.server.telleport.me
 13.239.63.78 # 13-239-63-78.server.telleport.me
 13.244.114.234 # 13-244-114-234.server.telleport.me
 13.248.245.245 # login.hola.org
+13.249.39.45 # ca901.l503.r843.fastcloudcdn.net
+13.249.39.70 # ca901.l503.r843.fastcloudcdn.net
+13.249.39.99 # ca901.l503.r843.fastcloudcdn.net
+13.249.39.111 # ca901.l503.r843.fastcloudcdn.net
 13.249.46.89 # d2zjtd67a5xcx.cloudfront.net
 13.249.46.103 # d2zjtd67a5xcx.cloudfront.net
 13.249.46.108 # d2zjtd67a5xcx.cloudfront.net
 13.249.46.174 # d2zjtd67a5xcx.cloudfront.net
-18.172.139.17 # d2tzgbknhyxmdm.cloudfront.net
-18.172.139.67 # d2tzgbknhyxmdm.cloudfront.net
-18.172.139.137 # d2tzgbknhyxmdm.cloudfront.net
-18.172.139.155 # d2tzgbknhyxmdm.cloudfront.net
+17.253.116.253 # ntp.hola.org
 18.210.234.246 # deploy-hola.hola.org,deploy-hola.vpn.hola.org,deploy.hola.org
 18.212.186.158 # lllm.approval.fun,lllm.boolean.run
+18.238.11.33 # d3np4aywxojjzc.cloudfront.net
+18.238.11.122 # d3np4aywxojjzc.cloudfront.net
+18.238.11.134 # d3np4aywxojjzc.cloudfront.net
+18.238.11.157 # d3np4aywxojjzc.cloudfront.net
 23.21.224.254 # batwincr.hola.org
 23.22.252.240 # perr.hola.org,perr.holavpn.net,perr.holax.io
+23.26.32.37 # holapro-proxy.hola.org
 23.26.220.3 # blade2.mumbai-rack403.nodes.gen4.ninja
 23.26.220.6 # blade5.mumbai-rack403.nodes.gen4.ninja
 23.26.220.7 # blade6.mumbai-rack403.nodes.gen4.ninja
@@ -467,9 +490,9 @@
 27.131.170.99
 27.131.170.163
 27.255.65.11 # kr.vpn.hola.org,zagent1372.hola.org,zagent1372.holax.io,zagent1372.vpn.hola.org
-31.7.62.50 # ch-019.totallyacdn.com,ch-019.whiskergalaxy.com,ch-019.windscribe.com
-31.7.62.51
-31.7.62.52
+31.7.62.50 # ch-019.totallyacdn.com,ch-019.whiskergalaxy.com,ch-019.windscribe.com,zrh-264-ike.whiskergalaxy.com,zrh-264-ike.windscribe.com
+31.7.62.51 # ch.whiskergalaxy.com,ch.windscribe.com,zrh-264.whiskergalaxy.com,zrh-264.windscribe.com
+31.7.62.52 # zrh-264-wg.whiskergalaxy.com
 31.13.188.27 # es170.nordvpn.com
 31.13.188.99 # es136.nordvpn.com
 31.13.188.107 # es171.nordvpn.com
@@ -613,7 +636,7 @@
 31.187.69.89
 31.187.69.100
 31.210.91.240 # zagent417.hola.org,zagent417.holavpn.net,zagent417.holax.io,zagent417.vpn.hola.org
-31.220.5.141 # zagent170.hola.org,zagent170.holavpn.net,zagent170.holax.io,zagent170.vpn.hola.org
+31.220.5.141 # se.vpn.hola.org,zagent170.hola.org,zagent170.holavpn.net,zagent170.holax.io,zagent170.vpn.hola.org
 31.220.7.88 # zagent1675.hola.org,zagent1675.holavpn.net,zagent1675.holax.io,zagent1675.vpn.hola.org
 31.220.7.123 # zagent171.hola.org,zagent171.holavpn.net,zagent171.holax.io,zagent171.vpn.hola.org
 31.220.15.70 # stockholm.protect-my-ip.com
@@ -642,7 +665,7 @@
 31.222.254.142 # us10435.nordvpn.com
 31.222.254.144 # us10436.nordvpn.com
 31.222.254.146 # us10437.nordvpn.com
-34.110.180.34 # email.mg.windscribe.com
+34.102.239.211 # email.mg.windscribe.com
 34.160.212.61 # a703.l461.r761.fastcloudcdn.net
 34.192.245.192 # bat.hola.org,zs-bat-hola.hola.org
 34.196.197.197 # kibana.hola.org,zs-kibana-hola.hola.org,zs-kibana-hola.vpn.hola.org,zs-kibana.hola.org
@@ -1365,7 +1388,7 @@
 37.235.52.110 # cl.vpn.hola.org,zagent186.hola.org,zagent186.holavpn.net,zagent186.holax.io,zagent186.vpn.hola.org
 37.235.52.114 # zagent56.hola.org,zagent56.holavpn.net,zagent56.holax.io
 37.235.52.137 # zagent85.hola.org,zagent85.holax.io,zagent85.vpn.hola.org
-37.235.52.177 # cl.vpn.hola.org,zagent32.hola.org,zagent32.holavpn.net,zagent32.holax.io,zagent32.vpn.hola.org
+37.235.52.177 # zagent32.hola.org,zagent32.holavpn.net,zagent32.holax.io,zagent32.vpn.hola.org
 37.235.52.208 # cl.vpn.hola.org,zagent622.hola.org,zagent622.holax.io,zagent622.vpn.hola.org
 37.235.52.231 # zagent124.hola.org,zagent124.holavpn.net,zagent124.holax.io,zagent124.vpn.hola.org
 37.235.53.33 # es.vpn.hola.org,zagent1953.hola.org,zagent1953.holavpn.net,zagent1953.holax.io,zagent1953.vpn.hola.org,zagent7.hola.org,zagent7.holavpn.net,zagent7.holax.io,zagent7.vpn.hola.org
@@ -1379,7 +1402,7 @@
 37.235.56.45 # at.prmsrvs.com,at10.prmsrvs.com,at11.prmsrvs.com,at12.prmsrvs.com,at13.prmsrvs.com,at14.prmsrvs.com,at15.prmsrvs.com,at16.prmsrvs.com,at17.prmsrvs.com,at18.prmsrvs.com,at19.prmsrvs.com,at20.prmsrvs.com,at21.prmsrvs.com,at22.prmsrvs.com,at23.prmsrvs.com,at24.prmsrvs.com,at25.prmsrvs.com,at26.prmsrvs.com,at27.prmsrvs.com,at28.prmsrvs.com,at29.prmsrvs.com,at30.prmsrvs.com,at31.prmsrvs.com,at32.prmsrvs.com,at33.prmsrvs.com,at34.prmsrvs.com,at35.prmsrvs.com,at36.prmsrvs.com,at37.prmsrvs.com,at38.prmsrvs.com,at39.prmsrvs.com,at4.prmsrvs.com,at40.prmsrvs.com,at41.prmsrvs.com,at42.prmsrvs.com,at43.prmsrvs.com,at44.prmsrvs.com,at5.prmsrvs.com,at56.prmsrvs.com,at6.prmsrvs.com,at60.prmsrvs.com,at61.prmsrvs.com,at62.prmsrvs.com,at63.prmsrvs.com,at64.prmsrvs.com,at65.prmsrvs.com,at66.prmsrvs.com,at68.prmsrvs.com,at69.prmsrvs.com,at7.prmsrvs.com,at8.prmsrvs.com,at9.prmsrvs.com
 37.235.56.70 # at.prmsrvs.com,at10.prmsrvs.com,at11.prmsrvs.com,at12.prmsrvs.com,at13.prmsrvs.com,at14.prmsrvs.com,at15.prmsrvs.com,at16.prmsrvs.com,at17.prmsrvs.com,at18.prmsrvs.com,at19.prmsrvs.com,at2.prmsrvs.com,at20.prmsrvs.com,at21.prmsrvs.com,at22.prmsrvs.com,at23.prmsrvs.com,at24.prmsrvs.com,at25.prmsrvs.com,at26.prmsrvs.com,at27.prmsrvs.com,at28.prmsrvs.com,at29.prmsrvs.com,at30.prmsrvs.com,at31.prmsrvs.com,at32.prmsrvs.com,at33.prmsrvs.com,at34.prmsrvs.com,at35.prmsrvs.com,at36.prmsrvs.com,at37.prmsrvs.com,at38.prmsrvs.com,at39.prmsrvs.com,at4.prmsrvs.com,at40.prmsrvs.com,at41.prmsrvs.com,at42.prmsrvs.com,at43.prmsrvs.com,at44.prmsrvs.com,at5.prmsrvs.com,at6.prmsrvs.com,at60.prmsrvs.com,at61.prmsrvs.com,at62.prmsrvs.com,at63.prmsrvs.com,at64.prmsrvs.com,at65.prmsrvs.com,at66.prmsrvs.com,at68.prmsrvs.com,at69.prmsrvs.com,at7.prmsrvs.com,at8.prmsrvs.com,at9.prmsrvs.com
 37.235.56.140 # zagent1903.hola.org,zagent1903.holavpn.net,zagent1903.holax.io,zagent1903.vpn.hola.org
-37.235.56.152 # at.vpn.hola.org,zagent1361.hola.org,zagent1361.holavpn.net,zagent1361.holax.io,zagent1361.vpn.hola.org
+37.235.56.152 # zagent1361.hola.org,zagent1361.holavpn.net,zagent1361.holax.io,zagent1361.vpn.hola.org
 37.235.56.191 # at.prmsrvs.com,at10.prmsrvs.com,at11.prmsrvs.com,at12.prmsrvs.com,at13.prmsrvs.com,at14.prmsrvs.com,at15.prmsrvs.com,at16.prmsrvs.com,at17.prmsrvs.com,at18.prmsrvs.com,at19.prmsrvs.com,at20.prmsrvs.com,at21.prmsrvs.com,at22.prmsrvs.com,at23.prmsrvs.com,at24.prmsrvs.com,at25.prmsrvs.com,at26.prmsrvs.com,at27.prmsrvs.com,at28.prmsrvs.com,at29.prmsrvs.com,at30.prmsrvs.com,at31.prmsrvs.com,at32.prmsrvs.com,at33.prmsrvs.com,at34.prmsrvs.com,at35.prmsrvs.com,at36.prmsrvs.com,at37.prmsrvs.com,at38.prmsrvs.com,at39.prmsrvs.com,at4.prmsrvs.com,at40.prmsrvs.com,at41.prmsrvs.com,at42.prmsrvs.com,at43.prmsrvs.com,at44.prmsrvs.com,at5.prmsrvs.com,at57.prmsrvs.com,at6.prmsrvs.com,at60.prmsrvs.com,at61.prmsrvs.com,at62.prmsrvs.com,at63.prmsrvs.com,at64.prmsrvs.com,at65.prmsrvs.com,at66.prmsrvs.com,at68.prmsrvs.com,at69.prmsrvs.com,at7.prmsrvs.com,at8.prmsrvs.com,at9.prmsrvs.com
 37.235.56.201 # at.prmsrvs.com,at10.prmsrvs.com,at11.prmsrvs.com,at12.prmsrvs.com,at13.prmsrvs.com,at14.prmsrvs.com,at15.prmsrvs.com,at16.prmsrvs.com,at17.prmsrvs.com,at18.prmsrvs.com,at19.prmsrvs.com,at20.prmsrvs.com,at21.prmsrvs.com,at22.prmsrvs.com,at23.prmsrvs.com,at24.prmsrvs.com,at25.prmsrvs.com,at26.prmsrvs.com,at27.prmsrvs.com,at28.prmsrvs.com,at29.prmsrvs.com,at30.prmsrvs.com,at31.prmsrvs.com,at32.prmsrvs.com,at33.prmsrvs.com,at34.prmsrvs.com,at35.prmsrvs.com,at36.prmsrvs.com,at37.prmsrvs.com,at38.prmsrvs.com,at39.prmsrvs.com,at4.prmsrvs.com,at40.prmsrvs.com,at41.prmsrvs.com,at42.prmsrvs.com,at43.prmsrvs.com,at44.prmsrvs.com,at5.prmsrvs.com,at55.prmsrvs.com,at6.prmsrvs.com,at60.prmsrvs.com,at61.prmsrvs.com,at62.prmsrvs.com,at63.prmsrvs.com,at64.prmsrvs.com,at65.prmsrvs.com,at66.prmsrvs.com,at68.prmsrvs.com,at69.prmsrvs.com,at7.prmsrvs.com,at8.prmsrvs.com,at9.prmsrvs.com
 37.235.56.207 # at.prmsrvs.com,at10.prmsrvs.com,at11.prmsrvs.com,at12.prmsrvs.com,at13.prmsrvs.com,at14.prmsrvs.com,at15.prmsrvs.com,at16.prmsrvs.com,at17.prmsrvs.com,at18.prmsrvs.com,at19.prmsrvs.com,at20.prmsrvs.com,at21.prmsrvs.com,at22.prmsrvs.com,at23.prmsrvs.com,at24.prmsrvs.com,at25.prmsrvs.com,at26.prmsrvs.com,at27.prmsrvs.com,at28.prmsrvs.com,at29.prmsrvs.com,at30.prmsrvs.com,at31.prmsrvs.com,at32.prmsrvs.com,at33.prmsrvs.com,at34.prmsrvs.com,at35.prmsrvs.com,at36.prmsrvs.com,at37.prmsrvs.com,at38.prmsrvs.com,at39.prmsrvs.com,at4.prmsrvs.com,at40.prmsrvs.com,at41.prmsrvs.com,at42.prmsrvs.com,at43.prmsrvs.com,at44.prmsrvs.com,at5.prmsrvs.com,at51.prmsrvs.com,at6.prmsrvs.com,at60.prmsrvs.com,at61.prmsrvs.com,at62.prmsrvs.com,at63.prmsrvs.com,at64.prmsrvs.com,at65.prmsrvs.com,at66.prmsrvs.com,at68.prmsrvs.com,at69.prmsrvs.com,at7.prmsrvs.com,at8.prmsrvs.com,at9.prmsrvs.com
@@ -1390,6 +1413,7 @@
 38.95.13.130 # tpa-349-ike.whiskergalaxy.com,tpa-349-ike.windscribe.com,us-east-110.totallyacdn.com,us-east-110.whiskergalaxy.com,us-east-110.windscribe.com
 38.95.13.131 # tpa-349.whiskergalaxy.com,tpa-349.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 38.95.13.132 # tpa-349-wg.whiskergalaxy.com
+38.104.169.186 # cdn4.hola.org,cdn4.holavpn.net,cdn4.holax.io,client-cdn4.hola.org,client-cdn4.holavpn.net,client-cdn4.holax.io,safebrowsing.hola.org,safebrowsing.holavpn.net,safebrowsing.holax.io
 38.132.101.210 # wf-us-015.totallyacdn.com,wf-us-015.whiskergalaxy.com,wf-us-015.windscribe.com,wfus-178-ike.whiskergalaxy.com,wfus-178-ike.windscribe.com
 38.132.101.211 # wf-us.whiskergalaxy.com,wf-us.windscribe.com,wfus-178.whiskergalaxy.com,wfus-178.windscribe.com
 38.132.101.212 # wfus-178-wg.whiskergalaxy.com
@@ -1423,7 +1447,7 @@
 44.203.148.42 # 44-203-148-42.server.telleport.me
 44.205.140.104 # partners.proton.me
 44.211.59.242 # user7.setupvpn.com
-44.215.111.247 # sxkk.approval.fun,sxkk.boolean.run,sxkk.throat.team,user6.setupvpn.com
+44.215.111.247 # sxkk.approval.fun,sxkk.boolean.run,sxkk.throat.team
 45.9.248.2 # lhr-185-ike.whiskergalaxy.com,lhr-185-ike.windscribe.com,wf-uk-001.totallyacdn.com,wf-uk-001.whiskergalaxy.com,wf-uk-001.windscribe.com
 45.9.248.3 # lhr-185.whiskergalaxy.com,lhr-185.windscribe.com,wf-uk.whiskergalaxy.com,wf-uk.windscribe.com
 45.9.248.4 # lhr-185-wg.whiskergalaxy.com
@@ -1514,7 +1538,7 @@
 45.32.25.6 # jp.prmsrvs.com,jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp34.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp54.prmsrvs.com,jp56.prmsrvs.com,jp57.prmsrvs.com,jp58.prmsrvs.com,jp59.prmsrvs.com,jp6.prmsrvs.com,jp60.prmsrvs.com,jp61.prmsrvs.com,jp62.prmsrvs.com,jp63.prmsrvs.com,jp64.prmsrvs.com,jp65.prmsrvs.com,jp66.prmsrvs.com,jp67.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 45.32.27.112 # jp.prmsrvs.com,jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp48.prmsrvs.com,jp5.prmsrvs.com,jp54.prmsrvs.com,jp56.prmsrvs.com,jp57.prmsrvs.com,jp58.prmsrvs.com,jp59.prmsrvs.com,jp6.prmsrvs.com,jp60.prmsrvs.com,jp61.prmsrvs.com,jp62.prmsrvs.com,jp63.prmsrvs.com,jp64.prmsrvs.com,jp65.prmsrvs.com,jp66.prmsrvs.com,jp67.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 45.32.33.129 # zagent1005.hola.org,zagent1005.vpn.hola.org
-45.32.53.130 # zagent1010.hola.org,zagent1010.vpn.hola.org,zagent203.hola.org,zagent203.holavpn.net,zagent203.holax.io,zagent203.vpn.hola.org
+45.32.53.130 # jp.vpn.hola.org,zagent1010.hola.org,zagent1010.vpn.hola.org,zagent203.hola.org,zagent203.holavpn.net,zagent203.holax.io,zagent203.vpn.hola.org
 45.32.128.201 # zagent2011.hola.org
 45.32.130.79 # zagent2008.hola.org
 45.32.133.141 # zagent2019.hola.org
@@ -1546,7 +1570,6 @@
 45.63.9.14 # zagent2586.hola.org,zagent2586.holavpn.net,zagent2586.holax.io
 45.63.15.200 # zagent1597.hola.org
 45.63.17.124 # zagent1617.hola.org,zagent1617.holavpn.net,zagent1617.holax.io
-45.63.71.160 # holapro-proxy.hola.org
 45.63.93.66 # zagent2032.hola.org,zagent2032.vpn.hola.org
 45.63.93.246 # zagent2033.hola.org,zagent2033.holax.io,zagent2033.vpn.hola.org
 45.63.98.192 # zagent425.hola.org
@@ -1566,7 +1589,7 @@
 45.76.165.215 # zagent1615.hola.org,zagent1615.holavpn.net,zagent1615.holax.io,zagent1615.vpn.hola.org
 45.76.167.179 # zagent2575.hola.org,zagent2575.holax.io
 45.76.207.17 # zagent1000.hola.org,zagent1000.vpn.hola.org
-45.76.210.5 # jp.vpn.hola.org,zagent1011.hola.org,zagent1011.vpn.hola.org,zagent204.hola.org,zagent204.holavpn.net,zagent204.holax.io,zagent204.vpn.hola.org
+45.76.210.5 # zagent1011.hola.org,zagent1011.vpn.hola.org,zagent204.hola.org,zagent204.holavpn.net,zagent204.holax.io,zagent204.vpn.hola.org
 45.76.216.41 # zagent1004.hola.org,zagent1004.vpn.hola.org
 45.77.5.88 # zagent2021.hola.org
 45.77.6.204 # zagent2015.hola.org
@@ -1587,7 +1610,7 @@
 45.77.219.219 # zagent1587.hola.org
 45.77.220.108 # zagent1600.hola.org
 45.77.228.82 # zagent119.hola.org,zagent119.vpn.hola.org
-45.77.235.169 # zagent1029.hola.org,zagent1029.vpn.hola.org,zagent2502.hola.org,zagent2502.holavpn.net,zagent2502.holax.io,zagent2502.vpn.hola.org
+45.77.235.169 # au.vpn.hola.org,zagent1029.hola.org,zagent1029.vpn.hola.org,zagent2502.hola.org,zagent2502.holavpn.net,zagent2502.holax.io,zagent2502.vpn.hola.org
 45.77.237.44 # au.prmsrvs.com,au1.prmsrvs.com,au2.prmsrvs.com,au3.prmsrvs.com,au4.prmsrvs.com,au5.prmsrvs.com,au6.prmsrvs.com,au7.prmsrvs.com,au8.prmsrvs.com,au9.prmsrvs.com
 45.82.33.4 # lt13.nordvpn.com
 45.82.33.6 # lt14.nordvpn.com
@@ -2266,7 +2289,7 @@
 45.133.192.194 # is-003.totallyacdn.com,is-003.whiskergalaxy.com,is-003.windscribe.com,kef-121-ike.whiskergalaxy.com,kef-121-ike.windscribe.com
 45.133.192.195 # is.whiskergalaxy.com,is.windscribe.com,kef-121.whiskergalaxy.com,kef-121.windscribe.com
 45.133.192.196 # kef-121-wg.whiskergalaxy.com
-45.133.194.210 # kr-009.totallyacdn.com,kr-009.whiskergalaxy.com,kr-009.windscribe.com
+45.133.194.210
 45.133.194.211
 45.133.194.212
 45.134.140.33 # node-us-121.protonvpn.net,us.protonvpn.net
@@ -2399,6 +2422,12 @@
 45.152.183.187 # es181.nordvpn.com
 45.152.183.195 # es182.nordvpn.com
 45.152.183.203 # es183.nordvpn.com
+45.152.188.16 # holapro-proxy.hola.org
+45.152.188.19 # holapro-proxy.hola.org
+45.152.188.218 # holapro-proxy.hola.org
+45.152.188.222 # holapro-proxy.hola.org
+45.152.188.229 # holapro-proxy.hola.org
+45.152.188.231 # holapro-proxy.hola.org
 45.154.27.3 # bkk-415.windscribe.com,th.whiskergalaxy.com,th.windscribe.com
 45.154.27.203 # bkk-415-wg.whiskergalaxy.com
 45.154.27.207 # bkk-415-ike.windscribe.com,th-010.totallyacdn.com,th-010.whiskergalaxy.com,th-010.windscribe.com
@@ -2434,7 +2463,6 @@
 45.248.79.186 # au787.nordvpn.com
 45.248.79.250 # au789.nordvpn.com
 45.250.255.25 # prox-jp.pointtoserver.com
-46.19.96.19 # ntp.hola.org
 46.101.74.66 # zagent2821.hola.org,zagent2821.holavpn.net,zagent2821.holax.io
 46.101.76.139 # zagent2818.hola.org,zagent2818.holavpn.net,zagent2818.holax.io
 46.101.90.33 # zagent2825.hola.org,zagent2825.holavpn.net,zagent2825.holax.io
@@ -2544,20 +2572,7 @@
 51.222.31.148 # ca.prmsrvs.com,ca1.prmsrvs.com
 52.2.50.8 # imap.hola.org,mail.hola.org,pop3.hola.org,smtp.hola.org
 52.6.143.226 # trigger-ns2-a.hola.org,vpn-ns2-a.hola.org
-52.71.175.57 # partners.proton.me
 52.73.252.28 # mdoc.hola.org,zs-mdoc-hola.hola.org,zs-mdoc-hola.vpn.hola.org
-52.84.18.41 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.58 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.81 # ca941.l304.r603.fastcloudcdn.net
-52.84.18.116 # ca941.l304.r603.fastcloudcdn.net
-52.84.125.35 # status.proton.me
-52.84.125.40 # status.proton.me
-52.84.125.48 # status.proton.me
-52.84.125.120 # status.proton.me
-52.85.90.182 # d3i5gqankjg0sg.cloudfront.net
-52.85.90.186 # d3i5gqankjg0sg.cloudfront.net
-52.85.90.197 # d3i5gqankjg0sg.cloudfront.net
-52.85.90.214 # d3i5gqankjg0sg.cloudfront.net
 52.205.77.231 # batmaccr.hola.org
 54.90.50.83 # proxyjs.hola.org,proxyjs.holavpn.net,proxyjs.holax.io
 54.162.80.9 # mongo-peer-stats.hola.org
@@ -2757,7 +2772,7 @@
 64.44.140.43 # us6866.nordvpn.com
 64.44.140.51 # us6864.nordvpn.com
 64.44.140.59 # us6865.nordvpn.com
-64.176.3.166 # zagent134.hola.org,zagent134.holavpn.net,zagent134.holax.io,zagent134.vpn.hola.org,zagent392.hola.org,zagent392.vpn.hola.org
+64.176.3.166 # cl.vpn.hola.org,zagent134.hola.org,zagent134.holavpn.net,zagent134.holax.io,zagent134.vpn.hola.org,zagent392.hola.org,zagent392.vpn.hola.org
 64.176.35.199 # jp.prmsrvs.com,jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp44.prmsrvs.com,jp5.prmsrvs.com,jp54.prmsrvs.com,jp56.prmsrvs.com,jp57.prmsrvs.com,jp58.prmsrvs.com,jp59.prmsrvs.com,jp6.prmsrvs.com,jp60.prmsrvs.com,jp61.prmsrvs.com,jp62.prmsrvs.com,jp63.prmsrvs.com,jp64.prmsrvs.com,jp65.prmsrvs.com,jp66.prmsrvs.com,jp67.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 64.176.36.84 # jp.prmsrvs.com,jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp37.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp54.prmsrvs.com,jp56.prmsrvs.com,jp57.prmsrvs.com,jp58.prmsrvs.com,jp59.prmsrvs.com,jp6.prmsrvs.com,jp60.prmsrvs.com,jp61.prmsrvs.com,jp62.prmsrvs.com,jp63.prmsrvs.com,jp64.prmsrvs.com,jp65.prmsrvs.com,jp66.prmsrvs.com,jp67.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
 64.176.38.236 # jp.prmsrvs.com,jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp40.prmsrvs.com,jp5.prmsrvs.com,jp54.prmsrvs.com,jp56.prmsrvs.com,jp57.prmsrvs.com,jp58.prmsrvs.com,jp59.prmsrvs.com,jp6.prmsrvs.com,jp60.prmsrvs.com,jp61.prmsrvs.com,jp62.prmsrvs.com,jp63.prmsrvs.com,jp64.prmsrvs.com,jp65.prmsrvs.com,jp66.prmsrvs.com,jp67.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
@@ -2839,17 +2854,12 @@
 64.227.110.245 # zagent2722.hola.org,zagent2722.holavpn.net,zagent2722.holax.io
 64.227.111.129 # zagent2776.hola.org,zagent2776.holavpn.net,zagent2776.holax.io
 64.227.111.154 # zagent2781.hola.org,zagent2781.holavpn.net,zagent2781.holax.io
-65.8.49.17 # ca901.l503.r843.fastcloudcdn.net
-65.8.49.41 # ca901.l503.r843.fastcloudcdn.net
-65.8.49.88 # ca901.l503.r843.fastcloudcdn.net
-65.8.49.99 # ca901.l503.r843.fastcloudcdn.net
 65.20.101.55 # zagent1034.hola.org,zagent1034.vpn.hola.org
 65.20.101.157 # zagent1030.hola.org,zagent1030.vpn.hola.org
 65.20.102.217 # zagent1037.hola.org,zagent1037.vpn.hola.org
 65.20.105.216 # zagent1032.hola.org,zagent1032.vpn.hola.org
 65.20.107.146 # zagent1038.hola.org,zagent1038.vpn.hola.org
 66.42.43.157 # zagent1006.hola.org,zagent1006.vpn.hola.org
-66.42.117.45 # holapro-proxy.hola.org
 66.90.67.42
 66.90.67.43
 66.90.67.44
@@ -2906,23 +2916,23 @@
 67.205.146.130 # zagent2702.hola.org,zagent2702.holavpn.net,zagent2702.holax.io
 67.205.146.208 # zagent2704.hola.org,zagent2704.holavpn.net,zagent2704.holax.io
 67.205.164.236 # zagent1536.hola.org,zagent1536.holavpn.net,zagent1536.holax.io,zagent1536.vpn.hola.org,zagent2878.hola.org,zagent2878.holavpn.net,zagent2878.vpn.hola.org
-67.205.175.184 # us.vpn.hola.org,zagent1534.hola.org,zagent1534.holavpn.net,zagent1534.holax.io,zagent1534.vpn.hola.org,zagent2876.hola.org,zagent2876.holavpn.net,zagent2876.holax.io,zagent2876.vpn.hola.org
-67.205.177.111 # us.vpn.hola.org,zagent1541.hola.org,zagent1541.holavpn.net,zagent1541.holax.io,zagent1541.vpn.hola.org,zagent2883.hola.org,zagent2883.holavpn.net,zagent2883.holax.io,zagent2883.vpn.hola.org
+67.205.175.184 # zagent1534.hola.org,zagent1534.holavpn.net,zagent1534.holax.io,zagent1534.vpn.hola.org,zagent2876.hola.org,zagent2876.holavpn.net,zagent2876.holax.io,zagent2876.vpn.hola.org
+67.205.177.111 # zagent1541.hola.org,zagent1541.holavpn.net,zagent1541.holax.io,zagent1541.vpn.hola.org,zagent2883.hola.org,zagent2883.holavpn.net,zagent2883.holax.io,zagent2883.vpn.hola.org
 67.205.182.128 # zagent2697.hola.org,zagent2697.holavpn.net,zagent2697.holax.io
 67.205.185.136 # zagent1535.hola.org,zagent1535.holavpn.net,zagent1535.holax.io,zagent1535.vpn.hola.org,zagent2877.hola.org,zagent2877.holax.io,zagent2877.vpn.hola.org
 67.205.186.50 # zagent2696.hola.org,zagent2696.holavpn.net,zagent2696.holax.io
 67.205.186.125 # zagent1537.hola.org,zagent1537.holavpn.net,zagent1537.holax.io,zagent1537.vpn.hola.org,zagent2879.hola.org,zagent2879.holavpn.net,zagent2879.holax.io,zagent2879.vpn.hola.org
 67.219.104.230 # zagent1023.hola.org,zagent1023.vpn.hola.org
 67.219.107.85 # au.vpn.hola.org,zagent1024.hola.org,zagent1024.vpn.hola.org,zagent2613.hola.org,zagent2613.holavpn.net,zagent2613.holax.io,zagent2613.vpn.hola.org
-67.219.108.86 # au.vpn.hola.org,zagent1026.hola.org,zagent1026.vpn.hola.org,zagent2615.hola.org,zagent2615.holavpn.net,zagent2615.holax.io,zagent2615.vpn.hola.org
+67.219.108.86 # zagent1026.hola.org,zagent1026.vpn.hola.org,zagent2615.hola.org,zagent2615.holavpn.net,zagent2615.holax.io,zagent2615.vpn.hola.org
 67.219.109.111 # au.vpn.hola.org,zagent1025.hola.org,zagent1025.vpn.hola.org,zagent2614.hola.org,zagent2614.holavpn.net,zagent2614.holax.io,zagent2614.vpn.hola.org
 68.183.34.62 # zagent2905.hola.org,zagent2905.holavpn.net,zagent2905.holax.io,zagent2905.vpn.hola.org
 68.183.40.86 # zagent1073.hola.org,zagent1073.holax.io,zagent1073.vpn.hola.org,zagent1074.hola.org,zagent1074.holavpn.net,zagent1074.holax.io,zagent1074.vpn.hola.org,zagent1075.hola.org,zagent1075.holavpn.net,zagent1075.holax.io,zagent1075.vpn.hola.org,zagent1076.hola.org,zagent1076.holavpn.net,zagent1076.holax.io,zagent1076.vpn.hola.org,zagent1077.hola.org,zagent1077.holavpn.net,zagent1077.holax.io,zagent1077.vpn.hola.org,zagent1078.hola.org,zagent1078.holavpn.net,zagent1078.holax.io,zagent1078.vpn.hola.org,zagent1079.hola.org,zagent1079.holavpn.net,zagent1079.holax.io,zagent1079.vpn.hola.org,zagent1080.hola.org,zagent1080.holavpn.net,zagent1080.holax.io,zagent1080.vpn.hola.org,zagent1081.hola.org,zagent1081.holax.io,zagent1081.vpn.hola.org,zagent1082.hola.org,zagent1082.holavpn.net,zagent1082.holax.io,zagent1082.vpn.hola.org,zagent1083.hola.org,zagent1083.holavpn.net,zagent1083.holax.io,zagent1083.vpn.hola.org,zagent1084.hola.org,zagent1084.holavpn.net,zagent1084.holax.io,zagent1084.vpn.hola.org,zagent1085.hola.org,zagent1085.holavpn.net,zagent1085.holax.io,zagent1085.vpn.hola.org,zagent1086.hola.org,zagent1086.holavpn.net,zagent1086.holax.io,zagent1086.vpn.hola.org,zagent1087.hola.org,zagent1087.holax.io,zagent1087.vpn.hola.org,zagent2900.hola.org,zagent2900.holavpn.net,zagent2900.holax.io,zagent2900.vpn.hola.org
-68.183.44.169 # gb.vpn.hola.org,uk.vpn.hola.org,zagent2906.hola.org,zagent2906.holax.io
+68.183.44.169 # zagent2906.hola.org,zagent2906.holax.io
 68.183.198.130 # ca.vpn.hola.org,zagent2920.hola.org,zagent2920.holavpn.net,zagent2920.holax.io,zagent2920.vpn.hola.org
 68.183.198.131 # zagent2922.hola.org,zagent2922.holavpn.net,zagent2922.holax.io,zagent2922.vpn.hola.org
 68.183.198.133 # zagent2924.hola.org,zagent2924.holavpn.net,zagent2924.holax.io,zagent2924.vpn.hola.org
-68.183.198.141 # ca.vpn.hola.org,zagent2921.hola.org,zagent2921.holavpn.net,zagent2921.vpn.hola.org
+68.183.198.141 # zagent2921.hola.org,zagent2921.holavpn.net,zagent2921.vpn.hola.org
 68.183.198.158 # zagent2923.hola.org,zagent2923.holax.io,zagent2923.vpn.hola.org
 68.235.41.123 # socks-us.windscribe.com
 68.235.56.51 # ord-63-ike.whiskergalaxy.com,ord-63-ike.windscribe.com,us-east-133.totallyacdn.com,us-east-133.whiskergalaxy.com,us-east-133.windscribe.com
@@ -3805,7 +3815,7 @@
 83.97.23.185 # blade7.berlin-rack405.nodes.gen4.ninja
 83.97.23.186 # blade8.berlin-rack405.nodes.gen4.ninja
 83.97.23.188 # blade10.berlin-rack405.nodes.gen4.ninja
-83.136.106.49 # zagent38.hola.org,zagent38.holax.io,zagent38.vpn.hola.org
+83.136.106.49 # it.vpn.hola.org,zagent38.hola.org,zagent38.holax.io,zagent38.vpn.hola.org
 83.136.106.149 # zagent61.hola.org,zagent61.holavpn.net,zagent61.holax.io,zagent61.vpn.hola.org
 83.136.106.155 # zagent147.hola.org,zagent147.vpn.hola.org
 83.136.106.159 # zagent71.hola.org,zagent71.holavpn.net,zagent71.holax.io,zagent71.vpn.hola.org
@@ -5731,8 +5741,8 @@
 91.196.220.62 # us8592.nordvpn.com
 91.200.242.150 # zagent341.hola.org,zagent341.holavpn.net,zagent341.holax.io,zagent341.vpn.hola.org
 91.200.242.190 # zagent342.hola.org,zagent342.holavpn.net,zagent342.holax.io,zagent342.vpn.hola.org
-91.200.242.194 # zagent343.hola.org,zagent343.holavpn.net,zagent343.holax.io,zagent343.vpn.hola.org
-91.200.242.203 # jp.vpn.hola.org,zagent346.hola.org,zagent346.holavpn.net,zagent346.holax.io,zagent346.vpn.hola.org
+91.200.242.194 # jp.vpn.hola.org,zagent343.hola.org,zagent343.holavpn.net,zagent343.holax.io,zagent343.vpn.hola.org
+91.200.242.203 # zagent346.hola.org,zagent346.holavpn.net,zagent346.holax.io,zagent346.vpn.hola.org
 91.200.242.206 # jp.vpn.hola.org,zagent1979.hola.org,zagent1979.holavpn.net,zagent1979.holax.io,zagent1979.vpn.hola.org
 91.200.242.210 # zagent1980.hola.org,zagent1980.holavpn.net,zagent1980.holax.io,zagent1980.vpn.hola.org
 91.205.230.66 # pt.vpn.hola.org,zagent227.hola.org,zagent227.holavpn.net,zagent227.holax.io,zagent227.vpn.hola.org
@@ -5787,11 +5797,11 @@
 91.219.236.55 # zagent149.hola.org,zagent149.holax.io,zagent149.vpn.hola.org
 91.219.236.186 # budapest.protect-my-ip.com
 91.219.238.36 # hu.vpn.hola.org,zagent1369.hola.org,zagent1369.holax.io,zagent1369.vpn.hola.org
-91.219.238.37 # hu.vpn.hola.org,zagent1370.hola.org,zagent1370.holavpn.net,zagent1370.vpn.hola.org
+91.219.238.37 # zagent1370.hola.org,zagent1370.holavpn.net,zagent1370.vpn.hola.org
 91.219.238.39 # zagent1371.hola.org,zagent1371.holax.io,zagent1371.vpn.hola.org
 91.221.66.218 # zagent277.hola.org,zagent277.holavpn.net,zagent277.holax.io,zagent277.vpn.hola.org
 91.225.105.30 # siauliai.protect-my-ip.com
-91.228.216.3 # es.vpn.hola.org,zagent1368.hola.org,zagent1368.holavpn.net,zagent1368.holax.io,zagent1368.vpn.hola.org
+91.228.216.3 # zagent1368.hola.org,zagent1368.holavpn.net,zagent1368.holax.io,zagent1368.vpn.hola.org
 91.233.117.151 # zagent1301.hola.org,zagent1301.holavpn.net,zagent1301.holax.io,zagent1301.vpn.hola.org
 91.250.240.42 # pt85.nordvpn.com
 91.250.240.50 # pt86.nordvpn.com
@@ -6300,10 +6310,6 @@
 99.84.109.137 # d2zrk1p8qzqcla.cloudfront.net
 99.84.109.148 # d2zrk1p8qzqcla.cloudfront.net
 99.84.109.198 # d2zrk1p8qzqcla.cloudfront.net
-99.84.170.3 # d3np4aywxojjzc.cloudfront.net
-99.84.170.88 # d3np4aywxojjzc.cloudfront.net
-99.84.170.182 # d3np4aywxojjzc.cloudfront.net
-99.84.170.207 # d3np4aywxojjzc.cloudfront.net
 100.24.143.142 # zs-wbm.vpn.hola.org
 102.38.199.1
 102.38.199.2
@@ -6740,6 +6746,7 @@
 103.137.15.67 # au768.nordvpn.com
 103.137.15.75 # au769.nordvpn.com
 103.137.15.83 # au770.nordvpn.com
+103.147.22.149 # ntp.hola.org
 103.155.232.220
 103.155.232.221
 103.155.232.222
@@ -6939,8 +6946,6 @@
 104.168.34.146 # us-east-045.totallyacdn.com,us-east-045.whiskergalaxy.com,us-east-045.windscribe.com
 104.168.34.147
 104.168.34.148
-104.207.143.204 # holapro-proxy.hola.org
-104.207.143.230 # holapro-proxy.hola.org
 104.207.148.6 # zagent2028.hola.org,zagent2028.holax.io,zagent2028.vpn.hola.org
 104.207.150.248 # sanjose.protect-my-ip.com
 104.207.151.159 # zagent2010.hola.org
@@ -7141,7 +7146,7 @@
 104.248.232.125 # zagent1521.hola.org,zagent1521.holavpn.net,zagent1521.holax.io,zagent1521.vpn.hola.org,zagent2863.hola.org,zagent2863.holavpn.net,zagent2863.holax.io,zagent2863.vpn.hola.org
 104.248.232.134 # zagent1529.hola.org,zagent1529.holavpn.net,zagent1529.holax.io,zagent1529.vpn.hola.org,zagent2871.hola.org,zagent2871.holavpn.net,zagent2871.holax.io,zagent2871.vpn.hola.org
 104.248.232.193 # zagent1530.hola.org,zagent1530.holavpn.net,zagent1530.holax.io,zagent1530.vpn.hola.org,zagent2872.hola.org,zagent2872.holavpn.net,zagent2872.holax.io,zagent2872.vpn.hola.org
-104.248.232.252 # zagent1531.hola.org,zagent1531.holavpn.net,zagent1531.holax.io,zagent1531.vpn.hola.org,zagent2873.hola.org,zagent2873.holavpn.net,zagent2873.holax.io,zagent2873.vpn.hola.org
+104.248.232.252 # us.vpn.hola.org,zagent1531.hola.org,zagent1531.holavpn.net,zagent1531.holax.io,zagent1531.vpn.hola.org,zagent2873.hola.org,zagent2873.holavpn.net,zagent2873.holax.io,zagent2873.vpn.hola.org
 104.248.234.46 # zagent2705.hola.org,zagent2705.holavpn.net,zagent2705.holax.io
 104.248.234.189 # zagent2708.hola.org,zagent2708.holavpn.net,zagent2708.holax.io
 104.248.234.230 # zagent2709.hola.org,zagent2709.holavpn.net,zagent2709.holax.io
@@ -7263,6 +7268,7 @@
 108.61.245.243 # zagent12.hola.org,zagent12.holavpn.net,zagent12.holax.io,zagent12.vpn.hola.org
 108.62.49.221 # us-east-127.totallyacdn.com,us-east-127.whiskergalaxy.com,us-east-127.windscribe.com
 108.160.132.21 # jp.prmsrvs.com,jp1.prmsrvs.com,jp10.prmsrvs.com,jp11.prmsrvs.com,jp12.prmsrvs.com,jp13.prmsrvs.com,jp14.prmsrvs.com,jp15.prmsrvs.com,jp16.prmsrvs.com,jp17.prmsrvs.com,jp18.prmsrvs.com,jp19.prmsrvs.com,jp2.prmsrvs.com,jp20.prmsrvs.com,jp21.prmsrvs.com,jp22.prmsrvs.com,jp23.prmsrvs.com,jp24.prmsrvs.com,jp25.prmsrvs.com,jp3.prmsrvs.com,jp4.prmsrvs.com,jp5.prmsrvs.com,jp51.prmsrvs.com,jp54.prmsrvs.com,jp56.prmsrvs.com,jp57.prmsrvs.com,jp58.prmsrvs.com,jp59.prmsrvs.com,jp6.prmsrvs.com,jp60.prmsrvs.com,jp61.prmsrvs.com,jp62.prmsrvs.com,jp63.prmsrvs.com,jp64.prmsrvs.com,jp65.prmsrvs.com,jp66.prmsrvs.com,jp67.prmsrvs.com,jp7.prmsrvs.com,jp8.prmsrvs.com,jp9.prmsrvs.com
+108.165.142.40 # holapro-proxy.hola.org
 108.181.50.243
 108.181.50.251
 108.181.51.211
@@ -7413,7 +7419,6 @@
 118.107.220.53 # kul-270-ike.whiskergalaxy.com,kul-270-ike.windscribe.com,my-012.totallyacdn.com,my-012.whiskergalaxy.com,my-012.windscribe.com
 118.107.220.54 # kul-270.whiskergalaxy.com,kul-270.windscribe.com,my.whiskergalaxy.com,my.windscribe.com
 118.107.220.55 # kul-270-wg.whiskergalaxy.com
-118.179.158.169 # ntp.hola.org
 121.127.47.81 # au822.nordvpn.com
 121.127.47.83 # au823.nordvpn.com
 122.155.174.47
@@ -7426,7 +7431,6 @@
 122.155.174.99
 122.155.174.102
 122.155.174.105
-122.155.180.231 # ntp.hola.org
 125.212.217.212
 125.212.217.243
 125.212.220.6
@@ -7690,7 +7694,7 @@
 130.195.250.125
 130.195.250.126
 131.255.6.41 # zagent14.hola.org,zagent14.holavpn.net,zagent14.holax.io,zagent14.vpn.hola.org
-131.255.6.42 # zagent15.hola.org,zagent15.holax.io,zagent15.vpn.hola.org,zagent1941.hola.org,zagent1941.holax.io,zagent1941.vpn.hola.org
+131.255.6.42 # ar.vpn.hola.org,zagent15.hola.org,zagent15.holax.io,zagent15.vpn.hola.org,zagent1941.hola.org,zagent1941.holax.io,zagent1941.vpn.hola.org
 132.145.210.97 # 132-145-210-97.server.telleport.me
 134.122.28.167 # zagent2693.hola.org,zagent2693.holavpn.net,zagent2693.holax.io
 134.122.61.238 # zagent2951.hola.org,zagent2951.holavpn.net,zagent2951.holax.io
@@ -7734,8 +7738,8 @@
 138.68.161.157 # zagent2846.hola.org,zagent2846.holavpn.net,zagent2846.holax.io
 138.68.161.176 # zagent2844.hola.org,zagent2844.holavpn.net,zagent2844.holax.io
 138.68.174.155 # zagent2842.hola.org,zagent2842.holavpn.net,zagent2842.holax.io
-138.68.180.2 # gb.vpn.hola.org,uk.vpn.hola.org,zagent2909.hola.org,zagent2909.holavpn.net,zagent2909.holax.io,zagent2909.vpn.hola.org
-138.68.184.233 # zagent2902.hola.org,zagent2902.holavpn.net,zagent2902.holax.io,zagent2902.vpn.hola.org
+138.68.180.2 # gb.vpn.hola.org,zagent2909.hola.org,zagent2909.holavpn.net,zagent2909.holax.io,zagent2909.vpn.hola.org
+138.68.184.233 # uk.vpn.hola.org,zagent2902.hola.org,zagent2902.holavpn.net,zagent2902.holax.io,zagent2902.vpn.hola.org
 138.186.142.202 # pa-001.totallyacdn.com,pa-001.whiskergalaxy.com,pa-001.windscribe.com,pty-358-ike.whiskergalaxy.com,pty-358-ike.windscribe.com
 138.186.142.203 # pa.whiskergalaxy.com,pa.windscribe.com,pty-358.whiskergalaxy.com,pty-358.windscribe.com
 138.186.142.204 # pty-358-wg.whiskergalaxy.com
@@ -8298,8 +8302,8 @@
 139.59.184.150 # zagent2853.hola.org,zagent2853.holavpn.net,zagent2853.holax.io
 139.84.194.239 # zagent1022.hola.org,zagent1022.vpn.hola.org
 139.84.196.176 # zagent2503.hola.org,zagent2503.holavpn.net,zagent2503.holax.io
-139.180.160.200 # zagent1028.hola.org,zagent1028.vpn.hola.org,zagent2501.hola.org,zagent2501.holavpn.net,zagent2501.holax.io,zagent2501.vpn.hola.org
-139.180.183.16 # au.vpn.hola.org,zagent1027.hola.org,zagent1027.vpn.hola.org,zagent2616.hola.org,zagent2616.holavpn.net,zagent2616.holax.io,zagent2616.vpn.hola.org
+139.180.160.200 # au.vpn.hola.org,zagent1028.hola.org,zagent1028.vpn.hola.org,zagent2501.hola.org,zagent2501.holavpn.net,zagent2501.holax.io,zagent2501.vpn.hola.org
+139.180.183.16 # zagent1027.hola.org,zagent1027.vpn.hola.org,zagent2616.hola.org,zagent2616.holavpn.net,zagent2616.holax.io,zagent2616.vpn.hola.org
 139.180.192.151 # zagent1001.hola.org,zagent1001.vpn.hola.org
 139.180.196.117 # zagent1002.hola.org,zagent1002.vpn.hola.org
 140.82.3.102 # zagent1047.hola.org,zagent1047.holavpn.net,zagent1047.holax.io,zagent1047.vpn.hola.org,zagent1067.hola.org,zagent1067.holavpn.net,zagent1067.holax.io,zagent1067.vpn.hola.org
@@ -8351,12 +8355,12 @@
 141.145.202.150 # 141-145-202-150.server.telleport.me
 141.164.49.150 # kr.prmsrvs.com,kr1.prmsrvs.com,kr10.prmsrvs.com,kr11.prmsrvs.com,kr12.prmsrvs.com,kr17.prmsrvs.com,kr2.prmsrvs.com,kr3.prmsrvs.com,kr4.prmsrvs.com,kr5.prmsrvs.com,kr6.prmsrvs.com,kr7.prmsrvs.com,kr8.prmsrvs.com,kr9.prmsrvs.com
 141.164.62.22 # zagent1017.hola.org,zagent1017.holax.io,zagent1017.vpn.hola.org
-141.255.162.194 # ch-017.totallyacdn.com,ch-017.whiskergalaxy.com,ch-017.windscribe.com
-141.255.162.195
-141.255.162.196
-141.255.162.210 # ch-018.totallyacdn.com,ch-018.whiskergalaxy.com,ch-018.windscribe.com
-141.255.162.211
-141.255.162.212
+141.255.162.194 # ch-017.totallyacdn.com,ch-017.whiskergalaxy.com,ch-017.windscribe.com,zrh-264-ike.whiskergalaxy.com,zrh-264-ike.windscribe.com
+141.255.162.195 # ch.whiskergalaxy.com,ch.windscribe.com,zrh-264.whiskergalaxy.com,zrh-264.windscribe.com
+141.255.162.196 # zrh-264-wg.whiskergalaxy.com
+141.255.162.210 # ch-018.totallyacdn.com,ch-018.whiskergalaxy.com,ch-018.windscribe.com,zrh-264-ike.whiskergalaxy.com,zrh-264-ike.windscribe.com
+141.255.162.211 # ch.whiskergalaxy.com,ch.windscribe.com,zrh-264.whiskergalaxy.com,zrh-264.windscribe.com
+141.255.162.212 # zrh-264-wg.whiskergalaxy.com
 142.93.150.190 # guest.meet.int.windscribe.com,meet.int.windscribe.com,sso.meet.int.windscribe.com,turn-meet.int.windscribe.com
 142.93.163.116 # de.prmsrvs.com,de1.prmsrvs.com,de10.prmsrvs.com,de11.prmsrvs.com,de12.prmsrvs.com,de2.prmsrvs.com,de3.prmsrvs.com,de4.prmsrvs.com,de5.prmsrvs.com,de6.prmsrvs.com,de7.prmsrvs.com,de8.prmsrvs.com,de9.prmsrvs.com
 142.93.246.195 # zagent1532.hola.org,zagent1532.holavpn.net,zagent1532.holax.io,zagent1532.vpn.hola.org,zagent2874.hola.org,zagent2874.holavpn.net,zagent2874.holax.io,zagent2874.vpn.hola.org
@@ -8367,7 +8371,7 @@
 142.234.204.2 # jfk-330-wg.whiskergalaxy.com
 142.234.204.65 # jfk-330-ike.whiskergalaxy.com,jfk-330-ike.windscribe.com,us-east-119.totallyacdn.com,us-east-119.whiskergalaxy.com,us-east-119.windscribe.com
 143.110.174.16 # icax.boolean.run,icax.throat.team
-143.110.210.20 # ca.vpn.hola.org,zagent2919.hola.org,zagent2919.holax.io,zagent2919.vpn.hola.org
+143.110.210.20 # zagent2919.hola.org,zagent2919.holax.io,zagent2919.vpn.hola.org
 143.110.220.53 # zagent2915.hola.org,zagent2915.holavpn.net,zagent2915.holax.io,zagent2915.vpn.hola.org,zagent758.hola.org,zagent758.holax.io,zagent758.vpn.hola.org,zagent759.hola.org,zagent759.holavpn.net,zagent759.holax.io,zagent759.vpn.hola.org,zagent760.hola.org,zagent760.holax.io,zagent760.vpn.hola.org,zagent761.hola.org,zagent761.holavpn.net,zagent761.holax.io,zagent761.vpn.hola.org,zagent762.hola.org,zagent762.holavpn.net,zagent762.holax.io,zagent762.vpn.hola.org,zagent763.hola.org,zagent763.holax.io,zagent763.vpn.hola.org,zagent764.hola.org,zagent764.holavpn.net,zagent764.holax.io,zagent764.vpn.hola.org,zagent765.hola.org,zagent765.holavpn.net,zagent765.holax.io,zagent765.vpn.hola.org,zagent766.hola.org,zagent766.holavpn.net,zagent766.holax.io,zagent766.vpn.hola.org,zagent767.hola.org,zagent767.holavpn.net,zagent767.holax.io,zagent767.vpn.hola.org
 143.110.228.35 # zagent2725.hola.org,zagent2725.holavpn.net,zagent2725.holax.io
 143.110.234.18 # zagent2728.hola.org,zagent2728.holavpn.net,zagent2728.holax.io
@@ -8381,11 +8385,11 @@
 143.198.28.175 # zagent2660.hola.org,zagent2660.holavpn.net,zagent2660.holax.io
 143.198.28.199 # zagent2659.hola.org,zagent2659.holavpn.net,zagent2659.holax.io
 143.198.28.225 # zagent2661.hola.org,zagent2661.holavpn.net,zagent2661.holax.io
-143.198.32.236 # zagent2916.hola.org,zagent2916.holavpn.net,zagent2916.vpn.hola.org
-143.198.40.105 # zagent2918.hola.org,zagent2918.holavpn.net,zagent2918.holax.io,zagent2918.vpn.hola.org
+143.198.32.236 # ca.vpn.hola.org,zagent2916.hola.org,zagent2916.holavpn.net,zagent2916.vpn.hola.org
+143.198.40.105 # ca.vpn.hola.org,zagent2918.hola.org,zagent2918.holavpn.net,zagent2918.holax.io,zagent2918.vpn.hola.org
 143.198.75.74 # zagent2785.hola.org,zagent2785.holavpn.net,zagent2785.holax.io
 143.198.75.178 # zagent2786.hola.org,zagent2786.holavpn.net,zagent2786.holax.io
-143.198.113.74 # zagent1519.hola.org,zagent1519.holavpn.net,zagent1519.holax.io,zagent1519.vpn.hola.org,zagent2861.hola.org,zagent2861.holax.io,zagent2861.vpn.hola.org
+143.198.113.74 # us.vpn.hola.org,zagent1519.hola.org,zagent1519.holavpn.net,zagent1519.holax.io,zagent1519.vpn.hola.org,zagent2861.hola.org,zagent2861.holax.io,zagent2861.vpn.hola.org
 143.198.155.20 # zagent2789.hola.org,zagent2789.holavpn.net,zagent2789.holax.io
 143.198.198.209 # zagent2807.hola.org,zagent2807.holavpn.net,zagent2807.holax.io
 143.198.226.168 # zagent2788.hola.org,zagent2788.holavpn.net,zagent2788.holax.io
@@ -8513,15 +8517,15 @@
 145.14.135.79 # us9621.nordvpn.com
 145.239.81.148 # pl.vpn.hola.org,zagent500.hola.org,zagent500.holavpn.net,zagent500.holax.io,zagent500.vpn.hola.org
 145.239.82.102 # zagent501.hola.org,zagent501.holavpn.net,zagent501.holax.io,zagent501.vpn.hola.org
-145.239.89.146 # pl.vpn.hola.org,zagent884.hola.org,zagent884.holavpn.net,zagent884.holax.io,zagent884.vpn.hola.org
+145.239.89.146 # zagent884.hola.org,zagent884.holavpn.net,zagent884.holax.io,zagent884.vpn.hola.org
 145.239.92.26 # zagent511.hola.org,zagent511.holavpn.net,zagent511.holax.io,zagent511.vpn.hola.org
-145.239.93.100 # zagent887.hola.org,zagent887.holavpn.net,zagent887.holax.io,zagent887.vpn.hola.org
+145.239.93.100 # pl.vpn.hola.org,zagent887.hola.org,zagent887.holavpn.net,zagent887.holax.io,zagent887.vpn.hola.org
 145.239.94.171 # zagent880.hola.org,zagent880.holavpn.net,zagent880.holax.io,zagent880.vpn.hola.org
-146.59.18.41 # zagent888.hola.org,zagent888.holavpn.net,zagent888.holax.io,zagent888.vpn.hola.org
+146.59.18.41 # pl.vpn.hola.org,zagent888.hola.org,zagent888.holavpn.net,zagent888.holax.io,zagent888.vpn.hola.org
 146.59.18.42 # pl.vpn.hola.org,zagent886.hola.org,zagent886.holavpn.net,zagent886.holax.io,zagent886.vpn.hola.org
 146.59.18.43 # zagent506.hola.org,zagent506.holavpn.net,zagent506.holax.io,zagent506.vpn.hola.org
 146.59.18.44 # zagent879.hola.org,zagent879.holavpn.net,zagent879.holax.io,zagent879.vpn.hola.org
-146.59.19.185 # pl.vpn.hola.org,zagent502.hola.org,zagent502.holavpn.net,zagent502.holax.io,zagent502.vpn.hola.org
+146.59.19.185 # zagent502.hola.org,zagent502.holavpn.net,zagent502.holax.io,zagent502.vpn.hola.org
 146.70.9.226 # hk-013.totallyacdn.com,hk-013.whiskergalaxy.com,hk-013.windscribe.com,hkg-26-ike.whiskergalaxy.com,hkg-26-ike.windscribe.com
 146.70.9.227 # hk.whiskergalaxy.com,hk.windscribe.com,hkg-26.whiskergalaxy.com,hkg-26.windscribe.com
 146.70.9.228 # hkg-26-wg.whiskergalaxy.com
@@ -9073,9 +9077,9 @@
 146.70.115.172
 146.70.115.173
 146.70.115.174
-146.70.120.130 # hu-003.totallyacdn.com,hu-003.whiskergalaxy.com,hu-003.windscribe.com
-146.70.120.131
-146.70.120.132
+146.70.120.130 # bud-90-ike.whiskergalaxy.com,bud-90-ike.windscribe.com,hu-003.totallyacdn.com,hu-003.whiskergalaxy.com,hu-003.windscribe.com
+146.70.120.131 # bud-90.whiskergalaxy.com,bud-90.windscribe.com,hu.whiskergalaxy.com,hu.windscribe.com
+146.70.120.132 # bud-90-wg.whiskergalaxy.com
 146.70.120.146 # hu.protonvpn.net,node-hu-04.protonvpn.net
 146.70.120.147
 146.70.120.148
@@ -9849,9 +9853,9 @@
 146.70.202.188
 146.70.202.189
 146.70.202.190
-146.70.203.18 # hu-004.totallyacdn.com,hu-004.whiskergalaxy.com,hu-004.windscribe.com
-146.70.203.19
-146.70.203.20
+146.70.203.18 # bud-90-ike.whiskergalaxy.com,bud-90-ike.windscribe.com,hu-004.totallyacdn.com,hu-004.whiskergalaxy.com,hu-004.windscribe.com
+146.70.203.19 # bud-90.whiskergalaxy.com,bud-90.windscribe.com,hu.whiskergalaxy.com,hu.windscribe.com
+146.70.203.20 # bud-90-wg.whiskergalaxy.com
 146.70.204.162 # node-uk-09.protonvpn.net,uk.protonvpn.net
 146.70.204.163
 146.70.204.164
@@ -10152,6 +10156,8 @@
 147.182.251.135 # zagent2753.hola.org,zagent2753.holavpn.net,zagent2753.holax.io
 147.182.251.180 # zagent2766.hola.org,zagent2766.holavpn.net,zagent2766.holax.io
 147.182.253.232 # zagent2732.hola.org,zagent2732.holavpn.net,zagent2732.holax.io
+149.19.224.18 # holapro-proxy.hola.org
+149.19.224.37 # holapro-proxy.hola.org
 149.22.80.1 # node-us-242.protonvpn.net
 149.22.80.2
 149.22.80.3
@@ -12194,7 +12200,7 @@
 149.154.152.130 # zagent299.hola.org,zagent299.holavpn.net,zagent299.holax.io,zagent299.vpn.hola.org
 149.154.153.188 # zagent1902.hola.org,zagent1902.holavpn.net,zagent1902.holax.io,zagent1902.vpn.hola.org
 149.154.154.64 # at.vpn.hola.org,zagent1833.hola.org,zagent1833.holavpn.net,zagent1833.holax.io,zagent1833.vpn.hola.org
-149.154.154.71 # zagent1358.hola.org,zagent1358.holavpn.net,zagent1358.holax.io,zagent1358.vpn.hola.org
+149.154.154.71 # at.vpn.hola.org,zagent1358.hola.org,zagent1358.holavpn.net,zagent1358.holax.io,zagent1358.vpn.hola.org
 149.154.154.177 # zagent1846.hola.org,zagent1846.holavpn.net,zagent1846.holax.io,zagent1846.vpn.hola.org
 149.154.157.131 # zagent897.hola.org,zagent897.holavpn.net,zagent897.holax.io,zagent897.vpn.hola.org
 149.154.157.175 # milan.protect-my-ip.com
@@ -12210,7 +12216,7 @@
 151.236.13.238 # at.prmsrvs.com,at10.prmsrvs.com,at11.prmsrvs.com,at12.prmsrvs.com,at13.prmsrvs.com,at14.prmsrvs.com,at15.prmsrvs.com,at16.prmsrvs.com,at17.prmsrvs.com,at18.prmsrvs.com,at19.prmsrvs.com,at20.prmsrvs.com,at21.prmsrvs.com,at22.prmsrvs.com,at23.prmsrvs.com,at24.prmsrvs.com,at25.prmsrvs.com,at26.prmsrvs.com,at27.prmsrvs.com,at28.prmsrvs.com,at29.prmsrvs.com,at30.prmsrvs.com,at31.prmsrvs.com,at32.prmsrvs.com,at33.prmsrvs.com,at34.prmsrvs.com,at35.prmsrvs.com,at36.prmsrvs.com,at37.prmsrvs.com,at38.prmsrvs.com,at39.prmsrvs.com,at4.prmsrvs.com,at40.prmsrvs.com,at41.prmsrvs.com,at42.prmsrvs.com,at43.prmsrvs.com,at44.prmsrvs.com,at5.prmsrvs.com,at50.prmsrvs.com,at6.prmsrvs.com,at60.prmsrvs.com,at61.prmsrvs.com,at62.prmsrvs.com,at63.prmsrvs.com,at64.prmsrvs.com,at65.prmsrvs.com,at66.prmsrvs.com,at68.prmsrvs.com,at69.prmsrvs.com,at7.prmsrvs.com,at8.prmsrvs.com,at9.prmsrvs.com
 151.236.18.9 # zagent59.hola.org,zagent59.holavpn.net,zagent59.holax.io,zagent59.vpn.hola.org
 151.236.18.110 # it.prmsrvs.com,it1.prmsrvs.com,it2.prmsrvs.com,it4.prmsrvs.com
-151.236.18.132 # it.vpn.hola.org,zagent907.hola.org,zagent907.holavpn.net,zagent907.holax.io,zagent907.vpn.hola.org
+151.236.18.132 # zagent907.hola.org,zagent907.holavpn.net,zagent907.holax.io,zagent907.vpn.hola.org
 151.236.20.230 # hk.prmsrvs.com,hk1.prmsrvs.com,hk10.prmsrvs.com,hk12.prmsrvs.com,hk2.prmsrvs.com,hk3.prmsrvs.com,hk4.prmsrvs.com,hk5.prmsrvs.com,hk6.prmsrvs.com,hk7.prmsrvs.com,hk8.prmsrvs.com,hk9.prmsrvs.com
 151.236.20.239 # hk.prmsrvs.com,hk1.prmsrvs.com,hk10.prmsrvs.com,hk14.prmsrvs.com,hk2.prmsrvs.com,hk3.prmsrvs.com,hk4.prmsrvs.com,hk5.prmsrvs.com,hk6.prmsrvs.com,hk7.prmsrvs.com,hk8.prmsrvs.com,hk9.prmsrvs.com
 151.236.21.8 # fr.vpn.hola.org,zagent1236.hola.org,zagent1236.holavpn.net,zagent1236.holax.io,zagent1236.vpn.hola.org
@@ -12225,9 +12231,9 @@
 151.236.23.144 # zagent131.hola.org,zagent131.holax.io,zagent131.vpn.hola.org
 151.236.23.169 # es.prmsrvs.com,es1.prmsrvs.com,es3.prmsrvs.com
 151.236.23.185 # zagent18.hola.org,zagent18.holavpn.net,zagent18.vpn.hola.org
-151.236.23.217 # zagent127.hola.org,zagent127.holavpn.net,zagent127.holax.io,zagent127.vpn.hola.org
-151.236.23.229 # es.vpn.hola.org,zagent19.hola.org,zagent19.holax.io,zagent19.vpn.hola.org
-151.236.23.238 # es.vpn.hola.org,zagent16.hola.org,zagent16.holavpn.net,zagent16.holax.io,zagent16.vpn.hola.org
+151.236.23.217 # es.vpn.hola.org,zagent127.hola.org,zagent127.holavpn.net,zagent127.holax.io,zagent127.vpn.hola.org
+151.236.23.229 # zagent19.hola.org,zagent19.holax.io,zagent19.vpn.hola.org
+151.236.23.238 # zagent16.hola.org,zagent16.holavpn.net,zagent16.holax.io,zagent16.vpn.hola.org
 151.236.24.13 # is.prmsrvs.com,is1.prmsrvs.com,is2.prmsrvs.com,is3.prmsrvs.com,is4.prmsrvs.com,is5.prmsrvs.com,is6.prmsrvs.com,is7.prmsrvs.com
 151.236.25.172 # pl.prmsrvs.com,pl1.prmsrvs.com,pl2.prmsrvs.com,pl3.prmsrvs.com,pl4.prmsrvs.com
 151.236.26.48 # zagent534.hola.org,zagent534.holavpn.net,zagent534.holax.io
@@ -12969,12 +12975,12 @@
 157.230.121.125 # zagent2804.hola.org,zagent2804.holavpn.net,zagent2804.holax.io
 157.230.230.235 # zagent2949.hola.org,zagent2949.holavpn.net,zagent2949.holax.io
 157.230.254.96 # zagent2943.hola.org
-157.245.52.95 # sg.vpn.hola.org,zagent2046.hola.org,zagent2046.holax.io,zagent2046.vpn.hola.org,zagent2933.hola.org,zagent2933.holavpn.net,zagent2933.holax.io,zagent2933.vpn.hola.org
+157.245.52.95 # zagent2046.hola.org,zagent2046.holax.io,zagent2046.vpn.hola.org,zagent2933.hola.org,zagent2933.holavpn.net,zagent2933.holax.io,zagent2933.vpn.hola.org
 157.245.57.247 # sg.vpn.hola.org,zagent2043.hola.org,zagent2043.holax.io,zagent2043.vpn.hola.org,zagent2930.hola.org,zagent2930.holax.io,zagent2930.vpn.hola.org
 157.245.81.161 # zagent1518.hola.org,zagent1518.holavpn.net,zagent1518.holax.io,zagent1518.vpn.hola.org,zagent2860.hola.org,zagent2860.holavpn.net,zagent2860.holax.io,zagent2860.vpn.hola.org
 157.245.81.250 # zagent1520.hola.org,zagent1520.holavpn.net,zagent1520.holax.io,zagent1520.vpn.hola.org,zagent2862.hola.org,zagent2862.holavpn.net,zagent2862.holax.io,zagent2862.vpn.hola.org
 157.245.156.194 # sg.vpn.hola.org,zagent2045.hola.org,zagent2045.holax.io,zagent2045.vpn.hola.org,zagent2932.hola.org,zagent2932.holavpn.net,zagent2932.holax.io
-157.245.158.102 # zagent2044.hola.org,zagent2044.holax.io,zagent2044.vpn.hola.org,zagent2931.hola.org,zagent2931.holavpn.net,zagent2931.vpn.hola.org
+157.245.158.102 # sg.vpn.hola.org,zagent2044.hola.org,zagent2044.holax.io,zagent2044.vpn.hola.org,zagent2931.hola.org,zagent2931.holavpn.net,zagent2931.vpn.hola.org
 157.245.192.116 # sg10.prmsrvs.com
 157.245.200.9 # sg11.prmsrvs.com
 158.101.137.158 # 158-101-137-158.server.telleport.me
@@ -13286,7 +13292,7 @@
 165.231.253.242 # bom-372-ike.whiskergalaxy.com,bom-372-ike.windscribe.com,in-010.totallyacdn.com,in-010.whiskergalaxy.com,in-010.windscribe.com
 165.231.253.243 # bom-372.whiskergalaxy.com,bom-372.windscribe.com,in.whiskergalaxy.com,in.windscribe.com
 165.231.253.244 # bom-372-wg.whiskergalaxy.com
-165.232.46.33 # zagent2907.hola.org,zagent2907.holavpn.net,zagent2907.holax.io,zagent2907.vpn.hola.org
+165.232.46.33 # gb.vpn.hola.org,zagent2907.hola.org,zagent2907.holavpn.net,zagent2907.holax.io,zagent2907.vpn.hola.org
 165.232.144.158 # zagent2782.hola.org,zagent2782.holavpn.net,zagent2782.holax.io
 165.232.153.85 # zagent2783.hola.org,zagent2783.holavpn.net,zagent2783.holax.io
 165.232.153.125 # zagent2784.hola.org,zagent2784.holavpn.net,zagent2784.holax.io
@@ -13295,12 +13301,12 @@
 167.71.49.204 # de.vpn.hola.org,zagent2934.hola.org,zagent2934.holavpn.net,zagent2934.vpn.hola.org,zagent310.hola.org,zagent310.holavpn.net,zagent310.holax.io,zagent310.vpn.hola.org
 167.71.62.22 # de.vpn.hola.org,zagent2939.hola.org,zagent2939.holavpn.net,zagent2939.holax.io,zagent2939.vpn.hola.org,zagent315.hola.org,zagent315.holavpn.net,zagent315.holax.io,zagent315.vpn.hola.org
 167.71.82.20 # zagent1543.hola.org,zagent1543.holavpn.net,zagent1543.holax.io,zagent1543.vpn.hola.org,zagent2885.hola.org,zagent2885.holax.io,zagent2885.vpn.hola.org
-167.71.82.99 # us.vpn.hola.org,zagent1544.hola.org,zagent1544.holavpn.net,zagent1544.holax.io,zagent1544.vpn.hola.org,zagent2886.hola.org,zagent2886.holavpn.net,zagent2886.holax.io,zagent2886.vpn.hola.org
+167.71.82.99 # zagent1544.hola.org,zagent1544.holavpn.net,zagent1544.holax.io,zagent1544.vpn.hola.org,zagent2886.hola.org,zagent2886.holavpn.net,zagent2886.holax.io,zagent2886.vpn.hola.org
 167.71.82.174 # zagent1545.hola.org,zagent1545.holax.io,zagent1545.vpn.hola.org,zagent2887.hola.org,zagent2887.holavpn.net,zagent2887.holax.io,zagent2887.vpn.hola.org
 167.71.86.54 # zagent1549.hola.org,zagent1549.holavpn.net,zagent1549.holax.io,zagent1549.vpn.hola.org,zagent2890.hola.org,zagent2890.holavpn.net,zagent2890.holax.io,zagent2890.vpn.hola.org
 167.71.90.10 # zagent1547.hola.org,zagent1547.holax.io,zagent1547.vpn.hola.org,zagent2889.hola.org,zagent2889.holavpn.net,zagent2889.holax.io,zagent2889.vpn.hola.org
 167.71.90.51 # zagent1550.hola.org,zagent1550.holavpn.net,zagent1550.holax.io,zagent1550.vpn.hola.org,zagent2891.hola.org,zagent2891.holavpn.net,zagent2891.holax.io,zagent2891.vpn.hola.org
-167.71.90.68 # us.vpn.hola.org,zagent1551.hola.org,zagent1551.holax.io,zagent1551.vpn.hola.org,zagent2892.hola.org,zagent2892.holavpn.net,zagent2892.holax.io,zagent2892.vpn.hola.org
+167.71.90.68 # zagent1551.hola.org,zagent1551.holax.io,zagent1551.vpn.hola.org,zagent2892.hola.org,zagent2892.holavpn.net,zagent2892.holax.io,zagent2892.vpn.hola.org
 167.71.90.254 # zagent1553.hola.org,zagent1553.holax.io,zagent1553.vpn.hola.org,zagent2894.hola.org,zagent2894.holavpn.net,zagent2894.vpn.hola.org
 167.71.140.174 # zagent2817.hola.org,zagent2817.holavpn.net,zagent2817.holax.io
 167.71.212.96 # sg5.prmsrvs.com
@@ -13332,10 +13338,10 @@
 167.89.118.109 # url7992.hola.org
 167.89.118.120 # url7992.hola.org
 167.89.118.128 # url7992.hola.org
-167.99.192.192 # zagent2904.hola.org,zagent2904.holavpn.net,zagent2904.holax.io,zagent2904.vpn.hola.org
-167.99.198.177 # zagent2901.hola.org,zagent2901.holavpn.net,zagent2901.holax.io,zagent2901.vpn.hola.org
+167.99.192.192 # gb.vpn.hola.org,zagent2904.hola.org,zagent2904.holavpn.net,zagent2904.holax.io,zagent2904.vpn.hola.org
+167.99.198.177 # gb.vpn.hola.org,zagent2901.hola.org,zagent2901.holavpn.net,zagent2901.holax.io,zagent2901.vpn.hola.org
 167.99.198.196 # zagent2908.hola.org,zagent2908.holax.io,zagent2908.vpn.hola.org
-167.99.206.212 # gb.vpn.hola.org,zagent2903.hola.org,zagent2903.holavpn.net,zagent2903.holax.io,zagent2903.vpn.hola.org
+167.99.206.212 # zagent2903.hola.org,zagent2903.holavpn.net,zagent2903.holax.io,zagent2903.vpn.hola.org
 167.160.167.194 # ewr-181-ike.whiskergalaxy.com,ewr-181-ike.windscribe.com,us-east-054.totallyacdn.com,us-east-054.whiskergalaxy.com,us-east-054.windscribe.com
 167.160.167.195 # ewr-181.whiskergalaxy.com,ewr-181.windscribe.com,us-east.whiskergalaxy.com,us-east.windscribe.com
 167.160.167.196 # ewr-181-wg.whiskergalaxy.com
@@ -13635,8 +13641,6 @@
 169.150.232.164 # us9896.nordvpn.com
 169.150.232.165 # us10524.nordvpn.com
 169.150.232.166 # us9897.nordvpn.com
-169.150.236.104 # cdn4.hola.org,client-cdn4.hola.org,client-cdn4.holavpn.net,client-cdn4.holax.io,safebrowsing.holavpn.net,safebrowsing.holax.io
-169.150.236.105 # cdn4.holavpn.net,cdn4.holax.io,safebrowsing.hola.org
 169.150.238.151 # za148.nordvpn.com
 169.150.238.153 # za149.nordvpn.com
 169.150.254.1 # us10256.nordvpn.com
@@ -13683,7 +13687,7 @@
 169.255.56.202 # acc-394-ike.whiskergalaxy.com,acc-394-ike.windscribe.com,gh-001.totallyacdn.com,gh-001.whiskergalaxy.com,gh-001.windscribe.com
 169.255.56.203 # acc-394.whiskergalaxy.com,acc-394.windscribe.com,gh.whiskergalaxy.com,gh.windscribe.com
 169.255.56.204 # acc-394-wg.whiskergalaxy.com
-170.78.75.25 # ar.vpn.hola.org,zagent1497.hola.org,zagent1497.holax.io,zagent1497.vpn.hola.org
+170.78.75.25 # zagent1497.hola.org,zagent1497.holax.io,zagent1497.vpn.hola.org
 170.78.75.32 # zagent1607.hola.org,zagent1607.holavpn.net,zagent1607.holax.io,zagent1607.vpn.hola.org
 170.78.75.62 # ar.vpn.hola.org,zagent92.hola.org,zagent92.holax.io,zagent92.vpn.hola.org
 170.78.75.76 # ar.vpn.hola.org,zagent543.hola.org,zagent543.holavpn.net,zagent543.holax.io,zagent543.vpn.hola.org
@@ -13832,7 +13836,7 @@
 173.239.194.66 # blade27.melbourne-rack404.nodes.gen4.ninja
 173.239.194.67 # blade28.melbourne-rack404.nodes.gen4.ninja
 173.239.194.68 # blade29.melbourne-rack404.nodes.gen4.ninja
-174.138.36.124 # zagent1542.hola.org,zagent1542.holavpn.net,zagent1542.holax.io,zagent1542.vpn.hola.org,zagent2884.hola.org,zagent2884.holavpn.net,zagent2884.holax.io,zagent2884.vpn.hola.org
+174.138.36.124 # us.vpn.hola.org,zagent1542.hola.org,zagent1542.holavpn.net,zagent1542.holax.io,zagent1542.vpn.hola.org,zagent2884.hola.org,zagent2884.holavpn.net,zagent2884.holax.io,zagent2884.vpn.hola.org
 174.138.84.62 # zagent2898.hola.org,zagent2898.holavpn.net,zagent2898.vpn.hola.org
 174.138.84.205 # zagent2899.hola.org,zagent2899.holavpn.net,zagent2899.holax.io,zagent2899.vpn.hola.org
 175.110.108.1
@@ -13971,7 +13975,7 @@
 178.73.210.89 # se.vpn.hola.org,zagent1830.hola.org,zagent1830.holax.io,zagent1830.vpn.hola.org
 178.73.210.97 # zagent1831.hola.org,zagent1831.holavpn.net,zagent1831.vpn.hola.org
 178.73.210.113 # zagent1118.hola.org,zagent1118.holavpn.net,zagent1118.holax.io,zagent1118.vpn.hola.org
-178.73.210.116 # se.vpn.hola.org,zagent1501.hola.org,zagent1501.holavpn.net,zagent1501.vpn.hola.org
+178.73.210.116 # zagent1501.hola.org,zagent1501.holavpn.net,zagent1501.vpn.hola.org
 178.73.210.211 # zagent574.hola.org,zagent574.holavpn.net,zagent574.holax.io,zagent574.vpn.hola.org
 178.128.87.29 # sg12.prmsrvs.com
 178.132.104.2
@@ -15421,6 +15425,7 @@
 185.162.16.188
 185.162.16.189
 185.162.16.190
+185.163.24.101 # ntp.hola.org
 185.163.44.137 # md.protonvpn.net,node-md-02.protonvpn.net
 185.164.35.16 # ba-001.totallyacdn.com,ba-001.whiskergalaxy.com,ba-001.windscribe.com,sjj-286-ike.windscribe.com
 185.165.170.1 # is-002.totallyacdn.com,is-002.whiskergalaxy.com,is-002.windscribe.com,kef-344-ike.whiskergalaxy.com,kef-344-ike.windscribe.com
@@ -17498,14 +17503,13 @@
 192.36.27.205 # dk.prmsrvs.com,dk1.prmsrvs.com,dk10.prmsrvs.com,dk11.prmsrvs.com,dk12.prmsrvs.com,dk13.prmsrvs.com,dk14.prmsrvs.com,dk15.prmsrvs.com,dk2.prmsrvs.com,dk20.prmsrvs.com,dk21.prmsrvs.com,dk22.prmsrvs.com,dk23.prmsrvs.com,dk24.prmsrvs.com,dk3.prmsrvs.com,dk4.prmsrvs.com,dk5.prmsrvs.com,dk6.prmsrvs.com,dk7.prmsrvs.com,dk8.prmsrvs.com,dk9.prmsrvs.com
 192.36.61.26 # lt.prmsrvs.com,lt1.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com,lt9.prmsrvs.com
 192.36.61.67 # lt.prmsrvs.com,lt1.prmsrvs.com,lt10.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
-192.36.61.199 # lt.prmsrvs.com,lt1.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
 192.71.27.62 # zagent1726.hola.org,zagent1726.holavpn.net,zagent1726.holax.io,zagent1726.vpn.hola.org
 192.71.27.72 # zagent40.hola.org,zagent40.vpn.hola.org
 192.71.27.173 # il.prmsrvs.com,il1.prmsrvs.com,il2.prmsrvs.com
 192.71.213.12 # es.prmsrvs.com,es1.prmsrvs.com,es9.prmsrvs.com
 192.71.213.18 # zagent28.hola.org,zagent28.holax.io,zagent28.vpn.hola.org
 192.71.213.24 # es.prmsrvs.com,es1.prmsrvs.com,es8.prmsrvs.com
-192.71.213.81 # zagent1500.hola.org,zagent1500.holavpn.net,zagent1500.holax.io,zagent1500.vpn.hola.org
+192.71.213.81 # es.vpn.hola.org,zagent1500.hola.org,zagent1500.holavpn.net,zagent1500.holax.io,zagent1500.vpn.hola.org
 192.71.213.84 # es.prmsrvs.com,es1.prmsrvs.com,es7.prmsrvs.com
 192.71.213.100 # zagent1499.hola.org,zagent1499.holax.io,zagent1499.vpn.hola.org
 192.71.213.151 # 192-71-213-151.hola.org,zagent939.hola.org,zagent939.holavpn.net,zagent939.holax.io,zagent939.vpn.hola.org
@@ -17515,12 +17519,12 @@
 192.71.244.244 # si.prmsrvs.com,si1.prmsrvs.com,si2.prmsrvs.com,si3.prmsrvs.com,si4.prmsrvs.com,si5.prmsrvs.com
 192.71.249.49 # zagent1841.hola.org,zagent1841.holavpn.net,zagent1841.holax.io,zagent1841.vpn.hola.org
 192.71.249.69 # be.vpn.hola.org,zagent1138.hola.org,zagent1138.holavpn.net,zagent1138.holax.io,zagent1138.vpn.hola.org
-192.71.249.88 # be.vpn.hola.org,zagent1124.hola.org,zagent1124.holavpn.net,zagent1124.holax.io,zagent1124.vpn.hola.org
+192.71.249.88 # zagent1124.hola.org,zagent1124.holavpn.net,zagent1124.holax.io,zagent1124.vpn.hola.org
 192.71.249.96 # be.vpn.hola.org,zagent1355.hola.org,zagent1355.holavpn.net,zagent1355.holax.io,zagent1355.vpn.hola.org
 192.71.249.133 # be.prmsrvs.com,be1.prmsrvs.com,be10.prmsrvs.com,be11.prmsrvs.com,be12.prmsrvs.com,be13.prmsrvs.com,be14.prmsrvs.com,be15.prmsrvs.com,be16.prmsrvs.com,be17.prmsrvs.com,be18.prmsrvs.com,be19.prmsrvs.com,be2.prmsrvs.com,be20.prmsrvs.com,be21.prmsrvs.com,be22.prmsrvs.com,be23.prmsrvs.com,be24.prmsrvs.com,be25.prmsrvs.com,be26.prmsrvs.com,be27.prmsrvs.com,be29.prmsrvs.com,be3.prmsrvs.com,be30.prmsrvs.com,be31.prmsrvs.com,be32.prmsrvs.com,be33.prmsrvs.com,be34.prmsrvs.com,be35.prmsrvs.com,be36.prmsrvs.com,be37.prmsrvs.com,be38.prmsrvs.com,be4.prmsrvs.com,be42.prmsrvs.com,be43.prmsrvs.com,be44.prmsrvs.com,be46.prmsrvs.com,be47.prmsrvs.com,be48.prmsrvs.com,be49.prmsrvs.com,be5.prmsrvs.com,be50.prmsrvs.com,be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com,be7.prmsrvs.com,be8.prmsrvs.com,be9.prmsrvs.com
 192.71.249.172 # zagent354.hola.org,zagent354.holavpn.net,zagent354.holax.io,zagent354.vpn.hola.org
 192.71.249.189 # be.prmsrvs.com,be1.prmsrvs.com,be10.prmsrvs.com,be11.prmsrvs.com,be12.prmsrvs.com,be13.prmsrvs.com,be14.prmsrvs.com,be15.prmsrvs.com,be16.prmsrvs.com,be17.prmsrvs.com,be18.prmsrvs.com,be19.prmsrvs.com,be2.prmsrvs.com,be20.prmsrvs.com,be21.prmsrvs.com,be22.prmsrvs.com,be23.prmsrvs.com,be24.prmsrvs.com,be25.prmsrvs.com,be26.prmsrvs.com,be27.prmsrvs.com,be29.prmsrvs.com,be3.prmsrvs.com,be30.prmsrvs.com,be31.prmsrvs.com,be32.prmsrvs.com,be33.prmsrvs.com,be34.prmsrvs.com,be35.prmsrvs.com,be36.prmsrvs.com,be37.prmsrvs.com,be38.prmsrvs.com,be39.prmsrvs.com,be4.prmsrvs.com,be42.prmsrvs.com,be43.prmsrvs.com,be46.prmsrvs.com,be47.prmsrvs.com,be48.prmsrvs.com,be49.prmsrvs.com,be5.prmsrvs.com,be50.prmsrvs.com,be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com,be7.prmsrvs.com,be8.prmsrvs.com,be9.prmsrvs.com
-192.71.249.192 # zagent373.hola.org,zagent373.holavpn.net,zagent373.holax.io,zagent373.vpn.hola.org
+192.71.249.192 # be.vpn.hola.org,zagent373.hola.org,zagent373.holavpn.net,zagent373.holax.io,zagent373.vpn.hola.org
 192.71.249.207 # be.prmsrvs.com,be1.prmsrvs.com,be10.prmsrvs.com,be11.prmsrvs.com,be12.prmsrvs.com,be13.prmsrvs.com,be14.prmsrvs.com,be15.prmsrvs.com,be16.prmsrvs.com,be17.prmsrvs.com,be18.prmsrvs.com,be19.prmsrvs.com,be2.prmsrvs.com,be20.prmsrvs.com,be21.prmsrvs.com,be22.prmsrvs.com,be23.prmsrvs.com,be24.prmsrvs.com,be25.prmsrvs.com,be26.prmsrvs.com,be27.prmsrvs.com,be29.prmsrvs.com,be3.prmsrvs.com,be30.prmsrvs.com,be31.prmsrvs.com,be32.prmsrvs.com,be33.prmsrvs.com,be34.prmsrvs.com,be35.prmsrvs.com,be36.prmsrvs.com,be37.prmsrvs.com,be38.prmsrvs.com,be4.prmsrvs.com,be40.prmsrvs.com,be42.prmsrvs.com,be43.prmsrvs.com,be46.prmsrvs.com,be47.prmsrvs.com,be48.prmsrvs.com,be49.prmsrvs.com,be5.prmsrvs.com,be50.prmsrvs.com,be51.prmsrvs.com,be52.prmsrvs.com,be53.prmsrvs.com,be54.prmsrvs.com,be55.prmsrvs.com,be56.prmsrvs.com,be57.prmsrvs.com,be58.prmsrvs.com,be59.prmsrvs.com,be60.prmsrvs.com,be61.prmsrvs.com,be62.prmsrvs.com,be63.prmsrvs.com,be64.prmsrvs.com,be65.prmsrvs.com,be66.prmsrvs.com,be67.prmsrvs.com,be68.prmsrvs.com,be7.prmsrvs.com,be8.prmsrvs.com,be9.prmsrvs.com
 192.71.249.227 # zagent374.hola.org,zagent374.holavpn.net,zagent374.holax.io,zagent374.vpn.hola.org
 192.109.139.1 # ao-01.protonvpn.net
@@ -17803,7 +17807,7 @@
 192.241.130.49 # app.telleport.me,dev.telleport.me,www.telleport.me
 192.241.136.183 # newjersey.my-safe-net.com
 192.241.154.243 # zagent1540.hola.org,zagent1540.holavpn.net,zagent1540.holax.io,zagent1540.vpn.hola.org,zagent2882.hola.org,zagent2882.holavpn.net,zagent2882.holax.io,zagent2882.vpn.hola.org
-192.248.154.74 # zagent1093.hola.org,zagent1093.holavpn.net,zagent1093.holax.io,zagent1093.vpn.hola.org,zagent420.hola.org,zagent420.holax.io,zagent420.vpn.hola.org
+192.248.154.74 # uk.vpn.hola.org,zagent1093.hola.org,zagent1093.holavpn.net,zagent1093.holax.io,zagent1093.vpn.hola.org,zagent420.hola.org,zagent420.holax.io,zagent420.vpn.hola.org
 192.248.157.230 # zagent434.hola.org,zagent434.holavpn.net,zagent434.holax.io,zagent434.vpn.hola.org
 192.248.159.99 # zagent426.hola.org
 192.248.168.217 # zagent432.hola.org
@@ -18438,7 +18442,7 @@
 194.71.130.118 # hu.prmsrvs.com,hu1.prmsrvs.com,hu11.prmsrvs.com,hu2.prmsrvs.com,hu3.prmsrvs.com,hu4.prmsrvs.com,hu5.prmsrvs.com
 194.71.130.121 # zagent1691.hola.org,zagent1691.holavpn.net,zagent1691.holax.io,zagent1691.vpn.hola.org
 194.71.130.126 # zagent1137.hola.org,zagent1137.holavpn.net,zagent1137.holax.io,zagent1137.vpn.hola.org
-194.71.130.128 # zagent1148.hola.org,zagent1148.holavpn.net,zagent1148.holax.io,zagent1148.vpn.hola.org
+194.71.130.128 # hu.vpn.hola.org,zagent1148.hola.org,zagent1148.holavpn.net,zagent1148.holax.io,zagent1148.vpn.hola.org
 194.71.130.136 # hu.vpn.hola.org,zagent1669.hola.org,zagent1669.holavpn.net,zagent1669.holax.io,zagent1669.vpn.hola.org
 194.71.130.147 # zagent255.hola.org,zagent255.holavpn.net,zagent255.holax.io,zagent255.vpn.hola.org
 194.71.130.157 # zagent1756.hola.org,zagent1756.holavpn.net,zagent1756.holax.io,zagent1756.vpn.hola.org
@@ -19218,7 +19222,7 @@
 198.199.65.78 # ext-start.whiskergalaxy.com
 198.199.74.67 # zagent1525.hola.org,zagent1525.holavpn.net,zagent1525.holax.io,zagent1525.vpn.hola.org,zagent2867.hola.org,zagent2867.holavpn.net,zagent2867.holax.io,zagent2867.vpn.hola.org
 198.199.75.31 # zagent1523.hola.org,zagent1523.holavpn.net,zagent1523.holax.io,zagent1523.vpn.hola.org,zagent2865.hola.org,zagent2865.holavpn.net,zagent2865.holax.io,zagent2865.vpn.hola.org
-198.199.89.186 # zagent1513.hola.org,zagent1513.holavpn.net,zagent1513.holax.io,zagent1513.vpn.hola.org,zagent2855.hola.org,zagent2855.holavpn.net,zagent2855.holax.io,zagent2855.vpn.hola.org
+198.199.89.186 # us.vpn.hola.org,zagent1513.hola.org,zagent1513.holavpn.net,zagent1513.holax.io,zagent1513.vpn.hola.org,zagent2855.hola.org,zagent2855.holavpn.net,zagent2855.holax.io,zagent2855.vpn.hola.org
 198.199.121.92 # zagent1514.hola.org,zagent1514.holavpn.net,zagent1514.holax.io,zagent1514.vpn.hola.org,zagent2856.hola.org,zagent2856.holavpn.net,zagent2856.vpn.hola.org
 198.211.101.138 # zagent1524.hola.org,zagent1524.holavpn.net,zagent1524.holax.io,zagent1524.vpn.hola.org,zagent2866.hola.org,zagent2866.vpn.hola.org
 198.211.105.89 # ext-start.whiskergalaxy.com
@@ -19235,7 +19239,6 @@
 201.131.126.13 # zagent1988.hola.org,zagent1988.holavpn.net,zagent1988.holax.io,zagent1988.vpn.hola.org
 201.131.126.23 # zagent798.hola.org,zagent798.holavpn.net,zagent798.holax.io,zagent798.vpn.hola.org
 201.131.126.28 # zagent988.hola.org,zagent988.holavpn.net,zagent988.holax.io,zagent988.vpn.hola.org
-202.28.116.236 # ntp.hola.org
 202.43.6.1
 202.43.6.2
 202.43.6.34 # lhr-335.whiskergalaxy.com,lhr-335.windscribe.com,uk.whiskergalaxy.com,uk.windscribe.com
@@ -19286,6 +19289,7 @@
 203.27.106.163 # sg514.nordvpn.com
 203.27.106.171 # sg515.nordvpn.com
 203.27.106.179 # sg516.nordvpn.com
+203.113.174.44 # ntp.hola.org
 204.27.60.133 # kansas.my-safe-net.com
 204.44.112.2 # us-central-035.whiskergalaxy.com,us-central-035.windscribe.com
 204.44.112.66 # dfw-86-ike.whiskergalaxy.com,dfw-86-ike.windscribe.com,us-central-036.totallyacdn.com,us-central-036.whiskergalaxy.com,us-central-036.windscribe.com,wf-us-018.whiskergalaxy.com,wf-us-018.windscribe.com
@@ -19313,9 +19317,6 @@
 206.223.183.13 # wf-ca-002.whiskergalaxy.com,wf-ca-002.windscribe.com
 206.223.183.16 # ca-stc-005.whiskergalaxy.com,ca-stc-005.windscribe.com
 206.223.183.21 # ca-stc-006.whiskergalaxy.com,ca-stc-006.windscribe.com
-207.148.9.53 # holapro-proxy.hola.org
-207.148.9.156 # holapro-proxy.hola.org
-207.148.10.163 # holapro-proxy.hola.org
 207.148.17.152 # zagent2571.hola.org,zagent2571.holavpn.net,zagent2571.holax.io
 207.148.18.191 # zagent1623.hola.org,zagent1623.holavpn.net,zagent1623.holax.io
 207.148.20.197 # zagent2592.hola.org,zagent2592.holavpn.net,zagent2592.holax.io
@@ -19348,7 +19349,7 @@
 207.246.94.16 # zagent1621.hola.org,zagent1621.holavpn.net,zagent1621.holax.io
 207.246.122.76 # zagent2573.hola.org,zagent2573.holavpn.net,zagent2573.holax.io
 208.76.222.251 # zagent1039.hola.org,zagent1039.vpn.hola.org,zagent1059.hola.org,zagent1059.vpn.hola.org
-208.76.223.121 # zagent1040.hola.org,zagent1040.vpn.hola.org,zagent1060.hola.org,zagent1060.vpn.hola.org
+208.76.223.121 # es.vpn.hola.org,zagent1040.hola.org,zagent1040.vpn.hola.org,zagent1060.hola.org,zagent1060.vpn.hola.org
 208.78.41.130 # ca-west-017.totallyacdn.com,ca-west-017.whiskergalaxy.com,ca-west-017.windscribe.com,yvr-311-ike.whiskergalaxy.com,yvr-311-ike.windscribe.com
 208.78.41.131 # ca-west.whiskergalaxy.com,ca-west.windscribe.com,yvr-311.whiskergalaxy.com,yvr-311.windscribe.com
 208.78.41.132 # yvr-311-wg.whiskergalaxy.com
@@ -19382,8 +19383,8 @@
 209.97.181.253 # zagent2913.hola.org,zagent2913.holavpn.net,zagent2913.holax.io,zagent2913.vpn.hola.org
 209.97.185.104 # zagent2829.hola.org,zagent2829.holavpn.net,zagent2829.holax.io
 209.97.185.159 # zagent2833.hola.org,zagent2833.holavpn.net,zagent2833.holax.io
-209.97.189.102 # gb.vpn.hola.org,zagent2912.hola.org,zagent2912.holavpn.net,zagent2912.holax.io,zagent2912.vpn.hola.org
-209.97.189.189 # uk.vpn.hola.org,zagent2914.hola.org,zagent2914.holavpn.net,zagent2914.holax.io,zagent2914.vpn.hola.org
+209.97.189.102 # uk.vpn.hola.org,zagent2912.hola.org,zagent2912.holavpn.net,zagent2912.holax.io,zagent2912.vpn.hola.org
+209.97.189.189 # zagent2914.hola.org,zagent2914.holavpn.net,zagent2914.holax.io,zagent2914.vpn.hola.org
 209.127.204.9 # focus.meet-backup.int.windscribe.com,meet-backup.int.windscribe.com,sso.meet-backup.int.windscribe.com
 209.127.204.11 # mx-out-11.windscribe.com
 209.127.204.12 # mx-out-12.windscribe.com
@@ -19742,11 +19743,8 @@
 213.183.54.62 # zagent139.hola.org
 213.183.54.144 # zagent135.hola.org,zagent135.holax.io,zagent135.vpn.hola.org
 213.183.54.171 # zagent136.hola.org,zagent136.vpn.hola.org
-213.183.55.72 # lt.prmsrvs.com,lt1.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
 213.183.55.129 # lt.prmsrvs.com,lt1.prmsrvs.com,lt13.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
-213.183.55.213 # lt.prmsrvs.com,lt1.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
 213.183.55.219 # lt.prmsrvs.com,lt1.prmsrvs.com,lt12.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
-213.183.55.233 # lt.prmsrvs.com,lt1.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
 213.183.55.234 # lt.prmsrvs.com,lt1.prmsrvs.com,lt11.prmsrvs.com,lt2.prmsrvs.com,lt3.prmsrvs.com,lt4.prmsrvs.com,lt5.prmsrvs.com,lt6.prmsrvs.com,lt7.prmsrvs.com,lt8.prmsrvs.com
 213.183.56.18 # zagent47.hola.org,zagent47.holavpn.net,zagent47.holax.io,zagent47.vpn.hola.org
 213.183.56.48 # zagent3101.hola.org,zagent3101.vpn.hola.org
@@ -19849,11 +19847,11 @@
 216.238.72.140 # mx.vpn.hola.org,zagent53.hola.org,zagent53.holax.io,zagent53.vpn.hola.org
 216.238.73.42 # mx.vpn.hola.org,zagent73.hola.org,zagent73.holavpn.net,zagent73.holax.io,zagent73.vpn.hola.org
 216.238.73.153 # zagent67.hola.org,zagent67.holavpn.net,zagent67.holax.io,zagent67.vpn.hola.org
-216.238.78.57 # mx.vpn.hola.org,zagent2650.hola.org,zagent2650.holavpn.net,zagent2650.holax.io,zagent2650.vpn.hola.org
+216.238.78.57 # zagent2650.hola.org,zagent2650.holavpn.net,zagent2650.holax.io,zagent2650.vpn.hola.org
 216.238.79.236 # zagent70.hola.org,zagent70.holavpn.net,zagent70.holax.io,zagent70.vpn.hola.org
 216.238.84.17 # mx.prmsrvs.com,mx1.prmsrvs.com,mx3.prmsrvs.com
 216.238.85.124 # zagent68.hola.org,zagent68.holavpn.net,zagent68.holax.io,zagent68.vpn.hola.org
-216.238.85.246 # zagent52.hola.org,zagent52.holavpn.net,zagent52.holax.io,zagent52.vpn.hola.org
+216.238.85.246 # mx.vpn.hola.org,zagent52.hola.org,zagent52.holavpn.net,zagent52.holax.io,zagent52.vpn.hola.org
 216.238.102.123 # br.prmsrvs.com,br1.prmsrvs.com,br2.prmsrvs.com,br3.prmsrvs.com,br5.prmsrvs.com
 216.238.115.202 # zagent391.hola.org,zagent391.vpn.hola.org
 216.238.117.88 # br.prmsrvs.com,br1.prmsrvs.com,br2.prmsrvs.com,br3.prmsrvs.com,br4.prmsrvs.com
@@ -20223,8 +20221,6 @@
 2001:ac8:9a:1f::10 # node-us-125.protonvpn.net
 2001:ac8:9a:64::10 # node-us-238.protonvpn.net
 2001:ac8:9a:65::10 # node-us-239.protonvpn.net
-2400:52e0:1a00::1206:2 # cdn4.holax.io
-2400:52e0:1a00::1207:2 # cdn4.hola.org,client-cdn4.hola.org,client-cdn4.holavpn.net,client-cdn4.holax.io,safebrowsing.holavpn.net,safebrowsing.holax.io
 2400:cb00:2049:1::a29f:865 # ns1.windscribe.com
 2400:cb00:2049:1::a29f:9b0 # ns2.windscribe.com
 2401:3bc0:700:231::10 # node-nz-03.protonvpn.net
@@ -20241,22 +20237,27 @@
 2606:4700:20::681a:423 # repo.protonvpn.com
 2606:4700:20::681a:523 # repo.protonvpn.com
 2606:4700:20::681a:e88 # vpn-staging.whiskergalaxy.com
+2606:4700:20::681a:eae # user1.setupvpn.com,user6.setupvpn.com
 2606:4700:20::681a:f88 # vpn-staging.whiskergalaxy.com
+2606:4700:20::681a:fae # user1.setupvpn.com,user6.setupvpn.com
 2606:4700:20::ac43:4672 # repo.protonvpn.com
 2606:4700:20::ac43:4866 # download.protonvpn.net,netshield-0.protonvpn.net,netshield-1.protonvpn.net,netshield-2.protonvpn.net,waftest.protonvpn.net
 2606:4700:20::ac43:497d # vpn-staging.whiskergalaxy.com
-2606:4700:130:436c:6f75:6466:6c61:7265 # 1.6912044.cc,1.default2024.uk,1.sahi.uk
+2606:4700:20::ac43:4a39 # user1.setupvpn.com,user6.setupvpn.com
+2606:4700:130:436c:6f75:6466:6c61:7265 # 1.allnine.uk,1.area9.uk
 2606:4700:3030::6815:1287 # 1.foreground.work
 2606:4700:3030::ac43:bc61 # 3245.uk
 2606:4700:3031::6815:1dda # ksho.uk
-2606:4700:3032::6815:31e2 # 1.allnine.uk
+2606:4700:3031::6815:3826 # 1.default2024.uk
+2606:4700:3031::ac43:9dd9 # 1.6912044.cc
+2606:4700:3031::ac43:b0ac # 1.default2024.uk
 2606:4700:3032::ac43:95d4 # ksho.uk
 2606:4700:3033::ac43:ae7e # 1.awakened.work
 2606:4700:3033::ac43:b5e7 # 1.foreground.work
-2606:4700:3035::6815:3f1 # 1.area9.uk
-2606:4700:3035::ac43:8359 # 1.area9.uk
-2606:4700:3035::ac43:9902 # 1.allnine.uk
+2606:4700:3034::6815:3940 # 1.sahi.uk
+2606:4700:3035::6815:e33 # 1.6912044.cc
 2606:4700:3036::6815:28d4 # 3245.uk
+2606:4700:3036::ac43:bd5f # 1.sahi.uk
 2606:4700:3037::6815:2fee # 1.awakened.work
 2607:f7a0:d:1a::10 # node-ca-21.protonvpn.net
 2607:f7a0:d:1b::10 # node-ca-22.protonvpn.net
@@ -20405,7 +20406,6 @@
 2a02:6ea0:c412:2674::10 # node-us-202.protonvpn.net
 2a02:6ea0:c413::10 # node-us-71.protonvpn.net
 2a02:6ea0:c413:1::10 # node-us-134.protonvpn.net
-2a02:6ea0:c454::1 # cdn4.holavpn.net,safebrowsing.hola.org
 2a02:6ea0:c501:2091::10 # node-se-05.protonvpn.net
 2a02:6ea0:c501:3090::10 # node-se-06.protonvpn.net
 2a02:6ea0:c501:3108::10 # node-se-07.protonvpn.net
@@ -20582,8 +20582,6 @@
 2a0d:5600:8:83::10 # node-us-209.protonvpn.net
 2a0d:5600:8:102::10 # node-us-167.protonvpn.net
 2a0d:5600:8:103::10 # node-us-168.protonvpn.net
-2a0d:5600:8:104::10 # node-us-169.protonvpn.net
-2a0d:5600:8:105::10 # node-us-170.protonvpn.net
 2a0d:5600:8:106::10 # node-us-171.protonvpn.net
 2a0d:5600:8:107::10 # node-us-172.protonvpn.net
 2a0d:5600:8:108::10 # node-us-173.protonvpn.net
