@@ -105,6 +105,9 @@ def resolve_hosts(hosts):
             if allowlist.check_ip_in_ranges(ip_addr):
                 print(f'WARNING: in allowlist {ip_addr} = {hostname}')
                 continue
+            if not bogons.is_public_ip(ip_addr):
+                print(f'WARNING: {ip_addr} = {hostname} is not public')
+                continue
             ip_to_hostnames[ip_addr].add(hostname)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:

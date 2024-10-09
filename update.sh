@@ -2,6 +2,8 @@
 
 python3 -V
 
+pip install -r requirements.txt
+
 # Execute all the steps in the scheduled GitHub action to
 # update this repository
 
