@@ -10,41 +10,51 @@ import socket
 hostname_dir = 'data/input/hostname_ip'
 ip_dir = 'data/input/ip'
 final_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
+allowlist_ip_fn= 'data/input/allowlist_ip.txt'
+allowlist_hostname_fn ='data/input/allowlist_hostname.txt'
 max_workers = 8
 
-# https://www.cloudflare.com/en-gb/ips/
-# https://en.wikipedia.org/wiki/1.1.1.1
-# https://bgp.he.net/AS13335#_prefixes
-# https://en.wikipedia.org/wiki/Google_Public_DNS
-# https://bgp.he.net/AS15169#_prefixes
 
+def clean_line(line: str) -> str:
+    """Remove comments and whitespace from line"""
+    return line.split('#')[0].split(',')[0].strip()
 
-def check_ip_in_ranges(ip):
-    ranges = (
-        "1.0.0.0/24",
-        "1.1.1.0/24",
-        "8.8.4.0/24",
-        "8.8.8.0/24",
-        "173.245.48.0/20",
-        "103.21.244.0/22",
-        "103.22.200.0/22",
-        "103.31.4.0/22",
-        "141.101.64.0/18",
-        "108.162.192.0/18",
-        "190.93.240.0/20",
-        "188.114.96.0/20",
-        "197.234.240.0/22",
-        "198.41.128.0/17",
-        "162.158.0.0/15",
-        "104.16.0.0/13",
-        "104.24.0.0/14",
-        "172.64.0.0/13",
-        "131.0.72.0/22"
-    )
-    for r in ranges:
-        if ipaddress.ip_address(ip) in ipaddress.ip_network(r):
-            return True
-    return False
+def resolve_hostname(hostname : str) -> list:
+    """Return a list of IPv4 IPs for the given hostname"""
+    #print(f'INFO: resolving hostname {hostname}')
+    try:
+        ip_addresses = socket.getaddrinfo(hostname, None, family=socket.AF_INET)
+    except socket.gaierror as e:
+        print(f"ERROR: Error resolving {hostname}: {e}")
+        return []
+    return [ip[4][0] for ip in ip_addresses]
+    
+class Allowlist:
+    def __init__(self):
+        self.ip_allowlist = set()
+        with open(allowlist_ip_fn, 'r') as f:
+            for line in f:
+                line = clean_line(line)
+                if not line:
+                    continue
+                self.ip_allowlist.add(line)
+        with open(allowlist_hostname_fn, 'r') as f:
+            for line in f:
+                hostname = clean_line(line)
+                if not hostname:
+                    continue
+                if not len(hostname) > 5:
+                    continue
+                hostnames = resolve_hostname(hostname)
+                for ip in hostnames:
+                    self.ip_allowlist.add(ip)
+
+    def check_ip_in_ranges(self, ip : str) -> bool:
+        """Check if IP is in allowlist"""
+        for r in self.ip_allowlist:
+            if ipaddress.ip_address(ip) in ipaddress.ip_network(r):
+                return True
+        return False
 
 
 def read_hosts(directory):
@@ -56,11 +66,7 @@ def read_hosts(directory):
             filepath = os.path.join(directory, filename)
             with open(filepath, "r") as file:
                 for line in file:
-                    line = line.strip()
-                    if line.startswith("#"):
-                        continue
-                    hostname = line.split('#')[0]  # remove comment at end
-                    hostname = line.split(',')[0]
+                    hostname = clean_line(line)
                     if not len(hostname) > 5:
                         continue
                     if '-tor.' in hostname:  # example: hostname=us-co-21-tor.protonvpn.net
@@ -79,10 +85,9 @@ def read_ips(directory):
             filepath = os.path.join(directory, filename)
             with open(filepath, "r") as file:
                 for line in file:
-                    line = line.strip()
-                    if line.startswith("#"):
+                    ip = clean_line(line)
+                    if not line:
                         continue
-                    ip = line.split('#')[0]  # remove comment at end
                     if not len(ip) >= 7:
                         continue
                     ips.append(ip)
@@ -92,22 +97,18 @@ def read_ips(directory):
 def resolve_hosts(hosts):
     ip_to_hostnames = collections.defaultdict(set)
 
-    def resolve_hostname(hostname):
-        print(f'INFO: hostname={hostname}')
-        try:
-            ip_addresses = socket.getaddrinfo(hostname, None)
-        except socket.gaierror as e:
-            print(f"ERROR: Error resolving {hostname}: {e}")
-            return
-        for ip_address in sorted(ip_addresses):
-            ip_addr = ip_address[4][0]
-            if check_ip_in_ranges(ip_addr):
-                print(f'WARNING: in whitelist {ip_addr} = {hostname}')
+    allowlist = Allowlist()
+
+    def resolve_hostname_and_add(hostname):
+        ip_addresses = resolve_hostname(hostname)
+        for ip_addr in sorted(ip_addresses):
+            if allowlist.check_ip_in_ranges(ip_addr):
+                print(f'WARNING: in allowlist {ip_addr} = {hostname}')
                 continue
             ip_to_hostnames[ip_addr].add(hostname)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        executor.map(resolve_hostname, sorted(hosts))
+        executor.map(resolve_hostname_and_add, sorted(hosts))
 
     return ip_to_hostnames
 
