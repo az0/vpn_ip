@@ -93,8 +93,7 @@ def process_service(service_code, service):
         if new_ips:
             all_ips.update(new_ips)
 
-    print(f'read {len(all_hostnames)} hostnames and {
-          len(all_ips)} IPs from API')
+    print(f'read {len(all_hostnames)} hostnames and {len(all_ips)} IPs from API')
 
     print(f'hostname_fn={hostname_fn}')
     if os.path.exists(hostname_fn):
