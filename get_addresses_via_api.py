@@ -144,7 +144,15 @@ def go():
     setupvpn['hostname_key'] = ('uibase', 'mainbase', 'tierbase')
     setupvpn['ip_key'] = ()
 
-    services = {'protonvpn': protonvpn,
+    network_dd_vpn = {}
+    network_dd_vpn['urls'] = (
+        'https://softnour.com/Product/vpn/data.php',
+    )
+    network_dd_vpn['hostname_key'] = ( )
+    network_dd_vpn['ip_key'] = ('host', )
+
+    services = {'network_dd_vpn': network_dd_vpn,
+                'protonvpn': protonvpn,
                 'setupvpn': setupvpn,
                 'windscribe': windscribe}
 
