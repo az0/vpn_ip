@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-
-import requests
+import json
 import os
+import requests
 from urllib.parse import urlparse
 
 hostname_ip_root = 'data/input/hostname_ip/'
 ip_root = 'data/input/ip/'
+json_config_fn = 'get_addresses_via_api.json'
 
 
 def collect_hostnames_and_ips(url, hostname_key, ip_key):
@@ -112,64 +113,8 @@ def process_service(service_code, service):
 def go():
     """Main entry point"""
 
-    hoxx = {}
-    hoxx['urls'] = (        
-        "https://tierbase3.fra1.cdn.digitaloceanspaces.com/tiershx.json",
-        "https://tierbase4.s3.amazonaws.com/tiershx.json",
-        "https://pub-8029ed10cf4e4db0b3757e6b82ef7a40.r2.dev/tiershx.json",
-        "https://ams1.vultrobjects.com/tierupdate2/tiershx.json",
-        "https://mirror4.es-mad-1.linodeobjects.com/tiershx.json",
-        "https://raw.githubusercontent.com/the7c/update/master/src/js/data.json",
-        "https://bitbucket.org/the7c/update/raw/master/ip/ens4/data.json"
-    )
-    hoxx['hostname_key'] = ( 'uibase','mainbase','tierbase')
-    hoxx['ip_key'] = ( )
-    
-    network_dd_vpn = {}
-    network_dd_vpn['urls'] = (
-        'https://softnour.com/Product/vpn/data.php',
-    )
-    network_dd_vpn['hostname_key'] = ( )
-    network_dd_vpn['ip_key'] = ('host', )
-
-    protonvpn = {}
-    protonvpn['urls'] = ["https://api.protonmail.ch/vpn/logicals", ]
-    protonvpn['hostname_key'] = ['Domain', ]
-    protonvpn['ip_key'] = ['EntryIP', 'ExitIP']
-
-    # NordVPN is deprecated 2024-09-08
-    # nordvpn = {}
-    # nordvpn['urls'] = ["https://nordvpn.com/api/server", ]
-    # nordvpn['hostname_key'] = ['domain', ]
-    # nordvpn['ip_key'] = ['ip_address', ]
-
-    setupvpn = {}
-    setupvpn['urls'] = [
-        "https://tierbase3.fra1.cdn.digitaloceanspaces.com/tierssv.json",
-        "https://tierbase4.s3.amazonaws.com/tierssv.json",
-        "https://pub-8029ed10cf4e4db0b3757e6b82ef7a40.r2.dev/tierssv.json",
-        "https://ams1.vultrobjects.com/tierupdate2/tierssv.json",
-        "https://mirror4.es-mad-1.linodeobjects.com/tierssv.json",
-        "https://raw.githubusercontent.com/the7c/update/master/master/ui/data.json",
-        "https://bitbucket.org/the7c/update/raw/master/edge/pub/data.json"]
-    setupvpn['hostname_key'] = ('uibase', 'mainbase', 'tierbase')
-    setupvpn['ip_key'] = ()
-
-    windscribe = {}
-    windscribe['urls'] = [
-        "https://assets.windscribe.com/serverlist/firefox/1/1",
-        "https://assets.windscribe.com/serverlist/mob-v2/1/1",
-        "https://assets.windscribe.com/serverlist/openvpn/1/1",
-        "https://assets.windscribe.com/serverlist/desktop/1/1"]
-    windscribe['hostname_key'] = [
-        'hostname', 'wg_endpoint', 'ovpn_x509', 'dns_hostname']
-    windscribe['ip_key'] = ['ping_ip', 'ip', 'ip2', 'ip3']
-
-    services = { 'hoxx': hoxx,
-                'network_dd_vpn': network_dd_vpn,
-                'protonvpn': protonvpn,
-                'setupvpn': setupvpn,
-                'windscribe': windscribe}
+    with open(json_config_fn, encoding='utf-8') as file:
+        services = json.load(file)
 
     for key in services.keys():
         process_service(key, services[key])
