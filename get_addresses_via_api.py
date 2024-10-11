@@ -111,15 +111,13 @@ def process_service(service_code, service):
 
 def go():
     """Main entry point"""
-    windscribe = {}
-    windscribe['urls'] = [
-        "https://assets.windscribe.com/serverlist/firefox/1/1",
-        "https://assets.windscribe.com/serverlist/mob-v2/1/1",
-        "https://assets.windscribe.com/serverlist/openvpn/1/1",
-        "https://assets.windscribe.com/serverlist/desktop/1/1"]
-    windscribe['hostname_key'] = [
-        'hostname', 'wg_endpoint', 'ovpn_x509', 'dns_hostname']
-    windscribe['ip_key'] = ['ping_ip', 'ip', 'ip2', 'ip3']
+    
+    network_dd_vpn = {}
+    network_dd_vpn['urls'] = (
+        'https://softnour.com/Product/vpn/data.php',
+    )
+    network_dd_vpn['hostname_key'] = ( )
+    network_dd_vpn['ip_key'] = ('host', )
 
     protonvpn = {}
     protonvpn['urls'] = ["https://api.protonmail.ch/vpn/logicals", ]
@@ -144,12 +142,15 @@ def go():
     setupvpn['hostname_key'] = ('uibase', 'mainbase', 'tierbase')
     setupvpn['ip_key'] = ()
 
-    network_dd_vpn = {}
-    network_dd_vpn['urls'] = (
-        'https://softnour.com/Product/vpn/data.php',
-    )
-    network_dd_vpn['hostname_key'] = ( )
-    network_dd_vpn['ip_key'] = ('host', )
+    windscribe = {}
+    windscribe['urls'] = [
+        "https://assets.windscribe.com/serverlist/firefox/1/1",
+        "https://assets.windscribe.com/serverlist/mob-v2/1/1",
+        "https://assets.windscribe.com/serverlist/openvpn/1/1",
+        "https://assets.windscribe.com/serverlist/desktop/1/1"]
+    windscribe['hostname_key'] = [
+        'hostname', 'wg_endpoint', 'ovpn_x509', 'dns_hostname']
+    windscribe['ip_key'] = ['ping_ip', 'ip', 'ip2', 'ip3']
 
     services = {'network_dd_vpn': network_dd_vpn,
                 'protonvpn': protonvpn,
