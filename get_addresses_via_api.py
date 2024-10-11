@@ -111,6 +111,19 @@ def process_service(service_code, service):
 
 def go():
     """Main entry point"""
+
+    hoxx = {}
+    hoxx['urls'] = (        
+        "https://tierbase3.fra1.cdn.digitaloceanspaces.com/tiershx.json",
+        "https://tierbase4.s3.amazonaws.com/tiershx.json",
+        "https://pub-8029ed10cf4e4db0b3757e6b82ef7a40.r2.dev/tiershx.json",
+        "https://ams1.vultrobjects.com/tierupdate2/tiershx.json",
+        "https://mirror4.es-mad-1.linodeobjects.com/tiershx.json",
+        "https://raw.githubusercontent.com/the7c/update/master/src/js/data.json",
+        "https://bitbucket.org/the7c/update/raw/master/ip/ens4/data.json"
+    )
+    hoxx['hostname_key'] = ( 'uibase','mainbase','tierbase')
+    hoxx['ip_key'] = ( )
     
     network_dd_vpn = {}
     network_dd_vpn['urls'] = (
@@ -152,7 +165,8 @@ def go():
         'hostname', 'wg_endpoint', 'ovpn_x509', 'dns_hostname']
     windscribe['ip_key'] = ['ping_ip', 'ip', 'ip2', 'ip3']
 
-    services = {'network_dd_vpn': network_dd_vpn,
+    services = { 'hoxx': hoxx,
+                'network_dd_vpn': network_dd_vpn,
                 'protonvpn': protonvpn,
                 'setupvpn': setupvpn,
                 'windscribe': windscribe}
