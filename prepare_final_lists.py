@@ -147,12 +147,12 @@ def write_ips(ip_to_hostnames, ip_only):
     sorted_ips = sorted(ip_to_hostnames.keys(),
                         key=lambda ip: int(ipaddress.ip_address(ip)))
 
-    print(f'INFO: count of IPs: {len(sorted_ips)}')
+    print(f'count of final IPs to write: {len(sorted_ips)}')
 
     with open(final_ip_fn, "w") as output_file:
         for ip in sorted_ips:
             if ip_to_hostnames[ip]:
-                hostnames = ",".join(sorted(ip_to_hostnames[ip]))
+                hostnames = ",".join(sort_hostnames(ip_to_hostnames[ip]))
                 output_file.write(f"{ip} # {hostnames}\n")
             else:
                 output_file.write(f'{ip}\n')
