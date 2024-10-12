@@ -30,6 +30,7 @@ def get_subdomains(domain):
     subdomains = response.json()['subdomains']
     return [f'{subdomain}.{domain}' for subdomain in subdomains]
 
+
 def check_api_usage():
 
     url = "https://api.securitytrails.com/v1/account/usage"
