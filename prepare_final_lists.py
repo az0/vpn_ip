@@ -94,8 +94,6 @@ def resolve_hosts(hosts: list) -> dict:
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(hosts)), total=len(hosts)))
 
-    
-
     print(f'resolve_hosts() stats')
     print(f'* count of unique IPs: {len(ip_to_hostnames):,}')
     unique_host_count = len(hosts)
@@ -106,7 +104,7 @@ def resolve_hosts(hosts: list) -> dict:
     print(f'* count of unique hostnames: {resolved_host_count:,}')
     print(f'* count of unresolvable hosts: {len(hosts) - resolved_host_count:,}')
     print(f'* count of hostnames with IP in allowlist: {len(hostnames_with_ip_in_allowlist):,}')
-    print(f'* count of hostnames with non-public IP: {len(set(hostnames_with_non_public_ip):,)}')
+    print(f'* count of hostnames with non-public IP: {len(set(hostnames_with_non_public_ip)):,}')
     assert unique_host_count >= 0
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
