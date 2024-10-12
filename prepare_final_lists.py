@@ -11,6 +11,7 @@ import ipaddress
 import os
 
 import bogons
+import tqdm
 
 from common import clean_line, read_input_hostnames, resolve_hostname
 
@@ -76,23 +77,27 @@ def resolve_hosts(hosts: list) -> dict:
     ip_to_hostnames = collections.defaultdict(set)
 
     allowlist = Allowlist()
+    hostnames_with_non_public_ip = []
+    hostnames_with_ip_in_allowlist = []
 
     def resolve_hostname_and_add(hostname):
+        nonlocal hostnames_with_non_public_ip, hostnames_with_ip_in_allowlist
         ip_addresses = resolve_hostname(hostname)
         for ip_addr in sorted(ip_addresses):
             if allowlist.check_ip_in_ranges(ip_addr):
-                print(f'WARNING: in allowlist {ip_addr} = {hostname}')
-                continue
+                hostnames_with_ip_in_allowlist.append(hostname)
             if not bogons.is_public_ip(ip_addr):
-                print(f'WARNING: {ip_addr} = {hostname} is not public')
-                continue
-            ip_to_hostnames[ip_addr].add(hostname)
+                hostnames_with_non_public_ip.append(hostname)
+            else:
+                ip_to_hostnames[ip_addr].add(hostname)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        executor.map(resolve_hostname_and_add, sorted(hosts))
+        list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(hosts)), total=len(hosts)))
+
+    
 
     print(f'resolve_hosts() stats')
-    print(f'* count of unique IPs: {len(ip_to_hostnames)}')
+    print(f'* count of unique IPs: {len(ip_to_hostnames):,}')
     unique_host_count = len(hosts)
     print(f'* count of hosts: {unique_host_count:,}')
     resolvable_host_names = set(
@@ -100,6 +105,8 @@ def resolve_hosts(hosts: list) -> dict:
     resolved_host_count = len(resolvable_host_names)
     print(f'* count of unique hostnames: {resolved_host_count:,}')
     print(f'* count of unresolvable hosts: {len(hosts) - resolved_host_count:,}')
+    print(f'* count of hostnames with IP in allowlist: {len(hostnames_with_ip_in_allowlist):,}')
+    print(f'* count of hostnames with non-public IP: {len(set(hostnames_with_non_public_ip):,)}')
     assert unique_host_count >= 0
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
