@@ -45,4 +45,5 @@ def resolve_hostname(hostname: str) -> list:
     except socket.gaierror as e:
         # print(f"ERROR: Error resolving {hostname}: {e}")
         return []
-    return [ip[4][0] for ip in ip_addresses]
+    ret = {ip[4][0] for ip in ip_addresses}
+    return list(ret)

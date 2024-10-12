@@ -14,5 +14,4 @@ fi
 
 ./get_addresses_via_api.py
 ./get_browsec_github.py
-./hostname_to_ip.py
-./collate_hostnames.py
+./prepare_final_lists.py

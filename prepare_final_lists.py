@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+This reads all the input hostname and IP addresses.
+It combines duplicates and filters out hostnames that are invalid.
+Finally, it writes one list of hostnames and one list of IP addresses.
+"""
 
 import collections
 import concurrent.futures
@@ -11,11 +16,13 @@ from common import clean_line, read_input_hostnames, resolve_hostname
 
 
 ip_dir = 'data/input/ip'
-final_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
+final_ip_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
+final_hostname_fn = 'data/output/hostnames.txt'
 allowlist_ip_fn = 'data/input/allowlist_ip.txt'
 allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
 max_workers = 8
 min_resolved_host_count = 100
+
 
 class Allowlist:
     def __init__(self):
@@ -64,7 +71,8 @@ def read_ips(directory):
     return set(ips)
 
 
-def resolve_hosts(hosts):
+def resolve_hosts(hosts: list) -> dict:
+    assert len(hosts) > 0
     ip_to_hostnames = collections.defaultdict(set)
 
     allowlist = Allowlist()
@@ -85,12 +93,42 @@ def resolve_hosts(hosts):
 
     print(f'resolve_hosts() stats')
     print(f'* count of unique IPs: {len(ip_to_hostnames)}')
-    print(f'* count of hosts: {len(hosts):,}')
-    resolved_host_count = len([hostname for hostnames in ip_to_hostnames.values() for hostname in hostnames])
+    unique_host_count = len(hosts)
+    print(f'* count of hosts: {unique_host_count:,}')
+    resolvable_host_names = set(
+        [hostname for hostnames in ip_to_hostnames.values() for hostname in hostnames])
+    resolved_host_count = len(resolvable_host_names)
     print(f'* count of unique hostnames: {resolved_host_count:,}')
     print(f'* count of unresolvable hosts: {len(hosts) - resolved_host_count:,}')
+    assert unique_host_count >= 0
+    assert resolved_host_count >= 0
+    assert resolved_host_count <= unique_host_count
     assert resolved_host_count >= min_resolved_host_count
     return ip_to_hostnames
+
+
+def sort_hostnames(hostnames: list) -> list:
+    """Sort hostnames with reversed parts
+
+    Example result
+    blog.example.com
+    mail.example.com    
+    api.example.org
+    docs.example.org
+    """
+    return sorted(hostnames, key=lambda hostname: hostname.lower().split('.')[::-1])
+
+
+def write_hostnames(ip_to_hostnames):
+    # get all hostnames that have at least one valid IP.
+    hostnames_with_valid_ip = set()
+    for hostnames in ip_to_hostnames.values():
+        hostnames_with_valid_ip.update(hostnames)
+
+    # Write final hostnames to file.
+    with open(final_hostname_fn, "w", encoding="utf-8") as output_file:
+        for hostname in sort_hostnames(hostnames_with_valid_ip):
+            output_file.write(f"{hostname}\n")
 
 
 def write_ips(ip_to_hostnames, ip_only):
@@ -104,7 +142,7 @@ def write_ips(ip_to_hostnames, ip_only):
 
     print(f'INFO: count of IPs: {len(sorted_ips)}')
 
-    with open(final_fn, "w") as output_file:
+    with open(final_ip_fn, "w") as output_file:
         for ip in sorted_ips:
             if ip_to_hostnames[ip]:
                 hostnames = ",".join(sorted(ip_to_hostnames[ip]))
@@ -115,7 +153,8 @@ def write_ips(ip_to_hostnames, ip_only):
 
 def go():
     hosts = read_input_hostnames()
-    ip_to_hostnames = resolve_hosts(hosts)    
+    ip_to_hostnames = resolve_hosts(hosts)
+    write_hostnames(ip_to_hostnames)
     ips_only = read_ips(ip_dir)
     write_ips(ip_to_hostnames, ips_only)
 
