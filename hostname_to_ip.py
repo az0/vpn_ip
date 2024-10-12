@@ -81,6 +81,12 @@ def resolve_hosts(hosts):
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         executor.map(resolve_hostname_and_add, sorted(hosts))
 
+    print(f'resolve_hosts() stats')
+    print(f'* count of unique IPs: {len(ip_to_hostnames)}')
+    print(f'* count of hosts: {len(hosts):,}')
+    resolved_host_count = len([hostname for hostnames in ip_to_hostnames.values() for hostname in hostnames])
+    print(f'* count of unique hostnames: {resolved_host_count:,}')
+    print(f'* count of unresolvable hosts: {len(hosts) - resolved_host_count:,}')
     return ip_to_hostnames
 
 
