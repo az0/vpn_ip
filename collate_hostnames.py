@@ -46,11 +46,22 @@ def resolve_hosts(hostnames: list) -> list:
     return resolved_hosts
 
 
+def sort_hostnames(hostnames: list) -> list:
+    """Sort hostnames with reversed parts
+    
+    Example result
+    blog.example.com
+    mail.example.com    
+    api.example.org
+    docs.example.org
+    """
+    return sorted(hostnames, key=lambda hostname: hostname.lower().split('.')[::-1])
+
 def main():
     hostnames = read_input_hostnames()
     resolved_hosts = resolve_hosts(hostnames)
     with open(OUTPUT_FN, 'w', encoding='utf-8') as output_file:
-        output_file.write('\n'.join(sorted(resolved_hosts)))
+        output_file.write('\n'.join(sort_hostnames(resolved_hosts)))
 
 
 if __name__ == '__main__':
