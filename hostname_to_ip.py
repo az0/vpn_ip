@@ -5,6 +5,7 @@ import concurrent.futures
 import ipaddress
 import os
 
+import bogons
 
 from common import clean_line, read_input_hostnames, resolve_hostname
 
@@ -14,7 +15,7 @@ final_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
 allowlist_ip_fn = 'data/input/allowlist_ip.txt'
 allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
 max_workers = 8
-
+min_resolved_host_count = 100
 
 class Allowlist:
     def __init__(self):
@@ -87,6 +88,7 @@ def resolve_hosts(hosts):
     resolved_host_count = len([hostname for hostnames in ip_to_hostnames.values() for hostname in hostnames])
     print(f'* count of unique hostnames: {resolved_host_count:,}')
     print(f'* count of unresolvable hosts: {len(hosts) - resolved_host_count:,}')
+    assert resolved_host_count >= min_resolved_host_count
     return ip_to_hostnames
 
 
