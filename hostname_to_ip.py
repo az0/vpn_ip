@@ -48,6 +48,7 @@ class Allowlist:
 def read_ips(directory):
     """Read IPs, one IP per line"""
     ips = []
+    min_ip_length = len('0.0.0.0')
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             print(f'reading IPs from {filename}')
@@ -57,7 +58,7 @@ def read_ips(directory):
                     ip = clean_line(line)
                     if not line:
                         continue
-                    if not len(ip) >= 7:
+                    if not len(ip) >= min_ip_length:
                         continue
                     ips.append(ip)
     return set(ips)
