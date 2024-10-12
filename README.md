@@ -21,8 +21,8 @@ Second, use `ip.txt` in the router (e.g., ipset or OpenWRT ipban) to reject the 
 
 A complementary approach is to manage DNS resolution:
 
-* Block DNS resolution of DNS resolvers (e.g., [hagezi](https://github.com/hagezi/dns-blocklists/?tab=readme-ov-file#bypass)).
-* Reject forwarding to the IP addresses of DNS providers (e.g., [dibdot](https://github.com/dibdot/DoH-IP-blocklists) with ipban).
+* Block DNS resolution of DNS resolvers (e.g., [hagezi's DNS bypass list](https://github.com/hagezi/dns-blocklists/?tab=readme-ov-file#bypass)).
+* Reject forwarding to the IP addresses of DNS providers (e.g., [dibdot's DoH list](https://github.com/dibdot/DoH-IP-blocklists) with ipban).
 * Reject forwarding of TCP and UDP ports 53 and 853 or redirect them to your DNS resolver.
 
 ## Related
