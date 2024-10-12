@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 
 hostname_ip_root = 'data/input/hostname_ip/'
 ip_root = 'data/input/ip/'
-json_config_fn = 'get_addresses_via_api.json'
+json_config_fn = 'data/get_addresses_via_api.json'
 
 
 def collect_hostnames_and_ips(url, hostname_key, ip_key):
