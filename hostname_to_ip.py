@@ -115,8 +115,8 @@ def write_ips(ip_to_hostnames, ip_only):
 
 def go():
     hosts = read_input_hostnames()
+    ip_to_hostnames = resolve_hosts(hosts)    
     ips_only = read_ips(ip_dir)
-    ip_to_hostnames = resolve_hosts(hosts)
     write_ips(ip_to_hostnames, ips_only)
 
 
