@@ -4,31 +4,18 @@ import collections
 import concurrent.futures
 import ipaddress
 import os
-import socket
 
 
-hostname_dir = 'data/input/hostname_ip'
+from common import clean_line, read_input_hostnames, resolve_hostname
+
+
 ip_dir = 'data/input/ip'
 final_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
-allowlist_ip_fn= 'data/input/allowlist_ip.txt'
-allowlist_hostname_fn ='data/input/allowlist_hostname.txt'
+allowlist_ip_fn = 'data/input/allowlist_ip.txt'
+allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
 max_workers = 8
 
 
-def clean_line(line: str) -> str:
-    """Remove comments and whitespace from line"""
-    return line.split('#')[0].split(',')[0].strip()
-
-def resolve_hostname(hostname : str) -> list:
-    """Return a list of IPv4 IPs for the given hostname"""
-    #print(f'INFO: resolving hostname {hostname}')
-    try:
-        ip_addresses = socket.getaddrinfo(hostname, None, family=socket.AF_INET)
-    except socket.gaierror as e:
-        print(f"ERROR: Error resolving {hostname}: {e}")
-        return []
-    return [ip[4][0] for ip in ip_addresses]
-    
 class Allowlist:
     def __init__(self):
         self.ip_allowlist = set()
@@ -49,31 +36,12 @@ class Allowlist:
                 for ip in hostnames:
                     self.ip_allowlist.add(ip)
 
-    def check_ip_in_ranges(self, ip : str) -> bool:
+    def check_ip_in_ranges(self, ip: str) -> bool:
         """Check if IP is in allowlist"""
         for r in self.ip_allowlist:
             if ipaddress.ip_address(ip) in ipaddress.ip_network(r):
                 return True
         return False
-
-
-def read_hosts(directory):
-    """Read domains, one host per line"""
-    hosts = []
-    for filename in os.listdir(directory):
-        if filename.endswith(".txt"):
-            print(f'reading hosts from {filename}')
-            filepath = os.path.join(directory, filename)
-            with open(filepath, "r") as file:
-                for line in file:
-                    hostname = clean_line(line)
-                    if not len(hostname) > 5:
-                        continue
-                    if '-tor.' in hostname:  # example: hostname=us-co-21-tor.protonvpn.net
-                        print(f'WARNING: skipping tor: {hostname}')
-                        continue
-                    hosts.append(hostname)
-    return set(hosts)
 
 
 def read_ips(directory):
@@ -137,7 +105,7 @@ def write_ips(ip_to_hostnames, ip_only):
 
 
 def go():
-    hosts = read_hosts(hostname_dir)
+    hosts = read_input_hostnames()
     ips_only = read_ips(ip_dir)
     ip_to_hostnames = resolve_hosts(hosts)
     write_ips(ip_to_hostnames, ips_only)
