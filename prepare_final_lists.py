@@ -18,7 +18,7 @@ from common import clean_line, read_input_hostnames, resolve_hostname
 
 ip_dir = 'data/input/ip'
 final_ip_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
-final_hostname_fn = 'data/output/hostnames.txt'
+final_hostname_fn = 'data/output/hostname.txt'
 allowlist_ip_fn = 'data/input/allowlist_ip.txt'
 allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
 max_workers = 8
