@@ -1,5 +1,6 @@
-name: Update data daily
+name: Update data regularly
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 1,13 * * *' # Runs twice each day
 jobs:
