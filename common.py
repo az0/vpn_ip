@@ -30,7 +30,7 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
 
 def clean_line(line: str) -> str:
     """Remove comments and whitespace from line"""
-    return line.split('#')[0].split(',')[0].strip()
+    return line.strip('\n').split('#')[0].split(',')[0].strip()
 
 
 def read_hostnames_from_file(filename: str) -> list:

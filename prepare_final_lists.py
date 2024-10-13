@@ -54,114 +54,148 @@ class Allowlist:
 
 
 def read_ips(directory):
-    """Read IPs, one IP per line"""
-    ips = []
-    min_ip_length = len('0.0.0.0')
+    """Read IPs, one IP per line
+    
+    Returns a dictionary with IP as key and list of sources as value
+    
+    """
+    ips = collections.defaultdict(set)
+    allowlist = Allowlist()
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             print(f'reading IPs from {filename}')
+            source_tag = filename.replace('.txt', '').replace('_api', '')
             filepath = os.path.join(directory, filename)
-            with open(filepath, "r") as file:
+            with open(filepath, "r", encoding="utf-8") as file:
                 for line in file:
                     ip = clean_line(line)
-                    if not line:
+                    if not ip:
                         continue
-                    if not len(ip) >= min_ip_length:
+                    if allowlist.check_ip_in_ranges(ip):
                         continue
-                    ips.append(ip)
-    return set(ips)
+                    if not bogons.is_public_ip(ip):
+                        continue
+                    ips[ip].add(source_tag)
+    return ips
 
 
-def resolve_hosts(hosts: list) -> dict:
-    assert len(hosts) > 0
-    ip_to_hostnames = collections.defaultdict(set)
+def get_root_domain(fqdn: str) -> str:
+    """Get root domain from FQDN"""
+    import tldextract
+    ext = tldextract.extract(fqdn)
+    return '.'.join([ext.domain, ext.suffix])
+
+def resolve_hosts(input_fqdns: list) -> dict:
+    """Resolve FQDNs to IPs addresses
+    
+    Args:
+        hosts: list of hostnames
+    
+    Returns:
+        tuple (valid_hostnames, ip_addresses)
+        ip_addresses is a dict with IP as key and list of root domains as values
+    
+    
+    """
+    assert len(input_fqdns) > 0
+    ip_to_root_domains = collections.defaultdict(set)
 
     allowlist = Allowlist()
+    
+    valid_fqdns = set()
     hostnames_with_non_public_ip = []
     hostnames_with_ip_in_allowlist = []
 
-    def resolve_hostname_and_add(hostname):
-        nonlocal hostnames_with_non_public_ip, hostnames_with_ip_in_allowlist
-        ip_addresses = resolve_hostname(hostname)
-        for ip_addr in sorted(ip_addresses):
-            if allowlist.check_ip_in_ranges(ip_addr):
-                hostnames_with_ip_in_allowlist.append(hostname)
-            if not bogons.is_public_ip(ip_addr):
-                hostnames_with_non_public_ip.append(hostname)
-            else:
-                ip_to_hostnames[ip_addr].add(hostname)
+    def resolve_hostname_and_add(this_fqdn):
+        nonlocal hostnames_with_non_public_ip, hostnames_with_ip_in_allowlist, valid_fqdns
+        ip_addresses = resolve_hostname(this_fqdn)
+        root_domain = get_root_domain(this_fqdn)
+        for this_ip_addr in sorted(ip_addresses):
+            if allowlist.check_ip_in_ranges(this_ip_addr):
+                hostnames_with_ip_in_allowlist.append(this_fqdn)
+                continue
+            if not bogons.is_public_ip(this_ip_addr):
+                hostnames_with_non_public_ip.append(this_fqdn)
+                continue
+            valid_fqdns.add(this_fqdn)
+            ip_to_root_domains[this_ip_addr].add(root_domain)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(hosts)), total=len(hosts)))
+        list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(input_fqdns)), total=len(input_fqdns)))
 
-    print(f'resolve_hosts() stats')
-    print(f'* count of unique IPs: {len(ip_to_hostnames):,}')
-    unique_host_count = len(hosts)
-    print(f'* count of hosts: {unique_host_count:,}')
-    resolvable_host_names = set(
-        [hostname for hostnames in ip_to_hostnames.values() for hostname in hostnames])
+    print(f'resolve_hosts() stats')    
+    unique_host_count = len(input_fqdns)
+    print(f'* count of input FQDNs: {unique_host_count:,}')
+    print(f'* count of unique, valid IPs resolved: {len(ip_to_root_domains):,}')
+    resolvable_host_names = set([hostname for hostnames in ip_to_root_domains.values() for hostname in hostnames])
     resolved_host_count = len(resolvable_host_names)
     print(f'* count of unique hostnames: {resolved_host_count:,}')
-    print(f'* count of unresolvable hosts: {len(hosts) - resolved_host_count:,}')
+    print(f'* count of unresolvable hosts: {len(input_fqdns) - resolved_host_count:,}')
     print(f'* count of hostnames with IP in allowlist: {len(hostnames_with_ip_in_allowlist):,}')
     print(f'* count of hostnames with non-public IP: {len(set(hostnames_with_non_public_ip)):,}')
     assert unique_host_count >= 0
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
     assert resolved_host_count >= min_resolved_host_count
-    return ip_to_hostnames
+    return (valid_fqdns, ip_to_root_domains)
 
 
-def sort_hostnames(hostnames: list) -> list:
-    """Sort hostnames with reversed parts
+def sort_fqdns(fqdns: list) -> list:
+    """Sort fully qualified domain names with reversed parts
 
-    Example result
+    Example result:
     blog.example.com
     mail.example.com    
     api.example.org
     docs.example.org
     """
-    return sorted(hostnames, key=lambda hostname: hostname.lower().split('.')[::-1])
+    return sorted(fqdns, key=lambda fqdn: fqdn.lower().split('.')[::-1])
 
 
-def write_hostnames(ip_to_hostnames):
-    # get all hostnames that have at least one valid IP.
-    hostnames_with_valid_ip = set()
-    for hostnames in ip_to_hostnames.values():
-        hostnames_with_valid_ip.update(hostnames)
-
-    # Write final hostnames to file.
+def write_hostnames(fqdns : list) -> None:
+    """Write final output list of FQDNs."""
     with open(final_hostname_fn, "w", encoding="utf-8") as output_file:
-        for hostname in sort_hostnames(hostnames_with_valid_ip):
-            output_file.write(f"{hostname}\n")
+        for fqdn in sort_fqdns(fqdns):
+            output_file.write(f"{fqdn}\n")
 
 
-def write_ips(ip_to_hostnames, ip_only):
+def write_ips(ip_to_root_domains :dict, ips_only:dict)->None:
+    """"Write final list of IP addresses to file
+    
+    Args:
+        ip_to_root_domains: dict with IP as key and list of root domains as values
+        ips_only: dict with IP as key and list of sources as values
+    
+    """
+    assert isinstance(ip_to_root_domains, dict)
+    assert isinstance(ips_only, dict)
+    assert len(ip_to_root_domains) > 0
+    assert len(ips_only) > 0    
+    assert isinstance(list(ips_only.values())[0],set)
+    assert isinstance(list(ip_to_root_domains.values())[0],set)
+    
+    merged_dict = collections.defaultdict(set)
+    for key in ip_to_root_domains.keys() | ips_only.keys():
+        merged_dict[key] = ip_to_root_domains.get(key, set()) | ips_only.get(key, set())
 
-    ip_only_filtered = [ip for ip in ip_only if ip not in ip_to_hostnames]
-
-    ip_to_hostnames.update({ip: None for ip in ip_only_filtered})
-
-    sorted_ips = sorted(ip_to_hostnames.keys(),
+    sorted_ips = sorted(merged_dict.keys(),
                         key=lambda ip: int(ipaddress.ip_address(ip)))
 
     print(f'count of final IPs to write: {len(sorted_ips)}')
 
-    with open(final_ip_fn, "w") as output_file:
+    with open(final_ip_fn, "w", encoding="utf-8") as output_file:
         for ip in sorted_ips:
-            if ip_to_hostnames[ip]:
-                hostnames = ",".join(sort_hostnames(ip_to_hostnames[ip]))
-                output_file.write(f"{ip} # {hostnames}\n")
-            else:
-                output_file.write(f'{ip}\n')
+            hostnames_list = sort_fqdns(set(merged_dict[ip]))
+            hostnames_str = ",".join(hostnames_list)
+            output_file.write(f"{ip} # {hostnames_str}\n")
 
 
 def go():
     hosts = read_input_hostnames()
-    ip_to_hostnames = resolve_hosts(hosts)
-    write_hostnames(ip_to_hostnames)
+    (valid_fqdns, ip_to_root_domains) = resolve_hosts(hosts)
+    write_hostnames(valid_fqdns)
     ips_only = read_ips(ip_dir)
-    write_ips(ip_to_hostnames, ips_only)
+    write_ips(ip_to_root_domains, ips_only)
 
 
 go()
