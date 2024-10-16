@@ -9,11 +9,12 @@ import collections
 import concurrent.futures
 import ipaddress
 import os
+import re
 
 import bogons
 import tqdm
 
-from common import clean_line, read_input_hostnames, resolve_hostname
+from common import clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname
 
 
 ip_dir = 'data/input/ip'
@@ -21,6 +22,8 @@ final_ip_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
 final_hostname_fn = 'data/output/hostname.txt'
 allowlist_ip_fn = 'data/input/allowlist_ip.txt'
 allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
+adguard_input_fn = 'data/input/adguard.txt'
+adguard_output_fn = 'data/output/adguard.txt'
 max_workers = 8
 min_resolved_host_count = 100
 
@@ -136,8 +139,10 @@ def resolve_hosts(input_fqdns: list) -> dict:
     assert unique_host_count >= 0
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
-    assert resolved_host_count >= min_resolved_host_count
+    assert resolved_host_count >= min_resolved_host_count, f'{resolved_host_count} vs {min_resolved_host_count}'
+
     return (valid_fqdns, ip_to_root_domains)
+
 
 
 def sort_fqdns(fqdns: list) -> list:
@@ -151,9 +156,45 @@ def sort_fqdns(fqdns: list) -> list:
     """
     return sorted(fqdns, key=lambda fqdn: fqdn.lower().split('.')[::-1])
 
+def check_fqdn_against_adguard(fqdn: str, patterns: list) -> bool:
+    """Check if FQDN matches a list of Adguard-style patterns
+    
+    This supports a minimal subset of Adguard syntax.
+    
+    Example pattern '||example.org^
+    Matches: foo.example.org, example.org
+    Does not match: barexample.org, example.com, example.org.uk
+    """
+    
+    for adguard_pattern in patterns:
+        # Translate Adguard to regex.
+        re_pattern = adguard_pattern.replace('||', r'(^|\.)').rstrip('^')
+        re_pattern += '$'
+        if re.search(re_pattern, fqdn, re.IGNORECASE):
+            return True
+    return False
+    
+def test_check_fqdn_against_adguard():
+    assert check_fqdn_against_adguard('blog.example.org', ['||example.org^'])
+    assert check_fqdn_against_adguard('example.org', ['||example.org^'])
+    assert not check_fqdn_against_adguard('barexample.org', ['||example.org^'])
+    assert not check_fqdn_against_adguard('example.com', ['||example.org^'])
+    assert not check_fqdn_against_adguard('example.org.uk', ['||example.org^'])
 
-def write_hostnames(fqdns : list) -> None:
-    """Write final output list of FQDNs."""
+def write_hostnames(fqdns : list, adguard_input_list:list) -> None:
+    """Write final output list of FQDNs."""    
+    assert isinstance(fqdns, (list,set))
+    assert isinstance(adguard_input_list, list)
+    assert len(fqdns) > 0
+    assert len(adguard_input_list) > 0
+    with open(adguard_output_fn, "w", encoding="utf-8") as output_file:
+        output_file.write('# This is a blocklist of VPNs in Adguard format.\n')
+        output_file.write(f"# begin {adguard_input_fn}\n")
+        for pattern in adguard_input_list:
+            output_file.write(f"{pattern}\n")
+        output_file.write(f"# end {adguard_input_fn}\n")
+        for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not check_fqdn_against_adguard(fqdn, adguard_input_list)]):
+            output_file.write(f"||{fqdn}^\n")
     with open(final_hostname_fn, "w", encoding="utf-8") as output_file:
         for fqdn in sort_fqdns(fqdns):
             output_file.write(f"{fqdn}\n")
@@ -181,7 +222,7 @@ def write_ips(ip_to_root_domains :dict, ips_only:dict)->None:
     sorted_ips = sorted(merged_dict.keys(),
                         key=lambda ip: int(ipaddress.ip_address(ip)))
 
-    print(f'count of final IPs to write: {len(sorted_ips)}')
+    print(f'count of final IPs to write: {len(sorted_ips):,}')
 
     with open(final_ip_fn, "w", encoding="utf-8") as output_file:
         for ip in sorted_ips:
@@ -191,9 +232,11 @@ def write_ips(ip_to_root_domains :dict, ips_only:dict)->None:
 
 
 def go():
-    hosts = read_input_hostnames()
-    (valid_fqdns, ip_to_root_domains) = resolve_hosts(hosts)
-    write_hostnames(valid_fqdns)
+    test_check_fqdn_against_adguard()
+    fqdns = read_input_hostnames()
+    (valid_fqdns, ip_to_root_domains) = resolve_hosts(fqdns)
+    adguard_patterns = read_hostnames_from_file(adguard_input_fn)
+    write_hostnames(valid_fqdns,adguard_patterns)
     ips_only = read_ips(ip_dir)
     write_ips(ip_to_root_domains, ips_only)
 

@@ -1,0 +1,21 @@
+# These are rules that match many of the fully-qualified domain names
+# in the other files, and this list compresses a hostname list
+# for Adguard.
+#
+# The Adbguard list will contain any FQDN from the other files that
+# does not match a rule here.
+#
+# Only a minimal subset of Adguard rules are supported.
+#
+||nordvpn.com^
+||prmsrvs.com^
+||totallyacdn.com^
+||trafcfy.com^
+||whiskergalaxy.com^
+||windscribe.com^
+||holax.io^
+||holavpn.net^
+||protonvpn.net^
+||nodes.gen4.ninja^
+||hola.org^
+||annual2025.uk^
