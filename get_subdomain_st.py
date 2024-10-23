@@ -49,6 +49,7 @@ def check_api_usage():
 def main():
     domains = (('trafcfy.com', 'browsec.txt'),
                ('prmsrvs.com', 'browsec.txt'),
+               ('frmdom.com', 'browsec.txt'),
                ('hola.org', 'hola.txt'),
                ('holax.io', 'hola.txt'),
                ('holavpn.net', 'hola.txt'),
