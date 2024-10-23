@@ -234,7 +234,6 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 
 
 def go():
-    test_check_fqdn_against_adguard()
     fqdns = read_input_hostnames()
     (valid_fqdns, ip_to_root_domains) = resolve_hosts(fqdns)
     adguard_patterns = read_hostnames_from_file(adguard_input_fn)
