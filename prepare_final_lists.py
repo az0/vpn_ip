@@ -244,11 +244,16 @@ def go():
 
 class TestPrepareFinalLists(unittest.TestCase):
     def test_check_fqdn_against_adguard(self):
-        self.assertTrue(check_fqdn_against_adguard('blog.example.org', ['||example.org^']))
-        self.assertTrue(check_fqdn_against_adguard('example.org', ['||example.org^']))
-        self.assertFalse(check_fqdn_against_adguard('barexample.org', ['||example.org^']))
-        self.assertFalse(check_fqdn_against_adguard('example.com', ['||example.org^']))
-        self.assertFalse(check_fqdn_against_adguard('example.org.uk', ['||example.org^']))
+        test_cases = (
+            ('blog.example.org', ['||example.org^'], True),
+            ('example.org', ['||example.org^'], True),
+            ('barexample.org', ['||example.org^'], False),
+            ('example.com', ['||example.org^'], False),
+            ('example.org.uk', ['||example.org^'], False),
+        )
+        for fqdn, patterns, expected in test_cases:
+            with self.subTest(fqdn=fqdn, patterns=patterns, expected=expected):
+                self.assertEqual(check_fqdn_against_adguard(fqdn, patterns), expected)
 
     def test_sort_fqdns(self):
         fqdns = ['blog.example.com', 'mail.example.com', 'api.example.org', 'docs.example.org']
