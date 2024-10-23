@@ -4,6 +4,7 @@ import socket
 
 INPUT_HOSTNAME_PATTERN = 'data/input/hostname_*/*.txt'
 
+
 def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
     """
     Add new hostnames to a file.
@@ -27,6 +28,7 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
     with open(full_fn, 'a') as file:
         for hostname in sorted(new_hostnames):
             file.write(f'{hostname}\n')
+
 
 def clean_line(line: str) -> str:
     """Remove comments and whitespace from line"""

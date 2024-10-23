@@ -63,9 +63,9 @@ class Allowlist:
 
 def read_ips(directory):
     """Read IPs, one IP per line
-    
+
     Returns a dictionary with IP as key and list of sources as value
-    
+
     """
     ips = collections.defaultdict(set)
     allowlist = Allowlist()
@@ -93,23 +93,24 @@ def get_root_domain(fqdn: str) -> str:
     ext = tldextract.extract(fqdn)
     return '.'.join([ext.domain, ext.suffix])
 
+
 def resolve_hosts(input_fqdns: list) -> dict:
     """Resolve FQDNs to IPs addresses
-    
+
     Args:
         hosts: list of hostnames
-    
+
     Returns:
         tuple (valid_hostnames, ip_addresses)
         ip_addresses is a dict with IP as key and list of root domains as values
-    
-    
+
+
     """
     assert len(input_fqdns) > 0
     ip_to_root_domains = collections.defaultdict(set)
 
     allowlist = Allowlist()
-    
+
     valid_fqdns = set()
     hostnames_with_non_public_ip = []
     hostnames_with_ip_in_allowlist = []
@@ -131,7 +132,7 @@ def resolve_hosts(input_fqdns: list) -> dict:
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(input_fqdns)), total=len(input_fqdns)))
 
-    print(f'resolve_hosts() stats')    
+    print(f'resolve_hosts() stats')
     unique_host_count = len(input_fqdns)
     print(f'* count of input FQDNs: {unique_host_count:,}')
     print(f'* count of unique, valid IPs resolved: {len(ip_to_root_domains):,}')
@@ -180,13 +181,11 @@ def check_fqdn_against_adguard(fqdn: str, patterns: list) -> bool:
         if re.search(re_pattern, fqdn, re.IGNORECASE):
             return True
     return False
-    
 
 
-
-def write_hostnames(fqdns : list, adguard_input_list:list) -> None:
-    """Write final output list of FQDNs."""    
-    assert isinstance(fqdns, (list,set))
+def write_hostnames(fqdns: list, adguard_input_list: list) -> None:
+    """Write final output list of FQDNs."""
+    assert isinstance(fqdns, (list, set))
     assert isinstance(adguard_input_list, list)
     assert len(fqdns) > 0
     assert len(adguard_input_list) > 0
@@ -203,21 +202,21 @@ def write_hostnames(fqdns : list, adguard_input_list:list) -> None:
             output_file.write(f"{fqdn}\n")
 
 
-def write_ips(ip_to_root_domains :dict, ips_only:dict)->None:
+def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
     """"Write final list of IP addresses to file
-    
+
     Args:
         ip_to_root_domains: dict with IP as key and list of root domains as values
         ips_only: dict with IP as key and list of sources as values
-    
+
     """
     assert isinstance(ip_to_root_domains, dict)
     assert isinstance(ips_only, dict)
     assert len(ip_to_root_domains) > 0
-    assert len(ips_only) > 0    
-    assert isinstance(list(ips_only.values())[0],set)
-    assert isinstance(list(ip_to_root_domains.values())[0],set)
-    
+    assert len(ips_only) > 0
+    assert isinstance(list(ips_only.values())[0], set)
+    assert isinstance(list(ip_to_root_domains.values())[0], set)
+
     merged_dict = collections.defaultdict(set)
     for key in ip_to_root_domains.keys() | ips_only.keys():
         merged_dict[key] = ip_to_root_domains.get(key, set()) | ips_only.get(key, set())
@@ -239,7 +238,7 @@ def go():
     fqdns = read_input_hostnames()
     (valid_fqdns, ip_to_root_domains) = resolve_hosts(fqdns)
     adguard_patterns = read_hostnames_from_file(adguard_input_fn)
-    write_hostnames(valid_fqdns,adguard_patterns)
+    write_hostnames(valid_fqdns, adguard_patterns)
     ips_only = read_ips(ip_dir)
     write_ips(ip_to_root_domains, ips_only)
 
