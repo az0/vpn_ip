@@ -27,7 +27,10 @@ def get_subdomains(domain):
     }
 
     response = requests.get(url, headers=headers)
-    subdomains = response.json()['subdomains']
+    if response.status_code == 200:
+        subdomains = response.json()['subdomains']
+    else:
+        raise ValueError(f"Error calling SecurityTrails API: {response.status_code}")
     return [f'{subdomain}.{domain}' for subdomain in subdomains]
 
 
