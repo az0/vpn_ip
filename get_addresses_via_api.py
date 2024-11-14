@@ -2,6 +2,7 @@
 
 import json
 import os
+import sys
 import requests
 from urllib.parse import urlparse
 
@@ -118,6 +119,8 @@ def go():
 
     for key in services.keys():
         process_service(key, services[key])
+
+    print(f"{sys.argv[0]} is done")
 
 
 go()

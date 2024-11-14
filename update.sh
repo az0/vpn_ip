@@ -12,6 +12,13 @@ fi
 # Execute all the steps in the scheduled GitHub action to
 # update this repository
 
+echo "$(date): Running get_addresses_via_api.py"
 ./get_addresses_via_api.py
-./get_browsec_github.py
+
+echo "$(date): Running get_browsec_github.py"
+time timeout 3m ./get_browsec_github.py
+
+echo "$(date): Running prepare_final_lists.py"
 ./prepare_final_lists.py
+
+ echo "$(date): update.sh is done"

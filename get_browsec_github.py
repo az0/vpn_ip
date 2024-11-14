@@ -2,6 +2,7 @@
 
 import requests
 import json
+import sys
 from urllib.parse import urlparse
 
 from common import add_new_hostnames_to_file
@@ -40,6 +41,8 @@ def get_hostnames(urls):
 def main():
     dst_fn = 'browsec_github.txt'
     add_new_hostnames_to_file(dst_fn, get_hostnames, URLS)
+    print(f"{sys.argv[0]} is done")
+
 
 
 main()

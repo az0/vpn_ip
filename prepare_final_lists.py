@@ -32,7 +32,6 @@ allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
 adguard_input_fn = 'data/input/adguard.txt'
 adguard_output_fn = 'data/output/adguard.txt'
 max_workers = 8
-min_resolved_host_count = 50
 
 
 class Allowlist:
@@ -96,7 +95,7 @@ def get_root_domain(fqdn: str) -> str:
     return '.'.join([ext.domain, ext.suffix])
 
 
-def resolve_hosts(input_fqdns: list) -> dict:
+def resolve_hosts(input_fqdns: list, min_resolved_host_count) -> dict:
     """Resolve FQDNs to IPs addresses
 
     Args:
@@ -238,8 +237,8 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 def go():
     fqdns_hostnames_only = read_input_hostnames(input_hostname_only_pattern)
     fqdns_hostnames_ip = read_input_hostnames(input_hostname_ip_pattern)
-    (valid_fqdns1, ip_to_root_domains_discard) = resolve_hosts(fqdns_hostnames_only)
-    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(fqdns_hostnames_ip)
+    (valid_fqdns1, ip_to_root_domains_discard) = resolve_hosts(fqdns_hostnames_only, 50)
+    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(fqdns_hostnames_ip, 20)
     valid_fqdns = list(set(valid_fqdns1).union(set(valid_fqdns2)))
     adguard_patterns = read_hostnames_from_file(adguard_input_fn)
     write_hostnames(valid_fqdns, adguard_patterns)
@@ -277,3 +276,4 @@ if __name__ == "__main__":
         unittest.main()
     else:
         go()
+    print(f"{sys.argv[0]} is done")
