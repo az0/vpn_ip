@@ -5,7 +5,7 @@ It combines duplicates and filters out hostnames that are invalid.
 Finally, it writes one list of hostnames and one list of IP addresses.
 """
 
-# built=in
+# built-in
 import collections
 import concurrent.futures
 import ipaddress
@@ -25,12 +25,14 @@ import tqdm
 ip_dir = 'data/input/ip'
 final_ip_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
 final_hostname_fn = 'data/output/hostname.txt'
+input_hostname_only_pattern = 'data/input/hostname_only/*.txt'
+input_hostname_ip_pattern = 'data/input/hostname_ip/*.txt'
 allowlist_ip_fn = 'data/input/allowlist_ip.txt'
 allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
 adguard_input_fn = 'data/input/adguard.txt'
 adguard_output_fn = 'data/output/adguard.txt'
 max_workers = 8
-min_resolved_host_count = 100
+min_resolved_host_count = 50
 
 
 class Allowlist:
@@ -234,8 +236,11 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 
 
 def go():
-    fqdns = read_input_hostnames()
-    (valid_fqdns, ip_to_root_domains) = resolve_hosts(fqdns)
+    fqdns_hostnames_only = read_input_hostnames(input_hostname_only_pattern)
+    fqdns_hostnames_ip = read_input_hostnames(input_hostname_ip_pattern)
+    (valid_fqdns1, ip_to_root_domains_discard) = resolve_hosts(fqdns_hostnames_only)
+    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(fqdns_hostnames_ip)
+    valid_fqdns = list(set(valid_fqdns1).union(set(valid_fqdns2)))
     adguard_patterns = read_hostnames_from_file(adguard_input_fn)
     write_hostnames(valid_fqdns, adguard_patterns)
     ips_only = read_ips(ip_dir)

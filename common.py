@@ -2,8 +2,6 @@ import glob
 import os
 import socket
 
-INPUT_HOSTNAME_PATTERN = 'data/input/hostname_*/*.txt'
-
 
 def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
     """
@@ -50,10 +48,10 @@ def read_hostnames_from_file(filename: str) -> list:
     return list(hostnames)
 
 
-def read_input_hostnames() -> list:
+def read_input_hostnames(input_hostname_pattern) -> list:
     """Return every unique hostname from input directory (multiple files)"""
     hostnames = set()
-    for filename in glob.glob(INPUT_HOSTNAME_PATTERN):
+    for filename in glob.glob(input_hostname_pattern):
         hostnames.update(read_hostnames_from_file(filename))
     return list(hostnames)
 
