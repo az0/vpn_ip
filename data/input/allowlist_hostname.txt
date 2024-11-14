@@ -1,3 +1,12 @@
+# This file is read by prepare_final_lists.py and resolved to IP addresses
+# which are added to the allowlist, so these IP addresses will not be added
+# to the output list of IP addresses.
+#
+# An illustrative example is that ProtonVPN sells swag at shop.proton.me,
+# which is hosted by Shopify, but many non-VPN related websites also sell
+# on Shopify using the same IP addresses, so this mechanism avoids blocking
+# access to the non-VPN Shopify sites.
+#
 www.meekermusic.com
 forms.gle
 d19rpgkrjeba2z.cloudfront.net # Nextdoor.com

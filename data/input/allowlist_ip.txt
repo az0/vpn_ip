@@ -1,13 +1,18 @@
-# Cloudflare
-# https://en.wikipedia.org/wiki/1.1.1.1
-# https://bgp.he.net/AS13335#_prefixes
-1.0.0.0/24
-1.1.1.0/24
+# CIDR ranges listed here are used to filter out IP addresses,
+# so they do not show on the final list of IP addresses.
+
 # Google
 # https://en.wikipedia.org/wiki/Google_Public_DNS
 # https://bgp.he.net/AS15169#_prefixes
 8.8.4.0/24
 8.8.8.0/24
+
+# Cloudflare
+# https://en.wikipedia.org/wiki/1.1.1.1
+# https://bgp.he.net/AS13335#_prefixes
+1.0.0.0/24
+1.1.1.0/24
+
 # below are from # https://www.cloudflare.com/en-gb/ips/
 103.21.244.0/22
 103.22.200.0/22
