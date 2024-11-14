@@ -13,12 +13,12 @@ fi
 # update this repository
 
 echo "$(date): Running get_addresses_via_api.py"
-./get_addresses_via_api.py
+./get_addresses_via_api.py || exit 1
 
 echo "$(date): Running get_browsec_github.py"
-time timeout 3m ./get_browsec_github.py
+time timeout 3m ./get_browsec_github.py || exit 1
 
 echo "$(date): Running prepare_final_lists.py"
-./prepare_final_lists.py
+./prepare_final_lists.py || exit 1
 
  echo "$(date): update.sh is done"
