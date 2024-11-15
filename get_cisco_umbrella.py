@@ -44,7 +44,9 @@ def main():
     adguard_patterns = read_hostnames_from_file(adguard_input_fn)
     adguard_checker = AdguardPatternChecker(adguard_patterns)
     hostnames_matching_pattern = [hostname for hostname in cisco_hostnames if adguard_checker.check_fqdn(hostname)]
-    write_hostnames_to_text_file(output_fn, sort_fqdns(hostnames_matching_pattern))
+    prior_hostnames = read_input_hostnames(output_fn)
+    export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
+    write_hostnames_to_text_file(output_fn, sort_fqdns(export_hostnames))
 
 
 if __name__ == '__main__':
