@@ -39,14 +39,33 @@ def get_cisco_umbrella():
     return cisco_hostnames
 
 
-def main():
-    cisco_hostnames = get_cisco_umbrella()
+def filter_umbrella_hostnames(cisco_hostnames):
     adguard_patterns = read_hostnames_from_file(adguard_input_fn)
     adguard_checker = AdguardPatternChecker(adguard_patterns)
     hostnames_matching_pattern = [hostname for hostname in cisco_hostnames if adguard_checker.check_fqdn(hostname)]
     prior_hostnames = read_input_hostnames(output_fn)
     export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
     write_hostnames_to_text_file(output_fn, sort_fqdns(export_hostnames))
+
+
+def analyze_overlap(cisco_hostnames):
+    from prepare_final_lists import final_hostname_fn
+    final_hostnames = read_hostnames_from_file(final_hostname_fn)
+    print(f'count of final hostnames: {len(final_hostnames):,}')
+    keep_top = 2000
+    cisco_top_1k = cisco_hostnames[:keep_top]
+    overlap = [hostname for hostname in cisco_top_1k if hostname in final_hostnames]
+    print(f'The overlap between Umbrella top {
+          keep_top} hostnames and the final hostnames list is {len(overlap):,} hostnames')
+    if overlap:
+        print('The first 10 overlap hostnames are:')
+        print(overlap[:10])
+
+
+def main():
+    cisco_hostnames = get_cisco_umbrella()
+    filter_umbrella_hostnames(cisco_hostnames)
+    analyze_overlap(cisco_hostnames)
 
 
 if __name__ == '__main__':
