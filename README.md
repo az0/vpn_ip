@@ -20,7 +20,7 @@ Second, use `ip.txt` in the router (e.g., ipset or OpenWRT ipban) to reject the 
 
 ### DNS bypass
 
-A complementary approach is to manage DNS resolution:
+A complementary approach is to manage DNS resolution at the network router:
 
 * Block DNS resolution of known DNS resolvers (e.g., [hagezi's DNS bypass list](https://github.com/hagezi/dns-blocklists/?tab=readme-ov-file#bypass)).
 * Reject forwarding to the IP addresses of DNS providers (e.g., [dibdot's DoH list](https://github.com/dibdot/DoH-IP-blocklists) with ipban).
@@ -34,4 +34,4 @@ A complementary approach is to manage DNS resolution:
 
 Copyright (C) 2023-2024 by Andrew Ziem.
 
-This repository is licensed under the terms of the [LICENSE](GNU General Public License version 3 or later).
+This repository is licensed under the terms of the [GNU General Public License version 3 or later](LICENSE).
