@@ -26,7 +26,7 @@ def get_cisco_umbrella():
         url = 'http://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip'
         print(f'downloading from {url} to {fn}')
         r = requests.get(url)
-        with open(fn, 'wb', encoding='utf-8') as file:
+        with open(fn, 'wb') as file:
             file.write(r.content)
 
     with zipfile.ZipFile(fn, 'r') as zip_ref:
