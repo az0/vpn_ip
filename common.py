@@ -70,7 +70,7 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
         return
 
     print(f'* writing  {len(new_hostnames)} new hostnames to {full_fn}')
-    with open(full_fn, 'a') as file:
+    with open(full_fn, 'a', encoding="utf-8") as file:
         for hostname in sorted(new_hostnames):
             file.write(f'{hostname}\n')
 

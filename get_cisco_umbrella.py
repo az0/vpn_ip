@@ -26,13 +26,13 @@ def get_cisco_umbrella():
         url = 'http://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip'
         print(f'downloading from {url} to {fn}')
         r = requests.get(url)
-        with open(fn, 'wb') as file:
+        with open(fn, 'wb', encoding='utf-8') as file:
             file.write(r.content)
 
     with zipfile.ZipFile(fn, 'r') as zip_ref:
         zip_ref.extractall(path=tmpdir, members=['top-1m.csv'])
 
-    with open(os.path.join(tmpdir, 'top-1m.csv'), 'r') as file:
+    with open(os.path.join(tmpdir, 'top-1m.csv'), 'r', encoding='utf-8') as file:
         cisco_hostnames = [line.split(',')[1].strip() for line in file]
 
     print(f'read {len(cisco_hostnames):,} hostnames from top-1m.csv')

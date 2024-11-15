@@ -95,7 +95,7 @@ def process_service(service_code, service):
 
     print(f'hostname_fn={hostname_fn}')
     if os.path.exists(hostname_fn):
-        with open(hostname_fn, 'r') as file:
+        with open(hostname_fn, 'r', encoding='utf-8') as file:
             old_hostnames = file.read().splitlines()
 
         old_hostnames = [
