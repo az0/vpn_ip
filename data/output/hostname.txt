@@ -6039,6 +6039,7 @@ dc-107.pointtoserver.com
 dc-108.pointtoserver.com
 dc-194.pointtoserver.com
 dc-20.pointtoserver.com
+dc-204.pointtoserver.com
 dc-207.pointtoserver.com
 dc-208.pointtoserver.com
 dc-235.pointtoserver.com
@@ -6098,6 +6099,7 @@ dc-552.pointtoserver.com
 dc-553.pointtoserver.com
 dc-554.pointtoserver.com
 dc-556.pointtoserver.com
+dc-558.pointtoserver.com
 dc-568.pointtoserver.com
 dc-569.pointtoserver.com
 dc-570.pointtoserver.com
@@ -6159,6 +6161,7 @@ dc-66.pointtoserver.com
 dc-661.pointtoserver.com
 dc-663.pointtoserver.com
 dc-664.pointtoserver.com
+dc-665.pointtoserver.com
 dc-666.pointtoserver.com
 dc-667.pointtoserver.com
 dc-668.pointtoserver.com
@@ -7732,6 +7735,7 @@ p-ar1.urban-vpn.com
 p-ar10.urban-vpn.com
 p-ar2.urban-vpn.com
 p-ar3.urban-vpn.com
+p-ar4.urban-vpn.com
 p-ar5.urban-vpn.com
 p-ar6.urban-vpn.com
 p-at1.urban-vpn.com
@@ -7741,6 +7745,7 @@ p-at4.urban-vpn.com
 p-at5.urban-vpn.com
 p-au10.urban-vpn.com
 p-au12.urban-vpn.com
+p-au2.urban-vpn.com
 p-au4.urban-vpn.com
 p-au5.urban-vpn.com
 p-au6.urban-vpn.com
@@ -7763,6 +7768,7 @@ p-br7.urban-vpn.com
 p-br9.urban-vpn.com
 p-by1.urban-vpn.com
 p-by2.urban-vpn.com
+p-ca1.urban-vpn.com
 p-ca10.urban-vpn.com
 p-ca11.urban-vpn.com
 p-ca12.urban-vpn.com
@@ -7790,8 +7796,13 @@ p-cy4.urban-vpn.com
 p-cz1.urban-vpn.com
 p-cz2.urban-vpn.com
 p-cz3.urban-vpn.com
+p-de10.urban-vpn.com
 p-de12.urban-vpn.com
+p-de13.urban-vpn.com
 p-de18.urban-vpn.com
+p-de19.urban-vpn.com
+p-de2.urban-vpn.com
+p-de3.urban-vpn.com
 p-dk1.urban-vpn.com
 p-dk2.urban-vpn.com
 p-dk3.urban-vpn.com
@@ -7813,7 +7824,11 @@ p-es6.urban-vpn.com
 p-es7.urban-vpn.com
 p-fi1.urban-vpn.com
 p-fr12.urban-vpn.com
+p-fr13.urban-vpn.com
 p-fr14.urban-vpn.com
+p-fr15.urban-vpn.com
+p-fr16.urban-vpn.com
+p-fr9.urban-vpn.com
 p-ge1.urban-vpn.com
 p-ge2.urban-vpn.com
 p-gh1.urban-vpn.com
@@ -11078,6 +11093,7 @@ app.telleport.me
 dev.telleport.me
 129-150-58-208.server.telleport.me
 129-151-168-120.server.telleport.me
+129-153-53-229.server.telleport.me
 13-127-14-8.server.telleport.me
 13-239-63-78.server.telleport.me
 13-244-114-234.server.telleport.me
@@ -11085,6 +11101,7 @@ dev.telleport.me
 132-145-210-97.server.telleport.me
 140-238-246-196.server.telleport.me
 140-238-98-142.server.telleport.me
+141-145-202-150.server.telleport.me
 144-22-163-249.server.telleport.me
 144-24-222-222.server.telleport.me
 149-130-223-17.server.telleport.me
@@ -12271,6 +12288,7 @@ node-ca-33.protonvpn.net
 node-ca-34.protonvpn.net
 node-ca-35.protonvpn.net
 node-ca-36.protonvpn.net
+node-ca-37.protonvpn.net
 node-ch-02.protonvpn.net
 node-ch-03.protonvpn.net
 node-ch-05.protonvpn.net
@@ -12305,6 +12323,7 @@ node-cr-02.protonvpn.net
 node-cy-01.protonvpn.net
 node-cz-04.protonvpn.net
 node-cz-05.protonvpn.net
+node-cz-06.protonvpn.net
 node-de-12.protonvpn.net
 node-de-13.protonvpn.net
 node-de-14.protonvpn.net
@@ -12363,6 +12382,7 @@ node-fr-27.protonvpn.net
 node-fr-28.protonvpn.net
 node-ge-03.protonvpn.net
 node-gr-01.protonvpn.net
+node-gr-02.protonvpn.net
 node-hk-04.protonvpn.net
 node-hk-05.protonvpn.net
 node-hk-06.protonvpn.net
@@ -12373,6 +12393,7 @@ node-hu-04.protonvpn.net
 node-id-01.protonvpn.net
 node-ie-01.protonvpn.net
 node-ie-03.protonvpn.net
+node-ie-04.protonvpn.net
 node-il-03.protonvpn.net
 node-il-04.protonvpn.net
 node-in-05.protonvpn.net
@@ -12435,6 +12456,7 @@ node-mm-01.protonvpn.net
 node-mt-01.protonvpn.net
 node-mx-03.protonvpn.net
 node-my-01.protonvpn.net
+node-ng-01.protonvpn.net
 node-nl-01.protonvpn.net
 node-nl-02.protonvpn.net
 node-nl-03.protonvpn.net
@@ -12575,6 +12597,7 @@ node-no-05.protonvpn.net
 node-no-06.protonvpn.net
 node-nz-03.protonvpn.net
 node-nz-04.protonvpn.net
+node-nz-05.protonvpn.net
 node-pe-04.protonvpn.net
 node-ph-01.protonvpn.net
 node-pk-01.protonvpn.net
@@ -12641,9 +12664,11 @@ node-si-02.protonvpn.net
 node-si-03.protonvpn.net
 node-sk-01.protonvpn.net
 node-sk-02.protonvpn.net
+node-sk-03.protonvpn.net
 node-th-01.protonvpn.net
 node-th-02.protonvpn.net
 node-tr-03.protonvpn.net
+node-tr-04.protonvpn.net
 node-tw-03.protonvpn.net
 node-tw-04.protonvpn.net
 node-ua-02.protonvpn.net
@@ -12854,6 +12879,9 @@ node-us-305.protonvpn.net
 node-us-306.protonvpn.net
 node-us-307.protonvpn.net
 node-us-31.protonvpn.net
+node-us-314.protonvpn.net
+node-us-315.protonvpn.net
+node-us-316.protonvpn.net
 node-us-56.protonvpn.net
 node-us-57.protonvpn.net
 node-us-58.protonvpn.net
