@@ -55,8 +55,7 @@ def analyze_overlap(cisco_hostnames):
     keep_top = 2000
     cisco_top_1k = cisco_hostnames[:keep_top]
     overlap = [hostname for hostname in cisco_top_1k if hostname in final_hostnames]
-    print(f'The overlap between Umbrella top {
-          keep_top} hostnames and the final hostnames list is {len(overlap):,} hostnames')
+    print(f'Overlap Umbrella {keep_top} vs final list: {len(overlap):,} hostnames')
     if overlap:
         print('The first 10 overlap hostnames are:')
         print(overlap[:10])
