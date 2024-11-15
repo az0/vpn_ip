@@ -15,7 +15,7 @@ import sys
 import unittest
 
 # local import
-from common import clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname
+from common import AdguardPatternChecker, adguard_input_fn, clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname, sort_fqdns
 
 # third-party import
 import bogons
@@ -29,7 +29,7 @@ input_hostname_only_pattern = 'data/input/hostname_only/*.txt'
 input_hostname_ip_pattern = 'data/input/hostname_ip/*.txt'
 allowlist_ip_fn = 'data/input/allowlist_ip.txt'
 allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
-adguard_input_fn = 'data/input/adguard.txt'
+
 adguard_output_fn = 'data/output/adguard.txt'
 max_workers = 8
 
@@ -151,52 +151,20 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count) -> dict:
     return (valid_fqdns, ip_to_root_domains)
 
 
-def sort_fqdns(fqdns: list) -> list:
-    """Sort fully qualified domain names with reversed parts
-
-    Example result:
-    blog.example.com
-    mail.example.com    
-    api.example.org
-    docs.example.org
-
-    Sorting reduces the size of the diff.
-    """
-    return sorted(fqdns, key=lambda fqdn: fqdn.lower().split('.')[::-1])
-
-
-def check_fqdn_against_adguard(fqdn: str, patterns: list) -> bool:
-    """Check if FQDN matches a list of Adguard-style patterns
-
-    This supports a minimal subset of Adguard syntax.
-
-    Example pattern '||example.org^
-    Matches: foo.example.org, example.org
-    Does not match: barexample.org, example.com, example.org.uk
-    """
-
-    for adguard_pattern in patterns:
-        # Translate Adguard to regex.
-        re_pattern = adguard_pattern.replace('||', r'(^|\.)').rstrip('^')
-        re_pattern += '$'
-        if re.search(re_pattern, fqdn, re.IGNORECASE):
-            return True
-    return False
-
-
 def write_hostnames(fqdns: list, adguard_input_list: list) -> None:
     """Write final output list of FQDNs."""
     assert isinstance(fqdns, (list, set))
     assert isinstance(adguard_input_list, list)
     assert len(fqdns) > 0
     assert len(adguard_input_list) > 0
+    adguard_checker = AdguardPatternChecker(adguard_input_list)
     with open(adguard_output_fn, "w", encoding="utf-8") as output_file:
         output_file.write('# This is a blocklist of VPNs in Adguard format.\n')
         output_file.write(f"# begin {adguard_input_fn}\n")
         for pattern in sort_fqdns(adguard_input_list):
             output_file.write(f"{pattern}\n")
         output_file.write(f"# end {adguard_input_fn}\n")
-        for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not check_fqdn_against_adguard(fqdn, adguard_input_list)]):
+        for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not adguard_checker.check_fqdn(fqdn)]):
             output_file.write(f"||{fqdn}^\n")
     with open(final_hostname_fn, "w", encoding="utf-8") as output_file:
         for fqdn in sort_fqdns(fqdns):
@@ -246,34 +214,6 @@ def go():
     write_ips(ip_to_root_domains, ips_only)
 
 
-class TestPrepareFinalLists(unittest.TestCase):
-    def test_check_fqdn_against_adguard(self):
-        test_cases = (
-            ('blog.example.org', ['||example.org^'], True),
-            ('example.org', ['||example.org^'], True),
-            ('barexample.org', ['||example.org^'], False),
-            ('example.com', ['||example.org^'], False),
-            ('example.org.uk', ['||example.org^'], False),
-        )
-        for fqdn, patterns, expected in test_cases:
-            with self.subTest(fqdn=fqdn, patterns=patterns, expected=expected):
-                self.assertEqual(check_fqdn_against_adguard(fqdn, patterns), expected)
-
-    def test_sort_fqdns(self):
-        fqdns = ['blog.example.com', 'mail.example.com', 'api.example.org', 'docs.example.org']
-        self.assertEqual(sort_fqdns(fqdns), fqdns)
-        self.assertEqual(sort_fqdns(fqdns[::-1]), fqdns)
-        self.assertEqual(sort_fqdns([]), [])
-        # using list comprehension to make new list, for each element in fqdns, prefix with '||' and suffix with '^'
-        adguard_list = ['||' + fqdn + '^' for fqdn in fqdns]
-        self.assertEqual(sort_fqdns(adguard_list), adguard_list)
-        self.assertEqual(sort_fqdns(adguard_list[::-1]), adguard_list)
-
-
 if __name__ == "__main__":
-    if '--test' in sys.argv:
-        sys.argv.remove('--test')
-        unittest.main()
-    else:
-        go()
+    go()
     print(f"{sys.argv[0]} is done")

@@ -6,6 +6,8 @@ import sys
 import requests
 from urllib.parse import urlparse
 
+from common import write_hostnames_to_text_file
+
 hostname_ip_root = 'data/input/hostname_ip/'
 ip_root = 'data/input/ip/'
 json_config_fn = 'data/get_addresses_via_api.json'
@@ -73,12 +75,6 @@ def process_json(data, hostnames, ips, hostname_key, ip_key):
             process_json(item, hostnames, ips, hostname_key, ip_key)
 
 
-def write_to_file(filename, data):
-    with open(filename, "w", encoding="utf-8") as file:
-        file.write('\n'.join(data))
-        file.write('\n')
-
-
 def process_service(service_code, service):
     """Process one service (e.g., WindScribe, ProtonVPN)"""
     print(f'processing {service_code}')
@@ -107,8 +103,8 @@ def process_service(service_code, service):
         print(f'remembered {len(old_hostnames)} hostnames from {hostname_fn}')
         all_hostnames.update(old_hostnames)
 
-    write_to_file(hostname_fn, sorted(all_hostnames))
-    write_to_file(ip_fn, sorted(all_ips))
+    write_hostnames_to_text_file(hostname_fn, sorted(all_hostnames))
+    write_hostnames_to_text_file(ip_fn, sorted(all_ips))
 
 
 def go():
