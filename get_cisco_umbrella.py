@@ -9,7 +9,7 @@ import time
 import zipfile
 
 from prepare_final_lists import read_hostnames_from_file, input_hostname_only_pattern, input_hostname_ip_pattern
-from common import AdguardPatternChecker, adguard_input_fn, read_input_hostnames, sort_fqdns, write_hostnames_to_text_file
+from common import AdguardPatternChecker, Allowlist, adguard_input_fn, read_input_hostnames, sort_fqdns, write_hostnames_to_text_file
 
 output_fn = 'data/input/hostname_only/cisco_umbrella.txt'
 max_zip_file_age_days = 7
@@ -45,6 +45,8 @@ def filter_umbrella_hostnames(cisco_hostnames):
     hostnames_matching_pattern = [hostname for hostname in cisco_hostnames if adguard_checker.check_fqdn(hostname)]
     prior_hostnames = read_input_hostnames(output_fn)
     export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
+    allowlist = Allowlist()
+    export_hostnames = [hostname for hostname in export_hostnames if not allowlist.check_hostname_in_allowlist(hostname)]
     write_hostnames_to_text_file(output_fn, sort_fqdns(export_hostnames))
 
 

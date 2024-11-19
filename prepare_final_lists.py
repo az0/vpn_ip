@@ -15,7 +15,7 @@ import sys
 import unittest
 
 # local import
-from common import AdguardPatternChecker, adguard_input_fn, clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname, sort_fqdns
+from common import AdguardPatternChecker, Allowlist, adguard_input_fn, clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname, sort_fqdns
 
 # third-party import
 import bogons
@@ -27,39 +27,8 @@ final_ip_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
 final_hostname_fn = 'data/output/hostname.txt'
 input_hostname_only_pattern = 'data/input/hostname_only/*.txt'
 input_hostname_ip_pattern = 'data/input/hostname_ip/*.txt'
-allowlist_ip_fn = 'data/input/allowlist_ip.txt'
-allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
-
 adguard_output_fn = 'data/output/adguard.txt'
 max_workers = 8
-
-
-class Allowlist:
-    def __init__(self):
-        self.ip_allowlist = set()
-        with open(allowlist_ip_fn, 'r') as f:
-            for line in f:
-                line = clean_line(line)
-                if not line:
-                    continue
-                self.ip_allowlist.add(line)
-        with open(allowlist_hostname_fn, 'r') as f:
-            for line in f:
-                hostname = clean_line(line)
-                if not hostname:
-                    continue
-                if not len(hostname) > 5:
-                    continue
-                hostnames = resolve_hostname(hostname)
-                for ip in hostnames:
-                    self.ip_allowlist.add(ip)
-
-    def check_ip_in_ranges(self, ip: str) -> bool:
-        """Check if IP is in allowlist"""
-        for r in self.ip_allowlist:
-            if ipaddress.ip_address(ip) in ipaddress.ip_network(r):
-                return True
-        return False
 
 
 def read_ips(directory):
