@@ -76,6 +76,9 @@
 3.162.174.19 # fastcloudcdn.net
 3.162.174.107 # fastcloudcdn.net
 3.162.174.113 # fastcloudcdn.net
+3.167.180.148 # cloudfront.net
+3.167.180.198 # cloudfront.net
+3.167.180.199 # cloudfront.net
 3.171.20.116 # cloudfront.net
 3.171.20.122 # cloudfront.net
 3.171.20.194 # cloudfront.net
@@ -642,7 +645,7 @@
 31.222.254.142 # nordvpn.com,nordvpn
 31.222.254.144 # nordvpn.com,nordvpn
 31.222.254.146 # nordvpn.com,nordvpn
-34.102.239.211 # windscribe.com
+34.110.180.34 # windscribe.com
 34.160.212.61 # fastcloudcdn.net
 34.192.245.192 # hola.org
 34.196.197.197 # hola.org
@@ -1543,8 +1546,6 @@
 45.63.9.14 # holax.io,holavpn.net,hola.org
 45.63.15.200 # hola.org
 45.63.17.124 # holax.io,holavpn.net,hola.org
-45.63.71.160 # hola.org
-45.63.71.216 # hola.org
 45.63.93.66 # hola.org
 45.63.93.246 # holax.io,hola.org
 45.63.98.192 # hola.org
@@ -2574,7 +2575,6 @@
 50.7.93.27 # trafcfy.com
 50.7.93.28 # trafcfy.com
 50.7.93.29 # trafcfy.com
-51.16.235.6 # hola.org
 51.79.159.148 # hola.org
 51.158.200.73 # frmdom.com,trafcfy.com
 51.158.200.82 # frmdom.com,trafcfy.com
@@ -2627,10 +2627,10 @@
 54.225.227.202 # holax.io,holavpn.net,hola.org
 54.225.246.212 # hola.org
 54.227.247.53 # hola.org
-54.230.209.36 # cloudfront.net
-54.230.209.66 # cloudfront.net
-54.230.209.67 # cloudfront.net
-54.230.209.113 # cloudfront.net
+54.230.18.31 # fastcloudcdn.net
+54.230.18.35 # fastcloudcdn.net
+54.230.18.101 # fastcloudcdn.net
+54.230.18.111 # fastcloudcdn.net
 54.235.191.183 # hola.org
 54.243.103.134 # hola.org
 54.243.128.120 # holax.io,holavpn.net,hola.org
@@ -2858,17 +2858,13 @@
 64.227.111.129 # holax.io,holavpn.net,hola.org
 64.227.111.154 # holax.io,holavpn.net,hola.org
 64.227.127.206 # prmsrvs.com
-65.8.49.17 # fastcloudcdn.net
-65.8.49.41 # fastcloudcdn.net
-65.8.49.88 # fastcloudcdn.net
-65.8.49.99 # fastcloudcdn.net
 65.20.101.55 # hola.org
 65.20.101.157 # hola.org
 65.20.102.217 # hola.org
 65.20.105.216 # hola.org
 65.20.107.146 # hola.org
 66.42.43.157 # hola.org
-66.42.115.113 # hola.org
+66.42.126.243 # hola.org
 66.90.67.42 # protonvpn
 66.90.67.43 # protonvpn
 66.90.67.44 # protonvpn
@@ -7786,6 +7782,7 @@
 103.77.234.210 # totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 103.77.234.211 # whiskergalaxy.com,windscribe.com,windscribe
 103.77.234.212 # whiskergalaxy.com,windscribe
+103.83.142.30 # hola.org
 103.87.68.50 # totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 103.87.68.51 # whiskergalaxy.com,windscribe.com,windscribe
 103.87.68.52 # whiskergalaxy.com,windscribe
@@ -8284,7 +8281,6 @@
 104.238.129.134 # holax.io,holavpn.net,hola.org
 104.238.134.236 # hola.org
 104.238.161.13 # hola.org
-104.238.165.205 # hola.org
 104.238.170.71 # hola.org
 104.238.187.199 # protect-my-ip.com
 104.238.188.118 # holax.io,holavpn.net,hola.org
@@ -8435,6 +8431,7 @@
 108.61.185.220 # protect-my-ip.com
 108.61.185.244 # prmsrvs.com
 108.61.210.36 # protect-my-ip.com
+108.61.229.14 # hola.org
 108.61.245.243 # holax.io,holavpn.net,hola.org
 108.62.49.221 # totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 108.160.132.21 # prmsrvs.com
@@ -8528,6 +8525,7 @@
 109.248.149.34 # totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 109.248.149.35 # whiskergalaxy.com,windscribe.com,windscribe
 109.248.149.36 # whiskergalaxy.com,windscribe
+116.12.47.30 # hola.org
 116.90.72.43 # nordvpn.com,nordvpn
 116.90.72.51 # nordvpn.com,nordvpn
 116.90.72.59 # nordvpn.com,nordvpn
@@ -8589,7 +8587,6 @@
 118.107.220.53 # totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 118.107.220.54 # whiskergalaxy.com,windscribe.com,windscribe
 118.107.220.55 # whiskergalaxy.com,windscribe
-119.28.183.184 # hola.org
 121.127.47.81 # nordvpn.com,nordvpn
 121.127.47.83 # nordvpn.com,nordvpn
 122.155.174.47 # nordvpn
@@ -9002,6 +8999,7 @@
 137.184.198.12 # holax.io,holavpn.net,hola.org
 137.184.202.179 # holax.io,holavpn.net,hola.org
 137.220.59.220 # hola.org
+137.220.60.124 # hola.org
 138.68.14.4 # windscribe.com
 138.68.95.12 # prmsrvs.com
 138.68.161.49 # holax.io,holavpn.net,hola.org
@@ -12387,9 +12385,8 @@
 149.28.37.150 # hola.org
 149.28.42.29 # holax.io,holavpn.net,hola.org
 149.28.60.5 # holax.io,holavpn.net,hola.org
-149.28.122.88 # hola.org
 149.28.123.231 # hola.org
-149.28.126.108 # hola.org
+149.28.126.149 # hola.org
 149.28.166.195 # prmsrvs.com
 149.28.187.234 # prmsrvs.com
 149.28.194.222 # hola.org
@@ -13968,6 +13965,7 @@
 149.154.157.131 # holax.io,holavpn.net,hola.org
 149.154.157.175 # protect-my-ip.com
 149.248.222.213 # windscribe.com
+149.255.155.210 # hola.org
 151.80.113.194 # windscribe.com
 151.106.8.34 # gen4.ninja
 151.236.5.33 # prmsrvs.com
@@ -15459,7 +15457,8 @@
 169.150.232.164 # nordvpn.com,nordvpn
 169.150.232.165 # nordvpn.com,nordvpn
 169.150.232.166 # nordvpn.com,nordvpn
-169.150.236.104 # hola.org
+169.150.236.104 # holax.io
+169.150.236.105 # holavpn.net
 169.150.237.1 # totallyacdn.com,whiskergalaxy.com,windscribe
 169.150.237.2 # whiskergalaxy.com,windscribe.com,windscribe
 169.150.237.3 # whiskergalaxy.com,windscribe
@@ -17199,7 +17198,7 @@
 185.159.158.149 # protonvpn.net,protonvpn
 185.159.158.150 # protonvpn.net,protonvpn
 185.159.158.151 # protonvpn.net,protonvpn
-185.159.158.177 # protonvpn.net
+185.159.158.177 # protonvpn.net,protonvpn
 185.159.158.178 # protonvpn.net,protonvpn
 185.159.158.179 # protonvpn.net,protonvpn
 185.159.158.180 # protonvpn.net,protonvpn
@@ -17254,8 +17253,8 @@
 185.159.158.235 # protonvpn.net,protonvpn
 185.159.158.236 # protonvpn.net,protonvpn
 185.159.158.237 # protonvpn.net,protonvpn
-185.159.158.238 # protonvpn.net,protonvpn
-185.159.158.239 # protonvpn.net,protonvpn
+185.159.158.238 # protonvpn.net
+185.159.158.239 # protonvpn.net
 185.159.158.240 # protonvpn.net
 185.159.158.241 # protonvpn.net,protonvpn
 185.159.158.242 # protonvpn.net,protonvpn
@@ -17910,7 +17909,6 @@
 185.217.69.156 # nordvpn.com,nordvpn
 185.217.69.166 # nordvpn.com,nordvpn
 185.217.69.176 # nordvpn.com,nordvpn
-185.217.99.236 # hola.org
 185.217.171.8 # nordvpn.com,nordvpn
 185.218.127.1 # nordvpn.com,nordvpn
 185.218.127.3 # nordvpn.com,nordvpn
@@ -21136,7 +21134,7 @@
 199.247.14.28 # prmsrvs.com
 199.254.199.163 # pointtoserver.com
 200.58.126.84 # my-safe-net.com
-201.131.126.13 # holax.io,holavpn.net,hola.org
+201.131.126.13 # holax.io,holavpn.net
 201.131.126.23 # holax.io,holavpn.net,hola.org
 201.131.126.28 # holax.io,holavpn.net,hola.org
 202.43.6.1 # whiskergalaxy.com,windscribe.com,windscribe
@@ -21208,6 +21206,7 @@
 206.223.183.16 # whiskergalaxy.com,windscribe.com
 206.223.183.21 # whiskergalaxy.com,windscribe.com
 207.148.8.246 # hola.org
+207.148.15.194 # hola.org
 207.148.17.152 # holax.io,holavpn.net,hola.org
 207.148.18.191 # holax.io,holavpn.net,hola.org
 207.148.20.197 # holax.io,holavpn.net,hola.org
@@ -21731,12 +21730,13 @@
 213.232.87.229 # nordvpn.com,nordvpn
 213.232.87.231 # nordvpn.com,nordvpn
 213.232.87.233 # nordvpn.com,nordvpn
+216.128.147.16 # hola.org
 216.128.178.11 # hola.org
 216.155.134.250 # holax.io,holavpn.net,hola.org
 216.155.139.165 # holax.io,holavpn.net,hola.org
-216.238.66.22 # holax.io,holavpn.net,hola.org
+216.238.66.22 # holax.io,holavpn.net
 216.238.67.146 # prmsrvs.com
-216.238.69.214 # holavpn.net,hola.org
+216.238.69.214 # holavpn.net
 216.238.71.4 # holax.io,holavpn.net,hola.org
 216.238.72.140 # holax.io,hola.org
 216.238.73.42 # holax.io,holavpn.net,hola.org
@@ -21745,7 +21745,7 @@
 216.238.79.236 # holax.io,holavpn.net,hola.org
 216.238.84.17 # prmsrvs.com
 216.238.85.124 # holax.io,holavpn.net,hola.org
-216.238.85.246 # holax.io,holavpn.net,hola.org
+216.238.85.246 # holax.io,holavpn.net
 216.238.102.123 # prmsrvs.com
 216.238.115.202 # hola.org
 216.238.117.88 # prmsrvs.com
