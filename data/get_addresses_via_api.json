@@ -16,15 +16,6 @@
         ],
         "ip_key": []
     },
-    "network_dd_vpn": {
-        "urls": [
-            "https://softnour.com/Product/vpn/data.php"
-        ],
-        "hostname_key": [],
-        "ip_key": [
-            "host"
-        ]
-    },
     "protonvpn": {
         "urls": [
             "https://api.protonmail.ch/vpn/logicals"
