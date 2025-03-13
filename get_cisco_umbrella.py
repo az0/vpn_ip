@@ -46,7 +46,8 @@ def filter_umbrella_hostnames(cisco_hostnames):
     prior_hostnames = read_input_hostnames(output_fn)
     export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
     allowlist = Allowlist()
-    export_hostnames = [hostname for hostname in export_hostnames if not allowlist.check_hostname_in_allowlist(hostname)]
+    export_hostnames = [
+        hostname for hostname in export_hostnames if not allowlist.check_hostname_in_allowlist(hostname)]
     write_hostnames_to_text_file(output_fn, sort_fqdns(export_hostnames))
 
 
