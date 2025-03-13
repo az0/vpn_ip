@@ -21,6 +21,9 @@ time timeout 3m ./get_browsec_github.py || exit 1
 echo "$(date): Running get_cisco_umbrella.py"
 ./get_cisco_umbrella.py || exit 1
 
+echo "$(date): Running get_pia.py"
+./get_pia.py || exit 1
+
 echo "$(date): Running prepare_final_lists.py"
 ./prepare_final_lists.py || exit 1
 
