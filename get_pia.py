@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Originally by DEVisions
 https://github.com/az0/vpn_ip/issues/4
