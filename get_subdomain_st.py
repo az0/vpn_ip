@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Get subdomains using the SecurityTrails API
 # Andrew Ziem, September 2024
 import requests
