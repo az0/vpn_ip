@@ -2,10 +2,10 @@
 # in the other files, and this list compresses a hostname list
 # for Adguard.
 #
-# The Adbguard list will contain any FQDN from the other files that
+# The Adguard list will contain any FQDN from the other files that
 # does not match a rule here.
 #
-# Only a minimal subset of Adguard rules are supported.
+# Only a minimal subset of Adguard rules is supported.
 #
 ||1clickvpn.net^
 ||360tls.com^
@@ -48,3 +48,10 @@
 ||veepn.com^
 ||whiskergalaxy.com^ # Windscribe
 ||windscribe.com^
+||su89-cdn.net^ # Hola
+||c6gj-static.net^ # Hola
+||zspeed-cdn.com^ # Hola
+||yg5sjx5kzy.com^ # Hola
+||x-cdn-static.com^ # Hola
+||kbz0pwvxmv.com^ # Hola
+||b-cdn.net^ # Hola
