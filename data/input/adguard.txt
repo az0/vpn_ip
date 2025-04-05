@@ -7,6 +7,7 @@
 #
 # Only a minimal subset of Adguard rules is supported.
 #
+# Do not include b-cdn.net (Bunny CDN)
 ||1clickvpn.net^
 ||360tls.com^
 ||annual2025.uk^
@@ -20,6 +21,24 @@
 ||hola.org^
 ||holavpn.net^
 ||holax.io^
+||su89-cdn.net^ # Hola manifest.json
+||c6gj-static.net^ # Hola manifest.json
+||zspeed-cdn.com^ # Hola manifest.json
+||yg5sjx5kzy.com^ # Hola manifest.json
+||x-cdn-static.com^ # Hola manifest.json
+||kbz0pwvxmv.com^ # Hola manifest.json
+||h-vpn.org^
+||holavpn.com^
+||holavpnworld.com^
+||holavpnextension.com^
+||holavpninstaller.com^
+||holabrowser.com^
+||holafreevpn.com^
+||holavpnrussia.com^
+||holavpnandroid.com^
+||yd6n63ptky.com^ # Hola manifest.json
+||wbzby2a2k9.com^ # Hola manifest.json
+||hola-compat.com^
 ||hoxx.com^
 ||kproxy.com^
 ||my-safe-net.com^
@@ -48,10 +67,3 @@
 ||veepn.com^
 ||whiskergalaxy.com^ # Windscribe
 ||windscribe.com^
-||su89-cdn.net^ # Hola
-||c6gj-static.net^ # Hola
-||zspeed-cdn.com^ # Hola
-||yg5sjx5kzy.com^ # Hola
-||x-cdn-static.com^ # Hola
-||kbz0pwvxmv.com^ # Hola
-||b-cdn.net^ # Hola
