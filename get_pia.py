@@ -27,8 +27,9 @@ def fetch_pia_servers():
         if len(row) < 3:
             print(f"Skipping malformed row: {row}")
             continue  # Skip malformed rows
-        ip, country, timestamp = row[0], row[1], row[2]
-        formatted_line = f"{ip:<20} # piavpn, {country}, {timestamp}"
+        ip, country, _timestamp = row[0], row[1], row[2]
+        # Omit timestamp to reduce changes.
+        formatted_line = f"{ip:<20} # {country}"
         output_lines.append(formatted_line)
 
     fn = "data/input/ip/pia.txt"
