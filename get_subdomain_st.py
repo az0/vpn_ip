@@ -61,6 +61,10 @@ def main():
                ('proton.me', 'protonvpn.txt'),
                ('windscribe.com', 'windscribe.txt'),
                ('whispergalaxy.com', 'windscribe.txt'),
+               ('block-only-if-you-have-a-small-pee-pee.io', 'windscribe.txt'),
+               ('totallyacdn.com', 'windscribe.txt'),
+               ('deepstateplatypus.com', 'windscribe.txt'),
+               ('staticnetcontent.com', 'windscribe.txt'),
                ('telleport.me', 'telleport.txt'),
                ('northghost.com', 'touchvpn.net'),
                )
