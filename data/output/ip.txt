@@ -68,18 +68,18 @@
 3.162.104.49 # cloudfront.net
 3.162.104.113 # cloudfront.net
 3.162.104.157 # cloudfront.net
-3.166.192.53 # fastcloudcdn.net
-3.166.192.72 # fastcloudcdn.net
-3.166.192.110 # fastcloudcdn.net
-3.166.192.128 # fastcloudcdn.net
-3.166.200.23 # cloudfront.net
-3.166.200.118 # cloudfront.net
-3.166.200.124 # cloudfront.net
-3.166.200.152 # cloudfront.net
 3.167.64.26 # cloudfront.net
 3.167.64.71 # cloudfront.net
+3.167.64.114 # cloudfront.net
+3.167.64.125 # cloudfront.net
+3.167.64.128 # cloudfront.net
+3.167.64.135 # cloudfront.net
 3.167.64.138 # cloudfront.net
 3.167.64.200 # cloudfront.net
+3.167.112.19 # fastcloudcdn.net
+3.167.112.65 # fastcloudcdn.net
+3.167.112.100 # fastcloudcdn.net
+3.167.112.103 # fastcloudcdn.net
 3.210.106.128 # holax.io,holavpn.net,hola.org
 3.211.186.177 # holax.io,holavpn.net,hola.org
 3.211.192.152 # hola.org
@@ -834,7 +834,7 @@
 31.222.254.142 # nordvpn.com,nordvpn
 31.222.254.144 # nordvpn.com,nordvpn
 31.222.254.146 # nordvpn.com,nordvpn
-34.102.239.211 # windscribe.com
+34.110.180.34 # windscribe.com
 34.160.212.61 # fastcloudcdn.net
 34.192.245.192 # hola.org
 34.196.197.197 # hola.org
@@ -3284,7 +3284,7 @@
 50.7.93.27 # trafcfy.com
 50.7.93.28 # trafcfy.com
 50.7.93.29 # trafcfy.com
-51.16.235.6 # hola.org
+51.17.20.53 # hola.org
 51.79.159.148 # hola.org
 51.158.61.236 # frmdom.com
 51.158.61.253 # frmdom.com
@@ -7291,7 +7291,6 @@
 94.229.73.187 # nordvpn.com,nordvpn
 94.229.75.83 # nordvpn.com,nordvpn
 94.229.76.195 # nordvpn.com,nordvpn
-94.230.239.132 # surprise.pics
 94.237.32.18 # prmsrvs.com
 94.237.33.219 # prmsrvs.com
 94.237.34.39 # prmsrvs.com
@@ -7818,7 +7817,6 @@
 95.181.239.143 # gen4.ninja
 95.181.239.144 # gen4.ninja
 95.216.52.4 # holax.io,holavpn.net,hola.org
-95.248.147.91 # chester.run
 96.9.245.99 # nordvpn.com,nordvpn
 96.9.245.100 # nordvpn.com,nordvpn
 96.9.246.91 # nordvpn.com,nordvpn
@@ -8035,7 +8033,6 @@
 98.159.234.208 # pia
 98.159.234.209 # pia
 98.159.234.210 # pia
-99.83.175.80 # therewego.uk
 100.24.143.142 # hola.org
 102.129.145.10 # gen4.ninja
 102.129.145.11 # gen4.ninja
@@ -10079,6 +10076,7 @@
 103.137.15.67 # nordvpn.com,nordvpn
 103.137.15.75 # nordvpn.com,nordvpn
 103.137.15.83 # nordvpn.com,nordvpn
+103.147.22.149 # hola.org
 103.163.218.43 # nordvpn
 103.163.218.48 # nordvpn
 103.163.218.53 # nordvpn
@@ -10254,6 +10252,7 @@
 104.244.210.243 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 104.244.210.244 # whiskergalaxy.com,windscribe
 104.245.144.186 # protonvpn.net
+104.247.81.51 # therewego.uk
 104.248.226.35 # holax.io,holavpn.net,hola.org
 104.248.230.30 # holax.io,holavpn.net,hola.org
 104.248.230.44 # holax.io,holavpn.net,hola.org
@@ -11696,7 +11695,7 @@
 141.255.162.212 # whiskergalaxy.com,windscribe.com,windscribe
 142.93.99.42 # prmsrvs.com
 142.93.104.237 # prmsrvs.com
-142.93.110.253 # spoken.fun,mixing.run,pursuant.run
+142.93.110.253 # spoken.fun,surprise.pics,chester.run,mixing.run,pursuant.run,sciences.run
 142.93.150.190 # windscribe.com
 142.93.161.32 # prmsrvs.com
 142.93.171.162 # prmsrvs.com
@@ -15929,6 +15928,7 @@
 156.146.46.211 # pia
 156.146.46.212 # pia
 156.146.46.213 # pia
+156.146.46.214 # pia
 156.146.46.215 # pia
 156.146.46.216 # pia
 156.146.46.217 # pia
@@ -16822,14 +16822,6 @@
 167.89.115.78 # hola.org
 167.89.115.120 # hola.org
 167.89.115.150 # hola.org
-167.89.123.54 # hola.org
-167.89.123.58 # hola.org
-167.89.123.62 # hola.org
-167.89.123.66 # hola.org
-167.89.123.89 # hola.org
-167.89.123.90 # hola.org
-167.89.123.124 # hola.org
-167.89.123.204 # hola.org
 167.99.192.192 # holax.io,holavpn.net,hola.org
 167.99.198.177 # holax.io,holavpn.net,hola.org
 167.99.198.196 # holax.io,hola.org
@@ -17194,7 +17186,6 @@
 173.205.85.162 # staticnetcontent.com
 173.205.85.163 # staticnetcontent.com
 173.208.45.33 # staticnetcontent.com
-173.234.14.135 # hola.org
 173.239.194.10 # gen4.ninja
 173.239.194.11 # gen4.ninja
 173.239.194.12 # gen4.ninja
@@ -18085,7 +18076,6 @@
 174.138.36.124 # holax.io,holavpn.net,hola.org
 174.138.84.62 # holavpn.net,hola.org
 174.138.84.205 # holax.io,holavpn.net,hola.org
-176.64.90.252 # sciences.run
 176.96.226.226 # protonvpn.net
 176.96.226.242 # protonvpn.net
 176.100.43.4 # nordvpn.com,nordvpn
@@ -20884,6 +20874,7 @@
 181.214.206.145 # pia
 181.214.206.146 # pia
 181.214.206.147 # pia
+181.214.206.148 # pia
 181.214.206.149 # pia
 181.214.206.150 # pia
 181.214.206.151 # pia
@@ -27622,6 +27613,7 @@
 194.195.93.21 # nordvpn.com,nordvpn
 194.195.93.23 # nordvpn.com,nordvpn
 194.195.93.25 # nordvpn.com,nordvpn
+194.225.150.25 # hola.org
 194.233.96.10 # nordvpn.com,nordvpn
 194.233.96.17 # nordvpn.com,nordvpn
 194.233.96.24 # nordvpn.com,nordvpn
@@ -27809,6 +27801,7 @@
 195.78.54.175 # pia
 195.78.54.176 # pia
 195.78.54.177 # pia
+195.78.54.178 # pia
 195.78.54.179 # pia
 195.78.54.180 # pia
 195.78.54.181 # pia
@@ -28362,7 +28355,6 @@
 201.168.77.126 # staticnetcontent.com
 202.8.10.17 # staticnetcontent.com
 202.8.10.35 # staticnetcontent.com
-202.12.97.45 # hola.org
 202.43.6.1 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
 202.43.6.2 # whiskergalaxy.com,windscribe
 202.43.6.33 # staticnetcontent.com
@@ -28473,6 +28465,7 @@
 203.188.164.52 # pia
 203.188.164.53 # pia
 203.188.164.54 # pia
+203.188.164.55 # pia
 203.188.164.56 # pia
 203.188.164.57 # pia
 203.188.164.58 # pia
@@ -28500,6 +28493,7 @@
 203.188.164.81 # pia
 203.188.164.82 # pia
 203.188.164.83 # pia
+203.188.164.85 # pia
 203.188.164.86 # pia
 203.188.164.87 # pia
 203.188.164.88 # pia
@@ -28551,7 +28545,6 @@
 203.188.164.142 # pia
 203.188.164.144 # pia
 203.188.164.145 # pia
-203.188.164.146 # pia
 203.188.164.147 # pia
 203.188.164.148 # pia
 203.188.164.149 # pia
@@ -28618,6 +28611,7 @@
 203.188.164.213 # pia
 203.188.164.214 # pia
 203.188.164.215 # pia
+203.188.164.216 # pia
 203.188.164.217 # pia
 203.188.164.218 # pia
 203.188.164.219 # pia
@@ -29907,7 +29901,6 @@
 212.102.59.183 # pia
 212.102.59.184 # pia
 212.102.59.185 # pia
-212.102.59.186 # pia
 212.102.59.187 # pia
 212.102.59.188 # pia
 212.102.59.189 # pia
