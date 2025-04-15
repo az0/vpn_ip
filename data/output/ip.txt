@@ -61,7 +61,7 @@
 3.76.250.140 # spoken.fun,surprise.pics,chester.run,mixing.run,pursuant.run,sciences.run
 3.85.72.7 # hola.org
 3.89.0.0 # hola.org
-3.89.115.189 # hoxx.com,spoken.fun,surprise.pics,chester.run,mixing.run,pursuant.run,sciences.run
+3.89.115.189 # hoxx.com,spoken.fun,surprise.pics,chester.run,mixing.run,pursuant.run
 3.91.199.77 # pointed.cc,hoxx.com,approval.fun,areas.fun,scanners.fun,boolean.run,choices.run,clusters.run,figure.run,talked.run,throat.team
 3.128.205.94 # setupvpn.com,spoken.fun,surprise.pics,chester.run,mixing.run,pursuant.run,sciences.run
 3.162.104.18 # cloudfront.net
@@ -70,6 +70,10 @@
 3.162.104.157 # cloudfront.net
 3.167.64.26 # cloudfront.net
 3.167.64.71 # cloudfront.net
+3.167.64.114 # cloudfront.net
+3.167.64.125 # cloudfront.net
+3.167.64.128 # cloudfront.net
+3.167.64.135 # cloudfront.net
 3.167.64.138 # cloudfront.net
 3.167.64.200 # cloudfront.net
 3.167.112.19 # fastcloudcdn.net
@@ -1152,7 +1156,6 @@
 37.19.205.198 # protonvpn.net
 37.19.205.202 # protonvpn.net
 37.19.205.223 # protonvpn.net
-37.19.207.34 # yg5sjx5kzy.com,holax.io,holavpn.net,su89-cdn.net,hola.org
 37.19.210.66 # pia
 37.19.210.67 # pia
 37.19.210.68 # pia
@@ -2071,6 +2074,7 @@
 38.95.13.131 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 38.95.13.132 # whiskergalaxy.com,windscribe
 38.101.74.82 # staticnetcontent.com
+38.104.169.186 # yg5sjx5kzy.com,holax.io,holavpn.net,su89-cdn.net,hola.org
 38.132.101.210 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
 38.132.101.211 # staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 38.132.101.212 # whiskergalaxy.com,windscribe.com,windscribe
@@ -3364,10 +3368,6 @@
 54.225.227.202 # x-cdn-static.com,zspeed-cdn.com,holax.io,c6gj-static.net,holavpn.net,hola.org
 54.225.246.212 # hola.org
 54.227.247.53 # hola.org
-54.230.244.33 # cloudfront.net
-54.230.244.40 # cloudfront.net
-54.230.244.67 # cloudfront.net
-54.230.244.101 # cloudfront.net
 54.235.191.183 # hola.org
 54.243.103.134 # hola.org
 54.243.128.120 # x-cdn-static.com,zspeed-cdn.com,holax.io,c6gj-static.net,holavpn.net,hola.org
@@ -4636,7 +4636,6 @@
 80.69.175.219 # prmsrvs.com
 80.97.43.182 # protect-my-ip.com
 80.211.108.24 # my-safe-net.com
-80.241.0.72 # hola.org
 81.2.252.231 # my-safe-net.com
 81.17.29.2 # staticnetcontent.com
 81.17.122.1 # nordvpn
@@ -10088,6 +10087,7 @@
 103.137.15.67 # nordvpn.com,nordvpn
 103.137.15.75 # nordvpn.com,nordvpn
 103.137.15.83 # nordvpn.com,nordvpn
+103.147.22.149 # hola.org
 103.163.218.43 # nordvpn
 103.163.218.48 # nordvpn
 103.163.218.53 # nordvpn
@@ -10573,7 +10573,6 @@
 129.150.58.208 # telleport.me
 129.151.168.120 # telleport.me
 129.153.53.229 # telleport.me
-129.159.140.221 # hola.org
 129.227.97.98 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 129.227.97.99 # whiskergalaxy.com,windscribe.com,windscribe
 129.227.97.114 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
@@ -11515,12 +11514,14 @@
 140.228.24.110 # pia
 140.228.24.111 # pia
 140.228.24.112 # pia
+140.228.24.113 # pia
 140.228.24.114 # pia
 140.228.24.115 # pia
 140.228.24.116 # pia
 140.228.24.117 # pia
 140.228.24.118 # pia
 140.228.24.119 # pia
+140.228.24.120 # pia
 140.228.24.121 # pia
 140.228.24.122 # pia
 140.228.24.123 # pia
@@ -13419,8 +13420,8 @@
 149.36.50.130 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
 149.36.50.131 # whiskergalaxy.com,windscribe
 149.36.50.157 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
-149.36.50.158 # windscribe
-149.36.50.159 # windscribe
+149.36.50.158 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
+149.36.50.159 # whiskergalaxy.com,windscribe
 149.36.50.211 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io
 149.36.51.3 # protonvpn.net
 149.36.51.129 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
@@ -14395,7 +14396,6 @@
 149.154.157.131 # holax.io,holavpn.net,hola.org
 149.154.157.175 # protect-my-ip.com
 149.248.222.213 # windscribe.com
-149.255.155.210 # hola.org
 150.107.76.118 # staticnetcontent.com
 150.107.76.119 # staticnetcontent.com
 151.80.113.194 # windscribe.com
@@ -16148,8 +16148,8 @@
 156.146.56.98 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 156.146.56.99 # whiskergalaxy.com,windscribe
 156.146.56.110 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
-156.146.56.111 # staticnetcontent.com,windscribe
-156.146.56.112 # windscribe
+156.146.56.111 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
+156.146.56.112 # whiskergalaxy.com,windscribe
 156.146.57.39 # pia
 156.146.57.40 # pia
 156.146.57.41 # pia
@@ -22776,6 +22776,7 @@
 185.217.69.156 # nordvpn.com,nordvpn
 185.217.69.166 # nordvpn.com,nordvpn
 185.217.69.176 # nordvpn.com,nordvpn
+185.217.99.236 # hola.org
 185.217.171.8 # nordvpn.com,nordvpn
 185.218.127.1 # nordvpn.com,nordvpn
 185.218.127.3 # nordvpn.com,nordvpn
@@ -23262,6 +23263,7 @@
 185.253.162.25 # pia
 185.253.162.26 # pia
 185.253.162.27 # pia
+185.253.162.131 # gen4.ninja
 185.253.162.133 # gen4.ninja
 185.253.162.134 # gen4.ninja
 185.253.162.135 # gen4.ninja
@@ -25720,7 +25722,6 @@
 191.96.255.215 # pia
 191.96.255.216 # pia
 191.96.255.217 # pia
-191.96.255.219 # pia
 191.96.255.220 # pia
 191.96.255.222 # pia
 191.96.255.223 # pia
@@ -26452,8 +26453,8 @@
 192.3.53.243 # pointtoserver.com
 192.34.61.64 # prmsrvs.com
 192.34.83.226 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
-192.34.83.227 # windscribe
-192.34.83.228 # windscribe
+192.34.83.227 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
+192.34.83.228 # whiskergalaxy.com,windscribe
 192.36.27.72 # prmsrvs.com
 192.36.27.86 # prmsrvs.com
 192.36.27.105 # prmsrvs.com
@@ -27621,6 +27622,7 @@
 194.195.93.21 # nordvpn.com,nordvpn
 194.195.93.23 # nordvpn.com,nordvpn
 194.195.93.25 # nordvpn.com,nordvpn
+194.225.150.25 # hola.org
 194.233.96.10 # nordvpn.com,nordvpn
 194.233.96.17 # nordvpn.com,nordvpn
 194.233.96.24 # nordvpn.com,nordvpn
@@ -28359,7 +28361,7 @@
 201.168.77.126 # staticnetcontent.com
 202.8.10.17 # staticnetcontent.com
 202.8.10.35 # staticnetcontent.com
-202.28.92.208 # hola.org
+202.12.97.45 # hola.org
 202.43.6.1 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
 202.43.6.2 # whiskergalaxy.com,windscribe
 202.43.6.33 # staticnetcontent.com
@@ -28428,7 +28430,6 @@
 203.188.164.8 # pia
 203.188.164.9 # pia
 203.188.164.10 # pia
-203.188.164.11 # pia
 203.188.164.12 # pia
 203.188.164.13 # pia
 203.188.164.14 # pia
@@ -28503,7 +28504,6 @@
 203.188.164.85 # pia
 203.188.164.86 # pia
 203.188.164.87 # pia
-203.188.164.88 # pia
 203.188.164.89 # pia
 203.188.164.90 # pia
 203.188.164.91 # pia
@@ -28518,6 +28518,7 @@
 203.188.164.100 # pia
 203.188.164.101 # pia
 203.188.164.102 # pia
+203.188.164.103 # pia
 203.188.164.104 # pia
 203.188.164.105 # pia
 203.188.164.106 # pia
@@ -28571,7 +28572,6 @@
 203.188.164.164 # pia
 203.188.164.165 # pia
 203.188.164.166 # pia
-203.188.164.167 # pia
 203.188.164.168 # pia
 203.188.164.169 # pia
 203.188.164.170 # pia
@@ -28654,7 +28654,6 @@
 203.188.164.249 # pia
 203.188.164.250 # pia
 203.188.164.251 # pia
-204.16.244.92 # hola.org
 204.27.60.133 # my-safe-net.com
 204.44.112.2 # staticnetcontent.com
 204.44.112.66 # staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com
