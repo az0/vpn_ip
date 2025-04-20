@@ -1,5 +1,7 @@
 # CIDR ranges listed here are used to filter out IP addresses,
 # so they do not show on the final list of IP addresses.
+#
+# See ./common.py for explaination of the multiple allowlists.
 
 # Google
 # https://en.wikipedia.org/wiki/Google_Public_DNS

@@ -1,0 +1,54 @@
+# Remove these hostnames from final list of hostnames.
+# If the matched hostname came from data/input/hostname_ip/, then
+# its IP address will not be resolved because the removal
+# happens before the IP address resolution.
+#
+# The IP addresses of hostnames here will not be resolved
+# for matching purposes.
+#
+# FIXME later: allow Adguard patterns
+#
+# See ./common.py for explaination of the multiple allowlists.
+accounts.firefox.com
+accounts.google.com
+akamai.net
+amazonaws.com
+android.clients.google.com
+android.com
+apple.com
+clients4.google.com
+clientservices.googleapis.com
+cloudflare.com
+connectivitycheck.android.com
+ctldl.windowsupdate.com
+data.microsoft.com
+detectportal.firefox.com
+digicert.com
+events.data.microsoft.com
+example.com
+facebook.com
+firefox.com
+firefox.com
+firefox.settings.services.mozilla.com
+github.com
+githubusercontent.com
+gmail.com
+google.com
+googleusercontent.com
+gstatic.com
+httpstat.us
+icloud.com
+login.microsoftonline.com
+microsoft.com
+microsoftonline.com
+office.com
+office.net
+root-servers.net
+root-servers.org
+safebrowsing.googleapis.com
+settings-win.data.microsoft.com
+time.android.com
+update.googleapis.com
+windowsupdate.microsoft.com
+www.google.com
+www.root-servers.org

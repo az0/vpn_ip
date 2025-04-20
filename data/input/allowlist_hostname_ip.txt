@@ -7,6 +7,8 @@
 # on Shopify using the same IP addresses, so this mechanism avoids blocking
 # access to the non-VPN Shopify sites.
 #
+# See ./common.py for explaination of the multiple allowlists.
+
 www.meekermusic.com
 forms.gle
 d19rpgkrjeba2z.cloudfront.net # Nextdoor.com

@@ -1,3 +1,23 @@
+"""
+Common functions
+
+# Explaination of the three allowlists
+
+ALLOWLIST_IP_FN is a list of CIDR ranges that filters
+IP addresses before they are written to data/output/ip.txt.
+
+ALLOWLIST_HOSTNAME_ONLY_FN is a list of hostnames that filters
+hostnames before they are written to data/output/hostname.txt.
+If the hostname came from data/input/hostname, then its
+IP address will not be resolved, so it will not be added
+to data/output/ip.txt.
+
+ALLOWLIST_HOSTNAME_IP_FN is a list of hostnames that are
+resolved and filtered at both the hostname and IP address
+level.
+
+"""
+
 # Imports
 import glob
 import ipaddress
@@ -8,9 +28,10 @@ import sys
 import unittest
 
 # Constants
-adguard_input_fn = 'data/input/adguard.txt'
-allowlist_ip_fn = 'data/input/allowlist_ip.txt'
-allowlist_hostname_fn = 'data/input/allowlist_hostname.txt'
+ADGUARD_INPUT_FN = 'data/input/adguard.txt'
+ALLOWLIST_IP_FN = 'data/input/allowlist_ip.txt'
+ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
+ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
 
 # Classes
 
@@ -29,24 +50,26 @@ class AdguardPatternChecker:
 class Allowlist:
     def __init__(self):
         self.ip_allowlist = set()
-        with open(allowlist_ip_fn, 'r', encoding='utf-8') as f:
+        with open(ALLOWLIST_IP_FN, 'r', encoding='utf-8') as f:
             for line in f:
                 line = clean_line(line)
                 if not line:
                     continue
                 self.ip_allowlist.add(line)
         self.hostname_allowlist = set()
-        with open(allowlist_hostname_fn, 'r', encoding='utf-8') as f:
+        self._load_hostnames(ALLOWLIST_HOSTNAME_IP_FN, resolve=True)
+        self._load_hostnames(ALLOWLIST_HOSTNAME_ONLY_FN, resolve=False)
+
+    def _load_hostnames(self, filename, resolve):
+        with open(filename, 'r', encoding='utf-8') as f:
             for line in f:
                 hostname = clean_line(line)
-                if not hostname:
+                if not hostname or len(hostname) <= 5:
                     continue
-                if not len(hostname) > 5:
-                    continue
-                hostnames = resolve_hostname(hostname)
-                self.hostname_allowlist.update({hostname})
-                for ip in hostnames:
-                    self.ip_allowlist.add(ip)
+                self.hostname_allowlist.add(hostname)
+                if resolve:
+                    for ip in resolve_hostname(hostname):
+                        self.ip_allowlist.add(ip)
 
     def check_hostname_in_allowlist(self, hostname: str) -> bool:
         assert isinstance(hostname, str)
