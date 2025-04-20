@@ -129,7 +129,10 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
     The file must already exist.
     """
     full_fn = os.path.join('data/input/hostname_ip', dst_fn)
-    known_hostnames = read_hostnames_from_file(full_fn)
+    if os.path.exists(full_fn):
+        known_hostnames = read_hostnames_from_file(full_fn)
+    else:
+        known_hostnames = []
     print(f'* count of known hostnames: {len(known_hostnames)}')
 
     api_hostnames = get_subdomains_func(*args)
@@ -141,8 +144,9 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
         print('* no new hostnames found')
         return
 
-    print(f'* writing  {len(new_hostnames)} new hostnames to {full_fn}')
-    with open(full_fn, 'a', encoding="utf-8") as file:
+    print(f'* writing {len(new_hostnames)} new hostnames to {full_fn}')
+    mode = 'a' if os.path.exists(full_fn) else 'w'
+    with open(full_fn, mode, encoding="utf-8") as file:
         for hostname in sorted(new_hostnames):
             file.write(f'{hostname}\n')
 

@@ -18,6 +18,9 @@ echo "$(date): Running get_addresses_via_api.py"
 echo "$(date): Running get_browsec_github.py"
 time timeout 3m ./get_browsec_github.py || exit 1
 
+echo "$(date): Running get_browser_extension.py"
+./get_browser_extension.py || exit 1
+
 echo "$(date): Running get_cisco_umbrella.py"
 ./get_cisco_umbrella.py || exit 1
 
