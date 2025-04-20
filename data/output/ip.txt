@@ -68,10 +68,14 @@
 3.162.104.49 # cloudfront.net
 3.162.104.113 # cloudfront.net
 3.162.104.157 # cloudfront.net
+3.167.64.26 # cloudfront.net
+3.167.64.71 # cloudfront.net
 3.167.64.114 # cloudfront.net
 3.167.64.125 # cloudfront.net
 3.167.64.128 # cloudfront.net
 3.167.64.135 # cloudfront.net
+3.167.64.138 # cloudfront.net
+3.167.64.200 # cloudfront.net
 3.167.112.19 # fastcloudcdn.net
 3.167.112.65 # fastcloudcdn.net
 3.167.112.100 # fastcloudcdn.net
@@ -536,10 +540,6 @@
 12.202.180.10 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io
 12.202.180.118 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io
 12.221.146.147 # deepstateplatypus.com,staticnetcontent.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io
-13.35.90.33 # cloudfront.net
-13.35.90.43 # cloudfront.net
-13.35.90.147 # cloudfront.net
-13.35.90.161 # cloudfront.net
 13.127.14.8 # telleport.me
 13.239.63.78 # telleport.me
 13.244.114.234 # telleport.me
@@ -834,7 +834,7 @@
 31.222.254.142 # nordvpn.com,nordvpn
 31.222.254.144 # nordvpn.com,nordvpn
 31.222.254.146 # nordvpn.com,nordvpn
-34.110.180.34 # windscribe.com
+34.102.239.211 # windscribe.com
 34.160.212.61 # fastcloudcdn.net
 34.192.245.192 # hola.org
 34.196.197.197 # hola.org
@@ -3284,6 +3284,7 @@
 50.7.93.27 # trafcfy.com
 50.7.93.28 # trafcfy.com
 50.7.93.29 # trafcfy.com
+51.16.77.36 # hola.org
 51.79.159.148 # hola.org
 51.158.61.236 # frmdom.com
 51.158.61.253 # frmdom.com
@@ -3622,7 +3623,6 @@
 64.176.55.14 # prmsrvs.com
 64.176.58.120 # prmsrvs.com
 64.176.58.238 # prmsrvs.com
-64.176.168.216 # hola.org
 64.176.198.250 # holax.io,holavpn.net,hola.org
 64.176.207.137 # holax.io,hola.org
 64.176.208.43 # holax.io,holavpn.net,hola.org
@@ -4631,7 +4631,6 @@
 80.69.175.219 # prmsrvs.com
 80.97.43.182 # protect-my-ip.com
 80.211.108.24 # my-safe-net.com
-80.241.0.72 # hola.org
 81.2.252.231 # my-safe-net.com
 81.17.29.2 # staticnetcontent.com
 81.17.122.1 # nordvpn
@@ -9890,6 +9889,7 @@
 103.87.68.146 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
 103.87.68.147 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 103.87.68.148 # whiskergalaxy.com,windscribe.com,windscribe
+103.104.28.105 # hola.org
 103.107.196.131 # nordvpn.com,nordvpn
 103.107.196.139 # nordvpn.com,nordvpn
 103.107.196.147 # nordvpn.com,nordvpn
@@ -10083,7 +10083,6 @@
 103.137.15.67 # nordvpn.com,nordvpn
 103.137.15.75 # nordvpn.com,nordvpn
 103.137.15.83 # nordvpn.com,nordvpn
-103.147.22.149 # hola.org
 103.163.218.43 # nordvpn
 103.163.218.48 # nordvpn
 103.163.218.53 # nordvpn
@@ -10464,6 +10463,7 @@
 109.248.149.34 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
 109.248.149.35 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,windscribe
 109.248.149.36 # whiskergalaxy.com,windscribe
+116.12.46.30 # hola.org
 116.90.72.43 # nordvpn.com,nordvpn
 116.90.72.51 # nordvpn.com,nordvpn
 116.90.72.59 # nordvpn.com,nordvpn
@@ -13504,7 +13504,6 @@
 149.50.212.168 # pia
 149.50.212.169 # pia
 149.50.212.170 # pia
-149.50.212.171 # pia
 149.50.212.172 # pia
 149.50.212.173 # pia
 149.50.212.175 # pia
@@ -14303,8 +14302,8 @@
 149.102.248.98 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
 149.102.248.99 # whiskergalaxy.com,windscribe
 149.102.248.110 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
-149.102.248.111 # deepstateplatypus.com,totallyacdn.com,whiskergalaxy.com,windscribe.com,block-only-if-you-have-a-small-pee-pee.io,windscribe
-149.102.248.112 # whiskergalaxy.com,windscribe
+149.102.248.111 # windscribe
+149.102.248.112 # windscribe
 149.102.248.194 # nordvpn.com,nordvpn
 149.102.248.196 # nordvpn.com,nordvpn
 149.102.249.130 # nordvpn.com,nordvpn
@@ -23258,6 +23257,7 @@
 185.253.162.27 # pia
 185.253.162.131 # gen4.ninja
 185.253.162.133 # gen4.ninja
+185.253.162.134 # gen4.ninja
 185.253.162.135 # gen4.ninja
 185.253.162.136 # gen4.ninja
 185.253.162.137 # gen4.ninja
@@ -23266,6 +23266,7 @@
 185.253.162.140 # gen4.ninja
 185.253.162.141 # gen4.ninja
 185.253.162.142 # gen4.ninja
+185.253.162.143 # gen4.ninja
 185.253.162.144 # gen4.ninja
 185.255.130.101 # nordvpn.com,nordvpn
 185.255.130.103 # nordvpn.com,nordvpn
@@ -28487,6 +28488,7 @@
 203.188.164.107 # pia
 203.188.164.108 # pia
 203.188.164.110 # pia
+203.188.164.111 # pia
 203.188.164.112 # pia
 203.188.164.113 # pia
 203.188.164.114 # pia
@@ -28497,6 +28499,7 @@
 203.188.164.120 # pia
 203.188.164.121 # pia
 203.188.164.122 # pia
+203.188.164.123 # pia
 203.188.164.130 # pia
 203.188.164.131 # pia
 203.188.164.132 # pia
@@ -30066,6 +30069,7 @@
 213.152.188.245 # nordvpn.com,nordvpn
 213.152.188.247 # nordvpn.com,nordvpn
 213.152.188.249 # nordvpn.com,nordvpn
+213.157.40.210 # hola.org
 213.183.54.29 # hola.org
 213.183.54.51 # hola.org
 213.183.54.62 # hola.org
