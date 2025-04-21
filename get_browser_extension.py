@@ -133,7 +133,8 @@ def main():
             hosts = parse_connect_src_hosts(manifest_path)
             results = batch_whois(hosts)
             print_whois_comparison(results)
-            add_new_hostnames_to_file(dst_fn, lambda: hosts)
+            # match *.vpnexample.com
+            add_new_hostnames_to_file(dst_fn, lambda hosts_arg=hosts: [f"||{host}^" for host in hosts_arg])
 
 
 class TestBrowserExtensionExtractHosts(unittest.TestCase):

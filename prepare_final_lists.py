@@ -120,20 +120,25 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count) -> dict:
     return (valid_fqdns, ip_to_root_domains)
 
 
-def write_hostnames(fqdns: list, adguard_input_list: list) -> None:
-    """Write final output list of FQDNs."""
+def write_hostnames(fqdns: list, pattern_list: list) -> None:
+    """Write final output list of FQDNs
+
+    fqdns: list of FQDNs
+    pattern_list: list of Adguard patterns
+    """
     assert isinstance(fqdns, (list, set))
-    assert isinstance(adguard_input_list, list)
+    assert isinstance(pattern_list, list)
     assert len(fqdns) > 0
-    assert len(adguard_input_list) > 0
-    adguard_checker = AdguardPatternChecker(adguard_input_list)
+    assert len(pattern_list) > 0
+    pattern_checker = AdguardPatternChecker(pattern_list)
     with open(adguard_output_fn, "w", encoding="utf-8") as output_file:
         output_file.write('# This is a blocklist of VPNs in Adguard format.\n')
         output_file.write(f"# begin {ADGUARD_INPUT_FN}\n")
-        for pattern in sort_fqdns(adguard_input_list):
+        for pattern in sort_fqdns(pattern_list):
             output_file.write(f"{pattern}\n")
         output_file.write(f"# end {ADGUARD_INPUT_FN}\n")
-        for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not adguard_checker.check_fqdn(fqdn)]):
+        # Write FQDNs that don't match any patterns in Adguard format.
+        for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not pattern_checker.check_fqdn(fqdn)]):
             output_file.write(f"||{fqdn}^\n")
     with open(final_hostname_fn, "w", encoding="utf-8") as output_file:
         for fqdn in sort_fqdns(fqdns):
@@ -172,13 +177,15 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 
 
 def go():
-    fqdns_hostnames_only = read_input_hostnames(input_hostname_only_pattern)
-    fqdns_hostnames_ip = read_input_hostnames(input_hostname_ip_pattern)
-    (valid_fqdns1, ip_to_root_domains_discard) = resolve_hosts(fqdns_hostnames_only, 50)
-    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(fqdns_hostnames_ip, 20)
-    valid_fqdns = list(set(valid_fqdns1).union(set(valid_fqdns2)))
-    adguard_patterns = read_hostnames_from_file(ADGUARD_INPUT_FN)
-    write_hostnames(valid_fqdns, adguard_patterns)
+    hostnames_only, patterns_only = read_input_hostnames(input_hostname_only_pattern)
+    hostnames_ip, patterns_ip = read_input_hostnames(input_hostname_ip_pattern)
+    adguard_hostnames, adguard_patterns_manual = read_hostnames_from_file(ADGUARD_INPUT_FN)
+    fqdns_to_resolve_no_ip_collection = list(set(hostnames_only) | set(adguard_hostnames))
+    (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(fqdns_to_resolve_no_ip_collection, 50)
+    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip, 20)
+    valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
+    all_patterns = list(set(patterns_only) | set(patterns_ip) | set(adguard_patterns_manual))
+    write_hostnames(valid_fqdns, all_patterns)
     ips_only = read_ips(ip_dir)
     write_ips(ip_to_root_domains, ips_only)
 

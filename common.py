@@ -37,6 +37,14 @@ ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
 
 
 class AdguardPatternChecker:
+    """Check if a FQDN matches any of the Adguard patterns
+
+    This code supports a subset of Adguard DNS syntax, which itself is
+    a subset of the Adguard syntax used by browser ad blockers.
+
+    https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax
+    """
+
     def __init__(self, patterns: list):
         """Initialize with precompiled regex patterns"""
         self.compiled_patterns = [re.compile(adguard_pattern.replace('||', r'(^|\.)').rstrip(
@@ -130,7 +138,7 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
     """
     full_fn = os.path.join('data/input/hostname_ip', dst_fn)
     if os.path.exists(full_fn):
-        known_hostnames = read_hostnames_from_file(full_fn)
+        known_hostnames, _ = read_hostnames_from_file(full_fn)
     else:
         known_hostnames = []
     print(f'* count of known hostnames: {len(known_hostnames)}')
@@ -156,27 +164,46 @@ def clean_line(line: str) -> str:
     return line.strip('\n').split('#')[0].split(',')[0].strip()
 
 
-def read_hostnames_from_file(filename: str) -> list:
-    """Return every unique hostname from input file"""
-    print(f'reading hosts from {filename}')
+def read_hostnames_from_file(filename: str) -> tuple[list[str], list[str]]:
+    """Return unique hostnames and patterns from input file
+
+    Patterns are automatically detected by the characters.
+
+    Ignored:
+    * Empty lines
+    * Comments starting with #
+    * Tor hostnames containing '-tor.'
+    """
+    print(f'reading hosts and patterns from {filename}')
     hostnames = set()
+    patterns = set()
     with open(filename, 'r', encoding='utf-8') as file:
         for line in file:
-            hostname = clean_line(line)
-            if '-tor.' in hostname:  # example: hostname=us-co-21-tor.protonvpn.net
-                # print(f'WARNING: skipping tor: {hostname}')
+            item = clean_line(line)
+            if not item:
                 continue
-            if hostname:
-                hostnames.add(hostname)
-    return list(hostnames)
+            if '-tor.' in item:  # example: hostname=us-co-21-tor.protonvpn.net
+                # print(f'WARNING: skipping tor: {item}')
+                continue
+            if '|' in item or '^' in item:
+                patterns.add(item)
+            elif '.' in item:  # Basic check for a valid hostname structure
+                hostnames.add(item)
+    return list(hostnames), list(patterns)
 
 
-def read_input_hostnames(input_hostname_pattern) -> list:
-    """Return every unique hostname from input directory (multiple files)"""
-    hostnames = set()
+def read_input_hostnames(input_hostname_pattern) -> tuple[list[str], list[str]]:
+    """Return unique hostnames and patterns from multiple files
+
+    input_hostname_pattern: glob pattern for input files
+    """
+    all_hostnames = set()
+    all_patterns = set()
     for filename in glob.glob(input_hostname_pattern):
-        hostnames.update(read_hostnames_from_file(filename))
-    return list(hostnames)
+        file_hostnames, file_patterns = read_hostnames_from_file(filename)
+        all_hostnames.update(file_hostnames)
+        all_patterns.update(file_patterns)
+    return list(all_hostnames), list(all_patterns)
 
 
 def resolve_hostname(hostname: str) -> list:

@@ -8,8 +8,12 @@ import requests
 import time
 import zipfile
 
-from prepare_final_lists import read_hostnames_from_file, input_hostname_only_pattern, input_hostname_ip_pattern
-from common import AdguardPatternChecker, Allowlist, ADGUARD_INPUT_FN, read_input_hostnames, sort_fqdns, write_hostnames_to_text_file
+from common import (
+    AdguardPatternChecker, Allowlist, ADGUARD_INPUT_FN,
+    read_input_hostnames,
+    read_hostnames_from_file, sort_fqdns, write_hostnames_to_text_file
+)
+from prepare_final_lists import input_hostname_only_pattern, input_hostname_ip_pattern
 
 output_fn = 'data/input/hostname_only/cisco_umbrella.txt'
 max_zip_file_age_days = 7
@@ -39,11 +43,22 @@ def get_cisco_umbrella():
     return cisco_hostnames
 
 
+def get_all_patterns():
+    """Read patterns from all input files"""
+    _hostnames_only, patterns_only = read_input_hostnames(input_hostname_only_pattern)
+    _hostnames_ip, patterns_ip = read_input_hostnames(input_hostname_ip_pattern)
+    _adguard_hostnames, adguard_patterns = read_hostnames_from_file(ADGUARD_INPUT_FN)
+    return list(set(patterns_only) | set(patterns_ip) | set(adguard_patterns))
+
+
 def filter_umbrella_hostnames(cisco_hostnames):
-    adguard_patterns = read_hostnames_from_file(ADGUARD_INPUT_FN)
+    adguard_patterns = get_all_patterns()
     adguard_checker = AdguardPatternChecker(adguard_patterns)
     hostnames_matching_pattern = [hostname for hostname in cisco_hostnames if adguard_checker.check_fqdn(hostname)]
-    prior_hostnames = read_input_hostnames(output_fn)
+    if os.path.exists(output_fn):
+        prior_hostnames, _ = read_hostnames_from_file(output_fn)
+    else:
+        prior_hostnames = []
     export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
     allowlist = Allowlist()
     export_hostnames = [
@@ -53,7 +68,7 @@ def filter_umbrella_hostnames(cisco_hostnames):
 
 def analyze_overlap(cisco_hostnames):
     from prepare_final_lists import final_hostname_fn
-    final_hostnames = read_hostnames_from_file(final_hostname_fn)
+    final_hostnames, _ = read_hostnames_from_file(final_hostname_fn)
     print(f'count of final hostnames: {len(final_hostnames):,}')
     keep_top = 2000
     cisco_top_1k = cisco_hostnames[:keep_top]
