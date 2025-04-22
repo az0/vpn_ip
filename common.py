@@ -188,7 +188,7 @@ def read_hostnames_from_file(filename: str) -> tuple[list[str], list[str]]:
                 patterns.add(item)
                 # Every pattern ||example.com^ is also a hostname, and
                 # this is the only pattern supported now.
-                patterns.add(item.strip('|^'))
+                hostnames.add(item.strip('|^'))
             elif '.' in item:  # Basic check for a valid hostname structure
                 hostnames.add(item)
     return list(hostnames), list(patterns)
