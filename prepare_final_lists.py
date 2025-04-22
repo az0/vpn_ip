@@ -15,7 +15,7 @@ import sys
 import unittest
 
 # local import
-from common import AdguardPatternChecker, Allowlist, ADGUARD_INPUT_FN, clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname, sort_fqdns
+from common import AdguardPatternChecker, Allowlist, clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname, sort_fqdns
 
 # third-party import
 import bogons
@@ -133,10 +133,10 @@ def write_hostnames(fqdns: list, pattern_list: list) -> None:
     pattern_checker = AdguardPatternChecker(pattern_list)
     with open(adguard_output_fn, "w", encoding="utf-8") as output_file:
         output_file.write('# This is a blocklist of VPNs in Adguard format.\n')
-        output_file.write(f"# begin {ADGUARD_INPUT_FN}\n")
+        output_file.write("# begin patterns\n")
         for pattern in sort_fqdns(pattern_list):
             output_file.write(f"{pattern}\n")
-        output_file.write(f"# end {ADGUARD_INPUT_FN}\n")
+        output_file.write("# end patterns\n")
         # Write FQDNs that don't match any patterns in Adguard format.
         for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not pattern_checker.check_fqdn(fqdn)]):
             output_file.write(f"||{fqdn}^\n")
@@ -179,12 +179,11 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 def go():
     hostnames_only, patterns_only = read_input_hostnames(input_hostname_only_pattern)
     hostnames_ip, patterns_ip = read_input_hostnames(input_hostname_ip_pattern)
-    adguard_hostnames, adguard_patterns_manual = read_hostnames_from_file(ADGUARD_INPUT_FN)
-    fqdns_to_resolve_no_ip_collection = list(set(hostnames_only) | set(adguard_hostnames))
+    fqdns_to_resolve_no_ip_collection = list(set(hostnames_only))
     (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(fqdns_to_resolve_no_ip_collection, 50)
     (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip, 20)
     valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
-    all_patterns = list(set(patterns_only) | set(patterns_ip) | set(adguard_patterns_manual))
+    all_patterns = list(set(patterns_only) | set(patterns_ip))
     write_hostnames(valid_fqdns, all_patterns)
     ips_only = read_ips(ip_dir)
     write_ips(ip_to_root_domains, ips_only)

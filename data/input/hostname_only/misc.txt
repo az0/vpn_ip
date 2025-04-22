@@ -1,29 +1,40 @@
-# Misc
-1clickvpn.com
-1clickvpn.net
-account.atlasvpn.com
+# Misc VPN
+||1clickvpn.com^
+||1clickvpn.net^
+||fastestvpn.com^
+||freeconnect.link^
+||freevpn4you.net^
+||freevpn4you.net^
+||hide-my-ip.net^
+||hidemy.name^
+||jumpvpnproxy.com^
+||my-safe-net.com^
+||nolagvpn.com^
+||openvpn.net^
+||pandavpnpro.com^
+||pointtoserver.com^
+||privatevpn.com^
+||protect-my-ip.com^
+||secure-x-vpn.com^
+||setupvpn.com^
+||sunnetdevelop.pw^
+||wildfirevpn.com^
+||xvpnlinks.com^
 api-release.wildfiretec.com # Wildfire
-atlasvpn.com
-fastestvpn.com
-freevpn4you.net
-help.atlasvpn.com
-hidemy.name
-jumpvpnproxy.com
-nolagvpn.com
-nosslscribe.com # Windscribe
-openvpn.net
-pandavpnpro.com
 partner.hidemy.name
 partners.nolagvpn.com
 phosphor-pa.googleapis.com # Google Chrome IP protection experiment
-privatevpn.com
 proxysmart.microyiappstudio.com
 sumly.microyiappstudio.com
-wildfirevpn.com
 www.freevpn4you.net
 www.hide-my-ip.net
 www.secure-x-vpn.com
-xvpnlinks.com
+
+# Atlas VPN
+||atlasvpn.com^
+account.atlasvpn.com
+help.atlasvpn.com
+atlas-vpn.en.softonic.com
 
 # Blog, review, affiliate
 bestvaluevpn.com
@@ -41,10 +52,11 @@ www.vpnranks.com
 www.vpnxd.com
 
 # Browsec
-# Google Chrome Extension
-# https://gist.githubusercontent.com/brwinfo/0d4c6d2ebbe6fd716a43f0ac9d37ce22/raw
-# https://github.com/brwinfo/brwinfo.github.io/blob/master/api_urls/production.json
-browsec.com
+# See also get_browsec_github.py and get_browser_extension.py
+||trafcfy.com^
+||prmsrvs.com^
+||frmdom.com^
+||browsec.com^
 a066.l094.r351.fastcloudcdn.net
 ca941.l304.r603.fastcloudcdn.net
 d1kpbu8y3aofy8.cloudfront.net
@@ -53,7 +65,8 @@ d3e86dbklij2fu.cloudfront.net
 d3k73twqqvofzb.cloudfront.net
 
 # Cyber Ghost VPN
-cyberghostvpn.com
+||cyberghostvpn.com^
+||gen4.ninja^
 dev-cms.cyberghostvpn.com
 download.cyberghostvpn.com
 my.cyberghostvpn.com
@@ -63,8 +76,31 @@ support.cyberghostvpn.com
 www.cyberghostvpn.com
 
 # Hola VPN
+# Do not add all *.b-cdn.net (Bunny CDN).
+||c6gj-static.net^
+||h-vpn.org^
+||hola-compat.com^
+||hola-vpn.com^
+||hola.org^
+||holabrowser.com^
+||holafreevpn.com^
+||holafreevpn.com^
+||holavpn.com^
+||holavpn.net^
+||holavpnandroid.com^
+||holavpnextension.com^
+||holavpninstaller.com^
+||holavpnrussia.com^
+||holavpnworld.com^
+||holax.io^
+||kbz0pwvxmv.com^
+||su89-cdn.net^
+||wbzby2a2k9.com^
+||x-cdn-static.com^
+||yd6n63ptky.com^
+||yg5sjx5kzy.com^
+||zspeed-cdn.com^
 cdn4.hola.org
-hola.org
 client.h-vpn.org
 perr.hola.org
 client-cdn4.hola.org
@@ -82,13 +118,7 @@ client.holavpnworld.com
 client.holax.io
 client.h-vpn.org
 client.zspeed-cdn.com
-holavpnextension.com
-hola-vpn.com
-holax.io
-holavpn.net
-holavpn.net
-holavpnrussia.com
-holafreevpn.com 
+support.hola.org
 perr.hola-vpn.com 
 perr.zspeed-cdn.com
 perr.h-vpn.org
@@ -102,6 +132,20 @@ vdkd6nz8qr.s3.amazonaws.com # https://vdkd6nz8qr.s3.amazonaws.com/cloud_failover
 # https://raw.githubusercontent.com/the7c/update/master/src/js/data.json
 # https://codeberg.org/7c/rawsilo/raw/branch/main/src/js/data.json
 # https://addons.mozilla.org/en-US/firefox/addon/hoxx-vpn-proxy/
+||annual2025.uk^
+||chester.run^
+||hoxx.com^
+||mixing.run^
+||openips.cc^
+||particle.pics^
+||pursuant.run^
+||sciences.run^
+||severity.uk^
+||should-licence.cc^
+||spoken.fun^
+||sublimity.uk^
+||surprise.pics^
+||timeout8.uk^
 baseserver.io
 collapserz.uk
 eggx.should-licence.cc
@@ -118,9 +162,13 @@ sublimity.uk
 vsxm.rounds.cc
 wemanageit.uk
 okog.surprise.pics
-
+tierbase3.fra1.cdn.digitaloceanspaces.com # mirror
+tierbase4.s3.amazonaws.com # mirror
+pub-8029ed10cf4e4db0b3757e6b82ef7a40.r2.dev # mirror on Cloudflare
+mirror4.es-mad-1.linodeobjects.com # mirror in Madrid
 
 # KeepSolid
+||keepsolid.com^
 app.keepsolid.com
 id.keepsolid.com
 keepsolid.statuspage.io
@@ -128,6 +176,7 @@ my.keepsolid.com
 www.keepsolid.com
 
 # IPVanish
+||ipvanish.com^
 account.ipvanish.com
 checkout.ipvanish.com
 status.ipvanish.com
@@ -135,6 +184,11 @@ support.ipvanish.com
 www.ipvanish.com
 
 # NordVPN
+||nordvpn.com^
+||nordvpn.net^
+||napps-1.com^
+||napps-2.com^
+||napps-6.com^
 go.nordvpn.net
 debug.nordvpn.com
 nordvpn.zendesk.com
@@ -163,6 +217,8 @@ applytics.icpsuawn1zy5amys.com
 nordvpn-extension-app.firebaseapp.com
 
 # Surfshark
+||surfshark.com^
+||surfshark.net^
 get.surfshark.net
 my.surfshark.com
 order.surfshark.com
@@ -171,14 +227,30 @@ surfshark.com
 surfshark.net
 
 # PureVPN
+||purevpn.com^
+||purevpn-tools.com^
+||purevpn.de^
+||purevpn.fr^
+||purevpn.com.tw^
+||puredome.com^
 api.proxy.purevpn.com
 api.purevpn.com
 auth.purevpn.com
+my.purevpn.com
+support.purevpn.com
 d2xm0br2v1fxfc.cloudfront.net
+www.purevpn.com.tw
+www.purevpn.de
+www.purevpn.fr
+www.puredome.com
 purevpn.fusionauth.io
 
 # ProtonVPN
 # https://subdomainfinder.c99.nl/scans/2023-05-01/protonvpn.com
+||proton.me^
+||protonvpn.com^
+||protonvpn.net^
+||protonvpn.ch^
 account.protonvpn.com
 free.protonvpn.com
 get.protonvpn.com
@@ -238,19 +310,24 @@ www.forumproxyleecher.com
 www.privateproxyreviews.com
 www.proxifier.com
 www.socksproxychecker.com
+||toolip.io^
+support.toolip.io
 
-# Proxy, web-based
+# Proxies, web-based, in general
 103prxy.com
 browser.best-server.pro
 freeproxy.win
 hidedoor.com
+||steganos.com^
 proxy-de.steganos.com
 proxy-es.steganos.com
 proxy-fr.steganos.com
 proxy-us.steganos.com
+www.steganos.com
 proxyium.com
 proxysite.one
 proxysite.pro
+||kproxy.com^
 server1.kproxy.com
 server2.kproxy.com
 server3.kproxy.com
@@ -269,9 +346,9 @@ webproxy.to
 www.kproxy.com
 www.my-proxy.com
 www.proxy-youtube.com
-www.steganos.com
 
 # Telleport
+||telleport.me^
 app.telleport.me # example Android UI https://app.telleport.me/ui/android/?r=1
 dev.telleport.me
 telleport.firebaseapp.com
@@ -279,6 +356,7 @@ telleport.appspot.com
 
 # Touch VPN (Google Chrome extension)
 # see also touchvpn.net
+||touchvpn.net^
 www.touchvpn.net
 touchvpn.net
 api.hsselite.com
@@ -291,6 +369,7 @@ www.hotspotshield.com
 # VeePN
 # https://hackertarget.com/find-dns-host-records/
 # https://s3-oregon-1.s3-us-west-2.amazonaws.com/api.json
+||veepn.com^
 affiliate.veepn.com
 analytics.veepn.com
 antpeak.com
@@ -338,17 +417,18 @@ jobwelldown.com
 metserviceapi.com
 mobapi-help.com
 newads-cdn.com
-premium.xvpn.io
 sabq-api.com
 search-apis.com
 tbunet.com
 uinlive-time.com
-vpn.xvpn.io
 wiki-media-help-links.com
 x-vpn.en.softonic.com
-xvpn.io
 zerodh-api.com
-334d3a6d_9wcrhe8q69.360tls.com # FIXME: needs wildcard
+||xvpn.io^
+vpn.xvpn.io
+premium.xvpn.io
+||360tls.com^
+334d3a6d_9wcrhe8q69.360tls.com
 235d97b3_9wcrhe8q69.360tls.com
 23b64e7e_9wcrhe8q69.360tls.com
 
@@ -363,6 +443,7 @@ zenmate.com
 
 # Urban VPN
 # https://addons.mozilla.org/en-US/firefox/addon/urban-vpn/
+||urban-vpn.com^
 www.urban-vpn.com
 premium.urban-vpn.com
 install.urban-vpn.com
@@ -374,9 +455,20 @@ analytics-toolbar.urban-vpn.com
 authentication.urban-vpn.com
 
 # SandVPN
+||sandvpn.com^
 sandvpn.com
 api.sandvpn.com
 www.sandvpn.com
+
+# SetupVPN
+||approval.fun^
+||boolean.run^
+||clusters.run^
+||figure.run^
+||pointed.cc^
+||scanners.fun^
+||talked.run^
+||throat.team^
 
 # vpn by Network DD
 # https://addons.mozilla.org/en-US/firefox/addon/vpn-__0
@@ -384,5 +476,11 @@ www.sandvpn.com
 # Check later if it comes back.
 softnour.com
 
-
-
+# Windscribe
+||block-only-if-you-have-a-small-pee-pee.io^
+||totallyacdn.com^
+||whiskergalaxy.com^
+||windscribe.com^
+||deepstateplatypus.com^
+||staticnetcontent.com^
+||nosslscribe.com^
