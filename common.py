@@ -28,7 +28,6 @@ import sys
 import unittest
 
 # Constants
-ADGUARD_INPUT_FN = 'data/input/adguard.txt'
 ALLOWLIST_IP_FN = 'data/input/allowlist_ip.txt'
 ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
@@ -187,6 +186,9 @@ def read_hostnames_from_file(filename: str) -> tuple[list[str], list[str]]:
                 continue
             if '|' in item or '^' in item:
                 patterns.add(item)
+                # Every pattern ||example.com^ is also a hostname, and
+                # this is the only pattern supported now.
+                patterns.add(item.strip('|^'))
             elif '.' in item:  # Basic check for a valid hostname structure
                 hostnames.add(item)
     return list(hostnames), list(patterns)
