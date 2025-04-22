@@ -7,9 +7,10 @@ import os
 import requests
 import time
 import zipfile
+from tqdm import tqdm
 
 from common import (
-    AdguardPatternChecker, Allowlist, ADGUARD_INPUT_FN,
+    AdguardPatternChecker, Allowlist,
     read_input_hostnames,
     read_hostnames_from_file, sort_fqdns, write_hostnames_to_text_file
 )
@@ -47,14 +48,17 @@ def get_all_patterns():
     """Read patterns from all input files"""
     _hostnames_only, patterns_only = read_input_hostnames(input_hostname_only_pattern)
     _hostnames_ip, patterns_ip = read_input_hostnames(input_hostname_ip_pattern)
-    _adguard_hostnames, adguard_patterns = read_hostnames_from_file(ADGUARD_INPUT_FN)
-    return list(set(patterns_only) | set(patterns_ip) | set(adguard_patterns))
+    return list(set(patterns_only) | set(patterns_ip))
 
 
 def filter_umbrella_hostnames(cisco_hostnames):
     adguard_patterns = get_all_patterns()
     adguard_checker = AdguardPatternChecker(adguard_patterns)
-    hostnames_matching_pattern = [hostname for hostname in cisco_hostnames if adguard_checker.check_fqdn(hostname)]
+    hostnames_matching_pattern = []
+    for hostname in tqdm(cisco_hostnames, desc="Filtering hostnames"):
+        # Do not add example.com if ||example.com^ is a known pattern.
+        if adguard_checker.check_fqdn(hostname) and not f"||{hostname}^" in adguard_patterns:
+            hostnames_matching_pattern.append(hostname)
     if os.path.exists(output_fn):
         prior_hostnames, _ = read_hostnames_from_file(output_fn)
     else:
