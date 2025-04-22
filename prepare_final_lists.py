@@ -30,6 +30,32 @@ input_hostname_ip_pattern = 'data/input/hostname_ip/*.txt'
 adguard_output_fn = 'data/output/adguard.txt'
 max_workers = 8
 
+ALIAS_MAP = {
+    "holax.io": "hola",
+    "holavpn.net": "hola",
+    "hola.org": "hola",
+    "nordvpn.com": "nordvpn",
+    "nordvpn": "nordvpn",
+    "windscribe.com": "windscribe",
+    "windscribe": "windscribe",
+    "deepstateplatypus.com": "windscribe",
+    "totallyacdn.com": "windscribe",
+    "whiskergalaxy.com": "windscribe",
+    "block-only-if-you-have-a-small-pee-pee.io": "windscribe",
+    "staticnetcontent.com": "windscribe",
+    "prmsrvs.com": "browsec",
+    "frmdom.com": "browsec",
+    "trafcfy.com": "browsec",
+    "hoxx.com": "hoxx",
+    "spoken.fun": "hoxx",
+    "surprise.pics": "hoxx",
+    "chester.run": "hoxx",
+    "mixing.run": "hoxx",
+    "pursuant.run": "hoxx",
+    "sciences.run": "hoxx",
+    "gen4.ninja": "cyberghost",
+}
+
 
 def read_ips(directory):
     """Read IPs, one IP per line
@@ -145,8 +171,16 @@ def write_hostnames(fqdns: list, pattern_list: list) -> None:
             output_file.write(f"{fqdn}\n")
 
 
+def canonicalize_hostnames(hostnames):
+    """Simplify list of hostnames using ALIAS_MAP"""
+    canonical = set()
+    for h in hostnames:
+        canonical.add(ALIAS_MAP.get(h, h))
+    return sorted(canonical)
+
+
 def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
-    """"Write final list of IP addresses to file
+    """Write final list of IP addresses to file
 
     Args:
         ip_to_root_domains: dict with IP as key and list of root domains as values
@@ -171,7 +205,7 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 
     with open(final_ip_fn, "w", encoding="utf-8") as output_file:
         for ip in sorted_ips:
-            hostnames_list = sort_fqdns(set(merged_dict[ip]))
+            hostnames_list = canonicalize_hostnames(set(merged_dict[ip]))
             hostnames_str = ",".join(hostnames_list)
             output_file.write(f"{ip} # {hostnames_str}\n")
 
