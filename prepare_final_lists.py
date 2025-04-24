@@ -6,19 +6,24 @@ Finally, it writes one list of hostnames and one list of IP addresses.
 """
 
 # built-in
+import argparse
 import collections
 import concurrent.futures
+import datetime
+import lzma
 import ipaddress
+import json
 import os
-import re
 import sys
-import unittest
 
 # local import
-from common import AdguardPatternChecker, Allowlist, clean_line, read_hostnames_from_file, read_input_hostnames, resolve_hostname, sort_fqdns
+from common import (AdguardPatternChecker, Allowlist,
+                    clean_line, read_input_hostnames,
+                    resolve_hostname, sort_fqdns)
 
 # third-party import
 import bogons
+import requests
 import tqdm
 
 
@@ -29,6 +34,9 @@ input_hostname_only_pattern = 'data/input/hostname_only/*.txt'
 input_hostname_ip_pattern = 'data/input/hostname_ip/*.txt'
 adguard_output_fn = 'data/output/adguard.txt'
 max_workers = 8
+
+R2_CACHE_URL = 'https://az0-vpnip-public.oooninja.com/ip_cache.json.lzma'
+LOCAL_CACHE_PATH = 'data/cache/ip_cache.json.lzma'
 
 ALIAS_MAP = {
     "holax.io": "hola",
@@ -90,7 +98,7 @@ def get_root_domain(fqdn: str) -> str:
     return '.'.join([ext.domain, ext.suffix])
 
 
-def resolve_hosts(input_fqdns: list, min_resolved_host_count) -> dict:
+def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=None, update_cache=False) -> dict:
     """Resolve FQDNs to IPs addresses
 
     Args:
@@ -113,7 +121,13 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count) -> dict:
 
     def resolve_hostname_and_add(this_fqdn):
         nonlocal hostnames_with_non_public_ip, hostnames_with_ip_in_allowlist, valid_fqdns
-        ip_addresses = resolve_hostname(this_fqdn)
+        # Use cache if available
+        if resolver_cache is not None and this_fqdn in resolver_cache:
+            ip_addresses = resolver_cache[this_fqdn]
+        else:
+            ip_addresses = resolve_hostname(this_fqdn)
+            if update_cache and resolver_cache is not None:
+                resolver_cache[this_fqdn] = ip_addresses
         root_domain = get_root_domain(this_fqdn)
         for this_ip_addr in sorted(ip_addresses):
             if allowlist.check_ip_in_ranges(this_ip_addr):
@@ -210,19 +224,65 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
             output_file.write(f"{ip} # {hostnames_str}\n")
 
 
-def go():
+def download_and_load_resolver_cache(cache_url, cache_path):
+    """Download and load resolver cache from R2"""
+    print(f"Downloading resolver cache from {cache_url}")
+    r = requests.get(cache_url, timeout=60)
+    r.raise_for_status()
+    with open(cache_path, 'wb') as f:
+        f.write(r.content)
+    with lzma.open(cache_path, 'rt', encoding='utf-8') as f:
+        cache_data = json.load(f)
+    print(f"Loaded resolver cache with {len(cache_data['host_to_ips'])} entries, created {cache_data['created_utc']}")
+    return cache_data['host_to_ips']
+
+
+def write_resolver_cache(cache_path, host_to_ips):
+    """Write resolver cache to file"""
+    data = {
+        'created_utc': datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z',
+        'host_to_ips': host_to_ips
+    }
+    with lzma.open(cache_path, 'wt', encoding='utf-8') as f:
+        json.dump(data, f)
+    print(f"Wrote resolver cache with {len(host_to_ips)} entries to {cache_path}")
+
+
+def main():
+    """Main function"""
+    parser = argparse.ArgumentParser(description="Prepare final VPN/IP lists")
+    parser.add_argument('--use-resolver-cache', action='store_true',
+                        help='Use public R2 resolver cache for hostname resolution')
+    args = parser.parse_args()
+
+    os.makedirs(os.path.dirname(LOCAL_CACHE_PATH), exist_ok=True)
+
+    resolver_cache = None
+    if args.use_resolver_cache:
+        resolver_cache = download_and_load_resolver_cache(R2_CACHE_URL, LOCAL_CACHE_PATH)
+        update_cache = False
+    else:
+        resolver_cache = {}
+        update_cache = True
+
     hostnames_only, patterns_only = read_input_hostnames(input_hostname_only_pattern)
     hostnames_ip, patterns_ip = read_input_hostnames(input_hostname_ip_pattern)
     fqdns_to_resolve_no_ip_collection = list(set(hostnames_only))
-    (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(fqdns_to_resolve_no_ip_collection, 50)
-    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip, 20)
+    (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(
+        fqdns_to_resolve_no_ip_collection, 50, resolver_cache=resolver_cache, update_cache=update_cache)
+    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip,
+                                                       20, resolver_cache=resolver_cache, update_cache=update_cache)
     valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
     all_patterns = list(set(patterns_only) | set(patterns_ip))
     write_hostnames(valid_fqdns, all_patterns)
     ips_only = read_ips(ip_dir)
     write_ips(ip_to_root_domains, ips_only)
 
+    if update_cache:
+        write_resolver_cache(LOCAL_CACHE_PATH, resolver_cache)
+
+    print(f"{sys.argv[0]} is done")
+
 
 if __name__ == "__main__":
-    go()
-    print(f"{sys.argv[0]} is done")
+    main()
