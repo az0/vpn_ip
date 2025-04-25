@@ -90,10 +90,16 @@ class Allowlist:
         return hostname in self.hostname_allowlist
 
     def check_ip_in_ranges(self, ip: str) -> bool:
-        """Check if IP is in allowlist"""
+        """Return True if IP is in allowlist
+
+        Returns False for loopback and private addresses.
+        """
         assert isinstance(ip, str)
+        ip_obj = ipaddress.ip_address(ip)
+        if ip_obj.is_loopback or ip_obj.is_private:
+            return False
         for r in self.ip_allowlist:
-            if ipaddress.ip_address(ip) in ipaddress.ip_network(r):
+            if ip_obj in ipaddress.ip_network(r):
                 return True
         return False
 
