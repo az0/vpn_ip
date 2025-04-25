@@ -101,25 +101,21 @@ class Allowlist:
 class TestCommon(unittest.TestCase):
     """Test common functions"""
 
-    def test_add_new_hostnames_to_file(self):
-        """Test add_new_hostnames_to_file()"""
-        with tempfile.TemporaryDirectory() as tmpdir:
-            oldcwd = os.getcwd()
-            os.chdir(tmpdir)
-            os.makedirs(os.path.join('data', 'input', 'hostname_ip'))
+    def test_add_new_hostnames_to_file_existing(self):
+        """Test add_new_hostnames_to_file() with existing file"""
+        with tempfile.NamedTemporaryFile(mode='w+', delete=False) as tmp_file:
+            dst_fn = tmp_file.name
             # Create a file (not using add_new_hostnames_to_file)
             # with the initial hostnames.
-            dst_fn = 'hosts.txt'
-            full_path = os.path.join('data', 'input', 'hostname_ip', dst_fn)
             initial = ['host1.com', 'host2.com']
-            with open(full_path, 'w', encoding='utf-8') as f:
+            with open(dst_fn, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(initial) + '\n')
             # Hostnames in the stub overlap with the initial file.
 
-            def stub(*args):
+            def stub1(*args):
                 return ['host2.com', 'host3.com', 'host4.com']
-            add_new_hostnames_to_file(dst_fn, stub)
-            written, _ = read_hostnames_from_file(full_path)
+            add_new_hostnames_to_file(dst_fn, stub1)
+            written, _ = read_hostnames_from_file(dst_fn)
             expected = initial + ['host3.com', 'host4.com']
             # assertCountEqual compares elements ignoring the order.
             # (It does not just count the number of elements.)
@@ -129,27 +125,40 @@ class TestCommon(unittest.TestCase):
             def stub2(*args):
                 return initial.copy()
             add_new_hostnames_to_file(dst_fn, stub2)
-            written, _ = read_hostnames_from_file(full_path)
+            written, _ = read_hostnames_from_file(dst_fn)
             self.assertCountEqual(written, expected)
 
             # This stub returns nothing.
             def stub3(*args):
                 return []
             add_new_hostnames_to_file(dst_fn, stub3)
-            written, _ = read_hostnames_from_file(full_path)
+            written, _ = read_hostnames_from_file(dst_fn)
             self.assertCountEqual(written, expected)
 
+    def test_add_new_hostnames_to_file_new(self):
+        """Test add_new_hostnames_to_file() with new file"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            dst_fn = os.path.join(tmpdir, 'new.txt')
             # file does not exist scenario
-            dst_fn2 = 'new.txt'
 
             def stub4(*args):
                 return ['a.com', 'b.com']
-            add_new_hostnames_to_file(dst_fn2, stub4)
-            full_path2 = os.path.join('data', 'input', 'hostname_ip', dst_fn2)
-            written, _ = read_hostnames_from_file(full_path2)
+            add_new_hostnames_to_file(dst_fn, stub4)
+            written, _ = read_hostnames_from_file(dst_fn)
             self.assertCountEqual(written, ['a.com', 'b.com'])
 
-        os.chdir(oldcwd)
+    def test_add_new_hostname_to_file_pattern(self):
+        """Test adding the same pattern multiple times."""
+        pattern = '||foo.com^'
+        with tempfile.NamedTemporaryFile(mode='w+', delete=False) as tmp_file:
+            filepath = tmp_file.name
+            add_new_hostnames_to_file(filepath, lambda: [pattern])
+            add_new_hostnames_to_file(filepath, lambda: [pattern])
+            add_new_hostnames_to_file(filepath, lambda: [pattern])
+            tmp_file.seek(0)
+            content = tmp_file.read()
+        os.remove(filepath)
+        self.assertEqual(content.count(pattern), 1)
 
     def test_allowlist(self):
         allowlist = Allowlist()
@@ -184,6 +193,7 @@ class TestCommon(unittest.TestCase):
         self.assertEqual(sort_fqdns(adguard_list), adguard_list)
         self.assertEqual(sort_fqdns(adguard_list[::-1]), adguard_list)
 
+
 # Functions
 
 
@@ -191,19 +201,27 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
     """
     Add new hostnames to a file.
 
-    The file must already exist.
+    Args:
+        dst_fn: Destination file name. File may exist or be new.
+                If relative, use data/input/hostname_ip. Absolute
+                paths are used for testing.
+        get_subdomains_func: Function to get subdomains.
+        *args: Arguments to pass to get_subdomains_func.
+
+    New hostnames are appended to the file.
     """
-    full_fn = os.path.join('data/input/hostname_ip', dst_fn)
+    full_fn = dst_fn if os.path.isabs(dst_fn) else os.path.join('data/input/hostname_ip', dst_fn)
     if os.path.exists(full_fn):
-        known_hostnames, _ = read_hostnames_from_file(full_fn)
+        known_hostnames, known_patterns = read_hostnames_from_file(full_fn)
+        known_items = set(known_hostnames) | set(known_patterns)
     else:
-        known_hostnames = []
-    print(f'* count of known hostnames: {len(known_hostnames)}')
+        known_items = set()
+    print(f'* count of known items: {len(known_items)}')
 
     api_hostnames = get_subdomains_func(*args)
     print(f'* count of API hostnames: {len(api_hostnames)}')
 
-    new_hostnames = set(api_hostnames) - set(known_hostnames)
+    new_hostnames = set(api_hostnames) - known_items
 
     if not new_hostnames:
         print('* no new hostnames found')
