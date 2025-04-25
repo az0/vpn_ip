@@ -25,6 +25,7 @@ import os
 import re
 import socket
 import sys
+import tempfile
 import unittest
 
 # Constants
@@ -55,6 +56,12 @@ class AdguardPatternChecker:
 
 
 class Allowlist:
+    """Check network addresses against allowlist
+
+    The allowlist prevents addresses from being blocked by
+    blocking them from being written to files under data/output.
+    """
+
     def __init__(self):
         self.ip_allowlist = set()
         with open(ALLOWLIST_IP_FN, 'r', encoding='utf-8') as f:
@@ -92,6 +99,57 @@ class Allowlist:
 
 
 class TestCommon(unittest.TestCase):
+    """Test common functions"""
+
+    def test_add_new_hostnames_to_file(self):
+        """Test add_new_hostnames_to_file()"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            oldcwd = os.getcwd()
+            os.chdir(tmpdir)
+            os.makedirs(os.path.join('data', 'input', 'hostname_ip'))
+            # Create a file (not using add_new_hostnames_to_file)
+            # with the initial hostnames.
+            dst_fn = 'hosts.txt'
+            full_path = os.path.join('data', 'input', 'hostname_ip', dst_fn)
+            initial = ['host1.com', 'host2.com']
+            with open(full_path, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(initial) + '\n')
+            # Hostnames in the stub overlap with the initial file.
+
+            def stub(*args):
+                return ['host2.com', 'host3.com', 'host4.com']
+            add_new_hostnames_to_file(dst_fn, stub)
+            written, _ = read_hostnames_from_file(full_path)
+            expected = initial + ['host3.com', 'host4.com']
+            # assertCountEqual compares elements ignoring the order.
+            # (It does not just count the number of elements.)
+            self.assertCountEqual(written, expected)
+
+            # This stub repeats the initial hostnames, so no changes.
+            def stub2(*args):
+                return initial.copy()
+            add_new_hostnames_to_file(dst_fn, stub2)
+            written, _ = read_hostnames_from_file(full_path)
+            self.assertCountEqual(written, expected)
+
+            # This stub returns nothing.
+            def stub3(*args):
+                return []
+            add_new_hostnames_to_file(dst_fn, stub3)
+            written, _ = read_hostnames_from_file(full_path)
+            self.assertCountEqual(written, expected)
+
+            # file does not exist scenario
+            dst_fn2 = 'new.txt'
+
+            def stub4(*args):
+                return ['a.com', 'b.com']
+            add_new_hostnames_to_file(dst_fn2, stub4)
+            full_path2 = os.path.join('data', 'input', 'hostname_ip', dst_fn2)
+            written, _ = read_hostnames_from_file(full_path2)
+            self.assertCountEqual(written, ['a.com', 'b.com'])
+
+        os.chdir(oldcwd)
 
     def test_allowlist(self):
         allowlist = Allowlist()
@@ -240,6 +298,11 @@ def sort_fqdns(fqdns: list) -> list:
 
 
 def write_hostnames_to_text_file(filename, hostnames):
+    """
+    Write hostnames to a text file.
+
+    The file is sorted and includes a header.
+    """
     assert isinstance(filename, str)
     assert isinstance(hostnames, list)
     print(f'writing {len(hostnames):,} hostnames to {filename}')
