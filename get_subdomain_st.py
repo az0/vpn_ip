@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 # Get subdomains using the SecurityTrails API
 # Andrew Ziem, September 2024
+import os
+
 import requests
 import requests_cache
-import os
 
 from common import add_new_hostnames_to_file
 
 ST_API_KEY = os.getenv('ST_API_KEY')
-cache_expiration = 3600*24*30  # 30 days
+CACHE_EXPIRATION = 3600*24*30  # 30 days
 
 if not ST_API_KEY:
     raise ValueError(
         'The environment variable ST_API_KEY is not set. See https://securitytrails.com/app/account/credentials')
 
 requests_cache.install_cache(
-    'securitytrails_subdomains_cache', backend='sqlite', expire_after=cache_expiration)
+    'securitytrails_subdomains_cache', backend='sqlite', expire_after=CACHE_EXPIRATION)
 
 
 def get_subdomains(domain):
@@ -27,7 +28,7 @@ def get_subdomains(domain):
         "APIKEY": ST_API_KEY
     }
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=30)
     if response.status_code == 200:
         subdomains = response.json()['subdomains']
     else:
@@ -36,7 +37,7 @@ def get_subdomains(domain):
 
 
 def check_api_usage():
-
+    """Check API usage"""
     url = "https://api.securitytrails.com/v1/account/usage"
 
     headers = {
@@ -45,12 +46,13 @@ def check_api_usage():
     }
 
     with requests_cache.disabled():
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=30)
 
     print(f'API quota: {response.text}')
 
 
 def main():
+    """Main function"""
     domains = (('trafcfy.com', 'browsec.txt'),
                ('prmsrvs.com', 'browsec.txt'),
                ('frmdom.com', 'browsec.txt'),
@@ -76,4 +78,5 @@ def main():
     check_api_usage()
 
 
-main()
+if __name__ == '__main__':
+    main()

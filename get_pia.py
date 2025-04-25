@@ -3,13 +3,15 @@
 Originally by DEVisions
 https://github.com/az0/vpn_ip/issues/4
 """
-import requests
+
 import csv
+import requests
 
 
 def fetch_pia_servers():
+    """Fetch PIA servers from GitHub"""
     url = "https://raw.githubusercontent.com/Lars-/PIA-servers/refs/heads/master/export.csv"
-    response = requests.get(url)
+    response = requests.get(url, timeout=30)
 
     if response.status_code != 200:
         print("Failed to fetch data")
@@ -33,7 +35,7 @@ def fetch_pia_servers():
         output_lines.append(formatted_line)
 
     fn = "data/input/ip/pia.txt"
-    with open(fn, "w") as file:
+    with open(fn, "w", encoding="utf-8") as file:
         file.write("\n".join(output_lines))
 
     print(f"Output saved to {fn}")

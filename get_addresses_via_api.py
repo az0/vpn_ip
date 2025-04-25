@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 
+"""
+Get addresses via web service APIs and store in text files.
+
+The configuration file is a JSON file.
+"""
+
 import json
 import os
 import sys
-import requests
 from urllib.parse import urlparse
+
+import requests
 
 from common import write_hostnames_to_text_file
 
-hostname_ip_root = 'data/input/hostname_ip/'
-ip_root = 'data/input/ip/'
-json_config_fn = 'data/get_addresses_via_api.json'
+HOSTNAME_IP_ROOT = 'data/input/hostname_ip/'
+IP_ROOT = 'data/input/ip/'
+JSON_CONFIG_FN = 'data/get_addresses_via_api.json'
 
 
 def collect_hostnames_and_ips(url, hostname_key, ip_key):
@@ -19,7 +26,7 @@ def collect_hostnames_and_ips(url, hostname_key, ip_key):
     assert isinstance(hostname_key, (list, tuple))
     assert isinstance(ip_key, (list, tuple))
     print(f'reading {url}')
-    response = requests.get(url)
+    response = requests.get(url, timeout=30)
     if response.status_code == 200:
         data = response.json()
         hostnames = []
@@ -32,7 +39,7 @@ def collect_hostnames_and_ips(url, hostname_key, ip_key):
         return (None, None)
 
 
-def extract_hostname(input):
+def extract_hostname(address_source):
     """Extract hostname from input
 
     Input can be either a string or a list of strings.
@@ -40,20 +47,20 @@ def extract_hostname(input):
 
     This returns a list of strings (even if input is a string).
     """
-    if isinstance(input, str):
+    if isinstance(address_source, str):
         # check if a URL like http: or a hostname like example.com
-        if input.startswith('http'):
-            parsed_url = urlparse(input)
+        if address_source.startswith('http'):
+            parsed_url = urlparse(address_source)
             return (parsed_url.hostname,)
         else:
-            return (input,)
-    elif isinstance(input, list):
+            return (address_source,)
+    elif isinstance(address_source, list):
         ret = []
-        for item in input:
+        for item in address_source:
             ret.extend(extract_hostname(item))
         return ret
     else:
-        raise ValueError(f"Unexpected input type: {type(input)}")
+        raise ValueError(f"Unexpected input type: {type(address_source)}")
 
 
 def process_json(data, hostnames, ips, hostname_key, ip_key):
@@ -78,8 +85,8 @@ def process_json(data, hostnames, ips, hostname_key, ip_key):
 def process_service(service_code, service):
     """Process one service (e.g., WindScribe, ProtonVPN)"""
     print(f'processing {service_code}')
-    hostname_fn = os.path.join(hostname_ip_root, service_code+'_api.txt')
-    ip_fn = os.path.join(ip_root, service_code+'_api.txt')
+    hostname_fn = os.path.join(HOSTNAME_IP_ROOT, service_code+'_api.txt')
+    ip_fn = os.path.join(IP_ROOT, service_code+'_api.txt')
     all_hostnames = set()
     all_ips = set()
 
@@ -110,7 +117,7 @@ def process_service(service_code, service):
 def go():
     """Main entry point"""
 
-    with open(json_config_fn, encoding='utf-8') as file:
+    with open(JSON_CONFIG_FN, encoding='utf-8') as file:
         services = json.load(file)
 
     for key in services.keys():

@@ -4,9 +4,10 @@ Find hostnames from the Umbrella Popularity List that match a list of Adguard pa
 """
 
 import os
-import requests
 import time
 import zipfile
+
+import requests
 from tqdm import tqdm
 
 from common import (
@@ -14,23 +15,27 @@ from common import (
     read_input_hostnames,
     read_hostnames_from_file, sort_fqdns, write_hostnames_to_text_file
 )
-from prepare_final_lists import input_hostname_only_pattern, input_hostname_ip_pattern
+from prepare_final_lists import (
+    INPUT_HOSTNAME_ONLY_PATTERN, INPUT_HOSTNAME_IP_PATTERN, FINAL_HOSTNAME_FN
+)
 
-output_fn = 'data/input/hostname_only/cisco_umbrella.txt'
-max_zip_file_age_days = 7
+OUTPUT_FN = 'data/input/hostname_only/cisco_umbrella.txt'
+MAX_ZIP_FILE_AGE_DAYS = 7
 
 
 def get_cisco_umbrella():
+    """Download and extract the list"""
     tmpdir = os.getenv('XDG_CACHE_HOME', os.getenv('TMPDIR', '/tmp'))
     fn = os.path.join(tmpdir, 'top-1m-cisco-umbrella.zip')
-    if os.path.isfile(fn) and (time.time() - os.path.getmtime(fn)) > (max_zip_file_age_days * 24 * 60 * 60):
+    if os.path.isfile(fn) and (time.time() - os.path.getmtime(fn)) > (MAX_ZIP_FILE_AGE_DAYS * 24 * 60 * 60):
         print(f'deleting old file {fn}')
         os.remove(fn)
 
     if not os.path.isfile(fn):
         url = 'http://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip'
         print(f'downloading from {url} to {fn}')
-        r = requests.get(url)
+        r = requests.get(url, timeout=30)
+        r.raise_for_status()
         with open(fn, 'wb') as file:
             file.write(r.content)
 
@@ -46,12 +51,13 @@ def get_cisco_umbrella():
 
 def get_all_patterns():
     """Read patterns from all input files"""
-    _hostnames_only, patterns_only = read_input_hostnames(input_hostname_only_pattern)
-    _hostnames_ip, patterns_ip = read_input_hostnames(input_hostname_ip_pattern)
+    _hostnames_only, patterns_only = read_input_hostnames(INPUT_HOSTNAME_ONLY_PATTERN)
+    _hostnames_ip, patterns_ip = read_input_hostnames(INPUT_HOSTNAME_IP_PATTERN)
     return list(set(patterns_only) | set(patterns_ip))
 
 
 def filter_umbrella_hostnames(cisco_hostnames):
+    """Filter hostnames based on patterns and write to file"""
     adguard_patterns = get_all_patterns()
     adguard_checker = AdguardPatternChecker(adguard_patterns)
     hostnames_matching_pattern = []
@@ -59,20 +65,20 @@ def filter_umbrella_hostnames(cisco_hostnames):
         # Do not add example.com if ||example.com^ is a known pattern.
         if adguard_checker.check_fqdn(hostname) and not f"||{hostname}^" in adguard_patterns:
             hostnames_matching_pattern.append(hostname)
-    if os.path.exists(output_fn):
-        prior_hostnames, _ = read_hostnames_from_file(output_fn)
+    if os.path.exists(OUTPUT_FN):
+        prior_hostnames, _ = read_hostnames_from_file(OUTPUT_FN)
     else:
         prior_hostnames = []
     export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
     allowlist = Allowlist()
     export_hostnames = [
         hostname for hostname in export_hostnames if not allowlist.check_hostname_in_allowlist(hostname)]
-    write_hostnames_to_text_file(output_fn, sort_fqdns(export_hostnames))
+    write_hostnames_to_text_file(OUTPUT_FN, sort_fqdns(export_hostnames))
 
 
 def analyze_overlap(cisco_hostnames):
-    from prepare_final_lists import final_hostname_fn
-    final_hostnames, _ = read_hostnames_from_file(final_hostname_fn)
+    """Analyze overlap with final list"""
+    final_hostnames, _ = read_hostnames_from_file(FINAL_HOSTNAME_FN)
     print(f'count of final hostnames: {len(final_hostnames):,}')
     keep_top = 2000
     cisco_top_1k = cisco_hostnames[:keep_top]
@@ -84,6 +90,7 @@ def analyze_overlap(cisco_hostnames):
 
 
 def main():
+    """Main function"""
     cisco_hostnames = get_cisco_umbrella()
     filter_umbrella_hostnames(cisco_hostnames)
     analyze_overlap(cisco_hostnames)

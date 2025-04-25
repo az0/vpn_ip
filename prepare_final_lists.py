@@ -16,28 +16,26 @@ import json
 import os
 import sys
 
+# third-party import
+import bogons
+import requests
+import tldextract
+import tqdm
+
 # local import
 from common import (AdguardPatternChecker, Allowlist,
                     clean_line, read_input_hostnames,
                     resolve_hostname, sort_fqdns)
 
-# third-party import
-import bogons
-import requests
-import tqdm
-
-
-ip_dir = 'data/input/ip'
-final_ip_fn = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
-final_hostname_fn = 'data/output/hostname.txt'
-input_hostname_only_pattern = 'data/input/hostname_only/*.txt'
-input_hostname_ip_pattern = 'data/input/hostname_ip/*.txt'
-adguard_output_fn = 'data/output/adguard.txt'
-max_workers = 8
-
+IP_DIR = 'data/input/ip'
+FINAL_IP_FN = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
+FINAL_HOSTNAME_FN = 'data/output/hostname.txt'
+INPUT_HOSTNAME_ONLY_PATTERN = 'data/input/hostname_only/*.txt'
+INPUT_HOSTNAME_IP_PATTERN = 'data/input/hostname_ip/*.txt'
+ADGUARD_OUTPUT_FN = 'data/output/adguard.txt'
+MAX_WORKERS = 8
 R2_CACHE_URL = 'https://az0-vpnip-public.oooninja.com/ip_cache.json.lzma'
 LOCAL_CACHE_PATH = 'data/cache/ip_cache.json.lzma'
-
 ALIAS_MAP = {
     "holax.io": "hola",
     "holavpn.net": "hola",
@@ -93,7 +91,6 @@ def read_ips(directory):
 
 def get_root_domain(fqdn: str) -> str:
     """Get root domain from FQDN"""
-    import tldextract
     ext = tldextract.extract(fqdn)
     return '.'.join([ext.domain, ext.suffix])
 
@@ -139,10 +136,10 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
             valid_fqdns.add(this_fqdn)
             ip_to_root_domains[this_ip_addr].add(root_domain)
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(input_fqdns)), total=len(input_fqdns)))
 
-    print(f'resolve_hosts() stats')
+    print('resolve_hosts() stats')
     unique_host_count = len(input_fqdns)
     print(f'* count of input FQDNs: {unique_host_count:,}')
     print(f'* count of unique, valid IPs resolved: {len(ip_to_root_domains):,}')
@@ -171,7 +168,7 @@ def write_hostnames(fqdns: list, pattern_list: list) -> None:
     assert len(fqdns) > 0
     assert len(pattern_list) > 0
     pattern_checker = AdguardPatternChecker(pattern_list)
-    with open(adguard_output_fn, "w", encoding="utf-8") as output_file:
+    with open(ADGUARD_OUTPUT_FN, "w", encoding="utf-8") as output_file:
         output_file.write('# This is a blocklist of VPNs in Adguard format.\n')
         output_file.write("# begin patterns\n")
         for pattern in sort_fqdns(pattern_list):
@@ -180,7 +177,7 @@ def write_hostnames(fqdns: list, pattern_list: list) -> None:
         # Write FQDNs that don't match any patterns in Adguard format.
         for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not pattern_checker.check_fqdn(fqdn)]):
             output_file.write(f"||{fqdn}^\n")
-    with open(final_hostname_fn, "w", encoding="utf-8") as output_file:
+    with open(FINAL_HOSTNAME_FN, "w", encoding="utf-8") as output_file:
         for fqdn in sort_fqdns(fqdns):
             output_file.write(f"{fqdn}\n")
 
@@ -217,7 +214,7 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 
     print(f'count of final IPs to write: {len(sorted_ips):,}')
 
-    with open(final_ip_fn, "w", encoding="utf-8") as output_file:
+    with open(FINAL_IP_FN, "w", encoding="utf-8") as output_file:
         for ip in sorted_ips:
             hostnames_list = canonicalize_hostnames(set(merged_dict[ip]))
             hostnames_str = ",".join(hostnames_list)
@@ -265,8 +262,8 @@ def main():
         resolver_cache = {}
         update_cache = True
 
-    hostnames_only, patterns_only = read_input_hostnames(input_hostname_only_pattern)
-    hostnames_ip, patterns_ip = read_input_hostnames(input_hostname_ip_pattern)
+    hostnames_only, patterns_only = read_input_hostnames(INPUT_HOSTNAME_ONLY_PATTERN)
+    hostnames_ip, patterns_ip = read_input_hostnames(INPUT_HOSTNAME_IP_PATTERN)
     fqdns_to_resolve_no_ip_collection = list(set(hostnames_only))
     (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(
         fqdns_to_resolve_no_ip_collection, 50, resolver_cache=resolver_cache, update_cache=update_cache)
@@ -275,7 +272,7 @@ def main():
     valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
     all_patterns = list(set(patterns_only) | set(patterns_ip))
     write_hostnames(valid_fqdns, all_patterns)
-    ips_only = read_ips(ip_dir)
+    ips_only = read_ips(IP_DIR)
     write_ips(ip_to_root_domains, ips_only)
 
     if update_cache:

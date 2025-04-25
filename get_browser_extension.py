@@ -56,7 +56,7 @@ def get_whois_info(domain):
     """Get WHOIS information for a domain"""
     assert isinstance(domain, str)
     try:
-        result = subprocess.run(["whois", domain], capture_output=True, text=True, timeout=15)
+        result = subprocess.run(["whois", domain], capture_output=True, text=True, timeout=15, check=True)
         output = result.stdout
     except Exception as e:
         return {"domain": domain, "error": str(e)}
@@ -138,8 +138,9 @@ def main():
 
 
 class TestBrowserExtensionExtractHosts(unittest.TestCase):
+    """Test functions in this module"""
     def test_parse_connect_src_hosts(self):
-        """Test parse_connect_src_hosts function."""
+        """Test parse_connect_src_hosts()"""
         manifest_data = {
             "content_security_policy": "default-src 'none'; connect-src 'self' https: http://example.com http://*.foo.com http://bar.com http://*/api/test;"
         }
@@ -154,7 +155,7 @@ class TestBrowserExtensionExtractHosts(unittest.TestCase):
         self.assertNotIn('*/api/test', hosts)
 
     def test_parse_whois_output(self):
-        """Test parse_whois_output() function."""
+        """Test parse_whois_output()"""
         sample_output = '''Registrar: Internet Domain Service BS Corp.
 Registrant Country: BS
 Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited

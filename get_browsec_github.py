@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 
-import requests
-import json
+"""
+Get hostnames from gists and store in text files.
+"""
+
 import sys
 from urllib.parse import urlparse
+
+import requests
 
 from common import add_new_hostnames_to_file
 
@@ -19,11 +23,12 @@ URLS = [
 
 
 def get_hostnames(urls):
+    """Get hostnames from gists"""
     hostnames = []
 
     for url in urls:
         try:
-            response = requests.get(url)
+            response = requests.get(url, timeout=30)
             response.raise_for_status()
 
             data = response.json()
@@ -39,10 +44,11 @@ def get_hostnames(urls):
 
 
 def main():
+    """Main function"""
     dst_fn = 'browsec_github.txt'
     add_new_hostnames_to_file(dst_fn, get_hostnames, URLS)
     print(f"{sys.argv[0]} is done")
 
 
-
-main()
+if __name__ == '__main__':
+    main()
