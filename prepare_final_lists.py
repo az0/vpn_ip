@@ -13,6 +13,7 @@ import datetime
 import lzma
 import ipaddress
 import json
+import unittest
 import os
 import sys
 
@@ -63,6 +64,67 @@ ALIAS_MAP = {
 }
 
 
+class TestPrepareFinalLists(unittest.TestCase):
+    """Test prepare_final_lists module"""
+
+    def test_fqdns_not_matching_pattern(self):
+        """Test fqdns_not_matching_pattern()"""
+        patterns = [
+            '||example1.com^',
+            'ample2.org|',
+            '|example3'
+        ]
+        pattern_checker = AdguardPatternChecker(patterns)
+        fqdns_match = [
+            # Matches ||example1.com^
+            'sub.example1.com',
+            'example1.com',
+            # Matches ample2.org|
+            'example2.org',
+            # Matches |example3
+            'example3.org',
+        ]
+        fqdns_not_match = [
+            # No match
+            'noexample1.com',
+            'example2.org.com',
+            'test.example3',
+            'foo.com',
+            'a.b.test.net'
+        ]
+        actual_output = fqdns_not_matching_pattern(fqdns_match + fqdns_not_match, pattern_checker)
+        self.assertCountEqual(actual_output, fqdns_not_match)
+
+    def test_fqdns_not_matching_pattern_empty_input(self):
+        patterns = ['||example.com^']
+        pattern_checker = AdguardPatternChecker(patterns)
+        fqdns = []
+        expected_output = []
+        actual_output = fqdns_not_matching_pattern(fqdns, pattern_checker)
+        self.assertEqual(actual_output, expected_output)
+
+    def test_fqdns_not_matching_pattern_empty_patterns(self):
+        patterns = []
+        pattern_checker = AdguardPatternChecker(patterns)
+        fqdns = ['a.com', 'b.net', 'c.org']
+        actual_output = fqdns_not_matching_pattern(fqdns, pattern_checker)
+        self.assertEqual(actual_output, fqdns)
+
+    def test_resolve_hosts(self):
+        """Test resolve_hosts()"""
+        input_fqdns = ['example.com', 'example.org', 'doesnotexist.example.com', 'private.host', 'local.host', 'cloudflare.host']
+        resolver_cache = collections.defaultdict(set)
+        resolver_cache['example.com'] = ['1.2.3.4']
+        resolver_cache['example.org'] = ['5.6.7.8']
+        resolver_cache['doesnotexist.example.com'] = []
+        resolver_cache['private.host'] = ['0.0.0.0']
+        resolver_cache['local.host'] = ['127.0.0.1']
+        resolver_cache['cloudflare.host'] = ['104.26.8.89']
+        (ret_hosts, ret_ip_to_root_domains) = resolve_hosts(input_fqdns, min_resolved_host_count=2, resolver_cache=resolver_cache, update_cache=False)
+        self.assertEqual(ret_hosts, set(['example.com', 'example.org', 'cloudflare.host']))
+        self.assertEqual(ret_ip_to_root_domains, {'1.2.3.4': {'example.com'}, '5.6.7.8': {'example.org'}})
+
+
 def read_ips(directory):
     """Read IPs, one IP per line
 
@@ -103,6 +165,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
 
     Returns:
         tuple (valid_hostnames, ip_addresses)
+        valid_hostnames is a set of valid hostnames
         ip_addresses is a dict with IP as key and list of root domains as values
 
 
@@ -129,6 +192,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
         for this_ip_addr in sorted(ip_addresses):
             if allowlist.check_ip_in_ranges(this_ip_addr):
                 hostnames_with_ip_in_allowlist.append(this_fqdn)
+                valid_fqdns.add(this_fqdn)
                 continue
             if not bogons.is_public_ip(this_ip_addr):
                 hostnames_with_non_public_ip.append(this_fqdn)
@@ -157,6 +221,22 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
     return (valid_fqdns, ip_to_root_domains)
 
 
+def fqdns_not_matching_pattern(fqdns, pattern_checker):
+    """Return list of FQDNs that do not match any pattern
+
+    Args:
+        fqdns: list of FQDNs
+        pattern_checker: AdguardPatternChecker instance
+
+    Returns:
+        list of FQDNs that do not match any pattern
+    """
+    ret = []
+    for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not pattern_checker.check_fqdn(fqdn)]):
+        ret.append(fqdn)
+    return ret
+
+
 def write_hostnames(fqdns: list, pattern_list: list) -> None:
     """Write final output list of FQDNs
 
@@ -175,8 +255,7 @@ def write_hostnames(fqdns: list, pattern_list: list) -> None:
             output_file.write(f"{pattern}\n")
         output_file.write("# end patterns\n")
         # Write FQDNs that don't match any patterns in Adguard format.
-        for fqdn in sort_fqdns([fqdn for fqdn in fqdns if not pattern_checker.check_fqdn(fqdn)]):
-            output_file.write(f"||{fqdn}^\n")
+        output_file.write('\n'.join(fqdns_not_matching_pattern(fqdns, pattern_checker)) + '\n')
     with open(FINAL_HOSTNAME_FN, "w", encoding="utf-8") as output_file:
         for fqdn in sort_fqdns(fqdns):
             output_file.write(f"{fqdn}\n")
@@ -264,13 +343,21 @@ def main():
 
     hostnames_only, patterns_only = read_input_hostnames(INPUT_HOSTNAME_ONLY_PATTERN)
     hostnames_ip, patterns_ip = read_input_hostnames(INPUT_HOSTNAME_IP_PATTERN)
-    fqdns_to_resolve_no_ip_collection = list(set(hostnames_only))
+    all_patterns = list(set(patterns_only) | set(patterns_ip))
+    pattern_to_hostname_only = []
+    for pattern in sort_fqdns(all_patterns):
+        if pattern.startswith('||') and pattern.endswith('^'):
+            # Convert pattern ||example.com^ to hostname example.com
+            pattern_hostname = pattern[2:-1]
+            if not pattern_hostname in hostnames_only:
+                pattern_to_hostname_only.append(pattern_hostname)
+    fqdns_to_resolve_no_ip_collection = list(set(hostnames_only) | set(pattern_to_hostname_only))
     (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(
         fqdns_to_resolve_no_ip_collection, 50, resolver_cache=resolver_cache, update_cache=update_cache)
     (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip,
                                                        20, resolver_cache=resolver_cache, update_cache=update_cache)
     valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
-    all_patterns = list(set(patterns_only) | set(patterns_ip))
+
     write_hostnames(valid_fqdns, all_patterns)
     ips_only = read_ips(IP_DIR)
     write_ips(ip_to_root_domains, ips_only)
