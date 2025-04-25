@@ -43,12 +43,68 @@ class AdguardPatternChecker:
     a subset of the Adguard syntax used by browser ad blockers.
 
     https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax
+
+    Supported special characters:
+    * ||: matches the beginning of a hostname, including any subdomain.
+    * ^: the separator character marks the end of a hostname.
+    * |: a pointer to the beginning or the end of the hostname. 
+
+    Examples of supported patterns:
+    * ||example.com^ matches example.com and sub.example.com
+    * ample.org| matches example.org but not example.org.com
+    * |example matches example.org but not test.example
+
+    Not supported special characters:
+    * @@ marker for exception
+    * / for regex
+    * asterisk (*) for wildcard
+    * rule modifiers like ^$important
+    * hosts syntax with IP address like 1.2.3.4 example.com
     """
 
     def __init__(self, patterns: list):
-        """Initialize with precompiled regex patterns"""
-        self.compiled_patterns = [re.compile(adguard_pattern.replace('||', r'(^|\.)').rstrip(
-            '^') + '$', re.IGNORECASE) for adguard_pattern in patterns]
+        """Initialize with precompiled regex patterns for supported syntax"""
+        compiled = []
+        for pattern_str in patterns:
+            if any(char in pattern_str for char in '*/$@'):
+                print(f"Warning: Skipping unsupported pattern (contains '*' or '/' or '@@' or '$'): {pattern_str}")
+                continue
+            try:
+                if pattern_str.startswith('||') and pattern_str.endswith('^'):
+                    # ||domain.com^ syntax
+                    domain_part = pattern_str[2:-1]
+                    domain_escaped = re.escape(domain_part)
+                    final_regex = r'(?:^|\.)' + domain_escaped + r'$'
+                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                elif pattern_str.startswith('|') and pattern_str.endswith('|'):
+                    # |pattern| syntax (exact match)
+                    exact_match_part = pattern_str[1:-1]
+                    pattern_escaped = re.escape(exact_match_part)
+                    final_regex = r'^' + pattern_escaped + r'$'
+                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                elif pattern_str.startswith('|'):
+                    # |pattern syntax (starts with)
+                    starts_with_part = pattern_str[1:]
+                    pattern_escaped = re.escape(starts_with_part)
+                    final_regex = r'^' + pattern_escaped
+                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                elif pattern_str.endswith('|'):
+                    # pattern| syntax (ends with)
+                    ends_with_part = pattern_str[:-1]
+                    pattern_escaped = re.escape(ends_with_part)
+                    final_regex = pattern_escaped + r'$'
+                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                elif pattern_str.startswith('/') and pattern_str.endswith('/'):
+                    print(f"Warning: Skipping unsupported regex pattern: {pattern_str}")
+                else:
+                    # Handle potential plain hostnames or other unsupported formats
+                    print(f"Warning: Skipping unsupported pattern format: {pattern_str}")
+            except re.error as e:
+                print(f"Warning: Invalid regex generated from pattern '{pattern_str}': {e}")
+            except Exception as e:
+                print(f"Warning: Error processing pattern '{pattern_str}': {e}")
+
+        self.compiled_patterns = compiled
 
     def check_fqdn(self, fqdn: str) -> bool:
         """Check if FQDN matches any of the precompiled patterns"""
@@ -186,11 +242,28 @@ class TestCommon(unittest.TestCase):
             ('barexample.org', ['||example.org^'], False),
             ('example.com', ['||example.org^'], False),
             ('example.org.uk', ['||example.org^'], False),
+            ('example.org', ['|example.org|'], True),
+            ('example.org', ['ample.org|'], True),
+            ('example.org.com', ['ample.org|'], False),
+            ('example.org', ['|example'], True),
+            ('test.example', ['|example'], False),
+
         )
         for fqdn, patterns, expected in test_cases:
             with self.subTest(fqdn=fqdn, patterns=patterns, expected=expected):
                 adguard_checker = AdguardPatternChecker(patterns)
                 self.assertEqual(adguard_checker.check_fqdn(fqdn), expected)
+
+    def test_read_hostnames_from_file(self):
+        """Test read_hostnames_from_file() function"""
+        with tempfile.NamedTemporaryFile(mode='w+', delete=False) as tmp_file:
+            hostnames = ['example.com', 'www.example.com']
+            patterns = ['||example.com^', '|example', 'example^']
+            tmp_file.write('#comment\n\n'+'# comment\n'.join(hostnames + patterns) + '#comment\n')
+            tmp_file.seek(0)
+            (actual_hostnames, actual_patterns) = read_hostnames_from_file(tmp_file.name)
+            self.assertCountEqual(actual_hostnames, sorted(hostnames))
+            self.assertCountEqual(actual_patterns, sorted(patterns))
 
     def test_sort_fqdns(self):
         """Test sort_fqdns() function"""
@@ -264,19 +337,30 @@ def read_hostnames_from_file(filename: str) -> tuple[list[str], list[str]]:
     with open(filename, 'r', encoding='utf-8') as file:
         for line in file:
             item = clean_line(line)
-            if not item:
+            if not item or '-tor.' in item:
                 continue
-            if '-tor.' in item:  # example: hostname=us-co-21-tor.protonvpn.net
-                # print(f'WARNING: skipping tor: {item}')
-                continue
-            if '|' in item or '^' in item:
+
+            # Identify patterns by specific markers
+            is_pattern = False
+            if item.startswith('||') and item.endswith('^'):
+                is_pattern = True
+            elif item.startswith('|') and item.endswith('|'):
+                is_pattern = True
+            elif item.startswith('|'): # Check after the previous two | cases
+                is_pattern = True
+            elif item.endswith('^'): # Treat lines ending in ^ as patterns too
+                is_pattern = True
+            elif item.endswith('|'): # Treat lines ending in | as patterns too
+                is_pattern = True
+
+            if is_pattern:
                 patterns.add(item)
-                # Every pattern ||example.com^ is also a hostname, and
-                # this is the only pattern supported now.
-                hostnames.add(item.strip('|^'))
-            elif '.' in item:  # Basic check for a valid hostname structure
+            # If not identified as a pattern and contains '.', then treat as hostname.
+            elif '.' in item:
                 hostnames.add(item)
-    return list(hostnames), list(patterns)
+            # else: Ignore lines that are neither patterns nor likely hostnames (e.g., 'example')
+
+    return sorted(hostnames), sorted(patterns)
 
 
 def read_input_hostnames(input_hostname_pattern) -> tuple[list[str], list[str]]:
