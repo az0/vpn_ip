@@ -249,6 +249,7 @@ def write_hostnames(fqdns: list, pattern_list: list) -> None:
     assert len(pattern_list) > 0
     pattern_checker = AdguardPatternChecker(pattern_list)
     with open(ADGUARD_OUTPUT_FN, "w", encoding="utf-8") as output_file:
+        output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
         output_file.write('# This is a blocklist of VPNs in Adguard format.\n')
         output_file.write("# begin patterns\n")
         for pattern in sort_fqdns(pattern_list):
@@ -257,6 +258,7 @@ def write_hostnames(fqdns: list, pattern_list: list) -> None:
         # Write FQDNs that don't match any patterns in Adguard format.
         output_file.write('\n'.join(fqdns_not_matching_pattern(fqdns, pattern_checker)) + '\n')
     with open(FINAL_HOSTNAME_FN, "w", encoding="utf-8") as output_file:
+        output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
         for fqdn in sort_fqdns(fqdns):
             output_file.write(f"{fqdn}\n")
 
@@ -294,6 +296,7 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
     print(f'count of final IPs to write: {len(sorted_ips):,}')
 
     with open(FINAL_IP_FN, "w", encoding="utf-8") as output_file:
+        output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
         for ip in sorted_ips:
             hostnames_list = canonicalize_hostnames(set(merged_dict[ip]))
             hostnames_str = ",".join(hostnames_list)
@@ -316,7 +319,7 @@ def download_and_load_resolver_cache(cache_url, cache_path):
 def write_resolver_cache(cache_path, host_to_ips):
     """Write resolver cache to file"""
     data = {
-        'created_utc': datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z',
+        'created_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         'host_to_ips': host_to_ips
     }
     with lzma.open(cache_path, 'wt', encoding='utf-8') as f:
