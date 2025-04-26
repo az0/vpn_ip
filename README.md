@@ -26,6 +26,16 @@ A complementary approach is to manage DNS resolution at the network router:
 * Reject forwarding to the IP addresses of DNS providers (e.g., [dibdot's DoH list](https://github.com/dibdot/DoH-IP-blocklists) with ipban).
 * Reject forwarding of TCP and UDP ports 53 and 853 or redirect them to your DNS resolver.
 
+## Download
+
+View and download the latest data files here. Use the Download URL for automatic updates.
+
+| File | GitHub | Download URL |
+|------|--------|---------|
+| [`hostname.txt`](data/output/hostname.txt) | [Raw](https://raw.githubusercontent.com/az0/vpn_ip/main/data/output/hostname.txt) | [Download](http://az0-vpnip-public.oooninja.com/hostname.txt) |
+| [`adguard.txt`](data/output/adguard.txt) | [Raw](https://raw.githubusercontent.com/az0/vpn_ip/main/data/output/adguard.txt) | [Download](http://az0-vpnip-public.oooninja.com/adguard.txt) |
+| [`ip.txt`](data/output/ip.txt) | [Raw](https://raw.githubusercontent.com/az0/vpn_ip/main/data/output/ip.txt) | [Download](http://az0-vpnip-public.oooninja.com/ip.txt) |
+
 ## Related
 
 * [X4BNet/lists_vpn](https://github.com/X4BNet/lists_vpn): IP addresses of VPN networks
