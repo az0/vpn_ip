@@ -6,3 +6,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.sqlite
+.venv/
+venv/
+.env
+.vscode/
+/data/cache/
