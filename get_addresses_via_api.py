@@ -111,7 +111,7 @@ def process_service(service_code, service):
         all_hostnames.update(old_hostnames)
 
     write_hostnames_to_text_file(hostname_fn, sorted(all_hostnames))
-    write_hostnames_to_text_file(ip_fn, sorted(all_ips))
+    write_hostnames_to_text_file(ip_fn, sorted(all_ips), units="IP addresses")
 
 
 def go():

@@ -1,4 +1,16 @@
 {
+    "hideme": {
+        "urls": [
+            "https://raw.githubusercontent.com/hidemevpn/proxy/master/config.json",
+            "http://188.166.142.39/servers/list"
+        ],
+        "hostname_key": [
+            []
+        ],
+        "ip_key": [
+            "host"
+        ]
+    },
     "hoxx": {
         "urls": [
             "https://tierbase3.fra1.cdn.digitaloceanspaces.com/tiershx.json",
