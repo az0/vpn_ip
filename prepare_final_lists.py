@@ -26,7 +26,8 @@ import tqdm
 # local import
 from common import (AdguardPatternChecker, Allowlist,
                     clean_line, read_input_hostnames,
-                    resolve_hostname, sort_fqdns)
+                    resolve_hostname, sort_fqdns,
+                    write_addresses_to_file)
 
 IP_DIR = 'data/input/ip'
 FINAL_IP_FN = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
@@ -237,32 +238,6 @@ def fqdns_not_matching_pattern(fqdns, pattern_checker):
     return ret
 
 
-def write_hostnames(fqdns: list, pattern_list: list) -> None:
-    """Write final output list of FQDNs
-
-    fqdns: list of FQDNs
-    pattern_list: list of Adguard patterns
-    """
-    assert isinstance(fqdns, (list, set))
-    assert isinstance(pattern_list, list)
-    assert len(fqdns) > 0
-    assert len(pattern_list) > 0
-    pattern_checker = AdguardPatternChecker(pattern_list)
-    with open(ADGUARD_OUTPUT_FN, "w", encoding="utf-8") as output_file:
-        output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
-        output_file.write('# This is a blocklist of VPNs in Adguard format.\n')
-        output_file.write("# begin patterns\n")
-        for pattern in sort_fqdns(pattern_list):
-            output_file.write(f"{pattern}\n")
-        output_file.write("# end patterns\n")
-        # Write FQDNs that don't match any patterns in Adguard format.
-        output_file.write('\n'.join(fqdns_not_matching_pattern(fqdns, pattern_checker)) + '\n')
-    with open(FINAL_HOSTNAME_FN, "w", encoding="utf-8") as output_file:
-        output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
-        for fqdn in sort_fqdns(fqdns):
-            output_file.write(f"{fqdn}\n")
-
-
 def canonicalize_hostnames(hostnames):
     """Simplify list of hostnames using ALIAS_MAP"""
     canonical = set()
@@ -361,9 +336,16 @@ def main():
                                                        20, resolver_cache=resolver_cache, update_cache=update_cache)
     valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
 
-    write_hostnames(valid_fqdns, all_patterns)
     ips_only = read_ips(IP_DIR)
     write_ips(ip_to_root_domains, ips_only)
+
+    pattern_checker = AdguardPatternChecker(all_patterns)
+    fqdns_not_matching = fqdns_not_matching_pattern(valid_fqdns, pattern_checker)
+    # Write patterns first, then non-matching FQDNs to Adguard file
+    adguard_combined_list = sort_fqdns(all_patterns) + sort_fqdns(fqdns_not_matching)
+    write_addresses_to_file(ADGUARD_OUTPUT_FN, adguard_combined_list, units='Adguard entries')
+    # Write all valid FQDNs to the final hostname file
+    write_addresses_to_file(FINAL_HOSTNAME_FN, sort_fqdns(valid_fqdns), units='hostnames')
 
     if update_cache:
         write_resolver_cache(LOCAL_CACHE_PATH, resolver_cache)

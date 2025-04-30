@@ -13,7 +13,7 @@ from tqdm import tqdm
 from common import (
     AdguardPatternChecker, Allowlist,
     read_input_hostnames,
-    read_hostnames_from_file, sort_fqdns, write_hostnames_to_text_file
+    read_hostnames_from_file, sort_fqdns, write_addresses_to_file
 )
 from prepare_final_lists import (
     INPUT_HOSTNAME_ONLY_PATTERN, INPUT_HOSTNAME_IP_PATTERN, FINAL_HOSTNAME_FN
@@ -73,7 +73,7 @@ def filter_umbrella_hostnames(cisco_hostnames):
     allowlist = Allowlist()
     export_hostnames = [
         hostname for hostname in export_hostnames if not allowlist.check_hostname_in_allowlist(hostname)]
-    write_hostnames_to_text_file(OUTPUT_FN, sort_fqdns(export_hostnames))
+    write_addresses_to_file(OUTPUT_FN, sort_fqdns(export_hostnames))
 
 
 def analyze_overlap(cisco_hostnames):
