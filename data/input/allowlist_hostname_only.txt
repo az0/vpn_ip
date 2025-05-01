@@ -9,6 +9,7 @@
 # FIXME later: allow Adguard patterns
 #
 # See ./common.py for explaination of the multiple allowlists.
+||amplitude.com^
 accounts.firefox.com
 accounts.google.com
 akamai.net
