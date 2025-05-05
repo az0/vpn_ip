@@ -1,4 +1,4 @@
-# 2025-05-05T02:44:28Z
+# 2025-05-05T13:28:19Z
 1.2.3.4 # windscribe
 1.220.90.178 # windscribe
 1.220.90.179 # windscribe
@@ -67,7 +67,7 @@
 3.70.154.92 # 360tls.com
 3.73.128.2 # 360tls.com
 3.76.208.164 # 360tls.com
-3.76.250.140 # hoxx
+3.76.250.140 # hoxx,ronald.run
 3.79.59.33 # 360tls.com
 3.79.111.225 # 360tls.com
 3.79.239.34 # 360tls.com
@@ -76,7 +76,7 @@
 3.85.235.203 # 360tls.com
 3.86.184.195 # 360tls.com
 3.89.0.0 # hola
-3.89.115.189 # hoxx
+3.89.115.189 # hoxx,ronald.run
 3.91.199.77 # approval.fun,areas.fun,boolean.run,choices.run,clusters.run,figure.run,hoxx,pointed.cc,sbjct.xyz,scanners.fun,talked.run,throat.team
 3.95.157.33 # 360tls.com
 3.96.211.247 # 360tls.com
@@ -92,6 +92,22 @@
 3.141.12.193 # 360tls.com
 3.143.24.145 # 360tls.com
 3.148.107.243 # 360tls.com
+3.162.104.18 # cloudfront.net
+3.162.104.49 # cloudfront.net
+3.162.104.113 # cloudfront.net
+3.162.104.157 # cloudfront.net
+3.167.64.26 # cloudfront.net
+3.167.64.71 # cloudfront.net
+3.167.64.114 # cloudfront.net
+3.167.64.125 # cloudfront.net
+3.167.64.128 # cloudfront.net
+3.167.64.135 # cloudfront.net
+3.167.64.138 # cloudfront.net
+3.167.64.200 # cloudfront.net
+3.167.112.19 # fastcloudcdn.net
+3.167.112.65 # fastcloudcdn.net
+3.167.112.100 # fastcloudcdn.net
+3.167.112.103 # fastcloudcdn.net
 3.210.106.128 # hola
 3.211.186.177 # hola
 3.211.192.152 # hola
@@ -566,6 +582,10 @@
 13.239.63.78 # telleport.me
 13.244.114.234 # telleport.me
 13.248.245.245 # hola
+13.249.39.45 # fastcloudcdn.net
+13.249.39.70 # fastcloudcdn.net
+13.249.39.99 # fastcloudcdn.net
+13.249.39.111 # fastcloudcdn.net
 13.250.29.204 # 360tls.com
 15.157.69.128 # 360tls.com
 15.204.56.204 # 360tls.com
@@ -586,6 +606,10 @@
 15.237.113.141 # 360tls.com
 15.237.174.49 # 360tls.com
 15.237.191.215 # 360tls.com
+18.67.79.40 # cloudfront.net
+18.67.79.83 # cloudfront.net
+18.67.79.118 # cloudfront.net
+18.67.79.141 # cloudfront.net
 18.116.86.185 # 360tls.com
 18.117.104.72 # 360tls.com
 18.118.27.96 # 360tls.com
@@ -593,18 +617,10 @@
 18.133.180.45 # 360tls.com
 18.141.239.229 # 360tls.com
 18.153.82.63 # 360tls.com
-18.155.173.32 # fastcloudcdn.net
-18.155.173.58 # fastcloudcdn.net
-18.155.173.62 # fastcloudcdn.net
-18.155.173.65 # fastcloudcdn.net
-18.155.173.94 # fastcloudcdn.net
-18.155.173.95 # fastcloudcdn.net
-18.155.173.96 # fastcloudcdn.net
-18.155.173.128 # fastcloudcdn.net
-18.155.174.12 # cloudfront.net
-18.155.174.213 # cloudfront.net
-18.155.174.217 # cloudfront.net
-18.155.174.221 # cloudfront.net
+18.165.94.44 # cloudfront.net
+18.165.94.168 # cloudfront.net
+18.165.94.198 # cloudfront.net
+18.165.94.224 # cloudfront.net
 18.166.62.109 # telleport.me
 18.171.156.119 # 360tls.com
 18.192.209.117 # 360tls.com
@@ -612,22 +628,6 @@
 18.212.186.158 # approval.fun,areas.fun,boolean.run,choices.run,clusters.run,figure.run,hoxx,pointed.cc,sbjct.xyz,scanners.fun,talked.run
 18.236.155.25 # 360tls.com
 18.237.97.114 # 360tls.com
-18.238.92.9 # cloudfront.net
-18.238.92.77 # cloudfront.net
-18.238.92.84 # cloudfront.net
-18.238.92.145 # cloudfront.net
-18.238.92.162 # cloudfront.net
-18.238.92.180 # cloudfront.net
-18.238.92.185 # cloudfront.net
-18.238.92.206 # cloudfront.net
-18.238.102.10 # cloudfront.net
-18.238.102.24 # cloudfront.net
-18.238.102.56 # cloudfront.net
-18.238.102.143 # cloudfront.net
-18.238.102.158 # cloudfront.net
-18.238.102.169 # cloudfront.net
-18.238.102.177 # cloudfront.net
-18.238.102.230 # cloudfront.net
 23.19.68.138 # windscribe
 23.19.122.225 # windscribe
 23.21.224.254 # hola
@@ -918,7 +918,7 @@
 34.247.37.152 # 360tls.com
 35.90.18.115 # 360tls.com
 35.93.141.45 # 360tls.com
-35.158.206.3 # approval.fun,areas.fun,boolean.run,choices.run,clusters.run,figure.run,pointed.cc,scanners.fun,talked.run,throat.team
+35.158.206.3 # approval.fun,areas.fun,boolean.run,choices.run,clusters.run,figure.run,pointed.cc,sbjct.xyz,scanners.fun,talked.run,throat.team
 35.167.31.173 # 360tls.com
 35.174.159.132 # hola
 35.174.173.12 # 360tls.com
@@ -2154,13 +2154,13 @@
 37.235.56.177 # browsec
 37.235.56.215 # hola
 37.235.56.227 # hola
-38.32.110.58 # hola,su89-cdn.net,yg5sjx5kzy.com
 38.67.247.50 # windscribe
 38.91.100.144 # windscribe
 38.95.13.130 # windscribe
 38.95.13.131 # windscribe
 38.95.13.132 # windscribe
 38.101.74.82 # windscribe
+38.104.169.186 # hola,su89-cdn.net,yg5sjx5kzy.com
 38.132.101.210 # windscribe
 38.132.101.211 # windscribe
 38.132.101.212 # windscribe
@@ -3623,7 +3623,7 @@
 54.86.170.177 # hoxx,ronald.run
 54.90.50.83 # hola
 54.95.217.62 # 360tls.com
-54.145.205.221 # hoxx
+54.145.205.221 # hoxx,ronald.run
 54.162.80.9 # hola
 54.164.33.115 # 360tls.com
 54.178.102.107 # telleport.me
@@ -4032,7 +4032,6 @@
 64.176.55.14 # browsec
 64.176.58.120 # browsec
 64.176.58.238 # browsec
-64.176.168.216 # hola
 64.176.198.250 # hola
 64.176.207.137 # hola
 64.176.208.43 # hola
@@ -4164,8 +4163,10 @@
 71.19.252.151 # windscribe
 72.11.157.34 # windscribe
 72.11.157.35 # windscribe
+72.11.157.36 # windscribe
 72.11.157.66 # windscribe
 72.11.157.67 # windscribe
+72.11.157.68 # windscribe
 72.14.148.2 # protonvpn.net
 72.14.148.25 # protonvpn.net
 72.52.179.175 # default2024.uk
@@ -7791,7 +7792,6 @@
 95.141.35.9 # hola
 95.141.36.242 # hola
 95.143.177.66 # windscribe
-95.143.177.67 # windscribe
 95.143.177.69 # windscribe
 95.143.177.98 # windscribe
 95.143.177.101 # windscribe
@@ -10039,15 +10039,12 @@
 102.165.16.162 # pia
 102.165.16.163 # pia
 102.165.16.164 # pia
-102.165.16.165 # pia
 102.165.16.166 # pia
 102.165.16.167 # pia
 102.165.16.168 # pia
 102.165.16.169 # pia
 102.165.16.170 # pia
 102.165.16.171 # pia
-102.165.16.172 # pia
-102.165.16.173 # pia
 102.165.16.174 # pia
 102.165.16.175 # pia
 102.165.16.176 # pia
@@ -10060,7 +10057,6 @@
 102.165.16.187 # pia
 102.165.16.188 # pia
 102.165.16.189 # pia
-102.165.16.190 # pia
 102.165.16.191 # pia
 102.165.16.192 # pia
 102.165.16.193 # pia
@@ -10092,7 +10088,6 @@
 102.165.16.221 # pia
 102.165.16.222 # pia
 102.165.16.223 # pia
-102.165.16.224 # pia
 102.165.16.225 # pia
 102.165.16.226 # pia
 102.165.16.227 # pia
@@ -10102,7 +10097,6 @@
 102.165.16.231 # pia
 102.165.16.232 # pia
 102.165.16.233 # pia
-102.165.16.235 # pia
 102.165.16.236 # pia
 102.165.16.237 # pia
 102.165.16.238 # pia
@@ -10633,6 +10627,7 @@
 104.244.210.243 # windscribe
 104.244.210.244 # windscribe
 104.245.144.186 # protonvpn.net
+104.247.81.51 # therewego.uk
 104.248.226.35 # hola
 104.248.230.30 # hola
 104.248.230.44 # hola
@@ -10840,7 +10835,7 @@
 109.248.149.34 # windscribe
 109.248.149.35 # windscribe
 109.248.149.36 # windscribe
-116.12.47.30 # hola
+116.12.46.30 # hola
 116.90.72.43 # nordvpn
 116.90.72.51 # nordvpn
 116.90.72.59 # nordvpn
@@ -10921,6 +10916,7 @@
 121.88.85.131 # windscribe
 121.127.47.81 # nordvpn
 121.127.47.83 # nordvpn
+121.174.142.81 # hola
 122.155.174.47 # nordvpn
 122.155.174.64 # nordvpn
 122.155.174.66 # nordvpn
@@ -11914,6 +11910,7 @@
 140.228.24.125 # pia
 140.228.24.126 # pia
 140.228.24.127 # pia
+140.228.24.128 # pia
 140.228.24.129 # pia
 140.228.24.130 # pia
 140.228.24.131 # pia
@@ -12101,7 +12098,7 @@
 142.234.204.1 # windscribe
 142.234.204.2 # windscribe
 142.234.204.65 # windscribe
-143.110.174.16 # approval.fun,areas.fun,boolean.run,choices.run,clusters.run,figure.run,pointed.cc,scanners.fun,talked.run,throat.team
+143.110.174.16 # approval.fun,areas.fun,boolean.run,choices.run,clusters.run,figure.run,pointed.cc,sbjct.xyz,scanners.fun,talked.run,throat.team
 143.110.210.20 # hola
 143.110.220.53 # hola
 143.110.228.35 # hola
@@ -12461,7 +12458,6 @@
 143.244.49.151 # nordvpn
 143.244.49.152 # nordvpn
 143.244.49.154 # nordvpn
-143.244.50.88 # hola
 143.244.52.33 # pia
 143.244.52.34 # pia
 143.244.52.35 # pia
@@ -13632,7 +13628,6 @@
 149.36.48.155 # protonvpn.net
 149.36.49.130 # pia
 149.36.49.131 # pia
-149.36.49.132 # pia
 149.36.49.133 # pia
 149.36.49.134 # pia
 149.36.49.135 # pia
@@ -13735,6 +13730,8 @@
 149.36.49.235 # pia
 149.36.49.236 # pia
 149.36.50.1 # windscribe
+149.36.50.2 # windscribe
+149.36.50.3 # windscribe
 149.36.50.129 # windscribe
 149.36.50.130 # windscribe
 149.36.50.131 # windscribe
@@ -13834,6 +13831,7 @@
 149.50.212.156 # pia
 149.50.212.157 # pia
 149.50.212.159 # pia
+149.50.212.161 # pia
 149.50.212.162 # pia
 149.50.212.163 # pia
 149.50.212.164 # pia
@@ -13842,6 +13840,7 @@
 149.50.212.167 # pia
 149.50.212.168 # pia
 149.50.212.169 # pia
+149.50.212.170 # pia
 149.50.212.171 # pia
 149.50.212.172 # pia
 149.50.212.174 # pia
@@ -17177,7 +17176,6 @@
 167.179.97.151 # hola
 167.179.104.21 # hola
 167.179.112.130 # browsec
-167.179.119.205 # hola
 168.205.94.28 # hola
 168.205.94.31 # hola
 168.205.94.32 # hola
@@ -18668,6 +18666,10 @@
 178.175.129.44 # pia
 178.175.129.45 # pia
 178.175.129.46 # pia
+178.175.130.244 # cyberghost
+178.175.130.245 # cyberghost
+178.175.130.250 # cyberghost
+178.175.130.251 # cyberghost
 178.175.132.162 # cyberghost
 178.175.132.164 # cyberghost
 178.175.134.186 # windscribe
@@ -21227,7 +21229,6 @@
 181.214.206.154 # pia
 181.214.206.155 # pia
 181.214.206.156 # pia
-181.214.206.157 # pia
 181.214.206.158 # pia
 181.214.206.159 # pia
 181.214.206.160 # pia
@@ -21891,6 +21892,7 @@
 185.93.0.113 # nordvpn
 185.93.0.116 # nordvpn
 185.93.0.119 # nordvpn
+185.93.1.241 # hola
 185.93.2.199 # nordvpn
 185.93.2.206 # nordvpn
 185.93.3.105 # cyberghost
@@ -23114,6 +23116,7 @@
 185.217.69.156 # nordvpn
 185.217.69.166 # nordvpn
 185.217.69.176 # nordvpn
+185.217.99.236 # hola
 185.217.171.8 # nordvpn
 185.218.127.1 # nordvpn
 185.218.127.3 # nordvpn
@@ -23600,7 +23603,6 @@
 185.253.162.26 # pia
 185.253.162.27 # pia
 185.253.162.131 # cyberghost
-185.253.162.133 # cyberghost
 185.253.162.134 # cyberghost
 185.253.162.135 # cyberghost
 185.253.162.136 # cyberghost
@@ -23675,6 +23677,7 @@
 188.124.42.100 # windscribe
 188.124.42.114 # windscribe
 188.124.42.115 # windscribe
+188.124.42.116 # windscribe
 188.126.79.5 # cyberghost
 188.126.79.6 # cyberghost
 188.126.79.7 # cyberghost
@@ -24039,6 +24042,7 @@
 188.214.122.103 # pia
 188.214.122.104 # pia
 188.214.122.105 # pia
+188.214.122.106 # pia
 188.214.122.107 # pia
 188.214.122.108 # pia
 188.214.122.109 # pia
@@ -26016,7 +26020,6 @@
 191.96.255.239 # pia
 191.96.255.240 # pia
 191.96.255.242 # pia
-191.96.255.243 # pia
 191.96.255.244 # pia
 191.96.255.245 # pia
 191.96.255.246 # pia
@@ -28669,6 +28672,7 @@
 203.188.164.19 # pia
 203.188.164.20 # pia
 203.188.164.21 # pia
+203.188.164.22 # pia
 203.188.164.23 # pia
 203.188.164.24 # pia
 203.188.164.25 # pia
@@ -28899,17 +28903,14 @@
 204.44.112.131 # windscribe
 204.93.149.10 # pia
 204.93.149.11 # pia
-204.93.149.12 # pia
 204.93.149.13 # pia
 204.93.149.14 # pia
-204.93.149.15 # pia
 204.93.149.16 # pia
 204.93.149.17 # pia
 204.93.149.18 # pia
 204.93.149.20 # pia
 204.93.149.21 # pia
 204.93.149.22 # pia
-204.93.149.23 # pia
 204.93.149.24 # pia
 204.93.149.26 # pia
 204.93.149.28 # pia
@@ -28930,7 +28931,6 @@
 204.93.149.45 # pia
 204.93.149.46 # pia
 204.93.149.47 # pia
-204.93.149.48 # pia
 204.93.149.49 # pia
 204.93.149.50 # pia
 204.93.149.51 # pia
@@ -28948,7 +28948,6 @@
 204.93.149.66 # pia
 204.93.149.67 # pia
 204.93.149.69 # pia
-204.93.149.70 # pia
 204.93.149.71 # pia
 204.93.149.72 # pia
 204.93.149.73 # pia
@@ -28956,9 +28955,7 @@
 204.93.149.76 # pia
 204.93.149.77 # pia
 204.93.149.78 # pia
-204.93.149.79 # pia
 204.93.149.80 # pia
-204.93.149.81 # pia
 204.93.149.83 # pia
 204.93.149.84 # pia
 204.93.149.85 # pia
