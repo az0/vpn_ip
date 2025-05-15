@@ -343,9 +343,9 @@ def main():
     fqdns_not_matching = fqdns_not_matching_pattern(valid_fqdns, pattern_checker)
     # Write patterns first, then non-matching FQDNs to Adguard file
     adguard_combined_list = sort_fqdns(all_patterns) + sort_fqdns(fqdns_not_matching)
-    write_addresses_to_file(ADGUARD_OUTPUT_FN, adguard_combined_list, units='Adguard entries')
+    write_addresses_to_file(ADGUARD_OUTPUT_FN, adguard_combined_list, units='Adguard entries', write_timestamp=True)
     # Write all valid FQDNs to the final hostname file
-    write_addresses_to_file(FINAL_HOSTNAME_FN, sort_fqdns(valid_fqdns), units='hostnames')
+    write_addresses_to_file(FINAL_HOSTNAME_FN, sort_fqdns(valid_fqdns), units='hostnames', write_timestamp=True)
 
     if update_cache:
         write_resolver_cache(LOCAL_CACHE_PATH, resolver_cache)

@@ -12,8 +12,7 @@ import sys
 from urllib.parse import urlparse
 
 import requests
-
-from common import write_addresses_to_file
+from common import read_hostnames_from_file, write_addresses_to_file
 
 HOSTNAME_IP_ROOT = 'data/input/hostname_ip/'
 IP_ROOT = 'data/input/ip/'
@@ -102,9 +101,8 @@ def process_service(service_code, service):
 
     print(f'hostname_fn={hostname_fn}')
     if os.path.exists(hostname_fn):
-        with open(hostname_fn, 'r', encoding='utf-8') as file:
-            old_hostnames = file.read().splitlines()
-
+        (old_hostnames, old_patterns) = read_hostnames_from_file(hostname_fn, keep_tor=True)
+        assert len(old_patterns) == 0
         old_hostnames = [
             hostname for hostname in old_hostnames if hostname not in all_hostnames]
         print(f'remembered {len(old_hostnames)} hostnames from {hostname_fn}')
