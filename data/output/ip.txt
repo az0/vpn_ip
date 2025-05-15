@@ -1,4 +1,4 @@
-# 2025-05-15T02:33:30Z
+# 2025-05-15T13:29:14Z
 1.2.3.4 # windscribe
 1.220.90.178 # windscribe
 1.220.90.179 # windscribe
@@ -116,6 +116,9 @@
 3.167.161.163 # cloudfront.net
 3.167.161.190 # cloudfront.net
 3.167.161.210 # cloudfront.net
+3.167.180.148 # cloudfront.net
+3.167.180.198 # cloudfront.net
+3.167.180.199 # cloudfront.net
 3.171.20.116 # cloudfront.net
 3.171.20.122 # cloudfront.net
 3.171.20.194 # cloudfront.net
@@ -631,6 +634,10 @@
 18.133.180.45 # 360tls.com
 18.141.239.229 # 360tls.com
 18.153.82.63 # 360tls.com
+18.154.110.47 # fastcloudcdn.net
+18.154.110.59 # fastcloudcdn.net
+18.154.110.69 # fastcloudcdn.net
+18.154.110.81 # fastcloudcdn.net
 18.166.62.109 # telleport.me
 18.171.156.119 # 360tls.com
 18.172.139.17 # cloudfront.net
@@ -2714,6 +2721,7 @@
 45.128.133.226 # protonvpn.net
 45.128.133.227 # protonvpn.net
 45.128.134.194 # protonvpn.net
+45.128.134.199 # protonvpn.net
 45.133.172.3 # pia
 45.133.172.4 # pia
 45.133.172.5 # pia
@@ -3758,6 +3766,7 @@
 51.15.24.226 # tlsext.com
 51.15.64.120 # 360tls.com
 51.15.69.18 # 360tls.com
+51.17.20.53 # hola
 51.38.50.25 # 360tls.com
 51.68.197.137 # 360tls.com
 51.68.197.144 # 360tls.com
@@ -3930,10 +3939,6 @@
 54.164.33.115 # 360tls.com
 54.178.102.107 # telleport.me
 54.191.197.239 # 360tls.com
-54.192.51.66 # proton.me
-54.192.51.70 # proton.me
-54.192.51.96 # proton.me
-54.192.51.124 # proton.me
 54.221.227.129 # hola
 54.225.121.9 # c6gj-static.net,hola,su89-cdn.net,x-cdn-static.com,yg5sjx5kzy.com,zspeed-cdn.com
 54.225.202.104 # hola
@@ -4460,7 +4465,6 @@
 64.176.55.14 # browsec
 64.176.58.120 # browsec
 64.176.58.238 # browsec
-64.176.168.216 # hola
 64.176.198.250 # hola
 64.176.207.137 # hola
 64.176.208.43 # hola
@@ -6261,6 +6265,7 @@
 84.17.60.167 # cyberghost
 84.17.60.168 # cyberghost
 84.17.63.8 # protonvpn.net
+84.17.63.17 # protonvpn.net
 84.17.63.54 # protonvpn.net
 84.39.112.20 # nordvpn
 84.39.151.1 # nordvpn
@@ -7564,6 +7569,7 @@
 89.187.171.116 # nordvpn
 89.187.171.225 # protonvpn.net
 89.187.171.239 # protonvpn.net
+89.187.171.248 # protonvpn.net
 89.187.175.2 # nordvpn
 89.187.175.7 # nordvpn
 89.187.175.12 # nordvpn
@@ -8871,6 +8877,7 @@
 95.141.35.9 # hola
 95.141.36.242 # hola
 95.143.177.66 # windscribe
+95.143.177.67 # windscribe
 95.143.177.69 # windscribe
 95.143.177.98 # windscribe
 95.143.177.101 # windscribe
@@ -11642,7 +11649,6 @@
 107.150.31.130 # windscribe
 107.150.31.131 # windscribe
 107.150.31.194 # windscribe
-107.150.41.226 # hideme
 107.150.82.67 # nordvpn
 107.161.86.130 # windscribe
 107.173.59.99 # nordvpn
@@ -11710,14 +11716,6 @@
 108.156.123.50 # cloudfront.net
 108.156.123.79 # cloudfront.net
 108.156.123.131 # cloudfront.net
-108.157.142.48 # fastcloudcdn.net
-108.157.142.62 # fastcloudcdn.net
-108.157.142.64 # fastcloudcdn.net
-108.157.142.115 # fastcloudcdn.net
-108.157.153.73 # cloudfront.net
-108.157.153.98 # cloudfront.net
-108.157.153.210 # cloudfront.net
-108.157.153.231 # cloudfront.net
 108.160.132.21 # browsec
 108.181.50.243 # nordvpn
 108.181.50.251 # nordvpn
@@ -11938,6 +11936,7 @@
 129.227.97.115 # windscribe
 129.227.103.90 # windscribe
 129.232.219.204 # browsec
+129.250.35.251 # hola
 130.162.57.220 # telleport.me
 130.195.216.66 # protonvpn.net
 130.195.217.2 # protonvpn.net
@@ -13053,7 +13052,6 @@
 140.228.24.226 # pia
 140.228.24.227 # pia
 140.228.24.228 # pia
-140.228.24.229 # pia
 140.228.24.230 # pia
 140.228.24.231 # pia
 140.228.24.232 # pia
@@ -13665,6 +13663,14 @@
 146.70.9.242 # windscribe
 146.70.9.243 # windscribe
 146.70.9.244 # windscribe
+146.70.12.4 # cyberghost
+146.70.12.5 # cyberghost
+146.70.12.8 # cyberghost
+146.70.12.9 # cyberghost
+146.70.12.10 # cyberghost
+146.70.12.11 # cyberghost
+146.70.12.12 # cyberghost
+146.70.12.13 # cyberghost
 146.70.14.19 # protonvpn.net
 146.70.16.242 # windscribe
 146.70.16.243 # windscribe
@@ -17469,6 +17475,7 @@
 156.146.45.18 # nordvpn
 156.146.45.23 # nordvpn
 156.146.45.129 # protonvpn.net
+156.146.45.139 # protonvpn.net
 156.146.45.226 # nordvpn
 156.146.45.228 # nordvpn
 156.146.45.233 # nordvpn
@@ -17851,27 +17858,6 @@
 156.146.57.196 # pia
 156.146.57.197 # pia
 156.146.57.198 # pia
-156.146.59.3 # cyberghost
-156.146.59.4 # cyberghost
-156.146.59.5 # cyberghost
-156.146.59.6 # cyberghost
-156.146.59.7 # cyberghost
-156.146.59.8 # cyberghost
-156.146.59.9 # cyberghost
-156.146.59.10 # cyberghost
-156.146.59.11 # cyberghost
-156.146.59.12 # cyberghost
-156.146.59.13 # cyberghost
-156.146.59.14 # cyberghost
-156.146.59.15 # cyberghost
-156.146.59.16 # cyberghost
-156.146.59.18 # cyberghost
-156.146.59.19 # cyberghost
-156.146.59.20 # cyberghost
-156.146.59.22 # cyberghost
-156.146.59.23 # cyberghost
-156.146.59.24 # cyberghost
-156.146.59.25 # cyberghost
 156.146.60.65 # pia
 156.146.60.66 # pia
 156.146.60.67 # pia
@@ -18723,10 +18709,10 @@
 169.150.232.198 # nordvpn
 169.150.232.201 # nordvpn
 169.150.232.203 # nordvpn
-169.150.236.100 # hola,yg5sjx5kzy.com
+169.150.236.100 # hola
 169.150.236.104 # hola
 169.150.236.105 # hola
-169.150.236.106 # su89-cdn.net
+169.150.236.106 # hola,su89-cdn.net,yg5sjx5kzy.com
 169.150.237.1 # windscribe
 169.150.237.2 # windscribe
 169.150.237.3 # windscribe
@@ -22561,6 +22547,7 @@
 181.214.206.61 # pia
 181.214.206.62 # pia
 181.214.206.63 # pia
+181.214.206.64 # pia
 181.214.206.65 # pia
 181.214.206.66 # pia
 181.214.206.67 # pia
@@ -22573,6 +22560,7 @@
 181.214.206.74 # pia
 181.214.206.75 # pia
 181.214.206.76 # pia
+181.214.206.77 # pia
 181.214.206.78 # pia
 181.214.206.79 # pia
 181.214.206.80 # pia
@@ -23713,6 +23701,7 @@
 185.159.156.87 # protonvpn.net
 185.159.156.88 # protonvpn.net
 185.159.156.89 # protonvpn.net
+185.159.156.90 # protonvpn.net
 185.159.156.91 # protonvpn.net
 185.159.156.92 # protonvpn.net
 185.159.156.93 # protonvpn.net
@@ -23874,6 +23863,7 @@
 185.159.157.173 # protonvpn.net
 185.159.157.174 # protonvpn.net
 185.159.157.175 # protonvpn.net
+185.159.157.176 # protonvpn.net
 185.159.157.177 # protonvpn.net
 185.159.157.183 # protonvpn.net
 185.159.157.184 # protonvpn.net
@@ -24770,6 +24760,7 @@
 185.217.69.156 # nordvpn
 185.217.69.166 # nordvpn
 185.217.69.176 # nordvpn
+185.217.99.236 # hola
 185.217.171.8 # nordvpn
 185.218.127.1 # nordvpn
 185.218.127.3 # nordvpn
@@ -25235,6 +25226,18 @@
 185.253.160.11 # pia
 185.253.160.12 # pia
 185.253.160.13 # pia
+185.253.160.16 # pia
+185.253.160.17 # pia
+185.253.160.18 # pia
+185.253.160.19 # pia
+185.253.160.20 # pia
+185.253.160.21 # pia
+185.253.160.22 # pia
+185.253.160.23 # pia
+185.253.160.24 # pia
+185.253.160.25 # pia
+185.253.160.26 # pia
+185.253.160.27 # pia
 185.253.160.131 # cyberghost
 185.253.160.132 # cyberghost
 185.253.160.135 # cyberghost
@@ -27162,6 +27165,7 @@
 191.96.168.74 # pia
 191.96.168.75 # pia
 191.96.168.76 # pia
+191.96.168.77 # pia
 191.96.168.78 # pia
 191.96.168.79 # pia
 191.96.168.80 # pia
@@ -29626,6 +29630,7 @@
 194.126.177.6 # protonvpn.net
 194.126.177.7 # protonvpn.net
 194.126.177.8 # protonvpn.net
+194.126.177.9 # protonvpn.net
 194.126.177.13 # protonvpn.net
 194.126.177.14 # protonvpn.net
 194.127.172.67 # nordvpn
@@ -30532,7 +30537,6 @@
 201.168.77.126 # windscribe
 202.8.10.17 # windscribe
 202.8.10.35 # windscribe
-202.28.116.236 # hola
 202.43.6.1 # windscribe
 202.43.6.2 # windscribe
 202.43.6.33 # windscribe
@@ -32479,8 +32483,6 @@
 212.102.59.151 # pia
 212.102.59.153 # pia
 212.102.59.154 # pia
-212.102.59.155 # pia
-212.102.59.156 # pia
 212.102.59.157 # pia
 212.102.59.158 # pia
 212.102.59.159 # pia
