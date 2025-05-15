@@ -335,7 +335,7 @@ def clean_line(line: str) -> str:
     return line.strip('\n').split('#')[0].split(',')[0].strip()
 
 
-def read_hostnames_from_file(filename: str, keep_tor=False) -> tuple[list[str], list[str]]:
+def read_hostnames_from_file(filename: str) -> tuple[list[str], list[str]]:
     """Return unique hostnames and patterns from input file
 
     Patterns are automatically detected by the characters.
@@ -343,7 +343,9 @@ def read_hostnames_from_file(filename: str, keep_tor=False) -> tuple[list[str], 
     Ignored:
     * Empty lines
     * Comments starting with #
-    * Tor hostnames containing '-tor.'
+
+    Previously '-tor.' was ignored, but now it is allowed.
+    In ca-tor.prod.surfshark.com, tor refers to Toronto.
     """
     print(f'reading hosts and patterns from {filename}')
     hostnames = set()
@@ -352,8 +354,6 @@ def read_hostnames_from_file(filename: str, keep_tor=False) -> tuple[list[str], 
         for line in file:
             item = clean_line(line)
             if not item:
-                continue
-            if '-tor.' in item and not keep_tor:
                 continue
 
             # Identify patterns by specific markers

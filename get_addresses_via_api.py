@@ -101,7 +101,7 @@ def process_service(service_code, service):
 
     print(f'hostname_fn={hostname_fn}')
     if os.path.exists(hostname_fn):
-        (old_hostnames, old_patterns) = read_hostnames_from_file(hostname_fn, keep_tor=True)
+        (old_hostnames, old_patterns) = read_hostnames_from_file(hostname_fn)
         assert len(old_patterns) == 0
         old_hostnames = [
             hostname for hostname in old_hostnames if hostname not in all_hostnames]
