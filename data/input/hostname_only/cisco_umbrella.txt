@@ -930,6 +930,8 @@ mz2.nordvpn.com
 nc-api-lb.nordvpn.com
 nc-unit1-lb.nordvpn.com
 nc-unit1-mqtt.nordvpn.com
+nc-unit10-lb.nordvpn.com
+nc-unit10-mqtt.nordvpn.com
 nc-unit2-lb.nordvpn.com
 nc-unit2-mqtt.nordvpn.com
 nc-unit3-lb.nordvpn.com
@@ -2311,8 +2313,11 @@ test.surfshark.com
 ux.surfshark.com
 camembert-1-fr.tlsext.com
 camembert-2-fr.tlsext.com
+camembert-3-fr.tlsext.com
 camembert-5-fr.tlsext.com
 erith-1-uk.tlsext.com
+erith-2-uk.tlsext.com
+erith-4-uk.tlsext.com
 hermes-fr.tlsext.com
 hollander-1-nl.tlsext.com
 hollander-3-nl.tlsext.com
@@ -4412,6 +4417,7 @@ nl19.fastcache.xyz
 nl38.fastcache.xyz
 uk22.fastcache.xyz
 us21.fastcache.xyz
+uk196.fastcontent.xyz
 fr3.rapidcdn.xyz
 nl11.rapidcdn.xyz
 nl18.rapidcdn.xyz
