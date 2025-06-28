@@ -25,8 +25,9 @@ import tqdm
 
 # local import
 from common import (AdguardPatternChecker, Allowlist,
+                    Resolver,
                     clean_line, read_input_hostnames,
-                    resolve_hostname, sort_fqdns,
+                    sort_fqdns,
                     write_addresses_to_file)
 
 IP_DIR = 'data/input/ip'
@@ -112,8 +113,9 @@ class TestPrepareFinalLists(unittest.TestCase):
         self.assertEqual(actual_output, fqdns)
 
     def test_resolve_hosts(self):
-        """Test resolve_hosts()"""
-        input_fqdns = ['example.com', 'example.org', 'doesnotexist.example.com', 'private.host', 'local.host', 'cloudflare.host']
+        """Test resolve_hosts() using cache"""
+        input_fqdns = ['example.com', 'example.org', 'doesnotexist.example.com',
+                       'private.host', 'local.host', 'cloudflare.host']
         resolver_cache = collections.defaultdict(set)
         resolver_cache['example.com'] = ['1.2.3.4']
         resolver_cache['example.org'] = ['5.6.7.8']
@@ -121,7 +123,8 @@ class TestPrepareFinalLists(unittest.TestCase):
         resolver_cache['private.host'] = ['0.0.0.0']
         resolver_cache['local.host'] = ['127.0.0.1']
         resolver_cache['cloudflare.host'] = ['104.26.8.89']
-        (ret_hosts, ret_ip_to_root_domains) = resolve_hosts(input_fqdns, min_resolved_host_count=2, resolver_cache=resolver_cache, update_cache=False)
+        (ret_hosts, ret_ip_to_root_domains) = resolve_hosts(input_fqdns,
+                                                            min_resolved_host_count=2, resolver_cache=resolver_cache, update_cache=False)
         self.assertEqual(ret_hosts, set(['example.com', 'example.org', 'cloudflare.host']))
         self.assertEqual(ret_ip_to_root_domains, {'1.2.3.4': {'example.com'}, '5.6.7.8': {'example.org'}})
 
@@ -186,7 +189,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
         if resolver_cache is not None and this_fqdn in resolver_cache:
             ip_addresses = resolver_cache[this_fqdn]
         else:
-            ip_addresses = resolve_hostname(this_fqdn)
+            ip_addresses = resolver.resolve(this_fqdn)
             if update_cache and resolver_cache is not None:
                 resolver_cache[this_fqdn] = ip_addresses
         root_domain = get_root_domain(this_fqdn)
@@ -201,8 +204,9 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
             valid_fqdns.add(this_fqdn)
             ip_to_root_domains[this_ip_addr].add(root_domain)
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(input_fqdns)), total=len(input_fqdns)))
+    with Resolver() as resolver:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            list(tqdm.tqdm(executor.map(resolve_hostname_and_add, sorted(input_fqdns)), total=len(input_fqdns)))
 
     print('resolve_hosts() stats')
     unique_host_count = len(input_fqdns)

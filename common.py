@@ -18,7 +18,8 @@ level.
 
 """
 
-# Imports
+# built-in imports
+import datetime
 import glob
 import ipaddress
 import os
@@ -27,12 +28,22 @@ import socket
 import sys
 import tempfile
 import unittest
-import datetime
+
+# third-party imports
+import dns.query
+import dns.message
+import httpx
 
 # Constants
 ALLOWLIST_IP_FN = 'data/input/allowlist_ip.txt'
 ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
+DOH_RESOLVERS = [
+    'https://1.1.1.1/dns-query',  # in case DNS resolution of cloudflare-dns.com is blocked
+    'https://1.0.0.1/dns-query'
+    'https://dns.google/dns-query',
+    'https://dns.quad9.net/dns-query'
+]
 
 # Classes
 
@@ -133,13 +144,14 @@ class Allowlist:
 
     def _load_hostnames(self, filename, resolve):
         with open(filename, 'r', encoding='utf-8') as f:
-            for line in f:
-                hostname = clean_line(line)
-                if not hostname or len(hostname) <= 5:
-                    continue
-                self.hostname_allowlist.add(hostname)
+            with Resolver() as resolver:
+                for line in f:
+                    hostname = clean_line(line)
+                    if not hostname or len(hostname) <= 5:
+                        continue
+                    self.hostname_allowlist.add(hostname)
                 if resolve:
-                    for ip in resolve_hostname(hostname):
+                    for ip in resolver.resolve(hostname):
                         self.ip_allowlist.add(ip)
 
     def check_hostname_in_allowlist(self, hostname: str) -> bool:
@@ -160,6 +172,69 @@ class Allowlist:
             if ip_obj in ipaddress.ip_network(r):
                 return True
         return False
+
+
+class Resolver:
+    """Resolve hostnames using DoH or socket"""
+
+    def __init__(self):
+        self.resolvers = []
+        self.client = httpx.Client(http2=True)
+        self.current_resolver_index = 0
+        for resolver_url in DOH_RESOLVERS:
+            try:
+                q = dns.message.make_query('example.com', 'A')
+                dns.query.https(q, resolver_url, session=self.client)
+                self.resolvers.append(resolver_url)
+            except Exception:
+                continue
+
+    def __enter__(self):
+        """Enter context manager"""
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Exit context manager"""
+        self.client.close()
+
+    def resolve_doh(self, hostname: str) -> list:
+        """Resolve hostname using DoH"""
+        if not self.resolvers:
+            return []
+
+        try:
+            resolver_url = self.resolvers[self.current_resolver_index]
+            q = dns.message.make_query(hostname, 'A')
+            answers = dns.query.https(q, resolver_url, session=self.client)
+            self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
+            ip_list = []
+            for rrset in answers.answer:
+                if rrset.rdtype == dns.rdatatype.A:
+                    for rdata in rrset:
+                        ip_list.append(rdata.address)
+            return ip_list
+        except Exception:
+            self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
+            return []
+
+    def resolve_socket(self, hostname: str) -> list:
+        """Resolve hostname using socket"""
+        try:
+            ip_addresses = socket.getaddrinfo(
+                hostname, None, family=socket.AF_INET)
+        except Exception:
+            return []
+        ret = {ip[4][0] for ip in ip_addresses}
+        return list(ret)
+
+    def resolve(self, hostname: str) -> list:
+        """Resolve hostname using DoH or socket
+
+        Returns empty list if there is an error. Otherwise returns a list of IPv4 addresses.
+        """
+        if self.resolvers:
+            return self.resolve_doh(hostname)
+        return self.resolve_socket(hostname)
 
 
 class TestCommon(unittest.TestCase):
@@ -265,6 +340,25 @@ class TestCommon(unittest.TestCase):
             (actual_hostnames, actual_patterns) = read_hostnames_from_file(tmp_file.name)
             self.assertCountEqual(actual_hostnames, sorted(hostnames))
             self.assertCountEqual(actual_patterns, sorted(patterns))
+
+    def test_resolver(self):
+        """Test resolver"""
+        resolver = Resolver()
+        with resolver:
+            for domain in ['example.com', 'example.net', 'example.org', 'iana.org', 'python.org']:
+                last_ret = None
+                for func_name in ['resolve', 'resolve_socket', 'resolve_doh']:
+                    func = getattr(resolver, func_name)
+                    ret = func(domain)
+                    self.assertIsInstance(ret, list)
+                    self.assertGreater(len(ret), 0, f'{func_name} {domain}: {ret}')
+                    if last_ret is not None:
+                        self.assertEqual(set(ret), set(last_ret))
+                    last_ret = ret
+
+            for bad_domain in ['nonexistent-domain-that-should-not-exist-12345.com', 'invalid..domain', '']:
+                ret = resolver.resolve(bad_domain)
+                self.assertEqual(ret, [])
 
     def test_sort_fqdns(self):
         """Test sort_fqdns() function"""
@@ -391,23 +485,6 @@ def read_input_hostnames(input_hostname_pattern) -> tuple[list[str], list[str]]:
         all_hostnames.update(file_hostnames)
         all_patterns.update(file_patterns)
     return list(all_hostnames), list(all_patterns)
-
-
-def resolve_hostname(hostname: str) -> list:
-    """Return a list of IPv4 IPs for the given hostname
-
-    If there is an error resolving the hostname, return an empty list
-
-    """
-    # print(f'INFO: resolving hostname {hostname}')
-    try:
-        ip_addresses = socket.getaddrinfo(
-            hostname, None, family=socket.AF_INET)
-    except socket.gaierror:
-        # print(f"ERROR: Error resolving {hostname}: {e}")
-        return []
-    ret = {ip[4][0] for ip in ip_addresses}
-    return list(ret)
 
 
 def sort_fqdns(fqdns: list) -> list:
