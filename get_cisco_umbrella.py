@@ -58,21 +58,29 @@ def get_all_patterns():
 
 def filter_umbrella_hostnames(cisco_hostnames):
     """Filter hostnames based on patterns and write to file"""
-    adguard_patterns = get_all_patterns()
-    adguard_checker = AdguardPatternChecker(adguard_patterns)
+    adguard_patterns = set(get_all_patterns())
+    adguard_checker = AdguardPatternChecker(list(adguard_patterns))
     hostnames_matching_pattern = []
+
+    # Pre-compile hostname pattern check to avoid string formatting in loop
+    def pattern_format(hostname): return f"||{hostname}^"
+
     for hostname in tqdm(cisco_hostnames, desc="Filtering hostnames"):
         # Do not add example.com if ||example.com^ is a known pattern.
-        if adguard_checker.check_fqdn(hostname) and not f"||{hostname}^" in adguard_patterns:
+        if adguard_checker.check_fqdn(hostname) and not pattern_format(hostname) in adguard_patterns:
             hostnames_matching_pattern.append(hostname)
+
     if os.path.exists(OUTPUT_FN):
         prior_hostnames, _ = read_hostnames_from_file(OUTPUT_FN)
     else:
         prior_hostnames = []
+
     export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
+
     allowlist = Allowlist()
     export_hostnames = [
         hostname for hostname in export_hostnames if not allowlist.check_hostname_in_allowlist(hostname)]
+
     write_addresses_to_file(OUTPUT_FN, sort_fqdns(export_hostnames))
 
 

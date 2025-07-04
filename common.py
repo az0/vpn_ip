@@ -59,7 +59,7 @@ class AdguardPatternChecker:
     Supported special characters:
     * ||: matches the beginning of a hostname, including any subdomain.
     * ^: the separator character marks the end of a hostname.
-    * |: a pointer to the beginning or the end of the hostname. 
+    * |: a pointer to the beginning or the end of the hostname.
 
     Examples of supported patterns:
     * ||example.com^ matches example.com and sub.example.com
@@ -76,36 +76,53 @@ class AdguardPatternChecker:
 
     def __init__(self, patterns: list):
         """Initialize with precompiled regex patterns for supported syntax"""
-        compiled = []
+        # Group patterns by type for more efficient checking
+        self.domain_suffix_patterns = []
+        self.exact_match_patterns = []
+        self.starts_with_patterns = []
+        self.ends_with_patterns = []
+
+        # Extract domain parts from ||domain.com^ patterns for pre-filtering
+        self.domain_suffixes = set()
+
+        # Process each pattern only once during initialization
         for pattern_str in patterns:
             if any(char in pattern_str for char in '*/$@'):
                 print(f"Warning: Skipping unsupported pattern (contains '*' or '/' or '@@' or '$'): {pattern_str}")
                 continue
+
             try:
                 if pattern_str.startswith('||') and pattern_str.endswith('^'):
                     # ||domain.com^ syntax
                     domain_part = pattern_str[2:-1]
                     domain_escaped = re.escape(domain_part)
                     final_regex = r'(?:^|\.)' + domain_escaped + r'$'
-                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                    self.domain_suffix_patterns.append(re.compile(final_regex, re.IGNORECASE))
+
+                    # Store domain part for pre-filtering
+                    self.domain_suffixes.add(domain_part.lower())
+
                 elif pattern_str.startswith('|') and pattern_str.endswith('|'):
                     # |pattern| syntax (exact match)
                     exact_match_part = pattern_str[1:-1]
                     pattern_escaped = re.escape(exact_match_part)
                     final_regex = r'^' + pattern_escaped + r'$'
-                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                    self.exact_match_patterns.append(re.compile(final_regex, re.IGNORECASE))
+
                 elif pattern_str.startswith('|'):
                     # |pattern syntax (starts with)
                     starts_with_part = pattern_str[1:]
                     pattern_escaped = re.escape(starts_with_part)
                     final_regex = r'^' + pattern_escaped
-                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                    self.starts_with_patterns.append(re.compile(final_regex, re.IGNORECASE))
+
                 elif pattern_str.endswith('|'):
                     # pattern| syntax (ends with)
                     ends_with_part = pattern_str[:-1]
                     pattern_escaped = re.escape(ends_with_part)
                     final_regex = pattern_escaped + r'$'
-                    compiled.append(re.compile(final_regex, re.IGNORECASE))
+                    self.ends_with_patterns.append(re.compile(final_regex, re.IGNORECASE))
+
                 elif pattern_str.startswith('/') and pattern_str.endswith('/'):
                     print(f"Warning: Skipping unsupported regex pattern: {pattern_str}")
                 else:
@@ -116,11 +133,38 @@ class AdguardPatternChecker:
             except Exception as e:
                 print(f"Warning: Error processing pattern '{pattern_str}': {e}")
 
-        self.compiled_patterns = compiled
 
     def check_fqdn(self, fqdn: str) -> bool:
         """Check if FQDN matches any of the precompiled patterns"""
-        return any(pattern.search(fqdn) for pattern in self.compiled_patterns)
+        # Quick pre-filtering for domain suffix patterns
+        fqdn_lower = fqdn.lower()
+
+        if self.domain_suffix_patterns:
+            for suffix in self.domain_suffixes:
+                if fqdn_lower.endswith(suffix):
+                    # Only check the relevant domain suffix patterns if prefix matches
+                    for pattern in self.domain_suffix_patterns:
+                        if pattern.search(fqdn):
+                            return True
+                    # If we got here, none of the domain patterns matched
+                    break
+
+        if self.exact_match_patterns:
+            for pattern in self.exact_match_patterns:
+                if pattern.search(fqdn):
+                    return True
+
+        if self.starts_with_patterns:
+            for pattern in self.starts_with_patterns:
+                if pattern.search(fqdn):
+                    return True
+
+        if self.ends_with_patterns:
+            for pattern in self.ends_with_patterns:
+                if pattern.search(fqdn):
+                    return True
+
+        return False
 
 
 class Allowlist:
