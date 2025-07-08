@@ -127,6 +127,7 @@
 46.246.122.174       # Norway
 91.90.126.9          # Panama
 91.90.126.5          # Panama
+91.90.126.53         # Panama
 188.214.125.186      # Philippines
 188.214.125.137      # Philippines
 188.214.125.134      # Philippines
@@ -371,6 +372,8 @@
 95.181.233.9         # Monaco
 146.70.65.141        # Nigeria
 146.70.65.131        # Nigeria
+91.90.126.58         # Panama
+91.90.126.54         # Panama
 138.199.59.196       # Poland
 138.199.59.201       # Poland
 138.199.59.216       # Poland
@@ -458,6 +461,7 @@
 185.253.162.21       # Cyprus
 212.102.39.206       # Czech Republic
 212.102.39.209       # Czech Republic
+188.126.89.158       # Finland
 188.126.89.49        # Finland
 188.126.89.84        # Finland
 45.133.193.44        # Iceland
@@ -509,6 +513,7 @@
 179.61.240.123       # New Zealand
 91.90.126.40         # Panama
 91.90.126.47         # Panama
+91.90.126.60         # Panama
 188.214.125.141      # Philippines
 188.214.125.133      # Philippines
 138.199.59.210       # Poland
@@ -1162,6 +1167,7 @@
 188.214.122.117      # Egypt
 188.126.89.54        # Finland
 188.126.89.91        # Finland
+188.126.89.153       # Finland
 191.101.31.14        # France
 191.101.31.51        # France
 156.146.41.199       # Italy
@@ -1173,6 +1179,7 @@
 154.47.21.164        # Netherlands
 181.214.206.150      # Netherlands
 181.214.206.156      # Netherlands
+91.90.126.38         # Panama
 146.70.59.7          # Portugal
 146.70.59.24         # Portugal
 95.181.235.17        # Saudi Arabia
@@ -1579,6 +1586,7 @@
 165.231.182.13       # Estonia
 188.126.89.37        # Finland
 188.126.89.83        # Finland
+188.126.89.131       # Finland
 86.106.74.114        # Hungary
 185.94.190.198       # Hungary
 45.133.193.41        # Iceland
@@ -1851,6 +1859,7 @@
 146.70.38.25         # Argentina
 146.70.38.105        # Argentina
 188.241.177.54       # Brazil
+94.156.14.18         # Bulgaria
 212.102.39.208       # Czech Republic
 165.231.182.128      # Estonia
 165.231.182.31       # Estonia
@@ -1903,6 +1912,7 @@
 156.146.41.93        # Italy
 156.146.41.197       # Italy
 91.90.126.46         # Panama
+91.90.126.59         # Panama
 154.47.30.53         # South Africa
 212.102.49.203       # Spain
 212.102.49.7         # Spain
@@ -2002,6 +2012,7 @@
 95.181.234.6         # Qatar
 138.199.24.3         # Singapore
 156.146.57.174       # Singapore
+156.146.57.199       # Singapore
 46.246.3.192         # Sweden
 46.246.3.212         # Sweden
 146.70.102.8         # United Arab Emirates
@@ -2019,6 +2030,7 @@
 188.126.94.183       # Denmark
 188.126.89.70        # Finland
 188.126.89.78        # Finland
+188.126.89.133       # Finland
 37.46.113.161        # Luxembourg
 95.181.232.34        # Morocco
 138.199.24.12        # Singapore
@@ -2075,6 +2087,7 @@
 178.249.214.41       # CA Toronto
 188.214.122.115      # Egypt
 188.214.122.122      # Egypt
+95.181.236.22        # Georgia
 45.133.193.92        # Iceland
 45.133.193.91        # Iceland
 62.133.47.19         # Kazakhstan
@@ -2331,6 +2344,7 @@
 46.246.122.54        # Norway
 46.246.122.82        # Norway
 46.246.122.122       # Norway
+91.90.126.62         # Panama
 79.142.79.38         # Switzerland
 156.146.62.217       # Switzerland
 154.16.105.181       # US Las Vegas
@@ -2348,6 +2362,7 @@
 188.241.80.63        # China
 191.101.157.32       # DE Berlin
 188.126.94.186       # Denmark
+188.126.89.137       # Finland
 37.46.113.195        # Luxembourg
 37.46.113.199        # Luxembourg
 37.46.113.207        # Luxembourg
@@ -2817,6 +2832,7 @@
 188.126.94.78        # Denmark
 188.126.94.118       # Denmark
 188.126.94.121       # Denmark
+188.126.89.139       # Finland
 188.126.89.68        # Finland
 91.90.120.202        # Greenland
 37.46.113.162        # Luxembourg
@@ -3121,6 +3137,7 @@
 156.146.63.142       # France
 156.146.41.21        # Italy
 91.90.122.15         # Liechtenstein
+91.90.126.61         # Panama
 188.213.34.75        # Turkey
 181.215.182.52       # US Texas
 181.215.182.68       # US Texas
@@ -3390,6 +3407,7 @@
 31.171.154.77        # Albania
 179.61.228.42        # AU Perth
 178.175.128.35       # Moldova
+91.90.126.52         # Panama
 98.159.234.162       # UK Southampton
 98.159.234.56        # UK Southampton
 140.228.21.134       # CA Montreal
@@ -3430,6 +3448,7 @@
 181.214.173.161      # DE Berlin
 191.101.157.54       # DE Berlin
 191.101.157.114      # DE Berlin
+188.126.89.146       # Finland
 196.196.53.13        # Latvia
 156.146.57.107       # Singapore
 138.199.24.29        # Singapore
@@ -3540,6 +3559,7 @@
 191.96.37.24         # US Seattle
 191.96.103.30        # US Seattle
 181.214.153.183      # CA Vancouver
+188.126.89.150       # Finland
 173.244.49.96        # Taiwan
 181.214.165.31       # US Chicago
 181.214.166.203      # US Chicago
@@ -3849,6 +3869,7 @@
 181.41.206.92        # US Denver
 181.41.206.151       # US Denver
 102.165.16.51        # US East
+191.96.150.48        # US New York
 191.96.150.10        # US New York
 102.129.235.170      # US Washington Dc
 117.120.9.26         # AU Sydney
@@ -5090,7 +5111,6 @@
 154.16.81.236        # AU Sydney
 154.16.81.228        # AU Sydney
 154.16.81.55         # AU Sydney
-149.36.49.161        # CA Toronto
 179.61.197.17        # CA Toronto
 138.199.18.145       # DE Frankfurt
 212.102.57.165       # DE Frankfurt
@@ -5467,8 +5487,6 @@
 191.96.37.182        # US Seattle
 191.96.37.30         # US Seattle
 191.96.103.93        # US Seattle
-149.36.49.179        # CA Toronto
-149.36.49.135        # CA Toronto
 138.199.18.140       # DE Frankfurt
 45.88.97.56          # DE Frankfurt
 45.88.97.16          # DE Frankfurt
@@ -5851,6 +5869,7 @@
 102.129.153.150      # US Florida
 146.70.38.60         # Argentina
 181.214.173.162      # DE Berlin
+188.126.89.132       # Finland
 102.129.145.141      # US California
 102.129.145.131      # US California
 181.214.165.102      # US Chicago
@@ -8077,6 +8096,7 @@
 102.129.153.34       # US Florida
 181.41.202.197       # CA Vancouver
 181.41.202.199       # CA Vancouver
+181.214.206.57       # Netherlands
 181.41.206.185       # US Denver
 181.41.206.166       # US Denver
 102.165.16.82        # US East
@@ -11690,7 +11710,6 @@
 140.228.24.234       # CA Montreal
 140.228.24.200       # CA Montreal
 140.228.24.229       # CA Montreal
-154.16.192.91        # US New York
 37.19.198.202        # US New York
 154.16.192.80        # US New York
 140.228.24.204       # CA Montreal
@@ -12756,7 +12775,6 @@
 84.247.105.54        # CA Montreal
 84.247.105.231       # CA Montreal
 84.247.105.251       # CA Montreal
-84.247.105.41        # CA Montreal
 84.247.105.68        # CA Montreal
 84.247.105.50        # CA Montreal
 84.247.105.215       # CA Montreal
@@ -12891,7 +12909,6 @@
 204.93.149.203       # US East
 204.93.149.150       # US East
 204.93.149.200       # US East
-204.93.149.141       # US East
 204.93.149.254       # US East
 204.93.149.227       # US East
 204.93.149.144       # US East
@@ -12928,11 +12945,9 @@
 149.88.97.204        # CA Toronto
 149.88.97.196        # CA Toronto
 149.88.97.242        # CA Toronto
-149.88.97.197        # CA Toronto
 149.88.97.231        # CA Toronto
 204.93.149.213       # US East
 149.88.97.212        # CA Toronto
-149.88.97.217        # CA Toronto
 149.88.97.246        # CA Toronto
 204.93.149.220       # US East
 149.88.97.195        # CA Toronto
@@ -13024,7 +13039,6 @@
 89.149.52.35         # CA Vancouver
 89.149.52.29         # CA Vancouver
 89.149.52.22         # CA Vancouver
-149.50.218.177       # CA Toronto
 89.149.52.18         # CA Vancouver
 89.149.52.24         # CA Vancouver
 212.112.19.23        # Sweden
@@ -13242,7 +13256,6 @@
 149.50.218.232       # CA Toronto
 89.149.52.83         # CA Vancouver
 149.50.218.216       # CA Toronto
-149.50.218.221       # CA Toronto
 89.149.52.156        # CA Vancouver
 149.50.218.231       # CA Toronto
 89.149.52.128        # CA Vancouver
@@ -13789,14 +13802,12 @@
 149.50.218.37        # CA Ontario
 149.50.218.39        # CA Ontario
 149.50.218.50        # CA Ontario
-149.50.218.30        # CA Ontario
 149.50.218.51        # CA Ontario
 149.50.218.31        # CA Ontario
 149.50.218.48        # CA Ontario
 149.50.218.61        # CA Toronto
 149.50.218.57        # CA Toronto
 149.50.218.38        # CA Ontario
-149.50.218.46        # CA Ontario
 149.50.218.78        # CA Toronto
 143.244.54.16        # Romania
 143.244.54.20        # Romania
@@ -17284,3 +17295,15 @@
 95.134.63.225        # DE Frankfurt
 91.90.126.22         # Panama
 95.134.63.224        # DE Frankfurt
+91.90.126.32         # Panama
+91.90.126.28         # Panama
+91.90.126.50         # Panama
+91.90.126.64         # Panama
+91.90.126.24         # Panama
+91.90.126.21         # Panama
+91.90.126.20         # Panama
+91.90.126.30         # Panama
+91.90.126.27         # Panama
+91.90.126.25         # Panama
+91.90.126.33         # Panama
+91.90.126.34         # Panama
