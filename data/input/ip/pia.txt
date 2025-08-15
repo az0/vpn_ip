@@ -1094,6 +1094,7 @@
 188.213.34.87        # Turkey
 45.133.172.213       # UK Manchester
 45.133.172.53        # UK Manchester
+45.133.172.56        # UK Manchester
 98.159.234.153       # UK Southampton
 98.159.234.165       # UK Southampton
 98.159.234.168       # UK Southampton
@@ -2767,6 +2768,7 @@
 154.47.21.168        # Netherlands
 188.214.125.136      # Philippines
 146.70.59.5          # Portugal
+45.133.172.51        # UK Manchester
 45.133.172.235       # UK Manchester
 45.133.172.234       # UK Manchester
 84.239.42.29         # Ukraine
@@ -3980,6 +3982,7 @@
 191.101.157.97       # DE Berlin
 156.146.41.70        # Italy
 181.215.176.28       # UK London
+45.133.172.43        # UK Manchester
 45.133.172.224       # UK Manchester
 193.239.84.78        # UK Manchester
 181.214.164.173      # US Chicago
@@ -4046,6 +4049,7 @@
 179.61.228.187       # AU Perth
 77.81.142.98         # Mexico
 77.81.142.232        # Mexico
+45.133.172.65        # UK Manchester
 45.133.172.200       # UK Manchester
 46.246.122.50        # Norway
 98.159.234.150       # UK Southampton
@@ -4144,6 +4148,7 @@
 188.126.89.55        # Finland
 156.146.41.222       # Italy
 181.214.206.104      # Netherlands
+181.214.206.124      # Netherlands
 79.142.79.31         # Switzerland
 98.159.234.159       # UK Southampton
 98.159.234.61        # UK Southampton
@@ -4801,7 +4806,6 @@
 95.181.238.100       # Bahamas
 77.81.142.42         # Mexico
 77.81.142.64         # Mexico
-191.96.168.205       # Netherlands
 191.96.168.186       # Netherlands
 179.61.228.116       # AU Perth
 179.61.228.38        # AU Perth
@@ -5581,6 +5585,7 @@
 181.41.202.244       # CA Vancouver
 181.214.153.90       # CA Vancouver
 191.96.227.103       # US New York
+154.47.21.175        # Netherlands
 181.214.206.122      # Netherlands
 91.90.126.43         # Panama
 181.41.206.165       # US Denver
@@ -5589,6 +5594,7 @@
 191.96.255.181       # US Silicon Valley
 156.146.39.137       # US Texas
 154.16.81.81         # AU Sydney
+140.228.24.97        # CA Montreal
 140.228.24.181       # CA Montreal
 181.214.173.177      # DE Berlin
 191.101.157.92       # DE Berlin
@@ -5674,6 +5680,7 @@
 169.150.197.154      # Switzerland
 179.61.228.154       # AU Perth
 179.61.228.70        # AU Perth
+140.228.24.122       # CA Montreal
 181.214.206.48       # Netherlands
 181.214.206.117      # Netherlands
 181.215.176.25       # UK London
@@ -5762,6 +5769,7 @@
 212.102.49.13        # Spain
 156.146.62.148       # Switzerland
 212.102.37.60        # Switzerland
+45.133.172.61        # UK Manchester
 191.96.150.150       # US New York
 191.96.37.98         # US Seattle
 191.96.255.83        # US Silicon Valley
@@ -6248,6 +6256,7 @@
 154.47.21.132        # Netherlands
 154.47.21.144        # Netherlands
 46.246.3.214         # Sweden
+102.129.235.145      # US Washington Dc
 179.61.228.3         # AU Perth
 179.61.228.167       # AU Perth
 212.102.57.93        # DE Frankfurt
@@ -6276,6 +6285,7 @@
 173.239.226.192      # US Las Vegas
 146.70.38.56         # Argentina
 140.228.24.82        # CA Montreal
+140.228.24.86        # CA Montreal
 140.228.24.90        # CA Montreal
 212.102.59.174       # US Chicago
 212.102.59.227       # US Chicago
@@ -6407,6 +6417,7 @@
 191.96.36.55         # CA Toronto
 191.96.36.63         # CA Toronto
 212.102.35.24        # Netherlands
+45.133.172.38        # UK Manchester
 181.214.166.137      # US Chicago
 181.214.166.232      # US Chicago
 102.129.152.50       # US Florida
@@ -6613,6 +6624,7 @@
 37.19.197.211        # US East
 140.228.24.104       # CA Montreal
 179.61.197.37        # CA Toronto
+45.133.172.50        # UK Manchester
 181.214.164.228      # US Chicago
 181.214.164.197      # US Chicago
 191.101.61.208       # US Las Vegas
@@ -6754,6 +6766,7 @@
 102.129.145.100      # US California
 191.101.61.142       # US Las Vegas
 156.146.48.31        # US Seattle
+195.78.54.183        # Netherlands
 212.102.59.170       # US Chicago
 102.129.153.56       # US Florida
 191.96.150.26        # US New York
@@ -7436,7 +7449,6 @@
 181.214.206.163      # Netherlands
 181.214.164.185      # US Chicago
 181.214.166.20       # US Chicago
-212.102.59.221       # US Chicago
 181.41.206.40        # US Denver
 181.41.206.160       # US Denver
 179.61.197.56        # CA Toronto
@@ -9547,6 +9559,7 @@
 181.214.164.19       # US Chicago
 191.96.150.42        # US New York
 102.129.234.91       # US Texas
+45.133.172.64        # UK Manchester
 102.129.145.123      # US California
 102.129.235.89       # US Washington Dc
 102.129.235.175      # US Washington Dc
@@ -9559,7 +9572,6 @@
 102.129.152.22       # US Florida
 143.244.48.19        # US California
 191.96.168.68        # Netherlands
-191.96.168.183       # Netherlands
 181.214.165.95       # US Chicago
 191.96.37.145        # US Seattle
 102.129.235.192      # US Washington Dc
@@ -9722,6 +9734,7 @@
 181.215.182.4        # US Texas
 181.41.202.155       # CA Vancouver
 181.214.206.80       # Netherlands
+181.214.206.82       # Netherlands
 102.129.252.20       # US Silicon Valley
 102.129.145.155      # US California
 102.129.252.35       # US Silicon Valley
@@ -10457,6 +10470,7 @@
 212.102.53.70        # UK London
 156.146.46.162       # US Atlanta
 181.41.202.206       # CA Vancouver
+191.96.168.200       # Netherlands
 37.19.198.146        # US New York
 212.102.53.65        # UK London
 138.199.59.54        # Poland
@@ -13572,7 +13586,6 @@
 203.188.164.187      # Netherlands
 203.188.164.52       # Netherlands
 203.188.164.56       # Netherlands
-203.188.164.144      # Netherlands
 95.181.238.26        # Bahamas
 203.188.164.168      # Netherlands
 203.188.164.69       # Netherlands
@@ -16300,3 +16313,9 @@
 212.32.48.70         # CA Toronto
 212.32.48.72         # CA Toronto
 212.32.48.85         # CA Toronto
+212.32.48.89         # CA Toronto
+212.32.48.74         # CA Toronto
+212.32.48.75         # CA Toronto
+212.32.48.76         # CA Toronto
+212.32.48.80         # CA Toronto
+212.32.48.77         # CA Toronto
