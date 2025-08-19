@@ -3616,7 +3616,6 @@
 154.16.105.86        # US Las Vegas
 191.101.61.240       # US Las Vegas
 191.96.150.21        # US New York
-191.96.150.41        # US New York
 191.96.103.16        # US Seattle
 191.96.255.131       # US Silicon Valley
 102.129.232.60       # US Silicon Valley
@@ -5846,7 +5845,6 @@
 102.129.152.29       # US Florida
 102.129.152.68       # US Florida
 191.96.150.37        # US New York
-191.96.150.38        # US New York
 102.129.234.185      # US Texas
 102.129.234.165      # US Texas
 102.129.234.163      # US Texas
@@ -6303,6 +6301,7 @@
 102.129.235.154      # US Washington Dc
 191.96.168.82        # Netherlands
 191.96.168.93        # Netherlands
+195.78.54.194        # Netherlands
 79.142.79.87         # Switzerland
 98.159.234.140       # UK Southampton
 191.96.106.211       # US California
@@ -7536,6 +7535,7 @@
 102.129.232.115      # US Silicon Valley
 102.129.235.236      # US Washington Dc
 191.96.150.30        # US New York
+191.96.150.50        # US New York
 37.19.197.198        # US East
 181.214.165.52       # US Chicago
 102.129.152.75       # US Florida
@@ -8332,6 +8332,7 @@
 181.215.182.51       # US Texas
 102.129.234.16       # US Texas
 191.101.157.122      # DE Berlin
+181.214.164.230      # US Chicago
 191.96.106.163       # US California
 191.96.150.23        # US New York
 191.96.36.136        # CA Toronto
@@ -9214,6 +9215,7 @@
 37.19.198.187        # US New York
 191.96.227.131       # US New York
 191.96.227.155       # US New York
+195.78.54.210        # Netherlands
 102.129.252.28       # US Silicon Valley
 181.214.206.116      # Netherlands
 181.214.166.108      # US Chicago
@@ -9314,7 +9316,6 @@
 194.110.13.85        # UK London
 156.146.48.229       # US Seattle
 140.228.21.93        # CA Montreal
-191.96.168.198       # Netherlands
 191.96.37.128        # US Seattle
 102.129.235.28       # US Washington Dc
 212.102.63.152       # UK London
@@ -9392,6 +9393,7 @@
 140.228.24.126       # CA Montreal
 143.244.34.154       # US Florida
 102.129.234.126      # US Texas
+212.102.59.157       # US Chicago
 140.228.24.83        # CA Montreal
 140.228.24.91        # CA Montreal
 156.146.48.25        # US Seattle
@@ -9567,6 +9569,7 @@
 102.129.152.22       # US Florida
 143.244.48.19        # US California
 191.96.168.68        # Netherlands
+191.96.168.183       # Netherlands
 181.214.165.95       # US Chicago
 191.96.37.145        # US Seattle
 102.129.235.192      # US Washington Dc
@@ -10664,7 +10667,6 @@
 37.19.210.186        # US Denver
 102.129.252.81       # US Silicon Valley
 37.19.210.164        # US Denver
-138.199.39.26        # Japan
 138.199.39.23        # Japan
 37.19.210.176        # US Denver
 37.19.210.91         # US Denver
@@ -11316,7 +11318,6 @@
 84.247.105.210       # CA Montreal
 84.247.105.228       # CA Montreal
 84.247.105.232       # CA Montreal
-84.247.105.173       # CA Montreal
 84.247.105.220       # CA Montreal
 84.247.105.249       # CA Montreal
 84.247.105.170       # CA Montreal
@@ -12316,7 +12317,6 @@
 149.22.87.69         # Japan
 149.22.87.77         # Japan
 149.22.87.35         # Japan
-149.22.87.123        # Japan
 149.22.87.31         # Japan
 149.22.87.58         # Japan
 149.22.87.121        # Japan
@@ -12330,7 +12330,6 @@
 149.22.87.99         # Japan
 149.22.87.54         # Japan
 149.22.87.56         # Japan
-149.22.87.106        # Japan
 149.22.87.101        # Japan
 149.22.87.30         # Japan
 149.22.87.6          # Japan
@@ -12373,7 +12372,6 @@
 149.22.87.29         # Japan
 149.22.87.24         # Japan
 149.22.87.64         # Japan
-149.22.87.70         # Japan
 149.22.87.45         # Japan
 149.22.87.120        # Japan
 149.22.87.10         # Japan
@@ -12388,7 +12386,6 @@
 149.22.87.72         # Japan
 149.22.87.80         # Japan
 149.22.87.36         # Japan
-149.22.87.68         # Japan
 149.22.87.40         # Japan
 149.22.87.27         # Japan
 149.22.87.96         # Japan
@@ -12409,7 +12406,6 @@
 149.22.87.89         # Japan
 149.22.87.103        # Japan
 149.22.87.118        # Japan
-149.22.87.114        # Japan
 149.22.87.34         # Japan
 149.22.87.109        # Japan
 149.22.87.110        # Japan
@@ -12569,6 +12565,7 @@
 149.50.212.146       # US California
 149.50.212.151       # US California
 149.50.212.170       # US California
+149.50.212.184       # US California
 149.50.212.183       # US California
 149.50.212.166       # US California
 149.50.212.158       # US California
@@ -14665,6 +14662,7 @@
 212.56.48.145        # Netherlands
 212.56.48.157        # Netherlands
 212.56.48.126        # Netherlands
+212.56.48.135        # Netherlands
 212.56.48.148        # Netherlands
 212.56.48.143        # Netherlands
 212.56.48.158        # Netherlands
