@@ -40,7 +40,7 @@ ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
 DOH_RESOLVERS = [
     'https://1.1.1.1/dns-query',  # in case DNS resolution of cloudflare-dns.com is blocked
-    'https://1.0.0.1/dns-query'
+    'https://1.0.0.1/dns-query',
     'https://dns.google/dns-query',
     'https://dns.quad9.net/dns-query'
 ]
