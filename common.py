@@ -38,6 +38,7 @@ import httpx
 ALLOWLIST_IP_FN = 'data/input/allowlist_ip.txt'
 ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
+DNS_TIMEOUT = 10.0
 DOH_RESOLVERS = [
     'https://1.1.1.1/dns-query',  # in case DNS resolution of cloudflare-dns.com is blocked
     'https://1.0.0.1/dns-query',
@@ -133,7 +134,6 @@ class AdguardPatternChecker:
             except Exception as e:
                 print(f"Warning: Error processing pattern '{pattern_str}': {e}")
 
-
     def check_fqdn(self, fqdn: str) -> bool:
         """Check if FQDN matches any of the precompiled patterns"""
         # Quick pre-filtering for domain suffix patterns
@@ -223,12 +223,15 @@ class Resolver:
 
     def __init__(self):
         self.resolvers = []
-        self.client = httpx.Client(http2=True)
+        self.client = httpx.Client(
+            http2=True,
+            timeout=httpx.Timeout(connect=DNS_TIMEOUT, read=DNS_TIMEOUT, write=DNS_TIMEOUT, pool=DNS_TIMEOUT)
+        )
         self.current_resolver_index = 0
         for resolver_url in DOH_RESOLVERS:
             try:
                 q = dns.message.make_query('example.com', 'A')
-                dns.query.https(q, resolver_url, session=self.client)
+                dns.query.https(q, resolver_url, session=self.client, timeout=DNS_TIMEOUT)
                 self.resolvers.append(resolver_url)
             except Exception:
                 continue
@@ -245,21 +248,26 @@ class Resolver:
         """Resolve hostname using DoH"""
         if not self.resolvers:
             return []
-
-        try:
-            resolver_url = self.resolvers[self.current_resolver_index]
-            q = dns.message.make_query(hostname, 'A')
-            answers = dns.query.https(q, resolver_url, session=self.client)
-            self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
-            ip_list = []
-            for rrset in answers.answer:
-                if rrset.rdtype == dns.rdatatype.A:
-                    for rdata in rrset:
-                        ip_list.append(rdata.address)
-            return ip_list
-        except Exception:
-            self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
-            return []
+        # Try up to two DoH resolvers. If still no answer, fall back to socket.
+        attempts = min(2, len(self.resolvers))
+        for _ in range(attempts):
+            try:
+                resolver_url = self.resolvers[self.current_resolver_index]
+                q = dns.message.make_query(hostname, 'A')
+                answers = dns.query.https(q, resolver_url, session=self.client, timeout=DNS_TIMEOUT)
+                self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
+                ip_list = []
+                for rrset in answers.answer:
+                    if rrset.rdtype == dns.rdatatype.A:
+                        for rdata in rrset:
+                            ip_list.append(rdata.address)
+                if ip_list:
+                    return ip_list
+            except Exception:
+                self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
+                continue
+        # Last resort: socket-based resolution
+        return self.resolve_socket(hostname)
 
     def resolve_socket(self, hostname: str) -> list:
         """Resolve hostname using socket"""
