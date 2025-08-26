@@ -27,7 +27,9 @@ echo "$(date): Running get_cisco_umbrella.py"
 echo "$(date): Running get_pia.py"
 ./get_pia.py || exit 1
 
+# This step intermittently hung in GitHub Actions, so use unbuffered
+# output and set a timeout.
 echo "$(date): Running prepare_final_lists.py"
-./prepare_final_lists.py || exit 1
+time timeout 10m python3 -u ./prepare_final_lists.py || exit 1
 
  echo "$(date): update.sh is done"

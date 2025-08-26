@@ -314,6 +314,7 @@ def main():
     args = parser.parse_args()
 
     os.makedirs(os.path.dirname(LOCAL_CACHE_PATH), exist_ok=True)
+    print('Reading input hostnames...', flush=True)
 
     resolver_cache = None
     if args.use_resolver_cache:
@@ -334,13 +335,17 @@ def main():
             if not pattern_hostname in hostnames_only:
                 pattern_to_hostname_only.append(pattern_hostname)
     fqdns_to_resolve_no_ip_collection = list(set(hostnames_only) | set(pattern_to_hostname_only))
+    print('Resolving hostname-only set and derived patterns...', flush=True)
     (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(
         fqdns_to_resolve_no_ip_collection, 50, resolver_cache=resolver_cache, update_cache=update_cache)
+    print('Resolving hostname+ip set...', flush=True)
     (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip,
                                                        20, resolver_cache=resolver_cache, update_cache=update_cache)
     valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
 
+    print('Reading IP inputs...', flush=True)
     ips_only = read_ips(IP_DIR)
+    print('Writing outputs...', flush=True)
     write_ips(ip_to_root_domains, ips_only)
 
     pattern_checker = AdguardPatternChecker(all_patterns)
@@ -352,6 +357,7 @@ def main():
     write_addresses_to_file(FINAL_HOSTNAME_FN, sort_fqdns(valid_fqdns), units='hostnames', write_timestamp=True)
 
     if update_cache:
+        print('Writing resolver cache...', flush=True)
         write_resolver_cache(LOCAL_CACHE_PATH, resolver_cache)
 
     print(f"{sys.argv[0]} is done")
