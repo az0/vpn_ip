@@ -27,6 +27,12 @@ echo "$(date): Running get_cisco_umbrella.py"
 echo "$(date): Running get_pia.py"
 ./get_pia.py || exit 1
 
+# tldextract does this automatically, but split it out to troubleshoot
+# issue with script timeout.
+echo "$(date): Running tldextract --update"
+tldextract --update || exit 1
+du -bcs $HOME/.cache/python-tldextract
+
 # This step intermittently hung in GitHub Actions, so use unbuffered
 # output and set a timeout.
 echo "$(date): Running prepare_final_lists.py"
