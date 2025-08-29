@@ -230,7 +230,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
                         pbar.update(1)
             except concurrent.futures.TimeoutError:
                 print(f"Warning: Overall timeout of {TIMEOUT_SECONDS} seconds reached")
-                print(f"Processed {completed_count} out of {len(input_fqdns)} hostnames")
+                print(f"Processed {completed_count:,} out of {len(input_fqdns):,} hostnames")
                 # Cancel remaining futures
                 for future in future_to_fqdn:
                     if not future.done():
@@ -255,12 +255,12 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
         max_time_ms = max(resolve_times) * 1000
         sorted_times = sorted(resolve_times)
         p95_time_ms = sorted_times[int(0.95 * len(sorted_times))] * 1000
-        print(f'* resolve time stats: min={min_time_ms:.1f}ms, avg={avg_time_ms:.1f}ms, p95={p95_time_ms:.1f}ms, max={max_time_ms:.1f}ms')
+        print(f'* resolve time stats: min={min_time_ms:,.1f}ms, avg={avg_time_ms:,.1f}ms, p95={p95_time_ms:,.1f}ms, max={max_time_ms:,.1f}ms')
     assert unique_host_count >= 0
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
-    assert resolved_host_count >= min_resolved_host_count, f'{resolved_host_count} vs {min_resolved_host_count}'
-    assert completed_count / len(input_fqdns) >= 0.95, f'{completed_count:,} / {len(input_fqdns:,)} completed without timeout'
+    assert resolved_host_count >= min_resolved_host_count, f'{resolved_host_count:,} vs {min_resolved_host_count:,}'
+    assert completed_count / len(input_fqdns) >= 0.95, f'{completed_count:,} / {len(input_fqdns):,} completed without timeout'
 
     return (valid_fqdns, ip_to_root_domains)
 
