@@ -38,7 +38,8 @@ INPUT_HOSTNAME_ONLY_PATTERN = 'data/input/hostname_only/*.txt'
 INPUT_HOSTNAME_IP_PATTERN = 'data/input/hostname_ip/*.txt'
 ADGUARD_OUTPUT_FN = 'data/output/adguard.txt'
 MAX_WORKERS = 8
-TIMEOUT_SECONDS = 120
+INDIVIDUAL_TIMEOUT_SECONDS = 60
+BATCH_TIMEOUT_SECONDS = 60 * 10
 R2_CACHE_URL = 'https://az0-vpnip-public.oooninja.com/ip_cache.json.lzma'
 LOCAL_CACHE_PATH = 'data/cache/ip_cache.json.lzma'
 ALIAS_MAP = {
@@ -219,9 +220,10 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
 
             try:
                 with tqdm.tqdm(total=len(input_fqdns)) as pbar:
-                    for future in concurrent.futures.as_completed(future_to_fqdn, timeout=TIMEOUT_SECONDS):
+                    for future in concurrent.futures.as_completed(future_to_fqdn, timeout=BATCH_TIMEOUT_SECONDS):
                         try:
-                            future.result()  # This will raise any exception from the task
+                            # This will raise any exception from the task
+                            future.result(INDIVIDUAL_TIMEOUT_SECONDS)
                             completed_count += 1
                         except Exception as e:
                             fqdn = future_to_fqdn[future]
@@ -229,7 +231,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
                             print(f"Warning: Failed to resolve {fqdn}: {e}")
                         pbar.update(1)
             except concurrent.futures.TimeoutError:
-                print(f"Warning: Overall timeout of {TIMEOUT_SECONDS} seconds reached")
+                print(f"Warning: Overall timeout of {BATCH_TIMEOUT_SECONDS} seconds reached")
                 print(f"Processed {completed_count:,} out of {len(input_fqdns):,} hostnames")
                 # Cancel remaining futures
                 for future in future_to_fqdn:
@@ -324,7 +326,7 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
 def download_and_load_resolver_cache(cache_url, cache_path):
     """Download and load resolver cache from R2"""
     print(f"Downloading resolver cache from {cache_url}")
-    r = requests.get(cache_url, timeout=TIMEOUT_SECONDS)
+    r = requests.get(cache_url, timeout=INDIVIDUAL_TIMEOUT_SECONDS)
     r.raise_for_status()
     with open(cache_path, 'wb') as f:
         f.write(r.content)
