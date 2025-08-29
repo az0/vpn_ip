@@ -9,6 +9,9 @@ if [ -n "${GITHUB_ACTIONS}" ]; then
     export TQDM_DISABLE=1
 fi
 
+echo "$(date): Running tests"
+python3 -m unittest -v common get_browser_extension prepare_final_lists
+
 # Execute all the steps in the scheduled GitHub action to
 # update this repository
 

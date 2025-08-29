@@ -246,6 +246,17 @@ class Resolver:
         """Exit context manager"""
         self.client.close()
 
+    def _resolve_doh(self, hostname: str, resolver_url : str):
+        """Helper to resolve DoH"""
+        q = dns.message.make_query(hostname, 'A')
+        answers = dns.query.https(q, resolver_url, session=self.client, timeout=DNS_TIMEOUT)
+        ip_list = []
+        for rrset in answers.answer:
+            if rrset.rdtype == dns.rdatatype.A:
+                for rdata in rrset:
+                    ip_list.append(rdata.address)
+        return ip_list
+
     def resolve_doh(self, hostname: str) -> list:
         """Resolve hostname using DoH"""
         if not self.resolvers:
@@ -255,16 +266,9 @@ class Resolver:
         for _ in range(attempts):
             try:
                 resolver_url = self.resolvers[self.current_resolver_index]
-                q = dns.message.make_query(hostname, 'A')
-                answers = dns.query.https(q, resolver_url, session=self.client, timeout=DNS_TIMEOUT)
+                ip_list = self._resolve_doh(hostname, resolver_url)
                 self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
-                ip_list = []
-                for rrset in answers.answer:
-                    if rrset.rdtype == dns.rdatatype.A:
-                        for rdata in rrset:
-                            ip_list.append(rdata.address)
-                if ip_list:
-                    return ip_list
+                return ip_list
             except Exception:
                 self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
                 continue
@@ -293,6 +297,35 @@ class Resolver:
 
 class TestCommon(unittest.TestCase):
     """Test common functions"""
+
+    def test_all_resolvers_working(self):
+        """Test that all DoH resolvers are working"""
+        test_domain = "example.com"
+        working_resolvers = []
+        failed_resolvers = []
+
+        for resolver_url in DOH_RESOLVERS:
+            with Resolver() as resolver:
+                try:
+                    ip_list = resolver._resolve_doh(test_domain, resolver_url)
+                    if len(ip_list) > 0:
+                        working_resolvers.append(resolver_url)
+                    else:
+                        failed_resolvers.append((resolver_url, "No answer in response"))
+                except Exception as e:
+                    failed_resolvers.append((resolver_url, str(e)))
+
+        if working_resolvers:
+            print("\nWorking resolvers:")
+            for resolver in working_resolvers:
+                print(f"+ {resolver}")
+
+        if failed_resolvers:
+            print("\nFailed resolvers:")
+            for resolver, error in failed_resolvers:
+                print(f"- {resolver}: {error}")
+
+        self.assertEqual(failed_resolvers, [])
 
     def test_add_new_hostnames_to_file_existing(self):
         """Test add_new_hostnames_to_file() with existing file"""
