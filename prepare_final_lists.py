@@ -10,12 +10,13 @@ import argparse
 import collections
 import concurrent.futures
 import datetime
-import lzma
 import ipaddress
 import json
-import unittest
+import lzma
 import os
+import random
 import sys
+import unittest
 
 # third-party import
 import bogons
@@ -348,6 +349,8 @@ def main():
     parser = argparse.ArgumentParser(description="Prepare final VPN/IP lists")
     parser.add_argument('--use-resolver-cache', action='store_true',
                         help='Use public R2 resolver cache for hostname resolution')
+    parser.add_argument('--max-hostnames', type=int, default=None,
+                       help='Limit the number of hostnames to process (for testing)')
     args = parser.parse_args()
 
     os.makedirs(os.path.dirname(LOCAL_CACHE_PATH), exist_ok=True)
@@ -372,6 +375,13 @@ def main():
             if not pattern_hostname in hostnames_only:
                 pattern_to_hostname_only.append(pattern_hostname)
     fqdns_to_resolve_no_ip_collection = list(set(hostnames_only) | set(pattern_to_hostname_only))
+
+    if args.max_hostnames:
+        print(f'Limiting to {args.max_hostnames:,} hostnames for testing...', flush=True)
+        fqdns_to_resolve_no_ip_collection = random.sample(fqdns_to_resolve_no_ip_collection, min(args.max_hostnames, len(fqdns_to_resolve_no_ip_collection)))
+        hostnames_ip = random.sample(hostnames_ip, min(args.max_hostnames, len(hostnames_ip)))
+        update_cache = False
+
     print('Resolving hostname-only set and derived patterns...', flush=True)
     (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(
         fqdns_to_resolve_no_ip_collection, 50, resolver_cache=resolver_cache, update_cache=update_cache)
