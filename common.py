@@ -38,7 +38,7 @@ import httpx
 ALLOWLIST_IP_FN = 'data/input/allowlist_ip.txt'
 ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
-DNS_TIMEOUT = 10.0
+DNS_TIMEOUT = 1.0
 DOH_RESOLVERS = [
     'https://1.1.1.1/dns-query',  # in case DNS resolution of cloudflare-dns.com is blocked
     'https://1.0.0.1/dns-query',
@@ -221,20 +221,38 @@ class Allowlist:
 
 
 class Resolver:
-    """Resolve hostnames using DoH or socket"""
+    """Resolve hostnames using DoH or socket with optimized connection pooling"""
 
     def __init__(self):
+        # Create persistent clients for each resolver
+        self.clients = {}
         self.resolvers = []
-        self.client = httpx.Client(
-            http2=True,
-            timeout=httpx.Timeout(connect=DNS_TIMEOUT, read=DNS_TIMEOUT, write=DNS_TIMEOUT, pool=DNS_TIMEOUT)
-        )
-        self.current_resolver_index = 0
+        self.primary_resolver = None
+        self.resolver_failures = {}  # Track failures per resolver
+        self.query_count = 0  # For primary resolver selection strategy
+
+        # Test and initialize working resolvers with their own clients
         for resolver_url in DOH_RESOLVERS:
             try:
+                # Create dedicated client for this resolver
+                client = httpx.Client(
+                    http2=True,
+                    timeout=httpx.Timeout(connect=DNS_TIMEOUT, read=DNS_TIMEOUT, write=DNS_TIMEOUT, pool=DNS_TIMEOUT)
+                )
+
+                # Test the resolver
                 q = dns.message.make_query('example.com', 'A')
-                dns.query.https(q, resolver_url, session=self.client, timeout=DNS_TIMEOUT)
+                dns.query.https(q, resolver_url, session=client, timeout=DNS_TIMEOUT)
+
+                # If successful, add to working resolvers
+                self.clients[resolver_url] = client
                 self.resolvers.append(resolver_url)
+                self.resolver_failures[resolver_url] = 0
+
+                # Set first working resolver as primary
+                if self.primary_resolver is None:
+                    self.primary_resolver = resolver_url
+
             except Exception:
                 continue
 
@@ -244,12 +262,15 @@ class Resolver:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Exit context manager"""
-        self.client.close()
+        # Close all clients
+        for client in self.clients.values():
+            client.close()
 
-    def _resolve_doh(self, hostname: str, resolver_url : str):
-        """Helper to resolve DoH"""
+    def _resolve_doh(self, hostname: str, resolver_url: str):
+        """Helper to resolve DoH using dedicated client for the resolver"""
+        client = self.clients[resolver_url]
         q = dns.message.make_query(hostname, 'A')
-        answers = dns.query.https(q, resolver_url, session=self.client, timeout=DNS_TIMEOUT)
+        answers = dns.query.https(q, resolver_url, session=client, timeout=DNS_TIMEOUT)
         ip_list = []
         for rrset in answers.answer:
             if rrset.rdtype == dns.rdatatype.A:
@@ -257,21 +278,69 @@ class Resolver:
                     ip_list.append(rdata.address)
         return ip_list
 
+    def _select_resolver(self):
+        """Select resolver using primary + fallback strategy"""
+        if not self.resolvers:
+            return None
+
+        self.query_count += 1
+
+        # Use primary resolver 95% of the time (every 20 queries, try fallback once)
+        if self.primary_resolver and (self.query_count % 20 != 0 or len(self.resolvers) == 1):
+            # Check if primary has too many recent failures
+            if self.resolver_failures.get(self.primary_resolver, 0) < 3:
+                return self.primary_resolver
+
+        # Fallback: find resolver with least failures
+        best_resolver = min(self.resolvers, key=lambda r: self.resolver_failures.get(r, 0))
+        return best_resolver
+
+    def _mark_resolver_failure(self, resolver_url):
+        """Mark resolver as failed and potentially switch primary"""
+        self.resolver_failures[resolver_url] = self.resolver_failures.get(resolver_url, 0) + 1
+
+        # If primary resolver has too many failures, switch to best alternative
+        if (resolver_url == self.primary_resolver and
+            self.resolver_failures[resolver_url] >= 3 and
+                len(self.resolvers) > 1):
+
+            # Find best alternative resolver
+            alternatives = [r for r in self.resolvers if r != self.primary_resolver]
+            if alternatives:
+                self.primary_resolver = min(alternatives, key=lambda r: self.resolver_failures.get(r, 0))
+
+    def _mark_resolver_success(self, resolver_url):
+        """Mark resolver as successful, resetting failure count"""
+        self.resolver_failures[resolver_url] = 0
+
     def resolve_doh(self, hostname: str) -> list:
-        """Resolve hostname using DoH"""
+        """Resolve hostname using DoH with optimized resolver selection"""
         if not self.resolvers:
             return []
-        # Try up to two DoH resolvers. If still no answer, fall back to socket.
+
+        # Try up to 2 resolvers with smart selection
         attempts = min(2, len(self.resolvers))
+        tried_resolvers = set()
+
         for _ in range(attempts):
+            resolver_url = self._select_resolver()
+            if not resolver_url or resolver_url in tried_resolvers:
+                # Find an untried resolver
+                untried = [r for r in self.resolvers if r not in tried_resolvers]
+                if not untried:
+                    break
+                resolver_url = untried[0]
+
+            tried_resolvers.add(resolver_url)
+
             try:
-                resolver_url = self.resolvers[self.current_resolver_index]
                 ip_list = self._resolve_doh(hostname, resolver_url)
-                self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
+                self._mark_resolver_success(resolver_url)
                 return ip_list
             except Exception:
-                self.current_resolver_index = (self.current_resolver_index + 1) % len(self.resolvers)
+                self._mark_resolver_failure(resolver_url)
                 continue
+
         # Last resort: socket-based resolution
         return self.resolve_socket(hostname)
 
@@ -579,7 +648,7 @@ def sort_fqdns(fqdns: list) -> list:
 
     Example result:
     blog.example.com
-    mail.example.com    
+    mail.example.com
     api.example.org
     docs.example.org
 
