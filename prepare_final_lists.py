@@ -260,6 +260,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
     assert resolved_host_count >= min_resolved_host_count, f'{resolved_host_count} vs {min_resolved_host_count}'
+    assert completed_count / len(input_fqdns) >= 0.95, f'{completed_count:,} / {len(input_fqdns:,)} completed without timeout'
 
     return (valid_fqdns, ip_to_root_domains)
 
