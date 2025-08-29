@@ -43,7 +43,9 @@ DOH_RESOLVERS = [
     'https://1.1.1.1/dns-query',  # in case DNS resolution of cloudflare-dns.com is blocked
     'https://1.0.0.1/dns-query',
     'https://dns.google/dns-query',
-    'https://dns.quad9.net/dns-query'
+    'https://dns.quad9.net/dns-query',
+    'https://doh.opendns.com/dns-query',
+    'https://freedns.controld.com/p0'
 ]
 
 # Classes
