@@ -183,14 +183,18 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
     valid_fqdns = set()
     hostnames_with_non_public_ip = []
     hostnames_with_ip_in_allowlist = []
+    resolve_times = []
 
     def resolve_hostname_and_add(this_fqdn):
-        nonlocal hostnames_with_non_public_ip, hostnames_with_ip_in_allowlist, valid_fqdns
+        nonlocal hostnames_with_non_public_ip, hostnames_with_ip_in_allowlist, valid_fqdns, resolve_times
         # Use cache if available
         if resolver_cache is not None and this_fqdn in resolver_cache:
             ip_addresses = resolver_cache[this_fqdn]
         else:
+            start_time = datetime.datetime.now()
             ip_addresses = resolver.resolve(this_fqdn)
+            end_time = datetime.datetime.now()
+            resolve_times.append((end_time - start_time).total_seconds())
             if update_cache and resolver_cache is not None:
                 resolver_cache[this_fqdn] = ip_addresses
         root_domain = get_root_domain(this_fqdn)
@@ -244,6 +248,13 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
     print(f'* count of unresolvable hosts: {len(input_fqdns) - resolved_host_count:,}')
     print(f'* count of hostnames with IP in allowlist: {len(hostnames_with_ip_in_allowlist):,}')
     print(f'* count of hostnames with non-public IP: {len(set(hostnames_with_non_public_ip)):,}')
+    if resolve_times:
+        min_time_ms = min(resolve_times) * 1000
+        avg_time_ms = (sum(resolve_times) / len(resolve_times)) * 1000
+        max_time_ms = max(resolve_times) * 1000
+        sorted_times = sorted(resolve_times)
+        p95_time_ms = sorted_times[int(0.95 * len(sorted_times))] * 1000
+        print(f'* resolve time stats: min={min_time_ms:.1f}ms, avg={avg_time_ms:.1f}ms, p95={p95_time_ms:.1f}ms, max={max_time_ms:.1f}ms')
     assert unique_host_count >= 0
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
