@@ -76,5 +76,14 @@
             "ip2",
             "ip3"
         ]
+    },
+    "workingvpn": {
+        "urls": [
+            "https://000000555.xyz/api/extension/servers"
+        ],
+        "hostname_key": [
+            "host"
+        ],
+        "ip_key": []
     }
 }
