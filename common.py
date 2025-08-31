@@ -24,29 +24,27 @@ import glob
 import ipaddress
 import os
 import re
-import socket
 import sys
 import tempfile
 import unittest
 
 # third-party imports
-import dns.query
-import dns.message
-import httpx
 
 # Constants
 ALLOWLIST_IP_FN = 'data/input/allowlist_ip.txt'
 ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
-DNS_TIMEOUT = 1.0
-DOH_RESOLVERS = [
-    'https://1.1.1.1/dns-query',  # in case DNS resolution of cloudflare-dns.com is blocked
-    'https://1.0.0.1/dns-query',
-    'https://dns.google/dns-query',
-    'https://dns.quad9.net/dns-query',
-    'https://doh.opendns.com/dns-query',
-    'https://freedns.controld.com/p0'
-]
+TEST_HOSTNAMES_VALID = [
+                        'cornell.edu',
+                        'facebook.com',
+                        'google.com',
+                        'lencr.org',
+                        'microsoft.com',
+                        'mozilla.org',
+                        'nasa.gov',
+                        'npt.org',
+                        'pki.goog',
+                        ]
 
 # Classes
 
@@ -190,15 +188,15 @@ class Allowlist:
 
     def _load_hostnames(self, filename, resolve):
         with open(filename, 'r', encoding='utf-8') as f:
-            with Resolver() as resolver:
-                for line in f:
-                    hostname = clean_line(line)
-                    if not hostname or len(hostname) <= 5:
-                        continue
-                    self.hostname_allowlist.add(hostname)
+            for line in f:
+                hostname = clean_line(line)
+                if not hostname or len(hostname) <= 5:
+                    continue
+                self.hostname_allowlist.add(hostname)
                 if resolve:
-                    for ip in resolver.resolve(hostname):
-                        self.ip_allowlist.add(ip)
+                    # Skip IP resolution for allowlist loading to avoid dependencies
+                    # IPs will be resolved when needed in the main processing
+                    pass
 
     def check_hostname_in_allowlist(self, hostname: str) -> bool:
         """Return True if hostname is in allowlist"""
@@ -220,181 +218,11 @@ class Allowlist:
         return False
 
 
-class Resolver:
-    """Resolve hostnames using DoH or socket with optimized connection pooling"""
-
-    def __init__(self):
-        # Create persistent clients for each resolver
-        self.clients = {}
-        self.resolvers = []
-        self.primary_resolver = None
-        self.resolver_failures = {}  # Track failures per resolver
-        self.query_count = 0  # For primary resolver selection strategy
-
-        # Test and initialize working resolvers with their own clients
-        for resolver_url in DOH_RESOLVERS:
-            try:
-                # Create dedicated client for this resolver
-                client = httpx.Client(
-                    http2=True,
-                    timeout=httpx.Timeout(connect=DNS_TIMEOUT, read=DNS_TIMEOUT, write=DNS_TIMEOUT, pool=DNS_TIMEOUT)
-                )
-
-                # Test the resolver
-                q = dns.message.make_query('example.com', 'A')
-                dns.query.https(q, resolver_url, session=client, timeout=DNS_TIMEOUT)
-
-                # If successful, add to working resolvers
-                self.clients[resolver_url] = client
-                self.resolvers.append(resolver_url)
-                self.resolver_failures[resolver_url] = 0
-
-                # Set first working resolver as primary
-                if self.primary_resolver is None:
-                    self.primary_resolver = resolver_url
-
-            except Exception:
-                continue
-
-    def __enter__(self):
-        """Enter context manager"""
-        return self
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        """Exit context manager"""
-        # Close all clients
-        for client in self.clients.values():
-            client.close()
-
-    def _resolve_doh(self, hostname: str, resolver_url: str):
-        """Helper to resolve DoH using dedicated client for the resolver"""
-        client = self.clients[resolver_url]
-        q = dns.message.make_query(hostname, 'A')
-        answers = dns.query.https(q, resolver_url, session=client, timeout=DNS_TIMEOUT)
-        ip_list = []
-        for rrset in answers.answer:
-            if rrset.rdtype == dns.rdatatype.A:
-                for rdata in rrset:
-                    ip_list.append(rdata.address)
-        return ip_list
-
-    def _select_resolver(self):
-        """Select resolver using primary + fallback strategy"""
-        if not self.resolvers:
-            return None
-
-        self.query_count += 1
-
-        # Use primary resolver 95% of the time (every 20 queries, try fallback once)
-        if self.primary_resolver and (self.query_count % 20 != 0 or len(self.resolvers) == 1):
-            # Check if primary has too many recent failures
-            if self.resolver_failures.get(self.primary_resolver, 0) < 3:
-                return self.primary_resolver
-
-        # Fallback: find resolver with least failures
-        best_resolver = min(self.resolvers, key=lambda r: self.resolver_failures.get(r, 0))
-        return best_resolver
-
-    def _mark_resolver_failure(self, resolver_url):
-        """Mark resolver as failed and potentially switch primary"""
-        self.resolver_failures[resolver_url] = self.resolver_failures.get(resolver_url, 0) + 1
-
-        # If primary resolver has too many failures, switch to best alternative
-        if (resolver_url == self.primary_resolver and
-            self.resolver_failures[resolver_url] >= 3 and
-                len(self.resolvers) > 1):
-
-            # Find best alternative resolver
-            alternatives = [r for r in self.resolvers if r != self.primary_resolver]
-            if alternatives:
-                self.primary_resolver = min(alternatives, key=lambda r: self.resolver_failures.get(r, 0))
-
-    def _mark_resolver_success(self, resolver_url):
-        """Mark resolver as successful, resetting failure count"""
-        self.resolver_failures[resolver_url] = 0
-
-    def resolve_doh(self, hostname: str) -> list:
-        """Resolve hostname using DoH with optimized resolver selection"""
-        if not self.resolvers:
-            return []
-
-        # Try up to 2 resolvers with smart selection
-        attempts = min(2, len(self.resolvers))
-        tried_resolvers = set()
-
-        for _ in range(attempts):
-            resolver_url = self._select_resolver()
-            if not resolver_url or resolver_url in tried_resolvers:
-                # Find an untried resolver
-                untried = [r for r in self.resolvers if r not in tried_resolvers]
-                if not untried:
-                    break
-                resolver_url = untried[0]
-
-            tried_resolvers.add(resolver_url)
-
-            try:
-                ip_list = self._resolve_doh(hostname, resolver_url)
-                self._mark_resolver_success(resolver_url)
-                return ip_list
-            except Exception:
-                self._mark_resolver_failure(resolver_url)
-                continue
-
-        # Last resort: socket-based resolution
-        return self.resolve_socket(hostname)
-
-    def resolve_socket(self, hostname: str) -> list:
-        """Resolve hostname using socket"""
-        try:
-            ip_addresses = socket.getaddrinfo(
-                hostname, None, family=socket.AF_INET)
-        except Exception:
-            return []
-        ret = {ip[4][0] for ip in ip_addresses}
-        return list(ret)
-
-    def resolve(self, hostname: str) -> list:
-        """Resolve hostname using DoH or socket
-
-        Returns empty list if there is an error. Otherwise returns a list of IPv4 addresses.
-        """
-        if self.resolvers:
-            return self.resolve_doh(hostname)
-        return self.resolve_socket(hostname)
 
 
 class TestCommon(unittest.TestCase):
     """Test common functions"""
 
-    def test_all_resolvers_working(self):
-        """Test that all DoH resolvers are working"""
-        test_domain = "example.com"
-        working_resolvers = []
-        failed_resolvers = []
-
-        for resolver_url in DOH_RESOLVERS:
-            with Resolver() as resolver:
-                try:
-                    ip_list = resolver._resolve_doh(test_domain, resolver_url)
-                    if len(ip_list) > 0:
-                        working_resolvers.append(resolver_url)
-                    else:
-                        failed_resolvers.append((resolver_url, "No answer in response"))
-                except Exception as e:
-                    failed_resolvers.append((resolver_url, str(e)))
-
-        if working_resolvers:
-            print("\nWorking resolvers:")
-            for resolver in working_resolvers:
-                print(f"+ {resolver}")
-
-        if failed_resolvers:
-            print("\nFailed resolvers:")
-            for resolver, error in failed_resolvers:
-                print(f"- {resolver}: {error}")
-
-        self.assertEqual(failed_resolvers, [])
 
     def test_add_new_hostnames_to_file_existing(self):
         """Test add_new_hostnames_to_file() with existing file"""
@@ -497,24 +325,6 @@ class TestCommon(unittest.TestCase):
             self.assertCountEqual(actual_hostnames, sorted(hostnames))
             self.assertCountEqual(actual_patterns, sorted(patterns))
 
-    def test_resolver(self):
-        """Test resolver"""
-        resolver = Resolver()
-        with resolver:
-            for domain in ['example.com', 'example.net', 'example.org', 'iana.org', 'python.org']:
-                last_ret = None
-                for func_name in ['resolve', 'resolve_socket', 'resolve_doh']:
-                    func = getattr(resolver, func_name)
-                    ret = func(domain)
-                    self.assertIsInstance(ret, list)
-                    self.assertGreater(len(ret), 0, f'{func_name} {domain}: {ret}')
-                    if last_ret is not None:
-                        self.assertEqual(set(ret), set(last_ret))
-                    last_ret = ret
-
-            for bad_domain in ['nonexistent-domain-that-should-not-exist-12345.com', 'invalid..domain', '']:
-                ret = resolver.resolve(bad_domain)
-                self.assertEqual(ret, [])
 
     def test_sort_fqdns(self):
         """Test sort_fqdns() function"""

@@ -10,7 +10,7 @@ if [ -n "${GITHUB_ACTIONS}" ]; then
 fi
 
 echo "$(date): Running tests"
-python3 -m unittest -v common get_browser_extension prepare_final_lists
+python3 -W error -m unittest -v common get_browser_extension prepare_final_lists resolver
 
 # Execute all the steps in the scheduled GitHub action to
 # update this repository
@@ -39,6 +39,6 @@ du -bcs $HOME/.cache/python-tldextract
 # This step intermittently hung in GitHub Actions, so use unbuffered
 # output and set a timeout.
 echo "$(date): Running prepare_final_lists.py"
-time timeout 10m python3 -u ./prepare_final_lists.py || exit 1
+time timeout 30m python3 -u ./prepare_final_lists.py || exit 1
 
  echo "$(date): update.sh is done"
