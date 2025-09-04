@@ -11,6 +11,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Download data/output from R2
+        run: |
+            mkdir -p data/output
+            # Download the existing output files from R2 (needed for incremental updates)
+            wget -q -O data/output/hostname.txt https://az0-vpnip-public.oooninja.com/hostname.txt || true
+            wget -q -O data/output/ip.txt https://az0-vpnip-public.oooninja.com/ip.txt || true
+            wget -q -O data/output/adguard.txt https://az0-vpnip-public.oooninja.com/adguard.txt || true
+        shell: bash
       - name: Run code
         run: |
             chmod +x update.sh
