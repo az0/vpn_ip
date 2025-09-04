@@ -446,7 +446,8 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
     sorted_ips = sorted(merged_dict.keys(),
                         key=lambda ip: int(ipaddress.ip_address(ip)))
 
-    print(f'count of final IPs to write: {len(sorted_ips):,}')
+    # Make this message consistent to the hostname message.
+    print(f'writing {len(sorted_ips):,} IPs to {FINAL_IP_FN}')
 
     with open(FINAL_IP_FN, "w", encoding="utf-8") as output_file:
         output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
