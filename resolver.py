@@ -35,20 +35,26 @@ Error codes
 
 """
 
+# built-in import
 import asyncio
 import datetime
 import ipaddress
+import logging
+import os
 import random
+import sys
 import time
 import unittest
 from typing import Dict, List
 
+# third-party import
 import dns.asyncresolver
 import dns.exception
 import dns.resolver
-import tqdm
+from tqdm import tqdm
 
-from common import TEST_HOSTNAMES_VALID
+# local import
+from common import setup_logging, TEST_HOSTNAMES_VALID
 
 DNS_TIMEOUT = 5.0  # seconds
 LIFETIME_TIMEOUT = DNS_TIMEOUT * 2
@@ -70,6 +76,48 @@ ERROR_CODES = [
     "DNSException",
     "Exception"
 ]
+CI_PROGRESS_FREQUENCY = 30  # seconds
+
+setup_logging()
+
+
+def get_progress(total: int):
+    """Return a progress reporter depending on environment."""
+    if os.getenv("GITHUB_ACTIONS") == "true":
+        class CIProgress:
+            """Progress reporter for CI."""
+
+            def __init__(self, total):
+                self.n = 0
+                self.total = total
+                self.last_log = time.monotonic()
+                self.first_start = time.monotonic()
+                self.last_start = time.monotonic()
+
+            def _log_progress(self, message_prefix):
+                """Log progress with rate calculation."""
+                elapsed = time.monotonic() - self.last_log
+                if elapsed > 0:
+                    units_per_second = self.n / elapsed
+                else:
+                    units_per_second = 0.0
+                logging.info("%s %s / %s (%.1f units/s)", message_prefix, self.n, self.total, units_per_second)
+
+            def update(self, n=1):
+                """Update progress."""
+                self.n += n
+                now = time.monotonic()
+                if now - self.last_start >= CI_PROGRESS_FREQUENCY:
+                    self.last_start = now
+                    self._log_progress("Processed")
+
+            def close(self):
+                """Close progress reporter."""
+                self.last_log = self.first_start
+                self._log_progress("Done:")
+        return CIProgress(total)
+    else:
+        return tqdm(total=total, file=sys.stdout)
 
 
 class AsyncResolver:
@@ -82,7 +130,7 @@ class AsyncResolver:
         shuffled_servers = DNS_SERVERS.copy()
         random.shuffle(shuffled_servers)
         self.resolver.nameservers = shuffled_servers
-        print(f"Using DNS servers: {self.resolver.nameservers[:3]}")
+        logging.info("Using DNS servers: %s", self.resolver.nameservers[:3])
         self.resolver.timeout = DNS_TIMEOUT
         self.resolver.lifetime = LIFETIME_TIMEOUT
         self.resolve_times = []
@@ -147,12 +195,14 @@ class AsyncResolver:
         tasks = [resolve_with_semaphore(hostname) for hostname in unique_hostnames]
 
         results = {}
-        with tqdm.tqdm(total=len(tasks), desc="Resolving hostnames") as pbar:
-            for task in asyncio.as_completed(tasks):
-                hostname, result = await task
-                results[hostname] = result
-                pbar.update(1)
+        pbar = get_progress(len(tasks))
 
+        for task in asyncio.as_completed(tasks):
+            hostname, result = await task
+            results[hostname] = result
+            pbar.update(1)
+
+        pbar.close()
         return results
 
     def get_statistics(self) -> dict:
@@ -197,6 +247,7 @@ def resolve_hostnames_sync(hostnames: List[str], max_concurrency: int) -> Dict[s
         Dictionary mapping hostname to result dict
     """
     start_total_time = datetime.datetime.now()
+
     async def _async_resolve():
         resolver = AsyncResolver(max_concurrency=max_concurrency)
         return await resolver.resolve_hostnames(hostnames), resolver.get_statistics()

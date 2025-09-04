@@ -11,8 +11,8 @@ import collections
 import datetime
 import ipaddress
 import json
-import lzma
 import logging
+import lzma
 import os
 import random
 import sys
@@ -26,7 +26,7 @@ import tldextract
 # local import
 from common import (AdguardPatternChecker, Allowlist,
                     clean_line, read_input_hostnames,
-                    sort_fqdns,
+                    sort_fqdns, setup_logging,
                     write_addresses_to_file, TEST_HOSTNAMES_VALID)
 from resolver import resolve_hostnames_sync
 
@@ -473,18 +473,6 @@ def write_resolver_cache(cache_path, host_to_results):
     logging.info("Wrote resolver cache with %s entries to %s", f"{len(host_to_results):,}", cache_path)
 
 
-def setup_logging(verbose=False):
-    """Configure logging with the specified verbosity level"""
-    log_level = logging.DEBUG if verbose else logging.INFO
-    handler = logging.StreamHandler(sys.stdout)
-    handler.flush = sys.stdout.flush
-    logging.basicConfig(
-        level=log_level,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[handler]
-    )
-
-
 def main():
     """Main function"""
     parser = argparse.ArgumentParser(description="Prepare final VPN/IP lists")
@@ -498,7 +486,6 @@ def main():
                         help='Enable verbose output')
     args = parser.parse_args()
 
-    # Configure logging based on verbosity
     setup_logging(verbose=args.verbose)
 
     os.makedirs(os.path.dirname(LOCAL_CACHE_PATH), exist_ok=True)

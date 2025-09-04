@@ -22,11 +22,29 @@ level.
 import datetime
 import glob
 import ipaddress
+import logging
 import os
 import re
 import sys
 import tempfile
 import unittest
+
+
+def setup_logging(verbose=False):
+    """Configure logging with the specified verbosity level
+
+    Args:
+        verbose: If True, sets log level to DEBUG, otherwise INFO
+    """
+    log_level = logging.DEBUG if verbose else logging.INFO
+    handler = logging.StreamHandler(sys.stdout)
+    handler.flush = sys.stdout.flush
+    logging.basicConfig(
+        level=log_level,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        datefmt="%Y-%m-%d %H:%M:%S",  # no milliseconds
+        handlers=[handler]
+    )
 
 # third-party imports
 
