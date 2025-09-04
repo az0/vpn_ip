@@ -166,7 +166,14 @@ def read_ips(directory):
 
 
 def get_root_domain(fqdn: str) -> str:
-    """Get root domain from FQDN"""
+    """Get root domain from FQDN
+
+    Example:
+    >>> get_root_domain('example.com')
+    'example.com'
+    >>> get_root_domain('www.example.com')
+    'example.com'
+    """
     ext = tldextract.extract(fqdn)
     return '.'.join([ext.domain, ext.suffix])
 
@@ -255,7 +262,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
     logging.info('* count of unique, valid IPs resolved: %s', f'{len(ip_to_root_domains):,}')
     resolvable_host_names = set([hostname for hostnames in ip_to_root_domains.values() for hostname in hostnames])
     resolved_host_count = len(resolvable_host_names)
-    logging.info('* count of unique hostnames: %s', f'{resolved_host_count:,}')
+    logging.info('* count of unique hostnames (without subdomains): %s', f'{resolved_host_count:,}')
     # Count unresolvable hosts by reason
     unresolvable_counts = {}
     for reason in unresolvable_hosts:
