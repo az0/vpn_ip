@@ -3,6 +3,12 @@
 This reads all the input hostname and IP addresses.
 It combines duplicates and filters out hostnames that are invalid.
 Finally, it writes one list of hostnames and one list of IP addresses.
+
+# Terminology
+* hostname/FQDN: a fully qualified domain name (e.g., 'www.example.com')
+* root domain: the registrable domain portion of an FQDN (e.g., 'example.com' from 'www.example.com')
+* TLD: top-level domain (e.g., 'com' from 'example.com')
+* bogon: an IP address that is not a valid, public IP address (e.g., '127.0.0.1')
 """
 
 # built-in
@@ -72,7 +78,7 @@ class TestPrepareFinalLists(unittest.TestCase):
     """Test prepare_final_lists module"""
 
     def test_fqdns_not_matching_pattern(self):
-        """Test fqdns_not_matching_pattern()"""
+        """Test fqdns_not_matching_pattern() in normal usage"""
         patterns = [
             '||example1.com^',
             'ample2.org|',
@@ -100,6 +106,7 @@ class TestPrepareFinalLists(unittest.TestCase):
         self.assertCountEqual(actual_output, fqdns_not_match)
 
     def test_fqdns_not_matching_pattern_empty_input(self):
+        """Test fqdns_not_matching_pattern() with empty input"""
         patterns = ['||example.com^']
         pattern_checker = AdguardPatternChecker(patterns)
         fqdns = []
@@ -108,6 +115,7 @@ class TestPrepareFinalLists(unittest.TestCase):
         self.assertEqual(actual_output, expected_output)
 
     def test_fqdns_not_matching_pattern_empty_patterns(self):
+        """Test fqdns_not_matching_pattern() with empty patterns"""
         patterns = []
         pattern_checker = AdguardPatternChecker(patterns)
         fqdns = ['a.com', 'b.net', 'c.org']
