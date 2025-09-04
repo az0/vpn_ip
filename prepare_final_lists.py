@@ -138,6 +138,63 @@ class TestPrepareFinalLists(unittest.TestCase):
         hostnames_with_ips = set([hostname for hostnames in ret_ip_to_root_domains.values() for hostname in hostnames])
         self.assertEqual(hostnames_with_ips, set(TEST_HOSTNAMES_VALID))
 
+    def test_resolve_and_filter_hostnames_cached(self):
+        """Test resolve_and_filter_hostnames() with cached data"""
+        hostname_only = ['only1.example.com', 'only2.example.org']
+        hostname_ip = ['both1.example.net', 'sub.both2.example.io']
+
+        resolver_cache = {
+            'only1.example.com': {'ips': ['1.1.1.1'], 'error': None},
+            'only2.example.org': {'ips': ['2.2.2.2'], 'error': None},
+            'both1.example.net': {'ips': ['3.3.3.3'], 'error': None},
+            'sub.both2.example.io': {'ips': ['4.4.4.4'], 'error': None},
+        }
+
+        (valid_fqdns, ip_to_root_domains) = resolve_and_filter_hostnames(
+            hostname_only, hostname_ip, resolver_cache=resolver_cache, update_cache=False
+        )
+
+        # All FQDNs should be in valid_fqdns
+        expected_fqdns = set(hostname_only + hostname_ip)
+        self.assertEqual(valid_fqdns, expected_fqdns)
+
+        # Only IPs from hostname_ip should be in ip_to_root_domains
+        # both1.example.net -> example.net, sub.both2.example.io -> example.io
+        expected_ips = {'3.3.3.3', '4.4.4.4'}
+        self.assertEqual(set(ip_to_root_domains.keys()), expected_ips)
+
+        # Check root domains
+        self.assertEqual(ip_to_root_domains['3.3.3.3'], {'example.net'})
+        self.assertEqual(ip_to_root_domains['4.4.4.4'], {'example.io'})
+
+    def test_resolve_and_filter_hostnames_shared_domain(self):
+        """Test filtering when hostname_only and hostname_ip share root domains"""
+        # Both lists have different subdomains of same root domain
+        hostname_only = ['www.example.com', 'mail.example.org']
+        hostname_ip = ['vpn.example.com', 'server.example.net']
+
+        resolver_cache = {
+            'www.example.com': {'ips': ['1.1.1.1'], 'error': None},
+            'mail.example.org': {'ips': ['2.2.2.2'], 'error': None},
+            'vpn.example.com': {'ips': ['3.3.3.3'], 'error': None},
+            'server.example.net': {'ips': ['4.4.4.4'], 'error': None},
+        }
+
+        (valid_fqdns, ip_to_root_domains) = resolve_and_filter_hostnames(
+            hostname_only, hostname_ip, resolver_cache=resolver_cache, update_cache=False
+        )
+
+        # All should be valid
+        self.assertEqual(len(valid_fqdns), 4)
+
+        # Only IPs from vpn.example.com and server.example.net should be included
+        # Since they share root domain example.com with www.example.com,
+        # the IP 3.3.3.3 should still be included because vpn.example.com is in hostname_ip
+        expected_ips = {'3.3.3.3', '4.4.4.4'}
+        self.assertEqual(set(ip_to_root_domains.keys()), expected_ips)
+        self.assertEqual(ip_to_root_domains['3.3.3.3'], {'example.com'})
+        self.assertEqual(ip_to_root_domains['4.4.4.4'], {'example.net'})
+
 
 def read_ips(directory):
     """Read IPs, one IP per line
@@ -282,6 +339,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
     assert resolved_host_count >= min_resolved_host_count, f'{resolved_host_count:,} vs {min_resolved_host_count:,}'
+    assert (len(unresolvable_hosts)/unique_host_count) <= 0.5, f'{len(unresolvable_hosts):,} is high relative to {unique_host_count:,}'
 
     return (valid_fqdns, ip_to_root_domains)
 
@@ -308,6 +366,54 @@ def canonicalize_hostnames(hostnames):
     for h in hostnames:
         canonical.add(ALIAS_MAP.get(h, h))
     return sorted(canonical)
+
+
+def resolve_and_filter_hostnames(hostname_only_list: list, hostname_ip_list: list,
+                                  resolver_cache: dict = None, update_cache: bool = True,
+                                  max_concurrency: int = DEFAULT_MAX_CONCURRENCY) -> tuple:
+    """Resolve hostnames and filter IP results based on source.
+
+    This function resolves two sets of hostnames:
+    1. hostname_only_list: Hostnames where we want valid FQDNs but NOT their IPs
+    2. hostname_ip_list: Hostnames where we want both valid FQDNs AND their IPs
+
+    Args:
+        hostname_only_list: List of hostnames that should not contribute IPs
+        hostname_ip_list: List of hostnames that should contribute IPs
+        resolver_cache: Optional cache of previous resolutions
+        update_cache: Whether to update the cache with new resolutions
+        max_concurrency: Maximum concurrent DNS queries
+
+    Returns:
+        tuple (valid_fqdns, ip_to_root_domains):
+        - valid_fqdns: Set of all valid FQDNs from both lists
+        - ip_to_root_domains: Dict mapping IPs to root domains, only from hostname_ip_list
+    """
+    # Combine both input sets for single resolution call
+    combined_hostnames = list(set(hostname_only_list + hostname_ip_list))
+
+    # Track which FQDNs came from hostname_ip_list for filtering
+    # Convert to root domains for proper comparison
+    hostname_ip_roots = set()
+    for fqdn in hostname_ip_list:
+        root_domain = get_root_domain(fqdn)
+        hostname_ip_roots.add(root_domain)
+
+    print('Resolving all hostnames...', flush=True)
+    (valid_fqdns, all_ip_to_root_domains) = resolve_hosts(
+        combined_hostnames, 0, resolver_cache=resolver_cache,
+        update_cache=update_cache, max_concurrency=max_concurrency)
+
+    # Filter ip_to_root_domains to only include IPs from hostnames that were in hostname_ip_list
+    ip_to_root_domains = collections.defaultdict(set)
+    for ip, root_domains in all_ip_to_root_domains.items():
+        # Check if any of the root domains for this IP came from hostname_ip_list
+        matching_domains = root_domains & hostname_ip_roots
+        if matching_domains:
+            # Only include the matching root domains for this IP
+            ip_to_root_domains[ip] = matching_domains
+
+    return (valid_fqdns, ip_to_root_domains)
 
 
 def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
@@ -425,15 +531,11 @@ def main():
         hostnames_ip = random.sample(hostnames_ip, min(args.max_hostnames, len(hostnames_ip)))
         update_cache = False
 
-    print('Resolving hostname-only set and derived patterns...', flush=True)
-    (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(
-        fqdns_to_resolve_no_ip_collection, 50, resolver_cache=resolver_cache,
-        update_cache=update_cache, max_concurrency=args.max_concurrency)
-    print('Resolving hostname+ip set...', flush=True)
-    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip,
-                                                       20, resolver_cache=resolver_cache,
-                                                       update_cache=update_cache, max_concurrency=args.max_concurrency)
-    valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
+    # Use the new refactored function to handle hostname resolution and filtering
+    (valid_fqdns, ip_to_root_domains) = resolve_and_filter_hostnames(
+        fqdns_to_resolve_no_ip_collection, hostnames_ip,
+        resolver_cache=resolver_cache, update_cache=update_cache,
+        max_concurrency=args.max_concurrency)
 
     print('Reading IP inputs...', flush=True)
     ips_only = read_ips(IP_DIR)
