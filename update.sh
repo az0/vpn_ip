@@ -1,5 +1,7 @@
 #!/bin/sh
 
+BASEURL=https://az0-vpnip-public.oooninja.com
+
 python3 -V
 
 pip install -r requirements.txt
@@ -23,6 +25,13 @@ time timeout 3m ./get_browsec_github.py || exit 1
 
 echo "$(date): Running get_browser_extension.py"
 ./get_browser_extension.py || exit 1
+
+
+echo "$(date): Download the existing output files from R2"
+mkdir -p data/output
+wget -nv -O data/output/hostname.txt ${BASEURL}/hostname.txt
+wget -nv -O data/output/ip.txt ${BASEURL}/ip.txt
+wget -nv -O data/output/adguard.txt ${BASEURL}/adguard.txt
 
 echo "$(date): Running get_cisco_umbrella.py"
 ./get_cisco_umbrella.py || exit 1

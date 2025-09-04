@@ -4,9 +4,9 @@ This repository contains lists of hostnames and IP addresses for various VPNs (e
 
 This repository provides these lists:
 
-* [hostname.txt](data/output/hostname.txt): A unique list of hostnames that have at least one valid IP address.
-* [adguard.txt](data/output/adguard.txt): Like `hostname.txt` but in [Adguard format](https://adguard-dns.io/kb/general/dns-filtering-syntax/?utm_medium=ui) which significantly reduces file size while generalizing to new subdomain names.
-* [ip.txt](data/output/ip.txt): IP addresses only for the servers that actually serve as VPNs.
+* **hostname.txt**: A unique list of hostnames that have at least one valid IP address.
+* **adguard.txt**: Like `hostname.txt` but in [Adguard format](https://adguard-dns.io/kb/general/dns-filtering-syntax/?utm_medium=ui) which significantly reduces file size while generalizing to new subdomain names.
+* **ip.txt**: IP addresses only for the servers that actually serve as VPNs.
 
 Efforts have been made to avoid blocking the IP addresses of general-purpose sites, currently Cloudflare and Shopify. If another non-VPN site is blocked, open an issue.
 
@@ -30,11 +30,11 @@ A complementary approach is to manage DNS resolution at the network router:
 
 View and download the latest data files here. Use the Download URL for automatic updates.
 
-| File | GitHub | Download URL |
-|------|--------|---------|
-| [`hostname.txt`](data/output/hostname.txt) | [Raw](https://raw.githubusercontent.com/az0/vpn_ip/main/data/output/hostname.txt) | [Download](http://az0-vpnip-public.oooninja.com/hostname.txt) |
-| [`adguard.txt`](data/output/adguard.txt) | [Raw](https://raw.githubusercontent.com/az0/vpn_ip/main/data/output/adguard.txt) | [Download](http://az0-vpnip-public.oooninja.com/adguard.txt) |
-| [`ip.txt`](data/output/ip.txt) | [Raw](https://raw.githubusercontent.com/az0/vpn_ip/main/data/output/ip.txt) | [Download](http://az0-vpnip-public.oooninja.com/ip.txt) |
+| File | Download URL |
+|------|---------|
+| `hostname.txt` | [Download](http://az0-vpnip-public.oooninja.com/hostname.txt) |
+| `adguard.txt` | [Download](http://az0-vpnip-public.oooninja.com/adguard.txt) |
+| `ip.txt` | [Download](http://az0-vpnip-public.oooninja.com/ip.txt) |
 
 ## Related
 

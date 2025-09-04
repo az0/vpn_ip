@@ -86,6 +86,10 @@ def filter_umbrella_hostnames(cisco_hostnames):
 
 def analyze_overlap(cisco_hostnames):
     """Analyze overlap with final list"""
+    if not os.path.exists(FINAL_HOSTNAME_FN):
+        print(f'ERROR: final list {FINAL_HOSTNAME_FN} does not exist.')
+        print('First, run prepare_final_lists.py or download the file.')
+        return
     final_hostnames, _ = read_hostnames_from_file(FINAL_HOSTNAME_FN)
     print(f'count of final hostnames: {len(final_hostnames):,}')
     keep_top = 2000

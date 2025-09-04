@@ -16,6 +16,7 @@ import lzma
 import os
 import random
 import sys
+import tempfile
 import unittest
 
 # third-party import
@@ -195,6 +196,33 @@ class TestPrepareFinalLists(unittest.TestCase):
         self.assertEqual(ip_to_root_domains['3.3.3.3'], {'example.com'})
         self.assertEqual(ip_to_root_domains['4.4.4.4'], {'example.net'})
 
+
+    def test_write_ips(self):
+
+
+        # Create a temporary directory
+        with tempfile.TemporaryDirectory() as temp_dir:
+            # Create a test file path in a subdirectory
+            test_file = os.path.join(temp_dir, 'test_output', 'ips.txt')
+
+            ip_to_root_domains = {
+                '1.2.3.4': {'example.com'},
+                '5.6.7.8': {'example.org'}
+            }
+            ips_only = {
+                '1.2.3.4': {'source1', 'source2'},
+                '5.6.7.8': {'source3'}
+            }
+
+            # Call write_ips with the test file path
+            write_ips(ip_to_root_domains, ips_only, final_ip_fn=test_file)
+
+            # Verify the file was created and has content
+            self.assertTrue(os.path.exists(test_file))
+            with open(test_file, 'r') as f:
+                content = f.read()
+                self.assertIn('1.2.3.4', content)
+                self.assertIn('5.6.7.8', content)
 
 def read_ips(directory):
     """Read IPs, one IP per line
@@ -416,7 +444,7 @@ def resolve_and_filter_hostnames(hostname_only_list: list, hostname_ip_list: lis
     return (valid_fqdns, ip_to_root_domains)
 
 
-def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
+def write_ips(ip_to_root_domains: dict, ips_only: dict, final_ip_fn: str = FINAL_IP_FN) -> None:
     """Write final list of IP addresses to file
 
     Args:
@@ -438,9 +466,13 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
     sorted_ips = sorted(merged_dict.keys(),
                         key=lambda ip: int(ipaddress.ip_address(ip)))
 
-    print(f'count of final IPs to write: {len(sorted_ips):,}')
+    # Make this message consistent to the hostname message.
+    print(f'writing {len(sorted_ips):,} IPs to {final_ip_fn}')
 
-    with open(FINAL_IP_FN, "w", encoding="utf-8") as output_file:
+    # Ensure output directory exists
+    os.makedirs(os.path.dirname(final_ip_fn), exist_ok=True)
+
+    with open(final_ip_fn, "w", encoding="utf-8") as output_file:
         output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
         for ip in sorted_ips:
             hostnames_list = canonicalize_hostnames(set(merged_dict[ip]))
