@@ -56,7 +56,7 @@ from tqdm import tqdm
 # local import
 from common import setup_logging, TEST_HOSTNAMES_VALID
 
-DNS_TIMEOUT = 5.0  # seconds
+DNS_TIMEOUT = 10.0  # seconds
 LIFETIME_TIMEOUT = DNS_TIMEOUT * 2
 DNS_SERVERS = [
     '1.1.1.1',
@@ -70,6 +70,7 @@ DNS_SERVERS = [
 ERROR_CODES = [
     "NXDOMAIN",
     "Timeout",
+    "LifetimeTimeout",
     "NoNameservers",
     "NoAnswer",
     "EmptyLabel",
@@ -121,21 +122,41 @@ def get_progress(total: int):
 
 
 class AsyncResolver:
-    """Async DNS resolver with connection pooling and error handling"""
+    """Async DNS resolver with per-DNS-server pooling, load distribution, and error handling"""
 
     def __init__(self, max_concurrency: int):
-        """Initialize resolver with specified concurrency limit"""
+        """Initialize resolver with per-server concurrency limit.
+
+        Args:
+            max_concurrency: Maximum concurrent DNS queries per DNS server (primary in each pool).
+        """
         self.max_concurrency = max_concurrency
-        self.resolver = dns.asyncresolver.Resolver()
-        shuffled_servers = DNS_SERVERS.copy()
-        random.shuffle(shuffled_servers)
-        self.resolver.nameservers = shuffled_servers
-        logging.info("Using DNS servers: %s", self.resolver.nameservers[:3])
-        self.resolver.timeout = DNS_TIMEOUT
-        self.resolver.lifetime = LIFETIME_TIMEOUT
+
+        # Build a pool of resolvers where each resolver has the same nameserver list
+        # but with a different primary (rotated order). This preserves dnspython's
+        # built-in fallback behavior while distributing primaries across servers.
+        base_servers = DNS_SERVERS.copy()
+        random.shuffle(base_servers)
+
+        self.resolvers: List[dns.asyncresolver.Resolver] = []
+        for i in range(len(base_servers)):
+            resolver = dns.asyncresolver.Resolver(configure=False)
+            resolver.nameservers = base_servers[i:] + base_servers[:i]
+            resolver.timeout = DNS_TIMEOUT
+            resolver.lifetime = LIFETIME_TIMEOUT
+            self.resolvers.append(resolver)
+
+        # One semaphore per resolver pool to enforce per-server concurrency
+        self.semaphores = [asyncio.Semaphore(self.max_concurrency) for _ in self.resolvers]
+
+        logging.info(
+            "Using DNS servers (primary per pool): %s",
+            [resolver.nameservers[0] for resolver in self.resolvers]
+        )
+
         self.resolve_times = []
 
-    async def _resolve_single_hostname(self, hostname: str) -> dict:
+    async def _resolve_single_hostname(self, hostname: str, resolver: dns.asyncresolver.Resolver) -> dict:
         """Resolve a single hostname and return result dictionary
 
         Returns: dict with structure documented in module docstring
@@ -152,7 +173,7 @@ class AsyncResolver:
             Exception: "Exception"
         }
         try:
-            answer = await self.resolver.resolve(hostname, 'A')
+            answer = await resolver.resolve(hostname, 'A')
             ips = [str(rdata) for rdata in answer]
             error = None
         except tuple(error_map) as e:
@@ -172,7 +193,11 @@ class AsyncResolver:
         }
 
     async def resolve_hostnames(self, hostnames: List[str]) -> Dict[str, dict]:
-        """Resolve multiple hostnames concurrently
+        """Resolve multiple hostnames concurrently across DNS servers.
+
+        Load is distributed by assigning hostnames round-robin to a pool of resolvers,
+        each with a different primary DNS server. dnspython's internal fallback is
+        preserved within each resolver.
 
         Args:
             hostnames: List of hostnames to resolve
@@ -183,18 +208,20 @@ class AsyncResolver:
         if not hostnames:
             return {}
 
-        semaphore = asyncio.Semaphore(self.max_concurrency)
-
-        async def resolve_with_semaphore(hostname: str) -> tuple:
-            async with semaphore:
-                result = await self._resolve_single_hostname(hostname)
-                return hostname, result
-
         # Make hostnames unique while preserving the order.
         unique_hostnames = list(dict.fromkeys(hostnames))
-        tasks = [resolve_with_semaphore(hostname) for hostname in unique_hostnames]
 
-        results = {}
+        async def resolve_with_pool(idx: int, hostname: str) -> tuple:
+            async with self.semaphores[idx]:
+                result = await self._resolve_single_hostname(hostname, self.resolvers[idx])
+                return hostname, result
+
+        tasks = [
+            resolve_with_pool(i % len(self.resolvers), hostname)
+            for i, hostname in enumerate(unique_hostnames)
+        ]
+
+        results: Dict[str, dict] = {}
         pbar = get_progress(len(tasks))
 
         for task in asyncio.as_completed(tasks):
@@ -241,7 +268,7 @@ def resolve_hostnames_sync(hostnames: List[str], max_concurrency: int) -> Dict[s
 
     Args:
         hostnames: List of hostnames to resolve
-        max_concurrency: Maximum concurrent DNS queries
+        max_concurrency: Maximum concurrent DNS queries per DNS server
 
     Returns:
         Dictionary mapping hostname to result dict

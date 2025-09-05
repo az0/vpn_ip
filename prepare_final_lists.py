@@ -43,7 +43,7 @@ INPUT_HOSTNAME_ONLY_PATTERN = 'data/input/hostname_only/*.txt'
 INPUT_HOSTNAME_IP_PATTERN = 'data/input/hostname_ip/*.txt'
 ADGUARD_OUTPUT_FN = 'data/output/adguard.txt'
 INDIVIDUAL_TIMEOUT_SECONDS = 60
-DEFAULT_MAX_CONCURRENCY = 500
+DEFAULT_MAX_CONCURRENCY = 100
 R2_CACHE_URL = 'https://az0-vpnip-public.oooninja.com/ip_cache.json.lzma'
 LOCAL_CACHE_PATH = 'data/cache/ip_cache.json.lzma'
 ALIAS_MAP = {
@@ -251,7 +251,7 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
         min_resolved_host_count: minimum number of hosts that must resolve
         resolver_cache: dict mapping hostname to result dict (new format)
         update_cache: whether to update the cache
-        max_concurrency: maximum concurrent DNS queries
+        max_concurrency: maximum concurrent DNS queries per DNS server
 
     Returns:
         tuple (valid_hostnames, ip_to_root_domains)
@@ -390,7 +390,7 @@ def resolve_and_filter_hostnames(hostname_only_list: list, hostname_ip_list: lis
         hostname_ip_list: List of hostnames that should contribute IPs
         resolver_cache: Optional cache of previous resolutions
         update_cache: Whether to update the cache with new resolutions
-        max_concurrency: Maximum concurrent DNS queries
+        max_concurrency: Maximum concurrent DNS queries per DNS server
 
     Returns:
         tuple (valid_fqdns, ip_to_root_domains):
@@ -490,7 +490,7 @@ def main():
     parser.add_argument('--max-hostnames', type=int, default=None,
                         help='Limit the number of hostnames to process (for testing)')
     parser.add_argument('--max-concurrency', type=int, default=DEFAULT_MAX_CONCURRENCY,
-                        help='Maximum concurrent DNS queries (default: %s)' % DEFAULT_MAX_CONCURRENCY)
+                        help='Maximum concurrent DNS queries per DNS server (default: %s)' % DEFAULT_MAX_CONCURRENCY)
     parser.add_argument('--verbose', '-v', action='store_true',
                         help='Enable verbose output')
     args = parser.parse_args()
