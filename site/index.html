@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VPN/IP Explorer</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>VPN/IP Explorer</h1>
+    <p class="subtitle">Interactive lookup and analytics for hostname ↔ IP relationships</p>
+    <div id="dataStatus">Loading data…</div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lookup by IP</h2>
+      <div class="controls">
+        <input id="ipInput" type="text" placeholder="e.g., 198.51.100.3" />
+        <button id="ipSearchBtn">Search</button>
+      </div>
+      <div id="ipResults" class="results"></div>
+    </section>
+
+    <section>
+      <h2>Lookup by Hostname</h2>
+      <div class="controls">
+        <input id="hostInput" type="text" placeholder="e.g., vpn1.example.com" />
+        <button id="hostSearchBtn">Search</button>
+      </div>
+      <div id="hostResults" class="results"></div>
+    </section>
+
+    <section>
+      <h2>Analytics</h2>
+      <p>Root domains with highest NXDOMAIN/timeout counts. Sort by clicking headers.</p>
+      <div id="analytics" class="results"></div>
+    </section>
+
+    <section>
+      <h2>Downloads</h2>
+      <div class="controls">
+        <label><input type="checkbox" id="dlIncludeErrors" checked /> Include hosts with errors</label>
+        <label><input type="checkbox" id="dlOnlyActive" /> Only currently resolving</label>
+        <button id="dlCsvBtn">Download CSV</button>
+        <button id="dlHostsBtn">Download hosts file (0.0.0.0)</button>
+      </div>
+      <div class="links">
+        <p>Pre-built files (from pipeline):
+          <a href="./hostname.txt">hostname.txt</a>,
+          <a href="./ip.txt">ip.txt</a>,
+          <a href="./adguard.txt">adguard.txt</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data: <span id="createdUtc">n/a</span> · Source: <a href="./ip_cache.json">ip_cache.json</a>, <a href="./ip_to_hostnames.json">ip_to_hostnames.json</a>, <a href="./root_domain_stats.json">root_domain_stats.json</a></p>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>

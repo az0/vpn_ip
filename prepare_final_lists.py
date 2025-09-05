@@ -47,6 +47,9 @@ INDIVIDUAL_TIMEOUT_SECONDS = 60
 DEFAULT_MAX_CONCURRENCY = 100
 R2_CACHE_URL = 'https://az0-vpnip-public.oooninja.com/ip_cache.json.lzma'
 LOCAL_CACHE_PATH = 'data/cache/ip_cache.json.lzma'
+UNCOMPRESSED_CACHE_PATH = 'data/cache/ip_cache.json'
+IP_TO_HOSTNAMES_FN = 'data/cache/ip_to_hostnames.json'
+ROOT_DOMAIN_STATS_FN = 'data/cache/root_domain_stats.json'
 ALIAS_MAP = {
     "holax.io": "hola",
     "holavpn.net": "hola",
@@ -513,6 +516,97 @@ def write_resolver_cache(cache_path, host_to_results):
     logging.info("Wrote resolver cache with %s entries to %s", f"{len(host_to_results):,}", cache_path)
 
 
+def write_resolver_cache_uncompressed(json_path: str, host_to_results: dict) -> None:
+    """Write resolver cache to uncompressed JSON for browser consumption.
+
+    Structure mirrors the compressed cache: {'created_utc', 'host_to_results'}
+    """
+    data = {
+        'created_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'host_to_results': host_to_results
+    }
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f)
+    logging.info("Wrote uncompressed resolver cache with %s entries to %s", f"{len(host_to_results):,}", json_path)
+
+
+def write_ip_to_hostnames(json_path: str, host_to_results: dict) -> None:
+    """Write inverted index mapping IP -> list of hostnames (success-only).
+
+    Only include hostnames with error is None and with non-empty IP list.
+    """
+    ip_to_hosts = collections.defaultdict(list)
+    for hostname, result in host_to_results.items():
+        try:
+            ips = result.get('ips', [])
+            error = result.get('error')
+        except AttributeError:
+            continue
+        if error is None and ips:
+            for ip in ips:
+                ip_to_hosts[ip].append(hostname)
+
+    # Sort hostnames per IP for stable output
+    ip_to_hosts_sorted = {ip: sorted(hosts) for ip, hosts in ip_to_hosts.items()}
+    data = {
+        'created_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'ip_to_hostnames': ip_to_hosts_sorted,
+    }
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f)
+    logging.info("Wrote IP->hostnames index with %s IPs to %s", f"{len(ip_to_hosts_sorted):,}", json_path)
+
+
+def write_root_domain_stats(json_path: str, host_to_results: dict) -> None:
+    """Write per-root-domain statistics for analytics UI.
+
+    For each root domain compute:
+      - host_count
+      - success_count
+      - total_error_count
+      - nxdomain_count
+      - timeout_count
+      - last_seen_ts (epoch seconds, approximated as generation time)
+    """
+    now_ts = int(datetime.datetime.now(datetime.timezone.utc).timestamp())
+    stats = {}
+
+    for hostname, result in host_to_results.items():
+        root = get_root_domain(hostname)
+        entry = stats.get(root)
+        if entry is None:
+            entry = {
+                'host_count': 0,
+                'success_count': 0,
+                'total_error_count': 0,
+                'nxdomain_count': 0,
+                'timeout_count': 0,
+                'last_seen_ts': now_ts,
+            }
+            stats[root] = entry
+
+        entry['host_count'] += 1
+        error = result.get('error') if isinstance(result, dict) else None
+        ips = result.get('ips', []) if isinstance(result, dict) else []
+
+        if error is None and ips:
+            entry['success_count'] += 1
+        else:
+            entry['total_error_count'] += 1
+            if error == 'NXDOMAIN':
+                entry['nxdomain_count'] += 1
+            if error == 'Timeout' or error == 'LifetimeTimeout':
+                entry['timeout_count'] += 1
+
+    data = {
+        'created_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'root_domain_stats': stats,
+    }
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f)
+    logging.info("Wrote root domain stats for %s domains to %s", f"{len(stats):,}", json_path)
+
+
 def main():
     """Main function"""
     parser = argparse.ArgumentParser(description="Prepare final VPN/IP lists")
@@ -580,6 +674,10 @@ def main():
     if update_cache:
         print('Writing resolver cache...', flush=True)
         write_resolver_cache(LOCAL_CACHE_PATH, resolver_cache)
+        # Write additional artifacts for the web UI
+        write_resolver_cache_uncompressed(UNCOMPRESSED_CACHE_PATH, resolver_cache)
+        write_ip_to_hostnames(IP_TO_HOSTNAMES_FN, resolver_cache)
+        write_root_domain_stats(ROOT_DOMAIN_STATS_FN, resolver_cache)
 
     print(f"{sys.argv[0]} is done")
 

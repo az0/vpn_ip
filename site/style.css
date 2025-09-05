@@ -1,0 +1,54 @@
+:root{
+  --bg: #0b0f14;
+  --panel: #121922;
+  --text: #e6eef7;
+  --muted: #9bb0c3;
+  --accent: #4db2ff;
+  --ok: #6bd968;
+  --warn: #ffd166;
+  --err: #ff6b6b;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  background: var(--bg); color: var(--text);
+}
+header{
+  padding: 24px 16px; background: linear-gradient(180deg, #0f1622, #0b0f14);
+  border-bottom: 1px solid #192434;
+}
+h1{ margin: 0 0 4px 0; font-size: 22px; }
+.subtitle{ margin: 0; color: var(--muted); }
+#dataStatus{ margin-top: 8px; color: var(--accent); font-size: 13px; }
+
+main{ max-width: 1100px; margin: 0 auto; padding: 16px; }
+section{ background: var(--panel); border: 1px solid #1b283a; border-radius: 10px; padding: 14px; margin: 14px 0; }
+section h2{ margin: 4px 0 12px; font-size: 18px; }
+.controls{ display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+.controls input[type=text]{ flex: 1; min-width: 260px; padding: 10px 12px; border: 1px solid #203249; border-radius: 8px; background: #0f151e; color: var(--text); }
+.controls button{ padding: 10px 14px; border: 1px solid #1d2d41; background: #102032; color: var(--text); border-radius: 8px; cursor: pointer; }
+.controls button:hover{ border-color: #294260; background: #122740; }
+
+.results{ overflow: auto; }
+.empty{ color: var(--muted); padding: 10px; }
+
+.tablewrap{ overflow: auto; }
+table.data{ width: 100%; border-collapse: collapse; }
+table.data th, table.data td{ text-align: left; padding: 8px 10px; border-bottom: 1px solid #1a2638; vertical-align: top; }
+table.data thead th{ position: sticky; top: 0; background: #111a26; border-bottom: 1px solid #223247; cursor: default; }
+table.data thead th[data-sort-key]{ cursor: pointer; }
+
+.mono{ font-family: var(--mono); }
+
+.kv{ display: grid; grid-template-columns: 140px 1fr; gap: 6px 12px; }
+.kv .row{ display: contents; }
+.kv .k{ color: var(--muted); }
+.kv .v{ }
+
+ul.list{ margin: 10px 0; padding-left: 18px; }
+ul.list li{ margin: 4px 0; }
+
+footer{ max-width: 1100px; margin: 16px auto 40px; padding: 0 16px; color: var(--muted); font-size: 13px; }
+footer a{ color: var(--accent); }
