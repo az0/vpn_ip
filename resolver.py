@@ -45,7 +45,7 @@ import random
 import sys
 import time
 import unittest
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 # third-party import
 import dns.asyncresolver
@@ -56,7 +56,7 @@ from tqdm import tqdm
 # local import
 from common import setup_logging, TEST_HOSTNAMES_VALID
 
-DNS_TIMEOUT = 10.0  # seconds
+DNS_TIMEOUT = 1.0  # seconds
 LIFETIME_TIMEOUT = DNS_TIMEOUT * 2
 DNS_SERVERS = [
     '1.1.1.1',
@@ -122,19 +122,26 @@ def get_progress(total: int):
 
 
 class AsyncResolver:
-    """Async DNS resolver with per-DNS-server pooling, load distribution, and error handling"""
+    """Async DNS resolver with DNS server load distribution and flexible concurrency control"""
 
-    def __init__(self, max_concurrency: int):
-        """Initialize resolver with per-server concurrency limit.
+    def __init__(self, max_concurrency: int,
+                 mode: str = "global",
+                 per_server_concurrency: Optional[int] = None):
+        """Initialize resolver with concurrency limit and DNS server distribution.
 
         Args:
-            max_concurrency: Maximum concurrent DNS queries per DNS server (primary in each pool).
+            max_concurrency: Maximum total concurrent DNS queries across all servers.
+            mode: Concurrency mode. 'global' limits only the total; 'per-server' also limits per DNS server.
+            per_server_concurrency: Optional per-server concurrency cap (only used in 'per-server' mode).
         """
+        assert mode in ("global", "per-server"), "mode must be 'global' or 'per-server'"
         self.max_concurrency = max_concurrency
+        self.mode = mode
+        self.per_server_concurrency = per_server_concurrency
 
         # Build a pool of resolvers where each resolver has the same nameserver list
         # but with a different primary (rotated order). This preserves dnspython's
-        # built-in fallback behavior while distributing primaries across servers.
+        # built-in fallback behavior while distributing load across servers.
         base_servers = DNS_SERVERS.copy()
         random.shuffle(base_servers)
 
@@ -146,13 +153,21 @@ class AsyncResolver:
             resolver.lifetime = LIFETIME_TIMEOUT
             self.resolvers.append(resolver)
 
-        # One semaphore per resolver pool to enforce per-server concurrency
-        self.semaphores = [asyncio.Semaphore(self.max_concurrency) for _ in self.resolvers]
+        # Global semaphore to enforce total concurrency limit
+        self.global_semaphore = asyncio.Semaphore(self.max_concurrency)
+
+        # Optional per-server semaphores (in addition to global cap)
+        if self.mode == 'per-server' and (self.per_server_concurrency or 0) > 0:
+            self.server_semaphores = [asyncio.Semaphore(self.per_server_concurrency) for _ in self.resolvers]
+        else:
+            self.server_semaphores = None
 
         logging.info(
             "Using DNS servers (primary per pool): %s",
             [resolver.nameservers[0] for resolver in self.resolvers]
         )
+        logging.info("Concurrency config: mode=%s, total=%s, per_server=%s",
+                     self.mode, self.max_concurrency, self.per_server_concurrency)
 
         self.resolve_times = []
 
@@ -212,9 +227,15 @@ class AsyncResolver:
         unique_hostnames = list(dict.fromkeys(hostnames))
 
         async def resolve_with_pool(idx: int, hostname: str) -> tuple:
-            async with self.semaphores[idx]:
-                result = await self._resolve_single_hostname(hostname, self.resolvers[idx])
-                return hostname, result
+            if self.server_semaphores is None:
+                async with self.global_semaphore:
+                    result = await self._resolve_single_hostname(hostname, self.resolvers[idx])
+            else:
+                # Acquire both global and per-server permits
+                async with self.global_semaphore:
+                    async with self.server_semaphores[idx]:
+                        result = await self._resolve_single_hostname(hostname, self.resolvers[idx])
+            return hostname, result
 
         tasks = [
             resolve_with_pool(i % len(self.resolvers), hostname)
@@ -263,12 +284,16 @@ class AsyncResolver:
         }
 
 
-def resolve_hostnames_sync(hostnames: List[str], max_concurrency: int) -> Dict[str, dict]:
+def resolve_hostnames_sync(hostnames: List[str], max_concurrency: int,
+                           mode: str = "global",
+                           per_server_concurrency: Optional[int] = None) -> Dict[str, dict]:
     """Synchronous wrapper for async hostname resolution
 
     Args:
         hostnames: List of hostnames to resolve
-        max_concurrency: Maximum concurrent DNS queries per DNS server
+        max_concurrency: Maximum total concurrent DNS queries across all servers
+        mode: Concurrency mode ('global' or 'per-server')
+        per_server_concurrency: Per-server cap when mode == 'per-server'
 
     Returns:
         Dictionary mapping hostname to result dict
@@ -276,7 +301,9 @@ def resolve_hostnames_sync(hostnames: List[str], max_concurrency: int) -> Dict[s
     start_total_time = datetime.datetime.now()
 
     async def _async_resolve():
-        resolver = AsyncResolver(max_concurrency=max_concurrency)
+        resolver = AsyncResolver(max_concurrency=max_concurrency,
+                                  mode=mode,
+                                  per_server_concurrency=per_server_concurrency)
         return await resolver.resolve_hostnames(hostnames), resolver.get_statistics()
 
     results, stats = asyncio.run(_async_resolve())
