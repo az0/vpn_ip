@@ -36,6 +36,7 @@ from common import (AdguardPatternChecker, Allowlist,
                     sort_fqdns, setup_logging,
                     write_addresses_to_file, TEST_HOSTNAMES_VALID)
 from resolver import resolve_hostnames_sync, DNS_SERVERS
+import resolver as dnsresolver
 
 IP_DIR = 'data/input/ip'
 FINAL_IP_FN = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
@@ -638,11 +639,24 @@ def main():
                         help="Concurrency mode: 'global' caps total concurrency; 'per-server' also caps each DNS server; 'auto' selects based on environment (global on GitHub Actions, per-server otherwise)")
     parser.add_argument('--per-server-concurrency', type=int, default=None,
                         help='Per-DNS-server concurrency cap (only used in per-server mode). If not provided, defaults to %s.' % DEFAULT_PER_SERVER_CONCURRENCY)
+    parser.add_argument('--dns-timeout', type=float,
+                        default=float(os.environ.get('DNS_TIMEOUT', dnsresolver.DNS_TIMEOUT)),
+                        help=f'Per-query DNS timeout in seconds (default: {float(os.environ.get("DNS_TIMEOUT", dnsresolver.DNS_TIMEOUT))}).')
+    parser.add_argument('--dns-lifetime', type=float,
+                        default=float(os.environ.get('DNS_LIFETIME', dnsresolver.LIFETIME_TIMEOUT)),
+                        help=f'Overall DNS lifetime timeout in seconds (default: {float(os.environ.get("DNS_LIFETIME", dnsresolver.LIFETIME_TIMEOUT))}).')
     parser.add_argument('--verbose', '-v', action='store_true',
                         help='Enable verbose output')
     args = parser.parse_args()
 
     setup_logging(verbose=args.verbose)
+
+    if args.dns_timeout is not None:
+        dnsresolver.DNS_TIMEOUT = args.dns_timeout
+    if args.dns_lifetime is not None:
+        dnsresolver.LIFETIME_TIMEOUT = args.dns_lifetime
+    elif args.dns_timeout is not None:
+        dnsresolver.LIFETIME_TIMEOUT = args.dns_timeout * 2
 
     os.makedirs(os.path.dirname(LOCAL_CACHE_PATH), exist_ok=True)
     logging.info('Reading input hostnames...')
