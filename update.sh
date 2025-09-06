@@ -48,6 +48,6 @@ du -bcs $HOME/.cache/python-tldextract
 # This step intermittently hung in GitHub Actions, so use unbuffered
 # output and set a timeout.
 echo "$(date): Running prepare_final_lists.py"
-time timeout 30m python3 -u ./prepare_final_lists.py || exit 1
+time python3 -u ./prepare_final_lists.py || exit 1
 
  echo "$(date): update.sh is done"
