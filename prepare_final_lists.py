@@ -35,7 +35,7 @@ from common import (AdguardPatternChecker, Allowlist,
                     clean_line, read_input_hostnames,
                     sort_fqdns, setup_logging,
                     write_addresses_to_file, TEST_HOSTNAMES_VALID)
-from resolver import resolve_hostnames_sync
+from resolver import resolve_hostnames_sync, DNS_SERVERS
 
 IP_DIR = 'data/input/ip'
 FINAL_IP_FN = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
@@ -44,7 +44,8 @@ INPUT_HOSTNAME_ONLY_PATTERN = 'data/input/hostname_only/*.txt'
 INPUT_HOSTNAME_IP_PATTERN = 'data/input/hostname_ip/*.txt'
 ADGUARD_OUTPUT_FN = 'data/output/adguard.txt'
 INDIVIDUAL_TIMEOUT_SECONDS = 60
-DEFAULT_MAX_CONCURRENCY = 100
+DEFAULT_MAX_CONCURRENCY = 50  # total cap for 'global' mode
+DEFAULT_PER_SERVER_CONCURRENCY = 100
 R2_CACHE_URL = 'https://az0-vpnip-public.oooninja.com/ip_cache.json.lzma'
 LOCAL_CACHE_PATH = 'data/cache/ip_cache.json.lzma'
 UNCOMPRESSED_CACHE_PATH = 'data/cache/ip_cache.json'
@@ -274,7 +275,10 @@ def get_root_domain(fqdn: str) -> str:
     return '.'.join([ext.domain, ext.suffix])
 
 
-def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=None, update_cache=False, max_concurrency=DEFAULT_MAX_CONCURRENCY) -> dict:
+def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=None, update_cache=False,
+                  max_concurrency: int = DEFAULT_MAX_CONCURRENCY,
+                  concurrency_mode: str = 'global',
+                  per_server_concurrency: int | None = None) -> dict:
     """Resolve FQDNs to IP addresses using new async resolver
 
     Args:
@@ -282,7 +286,9 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
         min_resolved_host_count: minimum number of hosts that must resolve
         resolver_cache: dict mapping hostname to result dict (new format)
         update_cache: whether to update the cache
-        max_concurrency: maximum concurrent DNS queries per DNS server
+        max_concurrency: maximum total concurrent DNS queries across all servers
+        concurrency_mode: 'global' or 'per-server'
+        per_server_concurrency: per DNS server cap when concurrency_mode == 'per-server'
 
     Returns:
         tuple (valid_hostnames, ip_to_root_domains)
@@ -312,7 +318,12 @@ def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=Non
     resolved_results = {}
     if hostnames_to_resolve:
         print(f"Resolving {len(hostnames_to_resolve):,} hostnames (using cache for {len(cached_results):,})...")
-        resolved_results = resolve_hostnames_sync(hostnames_to_resolve, max_concurrency=max_concurrency)
+        resolved_results = resolve_hostnames_sync(
+            hostnames_to_resolve,
+            max_concurrency=max_concurrency,
+            mode=concurrency_mode,
+            per_server_concurrency=per_server_concurrency,
+        )
 
         # Update cache if requested
         if update_cache and resolver_cache is not None:
@@ -409,7 +420,9 @@ def canonicalize_hostnames(hostnames):
 
 def resolve_and_filter_hostnames(hostname_only_list: list, hostname_ip_list: list,
                                   resolver_cache: dict = None, update_cache: bool = True,
-                                  max_concurrency: int = DEFAULT_MAX_CONCURRENCY) -> tuple:
+                                  max_concurrency: int = DEFAULT_MAX_CONCURRENCY,
+                                  concurrency_mode: str = 'global',
+                                  per_server_concurrency: int | None = None) -> tuple:
     """Resolve hostnames and filter IP results based on source.
 
     This function resolves two sets of hostnames:
@@ -421,7 +434,9 @@ def resolve_and_filter_hostnames(hostname_only_list: list, hostname_ip_list: lis
         hostname_ip_list: List of hostnames that should contribute IPs
         resolver_cache: Optional cache of previous resolutions
         update_cache: Whether to update the cache with new resolutions
-        max_concurrency: Maximum concurrent DNS queries per DNS server
+        max_concurrency: Maximum total concurrent DNS queries across all servers
+        concurrency_mode: 'global' or 'per-server'
+        per_server_concurrency: per DNS server cap when concurrency_mode == 'per-server'
 
     Returns:
         tuple (valid_fqdns, ip_to_root_domains):
@@ -439,9 +454,12 @@ def resolve_and_filter_hostnames(hostname_only_list: list, hostname_ip_list: lis
         hostname_ip_roots.add(root_domain)
 
     print('Resolving all hostnames...', flush=True)
+    logging.info('Resolver config: mode=%s, total=%s, per_server=%s',
+                 concurrency_mode, max_concurrency, per_server_concurrency)
     (valid_fqdns, all_ip_to_root_domains) = resolve_hosts(
         combined_hostnames, 0, resolver_cache=resolver_cache,
-        update_cache=update_cache, max_concurrency=max_concurrency)
+        update_cache=update_cache, max_concurrency=max_concurrency,
+        concurrency_mode=concurrency_mode, per_server_concurrency=per_server_concurrency)
 
     # Filter ip_to_root_domains to only include IPs from hostnames that were in hostname_ip_list
     ip_to_root_domains = collections.defaultdict(set)
@@ -615,7 +633,11 @@ def main():
     parser.add_argument('--max-hostnames', type=int, default=None,
                         help='Limit the number of hostnames to process (for testing)')
     parser.add_argument('--max-concurrency', type=int, default=DEFAULT_MAX_CONCURRENCY,
-                        help='Maximum concurrent DNS queries per DNS server (default: %s)' % DEFAULT_MAX_CONCURRENCY)
+                        help='Maximum total concurrent DNS queries across all servers (default: %s). In per-server mode, this is a global cap.' % DEFAULT_MAX_CONCURRENCY)
+    parser.add_argument('--concurrency-mode', choices=['auto', 'global', 'per-server'], default='auto',
+                        help="Concurrency mode: 'global' caps total concurrency; 'per-server' also caps each DNS server; 'auto' selects based on environment (global on GitHub Actions, per-server otherwise)")
+    parser.add_argument('--per-server-concurrency', type=int, default=None,
+                        help='Per-DNS-server concurrency cap (only used in per-server mode). If not provided, defaults to %s.' % DEFAULT_PER_SERVER_CONCURRENCY)
     parser.add_argument('--verbose', '-v', action='store_true',
                         help='Enable verbose output')
     args = parser.parse_args()
@@ -652,11 +674,31 @@ def main():
         hostnames_ip = random.sample(hostnames_ip, min(args.max_hostnames, len(hostnames_ip)))
         update_cache = False
 
+    # Decide concurrency mode and caps
+    is_github = os.getenv('GITHUB_ACTIONS') == 'true'
+    if args.concurrency_mode == 'auto':
+        concurrency_mode = 'global' if is_github else 'per-server'
+    else:
+        concurrency_mode = args.concurrency_mode
+
+    per_server_cc = args.per_server_concurrency
+    if concurrency_mode == 'per-server' and per_server_cc is None:
+        per_server_cc = DEFAULT_PER_SERVER_CONCURRENCY
+
+    total_cap = args.max_concurrency
+    if concurrency_mode == 'per-server' and args.max_concurrency == DEFAULT_MAX_CONCURRENCY:
+        # Expand total cap to approximately match per-server capacity across servers
+        total_cap = per_server_cc * len(DNS_SERVERS)
+
+    logging.info('Final concurrency selection: mode=%s, total_cap=%s, per_server=%s (is_github=%s)',
+                 concurrency_mode, total_cap, per_server_cc, is_github)
+
     # Use the new refactored function to handle hostname resolution and filtering
     (valid_fqdns, ip_to_root_domains) = resolve_and_filter_hostnames(
         fqdns_to_resolve_no_ip_collection, hostnames_ip,
         resolver_cache=resolver_cache, update_cache=update_cache,
-        max_concurrency=args.max_concurrency)
+        max_concurrency=total_cap, concurrency_mode=concurrency_mode,
+        per_server_concurrency=per_server_cc)
 
     print('Reading IP inputs...', flush=True)
     ips_only = read_ips(IP_DIR)
