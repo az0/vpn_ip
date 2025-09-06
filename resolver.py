@@ -56,7 +56,7 @@ from tqdm import tqdm
 # local import
 from common import setup_logging, TEST_HOSTNAMES_VALID
 
-DNS_TIMEOUT = 10.0  # seconds
+DNS_TIMEOUT = 1.0  # seconds
 LIFETIME_TIMEOUT = DNS_TIMEOUT * 2
 DNS_SERVERS = [
     '1.1.1.1',
