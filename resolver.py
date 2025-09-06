@@ -7,7 +7,7 @@ This module provides async DNS resolution with the following features:
 - Connection pooling for performance
 - Configurable concurrency
 - Detailed error handling and statistics
-- Progress tracking with tqdm
+- Progress tracking
 
 
 # Data structure
@@ -40,9 +40,7 @@ import asyncio
 import datetime
 import ipaddress
 import logging
-import os
 import random
-import sys
 import time
 import unittest
 from typing import Dict, List, Optional
@@ -51,10 +49,10 @@ from typing import Dict, List, Optional
 import dns.asyncresolver
 import dns.exception
 import dns.resolver
-from tqdm import tqdm
+
 
 # local import
-from common import setup_logging, TEST_HOSTNAMES_VALID
+from common import get_progress, setup_logging, TEST_HOSTNAMES_VALID
 
 DNS_TIMEOUT = 1.0  # seconds
 LIFETIME_TIMEOUT = DNS_TIMEOUT * 2
@@ -77,48 +75,9 @@ ERROR_CODES = [
     "DNSException",
     "Exception"
 ]
-CI_PROGRESS_FREQUENCY = 30  # seconds
+
 
 setup_logging()
-
-
-def get_progress(total: int):
-    """Return a progress reporter depending on environment."""
-    if os.getenv("GITHUB_ACTIONS") == "true":
-        class CIProgress:
-            """Progress reporter for CI."""
-
-            def __init__(self, total):
-                self.n = 0
-                self.total = total
-                self.last_log = time.monotonic()
-                self.first_start = time.monotonic()
-                self.last_start = time.monotonic()
-
-            def _log_progress(self, message_prefix):
-                """Log progress with rate calculation."""
-                elapsed = time.monotonic() - self.last_log
-                if elapsed > 0:
-                    units_per_second = self.n / elapsed
-                else:
-                    units_per_second = 0.0
-                logging.info("%s %s / %s (%.1f units/s)", message_prefix, self.n, self.total, units_per_second)
-
-            def update(self, n=1):
-                """Update progress."""
-                self.n += n
-                now = time.monotonic()
-                if now - self.last_start >= CI_PROGRESS_FREQUENCY:
-                    self.last_start = now
-                    self._log_progress("Processed")
-
-            def close(self):
-                """Close progress reporter."""
-                self.last_log = self.first_start
-                self._log_progress("Done:")
-        return CIProgress(total)
-    else:
-        return tqdm(total=total, file=sys.stdout)
 
 
 class AsyncResolver:

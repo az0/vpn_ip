@@ -27,7 +27,11 @@ import os
 import re
 import sys
 import tempfile
+import time
 import unittest
+
+# third-party imports
+from tqdm import tqdm
 
 
 def setup_logging(verbose=False):
@@ -48,10 +52,12 @@ def setup_logging(verbose=False):
 
 # third-party imports
 
+
 # Constants
 ALLOWLIST_IP_FN = 'data/input/allowlist_ip.txt'
 ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
+HEADLESS_PROGRESS_FREQUENCY = 30  # seconds
 TEST_HOSTNAMES_VALID = [
                         'cornell.edu',
                         'facebook.com',
@@ -411,6 +417,45 @@ def add_new_hostnames_to_file(dst_fn, get_subdomains_func, *args):
 def clean_line(line: str) -> str:
     """Remove comments and whitespace from line"""
     return line.strip('\n').split('#')[0].split(',')[0].strip()
+
+
+def get_progress(total: int):
+    """Return a progress reporter depending on environment."""
+    if os.getenv("IS_INTERACTIVE") == "0":
+        class CIProgress:
+            """Progress reporter for CI."""
+
+            def __init__(self, total):
+                self.n = 0
+                self.total = total
+                self.last_log = time.monotonic()
+                self.first_start = time.monotonic()
+                self.last_start = time.monotonic()
+
+            def _log_progress(self, message_prefix):
+                """Log progress with rate calculation."""
+                elapsed = time.monotonic() - self.last_log
+                if elapsed > 0:
+                    units_per_second = self.n / elapsed
+                else:
+                    units_per_second = 0.0
+                logging.info("%s %s / %s (%.1f units/s)", message_prefix, self.n, self.total, units_per_second)
+
+            def update(self, n=1):
+                """Update progress."""
+                self.n += n
+                now = time.monotonic()
+                if now - self.last_start >= HEADLESS_PROGRESS_FREQUENCY:
+                    self.last_start = now
+                    self._log_progress("Processed")
+
+            def close(self):
+                """Close progress reporter."""
+                self.last_log = self.first_start
+                self._log_progress("Done:")
+        return CIProgress(total)
+    else:
+        return tqdm(total=total, file=sys.stdout)
 
 
 def read_hostnames_from_file(filename: str) -> tuple[list[str], list[str]]:
