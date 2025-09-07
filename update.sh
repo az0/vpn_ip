@@ -26,7 +26,6 @@ time timeout 3m ./get_browsec_github.py || exit 1
 echo "$(date): Running get_browser_extension.py"
 ./get_browser_extension.py || exit 1
 
-
 echo "$(date): Download the existing output files from R2"
 mkdir -p data/output
 wget -nv -O data/output/hostname.txt ${BASEURL}/hostname.txt
@@ -47,7 +46,10 @@ du -bcs $HOME/.cache/python-tldextract
 
 # This step intermittently hung in GitHub Actions, so use unbuffered
 # output and set a timeout.
-echo "$(date): Running prepare_final_lists.py"
-time python3 -u ./prepare_final_lists.py || exit 1
+# GitHub Actions network was unreliable, so it no longer runs there.
+if [ -z "${GITHUB_ACTIONS}" ]; then
+    echo "$(date): Running prepare_final_lists.py"
+    time python3 -u ./prepare_final_lists.py || exit 1
+fi
 
- echo "$(date): update.sh is done"
+echo "$(date): update.sh is done"
