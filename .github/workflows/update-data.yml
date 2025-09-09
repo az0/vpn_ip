@@ -7,7 +7,9 @@ jobs:
   update:
     name: Update data
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
+    env:
+      IS_INTERACTIVE: 0 # 0=headless
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

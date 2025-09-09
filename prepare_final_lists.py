@@ -3,33 +3,40 @@
 This reads all the input hostname and IP addresses.
 It combines duplicates and filters out hostnames that are invalid.
 Finally, it writes one list of hostnames and one list of IP addresses.
+
+# Terminology
+* hostname/FQDN: a fully qualified domain name (e.g., 'www.example.com')
+* root domain: the registrable domain portion of an FQDN (e.g., 'example.com' from 'www.example.com')
+* TLD: top-level domain (e.g., 'com' from 'example.com')
+* bogon: an IP address that is not a valid, public IP address (e.g., '127.0.0.1')
 """
 
 # built-in
 import argparse
 import collections
-import concurrent.futures
 import datetime
 import ipaddress
 import json
+import logging
 import lzma
 import os
 import random
 import sys
+import tempfile
 import unittest
 
 # third-party import
 import bogons
 import requests
 import tldextract
-import tqdm
 
 # local import
 from common import (AdguardPatternChecker, Allowlist,
-                    Resolver,
                     clean_line, read_input_hostnames,
-                    sort_fqdns,
-                    write_addresses_to_file)
+                    sort_fqdns, setup_logging,
+                    write_addresses_to_file, TEST_HOSTNAMES_VALID)
+from resolver import resolve_hostnames_sync, DNS_SERVERS
+import resolver as dnsresolver
 
 IP_DIR = 'data/input/ip'
 FINAL_IP_FN = 'data/output/ip.txt'  # final, one line per IP, no duplicate IPs
@@ -37,9 +44,9 @@ FINAL_HOSTNAME_FN = 'data/output/hostname.txt'
 INPUT_HOSTNAME_ONLY_PATTERN = 'data/input/hostname_only/*.txt'
 INPUT_HOSTNAME_IP_PATTERN = 'data/input/hostname_ip/*.txt'
 ADGUARD_OUTPUT_FN = 'data/output/adguard.txt'
-MAX_WORKERS = 8
 INDIVIDUAL_TIMEOUT_SECONDS = 60
-BATCH_TIMEOUT_SECONDS = 60 * 10
+DEFAULT_MAX_CONCURRENCY = 50  # total cap for 'global' mode
+DEFAULT_PER_SERVER_CONCURRENCY = 100
 R2_CACHE_URL = 'https://az0-vpnip-public.oooninja.com/ip_cache.json.lzma'
 LOCAL_CACHE_PATH = 'data/cache/ip_cache.json.lzma'
 ALIAS_MAP = {
@@ -73,7 +80,7 @@ class TestPrepareFinalLists(unittest.TestCase):
     """Test prepare_final_lists module"""
 
     def test_fqdns_not_matching_pattern(self):
-        """Test fqdns_not_matching_pattern()"""
+        """Test fqdns_not_matching_pattern() in normal usage"""
         patterns = [
             '||example1.com^',
             'ample2.org|',
@@ -101,6 +108,7 @@ class TestPrepareFinalLists(unittest.TestCase):
         self.assertCountEqual(actual_output, fqdns_not_match)
 
     def test_fqdns_not_matching_pattern_empty_input(self):
+        """Test fqdns_not_matching_pattern() with empty input"""
         patterns = ['||example.com^']
         pattern_checker = AdguardPatternChecker(patterns)
         fqdns = []
@@ -109,28 +117,122 @@ class TestPrepareFinalLists(unittest.TestCase):
         self.assertEqual(actual_output, expected_output)
 
     def test_fqdns_not_matching_pattern_empty_patterns(self):
+        """Test fqdns_not_matching_pattern() with empty patterns"""
         patterns = []
         pattern_checker = AdguardPatternChecker(patterns)
         fqdns = ['a.com', 'b.net', 'c.org']
         actual_output = fqdns_not_matching_pattern(fqdns, pattern_checker)
         self.assertEqual(actual_output, fqdns)
 
-    def test_resolve_hosts(self):
+    def test_resolve_hosts_cache(self):
         """Test resolve_hosts() using cache"""
         input_fqdns = ['example.com', 'example.org', 'doesnotexist.example.com',
                        'private.host', 'local.host', 'cloudflare.host']
-        resolver_cache = collections.defaultdict(set)
-        resolver_cache['example.com'] = ['1.2.3.4']
-        resolver_cache['example.org'] = ['5.6.7.8']
-        resolver_cache['doesnotexist.example.com'] = []
-        resolver_cache['private.host'] = ['0.0.0.0']
-        resolver_cache['local.host'] = ['127.0.0.1']
-        resolver_cache['cloudflare.host'] = ['104.26.8.89']
+        resolver_cache = {
+            'example.com': {'ips': ['1.2.3.4'], 'error': None},
+            'example.org': {'ips': ['5.6.7.8'], 'error': None},
+            'doesnotexist.example.com': {'ips': [], 'error': 'NXDOMAIN'},
+            'private.host': {'ips': ['0.0.0.0'], 'error': None},
+            'local.host': {'ips': ['127.0.0.1'], 'error': None},
+            'cloudflare.host': {'ips': ['104.26.8.89'], 'error': None}
+        }
         (ret_hosts, ret_ip_to_root_domains) = resolve_hosts(input_fqdns,
                                                             min_resolved_host_count=2, resolver_cache=resolver_cache, update_cache=False)
         self.assertEqual(ret_hosts, set(['example.com', 'example.org', 'cloudflare.host']))
         self.assertEqual(ret_ip_to_root_domains, {'1.2.3.4': {'example.com'}, '5.6.7.8': {'example.org'}})
 
+    def test_resolve_hosts_real(self):
+        """Test resolve_hosts() with real hostnames"""
+        (ret_hosts, ret_ip_to_root_domains) = resolve_hosts(TEST_HOSTNAMES_VALID,
+                                                            min_resolved_host_count=2, resolver_cache=None, update_cache=False)
+        self.assertEqual(len(ret_hosts), len(TEST_HOSTNAMES_VALID))
+        hostnames_with_ips = set([hostname for hostnames in ret_ip_to_root_domains.values() for hostname in hostnames])
+        self.assertEqual(hostnames_with_ips, set(TEST_HOSTNAMES_VALID))
+
+    def test_resolve_and_filter_hostnames_cached(self):
+        """Test resolve_and_filter_hostnames() with cached data"""
+        hostname_only = ['only1.example.com', 'only2.example.org']
+        hostname_ip = ['both1.example.net', 'sub.both2.example.io']
+
+        resolver_cache = {
+            'only1.example.com': {'ips': ['1.1.1.1'], 'error': None},
+            'only2.example.org': {'ips': ['2.2.2.2'], 'error': None},
+            'both1.example.net': {'ips': ['3.3.3.3'], 'error': None},
+            'sub.both2.example.io': {'ips': ['4.4.4.4'], 'error': None},
+        }
+
+        (valid_fqdns, ip_to_root_domains) = resolve_and_filter_hostnames(
+            hostname_only, hostname_ip, resolver_cache=resolver_cache, update_cache=False
+        )
+
+        # All FQDNs should be in valid_fqdns
+        expected_fqdns = set(hostname_only + hostname_ip)
+        self.assertEqual(valid_fqdns, expected_fqdns)
+
+        # Only IPs from hostname_ip should be in ip_to_root_domains
+        # both1.example.net -> example.net, sub.both2.example.io -> example.io
+        expected_ips = {'3.3.3.3', '4.4.4.4'}
+        self.assertEqual(set(ip_to_root_domains.keys()), expected_ips)
+
+        # Check root domains
+        self.assertEqual(ip_to_root_domains['3.3.3.3'], {'example.net'})
+        self.assertEqual(ip_to_root_domains['4.4.4.4'], {'example.io'})
+
+    def test_resolve_and_filter_hostnames_shared_domain(self):
+        """Test filtering when hostname_only and hostname_ip share root domains"""
+        # Both lists have different subdomains of same root domain
+        hostname_only = ['www.example.com', 'mail.example.org']
+        hostname_ip = ['vpn.example.com', 'server.example.net']
+
+        resolver_cache = {
+            'www.example.com': {'ips': ['1.1.1.1'], 'error': None},
+            'mail.example.org': {'ips': ['2.2.2.2'], 'error': None},
+            'vpn.example.com': {'ips': ['3.3.3.3'], 'error': None},
+            'server.example.net': {'ips': ['4.4.4.4'], 'error': None},
+        }
+
+        (valid_fqdns, ip_to_root_domains) = resolve_and_filter_hostnames(
+            hostname_only, hostname_ip, resolver_cache=resolver_cache, update_cache=False
+        )
+
+        # All should be valid
+        self.assertEqual(len(valid_fqdns), 4)
+
+        # Only IPs from vpn.example.com and server.example.net should be included
+        # Since they share root domain example.com with www.example.com,
+        # the IP 3.3.3.3 should still be included because vpn.example.com is in hostname_ip
+        expected_ips = {'3.3.3.3', '4.4.4.4'}
+        self.assertEqual(set(ip_to_root_domains.keys()), expected_ips)
+        self.assertEqual(ip_to_root_domains['3.3.3.3'], {'example.com'})
+        self.assertEqual(ip_to_root_domains['4.4.4.4'], {'example.net'})
+
+
+    def test_write_ips(self):
+
+
+        # Create a temporary directory
+        with tempfile.TemporaryDirectory() as temp_dir:
+            # Create a test file path in a subdirectory
+            test_file = os.path.join(temp_dir, 'test_output', 'ips.txt')
+
+            ip_to_root_domains = {
+                '1.2.3.4': {'example.com'},
+                '5.6.7.8': {'example.org'}
+            }
+            ips_only = {
+                '1.2.3.4': {'source1', 'source2'},
+                '5.6.7.8': {'source3'}
+            }
+
+            # Call write_ips with the test file path
+            write_ips(ip_to_root_domains, ips_only, final_ip_fn=test_file)
+
+            # Verify the file was created and has content
+            self.assertTrue(os.path.exists(test_file))
+            with open(test_file, 'r') as f:
+                content = f.read()
+                self.assertIn('1.2.3.4', content)
+                self.assertIn('5.6.7.8', content)
 
 def read_ips(directory):
     """Read IPs, one IP per line
@@ -159,110 +261,133 @@ def read_ips(directory):
 
 
 def get_root_domain(fqdn: str) -> str:
-    """Get root domain from FQDN"""
+    """Get root domain from FQDN
+
+    Example:
+    >>> get_root_domain('example.com')
+    'example.com'
+    >>> get_root_domain('www.example.com')
+    'example.com'
+    """
     ext = tldextract.extract(fqdn)
     return '.'.join([ext.domain, ext.suffix])
 
 
-def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=None, update_cache=False) -> dict:
-    """Resolve FQDNs to IPs addresses
+def resolve_hosts(input_fqdns: list, min_resolved_host_count, resolver_cache=None, update_cache=False,
+                  max_concurrency: int = DEFAULT_MAX_CONCURRENCY,
+                  concurrency_mode: str = 'global',
+                  per_server_concurrency: int | None = None) -> dict:
+    """Resolve FQDNs to IP addresses using new async resolver
 
     Args:
-        hosts: list of hostnames
+        input_fqdns: list of hostnames to resolve
+        min_resolved_host_count: minimum number of hosts that must resolve
+        resolver_cache: dict mapping hostname to result dict (new format)
+        update_cache: whether to update the cache
+        max_concurrency: maximum total concurrent DNS queries across all servers
+        concurrency_mode: 'global' or 'per-server'
+        per_server_concurrency: per DNS server cap when concurrency_mode == 'per-server'
 
     Returns:
-        tuple (valid_hostnames, ip_addresses)
+        tuple (valid_hostnames, ip_to_root_domains)
         valid_hostnames is a set of valid hostnames
-        ip_addresses is a dict with IP as key and list of root domains as values
-
-
+        ip_to_root_domains is a dict with IP as key and set of root domains as values
     """
     assert len(input_fqdns) > 0
     ip_to_root_domains = collections.defaultdict(set)
-
     allowlist = Allowlist()
 
     valid_fqdns = set()
     hostnames_with_non_public_ip = []
     hostnames_with_ip_in_allowlist = []
-    resolve_times = []
+    unresolvable_hosts = []
 
-    def resolve_hostname_and_add(this_fqdn):
-        nonlocal hostnames_with_non_public_ip, hostnames_with_ip_in_allowlist, valid_fqdns, resolve_times
-        # Use cache if available
-        if resolver_cache is not None and this_fqdn in resolver_cache:
-            ip_addresses = resolver_cache[this_fqdn]
+    # Get hostnames that need resolution
+    hostnames_to_resolve = []
+    cached_results = {}
+
+    for fqdn in input_fqdns:
+        if resolver_cache is not None and fqdn in resolver_cache:
+            cached_results[fqdn] = resolver_cache[fqdn]
         else:
-            start_time = datetime.datetime.now()
-            ip_addresses = resolver.resolve(this_fqdn)
-            end_time = datetime.datetime.now()
-            resolve_times.append((end_time - start_time).total_seconds())
-            if update_cache and resolver_cache is not None:
-                resolver_cache[this_fqdn] = ip_addresses
-        root_domain = get_root_domain(this_fqdn)
-        for this_ip_addr in sorted(ip_addresses):
-            if allowlist.check_ip_in_ranges(this_ip_addr):
-                hostnames_with_ip_in_allowlist.append(this_fqdn)
-                valid_fqdns.add(this_fqdn)
+            hostnames_to_resolve.append(fqdn)
+
+    # Resolve uncached hostnames
+    resolved_results = {}
+    if hostnames_to_resolve:
+        print(f"Resolving {len(hostnames_to_resolve):,} hostnames (using cache for {len(cached_results):,})...")
+        resolved_results = resolve_hostnames_sync(
+            hostnames_to_resolve,
+            max_concurrency=max_concurrency,
+            mode=concurrency_mode,
+            per_server_concurrency=per_server_concurrency,
+        )
+
+        # Update cache if requested
+        if update_cache and resolver_cache is not None:
+            resolver_cache.update(resolved_results)
+
+    # Combine cached and resolved results
+    all_results = {**cached_results, **resolved_results}
+
+    # Process results
+    for fqdn, result in all_results.items():
+        root_domain = get_root_domain(fqdn)
+
+        # Check for errors
+        if result['error'] is not None:
+            unresolvable_hosts.append(result['error'])
+            logging.debug("%s -> %s", fqdn, result['error'])
+            continue
+
+        # Process IPs
+        ip_addresses = result['ips']
+        if not ip_addresses:
+            unresolvable_hosts.append('no_ip')
+            continue
+
+        for ip_addr in sorted(ip_addresses):
+            if allowlist.check_ip_in_ranges(ip_addr):
+                logging.debug("%s IP %s is in allowlist", fqdn, ip_addr)
+                hostnames_with_ip_in_allowlist.append(fqdn)
+                valid_fqdns.add(fqdn)
                 continue
-            if not bogons.is_public_ip(this_ip_addr):
-                hostnames_with_non_public_ip.append(this_fqdn)
+            if not bogons.is_public_ip(ip_addr):
+                logging.debug("%s IP %s is not a public IP", fqdn, ip_addr)
+                hostnames_with_non_public_ip.append(fqdn)
                 continue
-            valid_fqdns.add(this_fqdn)
-            ip_to_root_domains[this_ip_addr].add(root_domain)
+            # logging.debug("%s -> %s (valid)", fqdn, ip_addr)
+            valid_fqdns.add(fqdn)
+            ip_to_root_domains[ip_addr].add(root_domain)
 
-    with Resolver() as resolver:
-        with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-            future_to_fqdn = {executor.submit(resolve_hostname_and_add, fqdn): fqdn
-                             for fqdn in sorted(input_fqdns)}
-            completed_count = 0
-            failed_fqdns = []
-
-            try:
-                with tqdm.tqdm(total=len(input_fqdns)) as pbar:
-                    for future in concurrent.futures.as_completed(future_to_fqdn, timeout=BATCH_TIMEOUT_SECONDS):
-                        try:
-                            # This will raise any exception from the task
-                            future.result(INDIVIDUAL_TIMEOUT_SECONDS)
-                            completed_count += 1
-                        except Exception as e:
-                            fqdn = future_to_fqdn[future]
-                            failed_fqdns.append(fqdn)
-                            print(f"Warning: Failed to resolve {fqdn}: {e}")
-                        pbar.update(1)
-            except concurrent.futures.TimeoutError:
-                print(f"Warning: Overall timeout of {BATCH_TIMEOUT_SECONDS} seconds reached")
-                print(f"Processed {completed_count:,} out of {len(input_fqdns):,} hostnames")
-                # Cancel remaining futures
-                for future in future_to_fqdn:
-                    if not future.done():
-                        future.cancel()
-
-            if failed_fqdns:
-                print(f"Warning: {len(failed_fqdns)} hostnames failed to resolve")
-
-    print('resolve_hosts() stats')
+    # Log statistics
+    logging.info('resolve_hosts() stats')
     unique_host_count = len(input_fqdns)
-    print(f'* count of input FQDNs: {unique_host_count:,}')
-    print(f'* count of unique, valid IPs resolved: {len(ip_to_root_domains):,}')
+    logging.info('* count of input FQDNs: %s', f'{unique_host_count:,}')
+    logging.info('* count of unique, valid IPs resolved: %s', f'{len(ip_to_root_domains):,}')
     resolvable_host_names = set([hostname for hostnames in ip_to_root_domains.values() for hostname in hostnames])
     resolved_host_count = len(resolvable_host_names)
-    print(f'* count of unique hostnames: {resolved_host_count:,}')
-    print(f'* count of unresolvable hosts: {len(input_fqdns) - resolved_host_count:,}')
-    print(f'* count of hostnames with IP in allowlist: {len(hostnames_with_ip_in_allowlist):,}')
-    print(f'* count of hostnames with non-public IP: {len(set(hostnames_with_non_public_ip)):,}')
-    if resolve_times:
-        min_time_ms = min(resolve_times) * 1000
-        avg_time_ms = (sum(resolve_times) / len(resolve_times)) * 1000
-        max_time_ms = max(resolve_times) * 1000
-        sorted_times = sorted(resolve_times)
-        p95_time_ms = sorted_times[int(0.95 * len(sorted_times))] * 1000
-        print(f'* resolve time stats: min={min_time_ms:,.1f}ms, avg={avg_time_ms:,.1f}ms, p95={p95_time_ms:,.1f}ms, max={max_time_ms:,.1f}ms')
+    logging.info('* count of unique hostnames (without subdomains): %s', f'{resolved_host_count:,}')
+    # Count unresolvable hosts by reason
+    unresolvable_counts = {}
+    for reason in unresolvable_hosts:
+        unresolvable_counts[reason] = unresolvable_counts.get(reason, 0) + 1
+
+    # Sort by count descending
+    sorted_reasons = sorted(unresolvable_counts.items(), key=lambda x: x[1], reverse=True)
+
+    logging.info('* count of unresolvable hosts by reason:')
+    for reason, count in sorted_reasons:
+        logging.info('  - %s: %s', reason, f'{count:,}')
+    logging.info('  - total: %s', f'{len(unresolvable_hosts):,}')
+    logging.info('* count of hostnames with IP in allowlist: %s', f'{len(set(hostnames_with_ip_in_allowlist)):,}')
+    logging.info('* count of hostnames with non-public IP: %s', f'{len(set(hostnames_with_non_public_ip)):,}')
+
     assert unique_host_count >= 0
     assert resolved_host_count >= 0
     assert resolved_host_count <= unique_host_count
     assert resolved_host_count >= min_resolved_host_count, f'{resolved_host_count:,} vs {min_resolved_host_count:,}'
-    assert completed_count / len(input_fqdns) >= 0.95, f'{completed_count:,} / {len(input_fqdns):,} completed without timeout'
+    assert (len(unresolvable_hosts)/unique_host_count) <= 0.5, f'{len(unresolvable_hosts):,} is high relative to {unique_host_count:,}'
 
     return (valid_fqdns, ip_to_root_domains)
 
@@ -291,7 +416,62 @@ def canonicalize_hostnames(hostnames):
     return sorted(canonical)
 
 
-def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
+def resolve_and_filter_hostnames(hostname_only_list: list, hostname_ip_list: list,
+                                  resolver_cache: dict = None, update_cache: bool = True,
+                                  max_concurrency: int = DEFAULT_MAX_CONCURRENCY,
+                                  concurrency_mode: str = 'global',
+                                  per_server_concurrency: int | None = None) -> tuple:
+    """Resolve hostnames and filter IP results based on source.
+
+    This function resolves two sets of hostnames:
+    1. hostname_only_list: Hostnames where we want valid FQDNs but NOT their IPs
+    2. hostname_ip_list: Hostnames where we want both valid FQDNs AND their IPs
+
+    Args:
+        hostname_only_list: List of hostnames that should not contribute IPs
+        hostname_ip_list: List of hostnames that should contribute IPs
+        resolver_cache: Optional cache of previous resolutions
+        update_cache: Whether to update the cache with new resolutions
+        max_concurrency: Maximum total concurrent DNS queries across all servers
+        concurrency_mode: 'global' or 'per-server'
+        per_server_concurrency: per DNS server cap when concurrency_mode == 'per-server'
+
+    Returns:
+        tuple (valid_fqdns, ip_to_root_domains):
+        - valid_fqdns: Set of all valid FQDNs from both lists
+        - ip_to_root_domains: Dict mapping IPs to root domains, only from hostname_ip_list
+    """
+    # Combine both input sets for single resolution call
+    combined_hostnames = list(set(hostname_only_list + hostname_ip_list))
+
+    # Track which FQDNs came from hostname_ip_list for filtering
+    # Convert to root domains for proper comparison
+    hostname_ip_roots = set()
+    for fqdn in hostname_ip_list:
+        root_domain = get_root_domain(fqdn)
+        hostname_ip_roots.add(root_domain)
+
+    print('Resolving all hostnames...', flush=True)
+    logging.info('Resolver config: mode=%s, total=%s, per_server=%s',
+                 concurrency_mode, max_concurrency, per_server_concurrency)
+    (valid_fqdns, all_ip_to_root_domains) = resolve_hosts(
+        combined_hostnames, 0, resolver_cache=resolver_cache,
+        update_cache=update_cache, max_concurrency=max_concurrency,
+        concurrency_mode=concurrency_mode, per_server_concurrency=per_server_concurrency)
+
+    # Filter ip_to_root_domains to only include IPs from hostnames that were in hostname_ip_list
+    ip_to_root_domains = collections.defaultdict(set)
+    for ip, root_domains in all_ip_to_root_domains.items():
+        # Check if any of the root domains for this IP came from hostname_ip_list
+        matching_domains = root_domains & hostname_ip_roots
+        if matching_domains:
+            # Only include the matching root domains for this IP
+            ip_to_root_domains[ip] = matching_domains
+
+    return (valid_fqdns, ip_to_root_domains)
+
+
+def write_ips(ip_to_root_domains: dict, ips_only: dict, final_ip_fn: str = FINAL_IP_FN) -> None:
     """Write final list of IP addresses to file
 
     Args:
@@ -313,9 +493,13 @@ def write_ips(ip_to_root_domains: dict, ips_only: dict) -> None:
     sorted_ips = sorted(merged_dict.keys(),
                         key=lambda ip: int(ipaddress.ip_address(ip)))
 
-    print(f'count of final IPs to write: {len(sorted_ips):,}')
+    # Make this message consistent to the hostname message.
+    print(f'writing {len(sorted_ips):,} IPs to {final_ip_fn}')
 
-    with open(FINAL_IP_FN, "w", encoding="utf-8") as output_file:
+    # Ensure output directory exists
+    os.makedirs(os.path.dirname(final_ip_fn), exist_ok=True)
+
+    with open(final_ip_fn, "w", encoding="utf-8") as output_file:
         output_file.write(f"# {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
         for ip in sorted_ips:
             hostnames_list = canonicalize_hostnames(set(merged_dict[ip]))
@@ -332,19 +516,20 @@ def download_and_load_resolver_cache(cache_url, cache_path):
         f.write(r.content)
     with lzma.open(cache_path, 'rt', encoding='utf-8') as f:
         cache_data = json.load(f)
-    print(f"Loaded resolver cache with {len(cache_data['host_to_ips'])} entries, created {cache_data['created_utc']}")
-    return cache_data['host_to_ips']
+    host_to_results = cache_data.get('host_to_results', {})
+    print(f"Loaded resolver cache with {len(host_to_results)} entries, created {cache_data['created_utc']}")
+    return host_to_results
 
 
-def write_resolver_cache(cache_path, host_to_ips):
+def write_resolver_cache(cache_path, host_to_results):
     """Write resolver cache to file"""
     data = {
         'created_utc': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
-        'host_to_ips': host_to_ips
+        'host_to_results': host_to_results
     }
     with lzma.open(cache_path, 'wt', encoding='utf-8') as f:
         json.dump(data, f)
-    print(f"Wrote resolver cache with {len(host_to_ips)} entries to {cache_path}")
+    logging.info("Wrote resolver cache with %s entries to %s", f"{len(host_to_results):,}", cache_path)
 
 
 def main():
@@ -353,11 +538,34 @@ def main():
     parser.add_argument('--use-resolver-cache', action='store_true',
                         help='Use public R2 resolver cache for hostname resolution')
     parser.add_argument('--max-hostnames', type=int, default=None,
-                       help='Limit the number of hostnames to process (for testing)')
+                        help='Limit the number of hostnames to process (for testing)')
+    parser.add_argument('--max-concurrency', type=int, default=DEFAULT_MAX_CONCURRENCY,
+                        help='Maximum total concurrent DNS queries across all servers (default: %s). In per-server mode, this is a global cap.' % DEFAULT_MAX_CONCURRENCY)
+    parser.add_argument('--concurrency-mode', choices=['auto', 'global', 'per-server'], default='auto',
+                        help="Concurrency mode: 'global' caps total concurrency; 'per-server' also caps each DNS server; 'auto' selects based on environment (global on GitHub Actions, per-server otherwise)")
+    parser.add_argument('--per-server-concurrency', type=int, default=None,
+                        help='Per-DNS-server concurrency cap (only used in per-server mode). If not provided, defaults to %s.' % DEFAULT_PER_SERVER_CONCURRENCY)
+    parser.add_argument('--dns-timeout', type=float,
+                        default=float(os.environ.get('DNS_TIMEOUT', dnsresolver.DNS_TIMEOUT)),
+                        help=f'Per-query DNS timeout in seconds (default: {float(os.environ.get("DNS_TIMEOUT", dnsresolver.DNS_TIMEOUT))}).')
+    parser.add_argument('--dns-lifetime', type=float,
+                        default=float(os.environ.get('DNS_LIFETIME', dnsresolver.LIFETIME_TIMEOUT)),
+                        help=f'Overall DNS lifetime timeout in seconds (default: {float(os.environ.get("DNS_LIFETIME", dnsresolver.LIFETIME_TIMEOUT))}).')
+    parser.add_argument('--verbose', '-v', action='store_true',
+                        help='Enable verbose output')
     args = parser.parse_args()
 
+    setup_logging(verbose=args.verbose)
+
+    if args.dns_timeout is not None:
+        dnsresolver.DNS_TIMEOUT = args.dns_timeout
+    if args.dns_lifetime is not None:
+        dnsresolver.LIFETIME_TIMEOUT = args.dns_lifetime
+    elif args.dns_timeout is not None:
+        dnsresolver.LIFETIME_TIMEOUT = args.dns_timeout * 2
+
     os.makedirs(os.path.dirname(LOCAL_CACHE_PATH), exist_ok=True)
-    print('Reading input hostnames...', flush=True)
+    logging.info('Reading input hostnames...')
 
     resolver_cache = None
     if args.use_resolver_cache:
@@ -381,17 +589,36 @@ def main():
 
     if args.max_hostnames:
         print(f'Limiting to {args.max_hostnames:,} hostnames for testing...', flush=True)
-        fqdns_to_resolve_no_ip_collection = random.sample(fqdns_to_resolve_no_ip_collection, min(args.max_hostnames, len(fqdns_to_resolve_no_ip_collection)))
+        fqdns_to_resolve_no_ip_collection = random.sample(fqdns_to_resolve_no_ip_collection, min(
+            args.max_hostnames, len(fqdns_to_resolve_no_ip_collection)))
         hostnames_ip = random.sample(hostnames_ip, min(args.max_hostnames, len(hostnames_ip)))
         update_cache = False
 
-    print('Resolving hostname-only set and derived patterns...', flush=True)
-    (valid_fqdns1, _ip_to_root_domains_discard) = resolve_hosts(
-        fqdns_to_resolve_no_ip_collection, 50, resolver_cache=resolver_cache, update_cache=update_cache)
-    print('Resolving hostname+ip set...', flush=True)
-    (valid_fqdns2, ip_to_root_domains) = resolve_hosts(hostnames_ip,
-                                                       20, resolver_cache=resolver_cache, update_cache=update_cache)
-    valid_fqdns = list(valid_fqdns1 | valid_fqdns2)
+    # Decide concurrency mode and caps
+    is_github = os.getenv('GITHUB_ACTIONS') == 'true'
+    if args.concurrency_mode == 'auto':
+        concurrency_mode = 'global' if is_github else 'per-server'
+    else:
+        concurrency_mode = args.concurrency_mode
+
+    per_server_cc = args.per_server_concurrency
+    if concurrency_mode == 'per-server' and per_server_cc is None:
+        per_server_cc = DEFAULT_PER_SERVER_CONCURRENCY
+
+    total_cap = args.max_concurrency
+    if concurrency_mode == 'per-server' and args.max_concurrency == DEFAULT_MAX_CONCURRENCY:
+        # Expand total cap to approximately match per-server capacity across servers
+        total_cap = per_server_cc * len(DNS_SERVERS)
+
+    logging.info('Final concurrency selection: mode=%s, total_cap=%s, per_server=%s (is_github=%s)',
+                 concurrency_mode, total_cap, per_server_cc, is_github)
+
+    # Use the new refactored function to handle hostname resolution and filtering
+    (valid_fqdns, ip_to_root_domains) = resolve_and_filter_hostnames(
+        fqdns_to_resolve_no_ip_collection, hostnames_ip,
+        resolver_cache=resolver_cache, update_cache=update_cache,
+        max_concurrency=total_cap, concurrency_mode=concurrency_mode,
+        per_server_concurrency=per_server_cc)
 
     print('Reading IP inputs...', flush=True)
     ips_only = read_ips(IP_DIR)
