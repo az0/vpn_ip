@@ -198,8 +198,14 @@ class Allowlist:
     blocking them from being written to files under data/output.
     """
 
-    def __init__(self):
-        self.ip_allowlist = set()
+    def __init__(self, allowed_ips):
+        """Initialize allowlist
+
+        Args:
+            allowed_ips: List of allowed IPs (e.g., like from ALLOWLIST_HOSTNAME_IP_FN)
+        """
+        assert isinstance(allowed_ips, list)
+        self.ip_allowlist = set(allowed_ips)
         with open(ALLOWLIST_IP_FN, 'r', encoding='utf-8') as f:
             for line in f:
                 line = clean_line(line)
@@ -309,7 +315,7 @@ class TestCommon(unittest.TestCase):
 
     def test_allowlist(self):
         """Test Allowlist class"""
-        allowlist = Allowlist()
+        allowlist = Allowlist([])
         self.assertEqual(allowlist.check_hostname_in_allowlist('shop.proton.me'), True)
         self.assertEqual(allowlist.check_hostname_in_allowlist('protonvpn.com'), False)
         self.assertEqual(allowlist.check_hostname_in_allowlist(''), False)
@@ -317,6 +323,9 @@ class TestCommon(unittest.TestCase):
         self.assertEqual(allowlist.check_ip_in_ranges('2.2.2.2'), False)
         self.assertEqual(allowlist.check_ip_in_ranges('127.0.0.1'), False)
         self.assertEqual(allowlist.check_ip_in_ranges('0.0.0.0'), False)
+        self.assertEqual(allowlist.check_ip_in_ranges('185.199.109.153'), False)
+        allowlist = Allowlist(['185.199.109.153'])
+        self.assertEqual(allowlist.check_ip_in_ranges('185.199.109.153'), True)
 
     def test_check_fqdn_against_adguard(self):
         """Test AdguardPatternChecker"""
