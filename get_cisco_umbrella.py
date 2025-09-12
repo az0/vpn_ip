@@ -82,7 +82,7 @@ def filter_umbrella_hostnames(cisco_hostnames):
 
     export_hostnames = list(set(hostnames_matching_pattern) | set(prior_hostnames))
 
-    allowlist = Allowlist()
+    allowlist = Allowlist([])
     export_hostnames = [
         hostname for hostname in export_hostnames if not allowlist.check_hostname_in_allowlist(hostname)]
 
