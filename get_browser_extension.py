@@ -139,6 +139,7 @@ def main():
 
 class TestBrowserExtensionExtractHosts(unittest.TestCase):
     """Test functions in this module"""
+
     def test_parse_connect_src_hosts(self):
         """Test parse_connect_src_hosts()"""
         manifest_data = {

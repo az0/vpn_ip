@@ -59,16 +59,16 @@ ALLOWLIST_HOSTNAME_IP_FN = 'data/input/allowlist_hostname_ip.txt'
 ALLOWLIST_HOSTNAME_ONLY_FN = 'data/input/allowlist_hostname_only.txt'
 HEADLESS_PROGRESS_FREQUENCY = 30  # seconds
 TEST_HOSTNAMES_VALID = [
-                        'cornell.edu',
-                        'facebook.com',
-                        'google.com',
-                        'lencr.org',
-                        'microsoft.com',
-                        'mozilla.org',
-                        'nasa.gov',
-                        'npt.org',
-                        'pki.goog',
-                        ]
+    'cornell.edu',
+    'facebook.com',
+    'google.com',
+    'lencr.org',
+    'microsoft.com',
+    'mozilla.org',
+    'nasa.gov',
+    'npt.org',
+    'pki.goog',
+]
 
 # Classes
 
@@ -248,11 +248,8 @@ class Allowlist:
         return False
 
 
-
-
 class TestCommon(unittest.TestCase):
     """Test common functions"""
-
 
     def test_add_new_hostnames_to_file_existing(self):
         """Test add_new_hostnames_to_file() with existing file"""
@@ -357,7 +354,6 @@ class TestCommon(unittest.TestCase):
             (actual_hostnames, actual_patterns) = read_hostnames_from_file(tmp_file.name)
             self.assertCountEqual(actual_hostnames, sorted(hostnames))
             self.assertCountEqual(actual_patterns, sorted(patterns))
-
 
     def test_sort_fqdns(self):
         """Test sort_fqdns() function"""
@@ -494,11 +490,11 @@ def read_hostnames_from_file(filename: str) -> tuple[list[str], list[str]]:
                 is_pattern = True
             elif item.startswith('|') and item.endswith('|'):
                 is_pattern = True
-            elif item.startswith('|'): # Check after the previous two | cases
+            elif item.startswith('|'):  # Check after the previous two | cases
                 is_pattern = True
-            elif item.endswith('^'): # Treat lines ending in ^ as patterns too
+            elif item.endswith('^'):  # Treat lines ending in ^ as patterns too
                 is_pattern = True
-            elif item.endswith('|'): # Treat lines ending in | as patterns too
+            elif item.endswith('|'):  # Treat lines ending in | as patterns too
                 is_pattern = True
 
             if is_pattern:

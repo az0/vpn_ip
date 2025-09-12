@@ -261,8 +261,8 @@ def resolve_hostnames_sync(hostnames: List[str], max_concurrency: int,
 
     async def _async_resolve():
         resolver = AsyncResolver(max_concurrency=max_concurrency,
-                                  mode=mode,
-                                  per_server_concurrency=per_server_concurrency)
+                                 mode=mode,
+                                 per_server_concurrency=per_server_concurrency)
         return await resolver.resolve_hostnames(hostnames), resolver.get_statistics()
 
     results, stats = asyncio.run(_async_resolve())
