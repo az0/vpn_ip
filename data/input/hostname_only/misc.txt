@@ -1,4 +1,5 @@
-# Misc VPN
+# Miscellenous brands
+# Type: VPN
 ||1clickvpn.com^
 ||1clickvpn.net^
 ||fastestvpn.com^
@@ -40,13 +41,7 @@ vpnblade.medium.com
 ||xlnvpn.xyz^
 ||vpnunlimitedapp.com^
 
-# Atlas VPN
-||atlasvpn.com^
-account.atlasvpn.com
-help.atlasvpn.com
-atlas-vpn.en.softonic.com
-
-# Blog, review, affiliate
+# Type: blog
 bestvaluevpn.com
 bestvpn.services
 thetopfivevpn.com
@@ -63,7 +58,14 @@ www.vpnmentor.com
 www.vpnranks.com
 www.vpnxd.com
 
-# Browsec
+# Brand: Atlas VPN
+# Type: VPN
+||atlasvpn.com^
+account.atlasvpn.com
+help.atlasvpn.com
+atlas-vpn.en.softonic.com
+
+# Brand: Browsec
 # See also get_browsec_github.py and get_browser_extension.py
 ||trafcfy.com^
 ||prmsrvs.com^
@@ -98,7 +100,7 @@ statis-pndro5.b-cdn.net
 thirdpartycache.b-cdn.net
 
 
-# Cyber Ghost VPN
+# Brand: Cyber Ghost VPN
 ||cyberghostvpn.com^
 ||gen4.ninja^
 dev-cms.cyberghostvpn.com
@@ -109,7 +111,7 @@ safe.cyberghostvpn.com
 support.cyberghostvpn.com
 www.cyberghostvpn.com
 
-# ExpressVPN
+# Brand: ExpressVPN
 ||expressvpn.com^
 ||expressvpn.works^
 ||exp6redir6.com^
@@ -134,7 +136,7 @@ www.expressvpnrouter.com
 xv-client-json-configuration.s3.us-east-1.amazonaws.com
 
 
-# Free VPN Planet
+# Brand: Free VPN Planet
 #  https://addons.mozilla.org/en-US/firefox/addon/free-vpn-proxy-planetvpn/
 ||freevpnplanet.com^
 ||ofowgfwjoweukk.online^
@@ -146,7 +148,7 @@ account.freevpnplanet.com
 account.planetvpnarab.com
 account.planet-vpnfree.com
 
-# Hola VPN
+# Brand: Hola VPN
 # Do not add all *.b-cdn.net (Bunny CDN).
 ||c6gj-static.net^
 ||h-vpn.org^
@@ -198,7 +200,7 @@ x-cdn-static-com.b-cdn.net
 hola-sitepic.b-cdn.net
 vdkd6nz8qr.s3.amazonaws.com # https://vdkd6nz8qr.s3.amazonaws.com/cloud_failover.conf
 
-# Hoxx VPN
+# Brand: Hoxx VPN
 # https://bitbucket.org/the7c/update/raw/master/ip/ens4/data.json
 # https://raw.githubusercontent.com/the7c/update/master/src/js/data.json
 # https://codeberg.org/7c/rawsilo/raw/branch/main/src/js/data.json
@@ -249,7 +251,7 @@ pub-8029ed10cf4e4db0b3757e6b82ef7a40.r2.dev # mirror on Cloudflare
 mirror4.es-mad-1.linodeobjects.com # mirror in Madrid
 
 
-# IPVanish
+# Brand: IPVanish
 ||ipvanish.com^
 account.ipvanish.com
 checkout.ipvanish.com
@@ -257,7 +259,7 @@ status.ipvanish.com
 support.ipvanish.com
 www.ipvanish.com
 
-# NordVPN
+# Brand: NordVPN
 ||nordlayer.com^
 ||nordvpn.com^
 ||nordvpn.net^
@@ -296,7 +298,7 @@ cp.nordlayer.com
 help.nordlayer.com
 partner.nordlayer.com
 
-# Surfshark
+# Brand: Surfshark
 ||surfshark.com^
 ||surfshark.net^
 get.surfshark.net
@@ -306,7 +308,7 @@ support.surfshark.com
 surfshark.com
 surfshark.net
 
-# PureVPN
+# Brand: PureVPN
 ||purevpn.com^
 ||purevpn-tools.com^
 ||purevpn.de^
@@ -325,7 +327,7 @@ www.purevpn.fr
 www.puredome.com
 purevpn.fusionauth.io
 
-# ProtonVPN
+# Brand: ProtonVPN
 # https://subdomainfinder.c99.nl/scans/2023-05-01/protonvpn.com
 ||proton.me^
 ||protonvpn.com^
@@ -344,97 +346,15 @@ wikidc4v2a.protonvpn.com
 www.protonvpn.com
 www.partners.protonvpn.com
 
-# Proxy list
-proxydb.net
-free-proxy-list.net
-free-proxy-list.com
-proxyscan.io
-proxylist.geonode.com
-hide.me
-hidemy.life
-hidester.com
-openproxylist.com
-plainproxies.com
-proxyscrape.com
-pubproxy.com
-spys.one
-whoer.net
-www.croxyproxy.com
-www.freeproxy.world
-www.freeproxylists.net
-www.google-proxy.net
-www.hidemyass.com
-www.proxfree.com
-www.proxynova.com
-www.proxysite.com
-www.socks-proxy.net
-www.sslproxies.org
-www.us-proxy.org
-
-# Proxy hosting service
-brightdata.com
-dashboard.smartproxy.com
-gologin.com
-help.smartproxy.com
-proxyfuel.com
-qrvpn.io
-reflect4.me
-smartproxy.com
-www.webshare.io
-
-# Proxy misc.
-proxyway.com
-www.bestproxyreviews.com
-www.eliteproxyswitcher.com
-www.forumproxyleecher.com
-www.privateproxyreviews.com
-www.proxifier.com
-www.socksproxychecker.com
-||toolip.io^
-support.toolip.io
-
-# Proxies, web-based, in general
-103prxy.com
-browser.best-server.pro
-freeproxy.win
-hidedoor.com
-||steganos.com^
-proxy-de.steganos.com
-proxy-es.steganos.com
-proxy-fr.steganos.com
-proxy-us.steganos.com
-www.steganos.com
-proxyium.com
-proxysite.one
-proxysite.pro
-||kproxy.com^
-server1.kproxy.com
-server2.kproxy.com
-server3.kproxy.com
-server4.kproxy.com
-server5.kproxy.com
-server6.kproxy.com
-server7.kproxy.com
-server8.kproxy.com
-server9.kproxy.com
-ultra.hosteagle.club
-us.103prxy.com
-us.hidester.com
-us3.best-server.pro
-us7.proxysite.one
-webproxy.to
-www.kproxy.com
-www.my-proxy.com
-www.proxy-youtube.com
-
-# Telleport
+# Brand: Telleport
 ||telleport.me^
 app.telleport.me # example Android UI https://app.telleport.me/ui/android/?r=1
 dev.telleport.me
 telleport.firebaseapp.com
 telleport.appspot.com
 
-# Touch VPN (Google Chrome extension)
+# Brand: Touch VPN
+# Google Chrome extension
 # see also touchvpn.net
 ||touchvpn.net^
 www.touchvpn.net
@@ -446,7 +366,7 @@ touchvpn-ios.appspot.com
 touchvpn-ios.firebaseio.com
 www.hotspotshield.com
 
-# VeePN
+# Brand: VeePN
 # See also hostname_ip/veepn.txt
 # https://hackertarget.com/find-dns-host-records/
 # https://s3-oregon-1.s3-us-west-2.amazonaws.com/api.json
@@ -478,8 +398,8 @@ whatismyip.veepn.com
 www.veepn.com
 zorvian.com
 
-
-# VPN Unlimited by KeepSolid Inc.
+# Brand: VPN Unlimited
+# Vendor: KeepSolid Inc.
 #keepsolid.statuspage.io
 ||vpnunlimited.com^
 ||vpnunlimitedapp.com^
@@ -617,7 +537,7 @@ za.vpnunlimitedapp.com
 
 
 
-# X-VPN: general
+# Brand: X-VPN
 #https://xvpn.io/?n=best.free.ChromeExt.GetDomainList
 8v9m.com
 cars-a.co.za
@@ -687,7 +607,8 @@ premium.xvpn.io
 api.du-just-link.com
 api.get-just-api.com
 
-# ZenMate Google Chrome extension
+# Brand: ZenMate
+# Google Chrome Extension
 # goerli.infura.io is generic
 account.zenmate.com
 beta-api.zenguard.biz
@@ -696,7 +617,7 @@ feedback.zenmate.com
 zenguard.zendesk.com
 zenmate.com
 
-# Urban VPN
+# Brand: Urban VPN
 # https://addons.mozilla.org/en-US/firefox/addon/urban-vpn/
 ||urban-vpn.com^
 www.urban-vpn.com
@@ -709,13 +630,13 @@ anti-phishing-protection-toolbar.urban-vpn.com
 analytics-toolbar.urban-vpn.com
 authentication.urban-vpn.com
 
-# SandVPN
+# Brand: SandVPN
 ||sandvpn.com^
 sandvpn.com
 api.sandvpn.com
 www.sandvpn.com
 
-# SetupVPN
+# Brand: SetupVPN
 ||approval.fun^
 ||areas.fun^
 ||bailey.today^
@@ -735,13 +656,13 @@ www.sandvpn.com
 ||throat.team^
 ||webshots.world^
 
-# vpn by Network DD
+# Brand: VPN by Network DD
 # https://addons.mozilla.org/en-US/firefox/addon/vpn-__0
 # domain expired 21 Jan 2025 09:23:33 GMT and is now parked.
 # Check later if it comes back.
 softnour.com
 
-# Windscribe
+# Brand: Windscribe
 ||block-only-if-you-have-a-small-pee-pee.io^
 ||totallyacdn.com^
 ||whiskergalaxy.com^
@@ -750,7 +671,7 @@ softnour.com
 ||staticnetcontent.com^
 ||nosslscribe.com^
 
-# WorkingVPN
+# Brand: WorkingVPN
 ||workingvpn.com^
 status.workingvpn.com
 ||000000555.xyz^
