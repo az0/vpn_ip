@@ -1,5 +1,6 @@
 {
     "hideme": {
+        "brand": "Hide.me",
         "urls": [
             "https://raw.githubusercontent.com/hidemevpn/proxy/master/config.json",
             "http://188.166.142.39/servers/list"
@@ -12,6 +13,7 @@
         ]
     },
     "hoxx": {
+        "brand": "Hoxx",
         "urls": [
             "https://tierbase3.fra1.cdn.digitaloceanspaces.com/tiershx.json",
             "https://tierbase4.s3.amazonaws.com/tiershx.json",
@@ -29,6 +31,7 @@
         "ip_key": []
     },
     "protonvpn": {
+        "brand": "Proton VPN",
         "urls": [
             "https://api.protonmail.ch/vpn/logicals"
         ],
@@ -41,6 +44,7 @@
         ]
     },
     "setupvpn": {
+        "brand": "SetupVPN",
         "urls": [
             "https://tierbase3.fra1.cdn.digitaloceanspaces.com/tierssv.json",
             "https://tierbase4.s3.amazonaws.com/tierssv.json",
@@ -58,6 +62,7 @@
         "ip_key": []
     },
     "windscribe": {
+        "brand": "Windscribe",
         "urls": [
             "https://assets.windscribe.com/serverlist/firefox/1/1",
             "https://assets.windscribe.com/serverlist/mob-v2/1/1",
@@ -78,6 +83,7 @@
         ]
     },
     "workingvpn": {
+        "brand": "WorkingVPN",
         "urls": [
             "https://000000555.xyz/api/extension/servers"
         ],

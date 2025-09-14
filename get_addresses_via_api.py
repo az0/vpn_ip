@@ -88,6 +88,7 @@ def process_service(service_code, service):
     ip_fn = os.path.join(IP_ROOT, service_code+'_api.txt')
     all_hostnames = set()
     all_ips = set()
+    brand = service.get('brand', None)
 
     for url in service['urls']:
         new_hostnames, new_ips = collect_hostnames_and_ips(
@@ -110,7 +111,7 @@ def process_service(service_code, service):
 
     write_addresses_to_file(hostname_fn, sorted(all_hostnames))
     # FIXME later: sort IPs like prepare_final_lists.write_ips()
-    write_addresses_to_file(ip_fn, sorted(all_ips), units="IP addresses")
+    write_addresses_to_file(ip_fn, sorted(all_ips), units="IP addresses", brand=brand)
 
 
 def go():
@@ -119,7 +120,7 @@ def go():
     with open(JSON_CONFIG_FN, encoding='utf-8') as file:
         services = json.load(file)
 
-    failed_services=[]
+    failed_services = []
     success_count = 0
     for key in services.keys():
         try:
