@@ -119,8 +119,24 @@ def go():
     with open(JSON_CONFIG_FN, encoding='utf-8') as file:
         services = json.load(file)
 
+    failed_services=[]
+    success_count = 0
     for key in services.keys():
-        process_service(key, services[key])
+        try:
+            process_service(key, services[key])
+        except requests.exceptions.ConnectionError as e:
+            print(f"exception processing service {key}: {e}")
+            failed_services.append(key)
+        except Exception as e:
+            print(f"exception processing service {key}: {e}")
+            failed_services.append(key)
+        else:
+            success_count += 1
+
+    print(f"{success_count} services processed successfully")
+    if failed_services:
+        print(f"{len(failed_services)} services failed: {failed_services}")
+        sys.exit(1)
 
     print(f"{sys.argv[0]} is done")
 
