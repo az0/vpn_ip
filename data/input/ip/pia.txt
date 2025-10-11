@@ -3058,7 +3058,6 @@
 173.244.49.75        # Taiwan
 194.110.13.93        # UK London
 212.102.53.53        # UK London
-212.102.53.68        # UK London
 181.215.182.74       # US Texas
 181.214.173.169      # DE Berlin
 191.101.157.50       # DE Berlin
@@ -4745,7 +4744,6 @@
 77.81.142.42         # Mexico
 77.81.142.64         # Mexico
 191.96.168.205       # Netherlands
-191.96.168.186       # Netherlands
 179.61.228.116       # AU Perth
 179.61.228.38        # AU Perth
 191.101.210.192      # AU Sydney
@@ -4966,7 +4964,6 @@
 191.101.157.177      # DE Berlin
 212.102.49.210       # Spain
 212.102.53.48        # UK London
-212.102.53.40        # UK London
 191.96.227.133       # US New York
 191.96.227.139       # US New York
 102.129.232.28       # US Silicon Valley
@@ -5374,7 +5371,6 @@
 98.159.234.137       # UK Southampton
 181.41.206.204       # US Denver
 181.41.206.208       # US Denver
-212.102.46.217       # US Seattle
 191.101.210.203      # AU Sydney
 212.102.57.7         # DE Frankfurt
 179.61.240.136       # New Zealand
@@ -6210,11 +6206,9 @@
 181.215.182.194      # US Texas
 181.215.182.221      # US Texas
 102.129.235.154      # US Washington Dc
-191.96.168.82        # Netherlands
 79.142.79.87         # Switzerland
 98.159.234.140       # UK Southampton
 191.96.106.211       # US California
-37.19.198.181        # US New York
 191.101.61.185       # US Las Vegas
 156.146.48.204       # US Seattle
 138.199.24.28        # Singapore
@@ -6760,7 +6754,6 @@
 181.215.182.20       # US Texas
 140.228.24.132       # CA Montreal
 191.101.157.43       # DE Berlin
-195.78.54.176        # Netherlands
 181.214.206.94       # Netherlands
 102.129.235.198      # US Washington Dc
 102.129.235.114      # US Washington Dc
@@ -6873,7 +6866,6 @@
 191.96.37.112        # US Seattle
 102.129.232.134      # US Silicon Valley
 191.101.157.78       # DE Berlin
-156.146.46.148       # US Atlanta
 102.129.152.111      # US Florida
 102.129.153.143      # US Florida
 102.129.234.72       # US Texas
@@ -6882,6 +6874,7 @@
 138.199.29.39        # UK London
 143.244.49.12        # US California
 181.214.206.142      # Netherlands
+191.96.168.181       # Netherlands
 37.19.198.58         # US New York
 191.96.255.158       # US Silicon Valley
 102.129.232.108      # US Silicon Valley
@@ -6898,7 +6891,6 @@
 181.214.165.125      # US Chicago
 212.102.59.220       # US Chicago
 102.129.153.79       # US Florida
-154.47.21.137        # Netherlands
 191.96.106.140       # US California
 37.19.221.5          # US Houston
 37.19.198.47         # US New York
@@ -7622,7 +7614,6 @@
 154.16.105.88        # US Las Vegas
 212.102.53.58        # UK London
 212.102.53.61        # UK London
-156.146.46.72        # US Atlanta
 102.129.234.59       # US Texas
 102.129.234.83       # US Texas
 102.129.235.122      # US Washington Dc
@@ -7876,6 +7867,7 @@
 156.146.62.204       # Switzerland
 37.19.198.52         # US New York
 181.214.166.151      # US Chicago
+181.214.164.243      # US Chicago
 191.96.150.94        # US New York
 37.19.198.179        # US New York
 102.129.234.20       # US Texas
@@ -8325,7 +8317,6 @@
 181.41.206.58        # US Denver
 191.101.210.163      # AU Sydney
 191.96.150.57        # US New York
-212.102.46.194       # US Seattle
 156.146.48.140       # US Seattle
 102.129.234.103      # US Texas
 181.215.182.196      # US Texas
@@ -9444,7 +9435,6 @@
 102.129.234.231      # US Texas
 84.17.45.2           # US California
 102.129.232.9        # US Silicon Valley
-191.96.168.166       # Netherlands
 181.41.202.147       # CA Vancouver
 102.129.252.17       # US Silicon Valley
 181.214.166.128      # US Chicago
@@ -9608,7 +9598,6 @@
 181.215.182.220      # US Texas
 181.215.182.26       # US Texas
 181.214.165.173      # US Chicago
-37.19.198.212        # US New York
 181.214.206.136      # Netherlands
 173.239.226.197      # US Las Vegas
 191.96.168.179       # Netherlands
@@ -9719,7 +9708,6 @@
 181.214.164.22       # US Chicago
 212.102.59.139       # US Chicago
 181.215.182.107      # US Texas
-138.199.29.33        # UK London
 191.96.255.201       # US Silicon Valley
 191.96.255.210       # US Silicon Valley
 102.129.153.74       # US Florida
@@ -10071,7 +10059,6 @@
 191.96.36.142        # CA Toronto
 173.239.226.193      # US Las Vegas
 181.214.164.136      # US Chicago
-156.146.48.34        # US Seattle
 181.214.165.88       # US Chicago
 195.78.54.78         # Netherlands
 102.129.234.183      # US Texas
@@ -10364,12 +10351,8 @@
 37.19.198.31         # US New York
 212.102.53.13        # UK London
 37.19.198.182        # US New York
-37.19.210.68         # US Denver
-37.19.210.73         # US Denver
 37.19.210.84         # US Denver
-37.19.210.89         # US Denver
 37.19.198.96         # US New York
-37.19.210.79         # US Denver
 212.102.52.92        # UK London
 37.19.210.69         # US Denver
 102.129.252.91       # US Silicon Valley
@@ -10379,19 +10362,10 @@
 37.19.210.170        # US Denver
 37.19.210.172        # US Denver
 181.214.166.30       # US Chicago
-37.19.210.78         # US Denver
 37.19.210.180        # US Denver
-37.19.210.74         # US Denver
 181.214.165.78       # US Chicago
-37.19.210.94         # US Denver
-37.19.210.90         # US Denver
-37.19.210.93         # US Denver
-37.19.210.81         # US Denver
 37.19.210.179        # US Denver
-37.19.210.83         # US Denver
 37.19.210.188        # US Denver
-37.19.210.87         # US Denver
-37.19.210.131        # US Denver
 212.102.53.21        # UK London
 37.19.210.167        # US Denver
 37.19.210.166        # US Denver
@@ -10405,7 +10379,6 @@
 212.102.53.27        # UK London
 37.19.210.165        # US Denver
 37.19.210.72         # US Denver
-37.19.210.86         # US Denver
 37.19.198.220        # US New York
 37.19.210.174        # US Denver
 37.19.210.186        # US Denver
@@ -10416,12 +10389,9 @@
 37.19.210.184        # US Denver
 37.19.210.178        # US Denver
 37.19.210.171        # US Denver
-37.19.210.76         # US Denver
 37.19.210.162        # US Denver
 37.19.210.71         # US Denver
 37.19.210.185        # US Denver
-37.19.210.67         # US Denver
-37.19.210.75         # US Denver
 37.19.210.187        # US Denver
 37.19.210.181        # US Denver
 37.19.210.159        # US Denver
@@ -10429,7 +10399,6 @@
 37.19.210.177        # US Denver
 37.19.210.163        # US Denver
 37.19.210.173        # US Denver
-37.19.210.88         # US Denver
 212.102.53.45        # UK London
 37.19.210.182        # US Denver
 212.102.53.67        # UK London
@@ -10498,7 +10467,6 @@
 143.244.41.141       # Netherlands
 143.244.41.142       # Netherlands
 143.244.41.134       # Netherlands
-143.244.41.146       # Netherlands
 143.244.41.153       # Netherlands
 143.244.41.133       # Netherlands
 143.244.41.154       # Netherlands
@@ -13224,7 +13192,6 @@
 203.188.164.44       # Netherlands
 203.188.164.185      # Netherlands
 203.188.164.179      # Netherlands
-203.188.164.130      # Netherlands
 203.188.164.158      # Netherlands
 203.188.164.149      # Netherlands
 203.188.164.175      # Netherlands
@@ -13248,7 +13215,6 @@
 203.188.164.189      # Netherlands
 203.188.164.51       # Netherlands
 203.188.164.58       # Netherlands
-203.188.164.172      # Netherlands
 203.188.164.134      # Netherlands
 203.188.164.184      # Netherlands
 203.188.164.36       # Netherlands
@@ -13263,7 +13229,6 @@
 203.188.164.170      # Netherlands
 203.188.164.163      # Netherlands
 203.188.164.28       # Netherlands
-203.188.164.23       # Netherlands
 173.244.56.213       # US West
 173.244.56.224       # US West
 173.244.56.220       # US West
@@ -14087,7 +14052,6 @@
 62.93.178.202        # Netherlands
 62.93.178.226        # Netherlands
 62.93.178.149        # Netherlands
-62.93.178.133        # Netherlands
 62.93.178.246        # Netherlands
 62.93.178.197        # Netherlands
 62.93.178.145        # Netherlands
@@ -14133,14 +14097,12 @@
 62.93.178.136        # Netherlands
 62.93.178.192        # Netherlands
 62.93.178.211        # Netherlands
-62.93.178.182        # Netherlands
 62.93.178.142        # Netherlands
 62.93.178.200        # Netherlands
 62.93.178.219        # Netherlands
 62.93.178.209        # Netherlands
 62.93.178.241        # Netherlands
 62.93.178.137        # Netherlands
-62.93.178.152        # Netherlands
 62.93.178.165        # Netherlands
 62.93.178.141        # Netherlands
 62.93.178.166        # Netherlands
@@ -14266,7 +14228,7 @@
 212.56.48.18         # Netherlands
 212.56.48.58         # Netherlands
 212.56.48.70         # Netherlands
-212.56.48.63         # Netherlands
+212.56.48.62         # Netherlands
 212.56.48.52         # Netherlands
 212.56.48.61         # Netherlands
 212.56.48.5          # Netherlands
@@ -14363,7 +14325,6 @@
 212.56.48.129        # Netherlands
 212.56.48.89         # Netherlands
 212.56.48.102        # Netherlands
-212.56.48.109        # Netherlands
 212.56.48.42         # Netherlands
 212.56.48.40         # Netherlands
 212.56.48.101        # Netherlands
@@ -18052,3 +18013,7 @@
 212.32.49.165        # US Atlanta
 212.32.49.170        # US Atlanta
 212.32.49.161        # US Atlanta
+158.173.3.56         # Netherlands
+212.32.49.171        # US Atlanta
+212.32.49.199        # US Atlanta
+158.173.3.104        # Netherlands
