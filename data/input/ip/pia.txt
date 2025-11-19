@@ -4134,7 +4134,6 @@
 188.126.89.51        # Finland
 188.126.89.48        # Finland
 188.126.89.77        # Finland
-191.96.168.62        # Netherlands
 102.129.252.74       # US Silicon Valley
 102.129.252.84       # US Silicon Valley
 191.96.255.105       # US Silicon Valley
@@ -8671,7 +8670,6 @@
 181.214.165.119      # US Chicago
 181.214.164.207      # US Chicago
 102.129.232.109      # US Silicon Valley
-181.214.206.126      # Netherlands
 195.78.54.106        # Netherlands
 191.96.150.77        # US New York
 102.129.153.157      # US Florida
@@ -9457,7 +9455,6 @@
 179.61.197.35        # CA Toronto
 179.61.197.39        # CA Toronto
 181.214.164.14       # US Chicago
-195.78.54.64         # Netherlands
 179.61.197.120       # CA Toronto
 191.96.168.175       # Netherlands
 181.214.166.140      # US Chicago
@@ -9522,6 +9519,7 @@
 140.228.24.228       # CA Montreal
 181.214.166.218      # US Chicago
 140.228.24.236       # CA Montreal
+140.228.24.221       # CA Montreal
 140.228.24.226       # CA Montreal
 140.228.24.222       # CA Montreal
 140.228.24.211       # CA Montreal
@@ -12612,9 +12610,11 @@
 212.56.54.186        # US East
 212.56.54.104        # US East
 212.56.54.181        # US East
+212.56.54.25         # US East
 212.56.54.205        # US East
 212.56.54.58         # US East
 212.56.54.112        # US East
+212.56.54.46         # US East
 212.56.54.81         # US East
 212.56.54.69         # US East
 212.56.54.201        # US East
@@ -12680,6 +12680,7 @@
 212.56.54.208        # US East
 212.56.54.115        # US East
 212.56.54.202        # US East
+212.56.54.28         # US East
 212.56.54.187        # US East
 212.56.54.198        # US East
 212.56.54.215        # US East
@@ -12691,12 +12692,14 @@
 212.56.54.199        # US East
 212.56.54.117        # US East
 212.56.54.218        # US East
+212.56.54.35         # US East
 212.56.54.244        # US East
 212.56.54.105        # US East
 212.56.54.197        # US East
 212.56.54.86         # US East
 212.56.54.221        # US East
 212.56.54.210        # US East
+212.56.54.16         # US East
 212.56.54.190        # US East
 212.56.54.171        # US East
 212.56.54.216        # US East
@@ -12835,6 +12838,7 @@
 91.124.17.71         # US Washington Dc
 91.124.17.179        # US Washington Dc
 91.124.17.248        # US Washington Dc
+212.56.54.21         # US East
 91.124.17.181        # US Washington Dc
 91.124.17.81         # US Washington Dc
 91.124.17.177        # US Washington Dc
@@ -15293,10 +15297,12 @@
 212.32.49.87         # US Atlanta
 151.241.125.71       # US Atlanta
 212.32.49.248        # US Atlanta
+151.241.122.39       # US East
 138.199.19.41        # DE Frankfurt
 138.199.19.25        # DE Frankfurt
 138.199.19.64        # DE Frankfurt
 151.241.125.20       # US Atlanta
+151.241.122.35       # US East
 212.32.49.116        # US Atlanta
 138.199.19.72        # DE Frankfurt
 138.199.19.77        # DE Frankfurt
@@ -15313,10 +15319,12 @@
 138.199.19.28        # DE Frankfurt
 138.199.19.51        # DE Frankfurt
 138.199.19.40        # DE Frankfurt
+151.241.122.32       # US East
 151.241.123.48       # US Atlanta
 138.199.19.26        # DE Frankfurt
 138.199.19.69        # DE Frankfurt
 138.199.19.48        # DE Frankfurt
+151.241.122.15       # US East
 212.32.49.36         # US Atlanta
 138.199.19.21        # DE Frankfurt
 138.199.19.56        # DE Frankfurt
@@ -16657,7 +16665,6 @@
 158.173.22.31        # US Atlanta
 158.173.152.96       # Switzerland
 158.173.152.240      # Switzerland
-158.173.3.30         # Netherlands
 158.173.152.79       # Switzerland
 158.173.152.52       # Switzerland
 158.173.152.11       # Switzerland
@@ -16876,3 +16883,13 @@
 37.46.113.152        # Luxembourg
 37.46.113.144        # Luxembourg
 37.46.113.151        # Luxembourg
+37.19.197.145        # US East
+37.19.197.165        # US East
+37.19.197.154        # US East
+37.19.197.143        # US East
+37.19.197.158        # US East
+37.19.197.132        # US East
+37.19.197.188        # US East
+37.19.197.166        # US East
+37.19.197.168        # US East
+37.19.197.137        # US East
