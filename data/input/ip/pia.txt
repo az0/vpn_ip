@@ -765,7 +765,6 @@
 181.41.206.220       # US Denver
 181.41.206.228       # US Denver
 37.19.221.29         # US Houston
-191.96.150.103       # US New York
 191.96.150.110       # US New York
 191.96.227.69        # US New York
 102.129.234.49       # US Texas
@@ -6157,7 +6156,6 @@
 102.129.235.155      # US Washington Dc
 79.142.79.81         # Switzerland
 37.19.197.211        # US East
-140.228.24.104       # CA Montreal
 179.61.197.37        # CA Toronto
 45.133.172.50        # UK Manchester
 181.214.164.228      # US Chicago
@@ -6606,7 +6604,6 @@
 191.96.37.52         # US Seattle
 191.96.103.136       # US Seattle
 45.133.172.45        # UK Manchester
-191.96.150.28        # US New York
 102.129.234.128      # US Texas
 102.129.232.150      # US Silicon Valley
 102.129.232.182      # US Silicon Valley
@@ -8601,7 +8598,6 @@
 102.129.232.39       # US Silicon Valley
 102.129.232.44       # US Silicon Valley
 181.41.202.142       # CA Vancouver
-140.228.24.126       # CA Montreal
 143.244.34.154       # US Florida
 102.129.234.126      # US Texas
 212.102.59.157       # US Chicago
@@ -8669,6 +8665,7 @@
 181.214.165.119      # US Chicago
 181.214.164.207      # US Chicago
 102.129.232.109      # US Silicon Valley
+181.214.206.126      # Netherlands
 195.78.54.106        # Netherlands
 191.96.150.77        # US New York
 102.129.153.157      # US Florida
@@ -12663,6 +12660,7 @@
 212.56.54.45         # US East
 212.56.54.57         # US East
 212.56.54.121        # US East
+212.56.54.23         # US East
 212.56.54.223        # US East
 212.56.54.194        # US East
 212.56.54.12         # US East
@@ -12684,6 +12682,7 @@
 212.56.54.188        # US East
 212.56.54.180        # US East
 212.56.54.208        # US East
+212.56.54.10         # US East
 212.56.54.115        # US East
 212.56.54.202        # US East
 212.56.54.28         # US East
@@ -12691,9 +12690,11 @@
 212.56.54.198        # US East
 212.56.54.215        # US East
 212.56.54.122        # US East
+212.56.54.38         # US East
 212.56.54.239        # US East
 212.56.54.234        # US East
 212.56.54.172        # US East
+212.56.54.49         # US East
 212.56.54.203        # US East
 212.56.54.199        # US East
 212.56.54.117        # US East
@@ -12777,6 +12778,7 @@
 91.124.17.121        # US Washington Dc
 91.124.17.158        # US Washington Dc
 91.124.17.68         # US Washington Dc
+212.56.54.33         # US East
 91.124.17.200        # US Washington Dc
 91.124.17.178        # US Washington Dc
 91.124.17.207        # US Washington Dc
@@ -15144,7 +15146,6 @@
 212.32.49.123        # US Atlanta
 151.241.123.51       # US Atlanta
 151.241.123.44       # US Atlanta
-212.32.49.44         # US Atlanta
 212.32.49.251        # US Atlanta
 151.241.123.39       # US Atlanta
 212.32.49.45         # US Atlanta
@@ -15310,6 +15311,7 @@
 151.241.122.17       # US East
 212.32.49.248        # US Atlanta
 151.241.122.39       # US East
+151.241.122.27       # US East
 138.199.19.41        # DE Frankfurt
 138.199.19.25        # DE Frankfurt
 138.199.19.64        # DE Frankfurt
@@ -15335,6 +15337,8 @@
 138.199.19.20        # DE Frankfurt
 212.32.49.8          # US Atlanta
 138.199.19.28        # DE Frankfurt
+151.241.122.20       # US East
+151.241.122.16       # US East
 138.199.19.51        # DE Frankfurt
 138.199.19.40        # DE Frankfurt
 151.241.122.32       # US East
@@ -16930,3 +16934,7 @@
 37.19.197.187        # US East
 37.19.197.133        # US East
 37.19.197.155        # US East
+84.233.216.135       # DE Frankfurt
+84.233.216.157       # DE Frankfurt
+84.233.216.137       # DE Frankfurt
+84.233.216.155       # DE Frankfurt
