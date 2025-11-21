@@ -2673,7 +2673,6 @@
 37.19.197.225        # US East
 191.96.67.161        # US Houston
 191.96.67.206        # US Houston
-191.96.150.72        # US New York
 191.96.227.142       # US New York
 179.61.228.139       # AU Perth
 179.61.228.149       # AU Perth
@@ -5706,6 +5705,7 @@
 194.32.122.54        # Lithuania
 194.32.122.57        # Lithuania
 181.214.164.122      # US Chicago
+181.214.164.215      # US Chicago
 102.129.153.107      # US Florida
 102.129.153.128      # US Florida
 102.129.235.213      # US Washington Dc
@@ -6573,7 +6573,6 @@
 191.96.106.46        # US California
 191.96.106.47        # US California
 181.41.206.46        # US Denver
-191.96.150.44        # US New York
 191.96.36.145        # CA Toronto
 191.101.157.133      # DE Berlin
 194.110.13.63        # UK London
@@ -8414,7 +8413,6 @@
 181.41.202.122       # CA Vancouver
 102.129.234.12       # US Texas
 173.239.226.158      # US Las Vegas
-191.96.150.100       # US New York
 181.214.165.109      # US Chicago
 102.129.153.30       # US Florida
 140.228.24.73        # CA Montreal
@@ -9365,6 +9363,7 @@
 102.129.234.122      # US Texas
 37.19.198.41         # US New York
 181.214.164.94       # US Chicago
+212.102.59.180       # US Chicago
 102.129.234.4        # US Texas
 191.96.255.241       # US Silicon Valley
 212.102.59.228       # US Chicago
@@ -11283,6 +11282,7 @@
 149.50.212.145       # US California
 149.50.212.137       # US California
 149.50.212.138       # US California
+149.50.212.160       # US California
 149.50.212.142       # US California
 149.50.212.152       # US California
 149.50.212.156       # US California
@@ -12618,10 +12618,12 @@
 212.56.54.228        # US East
 212.56.54.128        # US East
 212.56.54.55         # US East
+212.56.54.11         # US East
 212.56.54.225        # US East
 212.56.54.36         # US East
 212.56.54.54         # US East
 212.56.54.120        # US East
+212.56.54.32         # US East
 212.56.54.61         # US East
 212.56.54.241        # US East
 212.56.54.232        # US East
@@ -12685,6 +12687,7 @@
 212.56.54.180        # US East
 212.56.54.208        # US East
 212.56.54.10         # US East
+212.56.54.27         # US East
 212.56.54.115        # US East
 212.56.54.202        # US East
 212.56.54.28         # US East
@@ -12793,6 +12796,7 @@
 91.124.17.88         # US Washington Dc
 91.124.17.105        # US Washington Dc
 91.124.17.164        # US Washington Dc
+212.56.54.31         # US East
 91.124.17.131        # US Washington Dc
 91.124.17.143        # US Washington Dc
 212.56.54.170        # US East
@@ -12835,7 +12839,6 @@
 91.124.17.211        # US Washington Dc
 91.124.17.173        # US Washington Dc
 91.124.17.91         # US Washington Dc
-91.124.17.142        # US Washington Dc
 212.56.54.176        # US East
 91.124.17.148        # US Washington Dc
 91.124.17.82         # US Washington Dc
@@ -12898,6 +12901,7 @@
 91.124.17.201        # US Washington Dc
 91.124.17.123        # US Washington Dc
 91.124.17.239        # US Washington Dc
+212.56.54.26         # US East
 91.124.17.243        # US Washington Dc
 212.56.54.204        # US East
 91.124.17.175        # US Washington Dc
@@ -15262,6 +15266,7 @@
 212.32.49.108        # US Atlanta
 212.32.49.32         # US Atlanta
 212.32.49.50         # US Atlanta
+212.32.49.152        # US Atlanta
 151.241.123.55       # US Atlanta
 212.32.49.110        # US Atlanta
 151.241.123.52       # US Atlanta
@@ -15361,11 +15366,14 @@
 138.199.19.63        # DE Frankfurt
 212.32.49.217        # US Atlanta
 151.241.125.87       # US Atlanta
+151.241.122.29       # US East
 212.32.49.112        # US Atlanta
 212.32.49.101        # US Atlanta
+151.241.122.25       # US East
 212.32.49.43         # US Atlanta
 212.32.49.241        # US Atlanta
 212.32.49.99         # US Atlanta
+151.241.122.12       # US East
 212.32.49.35         # US Atlanta
 138.199.19.60        # DE Frankfurt
 212.32.49.82         # US Atlanta
@@ -15841,7 +15849,6 @@
 158.173.153.35       # US Seattle
 158.173.153.156      # US Seattle
 158.173.20.17        # Netherlands
-158.173.3.14         # Netherlands
 158.173.20.37        # Netherlands
 158.173.20.51        # Netherlands
 158.173.20.24        # Netherlands
@@ -16832,7 +16839,6 @@
 212.32.49.169        # US Atlanta
 212.32.49.180        # US Atlanta
 212.32.49.167        # US Atlanta
-158.173.3.135        # Netherlands
 212.32.49.186        # US Atlanta
 212.32.49.175        # US Atlanta
 212.32.49.181        # US Atlanta
