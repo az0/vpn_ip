@@ -91,8 +91,12 @@ def process_service(service_code, service):
     brand = service.get('brand', None)
 
     for url in service['urls']:
-        new_hostnames, new_ips = collect_hostnames_and_ips(
-            url, service['hostname_key'], service['ip_key'])
+        try:
+            new_hostnames, new_ips = collect_hostnames_and_ips(
+                url, service['hostname_key'], service['ip_key'])
+        except requests.exceptions.RequestException as exc:
+            print(f"Failed to retrieve data from {url}: {exc}")
+            continue
         if new_hostnames:
             all_hostnames.update(new_hostnames)
         if new_ips:
