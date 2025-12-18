@@ -850,7 +850,6 @@
 181.214.199.138      # AU Melbourne
 140.228.24.188       # CA Montreal
 179.61.197.41        # CA Toronto
-179.61.197.51        # CA Toronto
 181.214.153.80       # CA Vancouver
 188.126.94.173       # Denmark
 188.126.94.180       # Denmark
@@ -1354,7 +1353,6 @@
 191.101.61.220       # US Las Vegas
 191.96.37.165        # US Seattle
 31.171.154.78        # Albania
-31.171.154.142       # Albania
 146.70.38.31         # Argentina
 179.61.228.82        # AU Perth
 179.61.228.169       # AU Perth
@@ -1745,7 +1743,6 @@
 191.96.227.146       # US New York
 31.171.154.115       # Albania
 31.171.154.133       # Albania
-31.171.154.135       # Albania
 188.215.235.106      # Cambodia
 191.101.31.61        # France
 191.101.31.28        # France
@@ -3616,6 +3613,7 @@
 181.214.166.226      # US Chicago
 191.96.227.39        # US New York
 102.129.235.10       # US Washington Dc
+102.129.235.164      # US Washington Dc
 146.70.38.93         # Argentina
 146.70.38.43         # Argentina
 156.146.60.90        # Austria
@@ -6816,7 +6814,6 @@
 102.129.153.34       # US Florida
 181.41.202.197       # CA Vancouver
 181.41.202.199       # CA Vancouver
-181.214.206.57       # Netherlands
 181.41.206.185       # US Denver
 181.41.206.166       # US Denver
 37.19.197.242        # US East
@@ -8512,7 +8509,6 @@
 102.129.232.39       # US Silicon Valley
 102.129.232.44       # US Silicon Valley
 181.41.202.142       # CA Vancouver
-140.228.24.126       # CA Montreal
 143.244.34.154       # US Florida
 102.129.234.126      # US Texas
 212.102.59.157       # US Chicago
@@ -11266,7 +11262,6 @@
 79.127.132.213       # US Washington Dc
 79.127.132.233       # US Washington Dc
 79.127.132.245       # US Washington Dc
-79.127.132.190       # US Washington Dc
 79.127.132.217       # US Washington Dc
 79.127.132.200       # US Washington Dc
 79.127.132.207       # US Washington Dc
@@ -13287,12 +13282,9 @@
 91.90.120.219        # Greenland
 91.90.120.213        # Greenland
 91.90.120.215        # Greenland
-66.56.80.23          # CA Ontario
 66.56.81.20          # CA Ontario
 66.56.80.20          # CA Ontario
 66.56.80.61          # CA Ontario
-66.56.80.7           # CA Ontario
-66.56.80.21          # CA Ontario
 66.56.80.39          # CA Ontario
 66.56.80.60          # CA Ontario
 66.56.81.4           # CA Ontario
@@ -13442,7 +13434,6 @@
 66.56.80.150         # CA Toronto
 66.56.80.110         # CA Ontario
 66.56.81.114         # CA Ontario
-66.56.80.3           # CA Ontario
 66.56.80.9           # CA Ontario
 66.56.81.89          # CA Toronto
 66.56.81.37          # CA Toronto
@@ -13473,7 +13464,6 @@
 66.56.80.107         # CA Ontario
 66.56.80.176         # CA Toronto
 66.56.81.79          # CA Toronto
-66.56.80.29          # CA Ontario
 66.56.80.53          # CA Ontario
 66.56.80.86          # CA Ontario
 66.56.81.34          # CA Toronto
@@ -13501,14 +13491,12 @@
 66.56.80.68          # CA Ontario
 66.56.80.144         # CA Toronto
 66.56.80.4           # CA Ontario
-66.56.80.31          # CA Ontario
 66.56.80.81          # CA Ontario
 66.56.80.82          # CA Ontario
 66.56.80.178         # CA Toronto
 66.56.80.116         # CA Ontario
 66.56.81.108         # CA Ontario
 66.56.81.123         # CA Ontario
-66.56.80.10          # CA Ontario
 66.56.80.191         # CA Toronto
 66.56.81.78          # CA Toronto
 66.56.81.91          # CA Toronto
@@ -13554,7 +13542,6 @@
 66.56.80.223         # CA Toronto
 66.56.80.64          # CA Ontario
 66.56.80.221         # CA Toronto
-66.56.80.11          # CA Ontario
 66.56.80.225         # CA Toronto
 66.56.81.112         # CA Ontario
 66.56.80.213         # CA Toronto
@@ -13574,7 +13561,6 @@
 66.56.80.226         # CA Toronto
 66.56.81.11          # CA Ontario
 66.56.80.198         # CA Toronto
-66.56.80.17          # CA Ontario
 66.56.80.230         # CA Toronto
 66.56.80.231         # CA Toronto
 66.56.80.224         # CA Toronto
@@ -13665,37 +13651,23 @@
 66.56.80.37          # CA Ontario
 66.56.81.159         # CA Ontario
 66.56.80.65          # CA Ontario
-66.56.80.15          # CA Ontario
 66.56.80.69          # CA Ontario
 66.56.81.18          # CA Ontario
 66.56.80.153         # CA Toronto
 66.56.80.44          # CA Ontario
 66.56.81.58          # CA Toronto
 66.56.81.107         # CA Ontario
-66.56.80.13          # CA Ontario
 66.56.80.8           # CA Ontario
 66.56.81.24          # CA Ontario
-66.56.81.210         # CA Ontario
 66.56.81.212         # CA Ontario
-66.56.81.207         # CA Ontario
-66.56.81.216         # CA Ontario
-66.56.81.219         # CA Ontario
 66.56.81.213         # CA Ontario
 66.56.81.204         # CA Ontario
 66.56.81.200         # CA Ontario
-66.56.81.221         # CA Ontario
-66.56.81.195         # CA Ontario
-66.56.81.208         # CA Ontario
 66.56.81.196         # CA Ontario
-66.56.81.202         # CA Ontario
 66.56.81.193         # CA Ontario
 66.56.81.206         # CA Ontario
-66.56.81.211         # CA Ontario
-66.56.81.214         # CA Ontario
-66.56.81.217         # CA Ontario
 66.56.81.194         # CA Ontario
 66.56.81.205         # CA Ontario
-66.56.81.198         # CA Ontario
 66.56.81.203         # CA Ontario
 94.156.14.42         # Bulgaria
 94.156.14.45         # Bulgaria
@@ -13724,7 +13696,6 @@
 94.156.14.58         # Bulgaria
 94.156.14.40         # Bulgaria
 94.156.14.33         # Bulgaria
-66.56.81.218         # CA Ontario
 94.156.14.31         # Bulgaria
 212.56.49.49         # CA Montreal
 212.56.49.40         # CA Montreal
@@ -15050,7 +15021,6 @@
 151.241.123.42       # US Atlanta
 212.32.49.11         # US Atlanta
 212.32.49.247        # US Atlanta
-212.32.49.23         # US Atlanta
 212.32.49.16         # US Atlanta
 212.32.49.26         # US Atlanta
 151.241.123.60       # US Atlanta
@@ -15274,6 +15244,7 @@
 212.32.49.10         # US Atlanta
 212.32.49.68         # US Atlanta
 212.32.49.146        # US Atlanta
+212.32.49.41         # US Atlanta
 212.32.49.37         # US Atlanta
 212.32.49.145        # US Atlanta
 212.32.49.130        # US Atlanta
@@ -16819,7 +16790,6 @@
 37.19.197.162        # US East
 37.19.197.187        # US East
 37.19.197.133        # US East
-37.19.197.155        # US East
 84.233.216.135       # DE Frankfurt
 84.233.216.157       # DE Frankfurt
 84.233.216.137       # DE Frankfurt
