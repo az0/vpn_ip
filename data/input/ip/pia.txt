@@ -418,6 +418,7 @@
 188.126.89.49        # Finland
 188.126.89.84        # Finland
 45.133.193.44        # Iceland
+45.133.193.86        # Iceland
 156.146.41.203       # Italy
 156.146.41.74        # Italy
 196.196.53.106       # Latvia
@@ -563,6 +564,7 @@
 86.107.104.246       # Hong Kong
 45.133.193.40        # Iceland
 45.133.193.46        # Iceland
+45.133.193.90        # Iceland
 156.146.41.25        # Italy
 156.146.41.210       # Italy
 156.146.41.217       # Italy
@@ -699,6 +701,7 @@
 91.90.120.133        # Greenland
 185.94.190.200       # Hungary
 86.106.74.117        # Hungary
+45.133.193.89        # Iceland
 194.32.122.66        # Lithuania
 194.32.122.68        # Lithuania
 84.252.92.19         # Macao
@@ -816,6 +819,7 @@
 165.231.182.123      # Estonia
 165.231.182.6        # Estonia
 86.106.74.118        # Hungary
+45.133.193.83        # Iceland
 45.133.193.43        # Iceland
 156.146.41.12        # Italy
 156.146.41.13        # Italy
@@ -2294,7 +2298,6 @@
 196.196.53.52        # Latvia
 194.32.122.44        # Lithuania
 176.125.229.7        # Montenegro
-191.96.168.199       # Netherlands
 179.61.240.171       # New Zealand
 179.61.240.79        # New Zealand
 146.70.59.15         # Portugal
@@ -6049,7 +6052,6 @@
 143.244.34.8         # US Florida
 191.96.67.224        # US Houston
 156.146.39.34        # US Texas
-102.129.235.16       # US Washington Dc
 102.129.235.139      # US Washington Dc
 191.96.36.135        # CA Toronto
 156.146.57.111       # Singapore
@@ -8122,7 +8124,6 @@
 191.96.106.195       # US California
 102.129.152.100      # US Florida
 181.214.165.180      # US Chicago
-212.102.59.235       # US Chicago
 181.215.176.47       # UK London
 156.146.39.10        # US Texas
 140.228.21.225       # CA Montreal
@@ -9083,7 +9084,6 @@
 37.19.198.53         # US New York
 37.19.198.65         # US New York
 181.215.182.75       # US Texas
-102.129.234.192      # US Texas
 191.96.36.169        # CA Toronto
 181.214.206.52       # Netherlands
 181.214.206.132      # Netherlands
@@ -9492,7 +9492,6 @@
 37.19.210.169        # US Denver
 37.19.210.170        # US Denver
 37.19.210.172        # US Denver
-181.214.166.30       # US Chicago
 37.19.210.78         # US Denver
 37.19.210.80         # US Denver
 37.19.210.180        # US Denver
@@ -11036,6 +11035,7 @@
 149.22.87.51         # Japan
 149.22.87.85         # Japan
 149.22.87.74         # Japan
+149.22.87.88         # Japan
 149.22.87.53         # Japan
 149.22.87.46         # Japan
 149.22.87.98         # Japan
@@ -11050,17 +11050,20 @@
 149.22.87.66         # Japan
 149.22.87.116        # Japan
 149.22.87.113        # Japan
+149.22.87.122        # Japan
 149.22.87.16         # Japan
 149.22.87.28         # Japan
 149.22.87.5          # Japan
 149.22.87.14         # Japan
 149.22.87.29         # Japan
+149.22.87.91         # Japan
 149.22.87.24         # Japan
 149.22.87.64         # Japan
 149.22.87.70         # Japan
 149.22.87.45         # Japan
 149.22.87.120        # Japan
 149.22.87.10         # Japan
+149.22.87.112        # Japan
 149.22.87.37         # Japan
 149.22.87.3          # Japan
 149.22.87.90         # Japan
@@ -11070,6 +11073,7 @@
 149.22.87.42         # Japan
 149.22.87.76         # Japan
 149.22.87.72         # Japan
+149.22.87.111        # Japan
 149.22.87.80         # Japan
 149.22.87.36         # Japan
 149.22.87.68         # Japan
@@ -11097,6 +11101,7 @@
 149.22.87.34         # Japan
 149.22.87.109        # Japan
 149.22.87.110        # Japan
+149.22.87.82         # Japan
 149.22.87.21         # Japan
 149.22.87.19         # Japan
 138.199.59.236       # Poland
@@ -14951,7 +14956,6 @@
 212.32.49.58         # US Atlanta
 212.32.49.56         # US Atlanta
 212.32.49.52         # US Atlanta
-212.32.49.72         # US Atlanta
 212.32.49.84         # US Atlanta
 151.241.125.25       # US Atlanta
 151.241.125.13       # US Atlanta
@@ -15857,6 +15861,7 @@
 158.173.25.29        # US New York
 158.173.25.118       # US New York
 158.173.25.56        # US New York
+158.173.25.40        # US New York
 158.173.153.145      # US Seattle
 158.173.25.112       # US New York
 158.173.25.104       # US New York
@@ -16678,6 +16683,7 @@
 212.32.49.193        # US Atlanta
 212.32.49.176        # US Atlanta
 212.32.49.195        # US Atlanta
+212.32.49.169        # US Atlanta
 212.32.49.180        # US Atlanta
 212.32.49.167        # US Atlanta
 158.173.3.135        # Netherlands
@@ -16865,3 +16871,11 @@
 149.22.95.69         # CA Vancouver
 149.22.95.65         # CA Vancouver
 149.22.95.76         # CA Vancouver
+149.22.95.67         # CA Vancouver
+149.22.95.68         # CA Vancouver
+149.22.95.72         # CA Vancouver
+149.22.95.60         # CA Vancouver
+149.22.95.74         # CA Vancouver
+149.22.95.62         # CA Vancouver
+149.22.95.73         # CA Vancouver
+149.22.95.63         # CA Vancouver
