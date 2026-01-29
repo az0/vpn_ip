@@ -8,9 +8,12 @@
 146.70.38.29         # Argentina
 146.70.38.37         # Argentina
 185.253.160.4        # Armenia
+181.214.199.112      # AU Melbourne
 179.61.228.36        # AU Perth
 179.61.228.57        # AU Perth
 179.61.228.137       # AU Perth
+154.16.81.198        # AU Sydney
+154.16.81.207        # AU Sydney
 156.146.60.138       # Austria
 95.181.238.9         # Bahamas
 95.181.238.30        # Bahamas
@@ -501,6 +504,7 @@
 191.96.37.164        # US Seattle
 191.96.37.210        # US Seattle
 102.129.232.90       # US Silicon Valley
+191.96.255.29        # US Silicon Valley
 102.129.252.240      # US Silicon Valley
 102.129.235.183      # US Washington Dc
 102.129.235.86       # US Washington Dc
@@ -611,6 +615,7 @@
 179.61.228.153       # AU Perth
 179.61.228.96        # AU Perth
 179.61.228.76        # AU Perth
+154.16.81.212        # AU Sydney
 95.181.238.29        # Bahamas
 95.181.238.31        # Bahamas
 95.181.238.101       # Bahamas
@@ -1184,6 +1189,7 @@
 179.61.228.4         # AU Perth
 179.61.228.13        # AU Perth
 179.61.228.69        # AU Perth
+154.16.81.217        # AU Sydney
 146.70.98.28         # Brazil
 188.241.177.59       # Brazil
 191.101.157.64       # DE Berlin
@@ -1274,8 +1280,10 @@
 176.125.228.17       # Algeria
 176.125.228.19       # Algeria
 176.125.228.30       # Algeria
+181.214.199.133      # AU Melbourne
 188.241.177.182      # Brazil
 188.241.80.65        # China
+138.199.18.89        # DE Frankfurt
 212.102.57.17        # DE Frankfurt
 212.102.57.25        # DE Frankfurt
 188.126.89.58        # Finland
@@ -1766,6 +1774,7 @@
 188.241.177.195      # Brazil
 188.241.177.200      # Brazil
 188.241.80.42        # China
+191.101.157.190      # DE Berlin
 165.231.182.38       # Estonia
 185.94.190.197       # Hungary
 45.133.193.93        # Iceland
@@ -1924,6 +1933,7 @@
 102.129.234.158      # US Texas
 156.146.39.158       # US Texas
 179.61.197.10        # CA Toronto
+191.101.157.185      # DE Berlin
 188.126.94.82        # Denmark
 188.126.94.92        # Denmark
 165.231.182.37       # Estonia
@@ -2014,6 +2024,7 @@
 31.171.154.124       # Albania
 140.228.24.175       # CA Montreal
 212.102.39.153       # Czech Republic
+191.101.157.184      # DE Berlin
 188.214.122.109      # Egypt
 91.90.120.153        # Greenland
 91.90.120.154        # Greenland
@@ -2174,6 +2185,7 @@
 191.96.227.35        # US New York
 102.129.235.49       # US Washington Dc
 102.129.235.206      # US Washington Dc
+181.214.199.124      # AU Melbourne
 181.214.218.64       # Belgium
 181.214.218.66       # Belgium
 156.146.63.138       # France
@@ -2356,6 +2368,7 @@
 181.214.166.11       # US Chicago
 181.214.166.192      # US Chicago
 212.102.59.153       # US Chicago
+154.16.81.211        # AU Sydney
 156.146.63.145       # France
 191.101.31.50        # France
 86.107.104.245       # Hong Kong
@@ -2394,6 +2407,7 @@
 102.129.235.244      # US Washington Dc
 102.129.235.245      # US Washington Dc
 95.181.237.5         # Venezuela
+181.214.199.121      # AU Melbourne
 181.214.218.74       # Belgium
 140.228.21.219       # CA Montreal
 212.102.39.158       # Czech Republic
@@ -2572,6 +2586,7 @@
 191.96.255.171       # US Silicon Valley
 102.129.232.241      # US Silicon Valley
 176.125.228.36       # Algeria
+154.16.81.218        # AU Sydney
 45.88.97.50          # DE Frankfurt
 212.102.57.18        # DE Frankfurt
 91.90.120.135        # Greenland
@@ -2889,6 +2904,7 @@
 91.90.122.5          # Liechtenstein
 181.41.206.155       # US Denver
 191.96.67.109        # US Houston
+154.16.81.219        # AU Sydney
 188.241.177.109      # Brazil
 188.241.80.38        # China
 212.102.57.72        # DE Frankfurt
@@ -3084,6 +3100,7 @@
 179.61.228.95        # AU Perth
 188.241.177.52       # Brazil
 188.241.177.251      # Brazil
+191.101.157.181      # DE Berlin
 212.102.57.207       # DE Frankfurt
 212.102.57.22        # DE Frankfurt
 212.102.57.91        # DE Frankfurt
@@ -3188,6 +3205,7 @@
 102.129.153.57       # US Florida
 102.129.153.190      # US Florida
 102.129.235.51       # US Washington Dc
+191.101.157.203      # DE Berlin
 143.244.49.8         # US California
 191.96.106.210       # US California
 181.41.202.125       # CA Vancouver
@@ -3605,6 +3623,7 @@
 146.70.59.18         # Portugal
 212.102.49.31        # Spain
 102.129.145.104      # US California
+191.96.106.221       # US California
 191.96.106.202       # US California
 191.96.103.26        # US Seattle
 181.214.206.109      # Netherlands
@@ -3710,6 +3729,7 @@
 194.110.13.38        # UK London
 181.215.176.69       # UK London
 191.96.106.16        # US California
+191.96.106.233       # US California
 102.129.153.180      # US Florida
 143.244.34.153       # US Florida
 143.244.34.207       # US Florida
@@ -3773,6 +3793,7 @@
 179.61.228.183       # AU Perth
 95.181.238.66        # Bahamas
 140.228.21.87        # CA Montreal
+45.88.97.213         # DE Frankfurt
 212.102.57.98        # DE Frankfurt
 188.126.89.94        # Finland
 77.81.142.82         # Mexico
@@ -3789,6 +3810,8 @@
 181.41.202.198       # CA Vancouver
 181.41.202.205       # CA Vancouver
 181.214.153.89       # CA Vancouver
+191.101.157.187      # DE Berlin
+191.101.157.188      # DE Berlin
 191.101.31.64        # France
 179.61.240.38        # New Zealand
 91.90.126.37         # Panama
@@ -3836,8 +3859,10 @@
 181.214.206.103      # Netherlands
 212.102.49.12        # Spain
 191.96.106.27        # US California
+191.96.255.26        # US Silicon Valley
 191.96.255.89        # US Silicon Valley
 95.181.237.11        # Venezuela
+181.214.199.119      # AU Melbourne
 191.96.36.72         # CA Toronto
 191.96.36.87         # CA Toronto
 191.96.36.144        # CA Toronto
@@ -4026,6 +4051,7 @@
 176.125.230.23       # Malta
 138.199.24.4         # Singapore
 191.96.106.44        # US California
+191.96.106.230       # US California
 191.96.37.108        # US Seattle
 156.146.39.142       # US Texas
 77.81.142.61         # Mexico
@@ -4065,6 +4091,7 @@
 191.101.61.174       # US Las Vegas
 173.239.226.134      # US Las Vegas
 191.96.103.154       # US Seattle
+181.214.199.113      # AU Melbourne
 188.126.94.105       # Denmark
 191.96.168.206       # Netherlands
 181.214.206.161      # Netherlands
@@ -4121,6 +4148,7 @@
 173.239.226.228      # US Las Vegas
 77.81.142.125        # Mexico
 98.159.234.154       # UK Southampton
+191.96.106.235       # US California
 37.19.197.196        # US East
 191.96.67.223        # US Houston
 191.96.67.100        # US Houston
@@ -4128,6 +4156,7 @@
 102.129.234.114      # US Texas
 102.129.234.124      # US Texas
 188.126.89.141       # Finland
+45.88.97.232         # DE Frankfurt
 165.231.182.114      # Estonia
 77.81.142.112        # Mexico
 102.129.232.250      # US Silicon Valley
@@ -4287,6 +4316,7 @@
 179.61.228.116       # AU Perth
 179.61.228.38        # AU Perth
 45.88.97.36          # DE Frankfurt
+45.88.97.245         # DE Frankfurt
 143.244.48.3         # US California
 37.19.197.199        # US East
 37.19.197.210        # US East
@@ -4436,6 +4466,7 @@
 45.133.172.68        # UK Manchester
 45.133.172.72        # UK Manchester
 191.96.106.176       # US California
+191.96.106.244       # US California
 191.96.67.108        # US Houston
 191.96.67.196        # US Houston
 138.199.18.130       # DE Frankfurt
@@ -4509,6 +4540,7 @@
 46.246.3.183         # Sweden
 46.246.3.196         # Sweden
 181.41.206.63        # US Denver
+191.101.157.182      # DE Berlin
 138.199.18.134       # DE Frankfurt
 179.61.240.106       # New Zealand
 98.159.234.65        # UK Southampton
@@ -4564,6 +4596,7 @@
 102.129.234.207      # US Texas
 176.125.228.26       # Algeria
 138.199.24.27        # Singapore
+191.101.157.195      # DE Berlin
 165.231.182.113      # Estonia
 46.246.122.106       # Norway
 46.246.122.51        # Norway
@@ -4761,6 +4794,7 @@
 102.129.152.106      # US Florida
 102.129.152.109      # US Florida
 191.96.37.153        # US Seattle
+154.16.81.196        # AU Sydney
 181.214.153.70       # CA Vancouver
 181.214.153.94       # CA Vancouver
 181.214.166.169      # US Chicago
@@ -5228,8 +5262,10 @@
 181.41.202.146       # CA Vancouver
 191.101.31.24        # France
 143.244.48.5         # US California
+191.96.106.225       # US California
 191.101.61.164       # US Las Vegas
 102.129.235.149      # US Washington Dc
+154.16.81.195        # AU Sydney
 179.61.197.45        # CA Toronto
 179.61.197.69        # CA Toronto
 181.41.206.153       # US Denver
@@ -5254,6 +5290,8 @@
 37.19.198.111        # US New York
 37.19.198.117        # US New York
 102.129.232.113      # US Silicon Valley
+191.96.255.12        # US Silicon Valley
+191.96.255.36        # US Silicon Valley
 179.61.228.188       # AU Perth
 140.228.24.75        # CA Montreal
 140.228.24.77        # CA Montreal
@@ -5295,6 +5333,7 @@
 212.102.59.225       # US Chicago
 212.102.59.152       # US Chicago
 191.96.150.40        # US New York
+181.214.199.115      # AU Melbourne
 181.214.153.61       # CA Vancouver
 194.110.13.21        # UK London
 194.110.13.80        # UK London
@@ -5328,6 +5367,7 @@
 102.129.252.8        # US Silicon Valley
 102.129.234.234      # US Texas
 181.215.182.122      # US Texas
+181.214.199.116      # AU Melbourne
 179.61.228.141       # AU Perth
 140.228.24.105       # CA Montreal
 181.214.164.10       # US Chicago
@@ -5377,6 +5417,7 @@
 102.129.145.133      # US California
 181.41.206.25        # US Denver
 191.96.227.55        # US New York
+191.96.255.13        # US Silicon Valley
 181.41.202.174       # CA Vancouver
 143.244.48.192       # US Las Vegas
 173.239.226.230      # US Las Vegas
@@ -5408,7 +5449,9 @@
 181.215.182.183      # US Texas
 181.215.182.28       # US Texas
 102.129.235.7        # US Washington Dc
+181.214.199.106      # AU Melbourne
 181.214.153.83       # CA Vancouver
+191.101.157.208      # DE Berlin
 143.244.48.11        # US California
 102.129.153.24       # US Florida
 102.129.153.132      # US Florida
@@ -5454,6 +5497,7 @@
 181.214.164.55       # US Chicago
 212.102.59.143       # US Chicago
 191.96.37.63         # US Seattle
+154.16.81.203        # AU Sydney
 179.61.197.114       # CA Toronto
 181.215.176.4        # UK London
 98.159.234.91        # UK Southampton
@@ -5476,6 +5520,8 @@
 45.133.172.21        # UK Manchester
 37.19.221.33         # US Houston
 179.61.228.62        # AU Perth
+191.101.157.205      # DE Berlin
+138.199.18.66        # DE Frankfurt
 194.110.13.84        # UK London
 102.129.145.149      # US California
 84.17.45.19          # US California
@@ -5488,6 +5534,7 @@
 45.133.172.23        # UK Manchester
 191.96.255.76        # US Silicon Valley
 191.96.255.60        # US Silicon Valley
+181.214.199.104      # AU Melbourne
 181.214.166.219      # US Chicago
 173.239.226.192      # US Las Vegas
 146.70.38.56         # Argentina
@@ -5679,6 +5726,7 @@
 194.110.13.72        # UK London
 45.133.172.246       # UK Manchester
 102.129.145.150      # US California
+191.96.106.229       # US California
 191.96.255.97        # US Silicon Valley
 102.129.232.71       # US Silicon Valley
 102.129.235.247      # US Washington Dc
@@ -5745,6 +5793,7 @@
 102.129.153.76       # US Florida
 191.101.61.180       # US Las Vegas
 191.101.61.198       # US Las Vegas
+181.214.199.122      # AU Melbourne
 191.96.36.153        # CA Toronto
 191.96.36.95         # CA Toronto
 191.96.168.65        # Netherlands
@@ -5872,6 +5921,7 @@
 102.129.145.100      # US California
 191.101.61.142       # US Las Vegas
 195.78.54.179        # Netherlands
+195.78.54.183        # Netherlands
 212.102.59.170       # US Chicago
 102.129.153.56       # US Florida
 191.96.150.26        # US New York
@@ -5889,6 +5939,7 @@
 194.110.13.57        # UK London
 194.110.13.35        # UK London
 102.129.235.92       # US Washington Dc
+45.88.97.240         # DE Frankfurt
 98.159.234.156       # UK Southampton
 98.159.234.69        # UK Southampton
 191.101.61.223       # US Las Vegas
@@ -5960,7 +6011,6 @@
 181.214.164.92       # US Chicago
 181.215.182.20       # US Texas
 140.228.24.132       # CA Montreal
-195.78.54.176        # Netherlands
 181.214.206.94       # Netherlands
 102.129.235.198      # US Washington Dc
 102.129.235.114      # US Washington Dc
@@ -6040,6 +6090,7 @@
 102.129.153.101      # US Florida
 143.244.34.194       # US Florida
 154.16.105.129       # US Las Vegas
+154.16.81.197        # AU Sydney
 102.129.235.105      # US Washington Dc
 191.96.106.148       # US California
 140.228.21.213       # CA Montreal
@@ -6055,6 +6106,8 @@
 191.101.61.254       # US Las Vegas
 102.129.234.72       # US Texas
 102.129.234.113      # US Texas
+45.88.97.228         # DE Frankfurt
+191.96.106.236       # US California
 143.244.49.12        # US California
 181.214.206.142      # Netherlands
 191.96.168.181       # Netherlands
@@ -6184,6 +6237,7 @@
 102.129.232.16       # US Silicon Valley
 102.129.232.127      # US Silicon Valley
 191.96.255.111       # US Silicon Valley
+181.214.199.100      # AU Melbourne
 181.214.164.171      # US Chicago
 181.214.164.157      # US Chicago
 181.214.206.61       # Netherlands
@@ -6266,6 +6320,7 @@
 191.96.106.14        # US California
 102.129.153.66       # US Florida
 179.61.228.15        # AU Perth
+154.16.81.205        # AU Sydney
 191.96.36.50         # CA Toronto
 181.41.206.42        # US Denver
 181.41.206.72        # US Denver
@@ -6358,6 +6413,7 @@
 45.133.172.29        # UK Manchester
 45.133.173.20        # UK Manchester
 193.239.84.93        # UK Manchester
+191.101.157.209      # DE Berlin
 191.96.255.129       # US Silicon Valley
 102.129.235.64       # US Washington Dc
 102.129.235.61       # US Washington Dc
@@ -6461,6 +6517,7 @@
 195.181.167.35       # Spain
 102.129.232.77       # US Silicon Valley
 140.228.24.129       # CA Montreal
+191.101.157.196      # DE Berlin
 181.214.165.37       # US Chicago
 102.129.153.174      # US Florida
 191.96.103.85        # US Seattle
@@ -6482,6 +6539,7 @@
 102.129.152.159      # US Florida
 181.214.164.52       # US Chicago
 102.129.234.58       # US Texas
+154.16.81.202        # AU Sydney
 191.96.36.155        # CA Toronto
 138.199.18.139       # DE Frankfurt
 191.96.106.62        # US California
@@ -6501,6 +6559,7 @@
 156.146.57.114       # Singapore
 102.129.232.115      # US Silicon Valley
 102.129.235.236      # US Washington Dc
+191.101.157.199      # DE Berlin
 191.96.150.30        # US New York
 191.96.150.50        # US New York
 37.19.197.198        # US East
@@ -6707,7 +6766,6 @@
 181.214.164.60       # US Chicago
 79.142.79.35         # Switzerland
 191.96.106.24        # US California
-181.214.164.227      # US Chicago
 181.214.164.53       # US Chicago
 191.96.103.92        # US Seattle
 181.214.206.84       # Netherlands
@@ -6767,6 +6825,7 @@
 191.96.255.100       # US Silicon Valley
 191.96.255.203       # US Silicon Valley
 102.129.235.239      # US Washington Dc
+45.88.97.235         # DE Frankfurt
 45.133.173.30        # UK Manchester
 191.96.67.165        # US Houston
 102.129.234.170      # US Texas
@@ -6920,6 +6979,7 @@
 181.214.165.49       # US Chicago
 181.41.206.172       # US Denver
 102.129.145.115      # US California
+191.96.255.31        # US Silicon Valley
 181.214.153.47       # CA Vancouver
 102.129.232.229      # US Silicon Valley
 191.96.255.117       # US Silicon Valley
@@ -6949,6 +7009,7 @@
 140.228.21.86        # CA Montreal
 140.228.21.79        # CA Montreal
 181.214.164.189      # US Chicago
+45.88.97.230         # DE Frankfurt
 181.214.165.27       # US Chicago
 181.214.165.42       # US Chicago
 143.244.34.3         # US Florida
@@ -6998,6 +7059,7 @@
 181.41.206.157       # US Denver
 37.19.198.48         # US New York
 102.129.234.94       # US Texas
+154.16.81.214        # AU Sydney
 143.244.34.203       # US Florida
 102.129.252.227      # US Silicon Valley
 102.129.232.142      # US Silicon Valley
@@ -7022,6 +7084,7 @@
 45.88.97.30          # DE Frankfurt
 143.244.48.209       # US Las Vegas
 143.244.48.211       # US Las Vegas
+191.96.255.49        # US Silicon Valley
 191.96.255.118       # US Silicon Valley
 102.129.234.222      # US Texas
 191.96.36.128        # CA Toronto
@@ -7030,6 +7093,7 @@
 102.129.232.183      # US Silicon Valley
 102.129.232.73       # US Silicon Valley
 181.214.165.47       # US Chicago
+181.214.199.123      # AU Melbourne
 191.96.106.199       # US California
 102.129.235.62       # US Washington Dc
 46.246.122.116       # Norway
@@ -7143,6 +7207,7 @@
 191.96.36.136        # CA Toronto
 181.215.176.94       # UK London
 181.215.182.121      # US Texas
+181.214.199.109      # AU Melbourne
 181.214.165.70       # US Chicago
 102.129.232.62       # US Silicon Valley
 102.129.234.230      # US Texas
@@ -7193,6 +7258,7 @@
 138.199.18.148       # DE Frankfurt
 212.102.59.213       # US Chicago
 179.61.240.19        # New Zealand
+191.96.106.243       # US California
 102.129.145.112      # US California
 102.129.252.87       # US Silicon Valley
 179.61.240.153       # New Zealand
@@ -7231,6 +7297,7 @@
 212.102.59.158       # US Chicago
 212.102.59.224       # US Chicago
 143.244.48.214       # US Las Vegas
+45.88.97.233         # DE Frankfurt
 102.129.234.145      # US Texas
 181.41.206.236       # US Denver
 102.129.152.21       # US Florida
@@ -7250,6 +7317,8 @@
 154.16.105.126       # US Las Vegas
 181.41.206.58        # US Denver
 191.96.150.57        # US New York
+191.96.255.19        # US Silicon Valley
+191.96.255.44        # US Silicon Valley
 102.129.234.103      # US Texas
 181.215.182.196      # US Texas
 181.215.182.54       # US Texas
@@ -7272,6 +7341,7 @@
 179.61.228.10        # AU Perth
 102.129.153.119      # US Florida
 102.129.153.121      # US Florida
+191.96.255.41        # US Silicon Valley
 181.214.165.63       # US Chicago
 102.129.234.40       # US Texas
 102.129.235.204      # US Washington Dc
@@ -7338,6 +7408,7 @@
 102.129.153.147      # US Florida
 191.96.103.9         # US Seattle
 191.96.103.147       # US Seattle
+191.96.106.232       # US California
 191.101.61.218       # US Las Vegas
 181.215.182.223      # US Texas
 191.96.37.199        # US Seattle
@@ -7459,6 +7530,7 @@
 181.214.164.28       # US Chicago
 143.244.48.153       # US Las Vegas
 173.239.226.209      # US Las Vegas
+181.214.199.69       # AU Melbourne
 191.96.36.121        # CA Toronto
 193.239.84.53        # UK Manchester
 37.19.198.86         # US New York
@@ -7520,6 +7592,7 @@
 191.96.227.137       # US New York
 143.244.34.195       # US Florida
 102.129.234.89       # US Texas
+181.214.199.99       # AU Melbourne
 143.244.48.200       # US Las Vegas
 181.214.206.78       # Netherlands
 102.129.235.148      # US Washington Dc
@@ -7638,6 +7711,7 @@
 181.214.153.99       # CA Vancouver
 181.214.165.177      # US Chicago
 212.102.59.185       # US Chicago
+191.96.106.237       # US California
 181.214.165.175      # US Chicago
 212.102.59.177       # US Chicago
 212.102.59.188       # US Chicago
@@ -7691,6 +7765,7 @@
 102.129.235.67       # US Washington Dc
 191.96.168.94        # Netherlands
 212.102.59.229       # US Chicago
+181.214.199.102      # AU Melbourne
 191.96.106.151       # US California
 140.228.21.91        # CA Montreal
 191.96.255.200       # US Silicon Valley
@@ -7890,6 +7965,7 @@
 102.129.252.5        # US Silicon Valley
 181.215.182.109      # US Texas
 181.214.166.182      # US Chicago
+191.96.106.220       # US California
 140.228.21.217       # CA Montreal
 181.215.182.79       # US Texas
 140.228.24.177       # CA Montreal
@@ -7955,6 +8031,7 @@
 212.102.59.145       # US Chicago
 156.146.39.25        # US Texas
 195.78.54.202        # Netherlands
+191.96.106.240       # US California
 154.16.105.106       # US Las Vegas
 102.129.235.25       # US Washington Dc
 181.214.166.135      # US Chicago
@@ -7978,6 +8055,7 @@
 179.61.197.90        # CA Toronto
 191.96.255.219       # US Silicon Valley
 181.41.202.158       # CA Vancouver
+154.16.81.213        # AU Sydney
 191.96.168.86        # Netherlands
 143.244.34.134       # US Florida
 102.129.153.31       # US Florida
@@ -8021,6 +8099,7 @@
 179.61.197.84        # CA Toronto
 191.96.36.118        # CA Toronto
 191.101.61.175       # US Las Vegas
+191.96.106.247       # US California
 195.78.54.174        # Netherlands
 181.214.166.211      # US Chicago
 102.129.153.195      # US Florida
@@ -8215,9 +8294,11 @@
 181.214.166.79       # US Chicago
 102.129.153.114      # US Florida
 191.96.150.34        # US New York
+191.96.255.38        # US Silicon Valley
 102.129.152.120      # US Florida
 102.129.235.56       # US Washington Dc
 143.244.34.13        # US Florida
+191.96.106.239       # US California
 181.215.182.140      # US Texas
 181.214.165.174      # US Chicago
 181.214.166.155      # US Chicago
@@ -8232,6 +8313,7 @@
 191.96.150.105       # US New York
 191.96.227.67        # US New York
 181.214.164.15       # US Chicago
+181.214.199.107      # AU Melbourne
 191.96.37.150        # US Seattle
 102.129.234.81       # US Texas
 143.244.48.195       # US Las Vegas
@@ -8330,6 +8412,7 @@
 181.214.164.242      # US Chicago
 212.102.59.171       # US Chicago
 102.129.235.151      # US Washington Dc
+154.16.81.191        # AU Sydney
 181.215.182.128      # US Texas
 181.215.182.97       # US Texas
 143.244.34.218       # US Florida
@@ -8384,6 +8467,7 @@
 181.41.202.105       # CA Vancouver
 102.129.235.44       # US Washington Dc
 191.96.255.71        # US Silicon Valley
+191.96.255.45        # US Silicon Valley
 181.214.164.96       # US Chicago
 102.129.153.32       # US Florida
 173.239.226.215      # US Las Vegas
@@ -8486,8 +8570,8 @@
 181.214.165.41       # US Chicago
 156.146.39.43        # US Texas
 102.129.234.148      # US Texas
-195.78.54.162        # Netherlands
 181.214.166.195      # US Chicago
+195.78.54.195        # Netherlands
 195.78.54.190        # Netherlands
 181.214.153.92       # CA Vancouver
 173.239.226.195      # US Las Vegas
@@ -8508,7 +8592,9 @@
 102.129.232.167      # US Silicon Valley
 181.214.166.91       # US Chicago
 181.214.165.187      # US Chicago
+191.96.255.8         # US Silicon Valley
 102.129.232.137      # US Silicon Valley
+191.96.255.14        # US Silicon Valley
 181.214.166.126      # US Chicago
 102.129.152.119      # US Florida
 191.96.37.183        # US Seattle
@@ -8517,6 +8603,7 @@
 191.96.106.149       # US California
 179.61.197.112       # CA Toronto
 191.96.103.70        # US Seattle
+191.96.255.5         # US Silicon Valley
 140.228.24.102       # CA Montreal
 181.214.164.70       # US Chicago
 102.129.234.95       # US Texas
@@ -8528,6 +8615,7 @@
 102.129.153.211      # US Florida
 102.129.252.66       # US Silicon Valley
 154.16.105.125       # US Las Vegas
+181.214.199.126      # AU Melbourne
 102.129.232.34       # US Silicon Valley
 156.146.39.39        # US Texas
 179.61.197.52        # CA Toronto
@@ -8580,6 +8668,7 @@
 191.96.106.15        # US California
 181.41.202.112       # CA Vancouver
 191.101.61.216       # US Las Vegas
+191.96.255.35        # US Silicon Valley
 212.102.59.163       # US Chicago
 140.228.21.107       # CA Montreal
 102.129.232.100      # US Silicon Valley
@@ -8606,6 +8695,7 @@
 181.214.166.60       # US Chicago
 102.129.232.17       # US Silicon Valley
 181.214.206.134      # Netherlands
+191.96.106.249       # US California
 102.129.252.55       # US Silicon Valley
 191.96.255.93        # US Silicon Valley
 102.129.234.105      # US Texas
@@ -8729,6 +8819,7 @@
 181.214.164.31       # US Chicago
 140.228.24.137       # CA Montreal
 191.96.168.194       # Netherlands
+191.96.255.21        # US Silicon Valley
 37.19.198.104        # US New York
 102.129.232.164      # US Silicon Valley
 102.129.232.130      # US Silicon Valley
@@ -8756,6 +8847,7 @@
 191.96.150.68        # US New York
 102.129.235.18       # US Washington Dc
 181.214.165.24       # US Chicago
+191.96.106.245       # US California
 191.96.36.111        # CA Toronto
 181.214.164.199      # US Chicago
 181.214.165.9        # US Chicago
@@ -8835,6 +8927,7 @@
 173.239.226.135      # US Las Vegas
 102.129.234.228      # US Texas
 212.102.59.238       # US Chicago
+195.78.54.167        # Netherlands
 181.214.166.33       # US Chicago
 37.19.198.44         # US New York
 140.228.24.72        # CA Montreal
@@ -9059,11 +9152,29 @@
 216.24.213.30        # DE Frankfurt
 216.24.213.34        # DE Frankfurt
 216.24.213.52        # DE Frankfurt
+191.101.157.226      # DE Berlin
+191.101.157.250      # DE Berlin
+191.101.157.222      # DE Berlin
+191.101.157.220      # DE Berlin
+191.101.157.219      # DE Berlin
+191.101.157.239      # DE Berlin
 216.24.213.54        # DE Frankfurt
+191.101.157.212      # DE Berlin
+191.101.157.244      # DE Berlin
 216.24.213.25        # DE Frankfurt
+191.101.157.248      # DE Berlin
+191.101.157.242      # DE Berlin
 216.24.213.23        # DE Frankfurt
+191.101.157.218      # DE Berlin
+191.101.157.253      # DE Berlin
+191.101.157.238      # DE Berlin
+191.101.157.232      # DE Berlin
+191.101.157.246      # DE Berlin
+191.101.157.214      # DE Berlin
 216.24.213.46        # DE Frankfurt
 216.24.213.53        # DE Frankfurt
+191.101.157.221      # DE Berlin
+191.101.157.235      # DE Berlin
 185.225.28.232       # Macedonia
 46.246.8.58          # Sweden
 46.246.8.52          # Sweden
@@ -9698,7 +9809,6 @@
 84.247.105.235       # CA Montreal
 84.247.105.217       # CA Montreal
 84.247.105.241       # CA Montreal
-84.247.105.243       # CA Montreal
 84.247.105.234       # CA Montreal
 84.247.105.211       # CA Montreal
 84.247.105.209       # CA Montreal
@@ -10125,47 +10235,63 @@
 149.22.87.101        # Japan
 149.22.87.30         # Japan
 149.22.87.6          # Japan
+149.22.87.165        # Japan
 149.22.87.57         # Japan
 149.22.87.81         # Japan
 149.22.87.105        # Japan
+149.22.87.180        # Japan
 149.22.87.49         # Japan
+149.22.87.166        # Japan
 149.22.87.4          # Japan
+149.22.87.163        # Japan
 149.22.87.100        # Japan
 149.22.87.71         # Japan
 149.22.87.50         # Japan
 149.22.87.115        # Japan
 149.22.87.73         # Japan
+149.22.87.175        # Japan
 149.22.87.12         # Japan
 149.22.87.84         # Japan
 149.22.87.108        # Japan
 149.22.87.92         # Japan
+149.22.87.181        # Japan
 149.22.87.13         # Japan
 149.22.87.61         # Japan
 149.22.87.51         # Japan
 149.22.87.85         # Japan
 149.22.87.74         # Japan
 149.22.87.88         # Japan
+149.22.87.170        # Japan
+149.22.87.172        # Japan
 149.22.87.53         # Japan
+149.22.87.183        # Japan
 149.22.87.46         # Japan
 149.22.87.98         # Japan
 149.22.87.86         # Japan
 149.22.87.47         # Japan
 149.22.87.38         # Japan
 149.22.87.117        # Japan
+149.22.87.190        # Japan
 149.22.87.107        # Japan
+149.22.87.189        # Japan
 149.22.87.55         # Japan
 149.22.87.15         # Japan
 149.22.87.26         # Japan
 149.22.87.66         # Japan
+149.22.87.168        # Japan
 149.22.87.116        # Japan
+149.22.87.167        # Japan
 149.22.87.113        # Japan
 149.22.87.122        # Japan
 149.22.87.16         # Japan
 149.22.87.28         # Japan
+149.22.87.182        # Japan
 149.22.87.5          # Japan
+149.22.87.161        # Japan
 149.22.87.14         # Japan
 149.22.87.29         # Japan
 149.22.87.91         # Japan
+149.22.87.184        # Japan
 149.22.87.24         # Japan
 149.22.87.64         # Japan
 149.22.87.70         # Japan
@@ -10174,6 +10300,8 @@
 149.22.87.10         # Japan
 149.22.87.112        # Japan
 149.22.87.37         # Japan
+149.22.87.176        # Japan
+149.22.87.177        # Japan
 149.22.87.93         # Japan
 149.22.87.3          # Japan
 149.22.87.90         # Japan
@@ -10199,6 +10327,7 @@
 149.22.87.97         # Japan
 149.22.87.7          # Japan
 149.22.87.25         # Japan
+149.22.87.174        # Japan
 149.22.87.22         # Japan
 149.22.87.83         # Japan
 149.22.87.20         # Japan
@@ -12165,7 +12294,6 @@
 212.56.48.47         # Netherlands
 212.56.48.82         # Netherlands
 212.56.48.74         # Netherlands
-212.56.48.64         # Netherlands
 212.56.48.54         # Netherlands
 212.56.48.18         # Netherlands
 212.56.48.30         # Netherlands
@@ -12413,10 +12541,13 @@
 91.90.120.213        # Greenland
 91.90.120.215        # Greenland
 66.56.81.20          # CA Ontario
+66.56.80.20          # CA Ontario
 66.56.80.61          # CA Ontario
+66.56.80.2           # CA Ontario
 66.56.80.39          # CA Ontario
 66.56.80.60          # CA Ontario
 66.56.81.4           # CA Ontario
+66.56.80.19          # CA Ontario
 66.56.81.3           # CA Ontario
 66.56.81.21          # CA Ontario
 66.56.80.59          # CA Ontario
@@ -12556,6 +12687,7 @@
 66.56.80.150         # CA Toronto
 66.56.80.110         # CA Ontario
 66.56.81.114         # CA Ontario
+66.56.80.9           # CA Ontario
 66.56.81.89          # CA Toronto
 66.56.81.37          # CA Toronto
 66.56.80.197         # CA Toronto
@@ -12563,6 +12695,7 @@
 66.56.80.192         # CA Toronto
 66.56.80.152         # CA Toronto
 66.56.80.40          # CA Ontario
+66.56.80.14          # CA Ontario
 66.56.80.118         # CA Ontario
 66.56.81.121         # CA Ontario
 66.56.80.131         # CA Toronto
@@ -12584,6 +12717,7 @@
 66.56.80.107         # CA Ontario
 66.56.80.176         # CA Toronto
 66.56.81.79          # CA Toronto
+66.56.80.29          # CA Ontario
 66.56.80.53          # CA Ontario
 66.56.80.86          # CA Ontario
 66.56.81.34          # CA Toronto
@@ -12595,6 +12729,7 @@
 66.56.80.77          # CA Ontario
 66.56.80.155         # CA Toronto
 66.56.81.41          # CA Toronto
+66.56.80.26          # CA Ontario
 66.56.81.30          # CA Ontario
 66.56.80.148         # CA Toronto
 66.56.80.159         # CA Toronto
@@ -12606,17 +12741,21 @@
 66.56.80.111         # CA Ontario
 66.56.81.76          # CA Toronto
 66.56.80.36          # CA Ontario
+66.56.80.22          # CA Ontario
 66.56.80.68          # CA Ontario
 66.56.80.144         # CA Toronto
+66.56.80.4           # CA Ontario
 66.56.80.81          # CA Ontario
 66.56.80.82          # CA Ontario
 66.56.80.178         # CA Toronto
 66.56.80.116         # CA Ontario
 66.56.81.108         # CA Ontario
 66.56.81.123         # CA Ontario
+66.56.80.10          # CA Ontario
 66.56.80.191         # CA Toronto
 66.56.81.78          # CA Toronto
 66.56.81.91          # CA Toronto
+66.56.80.24          # CA Ontario
 66.56.80.163         # CA Toronto
 66.56.81.19          # CA Ontario
 66.56.80.154         # CA Toronto
@@ -12625,6 +12764,7 @@
 66.56.81.80          # CA Toronto
 66.56.81.17          # CA Ontario
 66.56.81.59          # CA Toronto
+66.56.80.12          # CA Ontario
 66.56.80.49          # CA Ontario
 66.56.81.5           # CA Ontario
 66.56.81.102         # CA Ontario
@@ -12645,9 +12785,11 @@
 66.56.81.98          # CA Ontario
 66.56.80.218         # CA Toronto
 66.56.80.186         # CA Toronto
+66.56.80.25          # CA Ontario
 66.56.80.185         # CA Toronto
 66.56.80.167         # CA Toronto
 66.56.80.205         # CA Toronto
+66.56.80.18          # CA Ontario
 66.56.80.222         # CA Toronto
 66.56.80.166         # CA Toronto
 66.56.80.207         # CA Toronto
@@ -12655,6 +12797,7 @@
 66.56.80.223         # CA Toronto
 66.56.80.64          # CA Ontario
 66.56.80.221         # CA Toronto
+66.56.80.11          # CA Ontario
 66.56.80.225         # CA Toronto
 66.56.81.112         # CA Ontario
 66.56.80.213         # CA Toronto
@@ -12673,6 +12816,7 @@
 66.56.80.226         # CA Toronto
 66.56.81.11          # CA Ontario
 66.56.80.198         # CA Toronto
+66.56.80.17          # CA Ontario
 66.56.80.230         # CA Toronto
 66.56.80.231         # CA Toronto
 66.56.80.224         # CA Toronto
@@ -12763,13 +12907,38 @@
 66.56.80.37          # CA Ontario
 66.56.81.159         # CA Ontario
 66.56.80.65          # CA Ontario
+66.56.80.27          # CA Ontario
 66.56.80.69          # CA Ontario
 66.56.81.18          # CA Ontario
 66.56.80.153         # CA Toronto
 66.56.80.44          # CA Ontario
 66.56.81.58          # CA Toronto
 66.56.81.107         # CA Ontario
+66.56.80.13          # CA Ontario
 66.56.81.24          # CA Ontario
+66.56.80.28          # CA Ontario
+66.56.81.210         # CA Ontario
+66.56.81.209         # CA Ontario
+66.56.81.220         # CA Ontario
+66.56.81.201         # CA Ontario
+66.56.81.219         # CA Ontario
+66.56.81.199         # CA Ontario
+66.56.81.213         # CA Ontario
+66.56.81.197         # CA Ontario
+66.56.81.204         # CA Ontario
+66.56.81.200         # CA Ontario
+66.56.81.221         # CA Ontario
+66.56.81.195         # CA Ontario
+66.56.81.208         # CA Ontario
+66.56.81.196         # CA Ontario
+66.56.81.193         # CA Ontario
+66.56.81.206         # CA Ontario
+66.56.81.211         # CA Ontario
+66.56.81.214         # CA Ontario
+66.56.81.217         # CA Ontario
+66.56.81.194         # CA Ontario
+66.56.81.198         # CA Ontario
+66.56.81.203         # CA Ontario
 94.156.14.42         # Bulgaria
 94.156.14.45         # Bulgaria
 94.156.14.39         # Bulgaria
@@ -12797,6 +12966,7 @@
 94.156.14.58         # Bulgaria
 94.156.14.40         # Bulgaria
 94.156.14.33         # Bulgaria
+66.56.81.218         # CA Ontario
 94.156.14.31         # Bulgaria
 212.56.49.49         # CA Montreal
 212.56.49.40         # CA Montreal
@@ -13233,10 +13403,21 @@
 203.188.183.81       # France
 203.188.183.89       # France
 203.188.183.88       # France
+138.199.10.3         # US East
 37.19.197.157        # US East
 37.19.197.152        # US East
+138.199.10.24        # US East
 37.19.197.139        # US East
 37.19.197.156        # US East
+138.199.10.28        # US East
+138.199.10.21        # US East
+138.199.10.16        # US East
+138.199.10.8         # US East
+138.199.10.19        # US East
+138.199.10.12        # US East
+138.199.10.22        # US East
+138.199.10.29        # US East
+138.199.10.23        # US East
 151.240.205.29       # US New York
 151.240.205.15       # US New York
 151.240.205.31       # US New York
@@ -13265,6 +13446,7 @@
 151.240.205.77       # US New York
 151.240.205.79       # US New York
 151.240.205.57       # US New York
+138.199.10.30        # US East
 151.240.205.73       # US New York
 151.240.205.53       # US New York
 151.240.205.76       # US New York
@@ -13351,6 +13533,7 @@
 151.240.205.119      # US New York
 151.240.205.126      # US New York
 151.240.205.122      # US New York
+138.199.10.7         # US East
 151.240.205.105      # US New York
 151.240.205.90       # US New York
 151.240.205.97       # US New York
@@ -13381,6 +13564,7 @@
 151.240.205.164      # US New York
 151.240.205.46       # US New York
 151.240.205.93       # US New York
+138.199.10.31        # US East
 151.240.205.127      # US New York
 151.240.205.118      # US New York
 151.240.205.125      # US New York
@@ -13397,11 +13581,16 @@
 151.241.122.52       # US East
 151.241.119.200      # US East
 151.241.122.41       # US East
+151.241.119.142      # US East
+151.241.119.138      # US East
 151.241.122.70       # US East
 151.241.122.49       # US East
 151.241.119.245      # US East
 151.241.122.64       # US East
+151.241.119.116      # US East
+151.241.119.114      # US East
 151.241.122.81       # US East
+151.241.119.128      # US East
 151.241.122.152      # US East
 151.241.122.109      # US East
 151.241.119.232      # US East
@@ -13414,6 +13603,7 @@
 151.241.122.155      # US East
 151.241.122.48       # US East
 151.241.119.213      # US East
+151.241.119.106      # US East
 151.241.119.218      # US East
 151.241.119.226      # US East
 151.241.119.201      # US East
@@ -13421,6 +13611,7 @@
 151.241.119.221      # US East
 151.241.122.140      # US East
 151.241.122.138      # US East
+151.241.119.158      # US East
 151.241.122.101      # US East
 151.241.122.92       # US East
 151.241.119.254      # US East
@@ -13444,8 +13635,12 @@
 151.241.119.203      # US East
 151.241.119.197      # US East
 151.241.122.94       # US East
+151.241.119.140      # US East
+151.241.119.126      # US East
+151.241.119.127      # US East
 151.241.119.250      # US East
 151.241.119.224      # US East
+151.241.119.124      # US East
 151.241.122.150      # US East
 151.241.122.157      # US East
 151.241.119.236      # US East
@@ -13468,12 +13663,18 @@
 151.241.122.57       # US East
 151.241.119.253      # US East
 151.241.119.210      # US East
+151.241.119.163      # US East
+151.241.119.174      # US East
 151.240.205.160      # US New York
 151.241.122.96       # US East
+151.241.119.171      # US East
 151.241.122.67       # US East
+151.241.119.167      # US East
+151.241.119.188      # US East
 151.241.122.98       # US East
 151.241.122.71       # US East
 151.241.119.240      # US East
+151.241.119.189      # US East
 151.241.119.248      # US East
 151.241.122.59       # US East
 151.241.122.123      # US East
@@ -13485,13 +13686,18 @@
 151.241.122.103      # US East
 151.241.122.74       # US East
 151.241.122.113      # US East
+151.241.119.162      # US East
 151.241.122.151      # US East
+151.241.119.177      # US East
 151.241.119.193      # US East
+151.241.119.153      # US East
+151.241.119.175      # US East
 151.241.122.141      # US East
 151.241.119.206      # US East
 151.241.122.73       # US East
 151.241.122.158      # US East
 151.241.122.65       # US East
+138.199.10.6         # US East
 151.241.119.239      # US East
 151.241.119.190      # US East
 151.241.122.45       # US East
@@ -13506,11 +13712,16 @@
 151.241.119.231      # US East
 151.241.119.195      # US East
 151.241.119.214      # US East
+151.241.119.183      # US East
+151.241.119.119      # US East
 151.241.122.51       # US East
 151.241.122.44       # US East
+151.241.119.144      # US East
 151.241.119.229      # US East
 151.241.122.99       # US East
 151.240.205.117      # US New York
+151.241.119.186      # US East
+151.241.119.111      # US East
 151.241.122.102      # US East
 151.240.205.94       # US New York
 151.241.122.50       # US East
@@ -13531,6 +13742,7 @@
 151.241.119.192      # US East
 151.241.122.126      # US East
 151.241.122.56       # US East
+151.241.119.159      # US East
 151.241.122.80       # US East
 151.241.122.116      # US East
 151.240.205.121      # US New York
@@ -13548,34 +13760,46 @@
 151.241.122.61       # US East
 151.240.205.96       # US New York
 151.241.122.40       # US East
+151.241.119.110      # US East
 151.241.122.145      # US East
 151.241.122.62       # US East
 151.240.205.101      # US New York
 151.241.122.130      # US East
 151.241.122.79       # US East
+151.241.119.122      # US East
 151.241.122.142      # US East
 151.241.122.83       # US East
 151.241.122.117      # US East
 151.241.122.112      # US East
 151.241.119.230      # US East
+151.241.119.165      # US East
+151.241.119.184      # US East
 151.241.122.144      # US East
 151.241.122.68       # US East
 151.241.119.207      # US East
 151.241.122.82       # US East
 151.240.205.161      # US New York
 151.241.122.100      # US East
+151.241.119.109      # US East
 151.241.122.132      # US East
 151.241.122.119      # US East
 151.241.119.216      # US East
 151.241.119.247      # US East
+151.241.119.146      # US East
 151.241.119.198      # US East
+151.241.119.100      # US East
+151.241.119.118      # US East
 151.241.119.194      # US East
+151.241.119.155      # US East
 151.241.119.191      # US East
 151.241.122.91       # US East
 151.241.122.87       # US East
 151.241.122.139      # US East
+151.241.119.180      # US East
+151.241.119.102      # US East
 151.241.122.133      # US East
 151.241.122.114      # US East
+151.241.119.185      # US East
 151.241.119.215      # US East
 151.241.119.228      # US East
 151.241.122.136      # US East
@@ -13808,6 +14032,7 @@
 212.56.52.99         # CA Vancouver
 151.241.123.66       # US Atlanta
 151.241.123.56       # US Atlanta
+212.56.52.12         # CA Vancouver
 212.56.52.77         # CA Vancouver
 212.56.52.89         # CA Vancouver
 151.241.123.242      # US Atlanta
@@ -14205,6 +14430,7 @@
 212.32.49.149        # US Atlanta
 212.32.49.108        # US Atlanta
 212.32.49.32         # US Atlanta
+212.32.49.50         # US Atlanta
 212.32.49.152        # US Atlanta
 151.241.123.55       # US Atlanta
 212.32.49.110        # US Atlanta
@@ -14473,6 +14699,7 @@
 158.173.22.111       # US Atlanta
 158.173.23.53        # UK London
 158.173.23.97        # UK London
+158.173.23.67        # UK London
 158.173.23.14        # UK London
 158.173.23.6         # UK London
 158.173.23.49        # UK London
@@ -15986,3 +16213,1636 @@
 45.130.141.159       # AU Melbourne
 45.130.141.134       # AU Melbourne
 117.120.9.34         # AU Sydney
+173.244.62.41        # AU Adelaide
+173.244.62.16        # AU Adelaide
+173.244.62.57        # AU Adelaide
+202.125.43.80        # AU Brisbane
+202.125.43.83        # AU Brisbane
+202.125.43.2         # AU Brisbane
+173.239.203.218      # Australia Streaming Optimized
+64.64.99.7           # Bolivia
+64.64.99.6           # Bolivia
+64.64.99.14          # Bolivia
+98.159.36.130        # Bosnia And Herzegovina
+98.159.36.147        # Bosnia And Herzegovina
+98.159.36.152        # Bosnia And Herzegovina
+146.70.11.35         # Chile
+146.70.11.47         # Chile
+146.70.11.37         # Chile
+154.47.16.195        # Colombia
+154.47.16.108        # Colombia
+154.47.16.196        # Colombia
+146.70.10.23         # Costa Rica
+146.70.10.60         # Costa Rica
+146.70.10.64         # Costa Rica
+154.47.29.155        # Croatia
+149.102.247.247      # Croatia
+154.47.29.153        # Croatia
+188.126.94.51        # DK Streaming Optimized
+149.88.109.136       # DK Streaming Optimized
+149.88.109.142       # DK Streaming Optimized
+173.239.249.17       # Ecuador
+173.239.249.55       # Ecuador
+173.239.249.32       # Ecuador
+196.245.54.136       # ES Valencia
+188.126.89.10        # FI Streaming Optimized
+188.126.89.11        # FI Streaming Optimized
+173.239.221.30       # Guatemala
+173.239.221.22       # Guatemala
+173.239.201.200      # Indonesia
+173.239.201.199      # Indonesia
+173.239.201.198      # Indonesia
+138.199.54.50        # IT Streaming Optimized
+138.199.54.36        # IT Streaming Optimized
+138.199.54.64        # IT Streaming Optimized
+149.22.87.131        # JP Streaming Optimized
+149.22.87.154        # JP Streaming Optimized
+146.70.15.31         # Malaysia
+146.70.15.42         # Malaysia
+146.70.15.44         # Malaysia
+84.247.97.5          # Nepal
+84.247.97.14         # Nepal
+84.247.97.8          # Nepal
+158.173.21.24        # NL Netherlands Streaming Optimized
+158.173.3.209        # NL Netherlands Streaming Optimized
+158.173.21.12        # NL Netherlands Streaming Optimized
+45.154.152.18        # Peru
+45.154.152.13        # Peru
+45.154.152.7         # Peru
+46.246.3.247         # SE Streaming Optimized
+46.246.3.244         # SE Streaming Optimized
+46.246.3.231         # SE Streaming Optimized
+195.80.150.181       # Slovenia
+173.244.42.9         # South Korea
+173.244.42.15        # South Korea
+173.244.42.12        # South Korea
+158.173.23.84        # UK Streaming Optimized
+158.173.24.7         # UK Streaming Optimized
+158.173.23.121       # UK Streaming Optimized
+45.154.154.58        # Uruguay
+45.154.154.16        # Uruguay
+45.154.154.28        # Uruguay
+84.239.6.4           # US Alabama
+84.239.6.20          # US Alabama
+84.239.6.17          # US Alabama
+84.239.52.6          # US Alaska
+84.239.52.14         # US Alaska
+84.239.52.20         # US Alaska
+45.152.150.141       # US Arkansas
+45.152.150.130       # US Arkansas
+45.152.150.143       # US Arkansas
+84.239.43.34         # US Baltimore
+84.239.43.42         # US Baltimore
+84.239.43.18         # US Baltimore
+84.239.47.81         # US Connecticut
+84.239.47.19         # US Connecticut
+84.239.47.4          # US Connecticut
+84.239.5.80          # US Honolulu
+84.239.5.54          # US Honolulu
+84.239.12.136        # US Idaho
+84.239.12.150        # US Idaho
+84.239.12.146        # US Idaho
+84.239.16.57         # US Indiana
+84.239.16.113        # US Indiana
+84.239.17.10         # US Iowa
+84.239.17.28         # US Iowa
+84.239.17.42         # US Iowa
+84.239.31.12         # US Kansas
+84.239.31.20         # US Kansas
+84.239.31.8          # US Kansas
+84.239.6.220         # US Kentucky
+45.152.150.7         # US Louisiana
+45.152.150.8         # US Louisiana
+45.152.150.17        # US Louisiana
+84.239.37.7          # US Maine
+84.239.37.16         # US Maine
+84.239.37.17         # US Maine
+149.40.50.48         # US Massachusetts
+149.40.50.11         # US Massachusetts
+149.40.50.21         # US Massachusetts
+84.239.17.137        # US Michigan
+84.239.17.164        # US Michigan
+84.239.17.157        # US Michigan
+84.239.25.18         # US Minnesota
+84.239.25.13         # US Minnesota
+84.239.25.10         # US Minnesota
+84.239.31.137        # US Mississippi
+84.239.31.138        # US Mississippi
+84.239.31.149        # US Mississippi
+84.239.16.188        # US Missouri
+84.239.16.159        # US Missouri
+84.239.16.136        # US Missouri
+84.239.47.150        # US Montana
+84.239.47.144        # US Montana
+84.239.47.135        # US Montana
+84.239.25.131        # US Nebraska
+84.239.25.134        # US Nebraska
+84.239.25.133        # US Nebraska
+84.239.41.29         # US New Hampshire
+84.239.41.32         # US New Hampshire
+84.239.41.14         # US New Hampshire
+84.239.33.14         # US New Mexico
+84.239.33.11         # US New Mexico
+84.239.33.9          # US New Mexico
+84.239.7.20          # US North Carolina
+84.239.7.3           # US North Carolina
+84.239.7.14          # US North Carolina
+84.239.48.18         # US North Dakota
+84.239.48.8          # US North Dakota
+84.239.48.16         # US North Dakota
+84.239.27.138        # US Ohio
+84.239.27.148        # US Ohio
+84.239.27.142        # US Ohio
+84.239.33.136        # US Oklahoma
+84.239.33.144        # US Oklahoma
+84.239.33.143        # US Oklahoma
+84.239.48.150        # US Oregon
+84.239.48.149        # US Oregon
+84.239.48.132        # US Oregon
+84.239.41.205        # US Pennsylvania
+84.239.41.136        # US Pennsylvania
+84.239.41.201        # US Pennsylvania
+84.239.45.8          # US Rhode Island
+84.239.45.6          # US Rhode Island
+84.239.45.14         # US Rhode Island
+84.239.5.195         # US Salt Lake City
+84.239.7.160         # US South Carolina
+84.239.7.149         # US South Carolina
+84.239.7.156         # US South Carolina
+84.239.50.14         # US South Dakota
+84.239.50.20         # US South Dakota
+84.239.10.44         # US Tennessee
+84.239.45.147        # US Vermont
+84.239.45.148        # US Vermont
+84.239.45.150        # US Vermont
+84.239.10.141        # US Virginia
+84.239.10.138        # US Virginia
+84.239.12.25         # US West Virginia
+84.239.12.9          # US West Virginia
+84.239.12.37         # US West Virginia
+84.239.43.179        # US Wilmington
+84.239.43.133        # US Wilmington
+84.239.43.158        # US Wilmington
+84.239.27.9          # US Wisconsin
+84.239.27.29         # US Wisconsin
+84.239.27.35         # US Wisconsin
+84.239.50.137        # US Wyoming
+84.239.50.138        # US Wyoming
+84.239.50.147        # US Wyoming
+64.64.99.22          # Bolivia
+64.64.99.13          # Bolivia
+64.64.99.8           # Bolivia
+154.47.16.210        # Colombia
+154.47.16.118        # Colombia
+154.47.16.205        # Colombia
+188.126.94.35        # DK Streaming Optimized
+188.126.94.44        # DK Streaming Optimized
+149.88.109.155       # DK Streaming Optimized
+173.239.249.21       # Ecuador
+173.239.249.26       # Ecuador
+188.126.89.25        # FI Streaming Optimized
+188.126.89.14        # FI Streaming Optimized
+188.126.89.12        # FI Streaming Optimized
+173.239.221.23       # Guatemala
+173.239.221.13       # Guatemala
+173.239.221.3        # Guatemala
+146.70.15.41         # Malaysia
+146.70.15.29         # Malaysia
+84.247.97.9          # Nepal
+84.247.97.6          # Nepal
+158.173.23.142       # UK Streaming Optimized
+158.173.23.61        # UK Streaming Optimized
+158.173.23.146       # UK Streaming Optimized
+84.239.17.5          # US Iowa
+84.239.17.12         # US Iowa
+84.239.17.34         # US Iowa
+84.239.31.6          # US Kansas
+84.239.31.13         # US Kansas
+84.239.31.17         # US Kansas
+149.40.50.20         # US Massachusetts
+149.40.50.7          # US Massachusetts
+84.239.17.142        # US Michigan
+84.239.17.136        # US Michigan
+84.239.17.162        # US Michigan
+84.239.47.139        # US Montana
+84.239.47.143        # US Montana
+84.239.25.143        # US Nebraska
+84.239.25.141        # US Nebraska
+84.239.33.3          # US New Mexico
+84.239.33.17         # US New Mexico
+84.239.33.147        # US Oklahoma
+84.239.33.139        # US Oklahoma
+84.239.48.146        # US Oregon
+84.239.48.145        # US Oregon
+84.239.41.194        # US Pennsylvania
+84.239.41.148        # US Pennsylvania
+84.239.41.137        # US Pennsylvania
+84.239.45.11         # US Rhode Island
+84.239.45.5          # US Rhode Island
+84.239.50.19         # US South Dakota
+84.239.50.9          # US South Dakota
+84.239.50.18         # US South Dakota
+84.239.12.14         # US West Virginia
+84.239.12.28         # US West Virginia
+84.239.43.173        # US Wilmington
+84.239.43.180        # US Wilmington
+84.239.43.137        # US Wilmington
+84.239.27.34         # US Wisconsin
+84.239.27.2          # US Wisconsin
+84.239.27.15         # US Wisconsin
+202.125.43.30        # AU Brisbane
+202.125.43.12        # AU Brisbane
+98.159.36.135        # Bosnia And Herzegovina
+98.159.36.153        # Bosnia And Herzegovina
+173.239.201.194      # Indonesia
+138.199.54.47        # IT Streaming Optimized
+138.199.54.53        # IT Streaming Optimized
+84.239.12.149        # US Idaho
+84.239.12.148        # US Idaho
+84.239.16.141        # US Missouri
+84.239.16.152        # US Missouri
+84.239.16.158        # US Missouri
+84.239.41.5          # US New Hampshire
+84.239.41.30         # US New Hampshire
+84.239.41.10         # US New Hampshire
+146.70.11.30         # Chile
+146.70.11.42         # Chile
+146.70.11.29         # Chile
+158.173.3.219        # NL Netherlands Streaming Optimized
+158.173.21.17        # NL Netherlands Streaming Optimized
+158.173.21.23        # NL Netherlands Streaming Optimized
+45.154.152.14        # Peru
+46.246.3.246         # SE Streaming Optimized
+46.246.3.232         # SE Streaming Optimized
+45.152.150.144       # US Arkansas
+45.152.150.146       # US Arkansas
+45.152.150.137       # US Arkansas
+84.239.43.17         # US Baltimore
+84.239.43.52         # US Baltimore
+84.239.43.38         # US Baltimore
+84.239.47.78         # US Connecticut
+84.239.47.21         # US Connecticut
+84.239.47.9          # US Connecticut
+84.239.31.145        # US Mississippi
+84.239.31.133        # US Mississippi
+84.239.7.137         # US South Carolina
+84.239.7.148         # US South Carolina
+102.129.232.210      # US West Streaming Optimized
+173.244.62.15        # AU Adelaide
+173.244.62.10        # AU Adelaide
+173.244.62.26        # AU Adelaide
+149.22.87.143        # JP Streaming Optimized
+173.244.42.5         # South Korea
+45.154.154.49        # Uruguay
+45.154.154.25        # Uruguay
+84.239.7.11          # US North Carolina
+84.239.7.8           # US North Carolina
+84.239.48.14         # US North Dakota
+84.239.27.147        # US Ohio
+84.239.27.131        # US Ohio
+84.239.45.140        # US Vermont
+84.239.50.131        # US Wyoming
+84.239.50.132        # US Wyoming
+84.239.50.148        # US Wyoming
+173.239.203.211      # Australia Streaming Optimized
+146.70.10.24         # Costa Rica
+146.70.10.54         # Costa Rica
+146.70.10.59         # Costa Rica
+154.47.29.131        # Croatia
+149.102.247.227      # Croatia
+154.47.29.136        # Croatia
+95.134.63.179        # DE Germany Streaming Optimized
+95.134.63.206        # DE Germany Streaming Optimized
+84.239.6.9           # US Alabama
+84.239.6.14          # US Alabama
+84.239.6.15          # US Alabama
+84.239.52.19         # US Alaska
+84.239.52.10         # US Alaska
+45.152.150.6         # US Louisiana
+45.152.150.12        # US Louisiana
+84.239.37.15         # US Maine
+84.239.37.6          # US Maine
+84.239.37.5          # US Maine
+84.239.25.17         # US Minnesota
+84.239.25.6          # US Minnesota
+84.239.10.133        # US Virginia
+84.239.10.148        # US Virginia
+84.239.10.130        # US Virginia
+154.47.16.209        # Colombia
+154.47.16.115        # Colombia
+154.47.16.114        # Colombia
+188.126.89.8         # FI Streaming Optimized
+188.126.89.4         # FI Streaming Optimized
+45.152.150.149       # US Arkansas
+45.152.150.134       # US Arkansas
+84.239.37.4          # US Maine
+84.239.37.10         # US Maine
+84.239.37.20         # US Maine
+84.239.25.11         # US Minnesota
+84.239.25.14         # US Minnesota
+84.239.7.2           # US North Carolina
+84.239.7.9           # US North Carolina
+84.239.48.144        # US Oregon
+84.239.45.131        # US Vermont
+84.239.45.134        # US Vermont
+84.239.43.182        # US Wilmington
+84.239.43.149        # US Wilmington
+64.64.99.25          # Bolivia
+64.64.99.9           # Bolivia
+64.64.99.28          # Bolivia
+146.70.11.26         # Chile
+146.70.10.37         # Costa Rica
+146.70.10.56         # Costa Rica
+149.22.87.132        # JP Streaming Optimized
+149.22.87.133        # JP Streaming Optimized
+84.247.97.16         # Nepal
+84.247.97.12         # Nepal
+84.247.97.4          # Nepal
+45.154.152.25        # Peru
+45.154.152.21        # Peru
+84.239.17.21         # US Iowa
+84.239.17.36         # US Iowa
+84.239.17.40         # US Iowa
+84.239.31.141        # US Mississippi
+84.239.31.140        # US Mississippi
+84.239.47.131        # US Montana
+84.239.47.133        # US Montana
+84.239.12.4          # US West Virginia
+84.239.12.19         # US West Virginia
+84.239.12.29         # US West Virginia
+84.239.50.136        # US Wyoming
+84.239.50.145        # US Wyoming
+154.47.29.152        # Croatia
+154.47.29.140        # Croatia
+173.239.201.197      # Indonesia
+146.70.15.46         # Malaysia
+146.70.15.18         # Malaysia
+46.246.3.239         # SE Streaming Optimized
+46.246.3.249         # SE Streaming Optimized
+84.239.52.17         # US Alaska
+84.239.52.12         # US Alaska
+84.239.12.133        # US Idaho
+84.239.12.145        # US Idaho
+149.40.50.5          # US Massachusetts
+149.40.50.27         # US Massachusetts
+149.40.50.47         # US Massachusetts
+84.239.16.156        # US Missouri
+84.239.16.143        # US Missouri
+84.239.16.144        # US Missouri
+84.239.33.146        # US Oklahoma
+84.239.33.135        # US Oklahoma
+84.239.41.143        # US Pennsylvania
+84.239.41.141        # US Pennsylvania
+84.239.50.5          # US South Dakota
+84.239.10.137        # US Virginia
+84.239.10.143        # US Virginia
+173.244.62.28        # AU Adelaide
+173.244.62.47        # AU Adelaide
+173.244.62.55        # AU Adelaide
+202.125.43.17        # AU Brisbane
+223.252.34.57        # AU Brisbane
+202.125.43.81        # AU Brisbane
+173.239.203.199      # Australia Streaming Optimized
+173.239.221.24       # Guatemala
+173.239.221.7        # Guatemala
+173.239.221.17       # Guatemala
+158.173.23.143       # UK Streaming Optimized
+158.173.24.25        # UK Streaming Optimized
+158.173.23.60        # UK Streaming Optimized
+45.154.154.32        # Uruguay
+45.154.154.14        # Uruguay
+45.154.154.19        # Uruguay
+84.239.6.16          # US Alabama
+84.239.6.7           # US Alabama
+84.239.6.3           # US Alabama
+84.239.43.13         # US Baltimore
+84.239.43.14         # US Baltimore
+84.239.43.53         # US Baltimore
+84.239.17.149        # US Michigan
+84.239.25.140        # US Nebraska
+84.239.25.148        # US Nebraska
+84.239.25.135        # US Nebraska
+84.239.33.15         # US New Mexico
+84.239.48.9          # US North Dakota
+84.239.48.12         # US North Dakota
+84.239.27.143        # US Ohio
+84.239.27.140        # US Ohio
+84.239.45.15         # US Rhode Island
+84.239.45.7          # US Rhode Island
+98.159.36.145        # Bosnia And Herzegovina
+98.159.36.137        # Bosnia And Herzegovina
+95.134.63.197        # DE Germany Streaming Optimized
+149.88.109.135       # DK Streaming Optimized
+188.126.94.59        # DK Streaming Optimized
+149.88.109.140       # DK Streaming Optimized
+173.239.249.53       # Ecuador
+173.239.249.27       # Ecuador
+173.239.249.37       # Ecuador
+158.173.21.14        # NL Netherlands Streaming Optimized
+158.173.3.242        # NL Netherlands Streaming Optimized
+158.173.3.208        # NL Netherlands Streaming Optimized
+173.244.42.10        # South Korea
+173.244.42.3         # South Korea
+173.244.42.6         # South Korea
+84.239.47.87         # US Connecticut
+84.239.47.17         # US Connecticut
+84.239.47.62         # US Connecticut
+84.239.31.2          # US Kansas
+45.152.150.10        # US Louisiana
+45.152.150.18        # US Louisiana
+84.239.41.13         # US New Hampshire
+84.239.41.35         # US New Hampshire
+84.239.7.130         # US South Carolina
+84.239.7.157         # US South Carolina
+84.239.7.159         # US South Carolina
+102.129.232.197      # US West Streaming Optimized
+84.239.27.30         # US Wisconsin
+84.239.27.10         # US Wisconsin
+84.239.27.28         # US Wisconsin
+138.199.54.61        # IT Streaming Optimized
+138.199.54.48        # IT Streaming Optimized
+138.199.54.45        # IT Streaming Optimized
+173.239.221.11       # Guatemala
+173.239.221.25       # Guatemala
+173.239.221.16       # Guatemala
+84.247.97.10         # Nepal
+158.173.24.24        # UK Streaming Optimized
+158.173.24.10        # UK Streaming Optimized
+158.173.23.80        # UK Streaming Optimized
+84.239.47.86         # US Connecticut
+84.239.47.90         # US Connecticut
+84.239.31.16         # US Kansas
+84.239.31.5          # US Kansas
+84.239.31.3          # US Kansas
+45.152.150.2         # US Louisiana
+45.152.150.9         # US Louisiana
+45.152.150.3         # US Louisiana
+84.239.41.11         # US New Hampshire
+84.239.41.38         # US New Hampshire
+146.70.11.25         # Chile
+146.70.11.19         # Chile
+95.134.63.188        # DE Germany Streaming Optimized
+149.88.109.151       # DK Streaming Optimized
+188.126.94.45        # DK Streaming Optimized
+149.88.109.132       # DK Streaming Optimized
+173.244.42.7         # South Korea
+84.239.52.13         # US Alaska
+84.239.52.16         # US Alaska
+84.239.43.41         # US Baltimore
+84.239.43.10         # US Baltimore
+84.239.43.43         # US Baltimore
+84.239.12.140        # US Idaho
+84.239.12.141        # US Idaho
+84.239.17.139        # US Michigan
+84.239.17.168        # US Michigan
+84.239.17.133        # US Michigan
+84.239.16.138        # US Missouri
+84.239.16.165        # US Missouri
+84.239.16.180        # US Missouri
+84.239.33.16         # US New Mexico
+84.239.33.4          # US New Mexico
+84.239.50.15         # US South Dakota
+84.239.27.19         # US Wisconsin
+84.239.27.4          # US Wisconsin
+146.70.10.62         # Costa Rica
+146.70.10.65         # Costa Rica
+146.70.10.27         # Costa Rica
+188.126.89.28        # FI Streaming Optimized
+46.246.3.230         # SE Streaming Optimized
+46.246.3.226         # SE Streaming Optimized
+46.246.3.240         # SE Streaming Optimized
+45.154.154.34        # Uruguay
+45.154.154.17        # Uruguay
+45.154.154.30        # Uruguay
+149.40.50.22         # US Massachusetts
+149.40.50.58         # US Massachusetts
+84.239.25.12         # US Minnesota
+84.239.25.9          # US Minnesota
+84.239.33.148        # US Oklahoma
+84.239.7.139         # US South Carolina
+84.239.7.147         # US South Carolina
+84.239.10.146        # US Virginia
+84.239.10.145        # US Virginia
+98.159.36.129        # Bosnia And Herzegovina
+98.159.36.142        # Bosnia And Herzegovina
+149.102.247.234      # Croatia
+154.47.29.135        # Croatia
+149.102.247.237      # Croatia
+173.239.201.204      # Indonesia
+138.199.54.40        # IT Streaming Optimized
+138.199.54.59        # IT Streaming Optimized
+149.22.87.159        # JP Streaming Optimized
+45.154.152.23        # Peru
+84.239.6.8           # US Alabama
+84.239.6.19          # US Alabama
+45.152.150.135       # US Arkansas
+45.152.150.138       # US Arkansas
+45.152.150.147       # US Arkansas
+84.239.25.147        # US Nebraska
+84.239.25.142        # US Nebraska
+84.239.7.17          # US North Carolina
+84.239.7.4           # US North Carolina
+84.239.7.16          # US North Carolina
+84.239.48.20         # US North Dakota
+84.239.48.4          # US North Dakota
+84.239.48.5          # US North Dakota
+84.239.48.131        # US Oregon
+84.239.48.135        # US Oregon
+84.239.45.4          # US Rhode Island
+84.239.45.20         # US Rhode Island
+84.239.45.3          # US Rhode Island
+84.239.45.135        # US Vermont
+84.239.12.42         # US West Virginia
+84.239.12.17         # US West Virginia
+84.239.43.148        # US Wilmington
+84.239.43.188        # US Wilmington
+84.239.43.157        # US Wilmington
+173.244.62.43        # AU Adelaide
+173.244.62.34        # AU Adelaide
+173.239.203.201      # Australia Streaming Optimized
+64.64.99.30          # Bolivia
+154.47.16.99         # Colombia
+154.47.16.107        # Colombia
+154.47.16.202        # Colombia
+173.239.249.4        # Ecuador
+173.239.249.59       # Ecuador
+146.70.15.43         # Malaysia
+146.70.15.28         # Malaysia
+146.70.15.32         # Malaysia
+158.173.21.26        # NL Netherlands Streaming Optimized
+158.173.3.221        # NL Netherlands Streaming Optimized
+158.173.21.1         # NL Netherlands Streaming Optimized
+84.239.17.11         # US Iowa
+84.239.37.3          # US Maine
+84.239.37.9          # US Maine
+84.239.31.142        # US Mississippi
+84.239.31.143        # US Mississippi
+84.239.47.137        # US Montana
+84.239.41.131        # US Pennsylvania
+84.239.41.135        # US Pennsylvania
+84.239.50.149        # US Wyoming
+202.125.43.4         # AU Brisbane
+202.125.43.93        # AU Brisbane
+202.125.43.69        # AU Brisbane
+95.134.63.176        # DE Germany Streaming Optimized
+188.126.94.41        # DK Streaming Optimized
+149.88.109.139       # DK Streaming Optimized
+149.22.87.149        # JP Streaming Optimized
+158.173.23.131       # UK Streaming Optimized
+158.173.23.72        # UK Streaming Optimized
+84.239.52.15         # US Alaska
+84.239.52.5          # US Alaska
+84.239.52.9          # US Alaska
+84.239.17.7          # US Iowa
+84.239.17.44         # US Iowa
+84.239.17.6          # US Iowa
+84.239.25.19         # US Minnesota
+84.239.25.7          # US Minnesota
+84.239.48.6          # US North Dakota
+84.239.41.132        # US Pennsylvania
+84.239.10.150        # US Virginia
+84.239.10.132        # US Virginia
+84.239.10.131        # US Virginia
+102.129.232.191      # US West Streaming Optimized
+102.129.232.206      # US West Streaming Optimized
+84.239.12.40         # US West Virginia
+84.239.12.24         # US West Virginia
+84.239.50.146        # US Wyoming
+84.239.50.140        # US Wyoming
+173.239.221.5        # Guatemala
+173.239.221.21       # Guatemala
+146.70.15.35         # Malaysia
+146.70.15.33         # Malaysia
+158.173.3.215        # NL Netherlands Streaming Optimized
+158.173.21.9         # NL Netherlands Streaming Optimized
+173.244.42.13        # South Korea
+84.239.6.11          # US Alabama
+84.239.6.13          # US Alabama
+84.239.43.31         # US Baltimore
+84.239.43.33         # US Baltimore
+84.239.43.35         # US Baltimore
+84.239.12.144        # US Idaho
+84.239.12.139        # US Idaho
+84.239.12.142        # US Idaho
+45.152.150.20        # US Louisiana
+84.239.41.31         # US New Hampshire
+84.239.41.19         # US New Hampshire
+84.239.45.19         # US Rhode Island
+84.239.45.9          # US Rhode Island
+84.239.7.138         # US South Carolina
+84.239.7.140         # US South Carolina
+202.125.43.74        # AU Brisbane
+202.125.43.24        # AU Brisbane
+202.125.43.84        # AU Brisbane
+146.70.11.43         # Chile
+146.70.11.31         # Chile
+146.70.11.23         # Chile
+154.47.16.120        # Colombia
+154.47.16.104        # Colombia
+45.154.152.26        # Peru
+45.154.152.15        # Peru
+45.154.152.5         # Peru
+46.246.3.248         # SE Streaming Optimized
+46.246.3.250         # SE Streaming Optimized
+46.246.3.236         # SE Streaming Optimized
+45.154.154.9         # Uruguay
+45.154.154.48        # Uruguay
+84.239.47.145        # US Montana
+84.239.45.144        # US Vermont
+84.239.45.139        # US Vermont
+84.239.43.155        # US Wilmington
+84.239.43.135        # US Wilmington
+84.239.43.166        # US Wilmington
+173.239.203.216      # Australia Streaming Optimized
+64.64.99.27          # Bolivia
+98.159.36.149        # Bosnia And Herzegovina
+98.159.36.151        # Bosnia And Herzegovina
+146.70.10.35         # Costa Rica
+173.239.249.29       # Ecuador
+173.239.249.5        # Ecuador
+173.239.249.58       # Ecuador
+188.126.89.18        # FI Streaming Optimized
+188.126.89.19        # FI Streaming Optimized
+188.126.89.16        # FI Streaming Optimized
+84.239.47.79         # US Connecticut
+84.239.47.11         # US Connecticut
+84.239.47.77         # US Connecticut
+149.40.50.46         # US Massachusetts
+149.40.50.43         # US Massachusetts
+84.239.17.134        # US Michigan
+84.239.16.179        # US Missouri
+84.239.16.135        # US Missouri
+84.239.33.133        # US Oklahoma
+84.239.33.145        # US Oklahoma
+173.244.62.40        # AU Adelaide
+173.244.62.53        # AU Adelaide
+173.244.62.14        # AU Adelaide
+149.102.247.250      # Croatia
+154.47.29.148        # Croatia
+173.239.201.195      # Indonesia
+173.239.201.203      # Indonesia
+138.199.54.43        # IT Streaming Optimized
+138.199.54.54        # IT Streaming Optimized
+45.152.150.136       # US Arkansas
+84.239.31.4          # US Kansas
+84.239.31.19         # US Kansas
+84.239.37.13         # US Maine
+84.239.31.147        # US Mississippi
+84.239.33.6          # US New Mexico
+84.239.33.12         # US New Mexico
+84.239.7.15          # US North Carolina
+84.239.7.7           # US North Carolina
+84.239.27.146        # US Ohio
+84.239.27.137        # US Ohio
+84.239.48.136        # US Oregon
+84.239.27.39         # US Wisconsin
+84.239.27.17         # US Wisconsin
+84.239.27.13         # US Wisconsin
+146.70.10.61         # Costa Rica
+146.70.10.19         # Costa Rica
+146.70.10.26         # Costa Rica
+149.22.87.140        # JP Streaming Optimized
+149.22.87.144        # JP Streaming Optimized
+149.22.87.136        # JP Streaming Optimized
+45.154.152.11        # Peru
+45.154.152.27        # Peru
+45.154.152.20        # Peru
+84.239.52.2          # US Alaska
+84.239.7.10          # US North Carolina
+84.239.7.5           # US North Carolina
+84.239.48.140        # US Oregon
+84.239.48.139        # US Oregon
+173.244.62.4         # AU Adelaide
+173.244.62.25        # AU Adelaide
+173.239.203.209      # Australia Streaming Optimized
+146.70.11.34         # Chile
+146.70.11.50         # Chile
+173.239.249.34       # Ecuador
+173.239.249.42       # Ecuador
+173.239.249.46       # Ecuador
+188.126.89.29        # FI Streaming Optimized
+188.126.89.15        # FI Streaming Optimized
+158.173.21.11        # NL Netherlands Streaming Optimized
+158.173.3.228        # NL Netherlands Streaming Optimized
+149.40.50.13         # US Massachusetts
+149.40.50.26         # US Massachusetts
+84.239.33.5          # US New Mexico
+84.239.41.138        # US Pennsylvania
+84.239.41.145        # US Pennsylvania
+84.239.41.202        # US Pennsylvania
+223.252.34.35        # AU Brisbane
+223.252.34.51        # AU Brisbane
+202.125.43.13        # AU Brisbane
+64.64.99.12          # Bolivia
+64.64.99.20          # Bolivia
+149.88.109.137       # DK Streaming Optimized
+188.126.94.48        # DK Streaming Optimized
+173.239.201.193      # Indonesia
+138.199.54.55        # IT Streaming Optimized
+146.70.15.25         # Malaysia
+146.70.15.22         # Malaysia
+46.246.3.243         # SE Streaming Optimized
+158.173.24.21        # UK Streaming Optimized
+158.173.24.4         # UK Streaming Optimized
+45.152.150.148       # US Arkansas
+45.152.150.133       # US Arkansas
+84.239.47.72         # US Connecticut
+84.239.47.68         # US Connecticut
+84.239.17.33         # US Iowa
+84.239.17.45         # US Iowa
+84.239.25.8          # US Minnesota
+98.159.36.140        # Bosnia And Herzegovina
+98.159.36.132        # Bosnia And Herzegovina
+98.159.36.131        # Bosnia And Herzegovina
+154.47.16.112        # Colombia
+154.47.16.110        # Colombia
+154.47.29.151        # Croatia
+173.239.221.6        # Guatemala
+173.239.221.19       # Guatemala
+173.244.42.11        # South Korea
+84.239.43.28         # US Baltimore
+84.239.43.11         # US Baltimore
+84.239.43.19         # US Baltimore
+84.239.31.21         # US Kansas
+84.239.31.7          # US Kansas
+45.152.150.21        # US Louisiana
+45.152.150.11        # US Louisiana
+84.239.31.134        # US Mississippi
+84.239.31.148        # US Mississippi
+84.239.16.170        # US Missouri
+84.239.16.183        # US Missouri
+84.239.25.145        # US Nebraska
+84.239.25.149        # US Nebraska
+84.239.25.138        # US Nebraska
+84.239.27.132        # US Ohio
+84.239.27.141        # US Ohio
+84.239.50.11         # US South Dakota
+84.239.50.17         # US South Dakota
+84.239.50.2          # US South Dakota
+84.239.12.18         # US West Virginia
+84.239.12.34         # US West Virginia
+84.239.12.41         # US West Virginia
+45.154.154.57        # Uruguay
+45.154.154.43        # Uruguay
+84.239.6.6           # US Alabama
+84.239.6.10          # US Alabama
+84.239.41.37         # US New Hampshire
+84.239.43.170        # US Wilmington
+84.239.43.176        # US Wilmington
+84.239.43.190        # US Wilmington
+84.239.27.23         # US Wisconsin
+84.239.27.24         # US Wisconsin
+84.239.27.32         # US Wisconsin
+84.239.50.150        # US Wyoming
+154.47.16.121        # Colombia
+154.47.16.200        # Colombia
+154.47.16.102        # Colombia
+158.173.23.65        # UK Streaming Optimized
+158.173.23.119       # UK Streaming Optimized
+45.152.150.140       # US Arkansas
+84.239.43.57         # US Baltimore
+84.239.43.56         # US Baltimore
+84.239.27.139        # US Ohio
+84.239.27.133        # US Ohio
+84.239.50.12         # US South Dakota
+84.239.50.10         # US South Dakota
+102.129.232.207      # US West Streaming Optimized
+84.239.43.140        # US Wilmington
+84.239.43.174        # US Wilmington
+84.239.43.178        # US Wilmington
+202.125.43.10        # AU Brisbane
+202.125.43.16        # AU Brisbane
+202.125.43.79        # AU Brisbane
+173.239.203.190      # Australia Streaming Optimized
+64.64.99.3           # Bolivia
+64.64.99.24          # Bolivia
+146.70.11.48         # Chile
+146.70.11.27         # Chile
+146.70.10.16         # Costa Rica
+146.70.10.22         # Costa Rica
+146.70.10.21         # Costa Rica
+149.102.247.232      # Croatia
+154.47.29.133        # Croatia
+188.126.89.7         # FI Streaming Optimized
+46.246.3.233         # SE Streaming Optimized
+84.239.47.84         # US Connecticut
+84.239.47.10         # US Connecticut
+84.239.47.74         # US Connecticut
+84.239.12.135        # US Idaho
+84.239.12.147        # US Idaho
+84.239.17.43         # US Iowa
+84.239.17.15         # US Iowa
+84.239.31.9          # US Kansas
+84.239.31.15         # US Kansas
+84.239.37.18         # US Maine
+84.239.37.14         # US Maine
+84.239.31.135        # US Mississippi
+84.239.41.33         # US New Hampshire
+84.239.41.12         # US New Hampshire
+173.239.221.14       # Guatemala
+173.239.201.202      # Indonesia
+146.70.15.36         # Malaysia
+158.173.3.237        # NL Netherlands Streaming Optimized
+158.173.21.15        # NL Netherlands Streaming Optimized
+158.173.3.240        # NL Netherlands Streaming Optimized
+84.239.52.21         # US Alaska
+45.152.150.16        # US Louisiana
+84.239.17.158        # US Michigan
+84.239.17.132        # US Michigan
+84.239.17.170        # US Michigan
+84.239.47.142        # US Montana
+84.239.47.138        # US Montana
+84.239.25.137        # US Nebraska
+84.239.33.20         # US New Mexico
+84.239.7.134         # US South Carolina
+84.239.7.150         # US South Carolina
+84.239.50.134        # US Wyoming
+84.239.50.133        # US Wyoming
+173.244.62.33        # AU Adelaide
+173.244.62.19        # AU Adelaide
+149.88.109.150       # DK Streaming Optimized
+173.239.249.36       # Ecuador
+173.239.249.8        # Ecuador
+173.239.249.44       # Ecuador
+45.154.152.3         # Peru
+45.154.152.16        # Peru
+45.154.154.45        # Uruguay
+149.40.50.53         # US Massachusetts
+84.239.16.174        # US Missouri
+84.239.16.140        # US Missouri
+84.239.7.6           # US North Carolina
+84.239.45.16         # US Rhode Island
+98.159.36.133        # Bosnia And Herzegovina
+138.199.54.56        # IT Streaming Optimized
+138.199.54.37        # IT Streaming Optimized
+149.22.87.139        # JP Streaming Optimized
+84.239.25.3          # US Minnesota
+84.239.25.4          # US Minnesota
+84.239.33.142        # US Oklahoma
+84.239.41.147        # US Pennsylvania
+84.239.41.149        # US Pennsylvania
+84.239.45.141        # US Vermont
+84.239.45.136        # US Vermont
+84.239.45.146        # US Vermont
+84.239.12.3          # US West Virginia
+84.239.12.31         # US West Virginia
+84.239.12.5          # US West Virginia
+84.239.27.31         # US Wisconsin
+84.239.27.27         # US Wisconsin
+202.125.43.90        # AU Brisbane
+223.252.34.60        # AU Brisbane
+223.252.34.44        # AU Brisbane
+154.47.16.98         # Colombia
+154.47.16.101        # Colombia
+146.70.10.32         # Costa Rica
+146.70.10.25         # Costa Rica
+146.70.10.30         # Costa Rica
+188.126.94.52        # DK Streaming Optimized
+149.88.109.130       # DK Streaming Optimized
+173.239.249.60       # Ecuador
+173.239.249.22       # Ecuador
+173.239.249.14       # Ecuador
+188.126.89.5         # FI Streaming Optimized
+173.239.201.201      # Indonesia
+84.247.97.15         # Nepal
+158.173.3.238        # NL Netherlands Streaming Optimized
+158.173.3.223        # NL Netherlands Streaming Optimized
+45.154.152.19        # Peru
+45.154.152.17        # Peru
+45.152.150.5         # US Louisiana
+84.239.33.140        # US Oklahoma
+84.239.33.137        # US Oklahoma
+84.239.45.13         # US Rhode Island
+84.239.7.152         # US South Carolina
+84.239.27.3          # US Wisconsin
+84.239.27.18         # US Wisconsin
+146.70.11.24         # Chile
+146.70.11.44         # Chile
+95.134.63.185        # DE Germany Streaming Optimized
+173.239.221.9        # Guatemala
+173.239.221.28       # Guatemala
+173.239.221.15       # Guatemala
+84.239.52.7          # US Alaska
+84.239.52.4          # US Alaska
+84.239.27.130        # US Ohio
+84.239.27.144        # US Ohio
+84.239.50.13         # US South Dakota
+84.239.50.21         # US South Dakota
+84.239.12.39         # US West Virginia
+84.239.47.27         # US Connecticut
+149.40.50.6          # US Massachusetts
+149.40.50.2          # US Massachusetts
+149.40.50.17         # US Massachusetts
+84.239.31.144        # US Mississippi
+84.239.47.134        # US Montana
+84.239.47.140        # US Montana
+84.239.41.6          # US New Hampshire
+84.239.7.19          # US North Carolina
+84.239.48.11         # US North Dakota
+84.239.48.15         # US North Dakota
+84.239.48.134        # US Oregon
+84.239.41.146        # US Pennsylvania
+84.239.41.198        # US Pennsylvania
+173.244.62.24        # AU Adelaide
+173.244.62.3         # AU Adelaide
+84.239.6.5           # US Alabama
+84.239.43.20         # US Baltimore
+84.239.43.2          # US Baltimore
+84.239.17.23         # US Iowa
+84.239.17.35         # US Iowa
+84.239.25.21         # US Minnesota
+84.239.16.131        # US Missouri
+84.239.16.173        # US Missouri
+84.239.33.8          # US New Mexico
+84.239.45.149        # US Vermont
+84.239.10.139        # US Virginia
+84.239.43.145        # US Wilmington
+64.64.99.29          # Bolivia
+98.159.36.139        # Bosnia And Herzegovina
+154.47.29.141        # Croatia
+154.47.29.144        # Croatia
+149.102.247.226      # Croatia
+138.199.54.62        # IT Streaming Optimized
+149.22.87.142        # JP Streaming Optimized
+46.246.3.237         # SE Streaming Optimized
+158.173.23.59        # UK Streaming Optimized
+158.173.23.122       # UK Streaming Optimized
+45.154.154.53        # Uruguay
+45.152.150.142       # US Arkansas
+84.239.17.161        # US Michigan
+84.239.17.156        # US Michigan
+154.47.29.138        # Croatia
+149.102.247.240      # Croatia
+154.47.29.154        # Croatia
+158.173.3.229        # NL Netherlands Streaming Optimized
+158.173.24.5         # UK Streaming Optimized
+158.173.23.83        # UK Streaming Optimized
+158.173.23.130       # UK Streaming Optimized
+84.239.12.132        # US Idaho
+84.239.12.130        # US Idaho
+84.239.17.27         # US Iowa
+84.239.17.8          # US Iowa
+84.239.16.184        # US Missouri
+84.239.48.19         # US North Dakota
+173.244.62.45        # AU Adelaide
+173.244.62.52        # AU Adelaide
+173.239.203.205      # Australia Streaming Optimized
+173.239.203.197      # Australia Streaming Optimized
+64.64.99.10          # Bolivia
+154.47.16.218        # Colombia
+154.47.16.203        # Colombia
+146.70.10.39         # Costa Rica
+146.70.10.55         # Costa Rica
+149.88.109.133       # DK Streaming Optimized
+173.239.249.25       # Ecuador
+173.239.249.6        # Ecuador
+45.154.152.24        # Peru
+84.239.52.8          # US Alaska
+149.40.50.51         # US Massachusetts
+84.239.7.132         # US South Carolina
+84.239.7.133         # US South Carolina
+84.239.12.2          # US West Virginia
+84.239.12.27         # US West Virginia
+84.239.27.6          # US Wisconsin
+84.239.27.38         # US Wisconsin
+149.22.87.138        # JP Streaming Optimized
+149.22.87.152        # JP Streaming Optimized
+84.247.97.3          # Nepal
+84.247.97.7          # Nepal
+84.239.6.12          # US Alabama
+84.239.47.132        # US Montana
+84.239.45.18         # US Rhode Island
+84.239.50.7          # US South Dakota
+102.129.232.205      # US West Streaming Optimized
+102.129.232.200      # US West Streaming Optimized
+223.252.34.53        # AU Brisbane
+223.252.34.61        # AU Brisbane
+98.159.36.138        # Bosnia And Herzegovina
+84.239.43.24         # US Baltimore
+84.239.43.49         # US Baltimore
+84.239.43.26         # US Baltimore
+84.239.17.148        # US Michigan
+84.239.17.167        # US Michigan
+84.239.41.36         # US New Hampshire
+84.239.45.138        # US Vermont
+95.134.63.204        # DE Germany Streaming Optimized
+188.126.89.30        # FI Streaming Optimized
+188.126.89.26        # FI Streaming Optimized
+173.239.221.26       # Guatemala
+138.199.54.38        # IT Streaming Optimized
+45.154.154.33        # Uruguay
+45.154.154.56        # Uruguay
+45.154.154.23        # Uruguay
+84.239.47.63         # US Connecticut
+84.239.47.5          # US Connecticut
+45.152.150.19        # US Louisiana
+84.239.37.8          # US Maine
+84.239.37.19         # US Maine
+84.239.27.136        # US Ohio
+84.239.27.134        # US Ohio
+84.239.41.200        # US Pennsylvania
+95.134.63.199        # DE Germany Streaming Optimized
+84.239.43.54         # US Baltimore
+84.239.41.39         # US New Hampshire
+84.239.7.131         # US South Carolina
+84.239.7.136         # US South Carolina
+84.239.43.143        # US Wilmington
+84.239.43.163        # US Wilmington
+84.239.50.143        # US Wyoming
+173.239.203.202      # Australia Streaming Optimized
+149.102.247.229      # Croatia
+146.70.15.27         # Malaysia
+45.154.152.28        # Peru
+158.173.23.148       # UK Streaming Optimized
+45.154.154.26        # Uruguay
+45.154.154.36        # Uruguay
+45.154.154.24        # Uruguay
+84.239.37.11         # US Maine
+84.239.37.12         # US Maine
+84.239.25.20         # US Minnesota
+84.239.27.145        # US Ohio
+102.129.232.209      # US West Streaming Optimized
+84.239.12.10         # US West Virginia
+84.239.12.6          # US West Virginia
+223.252.34.36        # AU Brisbane
+154.47.16.215        # Colombia
+173.239.249.52       # Ecuador
+173.239.249.12       # Ecuador
+84.239.17.17         # US Iowa
+84.239.17.41         # US Iowa
+84.239.31.131        # US Mississippi
+84.239.16.161        # US Missouri
+84.239.16.134        # US Missouri
+84.239.16.177        # US Missouri
+84.239.45.132        # US Vermont
+188.126.89.9         # FI Streaming Optimized
+173.244.42.4         # South Korea
+173.244.42.14        # South Korea
+173.244.42.8         # South Korea
+84.239.47.22         # US Connecticut
+84.239.47.16         # US Connecticut
+84.239.17.144        # US Michigan
+84.239.17.152        # US Michigan
+84.239.47.146        # US Montana
+84.239.48.142        # US Oregon
+84.239.41.203        # US Pennsylvania
+84.239.41.142        # US Pennsylvania
+84.239.27.33         # US Wisconsin
+173.244.62.9         # AU Adelaide
+173.244.62.59        # AU Adelaide
+173.244.62.44        # AU Adelaide
+146.70.10.31         # Costa Rica
+188.126.94.56        # DK Streaming Optimized
+149.88.109.153       # DK Streaming Optimized
+158.173.21.19        # NL Netherlands Streaming Optimized
+84.239.12.143        # US Idaho
+84.239.12.137        # US Idaho
+149.40.50.39         # US Massachusetts
+149.40.50.50         # US Massachusetts
+84.239.45.12         # US Rhode Island
+149.22.87.150        # JP Streaming Optimized
+173.244.62.23        # AU Adelaide
+173.244.62.35        # AU Adelaide
+146.70.10.36         # Costa Rica
+173.239.249.20       # Ecuador
+138.199.54.44        # IT Streaming Optimized
+173.239.203.213      # Australia Streaming Optimized
+149.102.247.248      # Croatia
+154.47.29.149        # Croatia
+154.47.29.146        # Croatia
+149.22.87.151        # JP Streaming Optimized
+84.239.33.13         # US New Mexico
+84.239.27.149        # US Ohio
+84.239.33.141        # US Oklahoma
+84.239.41.139        # US Pennsylvania
+84.239.41.191        # US Pennsylvania
+84.239.7.151         # US South Carolina
+84.239.10.135        # US Virginia
+84.239.10.142        # US Virginia
+84.239.12.32         # US West Virginia
+84.239.12.23         # US West Virginia
+84.239.43.175        # US Wilmington
+84.239.43.138        # US Wilmington
+84.239.27.16         # US Wisconsin
+154.47.16.219        # Colombia
+154.47.16.198        # Colombia
+95.134.63.210        # DE Germany Streaming Optimized
+95.134.63.177        # DE Germany Streaming Optimized
+45.154.154.3         # Uruguay
+45.154.154.37        # Uruguay
+45.154.154.41        # Uruguay
+84.239.12.134        # US Idaho
+45.152.150.4         # US Louisiana
+84.239.25.139        # US Nebraska
+84.239.48.143        # US Oregon
+84.239.48.138        # US Oregon
+84.239.45.133        # US Vermont
+202.125.43.9         # AU Brisbane
+202.125.43.76        # AU Brisbane
+146.70.11.51         # Chile
+146.70.11.53         # Chile
+188.126.94.53        # DK Streaming Optimized
+149.88.109.158       # DK Streaming Optimized
+188.126.89.21        # FI Streaming Optimized
+158.173.21.18        # NL Netherlands Streaming Optimized
+158.173.21.3         # NL Netherlands Streaming Optimized
+84.239.17.38         # US Iowa
+84.239.17.13         # US Iowa
+149.40.50.23         # US Massachusetts
+84.239.17.159        # US Michigan
+84.239.48.13         # US North Dakota
+84.239.48.10         # US North Dakota
+84.239.50.4          # US South Dakota
+84.239.50.3          # US South Dakota
+64.64.99.23          # Bolivia
+84.239.43.55         # US Baltimore
+84.239.43.37         # US Baltimore
+84.239.47.83         # US Connecticut
+84.239.47.14         # US Connecticut
+84.239.16.189        # US Missouri
+173.244.62.54        # AU Adelaide
+173.244.62.7         # AU Adelaide
+173.239.201.196      # Indonesia
+84.239.43.60         # US Baltimore
+45.152.150.14        # US Louisiana
+84.239.25.16         # US Minnesota
+84.239.50.16         # US South Dakota
+84.239.12.12         # US West Virginia
+64.64.99.19          # Bolivia
+95.134.63.202        # DE Germany Streaming Optimized
+146.70.15.40         # Malaysia
+158.173.23.135       # UK Streaming Optimized
+84.239.47.67         # US Connecticut
+149.40.50.35         # US Massachusetts
+84.239.41.9          # US New Hampshire
+84.239.41.34         # US New Hampshire
+84.239.48.137        # US Oregon
+84.239.43.164        # US Wilmington
+146.70.11.52         # Chile
+149.102.247.238      # Croatia
+149.102.247.246      # Croatia
+138.199.54.42        # IT Streaming Optimized
+138.199.54.63        # IT Streaming Optimized
+84.239.48.3          # US North Dakota
+84.239.41.207        # US Pennsylvania
+202.125.43.8         # AU Brisbane
+202.125.43.23        # AU Brisbane
+223.252.34.43        # AU Brisbane
+173.239.203.200      # Australia Streaming Optimized
+188.126.94.40        # DK Streaming Optimized
+149.88.109.147       # DK Streaming Optimized
+149.22.87.134        # JP Streaming Optimized
+45.154.154.4         # Uruguay
+45.154.154.46        # Uruguay
+45.154.154.12        # Uruguay
+84.239.12.131        # US Idaho
+84.239.17.39         # US Iowa
+84.239.31.146        # US Mississippi
+84.239.16.145        # US Missouri
+84.239.16.157        # US Missouri
+84.239.25.136        # US Nebraska
+84.239.7.143         # US South Carolina
+84.239.50.139        # US Wyoming
+188.126.89.3         # FI Streaming Optimized
+158.173.21.16        # NL Netherlands Streaming Optimized
+158.173.3.232        # NL Netherlands Streaming Optimized
+158.173.21.5         # NL Netherlands Streaming Optimized
+84.239.33.138        # US Oklahoma
+84.239.27.36         # US Wisconsin
+188.126.89.27        # FI Streaming Optimized
+188.126.89.17        # FI Streaming Optimized
+158.173.23.123       # UK Streaming Optimized
+158.173.24.19        # UK Streaming Optimized
+84.239.6.18          # US Alabama
+84.239.43.15         # US Baltimore
+84.239.43.50         # US Baltimore
+84.239.31.18         # US Kansas
+84.239.33.2          # US New Mexico
+84.239.33.19         # US New Mexico
+223.252.34.40        # AU Brisbane
+202.125.43.68        # AU Brisbane
+202.125.43.19        # AU Brisbane
+173.239.203.210      # Australia Streaming Optimized
+64.64.99.5           # Bolivia
+64.64.99.17          # Bolivia
+98.159.36.144        # Bosnia And Herzegovina
+84.247.97.11         # Nepal
+84.239.25.144        # US Nebraska
+84.239.41.197        # US Pennsylvania
+84.239.41.195        # US Pennsylvania
+146.70.11.45         # Chile
+146.70.11.36         # Chile
+154.47.16.106        # Colombia
+149.102.247.243      # Croatia
+154.47.29.143        # Croatia
+173.239.249.49       # Ecuador
+138.199.54.60        # IT Streaming Optimized
+149.22.87.157        # JP Streaming Optimized
+149.22.87.158        # JP Streaming Optimized
+46.246.3.245         # SE Streaming Optimized
+84.239.47.13         # US Connecticut
+84.239.47.80         # US Connecticut
+84.239.17.26         # US Iowa
+84.239.48.141        # US Oregon
+84.239.43.156        # US Wilmington
+158.173.3.216        # NL Netherlands Streaming Optimized
+158.173.3.241        # NL Netherlands Streaming Optimized
+84.239.52.11         # US Alaska
+84.239.16.133        # US Missouri
+84.239.16.182        # US Missouri
+84.239.16.148        # US Missouri
+84.239.41.7          # US New Hampshire
+84.239.41.25         # US New Hampshire
+84.239.50.144        # US Wyoming
+173.244.62.8         # AU Adelaide
+149.88.109.146       # DK Streaming Optimized
+173.244.42.16        # South Korea
+45.154.154.54        # Uruguay
+45.154.154.35        # Uruguay
+149.40.50.12         # US Massachusetts
+149.40.50.38         # US Massachusetts
+84.239.31.132        # US Mississippi
+84.239.7.18          # US North Carolina
+84.239.33.134        # US Oklahoma
+84.239.33.150        # US Oklahoma
+84.239.10.136        # US Virginia
+84.239.10.134        # US Virginia
+84.239.10.140        # US Virginia
+84.239.27.25         # US Wisconsin
+84.239.27.41         # US Wisconsin
+173.244.62.42        # AU Adelaide
+173.244.62.18        # AU Adelaide
+154.47.16.201        # Colombia
+154.47.16.111        # Colombia
+154.47.16.206        # Colombia
+146.70.10.38         # Costa Rica
+146.70.10.63         # Costa Rica
+149.22.87.156        # JP Streaming Optimized
+45.154.152.30        # Peru
+45.154.152.8         # Peru
+45.152.150.13        # US Louisiana
+84.239.41.208        # US Pennsylvania
+84.239.41.150        # US Pennsylvania
+84.239.27.14         # US Wisconsin
+84.239.50.142        # US Wyoming
+202.125.43.3         # AU Brisbane
+149.102.247.231      # Croatia
+149.102.247.245      # Croatia
+149.40.50.25         # US Massachusetts
+84.239.7.153         # US South Carolina
+84.239.12.21         # US West Virginia
+84.239.12.33         # US West Virginia
+188.126.94.36        # DK Streaming Optimized
+173.239.221.4        # Guatemala
+84.239.47.23         # US Connecticut
+84.239.47.64         # US Connecticut
+84.239.41.3          # US New Hampshire
+173.239.249.16       # Ecuador
+46.246.3.242         # SE Streaming Optimized
+46.246.3.228         # SE Streaming Optimized
+84.239.17.145        # US Michigan
+84.239.17.151        # US Michigan
+84.239.17.165        # US Michigan
+173.239.203.217      # Australia Streaming Optimized
+138.199.54.35        # IT Streaming Optimized
+158.173.21.25        # NL Netherlands Streaming Optimized
+158.173.3.214        # NL Netherlands Streaming Optimized
+158.173.23.69        # UK Streaming Optimized
+158.173.24.13        # UK Streaming Optimized
+158.173.24.2         # UK Streaming Optimized
+84.239.12.138        # US Idaho
+84.239.33.10         # US New Mexico
+84.239.33.18         # US New Mexico
+84.239.25.150        # US Nebraska
+84.239.41.4          # US New Hampshire
+84.239.7.13          # US North Carolina
+84.239.33.149        # US Oklahoma
+84.239.45.145        # US Vermont
+202.125.43.75        # AU Brisbane
+223.252.34.46        # AU Brisbane
+223.252.34.41        # AU Brisbane
+146.70.11.39         # Chile
+154.47.29.137        # Croatia
+154.47.29.132        # Croatia
+158.173.23.81        # UK Streaming Optimized
+158.173.24.22        # UK Streaming Optimized
+84.239.12.36         # US West Virginia
+173.244.62.27        # AU Adelaide
+98.159.36.136        # Bosnia And Herzegovina
+188.126.89.20        # FI Streaming Optimized
+149.22.87.135        # JP Streaming Optimized
+84.247.97.13         # Nepal
+158.173.3.234        # NL Netherlands Streaming Optimized
+158.173.3.231        # NL Netherlands Streaming Optimized
+45.152.150.139       # US Arkansas
+45.152.150.132       # US Arkansas
+154.47.16.123        # Colombia
+154.47.16.116        # Colombia
+188.126.94.37        # DK Streaming Optimized
+138.199.54.51        # IT Streaming Optimized
+146.70.15.23         # Malaysia
+146.70.15.37         # Malaysia
+45.154.154.6         # Uruguay
+45.154.154.29        # Uruguay
+45.154.154.27        # Uruguay
+84.239.52.3          # US Alaska
+84.239.43.12         # US Baltimore
+84.239.43.25         # US Baltimore
+84.239.47.28         # US Connecticut
+45.152.150.15        # US Louisiana
+149.40.50.41         # US Massachusetts
+149.40.50.42         # US Massachusetts
+149.40.50.57         # US Massachusetts
+84.239.17.141        # US Michigan
+84.239.17.140        # US Michigan
+84.239.16.139        # US Missouri
+84.239.47.148        # US Montana
+84.239.47.149        # US Montana
+84.239.41.206        # US Pennsylvania
+84.239.43.154        # US Wilmington
+173.239.249.40       # Ecuador
+84.239.17.4          # US Iowa
+84.239.25.5          # US Minnesota
+84.239.50.135        # US Wyoming
+173.239.203.207      # Australia Streaming Optimized
+202.125.43.26        # AU Brisbane
+146.70.10.34         # Costa Rica
+138.199.54.52        # IT Streaming Optimized
+45.152.150.131       # US Arkansas
+84.239.43.132        # US Wilmington
+84.239.43.144        # US Wilmington
+84.239.43.181        # US Wilmington
+149.22.87.141        # JP Streaming Optimized
+149.22.87.130        # JP Streaming Optimized
+84.239.48.7          # US North Dakota
+84.239.27.20         # US Wisconsin
+173.244.62.11        # AU Adelaide
+173.244.62.29        # AU Adelaide
+173.239.203.215      # Australia Streaming Optimized
+158.173.24.17        # UK Streaming Optimized
+158.173.23.68        # UK Streaming Optimized
+45.154.154.55        # Uruguay
+45.154.154.21        # Uruguay
+84.239.17.155        # US Michigan
+84.239.17.153        # US Michigan
+84.239.27.135        # US Ohio
+64.64.99.21          # Bolivia
+154.47.16.213        # Colombia
+154.47.16.117        # Colombia
+95.134.63.198        # DE Germany Streaming Optimized
+158.173.21.4         # NL Netherlands Streaming Optimized
+84.239.16.178        # US Missouri
+84.239.16.181        # US Missouri
+84.239.16.142        # US Missouri
+84.239.41.199        # US Pennsylvania
+154.47.29.150        # Croatia
+149.88.109.144       # DK Streaming Optimized
+46.246.3.238         # SE Streaming Optimized
+84.239.43.58         # US Baltimore
+84.239.43.46         # US Baltimore
+84.239.47.20         # US Connecticut
+84.239.41.22         # US New Hampshire
+84.239.41.16         # US New Hampshire
+84.239.7.12          # US North Carolina
+146.70.11.46         # Chile
+202.125.43.66        # AU Brisbane
+188.126.94.55        # DK Streaming Optimized
+188.126.94.38        # DK Streaming Optimized
+138.199.54.58        # IT Streaming Optimized
+46.246.3.224         # SE Streaming Optimized
+158.173.24.18        # UK Streaming Optimized
+158.173.23.78        # UK Streaming Optimized
+158.173.23.144       # UK Streaming Optimized
+84.239.41.8          # US New Hampshire
+84.239.7.142         # US South Carolina
+84.239.45.142        # US Vermont
+146.70.11.18         # Chile
+158.173.3.207        # NL Netherlands Streaming Optimized
+84.239.47.18         # US Connecticut
+173.239.203.219      # Australia Streaming Optimized
+64.64.99.16          # Bolivia
+45.154.154.40        # Uruguay
+45.154.154.39        # Uruguay
+45.152.150.145       # US Arkansas
+149.102.247.249      # Croatia
+45.154.152.12        # Peru
+149.40.50.16         # US Massachusetts
+84.239.17.163        # US Michigan
+84.239.47.147        # US Montana
+84.239.43.134        # US Wilmington
+98.159.36.148        # Bosnia And Herzegovina
+154.47.16.207        # Colombia
+146.70.10.18         # Costa Rica
+84.239.17.20         # US Iowa
+95.134.63.191        # DE Germany Streaming Optimized
+95.134.63.212        # DE Germany Streaming Optimized
+146.70.10.33         # Costa Rica
+84.239.43.9          # US Baltimore
+84.239.43.21         # US Baltimore
+84.239.45.137        # US Vermont
+84.239.12.26         # US West Virginia
+173.239.249.19       # Ecuador
+45.154.154.22        # Uruguay
+84.239.47.65         # US Connecticut
+149.40.50.15         # US Massachusetts
+84.239.16.151        # US Missouri
+158.173.23.62        # UK Streaming Optimized
+158.173.23.70        # UK Streaming Optimized
+158.173.23.132       # UK Streaming Optimized
+84.239.17.14         # US Iowa
+173.244.62.46        # AU Adelaide
+173.244.62.60        # AU Adelaide
+98.159.36.146        # Bosnia And Herzegovina
+146.70.15.45         # Malaysia
+45.154.152.4         # Peru
+84.239.43.130        # US Wilmington
+84.239.27.21         # US Wisconsin
+223.252.34.38        # AU Brisbane
+64.64.99.15          # Bolivia
+149.88.109.138       # DK Streaming Optimized
+138.199.54.34        # IT Streaming Optimized
+138.199.54.41        # IT Streaming Optimized
+158.173.21.13        # NL Netherlands Streaming Optimized
+46.246.3.241         # SE Streaming Optimized
+84.239.17.3          # US Iowa
+146.70.10.58         # Costa Rica
+173.239.249.54       # Ecuador
+173.239.249.35       # Ecuador
+173.239.249.10       # Ecuador
+45.154.154.11        # Uruguay
+84.239.43.6          # US Baltimore
+84.239.43.44         # US Baltimore
+149.88.109.154       # DK Streaming Optimized
+188.126.94.46        # DK Streaming Optimized
+84.239.52.18         # US Alaska
+149.40.50.56         # US Massachusetts
+84.239.41.20         # US New Hampshire
+84.239.41.27         # US New Hampshire
+84.239.41.134        # US Pennsylvania
+173.239.221.18       # Guatemala
+149.22.87.147        # JP Streaming Optimized
+84.239.47.73         # US Connecticut
+84.239.25.2          # US Minnesota
+84.239.45.10         # US Rhode Island
+84.239.12.35         # US West Virginia
+84.239.12.11         # US West Virginia
+202.125.43.28        # AU Brisbane
+158.173.23.79        # UK Streaming Optimized
+154.47.16.100        # Colombia
+154.47.16.119        # Colombia
+158.173.3.233        # NL Netherlands Streaming Optimized
+202.125.43.11        # AU Brisbane
+173.239.221.27       # Guatemala
+84.239.45.17         # US Rhode Island
+84.239.43.159        # US Wilmington
+84.239.43.131        # US Wilmington
+154.47.16.199        # Colombia
+154.47.16.217        # Colombia
+154.47.16.211        # Colombia
+95.134.63.214        # DE Germany Streaming Optimized
+149.88.109.131       # DK Streaming Optimized
+45.154.154.15        # Uruguay
+84.239.17.146        # US Michigan
+84.239.31.130        # US Mississippi
+84.239.33.132        # US Oklahoma
+84.239.50.8          # US South Dakota
+173.239.249.13       # Ecuador
+173.239.249.7        # Ecuador
+146.70.15.21         # Malaysia
+146.70.15.39         # Malaysia
+45.154.152.9         # Peru
+149.40.50.54         # US Massachusetts
+149.40.50.59         # US Massachusetts
+84.239.25.146        # US Nebraska
+84.239.48.148        # US Oregon
+84.239.41.209        # US Pennsylvania
+84.239.41.140        # US Pennsylvania
+84.239.7.135         # US South Carolina
+84.239.10.149        # US Virginia
+173.244.62.58        # AU Adelaide
+138.199.54.46        # IT Streaming Optimized
+138.199.54.39        # IT Streaming Optimized
+158.173.23.129       # UK Streaming Optimized
+102.129.232.193      # US West Streaming Optimized
+146.70.11.21         # Chile
+158.173.3.211        # NL Netherlands Streaming Optimized
+158.173.3.243        # NL Netherlands Streaming Optimized
+84.239.43.27         # US Baltimore
+84.239.7.154         # US South Carolina
+84.239.27.40         # US Wisconsin
+154.47.29.134        # Croatia
+149.102.247.235      # Croatia
+149.88.109.149       # DK Streaming Optimized
+149.88.109.134       # DK Streaming Optimized
+188.126.94.50        # DK Streaming Optimized
+84.239.47.26         # US Connecticut
+84.239.17.2          # US Iowa
+84.239.17.29         # US Iowa
+84.239.41.133        # US Pennsylvania
+188.126.89.22        # FI Streaming Optimized
+45.154.152.6         # Peru
+102.129.232.208      # US West Streaming Optimized
+84.239.16.130        # US Missouri
+84.239.10.144        # US Virginia
+202.125.43.5         # AU Brisbane
+223.252.34.58        # AU Brisbane
+173.239.203.194      # Australia Streaming Optimized
+146.70.10.57         # Costa Rica
+173.239.221.29       # Guatemala
+146.70.15.38         # Malaysia
+158.173.23.76        # UK Streaming Optimized
+84.239.31.136        # US Mississippi
+84.239.41.26         # US New Hampshire
+84.239.41.15         # US New Hampshire
+158.173.3.217        # NL Netherlands Streaming Optimized
+84.239.17.166        # US Michigan
+188.126.94.49        # DK Streaming Optimized
+45.154.152.22        # Peru
+84.239.31.139        # US Mississippi
+84.239.7.146         # US South Carolina
+84.239.12.16         # US West Virginia
+84.239.27.26         # US Wisconsin
+84.239.27.12         # US Wisconsin
+202.125.43.88        # AU Brisbane
+202.125.43.94        # AU Brisbane
+173.239.249.43       # Ecuador
+158.173.24.16        # UK Streaming Optimized
+158.173.23.145       # UK Streaming Optimized
+84.239.43.189        # US Wilmington
+46.246.3.229         # SE Streaming Optimized
+84.239.16.149        # US Missouri
+84.239.16.166        # US Missouri
+84.239.16.169        # US Missouri
+173.244.62.20        # AU Adelaide
+45.154.154.59        # Uruguay
+84.239.41.144        # US Pennsylvania
+154.47.16.194        # Colombia
+146.70.10.20         # Costa Rica
+158.173.3.236        # NL Netherlands Streaming Optimized
+158.173.21.20        # NL Netherlands Streaming Optimized
+84.239.43.141        # US Wilmington
+202.125.43.78        # AU Brisbane
+95.134.63.180        # DE Germany Streaming Optimized
+84.239.17.169        # US Michigan
+84.239.16.160        # US Missouri
+84.239.50.141        # US Wyoming
+149.102.247.242      # Croatia
+173.239.221.20       # Guatemala
+84.239.27.11         # US Wisconsin
+158.173.24.9         # UK Streaming Optimized
+84.239.43.45         # US Baltimore
+84.239.47.75         # US Connecticut
+84.239.47.82         # US Connecticut
+84.239.17.30         # US Iowa
+149.88.109.141       # DK Streaming Optimized
+188.126.94.57        # DK Streaming Optimized
+149.88.109.152       # DK Streaming Optimized
+45.154.154.7         # Uruguay
+149.40.50.14         # US Massachusetts
+84.239.25.132        # US Nebraska
+84.239.41.18         # US New Hampshire
+84.239.48.17         # US North Dakota
+202.125.43.14        # AU Brisbane
+84.239.7.145         # US South Carolina
+45.154.154.20        # Uruguay
+84.239.25.15         # US Minnesota
+84.239.12.15         # US West Virginia
+188.126.89.6         # FI Streaming Optimized
+84.239.17.25         # US Iowa
+84.239.17.9          # US Iowa
+84.239.16.190        # US Missouri
+146.70.11.20         # Chile
+188.126.94.54        # DK Streaming Optimized
+149.88.109.156       # DK Streaming Optimized
+173.239.249.23       # Ecuador
+173.239.249.51       # Ecuador
+158.173.21.7         # NL Netherlands Streaming Optimized
+84.239.48.133        # US Oregon
+149.40.50.49         # US Massachusetts
+149.40.50.9          # US Massachusetts
+154.47.16.212        # Colombia
+102.129.232.203      # US West Streaming Optimized
+84.239.12.8          # US West Virginia
+149.102.247.233      # Croatia
+154.47.29.145        # Croatia
+45.154.152.29        # Peru
+84.239.10.147        # US Virginia
+98.159.36.150        # Bosnia And Herzegovina
+188.126.94.58        # DK Streaming Optimized
+84.239.43.5          # US Baltimore
+84.239.43.39         # US Baltimore
+84.239.47.69         # US Connecticut
+84.239.47.29         # US Connecticut
+84.239.17.131        # US Michigan
+84.239.16.171        # US Missouri
+84.239.47.136        # US Montana
+84.239.47.141        # US Montana
+84.239.41.193        # US Pennsylvania
+84.239.43.152        # US Wilmington
+223.252.34.49        # AU Brisbane
+173.239.249.47       # Ecuador
+173.239.249.56       # Ecuador
+149.22.87.153        # JP Streaming Optimized
+84.239.48.147        # US Oregon
+173.239.203.192      # Australia Streaming Optimized
+84.239.7.158         # US South Carolina
