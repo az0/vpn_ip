@@ -935,7 +935,6 @@
 185.253.160.6        # Armenia
 156.146.60.130       # Austria
 188.215.235.120      # Cambodia
-212.102.57.67        # DE Frankfurt
 212.102.57.84        # DE Frankfurt
 165.231.182.7        # Estonia
 165.231.182.118      # Estonia
@@ -1693,7 +1692,6 @@
 212.102.39.68        # Czech Republic
 212.102.39.154       # Czech Republic
 212.102.57.16        # DE Frankfurt
-138.199.18.132       # DE Frankfurt
 45.88.97.55          # DE Frankfurt
 91.90.120.155        # Greenland
 91.90.122.25         # Liechtenstein
@@ -2876,7 +2874,6 @@
 181.214.153.58       # CA Vancouver
 181.214.153.118      # CA Vancouver
 212.102.57.19        # DE Frankfurt
-212.102.57.13        # DE Frankfurt
 138.199.18.154       # DE Frankfurt
 165.231.182.26       # Estonia
 91.90.122.5          # Liechtenstein
@@ -5082,6 +5079,7 @@
 45.133.172.26        # UK Manchester
 77.81.142.108        # Mexico
 77.81.142.53         # Mexico
+181.214.206.73       # Netherlands
 191.96.227.97        # US New York
 143.244.48.24        # US California
 102.129.153.145      # US Florida
@@ -5644,7 +5642,6 @@
 179.61.228.134       # AU Perth
 212.102.57.166       # DE Frankfurt
 212.102.57.161       # DE Frankfurt
-212.102.57.212       # DE Frankfurt
 77.81.142.66         # Mexico
 77.81.142.70         # Mexico
 91.90.126.6          # Panama
@@ -6143,6 +6140,7 @@
 102.129.235.186      # US Washington Dc
 212.102.59.222       # US Chicago
 181.214.165.125      # US Chicago
+212.102.59.220       # US Chicago
 102.129.153.79       # US Florida
 191.96.106.140       # US California
 37.19.221.5          # US Houston
@@ -6432,7 +6430,6 @@
 191.96.106.23        # US California
 191.96.36.137        # CA Toronto
 138.199.18.159       # DE Frankfurt
-195.181.170.231      # DE Frankfurt
 195.78.54.67         # Netherlands
 195.78.54.79         # Netherlands
 45.133.172.29        # UK Manchester
@@ -6503,7 +6500,6 @@
 181.215.176.38       # UK London
 179.61.197.85        # CA Toronto
 191.96.36.181        # CA Toronto
-45.88.97.25          # DE Frankfurt
 102.129.153.14       # US Florida
 191.96.227.27        # US New York
 102.129.235.90       # US Washington Dc
@@ -6642,6 +6638,7 @@
 79.142.79.32         # Switzerland
 191.96.227.125       # US New York
 193.239.84.59        # UK Manchester
+181.214.206.144      # Netherlands
 191.96.168.87        # Netherlands
 179.61.240.18        # New Zealand
 181.214.164.93       # US Chicago
@@ -6663,7 +6660,6 @@
 143.244.49.4         # US California
 191.96.227.81        # US New York
 140.228.21.104       # CA Montreal
-45.88.97.52          # DE Frankfurt
 138.199.18.80        # DE Frankfurt
 181.214.166.201      # US Chicago
 102.129.152.84       # US Florida
@@ -6701,7 +6697,6 @@
 181.214.166.68       # US Chicago
 191.96.227.118       # US New York
 191.96.36.36         # CA Toronto
-45.88.97.45          # DE Frankfurt
 79.142.79.88         # Switzerland
 143.244.49.9         # US California
 181.41.206.137       # US Denver
@@ -6917,6 +6912,7 @@
 191.96.37.97         # US Seattle
 191.96.37.149        # US Seattle
 102.129.232.240      # US Silicon Valley
+181.41.202.179       # CA Vancouver
 181.41.202.182       # CA Vancouver
 102.129.153.96       # US Florida
 173.239.226.166      # US Las Vegas
@@ -8221,7 +8217,6 @@
 181.215.182.214      # US Texas
 181.214.164.50       # US Chicago
 181.214.164.5        # US Chicago
-212.102.57.96        # DE Frankfurt
 140.228.21.220       # CA Montreal
 191.101.61.238       # US Las Vegas
 181.215.182.206      # US Texas
@@ -8522,6 +8517,7 @@
 191.96.150.93        # US New York
 102.129.232.83       # US Silicon Valley
 102.129.232.225      # US Silicon Valley
+181.214.206.91       # Netherlands
 212.102.59.186       # US Chicago
 102.129.234.132      # US Texas
 140.228.21.82        # CA Montreal
@@ -9206,7 +9202,6 @@
 216.24.213.18        # DE Frankfurt
 216.24.213.40        # DE Frankfurt
 216.24.213.44        # DE Frankfurt
-216.24.213.9         # DE Frankfurt
 216.24.213.21        # DE Frankfurt
 216.24.213.31        # DE Frankfurt
 216.24.213.50        # DE Frankfurt
@@ -9214,7 +9209,6 @@
 216.24.213.37        # DE Frankfurt
 216.24.213.22        # DE Frankfurt
 216.24.213.47        # DE Frankfurt
-216.24.213.30        # DE Frankfurt
 216.24.213.34        # DE Frankfurt
 191.101.157.249      # DE Berlin
 191.101.157.226      # DE Berlin
@@ -9855,7 +9849,6 @@
 84.247.105.223       # CA Montreal
 84.247.105.206       # CA Montreal
 84.247.105.253       # CA Montreal
-84.247.105.233       # CA Montreal
 84.247.105.176       # CA Montreal
 84.247.105.203       # CA Montreal
 84.247.105.252       # CA Montreal
@@ -11027,15 +11020,6 @@
 156.146.60.152       # Austria
 156.146.60.147       # Austria
 156.146.60.155       # Austria
-79.127.181.38        # Greece
-79.127.181.51        # Greece
-79.127.181.8         # Greece
-79.127.181.21        # Greece
-79.127.181.50        # Greece
-79.127.181.17        # Greece
-79.127.181.46        # Greece
-79.127.181.55        # Greece
-79.127.181.9         # Greece
 79.127.181.4         # Greece
 45.133.193.59        # Iceland
 45.133.193.52        # Iceland
@@ -11049,42 +11033,7 @@
 45.133.193.53        # Iceland
 45.133.193.55        # Iceland
 45.133.193.60        # Iceland
-79.127.181.37        # Greece
-79.127.181.59        # Greece
-79.127.181.30        # Greece
-79.127.181.33        # Greece
-79.127.181.44        # Greece
-79.127.181.25        # Greece
-79.127.181.15        # Greece
-79.127.181.53        # Greece
-79.127.181.28        # Greece
-79.127.181.39        # Greece
-79.127.181.48        # Greece
-79.127.181.56        # Greece
-79.127.181.10        # Greece
-79.127.181.6         # Greece
-79.127.181.47        # Greece
-79.127.181.27        # Greece
-79.127.181.7         # Greece
-79.127.181.20        # Greece
-79.127.181.52        # Greece
-79.127.181.2         # Greece
-79.127.181.16        # Greece
-79.127.181.36        # Greece
-79.127.181.22        # Greece
-79.127.181.12        # Greece
-79.127.181.32        # Greece
-79.127.181.24        # Greece
-79.127.181.40        # Greece
-79.127.181.29        # Greece
-79.127.181.11        # Greece
-79.127.181.41        # Greece
-79.127.181.42        # Greece
-79.127.181.3         # Greece
-79.127.181.45        # Greece
-79.127.181.14        # Greece
 79.127.181.63        # Greece
-79.127.181.23        # Greece
 98.159.234.188       # UK Southampton
 98.159.234.186       # UK Southampton
 98.159.234.198       # UK Southampton
@@ -13086,10 +13035,8 @@
 212.56.49.118        # CA Montreal
 212.56.49.87         # CA Montreal
 212.56.49.79         # CA Montreal
-212.56.49.101        # CA Montreal
 212.56.49.113        # CA Montreal
 212.56.49.84         # CA Montreal
-212.56.49.103        # CA Montreal
 212.56.49.77         # CA Montreal
 212.56.49.111        # CA Montreal
 212.56.49.116        # CA Montreal
@@ -13098,7 +13045,6 @@
 212.56.49.72         # CA Montreal
 212.56.49.109        # CA Montreal
 212.56.49.94         # CA Montreal
-212.56.49.100        # CA Montreal
 212.56.49.67         # CA Montreal
 212.56.49.95         # CA Montreal
 212.56.49.108        # CA Montreal
@@ -13125,7 +13071,6 @@
 212.56.49.82         # CA Montreal
 212.56.49.129        # CA Montreal
 212.56.49.97         # CA Montreal
-212.56.49.104        # CA Montreal
 212.56.49.120        # CA Montreal
 212.56.49.106        # CA Montreal
 212.56.49.70         # CA Montreal
@@ -14558,7 +14503,6 @@
 212.32.49.119        # US Atlanta
 138.199.19.49        # DE Frankfurt
 138.199.19.33        # DE Frankfurt
-138.199.19.54        # DE Frankfurt
 138.199.19.38        # DE Frankfurt
 138.199.19.29        # DE Frankfurt
 138.199.19.71        # DE Frankfurt
@@ -14624,7 +14568,6 @@
 138.199.19.28        # DE Frankfurt
 151.241.122.20       # US East
 151.241.122.16       # US East
-138.199.19.40        # DE Frankfurt
 151.241.122.32       # US East
 151.241.123.48       # US Atlanta
 138.199.19.26        # DE Frankfurt
@@ -14636,7 +14579,6 @@
 138.199.19.21        # DE Frankfurt
 138.199.19.56        # DE Frankfurt
 138.199.19.35        # DE Frankfurt
-138.199.19.63        # DE Frankfurt
 212.32.49.217        # US Atlanta
 151.241.125.87       # US Atlanta
 151.241.122.29       # US East
@@ -14648,7 +14590,6 @@
 212.32.49.99         # US Atlanta
 151.241.122.12       # US East
 212.32.49.35         # US Atlanta
-138.199.19.60        # DE Frankfurt
 212.32.49.82         # US Atlanta
 212.32.49.136        # US Atlanta
 212.32.49.113        # US Atlanta
@@ -16314,8 +16255,6 @@
 220.158.199.145      # AU Sydney
 45.130.141.159       # AU Melbourne
 45.130.141.134       # AU Melbourne
-173.244.62.41        # AU Adelaide
-173.244.62.57        # AU Adelaide
 202.125.43.80        # AU Brisbane
 202.125.43.83        # AU Brisbane
 202.125.43.2         # AU Brisbane
@@ -16693,8 +16632,6 @@
 84.239.50.5          # US South Dakota
 84.239.10.137        # US Virginia
 84.239.10.143        # US Virginia
-173.244.62.47        # AU Adelaide
-173.244.62.55        # AU Adelaide
 202.125.43.17        # AU Brisbane
 223.252.34.57        # AU Brisbane
 202.125.43.81        # AU Brisbane
@@ -16853,8 +16790,6 @@
 84.239.43.148        # US Wilmington
 84.239.43.188        # US Wilmington
 84.239.43.157        # US Wilmington
-173.244.62.43        # AU Adelaide
-173.244.62.34        # AU Adelaide
 173.239.203.201      # Australia Streaming Optimized
 64.64.99.30          # Bolivia
 154.47.16.99         # Colombia
@@ -16970,8 +16905,6 @@
 84.239.16.135        # US Missouri
 84.239.33.133        # US Oklahoma
 84.239.33.145        # US Oklahoma
-173.244.62.40        # AU Adelaide
-173.244.62.53        # AU Adelaide
 149.102.247.250      # Croatia
 154.47.29.148        # Croatia
 173.239.201.195      # Indonesia
@@ -17151,7 +17084,6 @@
 84.239.7.150         # US South Carolina
 84.239.50.134        # US Wyoming
 84.239.50.133        # US Wyoming
-173.244.62.33        # AU Adelaide
 149.88.109.150       # DK Streaming Optimized
 173.239.249.36       # Ecuador
 173.239.249.8        # Ecuador
@@ -17274,8 +17206,6 @@
 84.239.17.8          # US Iowa
 84.239.16.184        # US Missouri
 84.239.48.19         # US North Dakota
-173.244.62.45        # AU Adelaide
-173.244.62.52        # AU Adelaide
 173.239.203.205      # Australia Streaming Optimized
 173.239.203.197      # Australia Streaming Optimized
 64.64.99.10          # Bolivia
@@ -17378,8 +17308,6 @@
 84.239.41.203        # US Pennsylvania
 84.239.41.142        # US Pennsylvania
 84.239.27.33         # US Wisconsin
-173.244.62.59        # AU Adelaide
-173.244.62.44        # AU Adelaide
 146.70.10.31         # Costa Rica
 188.126.94.56        # DK Streaming Optimized
 149.88.109.153       # DK Streaming Optimized
@@ -17390,7 +17318,6 @@
 149.40.50.50         # US Massachusetts
 84.239.45.12         # US Rhode Island
 149.22.87.150        # JP Streaming Optimized
-173.244.62.35        # AU Adelaide
 146.70.10.36         # Costa Rica
 173.239.249.20       # Ecuador
 138.199.54.44        # IT Streaming Optimized
@@ -17448,7 +17375,6 @@
 84.239.47.83         # US Connecticut
 84.239.47.14         # US Connecticut
 84.239.16.189        # US Missouri
-173.244.62.54        # AU Adelaide
 173.239.201.196      # Indonesia
 84.239.43.60         # US Baltimore
 45.152.150.14        # US Louisiana
@@ -17555,7 +17481,6 @@
 84.239.10.140        # US Virginia
 84.239.27.25         # US Wisconsin
 84.239.27.41         # US Wisconsin
-173.244.62.42        # AU Adelaide
 154.47.16.201        # Colombia
 154.47.16.111        # Colombia
 154.47.16.206        # Colombia
@@ -17731,8 +17656,6 @@
 158.173.23.70        # UK Streaming Optimized
 158.173.23.132       # UK Streaming Optimized
 84.239.17.14         # US Iowa
-173.244.62.46        # AU Adelaide
-173.244.62.60        # AU Adelaide
 98.159.36.146        # Bosnia And Herzegovina
 146.70.15.45         # Malaysia
 45.154.152.4         # Peru
@@ -17800,7 +17723,6 @@
 84.239.41.140        # US Pennsylvania
 84.239.7.135         # US South Carolina
 84.239.10.149        # US Virginia
-173.244.62.58        # AU Adelaide
 138.199.54.46        # IT Streaming Optimized
 138.199.54.39        # IT Streaming Optimized
 158.173.23.129       # UK Streaming Optimized
@@ -17926,7 +17848,6 @@
 84.239.48.147        # US Oregon
 173.239.203.192      # Australia Streaming Optimized
 84.239.7.158         # US South Carolina
-173.244.62.49        # AU Adelaide
 149.102.247.236      # Croatia
 158.173.21.6         # NL Netherlands Streaming Optimized
 158.173.3.244        # NL Netherlands Streaming Optimized
@@ -17983,7 +17904,6 @@
 95.134.63.182        # DE Germany Streaming Optimized
 173.239.221.12       # Guatemala
 149.40.50.36         # US Massachusetts
-173.244.62.48        # AU Adelaide
 223.252.34.45        # AU Brisbane
 146.70.11.22         # Chile
 146.70.11.32         # Chile
@@ -18006,7 +17926,6 @@
 158.173.21.8         # NL Netherlands Streaming Optimized
 84.239.43.48         # US Baltimore
 84.239.12.7          # US West Virginia
-173.244.62.38        # AU Adelaide
 173.239.203.203      # Australia Streaming Optimized
 46.246.3.221         # SE Streaming Optimized
 84.239.17.16         # US Iowa
@@ -18038,8 +17957,6 @@
 84.239.41.17         # US New Hampshire
 95.134.63.195        # DE Germany Streaming Optimized
 188.126.89.24        # FI Streaming Optimized
-173.244.62.37        # AU Adelaide
-173.244.62.32        # AU Adelaide
 223.252.34.59        # AU Brisbane
 84.239.27.42         # US Wisconsin
 149.22.87.155        # JP Streaming Optimized
@@ -18146,7 +18063,6 @@
 45.154.154.47        # Uruguay
 84.239.17.147        # US Michigan
 158.173.3.239        # NL Netherlands Streaming Optimized
-173.244.62.56        # AU Adelaide
 84.239.47.85         # US Connecticut
 84.239.12.30         # US West Virginia
 158.173.23.133       # UK Streaming Optimized
@@ -18200,7 +18116,6 @@
 158.173.24.15        # UK Streaming Optimized
 158.173.23.147       # UK Streaming Optimized
 84.239.43.147        # US Wilmington
-173.244.62.50        # AU Adelaide
 202.125.43.91        # AU Brisbane
 149.22.87.148        # JP Streaming Optimized
 46.246.3.225         # SE Streaming Optimized
@@ -18210,7 +18125,6 @@
 173.239.203.195      # Australia Streaming Optimized
 158.173.24.40        # UK Streaming Optimized
 158.173.23.120       # UK Streaming Optimized
-173.244.62.39        # AU Adelaide
 84.239.41.23         # US New Hampshire
 149.22.87.146        # JP Streaming Optimized
 158.173.24.30        # UK Streaming Optimized
@@ -18301,7 +18215,6 @@
 84.239.27.163        # US Ohio
 84.239.27.156        # US Ohio
 95.134.63.187        # DE Germany Streaming Optimized
-173.244.62.51        # AU Adelaide
 84.239.27.157        # US Ohio
 188.126.94.61        # DK Streaming Optimized
 149.40.50.44         # US Massachusetts
@@ -18311,7 +18224,6 @@
 84.239.43.3          # US Baltimore
 158.173.24.51        # UK Streaming Optimized
 158.173.23.150       # UK Streaming Optimized
-173.244.62.36        # AU Adelaide
 146.70.11.17         # Chile
 95.134.63.217        # DE Germany Streaming Optimized
 102.129.232.196      # US West Streaming Optimized
