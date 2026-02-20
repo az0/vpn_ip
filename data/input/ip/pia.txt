@@ -224,11 +224,11 @@
 98.159.234.120       # UK Southampton
 102.129.145.137      # US California
 102.129.145.152      # US California
+191.96.150.137       # US New York
 94.156.14.24         # Bulgaria
 94.156.14.28         # Bulgaria
 94.156.14.9          # Bulgaria
 212.102.39.145       # Czech Republic
-45.88.97.13          # DE Frankfurt
 188.126.94.81        # Denmark
 188.126.94.83        # Denmark
 188.126.94.93        # Denmark
@@ -642,7 +642,6 @@
 140.228.24.81        # CA Montreal
 179.61.197.8         # CA Toronto
 179.61.197.13        # CA Toronto
-195.181.170.238      # DE Frankfurt
 188.126.94.73        # Denmark
 188.126.94.169       # Denmark
 188.214.122.116      # Egypt
@@ -884,7 +883,6 @@
 179.61.228.105       # AU Perth
 179.61.228.120       # AU Perth
 179.61.228.159       # AU Perth
-212.102.57.142       # DE Frankfurt
 156.146.63.153       # France
 156.146.63.160       # France
 95.181.236.12        # Georgia
@@ -1991,7 +1989,6 @@
 191.96.37.172        # US Seattle
 188.241.177.199      # Brazil
 188.241.177.252      # Brazil
-212.102.57.148       # DE Frankfurt
 138.199.18.78        # DE Frankfurt
 46.246.106.41        # Denmark
 188.126.94.94        # Denmark
@@ -2628,7 +2625,6 @@
 95.181.238.106       # Bahamas
 181.214.218.53       # Belgium
 181.214.218.55       # Belgium
-212.102.57.139       # DE Frankfurt
 77.81.142.19         # Mexico
 179.61.240.131       # New Zealand
 102.129.232.145      # US Silicon Valley
@@ -2829,7 +2825,6 @@
 154.16.81.219        # AU Sydney
 188.241.177.109      # Brazil
 138.199.18.82        # DE Frankfurt
-212.102.57.31        # DE Frankfurt
 188.126.89.151       # Finland
 188.126.89.154       # Finland
 156.146.41.22        # Italy
@@ -3025,7 +3020,6 @@
 188.241.177.52       # Brazil
 188.241.177.251      # Brazil
 191.101.157.181      # DE Berlin
-212.102.57.22        # DE Frankfurt
 188.126.89.73        # Finland
 156.146.41.194       # Italy
 77.81.142.231        # Mexico
@@ -3120,7 +3114,6 @@
 156.146.39.46        # US Texas
 181.215.182.149      # US Texas
 138.199.18.64        # DE Frankfurt
-45.88.97.32          # DE Frankfurt
 77.81.142.76         # Mexico
 77.81.142.36         # Mexico
 77.81.142.240        # Mexico
@@ -3189,8 +3182,6 @@
 154.47.30.42         # South Africa
 79.142.79.28         # Switzerland
 176.125.228.12       # Algeria
-45.88.97.46          # DE Frankfurt
-138.199.18.133       # DE Frankfurt
 91.90.124.10         # Isle Of Man
 179.61.240.11        # New Zealand
 212.102.49.79        # Spain
@@ -3460,7 +3451,6 @@
 181.41.206.77        # US Denver
 181.41.202.102       # CA Vancouver
 191.101.157.108      # DE Berlin
-212.102.57.210       # DE Frankfurt
 179.61.240.91        # New Zealand
 79.142.79.53         # Switzerland
 45.133.172.76        # UK Manchester
@@ -3504,8 +3494,6 @@
 191.96.67.178        # US Houston
 191.96.67.119        # US Houston
 176.125.228.38       # Algeria
-212.102.57.168       # DE Frankfurt
-138.199.18.147       # DE Frankfurt
 156.146.63.143       # France
 176.125.230.28       # Malta
 46.246.122.79        # Norway
@@ -3573,7 +3561,6 @@
 191.96.37.57         # US Seattle
 102.129.234.223      # US Texas
 102.129.234.10       # US Texas
-138.199.18.150       # DE Frankfurt
 188.126.89.40        # Finland
 181.214.206.157      # Netherlands
 195.78.54.74         # Netherlands
@@ -3640,7 +3627,6 @@
 181.214.218.42       # Belgium
 191.96.36.110        # CA Toronto
 181.214.153.74       # CA Vancouver
-45.88.97.44          # DE Frankfurt
 77.81.142.41         # Mexico
 194.110.13.43        # UK London
 194.110.13.38        # UK London
@@ -3799,7 +3785,6 @@
 102.129.234.175      # US Texas
 140.228.24.167       # CA Montreal
 138.199.18.84        # DE Frankfurt
-212.102.57.155       # DE Frankfurt
 188.126.94.87        # Denmark
 188.126.94.100       # Denmark
 77.81.142.110        # Mexico
@@ -3872,6 +3857,7 @@
 45.133.172.223       # UK Manchester
 102.129.234.70       # US Texas
 102.129.235.203      # US Washington Dc
+102.129.235.219      # US Washington Dc
 188.126.89.87        # Finland
 188.126.89.67        # Finland
 191.96.168.182       # Netherlands
@@ -3940,8 +3926,6 @@
 191.96.255.88        # US Silicon Valley
 181.41.202.134       # CA Vancouver
 181.41.202.151       # CA Vancouver
-212.102.57.147       # DE Frankfurt
-212.102.57.164       # DE Frankfurt
 194.110.13.88        # UK London
 37.19.198.100        # US New York
 191.96.150.81        # US New York
@@ -4213,7 +4197,6 @@
 212.102.59.240       # US Chicago
 191.96.37.14         # US Seattle
 179.61.197.17        # CA Toronto
-212.102.57.165       # DE Frankfurt
 37.46.113.202        # Luxembourg
 194.110.13.4         # UK London
 194.110.13.77        # UK London
@@ -4225,7 +4208,6 @@
 77.81.142.42         # Mexico
 77.81.142.64         # Mexico
 191.96.168.205       # Netherlands
-191.96.168.186       # Netherlands
 179.61.228.116       # AU Perth
 179.61.228.38        # AU Perth
 45.88.97.245         # DE Frankfurt
@@ -4494,7 +4476,6 @@
 191.96.37.182        # US Seattle
 191.96.37.30         # US Seattle
 191.96.103.93        # US Seattle
-45.88.97.56          # DE Frankfurt
 188.126.89.50        # Finland
 195.78.54.94         # Netherlands
 194.110.13.89        # UK London
@@ -4526,7 +4507,6 @@
 46.246.122.124       # Norway
 212.102.59.134       # US Chicago
 191.96.36.82         # CA Toronto
-212.102.57.160       # DE Frankfurt
 77.81.142.69         # Mexico
 181.215.176.58       # UK London
 181.215.176.85       # UK London
@@ -4544,7 +4524,6 @@
 37.19.221.45         # US Houston
 156.146.39.141       # US Texas
 181.215.182.157      # US Texas
-45.88.97.35          # DE Frankfurt
 138.199.18.68        # DE Frankfurt
 79.142.79.73         # Switzerland
 181.215.176.9        # UK London
@@ -4577,8 +4556,6 @@
 102.129.252.71       # US Silicon Valley
 102.129.232.165      # US Silicon Valley
 191.101.157.204      # DE Berlin
-45.88.97.17          # DE Frankfurt
-45.88.97.47          # DE Frankfurt
 188.126.94.124       # Denmark
 181.214.206.74       # Netherlands
 212.102.49.214       # Spain
@@ -4611,9 +4588,7 @@
 181.41.206.51        # US Denver
 154.16.105.130       # US Las Vegas
 212.102.39.213       # Czech Republic
-45.88.97.38          # DE Frankfurt
 45.88.97.251         # DE Frankfurt
-212.102.57.159       # DE Frankfurt
 45.133.172.14        # UK Manchester
 191.96.106.29        # US California
 181.41.206.181       # US Denver
@@ -4915,7 +4890,6 @@
 102.129.234.226      # US Texas
 181.215.182.6        # US Texas
 179.61.228.78        # AU Perth
-212.102.57.162       # DE Frankfurt
 45.133.172.47        # UK Manchester
 45.133.172.248       # UK Manchester
 193.239.84.75        # UK Manchester
@@ -4982,7 +4956,6 @@
 156.146.39.139       # US Texas
 95.181.238.88        # Bahamas
 140.228.21.77        # CA Montreal
-212.102.57.143       # DE Frankfurt
 46.246.122.189       # Norway
 212.102.39.207       # Czech Republic
 188.126.94.185       # Denmark
@@ -5232,7 +5205,6 @@
 102.129.234.96       # US Texas
 181.215.182.110      # US Texas
 179.61.228.8         # AU Perth
-45.88.97.43          # DE Frankfurt
 191.96.168.108       # Netherlands
 195.78.54.200        # Netherlands
 102.129.152.105      # US Florida
@@ -5343,7 +5315,6 @@
 179.61.228.12        # AU Perth
 140.228.21.108       # CA Montreal
 140.228.24.171       # CA Montreal
-212.102.57.158       # DE Frankfurt
 191.96.106.38        # US California
 191.96.106.20        # US California
 181.41.206.215       # US Denver
@@ -5549,7 +5520,6 @@
 102.129.235.58       # US Washington Dc
 179.61.228.79        # AU Perth
 179.61.228.134       # AU Perth
-212.102.57.161       # DE Frankfurt
 77.81.142.66         # Mexico
 77.81.142.70         # Mexico
 91.90.126.6          # Panama
@@ -5593,7 +5563,6 @@
 37.19.221.9          # US Houston
 143.244.48.206       # US Las Vegas
 173.239.226.218      # US Las Vegas
-212.102.57.10        # DE Frankfurt
 181.215.176.73       # UK London
 181.214.165.15       # US Chicago
 181.214.165.131      # US Chicago
@@ -5647,7 +5616,6 @@
 191.96.255.97        # US Silicon Valley
 102.129.232.71       # US Silicon Valley
 102.129.235.247      # US Washington Dc
-212.102.57.145       # DE Frankfurt
 77.81.142.84         # Mexico
 77.81.142.88         # Mexico
 98.159.234.66        # UK Southampton
@@ -5694,7 +5662,6 @@
 181.214.165.59       # US Chicago
 191.96.227.52        # US New York
 191.96.150.149       # US New York
-212.102.57.219       # DE Frankfurt
 98.159.234.114       # UK Southampton
 191.96.37.13         # US Seattle
 102.129.235.176      # US Washington Dc
@@ -5821,7 +5788,6 @@
 179.61.197.27        # CA Toronto
 191.96.227.83        # US New York
 191.96.227.62        # US New York
-45.88.97.22          # DE Frankfurt
 181.41.206.209       # US Denver
 143.244.34.22        # US Florida
 173.239.226.224      # US Las Vegas
@@ -6002,6 +5968,7 @@
 181.41.206.187       # US Denver
 181.41.206.52        # US Denver
 37.19.221.44         # US Houston
+191.96.150.130       # US New York
 191.96.37.196        # US Seattle
 102.129.234.229      # US Texas
 156.146.39.133       # US Texas
@@ -6128,7 +6095,6 @@
 191.96.36.156        # CA Toronto
 102.129.153.75       # US Florida
 143.244.34.148       # US Florida
-138.199.18.143       # DE Frankfurt
 191.96.168.164       # Netherlands
 195.78.54.66         # Netherlands
 179.61.240.177       # New Zealand
@@ -6185,7 +6151,6 @@
 45.133.172.204       # UK Manchester
 181.214.164.164      # US Chicago
 154.16.81.210        # AU Sydney
-45.88.97.15          # DE Frankfurt
 181.214.166.194      # US Chicago
 181.214.166.157      # US Chicago
 181.214.164.210      # US Chicago
@@ -6505,7 +6470,6 @@
 179.61.197.119       # CA Toronto
 191.96.36.96         # CA Toronto
 191.96.36.100        # CA Toronto
-45.88.97.12          # DE Frankfurt
 102.129.152.115      # US Florida
 181.215.182.7        # US Texas
 191.96.168.95        # Netherlands
@@ -6657,7 +6621,6 @@
 181.214.166.72       # US Chicago
 102.129.152.179      # US Florida
 102.129.235.222      # US Washington Dc
-212.102.57.8         # DE Frankfurt
 191.96.168.88        # Netherlands
 191.96.168.79        # Netherlands
 191.96.37.53         # US Seattle
@@ -6692,7 +6655,6 @@
 191.96.106.226       # US California
 191.96.150.73        # US New York
 102.129.234.178      # US Texas
-45.88.97.42          # DE Frankfurt
 181.214.206.60       # Netherlands
 191.96.168.70        # Netherlands
 181.214.153.64       # CA Vancouver
@@ -6925,7 +6887,6 @@
 181.214.165.43       # US Chicago
 37.19.221.15         # US Houston
 154.16.105.113       # US Las Vegas
-191.96.168.188       # Netherlands
 191.96.106.153       # US California
 140.228.21.86        # CA Montreal
 140.228.21.79        # CA Montreal
@@ -6999,7 +6960,6 @@
 102.129.235.125      # US Washington Dc
 140.228.24.111       # CA Montreal
 140.228.24.127       # CA Montreal
-45.88.97.28          # DE Frankfurt
 143.244.48.209       # US Las Vegas
 143.244.48.211       # US Las Vegas
 191.96.255.49        # US Silicon Valley
@@ -7274,7 +7234,6 @@
 102.129.234.40       # US Texas
 102.129.235.204      # US Washington Dc
 102.129.235.249      # US Washington Dc
-45.88.97.49          # DE Frankfurt
 191.96.37.205        # US Seattle
 191.96.227.121       # US New York
 181.215.182.61       # US Texas
@@ -7530,7 +7489,6 @@
 143.244.48.151       # US Las Vegas
 143.244.48.208       # US Las Vegas
 191.96.255.115       # US Silicon Valley
-212.102.57.71        # DE Frankfurt
 194.110.13.90        # UK London
 191.96.36.171        # CA Toronto
 181.214.165.81       # US Chicago
@@ -7788,7 +7746,6 @@
 102.129.232.31       # US Silicon Valley
 181.41.202.136       # CA Vancouver
 195.78.54.188        # Netherlands
-45.88.97.27          # DE Frankfurt
 191.96.227.25        # US New York
 102.129.232.67       # US Silicon Valley
 102.129.232.75       # US Silicon Valley
@@ -7797,7 +7754,6 @@
 191.96.255.223       # US Silicon Valley
 191.96.227.93        # US New York
 156.146.39.59        # US Texas
-45.88.97.48          # DE Frankfurt
 79.142.79.56         # Switzerland
 181.214.166.100      # US Chicago
 191.96.227.99        # US New York
@@ -8078,7 +8034,6 @@
 191.96.37.152        # US Seattle
 143.244.34.191       # US Florida
 181.214.153.93       # CA Vancouver
-45.88.97.41          # DE Frankfurt
 102.129.234.237      # US Texas
 179.61.197.5         # CA Toronto
 179.61.197.26        # CA Toronto
@@ -8195,6 +8150,7 @@
 191.96.168.96        # Netherlands
 181.214.164.128      # US Chicago
 140.228.24.125       # CA Montreal
+191.96.150.135       # US New York
 181.214.164.42       # US Chicago
 181.214.165.67       # US Chicago
 181.214.153.86       # CA Vancouver
@@ -8245,7 +8201,6 @@
 181.215.182.140      # US Texas
 181.214.165.174      # US Chicago
 181.214.166.155      # US Chicago
-212.102.57.144       # DE Frankfurt
 143.244.34.151       # US Florida
 102.129.232.161      # US Silicon Valley
 102.129.232.144      # US Silicon Valley
@@ -8459,6 +8414,7 @@
 37.19.197.212        # US East
 143.244.34.189       # US Florida
 181.214.164.22       # US Chicago
+212.102.59.139       # US Chicago
 181.215.182.107      # US Texas
 191.96.255.201       # US Silicon Valley
 191.96.255.210       # US Silicon Valley
@@ -8702,6 +8658,7 @@
 181.214.166.8        # US Chicago
 181.214.166.42       # US Chicago
 181.214.164.24       # US Chicago
+191.96.150.142       # US New York
 179.61.197.44        # CA Toronto
 179.61.197.61        # CA Toronto
 191.96.255.7         # US Silicon Valley
@@ -9064,10 +9021,6 @@
 37.19.210.173        # US Denver
 37.19.210.88         # US Denver
 37.19.210.182        # US Denver
-216.24.213.42        # DE Frankfurt
-216.24.213.35        # DE Frankfurt
-216.24.213.33        # DE Frankfurt
-216.24.213.40        # DE Frankfurt
 191.101.157.249      # DE Berlin
 191.101.157.226      # DE Berlin
 191.101.157.250      # DE Berlin
@@ -9689,7 +9642,6 @@
 84.247.105.220       # CA Montreal
 84.247.105.249       # CA Montreal
 84.247.105.170       # CA Montreal
-84.247.105.199       # CA Montreal
 84.247.105.244       # CA Montreal
 84.247.105.219       # CA Montreal
 84.247.105.213       # CA Montreal
@@ -9746,7 +9698,6 @@
 84.247.105.188       # CA Montreal
 84.247.105.172       # CA Montreal
 84.247.105.194       # CA Montreal
-84.247.105.231       # CA Montreal
 84.247.105.251       # CA Montreal
 84.247.105.215       # CA Montreal
 84.247.105.184       # CA Montreal
@@ -9985,58 +9936,32 @@
 143.244.54.16        # Romania
 143.244.54.20        # Romania
 143.244.54.5         # Romania
-143.244.52.61        # Romania
 143.244.54.4         # Romania
-143.244.52.49        # Romania
 143.244.54.10        # Romania
 143.244.54.9         # Romania
-143.244.52.41        # Romania
 143.244.54.22        # Romania
 143.244.54.31        # Romania
 143.244.54.23        # Romania
-143.244.52.45        # Romania
 143.244.54.27        # Romania
 143.244.54.12        # Romania
-143.244.52.42        # Romania
 143.244.54.26        # Romania
 143.244.54.13        # Romania
 143.244.54.28        # Romania
-143.244.52.36        # Romania
-143.244.52.62        # Romania
-143.244.52.55        # Romania
 143.244.54.8         # Romania
-143.244.52.44        # Romania
-143.244.52.46        # Romania
 143.244.54.21        # Romania
-143.244.52.52        # Romania
-143.244.52.50        # Romania
 143.244.54.19        # Romania
 143.244.54.18        # Romania
 143.244.54.25        # Romania
 143.244.54.30        # Romania
-143.244.52.65        # Romania
 143.244.54.15        # Romania
-143.244.52.37        # Romania
 143.244.52.35        # Romania
 143.244.54.6         # Romania
-143.244.52.48        # Romania
 143.244.54.7         # Romania
-143.244.52.34        # Romania
-143.244.52.51        # Romania
-143.244.52.57        # Romania
-143.244.52.54        # Romania
-143.244.52.38        # Romania
 143.244.54.14        # Romania
 143.244.54.11        # Romania
-143.244.52.43        # Romania
-143.244.52.63        # Romania
 143.244.54.17        # Romania
-143.244.52.47        # Romania
 143.244.54.24        # Romania
-143.244.52.59        # Romania
 143.244.54.29        # Romania
-143.244.52.58        # Romania
-143.244.52.56        # Romania
 149.22.90.231        # Belgium
 149.22.90.228        # Belgium
 149.22.90.242        # Belgium
@@ -10415,8 +10340,8 @@
 149.50.212.179       # US California
 149.50.212.139       # US California
 149.50.212.185       # US California
+149.50.212.164       # US California
 149.50.212.172       # US California
-149.50.212.180       # US California
 149.50.212.145       # US California
 149.50.212.137       # US California
 149.50.212.160       # US California
@@ -12917,18 +12842,6 @@
 212.56.49.120        # CA Montreal
 212.56.49.106        # CA Montreal
 212.56.49.70         # CA Montreal
-95.134.63.231        # DE Frankfurt
-95.134.63.245        # DE Frankfurt
-95.134.63.236        # DE Frankfurt
-95.134.63.248        # DE Frankfurt
-95.134.63.229        # DE Frankfurt
-95.134.63.252        # DE Frankfurt
-95.134.63.220        # DE Frankfurt
-95.134.63.242        # DE Frankfurt
-95.134.63.230        # DE Frankfurt
-95.134.63.234        # DE Frankfurt
-95.134.63.227        # DE Frankfurt
-95.134.63.225        # DE Frankfurt
 91.90.126.22         # Panama
 91.90.126.32         # Panama
 91.90.126.28         # Panama
@@ -12945,16 +12858,11 @@
 91.90.126.31         # Panama
 91.90.126.26         # Panama
 91.90.126.23         # Panama
-95.134.63.247        # DE Frankfurt
-95.134.63.240        # DE Frankfurt
-95.134.63.251        # DE Frankfurt
-95.134.63.246        # DE Frankfurt
 91.90.126.114        # Panama
 91.90.126.126        # Panama
 91.90.126.124        # Panama
 91.90.126.121        # Panama
 91.90.126.116        # Panama
-95.134.63.218        # DE Frankfurt
 91.90.126.117        # Panama
 91.90.126.115        # Panama
 91.90.126.119        # Panama
@@ -12965,9 +12873,7 @@
 91.90.126.110        # Panama
 91.90.126.122        # Panama
 91.90.126.29         # Panama
-95.134.63.232        # DE Frankfurt
 91.90.126.120        # Panama
-95.134.63.223        # DE Frankfurt
 91.90.126.111        # Panama
 91.90.126.125        # Panama
 212.32.50.70         # US Las Vegas
@@ -14312,28 +14218,13 @@
 151.241.123.52       # US Atlanta
 212.32.49.151        # US Atlanta
 212.32.49.218        # US Atlanta
-138.199.19.19        # DE Frankfurt
 212.32.49.237        # US Atlanta
-138.199.19.30        # DE Frankfurt
-138.199.19.37        # DE Frankfurt
-138.199.19.42        # DE Frankfurt
 212.32.49.221        # US Atlanta
 151.241.125.5        # US Atlanta
-138.199.19.46        # DE Frankfurt
-138.199.19.31        # DE Frankfurt
-138.199.19.23        # DE Frankfurt
 212.32.49.119        # US Atlanta
-138.199.19.33        # DE Frankfurt
-138.199.19.29        # DE Frankfurt
-138.199.19.71        # DE Frankfurt
 212.32.49.111        # US Atlanta
 212.32.49.142        # US Atlanta
-138.199.19.44        # DE Frankfurt
 212.32.49.62         # US Atlanta
-138.199.19.18        # DE Frankfurt
-138.199.19.36        # DE Frankfurt
-138.199.19.24        # DE Frankfurt
-138.199.19.39        # DE Frankfurt
 151.241.122.37       # US East
 151.241.122.30       # US East
 151.241.122.36       # US East
@@ -14347,7 +14238,6 @@
 151.241.122.27       # US East
 151.241.122.23       # US East
 151.241.122.34       # US East
-138.199.19.25        # DE Frankfurt
 151.241.122.19       # US East
 151.241.125.20       # US Atlanta
 151.241.122.35       # US East
@@ -14357,27 +14247,19 @@
 151.241.122.28       # US East
 151.241.122.11       # US East
 151.241.122.21       # US East
-138.199.19.32        # DE Frankfurt
 151.241.122.22       # US East
 151.241.122.38       # US East
 151.241.125.14       # US Atlanta
 151.241.122.24       # US East
 212.32.49.59         # US Atlanta
-138.199.19.27        # DE Frankfurt
-138.199.19.20        # DE Frankfurt
 212.32.49.8          # US Atlanta
-138.199.19.28        # DE Frankfurt
 151.241.122.20       # US East
 151.241.122.16       # US East
 151.241.122.32       # US East
 151.241.123.48       # US Atlanta
-138.199.19.26        # DE Frankfurt
 151.241.122.31       # US East
 151.241.122.15       # US East
 212.32.49.36         # US Atlanta
-138.199.19.21        # DE Frankfurt
-138.199.19.56        # DE Frankfurt
-138.199.19.35        # DE Frankfurt
 151.241.125.87       # US Atlanta
 151.241.122.29       # US East
 212.32.49.112        # US Atlanta
@@ -16931,7 +16813,6 @@
 84.239.33.140        # US Oklahoma
 84.239.33.137        # US Oklahoma
 84.239.45.13         # US Rhode Island
-84.239.7.152         # US South Carolina
 84.239.27.3          # US Wisconsin
 84.239.27.18         # US Wisconsin
 146.70.11.24         # Chile
