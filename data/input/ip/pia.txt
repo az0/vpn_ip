@@ -4661,7 +4661,6 @@
 143.244.49.13        # US California
 37.19.197.215        # US East
 102.129.152.70       # US Florida
-102.129.152.106      # US Florida
 191.96.37.153        # US Seattle
 154.16.81.196        # AU Sydney
 181.214.153.70       # CA Vancouver
@@ -6203,7 +6202,6 @@
 191.96.37.122        # US Seattle
 191.96.255.109       # US Silicon Valley
 181.214.166.166      # US Chicago
-181.214.164.205      # US Chicago
 181.41.206.176       # US Denver
 102.129.153.43       # US Florida
 102.129.153.131      # US Florida
@@ -7054,6 +7052,7 @@
 191.101.61.166       # US Las Vegas
 191.101.61.184       # US Las Vegas
 191.96.103.87        # US Seattle
+181.214.206.114      # Netherlands
 45.88.97.220         # DE Frankfurt
 181.214.165.48       # US Chicago
 181.214.164.29       # US Chicago
@@ -7092,7 +7091,6 @@
 191.96.36.84         # CA Toronto
 181.214.164.224      # US Chicago
 181.214.164.198      # US Chicago
-102.129.152.118      # US Florida
 102.129.235.24       # US Washington Dc
 179.61.197.20        # CA Toronto
 191.96.106.157       # US California
@@ -7128,7 +7126,6 @@
 179.61.240.153       # New Zealand
 181.214.164.64       # US Chicago
 191.96.227.20        # US New York
-102.129.152.117      # US Florida
 181.215.182.151      # US Texas
 102.129.145.108      # US California
 191.96.106.196       # US California
@@ -7324,7 +7321,6 @@
 45.133.172.28        # UK Manchester
 37.19.197.240        # US East
 181.214.164.247      # US Chicago
-102.129.152.113      # US Florida
 143.244.34.144       # US Florida
 191.96.37.8          # US Seattle
 195.78.54.87         # Netherlands
@@ -7822,6 +7818,7 @@
 181.214.165.112      # US Chicago
 191.101.61.137       # US Las Vegas
 181.214.206.125      # Netherlands
+181.214.206.97       # Netherlands
 181.214.164.123      # US Chicago
 102.129.152.185      # US Florida
 173.239.226.191      # US Las Vegas
@@ -8474,7 +8471,6 @@
 191.96.255.14        # US Silicon Valley
 181.214.166.126      # US Chicago
 191.96.150.134       # US New York
-102.129.152.119      # US Florida
 191.96.37.183        # US Seattle
 102.129.252.13       # US Silicon Valley
 191.96.255.106       # US Silicon Valley
@@ -8532,6 +8528,7 @@
 181.214.206.132      # Netherlands
 181.214.166.89       # US Chicago
 191.101.61.163       # US Las Vegas
+181.215.182.66       # US Texas
 181.214.206.106      # Netherlands
 154.16.105.120       # US Las Vegas
 102.129.234.201      # US Texas
@@ -8874,7 +8871,6 @@
 140.228.24.226       # CA Montreal
 140.228.24.222       # CA Montreal
 138.199.59.57        # Poland
-140.228.24.192       # CA Montreal
 140.228.24.219       # CA Montreal
 181.214.165.123      # US Chicago
 181.214.166.189      # US Chicago
@@ -8882,19 +8878,18 @@
 140.228.24.223       # CA Montreal
 140.228.24.206       # CA Montreal
 138.199.59.39        # Poland
+140.228.24.198       # CA Montreal
 140.228.24.197       # CA Montreal
 37.19.198.97         # US New York
 140.228.24.234       # CA Montreal
 140.228.24.200       # CA Montreal
 140.228.24.229       # CA Montreal
-140.228.24.212       # CA Montreal
 181.214.166.38       # US Chicago
 143.244.48.219       # US Las Vegas
 140.228.24.215       # CA Montreal
 140.228.24.224       # CA Montreal
 140.228.24.232       # CA Montreal
 140.228.24.217       # CA Montreal
-140.228.24.207       # CA Montreal
 181.41.202.176       # CA Vancouver
 140.228.24.213       # CA Montreal
 140.228.24.216       # CA Montreal
@@ -10225,6 +10220,7 @@
 149.50.212.150       # US California
 149.50.212.171       # US California
 149.50.212.186       # US California
+149.50.212.144       # US California
 149.50.212.178       # US California
 149.50.212.149       # US California
 149.50.212.162       # US California
@@ -14785,6 +14781,7 @@
 158.173.20.16        # Netherlands
 158.173.3.205        # Netherlands
 158.173.153.153      # US Seattle
+158.173.3.117        # Netherlands
 158.173.25.10        # US New York
 158.173.25.39        # US New York
 158.173.21.166       # Netherlands
@@ -17800,3 +17797,14 @@
 84.239.41.158        # US Pennsylvania
 84.239.41.154        # US Pennsylvania
 84.239.41.167        # US Pennsylvania
+84.239.41.165        # US Pennsylvania
+84.239.41.168        # US Pennsylvania
+84.239.41.152        # US Pennsylvania
+84.239.41.162        # US Pennsylvania
+84.239.41.164        # US Pennsylvania
+84.239.41.153        # US Pennsylvania
+84.239.41.151        # US Pennsylvania
+84.239.41.159        # US Pennsylvania
+84.239.41.156        # US Pennsylvania
+84.239.41.160        # US Pennsylvania
+84.239.41.169        # US Pennsylvania
