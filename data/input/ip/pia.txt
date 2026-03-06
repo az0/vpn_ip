@@ -1379,7 +1379,6 @@
 178.175.128.36       # Moldova
 181.214.206.62       # Netherlands
 195.78.54.92         # Netherlands
-195.78.54.104        # Netherlands
 146.70.65.139        # Nigeria
 138.199.59.219       # Poland
 95.181.235.147       # Saudi Arabia
@@ -1612,7 +1611,6 @@
 176.125.230.5        # Malta
 95.181.232.35        # Morocco
 181.214.206.111      # Netherlands
-191.96.168.177       # Netherlands
 179.61.240.4         # New Zealand
 179.61.240.29        # New Zealand
 179.61.240.156       # New Zealand
@@ -3043,6 +3041,7 @@
 77.81.142.236        # Mexico
 181.214.206.128      # Netherlands
 195.78.54.170        # Netherlands
+195.78.54.180        # Netherlands
 95.181.234.27        # Qatar
 212.102.49.202       # Spain
 212.102.49.30        # Spain
@@ -5669,6 +5668,7 @@
 102.129.145.100      # US California
 191.101.61.142       # US Las Vegas
 195.78.54.179        # Netherlands
+195.78.54.183        # Netherlands
 212.102.59.170       # US Chicago
 102.129.153.56       # US Florida
 191.96.150.26        # US New York
@@ -6248,6 +6248,7 @@
 191.96.255.177       # US Silicon Valley
 140.228.24.185       # CA Montreal
 195.78.54.186        # Netherlands
+195.78.54.209        # Netherlands
 138.199.24.25        # Singapore
 45.133.173.21        # UK Manchester
 191.96.106.134       # US California
@@ -6943,6 +6944,7 @@
 102.129.152.11       # US Florida
 191.96.150.96        # US New York
 191.96.150.32        # US New York
+191.96.150.39        # US New York
 179.61.240.160       # New Zealand
 181.215.182.51       # US Texas
 102.129.234.16       # US Texas
@@ -7206,7 +7208,6 @@
 181.214.164.247      # US Chicago
 143.244.34.144       # US Florida
 191.96.37.8          # US Seattle
-195.78.54.87         # Netherlands
 181.215.176.15       # UK London
 143.244.34.28        # US Florida
 191.96.255.189       # US Silicon Valley
@@ -7842,6 +7843,7 @@
 102.129.234.126      # US Texas
 212.102.59.157       # US Chicago
 140.228.24.83        # CA Montreal
+140.228.24.91        # CA Montreal
 140.228.21.208       # CA Montreal
 212.102.59.133       # US Chicago
 195.78.54.103        # Netherlands
@@ -7902,7 +7904,6 @@
 181.214.165.119      # US Chicago
 181.214.164.207      # US Chicago
 102.129.232.109      # US Silicon Valley
-181.214.206.126      # Netherlands
 195.78.54.106        # Netherlands
 191.96.150.77        # US New York
 102.129.153.157      # US Florida
@@ -8075,10 +8076,12 @@
 102.129.153.155      # US Florida
 102.129.234.77       # US Texas
 102.129.235.91       # US Washington Dc
+212.102.59.189       # US Chicago
 181.214.166.58       # US Chicago
 181.214.164.181      # US Chicago
 181.214.164.174      # US Chicago
 181.214.153.72       # CA Vancouver
+195.78.54.208        # Netherlands
 181.214.206.167      # Netherlands
 102.129.235.166      # US Washington Dc
 102.129.252.23       # US Silicon Valley
@@ -8138,7 +8141,6 @@
 181.214.165.163      # US Chicago
 191.96.150.139       # US New York
 212.102.59.181       # US Chicago
-191.96.168.170       # Netherlands
 37.19.198.98         # US New York
 102.129.252.31       # US Silicon Valley
 212.102.59.183       # US Chicago
@@ -8324,7 +8326,6 @@
 102.129.234.148      # US Texas
 195.78.54.162        # Netherlands
 181.214.166.195      # US Chicago
-195.78.54.195        # Netherlands
 195.78.54.190        # Netherlands
 181.214.153.92       # CA Vancouver
 173.239.226.195      # US Las Vegas
@@ -8437,7 +8438,6 @@
 37.19.197.216        # US East
 181.214.164.37       # US Chicago
 191.96.37.208        # US Seattle
-191.96.168.174       # Netherlands
 143.244.48.196       # US Las Vegas
 102.129.232.5        # US Silicon Valley
 194.110.13.17        # UK London
@@ -8544,6 +8544,7 @@
 179.61.197.78        # CA Toronto
 191.96.255.248       # US Silicon Valley
 102.129.252.78       # US Silicon Valley
+191.96.168.59        # Netherlands
 173.239.226.140      # US Las Vegas
 173.239.226.148      # US Las Vegas
 181.215.182.165      # US Texas
@@ -8740,6 +8741,7 @@
 138.199.59.52        # Poland
 140.228.24.209       # CA Montreal
 138.199.59.56        # Poland
+140.228.24.228       # CA Montreal
 181.214.166.218      # US Chicago
 140.228.24.236       # CA Montreal
 140.228.24.221       # CA Montreal
@@ -9793,7 +9795,6 @@
 149.22.87.48         # Japan
 149.22.87.69         # Japan
 149.22.87.77         # Japan
-149.22.87.35         # Japan
 149.22.87.123        # Japan
 149.22.87.31         # Japan
 149.22.87.58         # Japan
@@ -9801,13 +9802,11 @@
 149.22.87.102        # Japan
 149.22.87.59         # Japan
 149.22.87.95         # Japan
-149.22.87.43         # Japan
 149.22.87.87         # Japan
 149.22.87.33         # Japan
 149.22.87.32         # Japan
 149.22.87.99         # Japan
 149.22.87.54         # Japan
-149.22.87.56         # Japan
 149.22.87.106        # Japan
 149.22.87.101        # Japan
 149.22.87.165        # Japan
@@ -9850,12 +9849,10 @@
 149.22.87.98         # Japan
 149.22.87.86         # Japan
 149.22.87.47         # Japan
-149.22.87.38         # Japan
 149.22.87.117        # Japan
 149.22.87.190        # Japan
 149.22.87.107        # Japan
 149.22.87.189        # Japan
-149.22.87.55         # Japan
 149.22.87.26         # Japan
 149.22.87.66         # Japan
 149.22.87.162        # Japan
@@ -9878,7 +9875,6 @@
 149.22.87.24         # Japan
 149.22.87.64         # Japan
 149.22.87.70         # Japan
-149.22.87.45         # Japan
 149.22.87.120        # Japan
 149.22.87.10         # Japan
 149.22.87.179        # Japan
@@ -9898,7 +9894,6 @@
 149.22.87.111        # Japan
 149.22.87.80         # Japan
 149.22.87.68         # Japan
-149.22.87.40         # Japan
 149.22.87.27         # Japan
 149.22.87.96         # Japan
 149.22.87.8          # Japan
@@ -9926,7 +9921,6 @@
 149.22.87.110        # Japan
 149.22.87.82         # Japan
 149.22.87.21         # Japan
-149.22.87.19         # Japan
 138.199.59.236       # Poland
 138.199.59.237       # Poland
 138.199.59.243       # Poland
@@ -11728,7 +11722,6 @@
 212.56.48.83         # Netherlands
 212.56.48.31         # Netherlands
 212.56.48.142        # Netherlands
-212.56.48.147        # Netherlands
 212.56.48.113        # Netherlands
 212.56.48.86         # Netherlands
 212.56.48.73         # Netherlands
