@@ -331,6 +331,7 @@
 143.244.34.199       # US Florida
 102.129.152.67       # US Florida
 102.129.153.152      # US Florida
+154.16.105.42        # US Las Vegas
 95.181.237.22        # Venezuela
 95.181.237.24        # Venezuela
 95.181.237.44        # Venezuela
@@ -1300,6 +1301,7 @@
 181.214.166.231      # US Chicago
 181.41.206.24        # US Denver
 181.41.206.171       # US Denver
+154.16.105.52        # US Las Vegas
 191.96.255.70        # US Silicon Valley
 191.96.255.171       # US Silicon Valley
 102.129.232.241      # US Silicon Valley
@@ -1832,7 +1834,9 @@
 102.129.232.45       # US Silicon Valley
 176.125.228.5        # Algeria
 191.96.67.200        # US Houston
+154.16.105.70        # US Las Vegas
 191.101.61.197       # US Las Vegas
+154.16.105.67        # US Las Vegas
 102.129.234.211      # US Texas
 191.96.36.53         # CA Toronto
 191.96.36.41         # CA Toronto
@@ -1890,6 +1894,7 @@
 188.213.34.84        # Turkey
 102.129.153.134      # US Florida
 102.129.153.177      # US Florida
+154.16.105.66        # US Las Vegas
 173.239.226.199      # US Las Vegas
 102.129.232.70       # US Silicon Valley
 102.129.252.245      # US Silicon Valley
@@ -3102,6 +3107,7 @@
 181.214.166.204      # US Chicago
 102.129.153.62       # US Florida
 102.129.235.101      # US Washington Dc
+195.78.54.192        # Netherlands
 102.129.232.226      # US Silicon Valley
 179.61.197.30        # CA Toronto
 191.96.255.142       # US Silicon Valley
@@ -3192,6 +3198,7 @@
 181.214.166.85       # US Chicago
 181.41.206.73        # US Denver
 191.96.36.47         # CA Toronto
+140.228.24.84        # CA Montreal
 140.228.24.98        # CA Montreal
 102.129.153.208      # US Florida
 191.96.150.78        # US New York
@@ -3402,6 +3409,7 @@
 154.16.105.110       # US Las Vegas
 154.16.105.104       # US Las Vegas
 154.16.105.114       # US Las Vegas
+154.16.105.71        # US Las Vegas
 181.215.182.83       # US Texas
 102.129.252.229      # US Silicon Valley
 102.129.232.148      # US Silicon Valley
@@ -3424,6 +3432,7 @@
 195.78.54.91         # Netherlands
 102.129.152.189      # US Florida
 102.129.153.64       # US Florida
+154.16.105.56        # US Las Vegas
 191.96.255.125       # US Silicon Valley
 191.96.255.130       # US Silicon Valley
 191.96.255.141       # US Silicon Valley
@@ -3781,7 +3790,6 @@
 156.146.60.75        # Austria
 179.61.197.40        # CA Toronto
 191.96.36.67         # CA Toronto
-191.96.168.66        # Netherlands
 181.214.164.7        # US Chicago
 181.214.165.14       # US Chicago
 191.101.61.143       # US Las Vegas
@@ -3896,6 +3904,7 @@
 102.129.232.116      # US Silicon Valley
 191.96.150.11        # US New York
 140.228.21.116       # CA Montreal
+140.228.24.110       # CA Montreal
 191.96.168.210       # Netherlands
 37.19.221.34         # US Houston
 154.16.105.46        # US Las Vegas
@@ -3992,6 +4001,7 @@
 102.129.232.152      # US Silicon Valley
 102.129.252.93       # US Silicon Valley
 102.129.232.95       # US Silicon Valley
+140.228.24.124       # CA Montreal
 140.228.24.109       # CA Montreal
 181.215.182.211      # US Texas
 181.215.182.229      # US Texas
@@ -4374,6 +4384,7 @@
 102.129.235.238      # US Washington Dc
 181.214.164.222      # US Chicago
 181.214.166.243      # US Chicago
+154.16.105.45        # US Las Vegas
 173.239.226.198      # US Las Vegas
 173.239.226.205      # US Las Vegas
 191.96.255.99        # US Silicon Valley
@@ -4470,6 +4481,7 @@
 191.96.255.229       # US Silicon Valley
 102.129.234.177      # US Texas
 191.101.61.225       # US Las Vegas
+154.16.105.43        # US Las Vegas
 191.96.227.145       # US New York
 191.101.157.200      # DE Berlin
 102.129.153.139      # US Florida
@@ -4904,6 +4916,7 @@
 154.16.105.94        # US Las Vegas
 102.129.232.26       # US Silicon Valley
 191.96.255.234       # US Silicon Valley
+195.78.54.178        # Netherlands
 102.129.234.8        # US Texas
 102.129.234.60       # US Texas
 181.214.153.115      # CA Vancouver
@@ -4977,6 +4990,7 @@
 179.61.197.104       # CA Toronto
 181.214.153.116      # CA Vancouver
 181.214.206.145      # Netherlands
+195.78.54.198        # Netherlands
 181.214.165.108      # US Chicago
 102.129.235.181      # US Washington Dc
 181.41.202.154       # CA Vancouver
@@ -5168,7 +5182,6 @@
 156.146.39.25        # US Texas
 191.96.106.240       # US California
 154.16.105.106       # US Las Vegas
-102.129.235.25       # US Washington Dc
 181.214.166.135      # US Chicago
 191.96.227.158       # US New York
 181.41.202.153       # CA Vancouver
@@ -5594,7 +5607,6 @@
 191.96.255.43        # US Silicon Valley
 102.129.153.21       # US Florida
 191.96.150.126       # US New York
-191.96.255.197       # US Silicon Valley
 191.96.150.80        # US New York
 140.228.21.92        # CA Montreal
 181.214.164.141      # US Chicago
@@ -5633,6 +5645,7 @@
 181.215.182.84       # US Texas
 102.129.252.70       # US Silicon Valley
 191.96.255.230       # US Silicon Valley
+191.96.168.201       # Netherlands
 140.228.24.158       # CA Montreal
 102.129.232.22       # US Silicon Valley
 181.215.182.224      # US Texas
@@ -5680,8 +5693,6 @@
 102.129.234.148      # US Texas
 195.78.54.162        # Netherlands
 181.214.166.195      # US Chicago
-195.78.54.195        # Netherlands
-195.78.54.190        # Netherlands
 181.214.153.92       # CA Vancouver
 173.239.226.195      # US Las Vegas
 181.215.182.198      # US Texas
@@ -5895,6 +5906,7 @@
 173.239.226.140      # US Las Vegas
 173.239.226.148      # US Las Vegas
 181.215.182.165      # US Texas
+195.78.54.206        # Netherlands
 102.129.153.22       # US Florida
 140.228.24.128       # CA Montreal
 212.102.59.182       # US Chicago
@@ -6383,7 +6395,6 @@
 140.228.24.40        # CA Montreal
 140.228.24.68        # CA Montreal
 140.228.24.42        # CA Montreal
-140.228.24.63        # CA Montreal
 140.228.24.66        # CA Montreal
 140.228.24.69        # CA Montreal
 140.228.24.61        # CA Montreal
@@ -6445,7 +6456,6 @@
 102.129.252.110      # US West
 102.129.252.142      # US West
 102.129.252.122      # US West
-102.129.252.115      # US West
 102.129.252.123      # US West
 102.129.252.127      # US West
 102.129.252.112      # US West
@@ -6802,7 +6812,6 @@
 149.50.212.183       # US California
 149.50.212.166       # US California
 149.50.212.158       # US California
-149.50.212.187       # US California
 149.50.212.135       # US California
 149.50.212.175       # US California
 149.50.212.174       # US California
@@ -6829,7 +6838,6 @@
 149.50.212.173       # US California
 149.50.212.168       # US California
 149.50.212.155       # US California
-149.50.212.161       # US California
 149.50.212.133       # US California
 149.50.212.140       # US California
 149.50.212.143       # US California
@@ -10305,6 +10313,7 @@
 212.32.49.141        # US Atlanta
 212.32.49.215        # US Atlanta
 212.32.49.214        # US Atlanta
+212.32.49.140        # US Atlanta
 212.32.49.225        # US Atlanta
 212.32.49.5          # US Atlanta
 212.32.49.211        # US Atlanta
@@ -10825,7 +10834,6 @@
 158.173.25.98        # US New York
 158.173.20.140       # Netherlands
 158.173.21.131       # Netherlands
-158.173.20.58        # Netherlands
 158.173.20.57        # Netherlands
 158.173.25.58        # US New York
 158.173.25.29        # US New York
@@ -11803,9 +11811,6 @@
 188.126.89.11        # FI Streaming Optimized
 173.239.221.30       # Guatemala
 173.239.221.22       # Guatemala
-138.199.54.50        # IT Streaming Optimized
-138.199.54.36        # IT Streaming Optimized
-138.199.54.64        # IT Streaming Optimized
 146.70.15.31         # Malaysia
 84.247.97.5          # Nepal
 84.247.97.14         # Nepal
@@ -11982,7 +11987,6 @@
 98.159.36.135        # Bosnia And Herzegovina
 98.159.36.153        # Bosnia And Herzegovina
 138.199.54.47        # IT Streaming Optimized
-138.199.54.53        # IT Streaming Optimized
 84.239.12.149        # US Idaho
 84.239.12.148        # US Idaho
 84.239.16.141        # US Missouri
@@ -12147,9 +12151,6 @@
 84.239.27.30         # US Wisconsin
 84.239.27.10         # US Wisconsin
 84.239.27.28         # US Wisconsin
-138.199.54.61        # IT Streaming Optimized
-138.199.54.48        # IT Streaming Optimized
-138.199.54.45        # IT Streaming Optimized
 173.239.221.11       # Guatemala
 173.239.221.25       # Guatemala
 173.239.221.16       # Guatemala
@@ -12204,8 +12205,6 @@
 84.239.10.145        # US Virginia
 98.159.36.129        # Bosnia And Herzegovina
 98.159.36.142        # Bosnia And Herzegovina
-138.199.54.40        # IT Streaming Optimized
-138.199.54.59        # IT Streaming Optimized
 45.154.152.23        # Peru
 84.239.6.8           # US Alabama
 84.239.6.19          # US Alabama
@@ -12321,8 +12320,6 @@
 84.239.16.135        # US Missouri
 84.239.33.133        # US Oklahoma
 84.239.33.145        # US Oklahoma
-138.199.54.43        # IT Streaming Optimized
-138.199.54.54        # IT Streaming Optimized
 45.152.150.136       # US Arkansas
 84.239.31.4          # US Kansas
 84.239.31.19         # US Kansas
@@ -12476,7 +12473,6 @@
 84.239.45.16         # US Rhode Island
 98.159.36.133        # Bosnia And Herzegovina
 138.199.54.56        # IT Streaming Optimized
-138.199.54.37        # IT Streaming Optimized
 84.239.25.3          # US Minnesota
 84.239.25.4          # US Minnesota
 84.239.33.142        # US Oklahoma
@@ -12595,7 +12591,6 @@
 188.126.89.30        # FI Streaming Optimized
 188.126.89.26        # FI Streaming Optimized
 173.239.221.26       # Guatemala
-138.199.54.38        # IT Streaming Optimized
 45.154.154.33        # Uruguay
 45.154.154.56        # Uruguay
 45.154.154.23        # Uruguay
@@ -12657,7 +12652,6 @@
 149.22.87.150        # JP Streaming Optimized
 146.70.10.36         # Costa Rica
 173.239.249.20       # Ecuador
-138.199.54.44        # IT Streaming Optimized
 84.239.33.13         # US New Mexico
 84.239.27.149        # US Ohio
 84.239.33.141        # US Oklahoma
@@ -12713,8 +12707,6 @@
 84.239.48.137        # US Oregon
 84.239.43.164        # US Wilmington
 146.70.11.52         # Chile
-138.199.54.42        # IT Streaming Optimized
-138.199.54.63        # IT Streaming Optimized
 84.239.48.3          # US North Dakota
 84.239.41.207        # US Pennsylvania
 188.126.94.40        # DK Streaming Optimized
@@ -12756,7 +12748,6 @@
 146.70.11.45         # Chile
 146.70.11.36         # Chile
 173.239.249.49       # Ecuador
-138.199.54.60        # IT Streaming Optimized
 84.239.47.13         # US Connecticut
 84.239.47.80         # US Connecticut
 84.239.17.26         # US Iowa
@@ -12800,7 +12791,6 @@
 84.239.17.145        # US Michigan
 84.239.17.151        # US Michigan
 84.239.17.165        # US Michigan
-138.199.54.35        # IT Streaming Optimized
 158.173.21.25        # NL Netherlands Streaming Optimized
 158.173.3.214        # NL Netherlands Streaming Optimized
 158.173.23.69        # UK Streaming Optimized
@@ -12827,7 +12817,6 @@
 45.152.150.139       # US Arkansas
 45.152.150.132       # US Arkansas
 188.126.94.37        # DK Streaming Optimized
-138.199.54.51        # IT Streaming Optimized
 45.154.154.6         # Uruguay
 45.154.154.29        # Uruguay
 45.154.154.27        # Uruguay
@@ -12848,7 +12837,6 @@
 84.239.25.5          # US Minnesota
 84.239.50.135        # US Wyoming
 146.70.10.34         # Costa Rica
-138.199.54.52        # IT Streaming Optimized
 45.152.150.131       # US Arkansas
 84.239.43.132        # US Wilmington
 84.239.43.144        # US Wilmington
@@ -12876,7 +12864,6 @@
 146.70.11.46         # Chile
 188.126.94.55        # DK Streaming Optimized
 188.126.94.38        # DK Streaming Optimized
-138.199.54.58        # IT Streaming Optimized
 158.173.24.18        # UK Streaming Optimized
 158.173.23.78        # UK Streaming Optimized
 158.173.23.144       # UK Streaming Optimized
@@ -12916,8 +12903,6 @@
 84.239.43.130        # US Wilmington
 84.239.27.21         # US Wisconsin
 64.64.99.15          # Bolivia
-138.199.54.34        # IT Streaming Optimized
-138.199.54.41        # IT Streaming Optimized
 158.173.21.13        # NL Netherlands Streaming Optimized
 84.239.17.3          # US Iowa
 146.70.10.58         # Costa Rica
@@ -12959,7 +12944,6 @@
 84.239.41.140        # US Pennsylvania
 84.239.7.135         # US South Carolina
 84.239.10.149        # US Virginia
-138.199.54.46        # IT Streaming Optimized
 138.199.54.39        # IT Streaming Optimized
 158.173.23.129       # UK Streaming Optimized
 102.129.232.193      # US West Streaming Optimized
@@ -13718,3 +13702,37 @@
 194.62.107.112       # US Salt Lake City
 194.62.107.34        # US Salt Lake City
 194.62.107.128       # US Salt Lake City
+151.240.106.51       # US Indiana
+151.240.106.90       # US Indiana
+151.240.54.46        # US Oklahoma
+151.240.54.176       # US Oklahoma
+151.240.95.19        # US Oregon
+151.240.95.131       # US Oregon
+151.240.58.17        # US Pennsylvania
+151.240.58.119       # US Pennsylvania
+151.240.57.63        # US Rhode Island
+151.240.57.82        # US Rhode Island
+151.240.55.147       # US South Dakota
+151.240.55.24        # US South Dakota
+151.240.62.21        # US Vermont
+151.240.62.23        # US Vermont
+151.240.44.46        # US Wisconsin
+151.240.44.83        # US Wisconsin
+151.240.59.74        # US Wyoming
+151.240.59.64        # US Wyoming
+151.240.108.2        # US Honolulu
+151.240.108.69       # US Honolulu
+151.240.102.11       # US Kentucky
+151.240.102.72       # US Kentucky
+151.240.49.41        # US New Hampshire
+151.240.49.175       # US New Hampshire
+151.240.56.3         # US South Carolina
+151.240.56.63        # US South Carolina
+151.240.51.55        # US Tennessee
+151.240.51.68        # US Tennessee
+151.240.46.58        # US Virginia
+151.240.46.123       # US Virginia
+151.240.43.162       # US West Virginia
+151.240.43.106       # US West Virginia
+192.253.210.53       # Taiwan
+192.253.210.27       # Taiwan
