@@ -499,7 +499,6 @@
 37.19.221.11         # US Houston
 154.16.105.84        # US Las Vegas
 191.96.255.78        # US Silicon Valley
-191.96.255.192       # US Silicon Valley
 156.146.39.147       # US Texas
 181.215.182.19       # US Texas
 181.215.182.29       # US Texas
@@ -545,6 +544,7 @@
 176.125.230.19       # Malta
 181.214.165.22       # US Chicago
 181.214.166.52       # US Chicago
+212.102.59.146       # US Chicago
 102.129.152.97       # US Florida
 102.129.153.87       # US Florida
 191.96.67.92         # US Houston
@@ -999,7 +999,6 @@
 102.129.234.139      # US Texas
 181.215.182.18       # US Texas
 181.215.182.195      # US Texas
-140.228.21.73        # CA Montreal
 37.46.113.171        # Luxembourg
 84.252.92.12         # Macao
 79.142.79.43         # Switzerland
@@ -2035,7 +2034,6 @@
 173.239.226.201      # US Las Vegas
 181.214.153.77       # CA Vancouver
 181.214.153.85       # CA Vancouver
-191.96.168.169       # Netherlands
 37.19.198.77         # US New York
 191.96.150.89        # US New York
 191.96.227.123       # US New York
@@ -2083,7 +2081,6 @@
 102.129.152.44       # US Florida
 102.129.152.71       # US Florida
 102.129.153.204      # US Florida
-181.41.202.166       # CA Vancouver
 181.214.153.53       # CA Vancouver
 84.17.45.12          # US California
 143.244.49.11        # US California
@@ -2777,7 +2774,6 @@
 191.101.61.134       # US Las Vegas
 154.16.105.90        # US Las Vegas
 156.146.39.32        # US Texas
-102.129.234.5        # US Texas
 102.129.235.109      # US Washington Dc
 102.129.235.241      # US Washington Dc
 102.129.145.133      # US California
@@ -3147,6 +3143,7 @@
 102.129.235.111      # US Washington Dc
 140.228.24.136       # CA Montreal
 143.244.49.22        # US California
+212.102.59.176       # US Chicago
 212.102.59.230       # US Chicago
 102.129.145.100      # US California
 191.101.61.142       # US Las Vegas
@@ -3326,7 +3323,9 @@
 181.214.164.220      # US Chicago
 102.129.235.186      # US Washington Dc
 181.214.153.121      # CA Vancouver
+212.102.59.222       # US Chicago
 181.214.165.125      # US Chicago
+212.102.59.220       # US Chicago
 102.129.153.79       # US Florida
 191.96.106.140       # US California
 37.19.221.5          # US Houston
@@ -3717,6 +3716,7 @@
 181.214.206.144      # Netherlands
 191.96.168.87        # Netherlands
 181.214.164.93       # US Chicago
+212.102.59.132       # US Chicago
 102.129.232.91       # US Silicon Valley
 102.129.232.141      # US Silicon Valley
 191.96.255.178       # US Silicon Valley
@@ -3984,6 +3984,7 @@
 102.129.234.76       # US Texas
 140.228.24.93        # CA Montreal
 181.214.164.91       # US Chicago
+212.102.59.156       # US Chicago
 37.19.221.50         # US Houston
 181.215.182.231      # US Texas
 181.215.182.216      # US Texas
@@ -4067,7 +4068,6 @@
 191.101.61.172       # US Las Vegas
 143.244.48.155       # US Las Vegas
 102.129.234.65       # US Texas
-181.214.166.143      # US Chicago
 37.19.198.64         # US New York
 191.96.106.22        # US California
 102.129.145.120      # US California
@@ -4816,7 +4816,6 @@
 45.88.97.226         # DE Frankfurt
 37.46.113.172        # Luxembourg
 181.214.164.74       # US Chicago
-140.228.21.74        # CA Montreal
 79.142.79.57         # Switzerland
 181.214.165.186      # US Chicago
 191.101.61.204       # US Las Vegas
@@ -5184,7 +5183,6 @@
 102.129.235.59       # US Washington Dc
 181.214.164.129      # US Chicago
 191.96.227.60        # US New York
-102.129.235.119      # US Washington Dc
 195.78.54.77         # Netherlands
 102.129.145.129      # US California
 181.214.164.133      # US Chicago
@@ -5337,7 +5335,6 @@
 191.96.67.245        # US Houston
 102.129.235.132      # US Washington Dc
 181.215.182.202      # US Texas
-181.214.164.118      # US Chicago
 191.96.255.82        # US Silicon Valley
 181.214.206.58       # Netherlands
 181.214.165.97       # US Chicago
@@ -5502,6 +5499,7 @@
 179.61.197.112       # CA Toronto
 191.96.255.5         # US Silicon Valley
 195.78.54.207        # Netherlands
+140.228.24.102       # CA Montreal
 181.214.164.70       # US Chicago
 102.129.234.95       # US Texas
 179.61.197.95        # CA Toronto
@@ -5628,6 +5626,7 @@
 191.96.255.194       # US Silicon Valley
 181.215.182.56       # US Texas
 181.214.166.67       # US Chicago
+212.102.59.159       # US Chicago
 181.41.202.118       # CA Vancouver
 181.214.153.91       # CA Vancouver
 195.78.54.71         # Netherlands
@@ -5708,6 +5707,7 @@
 143.244.34.17        # US Florida
 181.214.153.67       # CA Vancouver
 179.61.197.22        # CA Toronto
+212.102.59.187       # US Chicago
 102.129.235.146      # US Washington Dc
 191.96.168.71        # Netherlands
 181.214.164.31       # US Chicago
@@ -5726,6 +5726,7 @@
 181.214.164.94       # US Chicago
 212.102.59.180       # US Chicago
 102.129.234.4        # US Texas
+212.102.59.228       # US Chicago
 191.96.36.129        # CA Toronto
 181.214.165.105      # US Chicago
 179.61.197.28        # CA Toronto
@@ -5815,10 +5816,10 @@
 181.214.164.176      # US Chicago
 173.239.226.135      # US Las Vegas
 102.129.234.228      # US Texas
+212.102.59.238       # US Chicago
 195.78.54.167        # Netherlands
 181.214.166.33       # US Chicago
 37.19.198.44         # US New York
-140.228.24.72        # CA Montreal
 102.129.234.140      # US Texas
 102.129.234.134      # US Texas
 191.96.36.140        # CA Toronto
@@ -5875,13 +5876,13 @@
 140.228.24.213       # CA Montreal
 140.228.24.216       # CA Montreal
 140.228.24.201       # CA Montreal
-140.228.24.196       # CA Montreal
 140.228.24.240       # CA Montreal
 181.214.164.229      # US Chicago
 140.228.24.190       # CA Montreal
 181.214.164.160      # US Chicago
 140.228.24.193       # CA Montreal
 140.228.24.210       # CA Montreal
+140.228.24.202       # CA Montreal
 191.96.168.208       # Netherlands
 140.228.24.214       # CA Montreal
 143.244.34.133       # US Florida
@@ -5909,6 +5910,7 @@
 37.19.210.79         # US Denver
 37.19.210.69         # US Denver
 102.129.252.91       # US Silicon Valley
+191.96.255.202       # US Silicon Valley
 37.19.210.160        # US Denver
 37.19.210.169        # US Denver
 37.19.210.170        # US Denver
@@ -6197,35 +6199,18 @@
 84.239.42.48         # Ukraine
 84.239.42.37         # Ukraine
 102.129.252.134      # US West
-102.129.252.109      # US West
 102.129.252.121      # US West
-102.129.252.102      # US West
-102.129.252.120      # US West
-102.129.252.108      # US West
-102.129.252.101      # US West
 102.129.252.116      # US West
-102.129.252.114      # US West
 102.129.252.129      # US West
 102.129.252.139      # US West
 102.129.252.107      # US West
-102.129.252.138      # US West
 102.129.252.106      # US West
-102.129.252.128      # US West
-102.129.252.136      # US West
 102.129.252.125      # US West
 102.129.252.113      # US West
 102.129.252.110      # US West
 102.129.252.142      # US West
-102.129.252.123      # US West
-102.129.252.127      # US West
-102.129.252.135      # US West
-102.129.252.124      # US West
-102.129.252.111      # US West
 102.129.252.126      # US West
 102.129.252.137      # US West
-102.129.252.117      # US West
-102.129.252.133      # US West
-102.129.252.118      # US West
 102.129.252.130      # US West
 102.129.252.141      # US West
 140.228.24.67        # CA Montreal
@@ -6586,6 +6571,7 @@
 149.50.212.173       # US California
 149.50.212.168       # US California
 149.50.212.155       # US California
+149.50.212.161       # US California
 149.50.212.133       # US California
 149.50.212.140       # US California
 149.50.212.143       # US California
@@ -6717,72 +6703,40 @@
 79.127.132.237       # US Washington Dc
 79.127.132.132       # US Washington Dc
 79.127.132.176       # US Washington Dc
-173.244.56.88        # US West
 173.244.56.71        # US West
 173.244.56.84        # US West
-173.244.56.77        # US West
-173.244.56.92        # US West
 173.244.56.81        # US West
 173.244.56.66        # US West
 173.244.56.86        # US West
 173.244.56.82        # US West
-173.244.56.94        # US West
 173.244.56.78        # US West
-173.244.56.89        # US West
-173.244.56.90        # US West
-173.244.56.87        # US West
-173.244.56.192       # US West
-173.244.56.61        # US West
-173.244.56.200       # US West
 173.244.56.58        # US West
-173.244.56.63        # US West
 173.244.56.54        # US West
 173.244.56.72        # US West
-173.244.56.136       # US West
 173.244.56.152       # US West
-173.244.56.17        # US West
-173.244.56.120       # US West
-173.244.56.22        # US West
 173.244.56.57        # US West
-173.244.56.155       # US West
 173.244.56.124       # US West
 173.244.56.109       # US West
 173.244.56.151       # US West
-173.244.56.45        # US West
-173.244.56.127       # US West
 173.244.56.139       # US West
-173.244.56.19        # US West
-173.244.56.134       # US West
 173.244.56.147       # US West
-173.244.56.26        # US West
 173.244.56.44        # US West
 173.244.56.52        # US West
-173.244.56.126       # US West
 173.244.56.117       # US West
 173.244.56.144       # US West
 173.244.56.68        # US West
-173.244.56.14        # US West
 173.244.56.148       # US West
-173.244.56.59        # US West
-173.244.56.25        # US West
 173.244.56.62        # US West
 173.244.56.20        # US West
-173.244.56.195       # US West
 173.244.56.138       # US West
 173.244.56.31        # US West
 173.244.56.48        # US West
-173.244.56.69        # US West
-173.244.56.105       # US West
-173.244.56.29        # US West
-173.244.56.141       # US West
 173.244.56.46        # US West
 173.244.56.146       # US West
 173.244.56.196       # US West
 173.244.56.12        # US West
 173.244.56.106       # US West
-173.244.56.137       # US West
 173.244.56.37        # US West
-173.244.56.27        # US West
 173.244.56.34        # US West
 173.244.56.201       # US West
 173.244.56.33        # US West
@@ -6794,9 +6748,7 @@
 173.244.56.41        # US West
 173.244.56.107       # US West
 173.244.56.135       # US West
-173.244.56.132       # US West
 173.244.56.122       # US West
-173.244.56.115       # US West
 173.244.56.64        # US West
 173.244.56.140       # US West
 173.244.56.56        # US West
@@ -6804,46 +6756,28 @@
 173.244.56.102       # US West
 173.244.56.199       # US West
 173.244.56.39        # US West
-173.244.56.157       # US West
 173.244.56.23        # US West
-173.244.56.197       # US West
-173.244.56.15        # US West
-173.244.56.123       # US West
-173.244.56.32        # US West
-173.244.56.51        # US West
 173.244.56.16        # US West
 173.244.56.193       # US West
-173.244.56.30        # US West
-173.244.56.40        # US West
 173.244.56.24        # US West
 173.244.56.104       # US West
 173.244.56.194       # US West
 173.244.56.121       # US West
 173.244.56.55        # US West
 173.244.56.114       # US West
-173.244.56.119       # US West
-173.244.56.158       # US West
-173.244.56.96        # US West
 173.244.56.47        # US West
 173.244.56.53        # US West
-173.244.56.98        # US West
 173.244.56.154       # US West
 173.244.56.18        # US West
-173.244.56.13        # US West
-173.244.56.108       # US West
 173.244.56.49        # US West
 173.244.56.142       # US West
-173.244.56.93        # US West
 173.244.56.143       # US West
 173.244.56.73        # US West
 173.244.56.76        # US West
 173.244.56.110       # US West
 173.244.56.67        # US West
-173.244.56.130       # US West
-173.244.56.38        # US West
 173.244.56.103       # US West
 173.244.56.99        # US West
-173.244.56.111       # US West
 173.244.58.19        # Mongolia
 173.244.58.23        # Mongolia
 173.244.58.20        # Mongolia
@@ -7203,10 +7137,6 @@
 91.90.126.51         # Panama
 91.90.126.65         # Panama
 173.244.56.220       # US West
-173.244.56.231       # US West
-173.244.56.212       # US West
-173.244.56.210       # US West
-173.244.56.211       # US West
 173.244.56.230       # US West
 173.244.56.219       # US West
 173.244.56.206       # US West
@@ -7220,11 +7150,9 @@
 173.244.56.214       # US West
 173.244.56.227       # US West
 173.244.56.209       # US West
-173.244.56.205       # US West
 173.244.56.221       # US West
 173.244.56.223       # US West
 173.244.56.232       # US West
-173.244.56.225       # US West
 173.244.56.222       # US West
 149.22.95.162        # CA Vancouver
 149.22.95.167        # CA Vancouver
@@ -7645,7 +7573,6 @@
 91.124.17.70         # US Washington Dc
 91.124.17.67         # US Washington Dc
 91.124.17.247        # US Washington Dc
-91.124.17.151        # US Washington Dc
 91.124.17.154        # US Washington Dc
 91.124.17.227        # US Washington Dc
 91.124.17.77         # US Washington Dc
@@ -7910,7 +7837,6 @@
 91.124.17.29         # US Washington Dc
 91.124.17.9          # US Washington Dc
 91.124.17.28         # US Washington Dc
-91.124.17.24         # US Washington Dc
 91.124.17.7          # US Washington Dc
 91.124.17.14         # US Washington Dc
 91.124.17.19         # US Washington Dc
@@ -8840,7 +8766,6 @@
 212.32.50.57         # US Las Vegas
 212.32.50.25         # US Las Vegas
 212.32.50.122        # US Las Vegas
-212.32.50.234        # US Las Vegas
 212.32.50.194        # US Las Vegas
 212.32.50.204        # US Las Vegas
 212.32.50.230        # US Las Vegas
@@ -9034,6 +8959,7 @@
 138.199.10.23        # US East
 138.199.10.14        # US East
 151.240.205.29       # US New York
+151.240.205.15       # US New York
 151.240.205.31       # US New York
 151.240.205.16       # US New York
 151.240.205.39       # US New York
@@ -9078,7 +9004,6 @@
 151.240.205.64       # US New York
 151.240.205.85       # US New York
 151.240.205.56       # US New York
-151.240.205.8        # US New York
 151.240.205.156      # US New York
 151.240.205.75       # US New York
 151.240.205.166      # US New York
@@ -10337,7 +10262,6 @@
 158.173.20.45        # Netherlands
 158.173.21.64        # Netherlands
 158.173.21.56        # Netherlands
-158.173.21.52        # Netherlands
 158.173.20.20        # Netherlands
 158.173.20.67        # Netherlands
 158.173.3.168        # Netherlands
@@ -11626,7 +11550,6 @@
 84.239.12.37         # US West Virginia
 84.239.43.179        # US Wilmington
 84.239.43.133        # US Wilmington
-84.239.43.158        # US Wilmington
 84.239.27.9          # US Wisconsin
 84.239.27.29         # US Wisconsin
 84.239.27.35         # US Wisconsin
@@ -11756,7 +11679,6 @@
 84.239.48.144        # US Oregon
 84.239.45.131        # US Vermont
 84.239.45.134        # US Vermont
-84.239.43.182        # US Wilmington
 84.239.43.149        # US Wilmington
 64.64.99.25          # Bolivia
 64.64.99.9           # Bolivia
@@ -11830,7 +11752,6 @@
 173.244.42.10        # South Korea
 173.244.42.3         # South Korea
 173.244.42.6         # South Korea
-84.239.47.87         # US Connecticut
 84.239.47.17         # US Connecticut
 84.239.47.62         # US Connecticut
 84.239.31.2          # US Kansas
@@ -11942,8 +11863,6 @@
 84.239.52.15         # US Alaska
 84.239.52.5          # US Alaska
 84.239.52.9          # US Alaska
-84.239.17.7          # US Iowa
-84.239.17.44         # US Iowa
 84.239.17.6          # US Iowa
 84.239.25.19         # US Minnesota
 84.239.25.7          # US Minnesota
@@ -11996,7 +11915,6 @@
 188.126.89.19        # FI Streaming Optimized
 188.126.89.16        # FI Streaming Optimized
 84.239.47.79         # US Connecticut
-84.239.47.11         # US Connecticut
 84.239.47.77         # US Connecticut
 84.239.17.134        # US Michigan
 84.239.16.179        # US Missouri
@@ -12049,10 +11967,8 @@
 158.173.24.4         # UK Streaming Optimized
 45.152.150.148       # US Arkansas
 45.152.150.133       # US Arkansas
-84.239.47.72         # US Connecticut
 84.239.47.68         # US Connecticut
 84.239.17.33         # US Iowa
-84.239.17.45         # US Iowa
 84.239.25.8          # US Minnesota
 98.159.36.140        # Bosnia And Herzegovina
 98.159.36.132        # Bosnia And Herzegovina
@@ -12101,7 +12017,6 @@
 84.239.50.12         # US South Dakota
 84.239.50.10         # US South Dakota
 102.129.232.207      # US West Streaming Optimized
-84.239.43.140        # US Wilmington
 84.239.43.174        # US Wilmington
 84.239.43.178        # US Wilmington
 64.64.99.3           # Bolivia
@@ -12210,7 +12125,6 @@
 84.239.41.198        # US Pennsylvania
 84.239.43.20         # US Baltimore
 84.239.43.2          # US Baltimore
-84.239.17.23         # US Iowa
 84.239.17.35         # US Iowa
 84.239.25.21         # US Minnesota
 84.239.16.131        # US Missouri
@@ -12548,7 +12462,6 @@
 45.154.152.12        # Peru
 84.239.17.163        # US Michigan
 84.239.47.147        # US Montana
-84.239.43.134        # US Wilmington
 98.159.36.148        # Bosnia And Herzegovina
 146.70.10.18         # Costa Rica
 84.239.17.20         # US Iowa
@@ -12573,7 +12486,6 @@
 84.239.27.21         # US Wisconsin
 64.64.99.15          # Bolivia
 158.173.21.13        # NL Netherlands Streaming Optimized
-84.239.17.3          # US Iowa
 146.70.10.58         # Costa Rica
 173.239.249.54       # Ecuador
 173.239.249.35       # Ecuador
@@ -12648,7 +12560,6 @@
 173.239.249.43       # Ecuador
 158.173.24.16        # UK Streaming Optimized
 158.173.23.145       # UK Streaming Optimized
-84.239.43.189        # US Wilmington
 84.239.16.149        # US Missouri
 84.239.16.166        # US Missouri
 84.239.16.169        # US Missouri
@@ -12805,19 +12716,16 @@
 45.154.152.10        # Peru
 84.239.43.61         # US Baltimore
 84.239.43.4          # US Baltimore
-84.239.17.18         # US Iowa
 158.173.23.118       # UK Streaming Optimized
 158.173.24.46        # UK Streaming Optimized
 158.173.23.137       # UK Streaming Optimized
 84.239.47.24         # US Connecticut
 84.239.47.25         # US Connecticut
-84.239.17.24         # US Iowa
 95.134.63.203        # DE Germany Streaming Optimized
 84.239.43.153        # US Wilmington
 158.173.3.222        # NL Netherlands Streaming Optimized
 158.173.24.55        # UK Streaming Optimized
 158.173.24.23        # UK Streaming Optimized
-84.239.47.71         # US Connecticut
 173.239.249.3        # Ecuador
 84.239.16.137        # US Missouri
 84.239.16.147        # US Missouri
@@ -12837,7 +12745,6 @@
 84.239.17.22         # US Iowa
 84.239.16.132        # US Missouri
 84.239.16.172        # US Missouri
-84.239.47.91         # US Connecticut
 84.239.41.192        # US Pennsylvania
 84.239.43.161        # US Wilmington
 173.239.221.8        # Guatemala
@@ -12965,7 +12872,6 @@
 84.239.43.47         # US Baltimore
 158.173.24.43        # UK Streaming Optimized
 84.239.43.51         # US Baltimore
-84.239.43.185        # US Wilmington
 95.134.63.201        # DE Germany Streaming Optimized
 84.239.27.152        # US Ohio
 84.239.27.164        # US Ohio
@@ -13412,3 +13318,4 @@
 212.102.52.1         # UK Streaming Optimized
 212.102.52.6         # UK Streaming Optimized
 158.173.166.19       # Norway
+158.173.166.254      # Norway
