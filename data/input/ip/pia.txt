@@ -774,6 +774,7 @@
 191.101.61.201       # US Las Vegas
 191.101.61.247       # US Las Vegas
 102.129.235.5        # US Washington Dc
+102.129.235.118      # US Washington Dc
 95.181.237.21        # Venezuela
 95.181.237.49        # Venezuela
 95.181.238.16        # Bahamas
@@ -998,6 +999,7 @@
 102.129.234.139      # US Texas
 181.215.182.18       # US Texas
 181.215.182.195      # US Texas
+140.228.21.73        # CA Montreal
 37.46.113.171        # Luxembourg
 84.252.92.12         # Macao
 79.142.79.43         # Switzerland
@@ -1299,7 +1301,6 @@
 191.96.255.84        # US Silicon Valley
 191.96.255.184       # US Silicon Valley
 191.96.255.144       # US Silicon Valley
-102.129.235.128      # US Washington Dc
 95.181.237.43        # Venezuela
 173.244.49.57        # Taiwan
 173.244.49.90        # Taiwan
@@ -1493,6 +1494,7 @@
 191.96.106.212       # US California
 181.41.206.30        # US Denver
 181.41.206.45        # US Denver
+212.102.59.178       # US Chicago
 212.102.59.241       # US Chicago
 102.129.232.20       # US Silicon Valley
 102.129.232.38       # US Silicon Valley
@@ -1833,11 +1835,9 @@
 191.101.61.188       # US Las Vegas
 102.129.234.196      # US Texas
 181.215.182.230      # US Texas
-191.96.168.62        # Netherlands
 102.129.252.74       # US Silicon Valley
 102.129.252.84       # US Silicon Valley
 191.96.255.105       # US Silicon Valley
-102.129.235.115      # US Washington Dc
 102.129.235.33       # US Washington Dc
 95.181.238.73        # Bahamas
 102.129.234.70       # US Texas
@@ -2773,7 +2773,6 @@
 191.101.61.134       # US Las Vegas
 154.16.105.90        # US Las Vegas
 156.146.39.32        # US Texas
-102.129.235.109      # US Washington Dc
 102.129.235.241      # US Washington Dc
 102.129.145.133      # US California
 181.41.206.25        # US Denver
@@ -2886,13 +2885,13 @@
 181.214.166.154      # US Chicago
 181.214.166.204      # US Chicago
 102.129.153.62       # US Florida
+102.129.235.101      # US Washington Dc
 195.78.54.192        # Netherlands
 102.129.232.226      # US Silicon Valley
 179.61.197.30        # CA Toronto
 191.96.255.142       # US Silicon Valley
 191.96.36.99         # CA Toronto
 191.96.36.113        # CA Toronto
-181.214.166.107      # US Chicago
 181.214.165.71       # US Chicago
 181.214.165.74       # US Chicago
 191.96.67.227        # US Houston
@@ -3046,7 +3045,6 @@
 181.214.164.234      # US Chicago
 181.214.165.145      # US Chicago
 181.214.164.194      # US Chicago
-191.96.168.100       # Netherlands
 191.101.61.171       # US Las Vegas
 179.61.197.60        # CA Toronto
 102.129.153.188      # US Florida
@@ -3410,7 +3408,6 @@
 37.19.197.207        # US East
 102.129.153.91       # US Florida
 143.244.34.143       # US Florida
-191.96.150.156       # US New York
 181.214.164.175      # US Chicago
 102.129.232.16       # US Silicon Valley
 102.129.232.127      # US Silicon Valley
@@ -3450,6 +3447,7 @@
 102.129.252.248      # US Silicon Valley
 195.78.54.96         # Netherlands
 191.96.67.203        # US Houston
+212.102.59.226       # US Chicago
 181.214.166.97       # US Chicago
 181.41.206.129       # US Denver
 102.129.234.36       # US Texas
@@ -3712,7 +3710,6 @@
 191.96.227.125       # US New York
 181.214.206.144      # Netherlands
 191.96.168.87        # Netherlands
-181.214.164.93       # US Chicago
 212.102.59.132       # US Chicago
 102.129.232.91       # US Silicon Valley
 102.129.232.141      # US Silicon Valley
@@ -3821,6 +3818,7 @@
 191.96.168.79        # Netherlands
 191.101.61.248       # US Las Vegas
 181.214.164.81       # US Chicago
+212.102.59.144       # US Chicago
 181.214.153.63       # CA Vancouver
 102.129.145.139      # US California
 191.96.227.153       # US New York
@@ -3846,7 +3844,6 @@
 191.96.150.73        # US New York
 102.129.234.178      # US Texas
 181.214.206.60       # Netherlands
-191.96.168.70        # Netherlands
 181.214.153.64       # CA Vancouver
 181.214.164.232      # US Chicago
 181.41.206.86        # US Denver
@@ -4060,7 +4057,6 @@
 191.96.255.73        # US Silicon Valley
 79.142.79.44         # Switzerland
 102.129.234.149      # US Texas
-181.215.182.11       # US Texas
 191.101.61.172       # US Las Vegas
 143.244.48.155       # US Las Vegas
 102.129.234.65       # US Texas
@@ -4343,7 +4339,6 @@
 102.129.152.169      # US Florida
 181.214.206.56       # Netherlands
 181.214.164.112      # US Chicago
-102.129.235.124      # US Washington Dc
 102.129.234.219      # US Texas
 179.61.197.109       # CA Toronto
 181.214.206.90       # Netherlands
@@ -4798,7 +4793,6 @@
 179.61.197.118       # CA Toronto
 140.228.24.149       # CA Montreal
 191.96.168.74        # Netherlands
-191.96.168.92        # Netherlands
 37.19.197.223        # US East
 102.129.234.99       # US Texas
 181.214.165.150      # US Chicago
@@ -4809,6 +4803,7 @@
 45.88.97.226         # DE Frankfurt
 37.46.113.172        # Luxembourg
 181.214.164.74       # US Chicago
+140.228.21.74        # CA Montreal
 79.142.79.57         # Switzerland
 181.214.165.186      # US Chicago
 191.101.61.204       # US Las Vegas
@@ -4966,7 +4961,6 @@
 179.61.197.25        # CA Toronto
 181.214.164.61       # US Chicago
 102.129.234.84       # US Texas
-191.96.168.77        # Netherlands
 179.61.197.90        # CA Toronto
 191.96.255.219       # US Silicon Valley
 181.41.202.158       # CA Vancouver
@@ -5032,7 +5026,6 @@
 102.129.232.107      # US Silicon Valley
 191.96.150.145       # US New York
 37.19.198.105        # US New York
-195.78.54.203        # Netherlands
 179.61.197.31        # CA Toronto
 45.88.97.246         # DE Frankfurt
 102.129.235.123      # US Washington Dc
@@ -5176,6 +5169,7 @@
 102.129.235.59       # US Washington Dc
 181.214.164.129      # US Chicago
 191.96.227.60        # US New York
+102.129.235.119      # US Washington Dc
 195.78.54.77         # Netherlands
 102.129.145.129      # US California
 181.214.164.133      # US Chicago
@@ -5313,6 +5307,7 @@
 102.129.252.65       # US Silicon Valley
 191.96.168.185       # Netherlands
 212.102.59.135       # US Chicago
+212.102.59.137       # US Chicago
 181.215.182.220      # US Texas
 181.215.182.26       # US Texas
 181.214.165.173      # US Chicago
@@ -5672,6 +5667,7 @@
 102.129.252.89       # US Silicon Valley
 102.129.252.82       # US Silicon Valley
 179.61.197.78        # CA Toronto
+191.96.255.248       # US Silicon Valley
 102.129.252.78       # US Silicon Valley
 191.96.168.59        # Netherlands
 173.239.226.140      # US Las Vegas
@@ -5686,6 +5682,7 @@
 181.214.166.56       # US Chicago
 181.214.166.86       # US Chicago
 179.61.197.73        # CA Toronto
+212.102.59.148       # US Chicago
 181.214.164.244      # US Chicago
 191.96.255.242       # US Silicon Valley
 181.215.182.48       # US Texas
@@ -5720,6 +5717,7 @@
 181.214.164.94       # US Chicago
 212.102.59.180       # US Chicago
 102.129.234.4        # US Texas
+191.96.255.241       # US Silicon Valley
 212.102.59.228       # US Chicago
 191.96.36.129        # CA Toronto
 181.214.165.105      # US Chicago
@@ -5758,10 +5756,12 @@
 102.129.232.33       # US Silicon Valley
 181.215.182.126      # US Texas
 191.96.106.201       # US California
+212.102.59.219       # US Chicago
 37.19.198.42         # US New York
 84.17.45.16          # US California
 191.96.255.206       # US Silicon Valley
 181.41.202.216       # CA Vancouver
+212.102.59.216       # US Chicago
 181.214.166.160      # US Chicago
 181.215.182.168      # US Texas
 143.244.34.12        # US Florida
@@ -5821,7 +5821,6 @@
 37.19.198.106        # US New York
 181.214.164.57       # US Chicago
 37.19.198.43         # US New York
-191.96.255.216       # US Silicon Valley
 143.244.49.18        # US California
 181.41.202.206       # CA Vancouver
 191.96.168.200       # Netherlands
@@ -5850,14 +5849,12 @@
 140.228.24.199       # CA Montreal
 140.228.24.223       # CA Montreal
 140.228.24.206       # CA Montreal
-140.228.24.198       # CA Montreal
 140.228.24.197       # CA Montreal
 140.228.24.205       # CA Montreal
 37.19.198.97         # US New York
 140.228.24.234       # CA Montreal
 140.228.24.200       # CA Montreal
 140.228.24.229       # CA Montreal
-140.228.24.204       # CA Montreal
 140.228.24.212       # CA Montreal
 181.214.166.38       # US Chicago
 143.244.48.219       # US Las Vegas
@@ -5870,6 +5867,7 @@
 140.228.24.213       # CA Montreal
 140.228.24.216       # CA Montreal
 140.228.24.201       # CA Montreal
+140.228.24.196       # CA Montreal
 140.228.24.240       # CA Montreal
 181.214.164.229      # US Chicago
 140.228.24.190       # CA Montreal
@@ -5882,7 +5880,6 @@
 143.244.34.133       # US Florida
 140.228.24.194       # CA Montreal
 195.78.54.73         # Netherlands
-140.228.24.239       # CA Montreal
 212.102.52.87        # UK London
 102.129.252.69       # US Silicon Valley
 102.129.252.72       # US Silicon Valley
@@ -6162,6 +6159,7 @@
 140.228.24.69        # CA Montreal
 140.228.24.61        # CA Montreal
 140.228.24.65        # CA Montreal
+140.228.24.64        # CA Montreal
 84.239.42.59         # Ukraine
 84.239.42.58         # Ukraine
 84.239.42.60         # Ukraine
@@ -6538,7 +6536,6 @@
 149.50.212.138       # US California
 149.50.212.160       # US California
 149.50.212.142       # US California
-149.50.212.152       # US California
 149.50.212.156       # US California
 149.50.212.159       # US California
 149.50.212.182       # US California
@@ -6565,7 +6562,6 @@
 149.50.212.144       # US California
 149.50.212.178       # US California
 149.50.212.149       # US California
-149.50.212.162       # US California
 79.127.132.191       # US Washington Dc
 79.127.132.213       # US Washington Dc
 79.127.132.233       # US Washington Dc
@@ -7459,6 +7455,7 @@
 91.124.17.70         # US Washington Dc
 91.124.17.67         # US Washington Dc
 91.124.17.247        # US Washington Dc
+91.124.17.151        # US Washington Dc
 91.124.17.154        # US Washington Dc
 91.124.17.227        # US Washington Dc
 91.124.17.77         # US Washington Dc
@@ -13006,3 +13003,5 @@
 158.173.166.19       # Norway
 158.173.166.254      # Norway
 158.173.166.136      # Norway
+64.40.151.24         # Argentina
+64.40.151.203        # Argentina
