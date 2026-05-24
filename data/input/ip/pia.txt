@@ -2704,7 +2704,6 @@
 191.96.67.194        # US Houston
 191.96.227.43        # US New York
 191.96.227.101       # US New York
-79.142.79.64         # Switzerland
 181.41.206.158       # US Denver
 102.129.252.8        # US Silicon Valley
 102.129.234.234      # US Texas
@@ -3154,6 +3153,7 @@
 191.96.227.128       # US New York
 140.228.24.143       # CA Montreal
 102.129.235.112      # US Washington Dc
+191.96.168.168       # Netherlands
 154.16.105.110       # US Las Vegas
 154.16.105.104       # US Las Vegas
 154.16.105.114       # US Las Vegas
@@ -3860,7 +3860,6 @@
 191.96.67.165        # US Houston
 102.129.234.170      # US Texas
 181.215.182.35       # US Texas
-79.142.79.55         # Switzerland
 179.61.197.50        # CA Toronto
 143.244.48.7         # US California
 191.96.150.154       # US New York
@@ -4451,6 +4450,7 @@
 102.129.145.125      # US California
 191.96.106.178       # US California
 191.96.168.97        # Netherlands
+191.96.168.101       # Netherlands
 181.214.165.83       # US Chicago
 191.96.255.62        # US Silicon Valley
 181.214.153.41       # CA Vancouver
@@ -6568,13 +6568,16 @@
 149.50.212.143       # US California
 149.50.212.167       # US California
 149.50.212.177       # US California
+149.50.212.181       # US California
 149.50.212.134       # US California
 149.50.212.153       # US California
 149.50.212.150       # US California
+149.50.212.171       # US California
 149.50.212.186       # US California
 149.50.212.144       # US California
 149.50.212.178       # US California
 149.50.212.149       # US California
+149.50.212.162       # US California
 79.127.132.191       # US Washington Dc
 79.127.132.213       # US Washington Dc
 79.127.132.233       # US Washington Dc
@@ -9727,6 +9730,7 @@
 212.32.49.220        # US Atlanta
 212.32.49.254        # US Atlanta
 212.32.49.210        # US Atlanta
+212.32.49.207        # US Atlanta
 212.32.49.231        # US Atlanta
 212.32.49.227        # US Atlanta
 212.32.49.229        # US Atlanta
@@ -10745,9 +10749,7 @@
 158.173.152.75       # Switzerland
 158.173.152.35       # Switzerland
 158.173.25.38        # US New York
-158.173.152.69       # Switzerland
 158.173.20.56        # Netherlands
-158.173.152.76       # Switzerland
 158.173.152.48       # Switzerland
 158.173.152.33       # Switzerland
 158.173.152.84       # Switzerland
@@ -10846,7 +10848,6 @@
 158.173.152.106      # Switzerland
 158.173.152.188      # Switzerland
 158.173.25.36        # US New York
-158.173.152.101      # Switzerland
 158.173.152.115      # Switzerland
 158.173.152.118      # Switzerland
 158.173.3.122        # Netherlands
@@ -10866,7 +10867,6 @@
 158.173.3.186        # Netherlands
 158.173.20.112       # Netherlands
 158.173.25.184       # US New York
-158.173.152.197      # Switzerland
 158.173.152.189      # Switzerland
 158.173.152.199      # Switzerland
 158.173.152.233      # Switzerland
@@ -10885,7 +10885,6 @@
 158.173.152.10       # Switzerland
 158.173.20.159       # Netherlands
 158.173.152.143      # Switzerland
-158.173.152.98       # Switzerland
 158.173.21.240       # Netherlands
 158.173.152.30       # Switzerland
 158.173.152.43       # Switzerland
@@ -10894,9 +10893,7 @@
 158.173.152.44       # Switzerland
 158.173.152.91       # Switzerland
 158.173.152.90       # Switzerland
-158.173.152.229      # Switzerland
 158.173.152.2        # Switzerland
-158.173.152.72       # Switzerland
 158.173.152.50       # Switzerland
 158.173.152.214      # Switzerland
 158.173.152.156      # Switzerland
@@ -10933,11 +10930,9 @@
 158.173.152.235      # Switzerland
 158.173.21.117       # Netherlands
 158.173.152.236      # Switzerland
-158.173.152.193      # Switzerland
 158.173.152.149      # Switzerland
 158.173.152.223      # Switzerland
 158.173.21.81        # Netherlands
-158.173.152.225      # Switzerland
 158.173.21.42        # Netherlands
 158.173.152.200      # Switzerland
 158.173.152.206      # Switzerland
@@ -10959,15 +10954,12 @@
 158.173.21.55        # Netherlands
 158.173.152.246      # Switzerland
 158.173.152.180      # Switzerland
-158.173.152.105      # Switzerland
-158.173.152.176      # Switzerland
 158.173.152.56       # Switzerland
 158.173.152.245      # Switzerland
 158.173.152.121      # Switzerland
 158.173.152.227      # Switzerland
 158.173.152.147      # Switzerland
 158.173.152.37       # Switzerland
-158.173.152.104      # Switzerland
 158.173.21.158       # Netherlands
 158.173.152.114      # Switzerland
 158.173.21.32        # Netherlands
@@ -11102,7 +11094,6 @@
 158.173.3.202        # Netherlands
 158.173.21.31        # Netherlands
 158.173.152.249      # Switzerland
-158.173.152.78       # Switzerland
 158.173.3.159        # Netherlands
 158.173.25.76        # US New York
 158.173.25.66        # US New York
@@ -11805,7 +11796,6 @@
 188.126.89.24        # FI Streaming Optimized
 158.173.24.34        # UK Streaming Optimized
 45.154.154.51        # Uruguay
-95.134.63.207        # DE Germany Streaming Optimized
 158.173.3.220        # NL Netherlands Streaming Optimized
 158.173.24.53        # UK Streaming Optimized
 158.173.24.20        # UK Streaming Optimized
