@@ -760,7 +760,6 @@
 95.181.237.15        # Venezuela
 95.181.237.35        # Venezuela
 91.90.124.14         # Isle Of Man
-191.96.168.80        # Netherlands
 179.61.197.93        # CA Toronto
 62.133.47.19         # Kazakhstan
 62.133.47.25         # Kazakhstan
@@ -1419,6 +1418,7 @@
 191.96.227.92        # US New York
 102.129.235.170      # US Washington Dc
 185.253.162.27       # Cyprus
+191.96.168.193       # Netherlands
 191.96.106.213       # US California
 191.96.67.110        # US Houston
 191.96.67.202        # US Houston
@@ -2127,6 +2127,7 @@
 102.129.235.60       # US Washington Dc
 102.129.235.232      # US Washington Dc
 102.129.235.131      # US Washington Dc
+212.102.59.134       # US Chicago
 191.96.36.82         # CA Toronto
 191.96.106.156       # US California
 102.129.153.81       # US Florida
@@ -2189,7 +2190,6 @@
 181.215.182.164      # US Texas
 181.215.182.98       # US Texas
 102.129.235.196      # US Washington Dc
-140.228.24.118       # CA Montreal
 140.228.24.176       # CA Montreal
 37.19.197.230        # US East
 37.19.197.191        # US East
@@ -4605,6 +4605,7 @@
 179.61.197.104       # CA Toronto
 181.214.153.116      # CA Vancouver
 181.214.206.145      # Netherlands
+195.78.54.198        # Netherlands
 181.214.164.148      # US Chicago
 181.214.165.108      # US Chicago
 102.129.235.181      # US Washington Dc
@@ -5163,7 +5164,6 @@
 212.102.59.137       # US Chicago
 181.215.182.220      # US Texas
 181.215.182.26       # US Texas
-181.214.165.173      # US Chicago
 181.214.206.136      # Netherlands
 173.239.226.197      # US Las Vegas
 191.96.168.179       # Netherlands
@@ -6378,19 +6378,19 @@
 149.50.212.136       # US California
 149.50.212.141       # US California
 149.50.212.163       # US California
-149.50.212.169       # US California
 149.50.212.146       # US California
 149.50.212.151       # US California
 149.50.212.184       # US California
 149.50.212.166       # US California
+149.50.212.158       # US California
 149.50.212.157       # US California
+149.50.212.135       # US California
 149.50.212.174       # US California
 149.50.212.179       # US California
 149.50.212.139       # US California
 149.50.212.164       # US California
 149.50.212.172       # US California
 149.50.212.180       # US California
-149.50.212.145       # US California
 149.50.212.137       # US California
 149.50.212.138       # US California
 149.50.212.160       # US California
@@ -10329,7 +10329,6 @@
 158.173.21.211       # Netherlands
 158.173.3.66         # Netherlands
 158.173.21.251       # Netherlands
-158.173.25.145       # US New York
 158.173.21.190       # Netherlands
 158.173.3.110        # Netherlands
 158.173.3.74         # Netherlands
@@ -10994,6 +10993,7 @@
 84.239.33.17         # US New Mexico
 84.239.48.146        # US Oregon
 84.239.48.145        # US Oregon
+84.239.41.148        # US Pennsylvania
 98.159.36.135        # Bosnia And Herzegovina
 98.159.36.153        # Bosnia And Herzegovina
 138.199.54.47        # IT Streaming Optimized
@@ -11076,8 +11076,10 @@
 158.173.3.221        # NL Netherlands Streaming Optimized
 158.173.21.1         # NL Netherlands Streaming Optimized
 84.239.41.131        # US Pennsylvania
+84.239.41.135        # US Pennsylvania
 158.173.23.131       # UK Streaming Optimized
 158.173.23.72        # UK Streaming Optimized
+84.239.41.132        # US Pennsylvania
 102.129.232.191      # US West Streaming Optimized
 102.129.232.206      # US West Streaming Optimized
 173.239.221.5        # Guatemala
@@ -11160,6 +11162,7 @@
 98.159.36.133        # Bosnia And Herzegovina
 138.199.54.56        # IT Streaming Optimized
 84.239.41.147        # US Pennsylvania
+84.239.41.149        # US Pennsylvania
 146.70.10.32         # Costa Rica
 146.70.10.25         # Costa Rica
 146.70.10.30         # Costa Rica
@@ -11238,6 +11241,7 @@
 64.64.99.19          # Bolivia
 158.173.23.135       # UK Streaming Optimized
 146.70.11.52         # Chile
+84.239.41.207        # US Pennsylvania
 45.154.154.4         # Uruguay
 45.154.154.46        # Uruguay
 45.154.154.12        # Uruguay
@@ -11607,12 +11611,15 @@
 135.136.23.142       # UK Manchester
 212.102.39.14        # Czech Republic
 212.102.39.30        # Czech Republic
+84.239.41.163        # US Pennsylvania
+84.239.41.155        # US Pennsylvania
 84.239.41.166        # US Pennsylvania
 84.239.41.158        # US Pennsylvania
 84.239.41.154        # US Pennsylvania
 84.239.41.167        # US Pennsylvania
 84.239.41.168        # US Pennsylvania
 84.239.41.153        # US Pennsylvania
+84.239.41.159        # US Pennsylvania
 84.239.41.156        # US Pennsylvania
 84.239.41.160        # US Pennsylvania
 95.181.236.69        # Georgia
