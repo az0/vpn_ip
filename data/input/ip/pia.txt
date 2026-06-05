@@ -188,7 +188,6 @@
 143.244.34.141       # US Florida
 102.129.153.140      # US Florida
 95.181.238.12        # Bahamas
-140.228.24.153       # CA Montreal
 140.228.24.180       # CA Montreal
 188.215.235.109      # Cambodia
 188.215.235.115      # Cambodia
@@ -2821,6 +2820,7 @@
 37.19.221.9          # US Houston
 143.244.48.206       # US Las Vegas
 173.239.226.218      # US Las Vegas
+181.214.165.15       # US Chicago
 181.214.165.131      # US Chicago
 102.129.252.62       # US Silicon Valley
 102.129.235.11       # US Washington Dc
@@ -4376,6 +4376,7 @@
 191.96.106.45        # US California
 191.96.106.135       # US California
 181.214.164.88       # US Chicago
+143.244.34.158       # US Florida
 143.244.34.155       # US Florida
 181.215.182.189      # US Texas
 181.215.182.167      # US Texas
@@ -4871,7 +4872,6 @@
 102.129.235.121      # US Washington Dc
 195.78.54.177        # Netherlands
 143.244.34.193       # US Florida
-143.244.34.202       # US Florida
 102.129.232.107      # US Silicon Valley
 191.96.150.145       # US New York
 37.19.198.105        # US New York
@@ -5014,7 +5014,6 @@
 102.129.235.141      # US Washington Dc
 181.215.182.90       # US Texas
 191.96.36.184        # CA Toronto
-195.78.54.168        # Netherlands
 102.129.252.29       # US Silicon Valley
 102.129.145.111      # US California
 140.228.24.144       # CA Montreal
@@ -5475,6 +5474,7 @@
 181.214.165.17       # US Chicago
 195.78.54.85         # Netherlands
 195.78.54.164        # Netherlands
+195.78.54.196        # Netherlands
 195.78.54.175        # Netherlands
 143.244.34.27        # US Florida
 191.96.168.165       # Netherlands
@@ -5747,7 +5747,6 @@
 140.228.24.238       # CA Montreal
 181.214.164.236      # US Chicago
 181.214.164.169      # US Chicago
-140.228.24.235       # CA Montreal
 140.228.24.237       # CA Montreal
 191.96.255.250       # US Silicon Valley
 37.19.198.112        # US New York
@@ -6391,9 +6390,11 @@
 149.50.212.164       # US California
 149.50.212.172       # US California
 149.50.212.180       # US California
+149.50.212.145       # US California
 149.50.212.137       # US California
 149.50.212.138       # US California
 149.50.212.160       # US California
+149.50.212.142       # US California
 149.50.212.152       # US California
 149.50.212.156       # US California
 149.50.212.159       # US California
@@ -7821,7 +7822,6 @@
 212.32.48.99         # CA Toronto
 212.32.48.14         # CA Toronto
 212.32.48.34         # CA Toronto
-212.32.48.36         # CA Toronto
 212.32.48.24         # CA Toronto
 212.32.48.51         # CA Toronto
 212.32.48.17         # CA Toronto
@@ -10936,7 +10936,6 @@
 98.159.36.152        # Bosnia And Herzegovina
 146.70.11.35         # Chile
 146.70.11.47         # Chile
-146.70.11.37         # Chile
 154.47.16.196        # Colombia
 146.70.10.23         # Costa Rica
 146.70.10.60         # Costa Rica
@@ -10995,8 +10994,6 @@
 98.159.36.135        # Bosnia And Herzegovina
 98.159.36.153        # Bosnia And Herzegovina
 138.199.54.47        # IT Streaming Optimized
-146.70.11.30         # Chile
-146.70.11.42         # Chile
 146.70.11.29         # Chile
 158.173.3.219        # NL Netherlands Streaming Optimized
 158.173.21.17        # NL Netherlands Streaming Optimized
@@ -11014,7 +11011,6 @@
 64.64.99.25          # Bolivia
 64.64.99.9           # Bolivia
 64.64.99.28          # Bolivia
-146.70.11.26         # Chile
 146.70.10.37         # Costa Rica
 146.70.10.56         # Costa Rica
 84.247.97.16         # Nepal
@@ -11052,7 +11048,6 @@
 158.173.24.24        # UK Streaming Optimized
 158.173.24.10        # UK Streaming Optimized
 158.173.23.80        # UK Streaming Optimized
-146.70.11.25         # Chile
 146.70.11.19         # Chile
 173.244.42.7         # South Korea
 84.239.33.16         # US New Mexico
@@ -11085,7 +11080,6 @@
 158.173.3.215        # NL Netherlands Streaming Optimized
 158.173.21.9         # NL Netherlands Streaming Optimized
 173.244.42.13        # South Korea
-146.70.11.43         # Chile
 146.70.11.31         # Chile
 146.70.11.23         # Chile
 45.154.152.26        # Peru
@@ -11141,7 +11135,6 @@
 64.64.99.3           # Bolivia
 64.64.99.24          # Bolivia
 146.70.11.48         # Chile
-146.70.11.27         # Chile
 146.70.10.16         # Costa Rica
 146.70.10.22         # Costa Rica
 146.70.10.21         # Costa Rica
@@ -11230,8 +11223,6 @@
 45.154.154.3         # Uruguay
 45.154.154.37        # Uruguay
 45.154.154.41        # Uruguay
-146.70.11.51         # Chile
-146.70.11.53         # Chile
 188.126.89.21        # FI Streaming Optimized
 158.173.21.18        # NL Netherlands Streaming Optimized
 158.173.21.3         # NL Netherlands Streaming Optimized
@@ -11279,7 +11270,6 @@
 158.173.24.2         # UK Streaming Optimized
 84.239.33.10         # US New Mexico
 84.239.33.18         # US New Mexico
-146.70.11.39         # Chile
 154.47.29.132        # Croatia
 158.173.23.81        # UK Streaming Optimized
 158.173.24.22        # UK Streaming Optimized
@@ -11368,7 +11358,6 @@
 45.154.154.7         # Uruguay
 45.154.154.20        # Uruguay
 188.126.89.6         # FI Streaming Optimized
-146.70.11.20         # Chile
 173.239.249.23       # Ecuador
 173.239.249.51       # Ecuador
 158.173.21.7         # NL Netherlands Streaming Optimized
@@ -11406,7 +11395,6 @@
 158.173.21.2         # NL Netherlands Streaming Optimized
 45.154.154.52        # Uruguay
 45.154.154.8         # Uruguay
-146.70.11.38         # Chile
 158.173.21.8         # NL Netherlands Streaming Optimized
 64.64.99.4           # Bolivia
 158.173.23.66        # UK Streaming Optimized
@@ -11486,7 +11474,6 @@
 158.173.23.140       # UK Streaming Optimized
 158.173.24.41        # UK Streaming Optimized
 102.129.232.190      # US West Streaming Optimized
-146.70.11.49         # Chile
 173.239.249.11       # Ecuador
 158.173.24.32        # UK Streaming Optimized
 158.173.24.42        # UK Streaming Optimized
@@ -11497,7 +11484,6 @@
 158.173.23.134       # UK Streaming Optimized
 102.129.232.204      # US West Streaming Optimized
 102.129.232.199      # US West Streaming Optimized
-146.70.11.33         # Chile
 173.239.249.48       # Ecuador
 158.173.21.10        # NL Netherlands Streaming Optimized
 102.129.232.194      # US West Streaming Optimized
@@ -11515,7 +11501,6 @@
 158.173.3.227        # NL Netherlands Streaming Optimized
 158.173.24.51        # UK Streaming Optimized
 158.173.23.150       # UK Streaming Optimized
-146.70.11.17         # Chile
 102.129.232.196      # US West Streaming Optimized
 158.173.24.49        # UK Streaming Optimized
 158.173.23.139       # UK Streaming Optimized
@@ -11942,3 +11927,4 @@
 178.93.200.140       # CA Ontario
 178.93.200.104       # CA Ontario
 178.93.200.172       # CA Ontario
+178.93.201.153       # CA Ontario
