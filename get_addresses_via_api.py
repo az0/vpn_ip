@@ -12,7 +12,7 @@ import sys
 from urllib.parse import urlparse
 
 import requests
-from common import read_hostnames_from_file, write_addresses_to_file
+from common import read_hostnames_from_file, sort_fqdns, write_addresses_to_file
 
 HOSTNAME_IP_ROOT = 'data/input/hostname_ip/'
 IP_ROOT = 'data/input/ip/'
@@ -113,7 +113,7 @@ def process_service(service_code, service):
         print(f'remembered {len(old_hostnames)} hostnames from {hostname_fn}')
         all_hostnames.update(old_hostnames)
 
-    write_addresses_to_file(hostname_fn, sorted(all_hostnames))
+    write_addresses_to_file(hostname_fn, sort_fqdns(list(all_hostnames)))
     # FIXME later: sort IPs like prepare_final_lists.write_ips()
     write_addresses_to_file(ip_fn, sorted(all_ips), units="IP addresses", brand=brand)
 
