@@ -624,7 +624,6 @@
 95.181.233.23        # Monaco
 176.125.229.22       # Montenegro
 176.125.229.11       # Montenegro
-140.228.24.155       # CA Montreal
 140.228.24.147       # CA Montreal
 140.228.21.113       # CA Montreal
 188.215.235.124      # Cambodia
@@ -1121,7 +1120,6 @@
 181.214.164.71       # US Chicago
 212.102.59.154       # US Chicago
 212.102.59.138       # US Chicago
-37.46.113.173        # Luxembourg
 102.129.153.202      # US Florida
 191.96.150.31        # US New York
 102.129.232.181      # US Silicon Valley
@@ -2746,7 +2744,6 @@
 102.129.153.76       # US Florida
 191.101.61.180       # US Las Vegas
 191.101.61.198       # US Las Vegas
-191.96.36.153        # CA Toronto
 191.96.36.95         # CA Toronto
 191.96.168.65        # Netherlands
 191.96.106.57        # US California
@@ -4824,6 +4821,7 @@
 102.129.235.141      # US Washington Dc
 181.215.182.90       # US Texas
 191.96.36.184        # CA Toronto
+195.78.54.168        # Netherlands
 102.129.252.29       # US Silicon Valley
 102.129.145.111      # US California
 140.228.24.144       # CA Montreal
@@ -5234,6 +5232,7 @@
 191.96.227.49        # US New York
 181.214.166.29       # US Chicago
 181.214.165.28       # US Chicago
+140.228.24.94        # CA Montreal
 102.129.235.228      # US Washington Dc
 181.215.182.82       # US Texas
 181.214.166.60       # US Chicago
@@ -5552,6 +5551,7 @@
 143.244.34.133       # US Florida
 140.228.24.194       # CA Montreal
 195.78.54.73         # Netherlands
+140.228.24.239       # CA Montreal
 212.102.52.87        # UK London
 102.129.252.69       # US Silicon Valley
 102.129.252.72       # US Silicon Valley
@@ -9058,6 +9058,7 @@
 212.32.49.240        # US Atlanta
 212.32.49.109        # US Atlanta
 151.241.125.93       # US Atlanta
+212.32.49.124        # US Atlanta
 212.32.49.123        # US Atlanta
 151.241.123.51       # US Atlanta
 151.241.123.44       # US Atlanta
@@ -9682,6 +9683,7 @@
 158.173.21.186       # Netherlands
 158.173.25.150       # US New York
 158.173.25.6         # US New York
+158.173.3.181        # Netherlands
 158.173.20.81        # Netherlands
 158.173.3.185        # Netherlands
 158.173.25.83        # US New York
@@ -10360,8 +10362,6 @@
 45.154.152.13        # Peru
 45.154.152.7         # Peru
 195.80.150.181       # Slovenia
-173.244.42.9         # South Korea
-173.244.42.15        # South Korea
 158.173.23.84        # UK Streaming Optimized
 158.173.24.7         # UK Streaming Optimized
 158.173.23.121       # UK Streaming Optimized
@@ -10398,7 +10398,6 @@
 158.173.21.23        # NL Netherlands Streaming Optimized
 45.154.152.14        # Peru
 102.129.232.210      # US West Streaming Optimized
-173.244.42.5         # South Korea
 45.154.154.49        # Uruguay
 45.154.154.25        # Uruguay
 146.70.10.24         # Costa Rica
@@ -10434,9 +10433,6 @@
 158.173.21.14        # NL Netherlands Streaming Optimized
 158.173.3.242        # NL Netherlands Streaming Optimized
 158.173.3.208        # NL Netherlands Streaming Optimized
-173.244.42.10        # South Korea
-173.244.42.3         # South Korea
-173.244.42.6         # South Korea
 102.129.232.197      # US West Streaming Optimized
 173.239.221.11       # Guatemala
 173.239.221.25       # Guatemala
@@ -10445,7 +10441,6 @@
 158.173.24.24        # UK Streaming Optimized
 158.173.24.10        # UK Streaming Optimized
 158.173.23.80        # UK Streaming Optimized
-173.244.42.7         # South Korea
 84.239.33.16         # US New Mexico
 84.239.33.4          # US New Mexico
 146.70.10.62         # Costa Rica
@@ -10473,7 +10468,6 @@
 173.239.221.21       # Guatemala
 158.173.3.215        # NL Netherlands Streaming Optimized
 158.173.21.9         # NL Netherlands Streaming Optimized
-173.244.42.13        # South Korea
 45.154.152.26        # Peru
 45.154.152.15        # Peru
 45.154.152.5         # Peru
@@ -10512,7 +10506,6 @@
 98.159.36.131        # Bosnia And Herzegovina
 173.239.221.6        # Guatemala
 173.239.221.19       # Guatemala
-173.244.42.11        # South Korea
 45.154.154.57        # Uruguay
 45.154.154.43        # Uruguay
 158.173.23.65        # UK Streaming Optimized
@@ -10587,9 +10580,6 @@
 102.129.232.209      # US West Streaming Optimized
 173.239.249.52       # Ecuador
 173.239.249.12       # Ecuador
-173.244.42.4         # South Korea
-173.244.42.14        # South Korea
-173.244.42.8         # South Korea
 84.239.41.203        # US Pennsylvania
 146.70.10.31         # Costa Rica
 158.173.21.19        # NL Netherlands Streaming Optimized
@@ -10628,7 +10618,6 @@
 173.239.249.49       # Ecuador
 158.173.3.216        # NL Netherlands Streaming Optimized
 158.173.3.241        # NL Netherlands Streaming Optimized
-173.244.42.16        # South Korea
 45.154.154.54        # Uruguay
 45.154.154.35        # Uruguay
 146.70.10.38         # Costa Rica
