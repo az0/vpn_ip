@@ -32,6 +32,12 @@
 197.234.240.0/22
 198.41.128.0/17
 
+# 1.2.3.4 was marked as Windscribe, but it's a common placeholder
+# and assigned to APNIC Debogon Project.
+# https://github.com/az0/vpn_ip/issues/10
+# https://wq.apnic.net/apnic-bin/whois.pl?searchtext=1.2.3.4
+1.2.3.4
+
 # GitHub
 # This list is incomplete.
 # https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses

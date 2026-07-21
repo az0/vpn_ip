@@ -134,7 +134,7 @@ class TestPrepareFinalLists(unittest.TestCase):
         input_fqdns = ['example.com', 'example.org', 'doesnotexist.example.com',
                        'private.host', 'local.host', 'cloudflare.host']
         resolver_cache = {
-            'example.com': {'ips': ['1.2.3.4'], 'error': None},
+            'example.com': {'ips': ['9.8.7.6'], 'error': None},
             'example.org': {'ips': ['5.6.7.8'], 'error': None},
             'doesnotexist.example.com': {'ips': [], 'error': 'NXDOMAIN'},
             'private.host': {'ips': ['0.0.0.0'], 'error': None},
@@ -146,7 +146,7 @@ class TestPrepareFinalLists(unittest.TestCase):
                                                             allowlist=self.allowlist,
                                                             resolver_cache=resolver_cache, update_cache=False)
         self.assertEqual(ret_hosts, set(['example.com', 'example.org', 'cloudflare.host']))
-        self.assertEqual(ret_ip_to_root_domains, {'1.2.3.4': {'example.com'}, '5.6.7.8': {'example.org'}})
+        self.assertEqual(ret_ip_to_root_domains, {'9.8.7.6': {'example.com'}, '5.6.7.8': {'example.org'}})
 
     def test_resolve_hosts_real(self):
         """Test resolve_hosts() with real hostnames"""
@@ -256,11 +256,11 @@ class TestPrepareFinalLists(unittest.TestCase):
             test_file = os.path.join(temp_dir, 'test_output', 'ips.txt')
 
             ip_to_root_domains = {
-                '1.2.3.4': {'example.com'},
+                '9.8.7.6': {'example.com'},
                 '5.6.7.8': {'example.org'}
             }
             ips_only = {
-                '1.2.3.4': {'source1', 'source2'},
+                '9.8.7.6': {'source1', 'source2'},
                 '5.6.7.8': {'source3'}
             }
 
@@ -271,7 +271,7 @@ class TestPrepareFinalLists(unittest.TestCase):
             self.assertTrue(os.path.exists(test_file))
             with open(test_file, 'r') as f:
                 content = f.read()
-                self.assertIn('1.2.3.4', content)
+                self.assertIn('9.8.7.6', content)
                 self.assertIn('5.6.7.8', content)
 
 
