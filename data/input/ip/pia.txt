@@ -767,7 +767,6 @@
 191.96.150.119       # US New York
 95.181.237.27        # Venezuela
 95.181.238.35        # Bahamas
-102.129.153.113      # US Florida
 102.129.152.54       # US Florida
 102.129.152.53       # US Florida
 102.129.235.95       # US Washington Dc
@@ -1289,7 +1288,6 @@
 173.239.226.228      # US Las Vegas
 191.96.106.235       # US California
 37.19.197.196        # US East
-102.129.153.106      # US Florida
 102.129.153.110      # US Florida
 191.96.150.7         # US New York
 37.19.198.92         # US New York
@@ -1869,6 +1867,7 @@
 140.228.24.90        # CA Montreal
 181.41.206.116       # US Denver
 102.129.235.154      # US Washington Dc
+191.96.168.82        # Netherlands
 191.96.168.93        # Netherlands
 195.78.54.194        # Netherlands
 191.96.106.211       # US California
@@ -2408,7 +2407,6 @@
 102.129.235.233      # US Washington Dc
 102.129.235.17       # US Washington Dc
 102.129.153.97       # US Florida
-102.129.153.103      # US Florida
 191.101.61.217       # US Las Vegas
 102.129.235.167      # US Washington Dc
 102.129.235.187      # US Washington Dc
@@ -2753,13 +2751,11 @@
 179.61.197.82        # CA Toronto
 181.214.206.96       # Netherlands
 102.129.152.24       # US Florida
-102.129.153.115      # US Florida
 143.244.48.217       # US Las Vegas
 195.78.54.100        # Netherlands
 191.96.227.33        # US New York
 173.239.226.143      # US Las Vegas
 102.129.153.119      # US Florida
-102.129.153.121      # US Florida
 191.96.255.41        # US Silicon Valley
 102.129.235.204      # US Washington Dc
 102.129.235.249      # US Washington Dc
@@ -3408,6 +3404,7 @@
 181.214.153.46       # CA Vancouver
 195.78.54.182        # Netherlands
 102.129.235.215      # US Washington Dc
+195.78.54.161        # Netherlands
 181.41.202.117       # CA Vancouver
 191.96.255.8         # US Silicon Valley
 191.96.255.14        # US Silicon Valley
@@ -6905,6 +6902,7 @@
 158.173.21.114       # Netherlands
 158.173.21.171       # Netherlands
 158.173.20.41        # Netherlands
+158.173.20.4         # Netherlands
 158.173.25.42        # US New York
 158.173.25.102       # US New York
 158.173.20.153       # Netherlands
@@ -8171,8 +8169,6 @@
 158.173.89.97        # Bulgaria
 64.40.151.5          # Argentina
 64.40.151.79         # Argentina
-151.240.101.147      # US Alabama
-151.240.101.74       # US Alabama
 82.139.195.162       # Algeria
 82.139.195.130       # Algeria
 82.139.195.55        # Egypt
@@ -8254,8 +8250,6 @@
 151.240.49.175       # US New Hampshire
 151.240.56.3         # US South Carolina
 151.240.56.63        # US South Carolina
-151.240.51.55        # US Tennessee
-151.240.51.68        # US Tennessee
 151.240.46.58        # US Virginia
 151.240.46.123       # US Virginia
 151.240.43.162       # US West Virginia
@@ -8410,8 +8404,6 @@
 209.87.164.38        # US Texas
 151.240.101.60       # US Alabama
 151.240.101.11       # US Alabama
-151.240.51.21        # US Tennessee
-151.240.51.35        # US Tennessee
 151.240.51.74        # US Tennessee
 151.240.51.91        # US Tennessee
 151.240.56.79        # US South Carolina
@@ -8436,3 +8428,8 @@
 194.33.47.39         # Monaco
 82.139.195.7         # Egypt
 82.139.195.15        # Egypt
+82.139.195.203       # Algeria
+82.139.195.129       # Algeria
+151.240.51.29        # US Tennessee
+151.240.101.62       # US Alabama
+151.240.56.76        # US South Carolina
