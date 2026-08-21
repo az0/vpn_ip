@@ -56,6 +56,7 @@
 62.133.47.21         # Kazakhstan
 102.129.145.137      # US California
 102.129.145.152      # US California
+191.96.150.137       # US New York
 62.133.47.22         # Kazakhstan
 196.196.53.5         # Latvia
 102.129.153.53       # US Florida
@@ -1522,6 +1523,7 @@
 191.96.106.174       # US California
 181.41.206.156       # US Denver
 191.101.157.201      # DE Berlin
+191.96.150.40        # US New York
 191.96.150.124       # US New York
 181.214.153.61       # CA Vancouver
 191.96.168.196       # Netherlands
@@ -2273,6 +2275,7 @@
 195.78.54.70         # Netherlands
 102.129.152.132      # US Florida
 191.96.106.43        # US California
+191.96.168.76        # Netherlands
 191.96.168.105       # Netherlands
 181.41.206.18        # US Denver
 191.96.106.242       # US California
@@ -3267,6 +3270,7 @@
 140.228.24.221       # CA Montreal
 140.228.24.226       # CA Montreal
 140.228.24.222       # CA Montreal
+140.228.24.211       # CA Montreal
 140.228.24.192       # CA Montreal
 140.228.24.219       # CA Montreal
 140.228.24.199       # CA Montreal
@@ -4468,7 +4472,6 @@
 212.56.54.244        # US East
 212.56.54.105        # US East
 212.56.54.48         # US East
-212.56.54.197        # US East
 212.56.54.86         # US East
 212.56.54.221        # US East
 212.56.54.210        # US East
@@ -5384,7 +5387,6 @@
 212.32.50.153        # US Las Vegas
 212.32.50.138        # US Las Vegas
 212.32.50.37         # US Las Vegas
-212.32.50.61         # US Las Vegas
 212.32.50.26         # US Las Vegas
 212.32.50.151        # US Las Vegas
 212.32.50.150        # US Las Vegas
@@ -5395,10 +5397,8 @@
 212.32.50.137        # US Las Vegas
 212.32.50.140        # US Las Vegas
 212.32.50.15         # US Las Vegas
-212.32.50.60         # US Las Vegas
 212.32.50.143        # US Las Vegas
 212.32.50.24         # US Las Vegas
-212.32.50.44         # US Las Vegas
 212.32.50.18         # US Las Vegas
 212.32.50.31         # US Las Vegas
 212.32.50.131        # US Las Vegas
@@ -5408,14 +5408,12 @@
 212.32.50.135        # US Las Vegas
 212.32.50.34         # US Las Vegas
 212.32.50.159        # US Las Vegas
-212.32.50.49         # US Las Vegas
 212.32.50.40         # US Las Vegas
 212.32.50.114        # US Las Vegas
 212.32.50.113        # US Las Vegas
 212.32.50.128        # US Las Vegas
 212.32.50.120        # US Las Vegas
 212.32.50.160        # US Las Vegas
-212.32.50.57         # US Las Vegas
 212.32.50.25         # US Las Vegas
 212.32.50.122        # US Las Vegas
 212.32.50.234        # US Las Vegas
@@ -5450,11 +5448,9 @@
 212.32.50.124        # US Las Vegas
 212.32.50.185        # US Las Vegas
 212.32.50.254        # US Las Vegas
-212.32.50.52         # US Las Vegas
 212.32.50.175        # US Las Vegas
 212.32.50.180        # US Las Vegas
 212.32.50.126        # US Las Vegas
-212.32.50.51         # US Las Vegas
 212.32.50.158        # US Las Vegas
 212.32.50.165        # US Las Vegas
 212.32.50.118        # US Las Vegas
@@ -5471,7 +5467,6 @@
 212.32.50.176        # US Las Vegas
 212.32.50.214        # US Las Vegas
 212.32.50.239        # US Las Vegas
-212.32.50.69         # US Las Vegas
 212.32.50.178        # US Las Vegas
 212.32.50.236        # US Las Vegas
 212.32.50.218        # US Las Vegas
@@ -5487,7 +5482,6 @@
 212.32.50.232        # US Las Vegas
 212.32.50.187        # US Las Vegas
 212.32.50.177        # US Las Vegas
-212.32.50.59         # US Las Vegas
 212.32.50.200        # US Las Vegas
 212.32.50.10         # US Las Vegas
 212.32.50.240        # US Las Vegas
@@ -5497,7 +5491,6 @@
 212.32.50.170        # US Las Vegas
 212.32.50.129        # US Las Vegas
 212.32.50.116        # US Las Vegas
-212.32.50.48         # US Las Vegas
 212.32.50.16         # US Las Vegas
 212.32.50.164        # US Las Vegas
 212.32.50.30         # US Las Vegas
@@ -5516,7 +5509,6 @@
 212.32.50.223        # US Las Vegas
 212.32.50.219        # US Las Vegas
 212.32.50.209        # US Las Vegas
-212.32.50.43         # US Las Vegas
 212.32.50.205        # US Las Vegas
 212.32.50.243        # US Las Vegas
 212.32.50.21         # US Las Vegas
@@ -5553,15 +5545,12 @@
 212.32.50.241        # US Las Vegas
 212.32.50.110        # US Las Vegas
 212.32.50.231        # US Las Vegas
-212.32.50.67         # US Las Vegas
-212.32.50.53         # US Las Vegas
 212.32.50.19         # US Las Vegas
 212.32.50.217        # US Las Vegas
 212.32.50.202        # US Las Vegas
 212.32.50.152        # US Las Vegas
 212.32.50.20         # US Las Vegas
 212.32.50.28         # US Las Vegas
-212.32.50.50         # US Las Vegas
 212.32.50.184        # US Las Vegas
 212.32.50.121        # US Las Vegas
 212.32.50.179        # US Las Vegas
@@ -5574,7 +5563,6 @@
 212.32.50.39         # US Las Vegas
 212.32.50.136        # US Las Vegas
 212.32.50.105        # US Las Vegas
-212.32.50.41         # US Las Vegas
 212.32.50.141        # US Las Vegas
 212.32.50.123        # US Las Vegas
 138.199.10.3         # US East
@@ -6950,7 +6938,6 @@
 158.173.25.80        # US New York
 158.173.21.143       # Netherlands
 158.173.21.79        # Netherlands
-158.173.20.165       # Netherlands
 158.173.20.13        # Netherlands
 158.173.3.65         # Netherlands
 158.173.25.74        # US New York
