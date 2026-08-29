@@ -105,9 +105,6 @@
 179.61.197.87        # CA Toronto
 181.41.202.139       # CA Vancouver
 181.41.202.140       # CA Vancouver
-86.107.104.236       # Hong Kong
-86.107.104.228       # Hong Kong
-86.107.104.246       # Hong Kong
 62.133.47.7          # Kazakhstan
 62.133.47.23         # Kazakhstan
 84.239.42.23         # Ukraine
@@ -189,7 +186,6 @@
 102.129.235.6        # US Washington Dc
 185.253.162.11       # Cyprus
 86.107.104.249       # Hong Kong
-86.107.104.227       # Hong Kong
 102.129.145.107      # US California
 191.96.106.209       # US California
 154.16.105.80        # US Las Vegas
@@ -206,7 +202,6 @@
 179.61.197.88        # CA Toronto
 191.96.36.52         # CA Toronto
 191.96.36.127        # CA Toronto
-86.107.104.235       # Hong Kong
 86.107.104.243       # Hong Kong
 95.181.232.11        # Morocco
 91.90.126.17         # Panama
@@ -263,7 +258,6 @@
 191.96.36.114        # CA Toronto
 191.96.36.146        # CA Toronto
 185.253.162.20       # Cyprus
-86.107.104.250       # Hong Kong
 86.107.104.231       # Hong Kong
 86.107.104.229       # Hong Kong
 62.133.47.12         # Kazakhstan
@@ -302,6 +296,7 @@
 37.19.198.71         # US New York
 191.96.227.140       # US New York
 37.19.198.89         # US New York
+102.129.235.212      # US Washington Dc
 102.129.235.209      # US Washington Dc
 102.129.235.210      # US Washington Dc
 188.126.89.37        # Finland
@@ -523,7 +518,6 @@
 191.96.106.37        # US California
 191.96.106.139       # US California
 102.129.145.114      # US California
-86.107.104.245       # Hong Kong
 181.41.206.235       # US Denver
 154.16.105.103       # US Las Vegas
 154.16.105.127       # US Las Vegas
@@ -2034,6 +2028,7 @@
 191.96.106.141       # US California
 37.19.198.81         # US New York
 37.19.198.85         # US New York
+102.129.235.236      # US Washington Dc
 191.101.157.199      # DE Berlin
 191.96.150.30        # US New York
 191.96.150.50        # US New York
@@ -2307,6 +2302,7 @@
 102.129.145.148      # US California
 191.96.227.151       # US New York
 181.214.206.158      # Netherlands
+102.129.235.238      # US Washington Dc
 173.239.226.198      # US Las Vegas
 173.239.226.205      # US Las Vegas
 140.228.24.156       # CA Montreal
@@ -3791,7 +3787,6 @@
 173.244.58.24        # Mongolia
 173.244.58.25        # Mongolia
 173.244.58.22        # Mongolia
-173.244.58.21        # Mongolia
 173.244.58.14        # Mongolia
 173.244.58.18        # Mongolia
 173.244.58.15        # Mongolia
@@ -3844,17 +3839,12 @@
 98.159.234.186       # UK Southampton
 98.159.234.191       # UK Southampton
 98.159.234.207       # UK Southampton
-89.45.6.201          # Hong Kong
 89.45.6.200          # Hong Kong
-89.45.6.204          # Hong Kong
-89.45.6.206          # Hong Kong
 89.45.6.196          # Hong Kong
-89.45.6.198          # Hong Kong
 89.45.6.202          # Hong Kong
 89.45.6.195          # Hong Kong
 89.45.6.203          # Hong Kong
 89.45.6.197          # Hong Kong
-89.45.6.205          # Hong Kong
 89.45.6.199          # Hong Kong
 98.159.234.189       # UK Southampton
 217.138.162.5        # United Arab Emirates
@@ -6525,6 +6515,7 @@
 158.173.21.237       # Netherlands
 158.173.3.15         # Netherlands
 158.173.3.94         # Netherlands
+158.173.3.105        # Netherlands
 158.173.20.46        # Netherlands
 158.173.20.162       # Netherlands
 158.173.3.107        # Netherlands
@@ -6963,8 +6954,6 @@
 196.245.54.136       # ES Valencia
 173.239.221.30       # Guatemala
 173.239.221.22       # Guatemala
-84.247.97.5          # Nepal
-84.247.97.14         # Nepal
 84.247.97.8          # Nepal
 158.173.21.24        # NL Netherlands Streaming Optimized
 158.173.3.209        # NL Netherlands Streaming Optimized
@@ -6988,7 +6977,6 @@
 173.239.221.13       # Guatemala
 173.239.221.3        # Guatemala
 84.247.97.9          # Nepal
-84.247.97.6          # Nepal
 84.239.33.3          # US New Mexico
 84.239.33.17         # US New Mexico
 84.239.27.34         # US Wisconsin
@@ -7007,9 +6995,6 @@
 64.64.99.28          # Bolivia
 146.70.10.37         # Costa Rica
 146.70.10.56         # Costa Rica
-84.247.97.16         # Nepal
-84.247.97.12         # Nepal
-84.247.97.4          # Nepal
 45.154.152.25        # Peru
 45.154.152.21        # Peru
 173.239.221.24       # Guatemala
@@ -7029,7 +7014,6 @@
 173.239.221.11       # Guatemala
 173.239.221.25       # Guatemala
 173.239.221.16       # Guatemala
-84.247.97.10         # Nepal
 84.239.33.16         # US New Mexico
 84.239.33.4          # US New Mexico
 146.70.10.62         # Costa Rica
@@ -7102,7 +7086,6 @@
 173.239.249.60       # Ecuador
 173.239.249.22       # Ecuador
 173.239.249.14       # Ecuador
-84.247.97.15         # Nepal
 158.173.3.238        # NL Netherlands Streaming Optimized
 158.173.3.223        # NL Netherlands Streaming Optimized
 45.154.152.19        # Peru
@@ -7120,7 +7103,6 @@
 173.239.249.25       # Ecuador
 173.239.249.6        # Ecuador
 45.154.152.24        # Peru
-84.247.97.3          # Nepal
 84.247.97.7          # Nepal
 188.126.89.26        # FI Streaming Optimized
 173.239.221.26       # Guatemala
@@ -7157,7 +7139,6 @@
 84.239.33.19         # US New Mexico
 64.64.99.5           # Bolivia
 64.64.99.17          # Bolivia
-84.247.97.11         # Nepal
 173.239.249.49       # Ecuador
 158.173.3.216        # NL Netherlands Streaming Optimized
 158.173.3.241        # NL Netherlands Streaming Optimized
@@ -7174,7 +7155,6 @@
 84.239.33.10         # US New Mexico
 84.239.33.18         # US New Mexico
 154.47.29.132        # Croatia
-84.247.97.13         # Nepal
 158.173.3.234        # NL Netherlands Streaming Optimized
 158.173.3.231        # NL Netherlands Streaming Optimized
 188.126.94.37        # DK Streaming Optimized
@@ -7764,7 +7744,6 @@
 147.90.167.56        # Cambodia
 147.90.169.106       # Sri Lanka
 147.90.169.139       # Sri Lanka
-147.90.165.149       # Vietnam
 147.90.165.166       # Vietnam
 147.90.171.19        # Macao
 147.90.171.11        # Macao
