@@ -1011,7 +1011,6 @@
 37.19.197.196        # US East
 191.96.150.7         # US New York
 37.19.198.92         # US New York
-140.228.24.95        # CA Montreal
 140.228.24.92        # CA Montreal
 181.214.206.93       # Netherlands
 181.214.206.98       # Netherlands
@@ -2755,6 +2754,7 @@
 191.96.168.77        # Netherlands
 179.61.197.90        # CA Toronto
 181.41.202.158       # CA Vancouver
+191.96.168.86        # Netherlands
 143.244.34.134       # US Florida
 102.129.153.31       # US Florida
 102.129.235.79       # US Washington Dc
@@ -3114,6 +3114,7 @@
 179.61.197.102       # CA Toronto
 37.19.198.67         # US New York
 191.96.168.178       # Netherlands
+37.19.198.46         # US New York
 179.61.197.46        # CA Toronto
 102.129.152.52       # US Florida
 195.78.54.93         # Netherlands
@@ -3240,6 +3241,7 @@
 140.228.24.193       # CA Montreal
 140.228.24.210       # CA Montreal
 140.228.24.202       # CA Montreal
+140.228.24.218       # CA Montreal
 191.96.168.208       # Netherlands
 140.228.24.214       # CA Montreal
 143.244.34.133       # US Florida
@@ -6915,13 +6917,11 @@
 220.158.199.145      # AU Sydney
 45.130.141.159       # AU Melbourne
 45.130.141.134       # AU Melbourne
-64.64.99.7           # Bolivia
 154.47.16.196        # Colombia
 146.70.10.23         # Costa Rica
 146.70.10.60         # Costa Rica
 146.70.10.64         # Costa Rica
 173.239.249.17       # Ecuador
-173.239.249.32       # Ecuador
 196.245.54.136       # ES Valencia
 173.239.221.30       # Guatemala
 173.239.221.22       # Guatemala
@@ -6930,282 +6930,140 @@
 158.173.21.12        # NL Netherlands Streaming Optimized
 45.154.152.18        # Peru
 45.154.152.13        # Peru
-45.154.152.7         # Peru
 195.80.150.181       # Slovenia
-45.154.154.58        # Uruguay
 45.154.154.16        # Uruguay
-84.239.33.14         # US New Mexico
-84.239.33.11         # US New Mexico
 84.239.33.9          # US New Mexico
-64.64.99.22          # Bolivia
-64.64.99.13          # Bolivia
-64.64.99.8           # Bolivia
-173.239.249.21       # Ecuador
-173.239.249.26       # Ecuador
-173.239.221.23       # Guatemala
-173.239.221.13       # Guatemala
-84.239.33.3          # US New Mexico
-84.239.33.17         # US New Mexico
 138.199.54.47        # IT Streaming Optimized
 158.173.3.219        # NL Netherlands Streaming Optimized
 158.173.21.17        # NL Netherlands Streaming Optimized
 158.173.21.23        # NL Netherlands Streaming Optimized
-45.154.152.14        # Peru
-45.154.154.49        # Uruguay
-45.154.154.25        # Uruguay
 146.70.10.24         # Costa Rica
 146.70.10.54         # Costa Rica
 146.70.10.59         # Costa Rica
-64.64.99.25          # Bolivia
 64.64.99.9           # Bolivia
-64.64.99.28          # Bolivia
 146.70.10.37         # Costa Rica
 146.70.10.56         # Costa Rica
-45.154.152.25        # Peru
 45.154.152.21        # Peru
-173.239.221.24       # Guatemala
-173.239.221.7        # Guatemala
-173.239.221.17       # Guatemala
 45.154.154.32        # Uruguay
-45.154.154.14        # Uruguay
-84.239.33.15         # US New Mexico
 188.126.94.59        # DK Streaming Optimized
 173.239.249.53       # Ecuador
-173.239.249.27       # Ecuador
 158.173.21.14        # NL Netherlands Streaming Optimized
 158.173.3.242        # NL Netherlands Streaming Optimized
 158.173.3.208        # NL Netherlands Streaming Optimized
-173.239.221.11       # Guatemala
 173.239.221.25       # Guatemala
-173.239.221.16       # Guatemala
-84.239.33.16         # US New Mexico
-84.239.33.4          # US New Mexico
 146.70.10.62         # Costa Rica
 146.70.10.65         # Costa Rica
 146.70.10.27         # Costa Rica
-45.154.154.34        # Uruguay
-45.154.154.30        # Uruguay
-45.154.152.23        # Peru
-64.64.99.30          # Bolivia
-173.239.249.4        # Ecuador
 173.239.249.59       # Ecuador
 158.173.21.26        # NL Netherlands Streaming Optimized
 158.173.3.221        # NL Netherlands Streaming Optimized
 158.173.21.1         # NL Netherlands Streaming Optimized
-173.239.221.5        # Guatemala
 158.173.3.215        # NL Netherlands Streaming Optimized
 158.173.21.9         # NL Netherlands Streaming Optimized
-45.154.152.26        # Peru
-45.154.152.15        # Peru
 45.154.152.5         # Peru
-45.154.154.9         # Uruguay
-45.154.154.48        # Uruguay
-64.64.99.27          # Bolivia
 146.70.10.35         # Costa Rica
-173.239.249.29       # Ecuador
-173.239.249.5        # Ecuador
-173.239.249.58       # Ecuador
-84.239.33.6          # US New Mexico
-84.239.33.12         # US New Mexico
 146.70.10.61         # Costa Rica
 146.70.10.19         # Costa Rica
 146.70.10.26         # Costa Rica
-45.154.152.11        # Peru
-173.239.249.34       # Ecuador
 173.239.249.46       # Ecuador
 158.173.21.11        # NL Netherlands Streaming Optimized
 158.173.3.228        # NL Netherlands Streaming Optimized
-84.239.33.5          # US New Mexico
-64.64.99.12          # Bolivia
-64.64.99.20          # Bolivia
-173.239.221.6        # Guatemala
-173.239.221.19       # Guatemala
-45.154.154.57        # Uruguay
-64.64.99.3           # Bolivia
-64.64.99.24          # Bolivia
 146.70.10.16         # Costa Rica
 146.70.10.22         # Costa Rica
 146.70.10.21         # Costa Rica
-173.239.221.14       # Guatemala
 158.173.3.237        # NL Netherlands Streaming Optimized
 158.173.21.15        # NL Netherlands Streaming Optimized
 158.173.3.240        # NL Netherlands Streaming Optimized
 84.239.33.20         # US New Mexico
-173.239.249.36       # Ecuador
-173.239.249.8        # Ecuador
-173.239.249.44       # Ecuador
-45.154.152.3         # Peru
-45.154.152.16        # Peru
-45.154.154.45        # Uruguay
 138.199.54.56        # IT Streaming Optimized
 146.70.10.32         # Costa Rica
 146.70.10.25         # Costa Rica
 146.70.10.30         # Costa Rica
 173.239.249.22       # Ecuador
-173.239.249.14       # Ecuador
 158.173.3.238        # NL Netherlands Streaming Optimized
 158.173.3.223        # NL Netherlands Streaming Optimized
-45.154.152.19        # Peru
-45.154.152.17        # Peru
 173.239.221.9        # Guatemala
-173.239.221.28       # Guatemala
 84.239.33.8          # US New Mexico
 64.64.99.29          # Bolivia
-45.154.154.53        # Uruguay
 158.173.3.229        # NL Netherlands Streaming Optimized
 146.70.10.39         # Costa Rica
 146.70.10.55         # Costa Rica
-45.154.152.24        # Peru
 188.126.89.26        # FI Streaming Optimized
-173.239.221.26       # Guatemala
-45.154.154.33        # Uruguay
-45.154.154.56        # Uruguay
-45.154.154.23        # Uruguay
-45.154.152.28        # Peru
-45.154.154.24        # Uruguay
 173.239.249.12       # Ecuador
 146.70.10.31         # Costa Rica
 158.173.21.19        # NL Netherlands Streaming Optimized
 149.22.87.150        # JP Streaming Optimized
 146.70.10.36         # Costa Rica
-173.239.249.20       # Ecuador
 84.239.33.13         # US New Mexico
-45.154.154.3         # Uruguay
-45.154.154.37        # Uruguay
 45.154.154.41        # Uruguay
 158.173.21.18        # NL Netherlands Streaming Optimized
 158.173.21.3         # NL Netherlands Streaming Optimized
 64.64.99.23          # Bolivia
-64.64.99.19          # Bolivia
-45.154.154.46        # Uruguay
 188.126.89.3         # FI Streaming Optimized
 158.173.21.16        # NL Netherlands Streaming Optimized
 158.173.3.232        # NL Netherlands Streaming Optimized
 158.173.21.5         # NL Netherlands Streaming Optimized
 84.239.33.2          # US New Mexico
-84.239.33.19         # US New Mexico
-64.64.99.5           # Bolivia
-64.64.99.17          # Bolivia
 158.173.3.216        # NL Netherlands Streaming Optimized
 158.173.3.241        # NL Netherlands Streaming Optimized
-45.154.154.54        # Uruguay
-45.154.154.35        # Uruguay
 146.70.10.38         # Costa Rica
 146.70.10.63         # Costa Rica
-45.154.152.30        # Peru
-45.154.152.8         # Peru
-173.239.221.4        # Guatemala
 158.173.21.25        # NL Netherlands Streaming Optimized
 158.173.3.214        # NL Netherlands Streaming Optimized
-84.239.33.10         # US New Mexico
-84.239.33.18         # US New Mexico
 154.47.29.132        # Croatia
 158.173.3.234        # NL Netherlands Streaming Optimized
 158.173.3.231        # NL Netherlands Streaming Optimized
 188.126.94.37        # DK Streaming Optimized
-45.154.154.29        # Uruguay
-45.154.154.27        # Uruguay
-173.239.249.40       # Ecuador
 146.70.10.34         # Costa Rica
-45.154.154.21        # Uruguay
-64.64.99.21          # Bolivia
 158.173.21.4         # NL Netherlands Streaming Optimized
 158.173.3.207        # NL Netherlands Streaming Optimized
 64.64.99.16          # Bolivia
-45.154.154.40        # Uruguay
-45.154.154.39        # Uruguay
-45.154.152.12        # Peru
 146.70.10.18         # Costa Rica
 146.70.10.33         # Costa Rica
-173.239.249.19       # Ecuador
 45.154.154.22        # Uruguay
-45.154.152.4         # Peru
-64.64.99.15          # Bolivia
 158.173.21.13        # NL Netherlands Streaming Optimized
 146.70.10.58         # Costa Rica
-173.239.249.35       # Ecuador
-173.239.249.10       # Ecuador
-45.154.154.11        # Uruguay
-173.239.221.18       # Guatemala
 154.47.16.100        # Colombia
 158.173.3.233        # NL Netherlands Streaming Optimized
-173.239.221.27       # Guatemala
-45.154.154.15        # Uruguay
-173.239.249.13       # Ecuador
-45.154.152.9         # Peru
 138.199.54.39        # IT Streaming Optimized
 158.173.3.211        # NL Netherlands Streaming Optimized
 158.173.3.243        # NL Netherlands Streaming Optimized
-45.154.152.6         # Peru
 146.70.10.57         # Costa Rica
 158.173.3.217        # NL Netherlands Streaming Optimized
-45.154.152.22        # Peru
 146.70.10.20         # Costa Rica
 158.173.3.236        # NL Netherlands Streaming Optimized
 158.173.21.20        # NL Netherlands Streaming Optimized
-173.239.221.20       # Guatemala
-45.154.154.20        # Uruguay
 188.126.89.6         # FI Streaming Optimized
-173.239.249.23       # Ecuador
-173.239.249.51       # Ecuador
 158.173.21.7         # NL Netherlands Streaming Optimized
-45.154.152.29        # Peru
-173.239.249.56       # Ecuador
 158.173.21.6         # NL Netherlands Streaming Optimized
 158.173.3.244        # NL Netherlands Streaming Optimized
-45.154.154.5         # Uruguay
-45.154.154.13        # Uruguay
-173.239.249.41       # Ecuador
-64.64.99.11          # Bolivia
 146.70.10.17         # Costa Rica
-84.239.33.7          # US New Mexico
-173.239.249.38       # Ecuador
 158.173.21.21        # NL Netherlands Streaming Optimized
 158.173.21.22        # NL Netherlands Streaming Optimized
-173.239.221.12       # Guatemala
-173.239.249.28       # Ecuador
 158.173.3.213        # NL Netherlands Streaming Optimized
 158.173.21.2         # NL Netherlands Streaming Optimized
-45.154.154.52        # Uruguay
 45.154.154.8         # Uruguay
 158.173.21.8         # NL Netherlands Streaming Optimized
-64.64.99.4           # Bolivia
-173.239.249.45       # Ecuador
-45.154.154.10        # Uruguay
-64.64.99.18          # Bolivia
 158.173.3.230        # NL Netherlands Streaming Optimized
 158.173.3.220        # NL Netherlands Streaming Optimized
-45.154.152.10        # Peru
 158.173.3.222        # NL Netherlands Streaming Optimized
-173.239.249.3        # Ecuador
 173.239.221.8        # Guatemala
-64.64.99.26          # Bolivia
-173.239.249.39       # Ecuador
 158.173.3.224        # NL Netherlands Streaming Optimized
-45.154.154.38        # Uruguay
-45.154.154.47        # Uruguay
 158.173.3.239        # NL Netherlands Streaming Optimized
-173.239.249.15       # Ecuador
 158.173.3.225        # NL Netherlands Streaming Optimized
 146.70.10.29         # Costa Rica
 158.173.3.218        # NL Netherlands Streaming Optimized
-173.239.249.30       # Ecuador
 188.126.94.60        # DK Streaming Optimized
 158.173.3.212        # NL Netherlands Streaming Optimized
 158.173.24.3         # UK Streaming Optimized
-173.239.249.11       # Ecuador
-173.239.249.24       # Ecuador
 158.173.3.226        # NL Netherlands Streaming Optimized
 45.154.154.18        # Uruguay
-173.239.249.48       # Ecuador
 158.173.21.10        # NL Netherlands Streaming Optimized
 149.102.247.228      # Croatia
 195.80.150.133       # Slovenia
 196.245.54.145       # ES Valencia
 158.173.3.210        # NL Netherlands Streaming Optimized
 158.173.3.245        # NL Netherlands Streaming Optimized
-173.239.249.57       # Ecuador
-173.239.249.50       # Ecuador
 158.173.3.227        # NL Netherlands Streaming Optimized
 158.173.23.73        # UK Streaming Optimized
 158.173.3.206        # NL Netherlands Streaming Optimized
