@@ -102,8 +102,6 @@
 191.96.150.103       # US New York
 191.96.150.110       # US New York
 191.96.227.69        # US New York
-102.129.235.237      # US Washington Dc
-102.129.235.177      # US Washington Dc
 102.129.152.47       # US Florida
 181.41.206.32        # US Denver
 181.41.206.41        # US Denver
@@ -216,7 +214,6 @@
 37.19.197.205        # US East
 191.96.227.80        # US New York
 191.96.227.51        # US New York
-102.129.235.39       # US Washington Dc
 185.253.162.13       # Cyprus
 185.253.162.10       # Cyprus
 102.129.153.148      # US Florida
@@ -249,7 +246,6 @@
 181.214.206.111      # Netherlands
 191.96.168.177       # Netherlands
 191.101.61.201       # US Las Vegas
-191.101.61.247       # US Las Vegas
 102.129.235.5        # US Washington Dc
 140.228.21.70        # CA Montreal
 102.129.152.155      # US Florida
@@ -282,7 +278,6 @@
 181.214.153.119      # CA Vancouver
 102.129.152.95       # US Florida
 102.129.152.146      # US Florida
-102.129.235.12       # US Washington Dc
 191.96.106.223       # US California
 84.17.45.22          # US California
 191.96.36.89         # CA Toronto
@@ -313,7 +308,6 @@
 84.17.45.20          # US California
 37.19.198.54         # US New York
 191.96.227.35        # US New York
-102.129.235.49       # US Washington Dc
 37.19.197.226        # US East
 102.129.152.15       # US Florida
 154.16.105.118       # US Las Vegas
@@ -407,7 +401,6 @@
 191.101.61.165       # US Las Vegas
 191.101.61.173       # US Las Vegas
 191.101.61.176       # US Las Vegas
-102.129.235.226      # US Washington Dc
 181.214.153.126      # CA Vancouver
 140.228.21.210       # CA Montreal
 191.96.106.130       # US California
@@ -443,7 +436,6 @@
 102.129.152.35       # US Florida
 102.129.152.165      # US Florida
 102.129.152.184      # US Florida
-102.129.235.128      # US Washington Dc
 181.214.206.170      # Netherlands
 191.96.168.191       # Netherlands
 181.41.206.141       # US Denver
@@ -457,7 +449,6 @@
 143.244.49.19        # US California
 102.129.153.209      # US Florida
 143.244.34.29        # US Florida
-102.129.235.234      # US Washington Dc
 181.41.206.113       # US Denver
 181.41.206.162       # US Denver
 191.96.227.16        # US New York
@@ -566,7 +557,6 @@
 102.129.152.94       # US Florida
 102.129.152.172      # US Florida
 143.244.34.15        # US Florida
-102.129.235.250      # US Washington Dc
 191.96.36.93         # CA Toronto
 191.96.36.107        # CA Toronto
 154.16.105.116       # US Las Vegas
@@ -845,7 +835,6 @@
 181.214.153.100      # CA Vancouver
 84.17.45.6           # US California
 191.96.106.136       # US California
-102.129.235.138      # US Washington Dc
 181.41.206.138       # US Denver
 102.129.152.161      # US Florida
 102.129.152.10       # US Florida
@@ -905,9 +894,6 @@
 191.101.157.195      # DE Berlin
 181.41.206.223       # US Denver
 181.41.206.182       # US Denver
-102.129.235.60       # US Washington Dc
-102.129.235.232      # US Washington Dc
-102.129.235.131      # US Washington Dc
 191.96.36.82         # CA Toronto
 191.96.106.156       # US California
 143.244.34.132       # US Florida
@@ -1149,7 +1135,6 @@
 181.214.153.69       # CA Vancouver
 191.96.168.108       # Netherlands
 195.78.54.200        # Netherlands
-102.129.235.188      # US Washington Dc
 102.129.235.75       # US Washington Dc
 191.96.106.174       # US California
 181.41.206.156       # US Denver
@@ -1264,7 +1249,6 @@
 195.78.54.169        # Netherlands
 181.41.206.145       # US Denver
 191.101.61.205       # US Las Vegas
-173.239.226.213      # US Las Vegas
 102.129.235.58       # US Washington Dc
 181.41.202.169       # CA Vancouver
 191.96.168.103       # Netherlands
@@ -1282,7 +1266,6 @@
 191.101.61.214       # US Las Vegas
 181.41.206.49        # US Denver
 191.96.36.62         # CA Toronto
-191.96.36.176        # CA Toronto
 181.41.206.123       # US Denver
 102.129.153.213      # US Florida
 143.244.48.206       # US Las Vegas
@@ -1322,7 +1305,6 @@
 181.214.206.63       # Netherlands
 102.129.152.148      # US Florida
 143.244.34.8         # US Florida
-102.129.235.16       # US Washington Dc
 191.96.36.135        # CA Toronto
 181.41.202.149       # CA Vancouver
 191.96.227.52        # US New York
@@ -1380,8 +1362,8 @@
 140.228.21.111       # CA Montreal
 102.129.152.96       # US Florida
 37.19.198.76         # US New York
+195.78.54.105        # Netherlands
 195.78.54.197        # Netherlands
-102.129.235.144      # US Washington Dc
 191.96.106.171       # US California
 179.61.197.15        # CA Toronto
 179.61.197.27        # CA Toronto
@@ -1401,7 +1383,6 @@
 102.129.153.56       # US Florida
 191.96.150.26        # US New York
 37.19.198.63         # US New York
-102.129.235.161      # US Washington Dc
 140.228.24.187       # CA Montreal
 191.96.36.138        # CA Toronto
 181.41.202.180       # CA Vancouver
@@ -1500,6 +1481,7 @@
 181.41.206.82        # US Denver
 191.96.106.205       # US California
 191.96.106.197       # US California
+191.96.168.98        # Netherlands
 140.228.21.125       # CA Montreal
 102.129.153.16       # US Florida
 102.129.153.10       # US Florida
@@ -1537,6 +1519,7 @@
 191.96.36.147        # CA Toronto
 191.96.36.156        # CA Toronto
 143.244.34.148       # US Florida
+191.96.168.164       # Netherlands
 191.96.150.28        # US New York
 191.96.168.89        # Netherlands
 181.214.206.153      # Netherlands
@@ -1547,7 +1530,6 @@
 191.101.61.211       # US Las Vegas
 191.96.150.85        # US New York
 181.41.206.103       # US Denver
-102.129.235.48       # US Washington Dc
 179.61.197.100       # CA Toronto
 179.61.197.113       # CA Toronto
 191.96.106.173       # US California
@@ -1568,7 +1550,6 @@
 143.244.34.10        # US Florida
 37.19.198.110        # US New York
 181.41.206.207       # US Denver
-102.129.235.252      # US Washington Dc
 181.214.206.51       # Netherlands
 191.96.106.14        # US California
 102.129.153.66       # US Florida
@@ -1614,21 +1595,18 @@
 195.78.54.67         # Netherlands
 195.78.54.79         # Netherlands
 191.101.157.209      # DE Berlin
-102.129.235.61       # US Washington Dc
 102.129.153.49       # US Florida
 191.96.227.24        # US New York
 179.61.197.40        # CA Toronto
 191.96.36.67         # CA Toronto
 191.96.168.66        # Netherlands
 191.101.61.143       # US Las Vegas
-102.129.235.43       # US Washington Dc
 102.129.153.44       # US Florida
 117.120.9.36         # AU Sydney
 179.61.197.77        # CA Toronto
 191.96.36.76         # CA Toronto
 181.214.206.119      # Netherlands
 181.214.206.85       # Netherlands
-102.129.235.77       # US Washington Dc
 102.129.145.145      # US California
 173.239.226.211      # US Las Vegas
 191.96.227.12        # US New York
@@ -1718,7 +1696,6 @@
 181.41.206.98        # US Denver
 102.129.153.207      # US Florida
 143.244.34.16        # US Florida
-102.129.235.17       # US Washington Dc
 191.101.61.217       # US Las Vegas
 140.228.24.89        # CA Montreal
 191.96.227.118       # US New York
@@ -1801,7 +1778,6 @@
 84.17.45.21          # US California
 191.96.106.208       # US California
 191.96.106.234       # US California
-102.129.235.239      # US Washington Dc
 191.96.150.123       # US New York
 179.61.197.50        # CA Toronto
 143.244.48.7         # US California
@@ -2179,7 +2155,6 @@
 191.96.36.60         # CA Toronto
 181.41.202.185       # CA Vancouver
 191.101.61.140       # US Las Vegas
-102.129.235.68       # US Washington Dc
 181.41.202.110       # CA Vancouver
 191.96.106.195       # US California
 191.96.150.64        # US New York
@@ -2290,6 +2265,7 @@
 181.214.153.88       # CA Vancouver
 191.96.227.131       # US New York
 191.96.227.155       # US New York
+195.78.54.210        # Netherlands
 181.214.206.116      # Netherlands
 173.239.226.139      # US Las Vegas
 195.78.54.201        # Netherlands
@@ -2340,7 +2316,6 @@
 195.78.54.202        # Netherlands
 191.96.106.240       # US California
 154.16.105.106       # US Las Vegas
-102.129.235.25       # US Washington Dc
 191.96.227.158       # US New York
 181.41.202.153       # CA Vancouver
 140.228.24.76        # CA Montreal
@@ -2431,7 +2406,6 @@
 102.129.152.38       # US Florida
 195.78.54.163        # Netherlands
 191.96.150.42        # US New York
-102.129.235.89       # US Washington Dc
 102.129.235.175      # US Washington Dc
 191.96.36.70         # CA Toronto
 191.96.168.81        # Netherlands
@@ -2462,18 +2436,17 @@
 195.78.54.168        # Netherlands
 140.228.24.144       # CA Montreal
 191.96.227.60        # US New York
-102.129.235.119      # US Washington Dc
 195.78.54.77         # Netherlands
 173.239.226.131      # US Las Vegas
 84.17.45.24          # US California
 84.17.45.2           # US California
+191.96.168.166       # Netherlands
 181.41.202.147       # CA Vancouver
 173.239.226.133      # US Las Vegas
 140.228.24.100       # CA Montreal
 102.129.152.149      # US Florida
 191.96.150.76        # US New York
 191.96.150.34        # US New York
-102.129.235.56       # US Washington Dc
 143.244.34.13        # US Florida
 191.96.106.239       # US California
 143.244.34.151       # US Florida
@@ -2500,7 +2473,6 @@
 191.96.150.56        # US New York
 181.214.206.68       # Netherlands
 37.19.198.59         # US New York
-102.129.235.133      # US Washington Dc
 173.239.226.137      # US Las Vegas
 181.41.202.152       # CA Vancouver
 143.244.34.204       # US Florida
@@ -2553,7 +2525,6 @@
 140.228.21.82        # CA Montreal
 191.101.61.236       # US Las Vegas
 181.41.202.105       # CA Vancouver
-102.129.235.44       # US Washington Dc
 102.129.153.32       # US Florida
 173.239.226.215      # US Las Vegas
 191.101.61.244       # US Las Vegas
@@ -2588,7 +2559,6 @@
 173.239.226.146      # US Las Vegas
 140.228.24.80        # CA Montreal
 37.19.198.70         # US New York
-102.129.235.53       # US Washington Dc
 179.61.197.63        # CA Toronto
 191.96.36.168        # CA Toronto
 179.61.197.89        # CA Toronto
@@ -2661,7 +2631,6 @@
 143.244.48.196       # US Las Vegas
 191.96.227.49        # US New York
 140.228.24.94        # CA Montreal
-102.129.235.228      # US Washington Dc
 181.214.206.134      # Netherlands
 191.96.106.249       # US California
 191.96.36.122        # CA Toronto
@@ -2750,6 +2719,7 @@
 195.78.54.173        # Netherlands
 37.19.198.113        # US New York
 37.19.198.90         # US New York
+195.78.54.108        # Netherlands
 173.239.226.145      # US Las Vegas
 181.41.202.172       # CA Vancouver
 179.61.197.35        # CA Toronto
@@ -2933,11 +2903,8 @@
 191.101.157.221      # DE Berlin
 191.101.157.235      # DE Berlin
 173.239.217.134      # Andorra
-64.64.112.158        # Bangladesh
 64.64.112.147        # Bangladesh
-64.64.112.141        # Bangladesh
 64.64.112.154        # Bangladesh
-64.64.112.155        # Bangladesh
 64.64.112.146        # Bangladesh
 140.228.24.62        # CA Montreal
 140.228.24.41        # CA Montreal
@@ -3206,11 +3173,9 @@
 79.127.132.233       # US Washington Dc
 79.127.132.190       # US Washington Dc
 79.127.132.217       # US Washington Dc
-79.127.132.200       # US Washington Dc
 79.127.132.207       # US Washington Dc
 79.127.132.197       # US Washington Dc
 79.127.132.155       # US Washington Dc
-79.127.132.177       # US Washington Dc
 79.127.132.148       # US Washington Dc
 79.127.132.163       # US Washington Dc
 79.127.132.210       # US Washington Dc
@@ -3221,40 +3186,25 @@
 79.127.132.192       # US Washington Dc
 79.127.132.216       # US Washington Dc
 79.127.132.153       # US Washington Dc
-79.127.132.231       # US Washington Dc
 79.127.132.133       # US Washington Dc
 79.127.132.151       # US Washington Dc
-79.127.132.166       # US Washington Dc
-79.127.132.196       # US Washington Dc
 79.127.132.244       # US Washington Dc
 79.127.132.136       # US Washington Dc
 79.127.132.173       # US Washington Dc
-79.127.132.226       # US Washington Dc
-79.127.132.215       # US Washington Dc
 79.127.132.235       # US Washington Dc
 79.127.132.172       # US Washington Dc
-79.127.132.243       # US Washington Dc
 79.127.132.186       # US Washington Dc
 79.127.132.171       # US Washington Dc
-79.127.132.137       # US Washington Dc
 79.127.132.184       # US Washington Dc
 79.127.132.195       # US Washington Dc
-79.127.132.230       # US Washington Dc
-79.127.132.142       # US Washington Dc
-79.127.132.182       # US Washington Dc
 79.127.132.241       # US Washington Dc
-79.127.132.164       # US Washington Dc
-79.127.132.202       # US Washington Dc
 79.127.132.199       # US Washington Dc
 79.127.132.229       # US Washington Dc
-79.127.132.234       # US Washington Dc
 79.127.132.223       # US Washington Dc
-79.127.132.168       # US Washington Dc
 79.127.132.146       # US Washington Dc
 79.127.132.152       # US Washington Dc
 79.127.132.181       # US Washington Dc
 79.127.132.167       # US Washington Dc
-79.127.132.225       # US Washington Dc
 79.127.132.227       # US Washington Dc
 79.127.132.224       # US Washington Dc
 79.127.132.165       # US Washington Dc
@@ -3262,20 +3212,12 @@
 79.127.132.198       # US Washington Dc
 79.127.132.238       # US Washington Dc
 79.127.132.228       # US Washington Dc
-79.127.132.174       # US Washington Dc
-79.127.132.131       # US Washington Dc
-79.127.132.162       # US Washington Dc
 79.127.132.140       # US Washington Dc
 79.127.132.156       # US Washington Dc
-79.127.132.154       # US Washington Dc
-79.127.132.219       # US Washington Dc
-79.127.132.159       # US Washington Dc
 79.127.132.139       # US Washington Dc
 79.127.132.157       # US Washington Dc
-79.127.132.161       # US Washington Dc
 79.127.132.201       # US Washington Dc
 79.127.132.203       # US Washington Dc
-79.127.132.175       # US Washington Dc
 79.127.132.194       # US Washington Dc
 79.127.132.193       # US Washington Dc
 79.127.181.4         # Greece
@@ -3289,60 +3231,42 @@
 37.19.220.86         # US Washington Dc
 37.19.220.95         # US Washington Dc
 37.19.220.41         # US Washington Dc
-37.19.220.93         # US Washington Dc
 37.19.220.39         # US Washington Dc
-37.19.220.2          # US Washington Dc
 37.19.220.100        # US Washington Dc
 37.19.220.11         # US Washington Dc
-37.19.220.12         # US Washington Dc
-37.19.220.76         # US Washington Dc
 37.19.220.19         # US Washington Dc
-37.19.220.15         # US Washington Dc
 37.19.220.34         # US Washington Dc
 37.19.220.30         # US Washington Dc
 37.19.220.14         # US Washington Dc
 37.19.220.73         # US Washington Dc
-37.19.220.5          # US Washington Dc
 37.19.220.56         # US Washington Dc
 37.19.220.63         # US Washington Dc
 37.19.220.6          # US Washington Dc
-37.19.220.8          # US Washington Dc
 37.19.220.84         # US Washington Dc
-37.19.220.25         # US Washington Dc
 37.19.220.64         # US Washington Dc
 37.19.220.3          # US Washington Dc
 37.19.220.26         # US Washington Dc
 37.19.220.48         # US Washington Dc
 37.19.220.69         # US Washington Dc
-37.19.220.71         # US Washington Dc
 37.19.220.10         # US Washington Dc
 37.19.220.38         # US Washington Dc
 37.19.220.42         # US Washington Dc
 37.19.220.46         # US Washington Dc
 37.19.220.96         # US Washington Dc
-37.19.220.36         # US Washington Dc
 37.19.220.70         # US Washington Dc
 37.19.220.66         # US Washington Dc
-37.19.220.82         # US Washington Dc
 37.19.220.58         # US Washington Dc
 37.19.220.80         # US Washington Dc
-37.19.220.22         # US Washington Dc
 37.19.220.78         # US Washington Dc
-37.19.220.89         # US Washington Dc
 37.19.220.97         # US Washington Dc
-37.19.220.37         # US Washington Dc
 37.19.220.49         # US Washington Dc
 37.19.220.9          # US Washington Dc
 37.19.220.28         # US Washington Dc
-37.19.220.44         # US Washington Dc
-37.19.220.77         # US Washington Dc
 37.19.220.43         # US Washington Dc
 37.19.220.52         # US Washington Dc
 37.19.220.57         # US Washington Dc
 37.19.220.29         # US Washington Dc
 37.19.220.17         # US Washington Dc
-37.19.220.61         # US Washington Dc
-37.19.220.99         # US Washington Dc
 37.19.220.74         # US Washington Dc
 37.19.220.4          # US Washington Dc
 37.19.220.7          # US Washington Dc
@@ -3351,7 +3275,6 @@
 37.19.220.65         # US Washington Dc
 37.19.220.55         # US Washington Dc
 37.19.220.50         # US Washington Dc
-37.19.220.98         # US Washington Dc
 37.19.220.67         # US Washington Dc
 37.19.220.62         # US Washington Dc
 37.19.220.20         # US Washington Dc
@@ -3565,21 +3488,15 @@
 91.124.17.65         # US Washington Dc
 91.124.17.44         # US Washington Dc
 91.124.17.51         # US Washington Dc
-91.124.17.41         # US Washington Dc
-91.124.17.36         # US Washington Dc
 91.124.17.64         # US Washington Dc
 91.124.17.54         # US Washington Dc
 91.124.17.42         # US Washington Dc
 91.124.17.45         # US Washington Dc
 91.124.17.60         # US Washington Dc
-91.124.17.50         # US Washington Dc
 91.124.17.43         # US Washington Dc
-91.124.17.40         # US Washington Dc
 91.124.17.39         # US Washington Dc
-91.124.17.102        # US Washington Dc
 91.124.17.223        # US Washington Dc
 91.124.17.104        # US Washington Dc
-91.124.17.114        # US Washington Dc
 212.56.54.242        # US East
 212.56.54.227        # US East
 212.56.54.13         # US East
@@ -3743,12 +3660,6 @@
 212.56.54.183        # US East
 91.124.17.141        # US Washington Dc
 91.124.17.76         # US Washington Dc
-91.124.17.149        # US Washington Dc
-91.124.17.70         # US Washington Dc
-91.124.17.247        # US Washington Dc
-91.124.17.77         # US Washington Dc
-91.124.17.230        # US Washington Dc
-91.124.17.109        # US Washington Dc
 91.124.17.205        # US Washington Dc
 212.56.54.92         # US East
 91.124.17.232        # US Washington Dc
@@ -3758,87 +3669,60 @@
 212.56.54.19         # US East
 212.56.54.72         # US East
 91.124.17.183        # US Washington Dc
-91.124.17.158        # US Washington Dc
 212.56.54.33         # US East
 91.124.17.178        # US Washington Dc
 91.124.17.195        # US Washington Dc
-91.124.17.105        # US Washington Dc
 212.56.54.31         # US East
 212.56.54.170        # US East
-91.124.17.250        # US Washington Dc
-91.124.17.75         # US Washington Dc
 91.124.17.73         # US Washington Dc
 91.124.17.128        # US Washington Dc
-91.124.17.218        # US Washington Dc
 212.56.54.78         # US East
 91.124.17.138        # US Washington Dc
-91.124.17.167        # US Washington Dc
-91.124.17.189        # US Washington Dc
-91.124.17.253        # US Washington Dc
 91.124.17.196        # US Washington Dc
-91.124.17.241        # US Washington Dc
 91.124.17.209        # US Washington Dc
 91.124.17.111        # US Washington Dc
-91.124.17.153        # US Washington Dc
 91.124.17.108        # US Washington Dc
 91.124.17.203        # US Washington Dc
-91.124.17.240        # US Washington Dc
-91.124.17.199        # US Washington Dc
 91.124.17.100        # US Washington Dc
-91.124.17.191        # US Washington Dc
 212.56.54.247        # US East
 91.124.17.173        # US Washington Dc
 91.124.17.142        # US Washington Dc
 212.56.54.176        # US East
 91.124.17.82         # US Washington Dc
 212.56.54.113        # US East
-91.124.17.222        # US Washington Dc
 91.124.17.103        # US Washington Dc
 212.56.54.83         # US East
 91.124.17.147        # US Washington Dc
-91.124.17.118        # US Washington Dc
 91.124.17.101        # US Washington Dc
-91.124.17.248        # US Washington Dc
 212.56.54.21         # US East
 91.124.17.81         # US Washington Dc
 212.56.54.174        # US East
 91.124.17.112        # US Washington Dc
-91.124.17.78         # US Washington Dc
-91.124.17.234        # US Washington Dc
 212.56.54.82         # US East
 212.56.54.73         # US East
-91.124.17.94         # US Washington Dc
 212.56.54.43         # US East
 212.56.54.229        # US East
 212.56.54.226        # US East
 212.56.54.236        # US East
 212.56.54.238        # US East
-91.124.17.226        # US Washington Dc
 212.56.54.195        # US East
 91.124.17.84         # US Washington Dc
 212.56.54.233        # US East
 212.56.54.50         # US East
 212.56.54.76         # US East
-91.124.17.202        # US Washington Dc
-91.124.17.137        # US Washington Dc
 212.56.54.184        # US East
 212.56.54.118        # US East
 212.56.54.26         # US East
 212.56.54.204        # US East
-91.124.17.90         # US Washington Dc
 212.56.54.102        # US East
 212.56.54.53         # US East
 91.124.17.116        # US Washington Dc
 212.56.54.87         # US East
 91.124.17.106        # US Washington Dc
-91.124.17.83         # US Washington Dc
-91.124.17.208        # US Washington Dc
 212.56.54.206        # US East
 91.124.17.215        # US Washington Dc
-91.124.17.170        # US Washington Dc
 212.56.54.189        # US East
 212.56.54.64         # US East
-91.124.17.192        # US Washington Dc
 91.124.17.244        # US Washington Dc
 212.56.54.96         # US East
 212.56.54.79         # US East
@@ -3873,7 +3757,6 @@
 212.56.54.138        # US East
 212.56.54.134        # US East
 212.56.54.151        # US East
-91.124.17.133        # US Washington Dc
 212.56.54.137        # US East
 212.56.54.163        # US East
 212.56.54.154        # US East
@@ -3886,17 +3769,10 @@
 212.56.54.145        # US East
 212.56.54.140        # US East
 212.56.54.148        # US East
-91.124.17.132        # US Washington Dc
 212.56.54.166        # US East
-91.124.17.168        # US Washington Dc
 91.124.17.17         # US Washington Dc
-91.124.17.30         # US Washington Dc
 91.124.17.29         # US Washington Dc
 91.124.17.24         # US Washington Dc
-91.124.17.11         # US Washington Dc
-91.124.17.3          # US Washington Dc
-91.124.17.5          # US Washington Dc
-91.124.17.18         # US Washington Dc
 212.56.48.24         # Netherlands
 212.56.48.16         # Netherlands
 212.56.48.10         # Netherlands
@@ -4072,7 +3948,6 @@
 212.32.48.8          # CA Toronto
 212.32.48.12         # CA Toronto
 212.32.48.59         # CA Toronto
-212.32.48.45         # CA Toronto
 212.32.48.19         # CA Toronto
 212.32.48.107        # CA Toronto
 212.32.48.44         # CA Toronto
@@ -6424,8 +6299,6 @@
 158.173.67.119       # Belgium
 158.173.67.159       # Belgium
 158.173.89.96        # Bulgaria
-194.5.49.138         # DE Berlin
-194.5.49.54          # DE Berlin
 158.173.89.97        # Bulgaria
 64.40.151.5          # Argentina
 64.40.151.79         # Argentina
@@ -6589,7 +6462,6 @@
 193.56.117.69        # US Chicago
 147.90.227.142       # DE Frankfurt
 147.90.227.155       # DE Frankfurt
-194.5.49.38          # DE Berlin
 72.9.243.19          # US Atlanta
 72.9.243.31          # US Atlanta
 72.9.243.41          # US Atlanta
@@ -6835,3 +6707,4 @@
 155.117.97.89        # US South Dakota
 209.200.239.83       # CA Toronto
 209.200.239.8        # CA Toronto
+209.200.239.15       # CA Toronto
