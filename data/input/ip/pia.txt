@@ -83,7 +83,6 @@
 140.228.24.79        # CA Montreal
 140.228.24.81        # CA Montreal
 179.61.197.8         # CA Toronto
-179.61.197.13        # CA Toronto
 95.181.232.9         # Morocco
 95.181.232.13        # Morocco
 95.181.232.40        # Morocco
@@ -119,7 +118,6 @@
 154.16.105.74        # US Las Vegas
 37.19.198.74         # US New York
 191.96.227.28        # US New York
-179.61.197.88        # CA Toronto
 191.96.36.127        # CA Toronto
 95.181.232.11        # Morocco
 140.228.24.169       # CA Montreal
@@ -179,7 +177,6 @@
 37.19.198.89         # US New York
 188.126.89.37        # Finland
 95.181.232.32        # Morocco
-179.61.197.11        # CA Toronto
 179.61.197.24        # CA Toronto
 191.96.106.64        # US California
 102.129.152.46       # US Florida
@@ -191,7 +188,6 @@
 195.78.54.104        # Netherlands
 143.244.48.13        # US California
 84.17.45.25          # US California
-173.239.226.204      # US Las Vegas
 173.239.226.222      # US Las Vegas
 95.181.232.5         # Morocco
 181.41.206.20        # US Denver
@@ -301,7 +297,6 @@
 154.16.105.109       # US Las Vegas
 181.41.202.196       # CA Vancouver
 102.129.152.171      # US Florida
-191.96.36.49         # CA Toronto
 181.214.206.141      # Netherlands
 181.41.206.104       # US Denver
 181.41.206.121       # US Denver
@@ -373,7 +368,6 @@
 191.96.227.111       # US New York
 191.96.36.126        # CA Toronto
 191.96.36.143        # CA Toronto
-191.96.36.170        # CA Toronto
 181.214.153.40       # CA Vancouver
 181.214.153.111      # CA Vancouver
 191.101.61.165       # US Las Vegas
@@ -468,7 +462,6 @@
 143.244.49.8         # US California
 191.96.106.210       # US California
 181.41.202.125       # CA Vancouver
-181.214.206.128      # Netherlands
 195.78.54.170        # Netherlands
 195.78.54.180        # Netherlands
 140.228.21.78        # CA Montreal
@@ -527,7 +520,6 @@
 102.129.152.94       # US Florida
 102.129.152.172      # US Florida
 143.244.34.15        # US Florida
-191.96.36.107        # CA Toronto
 191.101.61.202       # US Las Vegas
 195.78.54.160        # Netherlands
 191.96.150.63        # US New York
@@ -580,7 +572,6 @@
 195.78.54.74         # Netherlands
 191.96.150.111       # US New York
 102.129.153.134      # US Florida
-173.239.226.199      # US Las Vegas
 181.41.202.192       # CA Vancouver
 181.41.202.213       # CA Vancouver
 191.96.106.166       # US California
@@ -621,7 +612,6 @@
 181.41.202.218       # CA Vancouver
 181.214.206.103      # Netherlands
 191.96.106.27        # US California
-191.96.36.72         # CA Toronto
 191.96.36.87         # CA Toronto
 143.244.49.16        # US California
 191.96.106.203       # US California
@@ -653,7 +643,6 @@
 102.129.152.135      # US Florida
 191.101.61.167       # US Las Vegas
 191.101.61.219       # US Las Vegas
-179.61.197.111       # CA Toronto
 179.61.197.101       # CA Toronto
 102.129.152.160      # US Florida
 102.129.152.173      # US Florida
@@ -721,7 +710,6 @@
 191.96.106.193       # US California
 181.41.206.180       # US Denver
 191.96.227.32        # US New York
-154.16.105.73        # US Las Vegas
 102.129.145.142      # US California
 191.96.106.132       # US California
 181.41.206.37        # US Denver
@@ -792,8 +780,6 @@
 181.41.206.138       # US Denver
 102.129.152.161      # US Florida
 102.129.152.10       # US Florida
-191.101.61.148       # US Las Vegas
-191.96.36.134        # CA Toronto
 191.96.36.161        # CA Toronto
 191.96.106.176       # US California
 191.96.106.244       # US California
@@ -833,7 +819,6 @@
 191.96.227.105       # US New York
 181.214.206.54       # Netherlands
 195.78.54.60         # Netherlands
-173.239.226.147      # US Las Vegas
 102.129.152.180      # US Florida
 102.129.153.130      # US Florida
 181.214.153.57       # CA Vancouver
@@ -888,11 +873,11 @@
 181.41.206.225       # US Denver
 102.129.152.37       # US Florida
 140.228.24.101       # CA Montreal
+140.228.24.117       # CA Montreal
 191.96.227.149       # US New York
 191.101.61.200       # US Las Vegas
 191.96.36.58         # CA Toronto
 191.96.168.173       # Netherlands
-191.96.36.44         # CA Toronto
 181.214.206.143      # Netherlands
 143.244.49.3         # US California
 143.244.49.13        # US California
@@ -922,7 +907,6 @@
 102.129.153.33       # US Florida
 191.96.106.17        # US California
 191.96.106.191       # US California
-191.101.61.141       # US Las Vegas
 191.96.227.76        # US New York
 191.96.227.90        # US New York
 102.129.153.26       # US Florida
@@ -951,7 +935,6 @@
 143.244.34.145       # US Florida
 179.61.197.116       # CA Toronto
 143.244.34.192       # US Florida
-154.16.105.115       # US Las Vegas
 191.101.61.162       # US Las Vegas
 181.214.153.90       # CA Vancouver
 191.96.227.103       # US New York
@@ -1093,7 +1076,6 @@
 140.228.24.105       # CA Montreal
 154.16.105.100       # US Las Vegas
 179.61.197.48        # CA Toronto
-179.61.197.59        # CA Toronto
 188.126.89.69        # Finland
 191.96.106.184       # US California
 191.96.106.186       # US California
@@ -1101,13 +1083,11 @@
 140.228.24.78        # CA Montreal
 173.239.226.194      # US Las Vegas
 191.101.61.134       # US Las Vegas
-154.16.105.90        # US Las Vegas
 102.129.145.133      # US California
 181.41.206.25        # US Denver
 191.96.227.55        # US New York
 181.41.202.174       # CA Vancouver
 143.244.48.192       # US Las Vegas
-173.239.226.230      # US Las Vegas
 191.101.61.153       # US Las Vegas
 140.228.21.108       # CA Montreal
 140.228.24.171       # CA Montreal
@@ -1138,7 +1118,6 @@
 191.96.36.116        # CA Toronto
 191.101.61.135       # US Las Vegas
 143.244.48.159       # US Las Vegas
-179.61.197.114       # CA Toronto
 191.96.106.58        # US California
 181.41.206.140       # US Denver
 181.41.206.144       # US Denver
@@ -1151,7 +1130,6 @@
 191.96.150.155       # US New York
 191.96.36.80         # CA Toronto
 191.96.168.190       # Netherlands
-173.239.226.192      # US Las Vegas
 140.228.24.82        # CA Montreal
 140.228.24.86        # CA Montreal
 140.228.24.90        # CA Montreal
@@ -1167,9 +1145,7 @@
 191.96.106.142       # US California
 102.129.153.62       # US Florida
 195.78.54.192        # Netherlands
-179.61.197.30        # CA Toronto
 191.96.36.99         # CA Toronto
-191.96.36.113        # CA Toronto
 191.96.150.62        # US New York
 102.129.152.145      # US Florida
 191.101.61.177       # US Las Vegas
@@ -1188,7 +1164,6 @@
 140.228.24.159       # CA Montreal
 102.129.153.151      # US Florida
 191.101.61.195       # US Las Vegas
-191.96.36.75         # CA Toronto
 191.96.36.66         # CA Toronto
 191.96.36.55         # CA Toronto
 191.96.36.63         # CA Toronto
@@ -1197,7 +1172,6 @@
 191.101.61.152       # US Las Vegas
 191.101.61.214       # US Las Vegas
 181.41.206.49        # US Denver
-191.96.36.62         # CA Toronto
 181.41.206.123       # US Denver
 102.129.153.213      # US Florida
 143.244.48.206       # US Las Vegas
@@ -1210,7 +1184,6 @@
 191.96.106.52        # US California
 181.41.206.73        # US Denver
 191.96.36.47         # CA Toronto
-140.228.24.84        # CA Montreal
 140.228.24.98        # CA Montreal
 102.129.153.208      # US Florida
 191.96.150.78        # US New York
@@ -1333,7 +1306,6 @@
 102.129.153.64       # US Florida
 102.129.152.167      # US Florida
 154.16.105.105       # US Las Vegas
-173.239.226.229      # US Las Vegas
 191.96.150.115       # US New York
 191.96.150.118       # US New York
 140.228.24.132       # CA Montreal
@@ -1365,7 +1337,6 @@
 173.239.226.168      # US Las Vegas
 140.228.24.183       # CA Montreal
 191.96.227.65        # US New York
-191.96.36.61         # CA Toronto
 181.41.202.131       # CA Vancouver
 181.41.202.212       # CA Vancouver
 195.78.54.199        # Netherlands
@@ -1392,7 +1363,6 @@
 37.19.198.47         # US New York
 191.101.61.227       # US Las Vegas
 191.101.61.237       # US Las Vegas
-191.96.36.172        # CA Toronto
 191.96.150.61        # US New York
 181.41.206.82        # US Denver
 191.96.106.205       # US California
@@ -1404,7 +1374,6 @@
 37.19.197.197        # US East
 191.96.106.68        # US California
 140.228.21.95        # CA Montreal
-191.96.36.73         # CA Toronto
 181.41.206.33        # US Denver
 181.41.206.143       # US Denver
 102.129.153.15       # US Florida
@@ -1455,7 +1424,6 @@
 181.41.202.113       # CA Vancouver
 191.96.106.204       # US California
 143.244.34.197       # US Florida
-173.239.226.220      # US Las Vegas
 195.78.54.96         # Netherlands
 181.41.206.129       # US Denver
 191.96.168.67        # Netherlands
@@ -1517,10 +1485,8 @@
 117.120.9.36         # AU Sydney
 179.61.197.77        # CA Toronto
 191.96.36.76         # CA Toronto
-181.214.206.119      # Netherlands
 181.214.206.85       # Netherlands
 102.129.145.145      # US California
-173.239.226.211      # US Las Vegas
 191.96.227.12        # US New York
 191.96.227.132       # US New York
 191.96.227.134       # US New York
@@ -1603,7 +1569,6 @@
 143.244.34.16        # US Florida
 191.101.61.217       # US Las Vegas
 191.96.227.118       # US New York
-191.96.36.36         # CA Toronto
 143.244.49.9         # US California
 181.41.206.137       # US Denver
 181.214.206.89       # Netherlands
@@ -1635,6 +1600,7 @@
 191.96.36.42         # CA Toronto
 191.96.106.21        # US California
 102.129.152.179      # US Florida
+191.96.168.88        # Netherlands
 191.96.168.79        # Netherlands
 191.101.61.248       # US Las Vegas
 181.214.153.63       # CA Vancouver
@@ -1670,7 +1636,6 @@
 181.41.206.70        # US Denver
 181.41.206.87        # US Denver
 191.96.106.35        # US California
-173.239.226.150      # US Las Vegas
 173.239.226.132      # US Las Vegas
 84.17.45.21          # US California
 191.96.106.208       # US California
@@ -1689,7 +1654,6 @@
 195.78.54.107        # Netherlands
 181.41.206.127       # US Denver
 191.96.227.61        # US New York
-140.228.24.113       # CA Montreal
 179.61.197.53        # CA Toronto
 191.96.36.178        # CA Toronto
 191.96.168.162       # Netherlands
@@ -1706,7 +1670,6 @@
 102.129.152.93       # US Florida
 191.96.150.99        # US New York
 191.96.36.43         # CA Toronto
-191.96.36.34         # CA Toronto
 181.41.206.89        # US Denver
 102.129.153.203      # US Florida
 102.129.153.37       # US Florida
@@ -1753,7 +1716,6 @@
 181.214.153.55       # CA Vancouver
 102.129.153.20       # US Florida
 143.244.48.189       # US Las Vegas
-191.101.61.209       # US Las Vegas
 191.96.227.119       # US New York
 191.96.36.141        # CA Toronto
 181.41.206.157       # US Denver
@@ -1881,7 +1843,6 @@
 191.96.227.121       # US New York
 102.129.152.169      # US Florida
 181.214.206.56       # Netherlands
-179.61.197.109       # CA Toronto
 181.214.206.90       # Netherlands
 102.129.153.192      # US Florida
 181.214.206.166      # Netherlands
@@ -1897,7 +1858,6 @@
 191.101.61.179       # US Las Vegas
 140.228.24.163       # CA Montreal
 191.96.150.58        # US New York
-191.96.36.173        # CA Toronto
 181.41.202.183       # CA Vancouver
 191.96.150.112       # US New York
 179.61.197.121       # CA Toronto
@@ -1918,7 +1878,6 @@
 102.129.152.176      # US Florida
 143.244.34.25        # US Florida
 143.244.49.14        # US California
-191.96.36.40         # CA Toronto
 102.129.153.45       # US Florida
 173.239.226.163      # US Las Vegas
 143.244.48.198       # US Las Vegas
@@ -1937,7 +1896,6 @@
 140.228.21.209       # CA Montreal
 191.96.150.74        # US New York
 181.41.202.181       # CA Vancouver
-191.96.36.117        # CA Toronto
 191.96.150.49        # US New York
 143.244.48.156       # US Las Vegas
 143.244.48.152       # US Las Vegas
@@ -1960,7 +1918,6 @@
 191.96.36.121        # CA Toronto
 37.19.198.86         # US New York
 181.41.202.201       # CA Vancouver
-173.239.226.212      # US Las Vegas
 191.96.150.153       # US New York
 37.19.198.66         # US New York
 102.129.152.142      # US Florida
@@ -1996,7 +1953,6 @@
 191.96.106.248       # US California
 181.214.206.131      # Netherlands
 173.239.226.227      # US Las Vegas
-173.239.226.161      # US Las Vegas
 173.239.226.153      # US Las Vegas
 179.61.197.107       # CA Toronto
 181.214.206.70       # Netherlands
@@ -2018,7 +1974,6 @@
 191.96.106.246       # US California
 181.214.206.129      # Netherlands
 102.129.152.88       # US Florida
-154.16.105.112       # US Las Vegas
 191.96.227.102       # US New York
 191.96.36.60         # CA Toronto
 181.41.202.185       # CA Vancouver
@@ -2103,10 +2058,8 @@
 191.96.36.175        # CA Toronto
 140.228.21.71        # CA Montreal
 140.228.21.74        # CA Montreal
-191.101.61.204       # US Las Vegas
 191.96.227.87        # US New York
 140.228.24.74        # CA Montreal
-191.96.36.101        # CA Toronto
 181.214.206.154      # Netherlands
 191.96.106.147       # US California
 102.129.152.14       # US Florida
@@ -2139,7 +2092,6 @@
 181.214.206.125      # Netherlands
 181.214.206.97       # Netherlands
 102.129.152.185      # US Florida
-173.239.226.191      # US Las Vegas
 154.16.105.111       # US Las Vegas
 181.214.153.96       # CA Vancouver
 102.129.145.143      # US California
@@ -2198,7 +2150,6 @@
 173.239.226.162      # US Las Vegas
 195.78.54.184        # Netherlands
 181.41.202.142       # CA Vancouver
-140.228.24.126       # CA Montreal
 143.244.34.154       # US Florida
 140.228.24.83        # CA Montreal
 140.228.24.91        # CA Montreal
@@ -2207,7 +2158,6 @@
 191.101.61.161       # US Las Vegas
 191.96.106.63        # US California
 179.61.197.84        # CA Toronto
-191.96.36.118        # CA Toronto
 191.101.61.175       # US Las Vegas
 191.96.106.247       # US California
 195.78.54.174        # Netherlands
@@ -2244,7 +2194,6 @@
 191.101.61.238       # US Las Vegas
 181.214.153.48       # CA Vancouver
 191.96.168.83        # Netherlands
-179.61.197.124       # CA Toronto
 191.101.61.228       # US Las Vegas
 102.129.145.156      # US California
 191.96.150.66        # US New York
@@ -2285,7 +2234,6 @@
 143.244.48.190       # US Las Vegas
 191.96.150.101       # US New York
 140.228.21.85        # CA Montreal
-191.96.36.184        # CA Toronto
 195.78.54.168        # Netherlands
 140.228.24.144       # CA Montreal
 191.96.227.60        # US New York
@@ -2336,7 +2284,6 @@
 195.78.54.82         # Netherlands
 191.96.168.73        # Netherlands
 191.96.106.56        # US California
-154.16.105.62        # US Las Vegas
 143.244.48.216       # US Las Vegas
 191.96.150.139       # US New York
 191.96.168.170       # Netherlands
@@ -2356,7 +2303,6 @@
 181.214.206.136      # Netherlands
 173.239.226.197      # US Las Vegas
 191.96.168.179       # Netherlands
-191.96.168.209       # Netherlands
 191.96.106.167       # US California
 37.19.198.116        # US New York
 181.214.206.146      # Netherlands
@@ -2378,7 +2324,6 @@
 181.41.202.105       # CA Vancouver
 102.129.153.32       # US Florida
 173.239.226.215      # US Las Vegas
-191.101.61.244       # US Las Vegas
 181.214.153.45       # CA Vancouver
 102.129.153.21       # US Florida
 191.96.150.126       # US New York
@@ -2399,7 +2344,6 @@
 37.19.197.212        # US East
 143.244.34.189       # US Florida
 181.41.202.184       # CA Vancouver
-173.239.226.151      # US Las Vegas
 191.96.168.201       # Netherlands
 140.228.24.158       # CA Montreal
 173.239.226.160      # US Las Vegas
@@ -2409,10 +2353,8 @@
 173.239.226.146      # US Las Vegas
 140.228.24.80        # CA Montreal
 37.19.198.70         # US New York
-179.61.197.63        # CA Toronto
 191.96.36.168        # CA Toronto
 179.61.197.89        # CA Toronto
-179.61.197.42        # CA Toronto
 191.101.61.234       # US Las Vegas
 143.244.34.9         # US Florida
 140.228.21.72        # CA Montreal
@@ -2431,7 +2373,6 @@
 191.96.106.149       # US California
 179.61.197.112       # CA Toronto
 195.78.54.207        # Netherlands
-140.228.24.102       # CA Montreal
 179.61.197.95        # CA Toronto
 191.96.150.47        # US New York
 181.41.202.189       # CA Vancouver
@@ -2515,7 +2456,7 @@
 37.19.198.57         # US New York
 191.96.168.59        # Netherlands
 173.239.226.140      # US Las Vegas
-173.239.226.148      # US Las Vegas
+195.78.54.206        # Netherlands
 102.129.153.22       # US Florida
 179.61.197.73        # CA Toronto
 143.244.34.188       # US Florida
@@ -2524,11 +2465,11 @@
 143.244.34.17        # US Florida
 181.214.153.67       # CA Vancouver
 179.61.197.22        # CA Toronto
+191.96.168.71        # Netherlands
 140.228.24.137       # CA Montreal
 191.96.168.194       # Netherlands
 37.19.198.104        # US New York
 37.19.198.41         # US New York
-191.96.36.129        # CA Toronto
 191.96.150.116       # US New York
 191.96.168.78        # Netherlands
 173.239.226.165      # US Las Vegas
@@ -2539,7 +2480,6 @@
 181.41.202.208       # CA Vancouver
 181.41.202.191       # CA Vancouver
 191.96.150.18        # US New York
-179.61.197.99        # CA Toronto
 191.96.36.163        # CA Toronto
 191.96.168.203       # Netherlands
 191.96.106.201       # US California
@@ -2560,17 +2500,13 @@
 37.19.198.90         # US New York
 195.78.54.108        # Netherlands
 181.41.202.172       # CA Vancouver
-179.61.197.35        # CA Toronto
-179.61.197.39        # CA Toronto
 195.78.54.64         # Netherlands
 179.61.197.120       # CA Toronto
 191.96.168.175       # Netherlands
 195.78.54.86         # Netherlands
-173.239.226.135      # US Las Vegas
 195.78.54.167        # Netherlands
 37.19.198.44         # US New York
 140.228.24.72        # CA Montreal
-191.96.36.140        # CA Toronto
 191.96.36.56         # CA Toronto
 37.19.198.106        # US New York
 37.19.198.43         # US New York
@@ -2588,6 +2524,7 @@
 140.228.24.227       # CA Montreal
 140.228.24.209       # CA Montreal
 140.228.24.228       # CA Montreal
+140.228.24.236       # CA Montreal
 140.228.24.221       # CA Montreal
 140.228.24.226       # CA Montreal
 140.228.24.222       # CA Montreal
@@ -2628,7 +2565,6 @@
 143.244.34.133       # US Florida
 140.228.24.194       # CA Montreal
 195.78.54.73         # Netherlands
-140.228.24.239       # CA Montreal
 140.228.24.238       # CA Montreal
 140.228.24.235       # CA Montreal
 140.228.24.237       # CA Montreal
@@ -3537,7 +3473,6 @@
 212.56.48.105        # Netherlands
 212.56.48.119        # Netherlands
 212.56.48.121        # Netherlands
-212.56.48.95         # Netherlands
 212.56.48.27         # Netherlands
 212.56.48.131        # Netherlands
 212.56.48.165        # Netherlands
@@ -3578,15 +3513,12 @@
 212.56.48.134        # Netherlands
 212.32.48.30         # CA Toronto
 212.32.48.46         # CA Toronto
-212.32.48.61         # CA Toronto
-212.32.48.7          # CA Toronto
 212.32.48.13         # CA Toronto
 212.32.48.29         # CA Toronto
 212.32.48.123        # CA Toronto
 212.32.48.101        # CA Toronto
 212.32.48.8          # CA Toronto
 212.32.48.12         # CA Toronto
-212.32.48.19         # CA Toronto
 212.32.48.107        # CA Toronto
 212.32.48.44         # CA Toronto
 212.32.48.113        # CA Toronto
@@ -3600,7 +3532,6 @@
 212.32.48.11         # CA Toronto
 212.32.48.62         # CA Toronto
 212.32.48.5          # CA Toronto
-212.32.48.124        # CA Toronto
 212.32.48.47         # CA Toronto
 212.32.48.52         # CA Toronto
 212.32.48.104        # CA Toronto
@@ -3611,7 +3542,6 @@
 212.32.48.9          # CA Toronto
 212.32.48.25         # CA Toronto
 212.32.48.121        # CA Toronto
-212.32.48.4          # CA Toronto
 212.32.48.21         # CA Toronto
 212.32.48.28         # CA Toronto
 212.32.48.3          # CA Toronto
@@ -3619,10 +3549,7 @@
 212.32.48.99         # CA Toronto
 212.32.48.14         # CA Toronto
 212.32.48.34         # CA Toronto
-212.32.48.51         # CA Toronto
-212.32.48.17         # CA Toronto
 212.32.48.122        # CA Toronto
-212.32.48.40         # CA Toronto
 212.32.48.115        # CA Toronto
 212.32.48.27         # CA Toronto
 212.32.48.120        # CA Toronto
@@ -3643,16 +3570,12 @@
 212.32.48.127        # CA Toronto
 212.32.48.134        # CA Toronto
 212.32.48.135        # CA Toronto
-212.32.48.102        # CA Toronto
 212.32.48.146        # CA Toronto
 212.32.48.15         # CA Toronto
-212.32.48.137        # CA Toronto
 212.32.48.129        # CA Toronto
 212.32.48.133        # CA Toronto
 212.32.48.118        # CA Toronto
 212.32.48.149        # CA Toronto
-212.32.48.142        # CA Toronto
-212.32.48.132        # CA Toronto
 212.32.48.152        # CA Toronto
 212.32.48.108        # CA Toronto
 212.32.48.136        # CA Toronto
@@ -3697,12 +3620,9 @@
 66.56.81.69          # CA Toronto
 66.56.81.52          # CA Toronto
 66.56.81.54          # CA Toronto
-66.56.80.142         # CA Toronto
 66.56.80.130         # CA Toronto
 66.56.80.175         # CA Toronto
-66.56.80.143         # CA Toronto
 66.56.81.36          # CA Toronto
-66.56.80.147         # CA Toronto
 66.56.80.162         # CA Toronto
 66.56.81.92          # CA Toronto
 66.56.81.82          # CA Toronto
@@ -3711,7 +3631,6 @@
 66.56.81.35          # CA Toronto
 66.56.81.68          # CA Toronto
 66.56.81.48          # CA Toronto
-66.56.81.57          # CA Toronto
 66.56.80.158         # CA Toronto
 66.56.80.200         # CA Toronto
 66.56.81.65          # CA Toronto
@@ -3733,12 +3652,9 @@
 66.56.81.47          # CA Toronto
 66.56.80.184         # CA Toronto
 66.56.81.79          # CA Toronto
-66.56.81.34          # CA Toronto
 66.56.81.55          # CA Toronto
 66.56.80.155         # CA Toronto
 66.56.81.41          # CA Toronto
-66.56.80.148         # CA Toronto
-66.56.80.159         # CA Toronto
 66.56.81.76          # CA Toronto
 66.56.80.144         # CA Toronto
 66.56.80.178         # CA Toronto
@@ -3754,17 +3670,12 @@
 66.56.80.168         # CA Toronto
 66.56.80.149         # CA Toronto
 66.56.80.183         # CA Toronto
-66.56.80.218         # CA Toronto
 66.56.80.25          # CA Ontario
 66.56.80.185         # CA Toronto
-66.56.80.167         # CA Toronto
-66.56.80.222         # CA Toronto
 66.56.80.207         # CA Toronto
 66.56.80.221         # CA Toronto
 66.56.80.213         # CA Toronto
-66.56.80.206         # CA Toronto
 66.56.80.228         # CA Toronto
-66.56.80.211         # CA Toronto
 66.56.80.172         # CA Toronto
 66.56.80.217         # CA Toronto
 66.56.81.53          # CA Toronto
@@ -3772,11 +3683,7 @@
 66.56.80.180         # CA Toronto
 66.56.80.226         # CA Toronto
 66.56.80.198         # CA Toronto
-66.56.80.230         # CA Toronto
-66.56.80.231         # CA Toronto
-66.56.80.224         # CA Toronto
 66.56.80.196         # CA Toronto
-66.56.80.208         # CA Toronto
 66.56.80.209         # CA Toronto
 66.56.80.220         # CA Toronto
 66.56.80.203         # CA Toronto
@@ -3787,7 +3694,6 @@
 66.56.80.216         # CA Toronto
 66.56.81.60          # CA Toronto
 66.56.80.202         # CA Toronto
-66.56.80.157         # CA Toronto
 66.56.80.153         # CA Toronto
 66.56.81.58          # CA Toronto
 66.56.81.193         # CA Ontario
@@ -3934,10 +3840,8 @@
 212.32.50.106        # US Las Vegas
 212.32.50.142        # US Las Vegas
 212.32.50.135        # US Las Vegas
-212.32.50.34         # US Las Vegas
 212.32.50.159        # US Las Vegas
 212.32.50.40         # US Las Vegas
-212.32.50.113        # US Las Vegas
 212.32.50.120        # US Las Vegas
 212.32.50.160        # US Las Vegas
 212.32.50.25         # US Las Vegas
@@ -3953,7 +3857,6 @@
 212.32.50.244        # US Las Vegas
 212.32.50.109        # US Las Vegas
 212.32.50.174        # US Las Vegas
-212.32.50.233        # US Las Vegas
 212.32.50.252        # US Las Vegas
 212.32.50.192        # US Las Vegas
 212.32.50.238        # US Las Vegas
@@ -3986,7 +3889,6 @@
 212.32.50.130        # US Las Vegas
 212.32.50.127        # US Las Vegas
 212.32.50.172        # US Las Vegas
-212.32.50.176        # US Las Vegas
 212.32.50.214        # US Las Vegas
 212.32.50.239        # US Las Vegas
 212.32.50.178        # US Las Vegas
@@ -4026,7 +3928,6 @@
 212.32.50.133        # US Las Vegas
 212.32.50.173        # US Las Vegas
 212.32.50.169        # US Las Vegas
-212.32.50.222        # US Las Vegas
 212.32.50.223        # US Las Vegas
 212.32.50.219        # US Las Vegas
 212.32.50.209        # US Las Vegas
@@ -4038,7 +3939,6 @@
 212.32.50.146        # US Las Vegas
 212.32.50.112        # US Las Vegas
 212.32.50.156        # US Las Vegas
-212.32.50.188        # US Las Vegas
 212.32.50.145        # US Las Vegas
 212.32.50.32         # US Las Vegas
 212.32.50.168        # US Las Vegas
@@ -4047,7 +3947,6 @@
 212.32.50.139        # US Las Vegas
 212.32.50.250        # US Las Vegas
 212.32.50.111        # US Las Vegas
-212.32.50.166        # US Las Vegas
 212.32.50.227        # US Las Vegas
 212.32.50.203        # US Las Vegas
 212.32.50.190        # US Las Vegas
@@ -4079,7 +3978,6 @@
 212.32.50.39         # US Las Vegas
 212.32.50.136        # US Las Vegas
 212.32.50.105        # US Las Vegas
-212.32.50.141        # US Las Vegas
 212.32.50.123        # US Las Vegas
 138.199.10.3         # US East
 138.199.10.10        # US East
@@ -4556,10 +4454,7 @@
 212.32.48.94         # CA Toronto
 212.32.48.73         # CA Toronto
 212.32.48.69         # CA Toronto
-212.32.48.79         # CA Toronto
-212.32.48.82         # CA Toronto
 212.32.48.88         # CA Toronto
-212.32.48.65         # CA Toronto
 212.32.48.70         # CA Toronto
 212.32.48.85         # CA Toronto
 212.32.48.89         # CA Toronto
@@ -6261,3 +6156,11 @@
 209.200.239.83       # CA Toronto
 209.200.239.8        # CA Toronto
 209.200.239.15       # CA Toronto
+134.195.10.134       # US Las Vegas
+163.5.90.12          # Cyprus
+163.5.90.118         # Cyprus
+163.5.90.247         # Cyprus
+213.139.65.5         # Morocco
+213.139.65.94        # Morocco
+213.139.65.100       # Morocco
+134.195.10.79        # US Las Vegas
