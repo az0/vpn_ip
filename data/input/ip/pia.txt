@@ -289,9 +289,11 @@
 191.96.150.119       # US New York
 102.129.152.54       # US Florida
 102.129.152.53       # US Florida
+140.228.21.222       # CA Montreal
 140.228.21.227       # CA Montreal
 181.41.202.178       # CA Vancouver
 181.41.202.203       # CA Vancouver
+191.96.168.107       # Netherlands
 143.244.48.10        # US California
 191.96.106.146       # US California
 191.96.106.19        # US California
@@ -447,7 +449,6 @@
 102.129.152.94       # US Florida
 102.129.152.172      # US Florida
 143.244.34.15        # US Florida
-195.78.54.160        # Netherlands
 191.96.150.63        # US New York
 191.96.150.107       # US New York
 191.96.227.39        # US New York
@@ -568,6 +569,7 @@
 191.96.106.44        # US California
 191.96.106.230       # US California
 181.214.206.50       # Netherlands
+191.96.168.58        # Netherlands
 195.78.54.83         # Netherlands
 181.41.206.107       # US Denver
 181.41.206.34        # US Denver
@@ -635,6 +637,7 @@
 143.244.49.25        # US California
 181.41.206.212       # US Denver
 191.96.168.205       # Netherlands
+191.96.168.186       # Netherlands
 143.244.48.3         # US California
 37.19.197.199        # US East
 37.19.197.210        # US East
@@ -696,7 +699,6 @@
 102.129.152.137      # US Florida
 102.129.152.141      # US Florida
 102.129.153.65       # US Florida
-140.228.24.116       # CA Montreal
 181.214.206.151      # Netherlands
 140.228.24.161       # CA Montreal
 181.41.206.161       # US Denver
@@ -1682,7 +1684,6 @@
 140.228.21.103       # CA Montreal
 181.214.206.115      # Netherlands
 181.214.153.84       # CA Vancouver
-191.96.168.99        # Netherlands
 181.41.202.138       # CA Vancouver
 181.214.153.113      # CA Vancouver
 143.244.34.149       # US Florida
@@ -1705,7 +1706,6 @@
 191.96.227.99        # US New York
 37.19.198.75         # US New York
 140.228.24.149       # CA Montreal
-191.96.168.74        # Netherlands
 191.96.168.92        # Netherlands
 37.19.197.223        # US East
 102.129.152.150      # US Florida
@@ -1872,6 +1872,7 @@
 102.129.153.155      # US Florida
 140.228.21.98        # CA Montreal
 181.214.153.72       # CA Vancouver
+195.78.54.208        # Netherlands
 181.214.206.167      # Netherlands
 191.96.150.140       # US New York
 140.228.24.139       # CA Montreal
@@ -2063,6 +2064,7 @@
 195.78.54.64         # Netherlands
 191.96.168.175       # Netherlands
 195.78.54.86         # Netherlands
+195.78.54.167        # Netherlands
 37.19.198.44         # US New York
 140.228.24.72        # CA Montreal
 37.19.198.106        # US New York
@@ -2079,9 +2081,9 @@
 140.228.24.191       # CA Montreal
 140.228.24.227       # CA Montreal
 140.228.24.209       # CA Montreal
+140.228.24.228       # CA Montreal
 140.228.24.236       # CA Montreal
 140.228.24.221       # CA Montreal
-140.228.24.226       # CA Montreal
 140.228.24.222       # CA Montreal
 140.228.24.211       # CA Montreal
 140.228.24.192       # CA Montreal
@@ -2091,7 +2093,6 @@
 140.228.24.197       # CA Montreal
 140.228.24.205       # CA Montreal
 37.19.198.97         # US New York
-140.228.24.234       # CA Montreal
 140.228.24.200       # CA Montreal
 140.228.24.204       # CA Montreal
 140.228.24.212       # CA Montreal
@@ -2118,7 +2119,6 @@
 195.78.54.73         # Netherlands
 140.228.24.239       # CA Montreal
 140.228.24.238       # CA Montreal
-140.228.24.235       # CA Montreal
 140.228.24.237       # CA Montreal
 37.19.198.112        # US New York
 37.19.210.66         # US Denver
@@ -2331,7 +2331,6 @@
 140.228.24.36        # CA Montreal
 140.228.24.27        # CA Montreal
 140.228.24.34        # CA Montreal
-140.228.24.37        # CA Montreal
 140.228.24.31        # CA Montreal
 140.228.24.28        # CA Montreal
 140.228.24.38        # CA Montreal
@@ -4262,7 +4261,6 @@
 158.173.21.50        # Netherlands
 158.173.21.47        # Netherlands
 158.173.25.37        # US New York
-158.173.3.120        # Netherlands
 158.173.21.54        # Netherlands
 158.173.25.18        # US New York
 158.173.25.99        # US New York
@@ -5324,3 +5322,11 @@
 178.175.143.115      # Moldova
 31.171.155.151       # Albania
 31.171.155.145       # Albania
+220.158.199.151      # AU Sydney
+220.158.199.210      # AU Sydney
+220.158.199.130      # AU Sydney
+220.158.199.166      # AU Sydney
+220.158.199.174      # AU Sydney
+158.173.65.101       # AU Brisbane
+158.173.65.91        # AU Brisbane
+158.173.65.96        # AU Brisbane
