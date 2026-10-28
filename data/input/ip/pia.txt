@@ -795,6 +795,7 @@
 102.129.145.132      # US California
 191.96.106.161       # US California
 181.41.206.68        # US Denver
+140.228.24.122       # CA Montreal
 181.214.206.48       # Netherlands
 181.214.206.117      # Netherlands
 140.228.21.99        # CA Montreal
@@ -839,6 +840,7 @@
 140.228.24.170       # CA Montreal
 181.41.206.221       # US Denver
 191.96.227.78        # US New York
+191.96.227.85        # US New York
 102.129.153.47       # US Florida
 102.129.153.48       # US Florida
 140.228.24.141       # CA Montreal
@@ -1911,7 +1913,6 @@
 143.244.34.9         # US Florida
 140.228.21.72        # CA Montreal
 195.78.54.76         # Netherlands
-195.78.54.162        # Netherlands
 195.78.54.195        # Netherlands
 195.78.54.190        # Netherlands
 181.214.153.92       # CA Vancouver
@@ -1950,6 +1951,7 @@
 181.41.202.104       # CA Vancouver
 191.96.106.15        # US California
 181.41.202.112       # CA Vancouver
+140.228.21.107       # CA Montreal
 181.214.206.162      # Netherlands
 37.19.197.216        # US East
 191.96.168.174       # Netherlands
@@ -2040,7 +2042,6 @@
 140.228.24.233       # CA Montreal
 140.228.24.191       # CA Montreal
 140.228.24.225       # CA Montreal
-140.228.24.227       # CA Montreal
 140.228.24.209       # CA Montreal
 140.228.24.228       # CA Montreal
 140.228.24.236       # CA Montreal
@@ -2081,7 +2082,6 @@
 143.244.34.133       # US Florida
 140.228.24.194       # CA Montreal
 195.78.54.73         # Netherlands
-140.228.24.239       # CA Montreal
 140.228.24.238       # CA Montreal
 140.228.24.235       # CA Montreal
 140.228.24.237       # CA Montreal
@@ -4836,9 +4836,6 @@
 158.173.241.112      # Sweden
 45.157.112.140       # France
 45.157.112.47        # France
-31.171.155.134       # Albania
-31.171.155.135       # Albania
-31.171.155.143       # Albania
 158.173.67.20        # Belgium
 158.173.67.121       # Belgium
 158.173.67.214       # Belgium
@@ -5293,3 +5290,4 @@
 173.239.217.179      # Andorra
 173.239.217.219      # Andorra
 158.173.121.2        # AU Adelaide
+194.5.49.249         # DE Berlin
