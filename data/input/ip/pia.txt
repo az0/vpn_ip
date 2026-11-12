@@ -454,7 +454,6 @@
 181.41.206.77        # US Denver
 181.41.202.102       # CA Vancouver
 217.138.193.148      # United Arab Emirates
-140.228.21.81        # CA Montreal
 143.244.48.29        # US California
 37.19.197.244        # US East
 102.129.153.69       # US Florida
@@ -1073,6 +1072,7 @@
 191.96.168.65        # Netherlands
 191.96.106.57        # US California
 84.17.45.14          # US California
+191.96.168.100       # Netherlands
 102.129.153.188      # US Florida
 191.96.150.27        # US New York
 191.96.227.122       # US New York
@@ -1344,6 +1344,7 @@
 195.78.54.72         # Netherlands
 102.129.153.18       # US Florida
 191.96.168.95        # Netherlands
+191.96.168.63        # Netherlands
 195.78.54.88         # Netherlands
 37.19.198.88         # US New York
 37.19.197.202        # US East
@@ -1476,7 +1477,6 @@
 102.129.152.132      # US Florida
 191.96.106.43        # US California
 191.96.168.76        # Netherlands
-191.96.168.105       # Netherlands
 181.41.206.18        # US Denver
 191.96.106.242       # US California
 181.41.206.172       # US Denver
@@ -1763,6 +1763,7 @@
 181.41.202.123       # CA Vancouver
 181.214.153.116      # CA Vancouver
 181.214.206.145      # Netherlands
+195.78.54.198        # Netherlands
 181.41.202.154       # CA Vancouver
 181.41.202.107       # CA Vancouver
 102.129.153.197      # US Florida
@@ -1840,6 +1841,7 @@
 181.214.206.120      # Netherlands
 191.96.106.18        # US California
 140.228.21.93        # CA Montreal
+191.96.168.198       # Netherlands
 191.96.227.31        # US New York
 102.129.145.130      # US California
 195.78.54.202        # Netherlands
@@ -2170,6 +2172,7 @@
 140.228.24.221       # CA Montreal
 140.228.24.226       # CA Montreal
 140.228.24.222       # CA Montreal
+140.228.24.211       # CA Montreal
 140.228.24.192       # CA Montreal
 140.228.24.219       # CA Montreal
 140.228.24.199       # CA Montreal
@@ -2199,8 +2202,10 @@
 140.228.24.203       # CA Montreal
 140.228.24.193       # CA Montreal
 140.228.24.210       # CA Montreal
+140.228.24.202       # CA Montreal
 140.228.24.218       # CA Montreal
 191.96.168.208       # Netherlands
+140.228.24.214       # CA Montreal
 143.244.34.133       # US Florida
 195.78.54.73         # Netherlands
 140.228.24.239       # CA Montreal
@@ -2994,6 +2999,7 @@
 212.56.48.16         # Netherlands
 212.56.48.10         # Netherlands
 212.56.48.15         # Netherlands
+212.56.48.17         # Netherlands
 212.56.48.33         # Netherlands
 212.56.48.13         # Netherlands
 212.56.48.19         # Netherlands
@@ -5536,3 +5542,6 @@
 194.146.92.45        # Spain
 158.173.74.117       # Denmark
 158.173.74.105       # Denmark
+158.173.74.206       # Denmark
+158.173.74.102       # Denmark
+158.173.74.164       # Denmark
