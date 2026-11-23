@@ -31,7 +31,6 @@
 102.129.153.161      # US Florida
 191.96.150.120       # US New York
 191.96.150.121       # US New York
-191.96.227.104       # US New York
 191.96.168.180       # Netherlands
 102.129.153.184      # US Florida
 143.244.34.141       # US Florida
@@ -78,7 +77,6 @@
 181.214.206.148      # Netherlands
 181.214.206.147      # Netherlands
 37.19.198.74         # US New York
-191.96.227.28        # US New York
 140.228.24.169       # CA Montreal
 181.214.206.150      # Netherlands
 181.214.206.156      # Netherlands
@@ -392,7 +390,6 @@
 102.129.153.51       # US Florida
 102.129.153.156      # US Florida
 102.129.153.154      # US Florida
-191.96.150.21        # US New York
 191.96.150.41        # US New York
 196.196.53.53        # Latvia
 181.41.202.119       # CA Vancouver
@@ -1013,7 +1010,6 @@
 140.228.24.84        # CA Montreal
 140.228.24.98        # CA Montreal
 102.129.153.208      # US Florida
-181.41.202.214       # CA Vancouver
 181.41.202.215       # CA Vancouver
 102.129.145.150      # US California
 191.96.106.229       # US California
@@ -1282,7 +1278,6 @@
 37.19.197.242        # US East
 181.41.202.175       # CA Vancouver
 102.129.153.14       # US Florida
-191.96.227.27        # US New York
 181.214.206.163      # Netherlands
 195.78.54.166        # Netherlands
 181.41.206.40        # US Denver
@@ -1605,7 +1600,6 @@
 140.228.21.96        # CA Montreal
 140.228.21.209       # CA Montreal
 191.96.150.74        # US New York
-181.41.202.181       # CA Vancouver
 191.96.150.49        # US New York
 191.96.168.75        # Netherlands
 191.96.106.66        # US California
@@ -1620,7 +1614,6 @@
 140.228.24.108       # CA Montreal
 37.19.197.203        # US East
 102.129.153.181      # US Florida
-181.41.202.188       # CA Vancouver
 191.96.106.39        # US California
 191.96.106.159       # US California
 37.19.198.86         # US New York
@@ -1672,7 +1665,6 @@
 181.41.202.185       # CA Vancouver
 181.41.202.110       # CA Vancouver
 191.96.106.195       # US California
-191.96.150.64        # US New York
 140.228.21.225       # CA Montreal
 181.214.153.99       # CA Vancouver
 191.96.106.237       # US California
@@ -1717,7 +1709,6 @@
 181.214.206.145      # Netherlands
 195.78.54.198        # Netherlands
 181.41.202.154       # CA Vancouver
-181.41.202.107       # CA Vancouver
 102.129.153.197      # US Florida
 37.19.198.95         # US New York
 181.41.202.114       # CA Vancouver
@@ -1742,7 +1733,6 @@
 102.129.152.14       # US Florida
 181.214.206.160      # Netherlands
 181.41.202.122       # CA Vancouver
-191.96.150.100       # US New York
 102.129.153.30       # US Florida
 140.228.24.73        # CA Montreal
 191.96.168.104       # Netherlands
@@ -1756,7 +1746,6 @@
 191.96.106.219       # US California
 181.214.153.88       # CA Vancouver
 191.96.227.131       # US New York
-191.96.227.155       # US New York
 195.78.54.210        # Netherlands
 181.214.206.116      # Netherlands
 195.78.54.201        # Netherlands
@@ -2073,7 +2062,6 @@
 191.96.168.78        # Netherlands
 191.96.150.68        # US New York
 191.96.106.245       # US California
-181.41.202.219       # CA Vancouver
 140.228.21.127       # CA Montreal
 181.41.202.208       # CA Vancouver
 181.41.202.191       # CA Vancouver
@@ -3124,7 +3112,6 @@
 212.56.49.46         # CA Montreal
 212.56.49.69         # CA Montreal
 212.56.49.64         # CA Montreal
-212.56.49.65         # CA Montreal
 212.56.49.51         # CA Montreal
 212.56.49.61         # CA Montreal
 212.56.49.56         # CA Montreal
@@ -3725,14 +3712,12 @@
 212.56.52.77         # CA Vancouver
 212.56.52.89         # CA Vancouver
 212.56.52.110        # CA Vancouver
-212.56.52.38         # CA Vancouver
 212.56.52.22         # CA Vancouver
 212.56.52.65         # CA Vancouver
 212.56.52.18         # CA Vancouver
 212.56.52.116        # CA Vancouver
 212.56.52.45         # CA Vancouver
 212.56.52.71         # CA Vancouver
-212.56.52.27         # CA Vancouver
 212.56.52.52         # CA Vancouver
 212.56.52.98         # CA Vancouver
 212.56.52.49         # CA Vancouver
@@ -3964,6 +3949,7 @@
 158.173.21.82        # Netherlands
 158.173.21.212       # Netherlands
 158.173.21.63        # Netherlands
+158.173.20.50        # Netherlands
 158.173.21.196       # Netherlands
 158.173.20.99        # Netherlands
 158.173.21.175       # Netherlands
@@ -4069,6 +4055,7 @@
 158.173.25.86        # US New York
 158.173.25.165       # US New York
 158.173.25.94        # US New York
+158.173.3.190        # Netherlands
 158.173.20.64        # Netherlands
 158.173.25.32        # US New York
 158.173.25.96        # US New York
@@ -4775,7 +4762,6 @@
 212.56.49.156        # CA Montreal
 212.56.49.164        # CA Montreal
 212.56.49.134        # CA Montreal
-212.56.49.148        # CA Montreal
 212.56.49.145        # CA Montreal
 212.56.49.144        # CA Montreal
 212.56.49.151        # CA Montreal
@@ -4804,7 +4790,6 @@
 212.56.49.147        # CA Montreal
 212.56.49.183        # CA Montreal
 212.56.49.186        # CA Montreal
-212.56.49.137        # CA Montreal
 212.56.49.188        # CA Montreal
 212.56.49.150        # CA Montreal
 212.56.49.130        # CA Montreal
@@ -4820,11 +4805,9 @@
 212.56.49.168        # CA Montreal
 212.56.49.141        # CA Montreal
 212.56.49.138        # CA Montreal
-212.56.49.153        # CA Montreal
 212.56.49.131        # CA Montreal
 212.56.49.143        # CA Montreal
 212.56.49.159        # CA Montreal
-212.56.49.152        # CA Montreal
 212.56.49.174        # CA Montreal
 212.56.49.132        # CA Montreal
 212.102.39.14        # Czech Republic
